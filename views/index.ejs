@@ -1,255 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="INSTAR Wiki - Static Node/Express Template">
-    <meta name="author" content="Mike Polinowski">
-    <title>
-        <%= title %>
-    </title>
-    <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="http://v4-alpha.getbootstrap.com/assets/js/vendor/tether.min.js" crossorigin="anonymous"></script>
-    <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-</head>
+    <head><% include partials/template/head.ejs %></head>
 
-<body>
+    <body>
 
-    <!-- ############################################# Navbar ############################################# -->
+        <header><% include partials/template/header.ejs %></header>
+        <!-- Navbar-->
 
-    <section class="collapse" id="CollNavbar">
-        <div class="navbar navbar-light bg-faded">
-            <!-- collapsed content -->
-            <ul class="nav navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/"><strong>Home</strong></a>
-                </li>
-                <li class="nav-item" style="padding-left: 15px;">
-                    <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item" style="padding-left: 10px;">
-                    <a class="nav-link" href="#">Knowledgebase</a>
-                </li>
-                <li class="nav-item" style="padding-left: 10px;">
-                    <a class="nav-link" href="#">Downloads</a>
-                </li>
-            </ul>
-            <form class="form-inline pull-xs-right">
-                <input class="form-control form-control-sm" type="text" placeholder="Search">
-                <button class="btn btn-primary-outline btn-sm" type="submit">Search</button>
-            </form>
-        </div>
-        <!-- collapsed content -->
-    </section>
-    <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
-        <div>
-            <a class="navbar-brand" href="http://instar.de" target="_blank">
-                <img src="http://wiki.instar.de/instar_245x77.png" class="img-fluid" style="max-height: 30px;" alt="INSTAR Deutschland GmbH" />
-            </a>
-        </div>
-        <div class="pull-xs-right">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollNavbar">
-                &#9776;
-            </button>
-        </div>
-    </nav>
-    <!-- /navbar-dark -->
+        <!-- ############################################# Landing ############################################# -->
 
-    <!-- ############################################# Landing ############################################# -->
-
-    <section class="landing">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 centered">
-                    <h1 class="headline">INSTAR Wiki</h1>
-                    <hr>
-                    <h2 class="subheader">Knowledgebase for IP Cameras and Surveillance Networks</h2>
-                </div>
-            </div>
-            <!-- /row -->
-        </div>
-        <!-- /container -->
-    </section>
-    <!-- /landing -->
-
-    <!-- #############################################  Primary ############################################# -->
-
-    <section class="primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 centered hidden-sm-down">
-                    <a href="#"><img src="images/iphone.png" alt="InstarVision Software Solution" class="img-fluid"></a>
-                </div>
-
-                <div class="col-xs-12 col-md-7 pb">
-                    <div class="col-xs-12">
-                        <h3 class="subheader">InstarVision Surveillance Solution</h3>
-                        <p>Control your IP security camera from your PC, Mac, Tablet or Smartphone. INSTAR offers a solution for every surveillance taske.</p>
-                    </div>
+        <section class="landing">
+            <div class="container">
+                <div class="row center-block">
                     <div class="col-xs-8 col-xs-offset-2">
-                        <div class="col-xs-3">
-                            <a href="#"><i class="fa fa-android"></i></a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="#"><i class="fa fa-apple"></i></a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="#"><i class="fa fa-windows"></i></a>
-                        </div>
-                        <div class="col-xs-3">
-                            <a href="#"><i class="fa fa-mobile-phone"></i></a>
-                        </div>
+                        <h1 class="headline"><%= title %></h1>
+                        <hr>
+                        <h2 class="subheader">Knowledgebase for IP Cameras and Surveillance Networks</h2>
                     </div>
                 </div>
+                <!-- /row -->
             </div>
-            <!-- /row -->
-        </div>
-        <!-- /container -->
-    </section>
-    <!-- /primary -->
+            <!-- /container -->
+        </section>
+        <!-- /landing -->
 
-    <!-- ############################################# Jumbotron ############################################# -->
+        <section class="instarvision"><% include partials/template/instarvision.ejs %></section>
+        <!-- /instarvision -->
 
-    <section class="jumbotron">
-        <div class="row">
-            <div class="col-xs-offset-5 col-xs-3">
-                <h1><%= title %></h1>
-                <p>Welcome to
-                    <%= title %>
-                </p>
-            </div>
-        </div>
-    </section>
+        <!-- #############################################  Gallery ############################################# -->
 
-    <!-- ############################################# Gallery ############################################# -->
-
-    <section class="container mb">
-        <div class="row centered mt grid">
-            <h3>Wiki Topics</h3>
-
-            <div class="mt"></div>
-
-            <div class="col-xs-6 col-lg-4 col-xl-3">
-                <a href="#"><img src="http://placehold.it/300x300" alt="" class="img-fluid"></a>
-            </div>
-
-            <div class="col-xs-6 col-lg-4 col-xl-3">
-                <a href="#"><img src="http://placehold.it/300x300" alt="" class="img-fluid"></a>
-            </div>
-
-            <div class="clearfix hidden-lg-up" style="margin-bottom: 50px;"></div>
-
-            <div class="col-xs-6 col-lg-4 col-xl-3">
-                <a href="#"><img src="http://placehold.it/300x300" alt="" class="img-fluid"></a>
-            </div>
-
-            <div class="clearfix hidden-xl-up hidden-md-down" style="margin-bottom: 25px;"></div>
-
-            <div class="col-xs-6 col-lg-4 col-xl-3">
-                <a href="#"><img src="http://placehold.it/300x300" alt="" class="img-fluid"></a>
+        <div class="row center-block mt">
+            <div class="col-md-4 col-md-offset-4 centered">
+                <h2>
+                    <span class="headline">Wiki Topics</span>
+                </h2>
             </div>
         </div>
 
-        <div class="row centered mt grid">
+        <section class="container mb"><% include partials/template/gallery_quickinstallation.ejs %></section>
+        <!-- /quickinstallation -->
 
-            <div class="mt"></div>
+        <section class="webui"><% include partials/template/webui.ejs %></section>
+        <!-- /webui -->
 
-            <div class="col-xs-6 col-lg-4 col-xl-3">
-                <a href="#"><img src="http://placehold.it/300x300" alt="" class="img-fluid"></a>
-            </div>
+        <section class="container mb"><% include partials/template/gallery_internetaccess.ejs %></section>
+        <!-- /internetaccess -->
 
-            <div class="col-xs-6 col-lg-4 col-xl-3">
-                <a href="#"><img src="http://placehold.it/300x300" alt="" class="img-fluid"></a>
-            </div>
+        <section class="container mb"><% include partials/template/gallery_motiondetection.ejs %></section>
+        <!-- /motiondetection -->
 
-            <div class="clearfix hidden-lg-up" style="margin-bottom: 50px;"></div>
+        <section class="products"><% include partials/template/products.ejs %></section>
+        <!-- /products -->
 
-            <div class="col-xs-6 col-lg-4 col-xl-3">
-                <a href="#"><img src="http://placehold.it/300x300" alt="" class="img-fluid"></a>
-            </div>
+        <section class="social"><% include partials/template/social.ejs %></section>
+        <!-- /social -->
 
-            <div class="clearfix hidden-xl-up hidden-md-down" style="margin-bottom: 25px;"></div>
+        <!-- ############################################# Footer ############################################# -->
 
-            <div class="col-xs-6 col-lg-4 col-xl-3">
-                <a href="#"><img src="http://placehold.it/300x300" alt="" class="img-fluid"></a>
-            </div>
-        </div>
+        <footer><% include partials/template/footer.ejs %></footer>
 
-        <div class="row mt centered">
-            <div class="col-lg-7 col-lg-offset-1 mt">
-                <p class="lead">INSTAR offers a Installation Wizard, that will lead you through the first steps of the camera installation.</p>
-            </div>
+        <% include partials/template/jsdefaults.ejs %>
 
-            <div class="col-lg-3 mt">
-                <p>
-                    <a href="http://install.instar.de" target="_blank">
-                        <button type="button" class="btn btn-primary btn-lg">Installation Wizard</button>
-                    </a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- #############################################  Warning ############################################# -->
-
-    <section class="warning">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 centered mb">
-                    <a href="#"><img src="images/macbook.png" alt="The Web User Interface" class="img-fluid"></a>
-                </div>
-
-                <a href="#"><div class="col-xs-12 col-md-7 centered">
-                    <h3 class="subheader">The Web User Interface</h3>
-                    <p>Control your camera from your default web browser. Click here to find a detailed description of your HD cameras web user interface.</p>
-                </div></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ############################################# Contact ############################################# -->
-
-    <section class="social">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="col-md-3">
-                        <a href="https://www.youtube.com/user/INSTARTV/videos" target="_blank"><i class="fa fa-youtube"></i></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="https://www.facebook.com/instar.deutschland" target="_blank"><i class="fa fa-facebook"></i></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="https://github.com/mpolinowski" target="_blank"><i class="fa fa-github"></i></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="http://www.instar.de/contact_us/" target="_blank"><i class="fa fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /container -->
-    </section>
-    <!-- /social -->
-
-    <!-- ############################################# Footer ############################################# -->
-
-    <section class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="pull-xs-right">
-                    <p class="text-muted"><small><i class="fa fa-copyright"></i> 2016 INSTAR Deutschland GmbH</small></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-</body>
+    </body>
 
 </html>

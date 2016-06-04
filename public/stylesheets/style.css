@@ -1,72 +1,73 @@
 /* FONTS */
+
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,900);
 
 /* Body */
 
 body {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
     font-family: "Roboto";
     font-weight: 300;
     font-size: 16px;
     color: #555;
-
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-
     margin-top: 70px;
 }
 
 /* Header */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Ubuntu";
     font-weight: 300;
     color: #333;
 }
-
+.glow {
+    -webkit-box-shadow: 0 0 5px 2px rgba(2, 117, 216, .50);
+    -moz-box-shadow: 0 0 5px 2px rgba(2, 117, 216, .50);
+    box-shadow: 0 0 5px 2px rgba(2, 117, 216, .50);
+}
 
 /* Paragraph */
+
 p {
     line-height: 28px;
     margin-bottom: 25px;
 }
-
-.centered {
-    text-align: center;
-}
-
 .mt {
-	margin-top: 40px;
+    margin-top: 40px;
 }
-
 .mb {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
-
 .pb {
-	padding-bottom: 20px;
+    padding-bottom: 20px;
+}
+.headline {
+    margin-top: 50px;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #0275d8;
 }
 
 /* Links */
+
 a {
     word-wrap: break-word;
-
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
-
-a:hover,
-a:focus {
+a:hover, a:focus {
     color: #7b7b7b;
     text-decoration: none;
     outline: 0;
 }
-
-a:before,
-a:after {
+a:before, a:after {
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -77,36 +78,53 @@ a:after {
 /* Bootstrap Modifications */
 
 .lead {
-	letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 /* Image Opacity */
+
 .grid img {
     opacity: .7;
 }
 .grid img:hover {
     opacity: 1;
 }
+.centered {
+    text-align: center;
+}
+.btn {
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.btn {
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 100ms;
+}
+.btn:hover, .btn:active, .btn:focus {
+    box-shadow: 0 11px 5px -5px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -1px);
+}
 
 /* Landing */
+
 .landing {
-	width: 100%;
-	padding-top: 250px;
-	padding-bottom: 250px;
+    width: 100%;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    text-align: center;
 }
-
 .landing .headline {
-	font-size: 90px;
-	font-weight: 700;
-	letter-spacing: 3px;
-	color: #0275d8;
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #0275d8;
 }
-
 .landing .subheader {
-	color: #cecece;
-	font-weight: 400;
+    color: #cecece;
+    font-weight: 400;
 }
-
 .landing hr {
     display: block;
     height: 1px;
@@ -116,65 +134,60 @@ a:after {
     padding: 0;
 }
 
-/* Primary & Warning */
-.primary {
-	background-color: #0275d8;
-	padding-top: 70px;
-	margin-bottom: 0px;
-}
+/* instarvision & WebUI & Products */
 
-.warning {
-	background-color: #f0ad4e;
-	padding-top: 50px;
-	margin-bottom: 0px;
+.instarvision, .products {
+    background-color: #0275d8;
+    padding-top: 70px;
+    margin-bottom: 0;
 }
-
-.primary .subheader, .warning .subheader {
-	color: white;
-	font-weight: 400;
-	margin-bottom: 35px;
+.webui {
+    background-color: #f0ad4e;
+    padding-top: 50px;
+    margin-bottom: 0;
 }
-
-.primary p, .warning p {
-	color: white;
-	font-weight: 400;
-	font-size: 20px;
+.instarvision .subheader, .products .subheader, .webui .subheader {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 35px;
 }
-
-.primary i {
-	font-size: 50px;
-	color: #fff;
+.instarvision p, .products p, .webui p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.instarvision i, .products i {
+    font-size: 50px;
+    color: #fff;
 }
 
 /* Social Links */
 
 .social {
-	width: 100%;
-	padding-top: 150px;
-	padding-bottom: 150px;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
 }
-
 .social i {
-	font-size: 50px;
-	color: #cecece;
+    font-size: 50px;
+    color: #cecece;
 }
-
 .social .col-md-3:hover {
-	background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
-
 .social .col-md-3 {
-	padding:30px;
+    padding: 30px;
 }
 
 /* Footer */
-.footer {
-	padding-top: 20px;
-	background-color: #373a3c;
-  text-align: right;
-}
 
+.footer {
+    padding-top: 20px;
+    background-color: #373a3c;
+    text-align: right;
+}
 .footer p {
-	color: white;
-	font-weight: 400;
+    color: white;
+    font-weight: 400;
 }
