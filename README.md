@@ -39,23 +39,69 @@ ___
 * Copy all your websites (EJS files) pages into the content folder
 
 
-### X Ipsum Lorem
+### 3 Import JSON Elements
 ___
 
+**index.js**
 
-
-**app.js**
-
-Ipsum Lorem
+Let´s add data from the *gallery.json* file to our index.ejs page. First we have to reference the JSON document in the *index.js* route. We also specify which elemts we want to extract from the file, so we can later create a for-loop over it inside the gallery-xxx.ejs partials.
 
 ```javascript
-var express =require('express');
+var express = require('express');
+var router = express.Router();
+var appdata = require('../views/partials/data/gallery.json'); /* Reference the JSON file (can later be subtitued by a database) */
 
-var app = express():
+/* GET home page. */
+router.get('/', function(req, res, next) {
 
-var port = 3000;
-l
-app.listen(port, function(err){
-  console.log('running server on port' + port);
-});
+    var qiPicture = []; /* Create arrays  */
+    var qiPictureAlt = [];
+    var qiHref = [];
+    var iaPicture = [];
+    var iaPictureAlt = [];
+    var iaHref = [];
+    var mdPicture = [];
+    var mdPictureAlt = [];
+    var mdHref = [];
+    appdata.articles.forEach(function(item) { /* Add all elements from gallery.json for the gallery */
+        qiPicture = qiPicture.concat(item.qiPic);
+        qiPictureAlt = qiPictureAlt.concat(item.qiPicAlt);
+        qiHref = qiHref.concat(item.qiUrl);
+        iaPicture = iaPicture.concat(item.iaPic);
+        iaPictureAlt = iaPictureAlt.concat(item.iaPicAlt);
+        iaHref = iaHref.concat(item.iaUrl);
+        mdPicture = mdPicture.concat(item.mdPic);
+        mdPictureAlt = mdPictureAlt.concat(item.mdPicAlt);
+        mdHref = mdHref.concat(item.mdUrl);
+      });
+
+    res.render('index', {  /* Make arrays available in index.ejs */
+        title: 'INSTAR Wiki',
+        qiPic: qiPicture,
+        qiPicAlt: qiPictureAlt,
+        qiUrl: qiHref,
+        iaPic: iaPicture,
+        iaPicAlt: iaPictureAlt,
+        iaUrl: iaHref,
+        mdPic: mdPicture,
+        mdPicAlt: mdPictureAlt,
+        mdUrl: mdHref,
+      });
+  });
+
+module.exports = router;
+```
+
+**gallery-xxx.ejs**
+
+Now we can for-loop over all required elements in our gallery partials:
+
+```javascript
+<% if (mdPic.length > 0) { %>
+    <% for (i=1; i<mdPic.length; i++) { %>
+        <div class="col-xs-6 col-lg-4 mb">
+            <a href="http://loxalhost:3000/<%= mdUrl[i] %>"><img src="<%= mdPic[i] %>" alt="<%= mdPicAlt[i] %>" class="img-fluid"></a>
+        </div>
+    <% } %>
+<% } %>
 ```
