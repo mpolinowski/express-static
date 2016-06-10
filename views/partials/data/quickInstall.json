@@ -17,23 +17,23 @@
             "qiTitle": "After unpacking your INSTAR IP Camera",
             "qiVideoSrc": "https://www.youtube.com/embed/ByMkfVgjl3c",
             "qiVideoAlt": "After unpacking your INSTAR IP Camera",
-            "qiUrl": "After_Unpacking_Your_INSTAR_IP_Camera",
+            "qiUrl": "After_Unpacking",
             "qiPic": ["http://placehold.it/300x300"],
             "qiPicAlt": "After unpacking your INSTAR IP Camera"
         }, {
             "qiTitle": "Direct connection with a PC or Notebook",
             "qiVideoSrc": "#",
             "qiVideoAlt": "Direct connection with a PC or Notebook",
-            "qiUrl": "Direct_LAN_Connection_To_Your_IP_Camera",
+            "qiUrl": "Direct_LAN_Connection",
             "qiPic": ["http://placehold.it/300x300"],
             "qiPicAlt": "Direct connection with a PC or Notebook"
         }, {
-            "qiTitle": "How to find your IP Camera in the network with an alternative IP Scanner",
+            "qiTitle": "How to find your IP Camera with an alternative IP Scanner",
             "qiVideoSrc": "#",
-            "qiVideoAlt": "How to find your IP Camera in the network with an alternative IP Scanner",
-            "qiUrl": "How_To_Find_Your_IP_Camera_With_IP_Scanner",
+            "qiVideoAlt": "How to find your IP Camera with an alternative IP Scanner",
+            "qiUrl": "Alternative_IP_Scanner",
             "qiPic": ["http://placehold.it/300x300"],
-            "qiPicAlt": "How to find your IP Camera in the network with an alternative IP Scanner"
+            "qiPicAlt": "How to find your IP Camera with an alternative IP Scanner"
         }, {
             "qiTitle": "Language Selection",
             "qiVideoSrc": "#",
@@ -45,7 +45,7 @@
             "qiTitle": "Creating user accounts on your camera",
             "qiVideoSrc": "#",
             "qiVideoAlt": "Creating user accounts on your camera",
-            "qiUrl": "Creating_User_Accounts_On_Your_Camera",
+            "qiUrl": "Creating_User_Accounts",
             "qiPic": ["http://placehold.it/300x300"],
             "qiPicAlt": "Creating user accounts on your camera"
         }, {
@@ -56,18 +56,18 @@
             "qiPic": ["http://placehold.it/300x300"],
             "qiPicAlt": "WebUI and Firmware Upgrade"
         }, {
-            "qiTitle": "How to clear your Browsing History after an Update",
+            "qiTitle": "How to clear your Browsing History",
             "qiVideoSrc": "#",
-            "qiVideoAlt": "How to clear your Browsing History after an Update",
+            "qiVideoAlt": "How to clear your Browsing History",
             "qiUrl": "How_To_Clear_Your_Browsing_History",
             "qiPic": ["http://placehold.it/300x300"],
-            "qiPicAlt": "How to clear your Browsing History after an Update"
+            "qiPicAlt": "How to clear your Browsing History"
         }, {
-            "qiTitle": "How to set up a wireless connection",
+            "qiTitle": "How to set up a Wireless Connection",
             "qiVideoSrc": "#",
-            "qiVideoAlt": "How to set up a wireless connection",
-            "qiUrl": "How_To_Set_Up_A_Wireless_Connection",
+            "qiVideoAlt": "How to set up a Wireless Connection",
+            "qiUrl": "Set_Up_A_Wireless_Connection",
             "qiPic": ["http://placehold.it/300x300"],
-            "qiPicAlt": "How to set up a wireless connection"
+            "qiPicAlt": "How to set up a Wireless Connection"
         }]
 }

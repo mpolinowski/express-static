@@ -3,7 +3,7 @@ var indexRouter = express.Router();
 var appdata = require('../views/partials/data/gallery.json');
 
 /* GET home page. */
-indexRouter.get('/', function(req, res, next) {
+indexRouter.get('/', function(req, res) {
 
     var qiPicture = []; /* Get all Pictures from gallery.json for the gallery */
     var qiPictureAlt = [];
