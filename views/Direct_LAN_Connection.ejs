@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><% include partials/template/head.ejs %></head>
+    <body>
+        <header><% include partials/template/header.ejs %></header>
+        <!-- Navbar-->
+
+        <!-- ----------------------------------------------------- Direct LAN Connection ------------------------------------------- -->
+
+        <p class="text-justify">
+            The following instructions will explain to you step by step how you can create a direct LAN connection between your computer and an INSTAR IP camera. Use this approach if you want to use the camera in an area, that does not provide a network
+            infrastructure or to if you want to configure the camera to connect to a Wifi network when you don´t have a LAN Ethernet connection available to make the initial Wifi configuration.
+        </p>
+
+        <h2>Connect the Camera</h2>
+
+        <p class="text-justify">
+            Connect the camera with a regular Ethernet cable to your PC or Notebook (Very old PCs might still need a special -
+            <a href="http://en.wikipedia.org/wiki/Ethernet_crossover_cable">Crossover</a>
+            - cable to make this connections).
+        </p>
+
+        <h2>Search the Camera</h2>
+
+        <p class="text-justify">
+            Install/Open the INSTAR Camera Tool which will show you the following message after clicking the ''Search'' button: (you might have to select the correct network interface to which the camera is connected to. If for example you have a VPN connection,
+            an active bluetooth module and the regular LAN interface, then you have to select the LAN interface in order to find your IP camera.
+        </p>
+
+        <div class="col-xs-12" style="margin-bottom: 40px;">
+            <figure>
+                <a href="http://wiki.instar.com/index.php/File:Direktverbindung_01en.jpg" target="_blank">
+                    <img src="http://wiki.instar.com/images/9/95/Direktverbindung_01en.jpg" class="img-fluid img-rounded" style="box-shadow: 2px 2px 1px #888888;" alt="INSTAR Camera Tool">
+                </a>
+                <figcaption>Open the camera tool and press '''Search'''.</figcaption>
+            </figure>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <h2>Assign a static IP to your Windows PC</h2>
+
+        <p clas="text-justify">
+            Open the ''Network- and Sharing Centre'' (''Control Panel'' -> ''Network and Security'').
+            <br/>
+            The interface will show you a new unidentified LAN connection. Open it´s settings by clicking "Local Area Network". Go to ''Properties'', select the ''Internet Protocol Version 4 (TCP/IPv4)'' and select ''Properties'' as shown below.
+        </p>
+
+        <div class="col-xs-12" style="margin-bottom: 40px;">
+            <figure>
+                <a href="http://wiki.instar.com/index.php/File:Direktverbindung_02en.jpg" target="_blank">
+                    <img src="http://wiki.instar.com/images/7/73/Direktverbindung_02en.jpg" class="img-fluid img-rounded" style="box-shadow: 2px 2px 1px #888888;" alt="Windows Network- and Sharing Centre">
+                </a>
+                <figcaption>Open the Windows ''Network- and Sharing Centre'' and go to the LAN adapter properties.</figcaption>
+            </figure>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <p>The following window will open and allow you to set a static IP address for your PC/Laptop:</p>
+
+        <div class="col-xs-12" style="margin-bottom: 40px;">
+            <figure>
+                <a href="http://wiki.instar.com/index.php/File:Direktverbindung_03en.jpg" target="_blank">
+                    <img src="http://wiki.instar.com/images/1/18/Direktverbindung_03en.jpg" class="img-fluid img-rounded" style="box-shadow: 2px 2px 1px #888888;" alt="Windows Network- and Sharing Center">
+                </a>
+                <figcaption>Open the IPv4 properties.</figcaption>
+            </figure>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <p>
+            Please fill in a valid IP address for your computer and set it to be new networks gateway and DNS server (see below):
+        </p>
+
+        <div class="col-xs-12" style="margin-bottom: 40px;">
+            <figure>
+                <a href="http://wiki.instar.com/index.php/File:Direktverbindung_04en.jpg" target="_blank">
+                    <img src="http://wiki.instar.com/images/b/bf/Direktverbindung_04en.jpg" class="img-fluid img-rounded" style="box-shadow: 2px 2px 1px #888888;" alt="Windows Network- and Sharing Center">
+                </a>
+                <figcaption>Assign a static IP address to your PC.</figcaption>
+            </figure>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <p>
+            Submit the settings by clicking "OK" and return to the IP Camera Tool.
+        </p>
+
+        <h2>Assign a static IP to your Mac</h2>
+
+        <p class="text-justify">
+            Open the menu ''System Preferences'' go to ''Network'' and click on ''Ethernet''.
+            <br/>
+            Please choose ''Configure IPv4: Manually'' and type in a valid IP address. Use the same IP address as the Router IP.
+        </p>
+
+        <div class="col-xs-12" style="margin-bottom: 40px;">
+            <figure>
+                <a href="http://wiki.instar.com/index.php/File:Direktverbindung_MAC_en.jpg" target="_blank">
+                    <img src="http://wiki.instar.com/images/8/8d/Direktverbindung_MAC_en.jpg" class="img-fluid img-rounded" style="box-shadow: 2px 2px 1px #888888;" alt="System Preferences">
+                </a>
+                <figcaption>Go to the '''Sytem Preferences''' and open the '''Ethernet''' configuration.</figcaption>
+            </figure>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <p>
+            Submit the new settings with ''Apply'' and return to the IP Camera Tool.
+        </p>
+
+        <h2>Assign a static IP to your Camera</h2>
+
+        <p class="text-justify">
+            Click on ''IP Config'' and select your camera on the left side. Fill in the IP address for the camera. The address has to be in the same IP subnet you used for your computer in '''step 3''' but has to be different from the address you choose above -
+            e.g. '''just add 1''' to the last octet (see example below)! The Gateway and DNS server will be the IP address of your computer that you set above.
+        </p>
+
+        <p>If you are using a class C network the standard subnet mask is (Subnet Mask: 255.255.255.0).</p>
+
+        <div class="col-xs-12" style="margin-bottom: 40px;">
+            <figure>
+                <a href="http://wiki.instar.com/index.php/File:Direktverbindung_05en.jpg" target="_blank">
+                    <img src="http://wiki.instar.com/images/e/e3/Direktverbindung_05en.jpg" class="img-fluid img-rounded" style="box-shadow: 2px 2px 1px #888888;" alt="INSTAR Camera Tool">
+                </a>
+                <figcaption>Open the IP configuration tab of the INSTAR camera tool and set a valid IP address and submit.</figcaption>
+            </figure>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <p class="text-justify">
+            After submitting the data the camera will restart which takes about 30 seconds. Click on ''Search'' to find the camera again and double-click die camera entry to open the WebUI inside your default browser. If you want to use a different browser, type
+            in the camera´s IP address into your browser´s address line and press ''Return''. You are now able to change the camera´s settings and access the live stream.
+        </p>
+
+        <div class="col-xs-12" style="margin-bottom: 40px;">
+            <figure>
+                <a href="http://wiki.instar.com/index.php/File:Direktverbindung_06en.jpg" target="_blank">
+                    <img src="http://wiki.instar.com/images/3/30/Direktverbindung_06en.jpg" class="img-fluid img-rounded" style="box-shadow: 2px 2px 1px #888888;" alt="INSTAR Camera Tool">
+                </a>
+                <figcaption>Open the camera´s new IP address with your default browser.</figcaption>
+            </figure>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <p class="text-justify">
+            If you choose the direct connection to do the initial WLAN configuration of your camera to integrate it into an existing Wifi network, type in the WLAN information under Network / [[Web User Interface# wiFi|WiFi]] and change the cameras IP address to
+            a free address in the IP subnet that is used inside the wireless network. The camera will then restart - please unplug the LAN cable right after submitting the new IP address to allow the camera to connect to your wireless LAN.
+        </p>
+
+        <!-- ----------------------------------------------------- Related Topics ------------------------------------------- -->
+
+        <section class="mb"><% include partials/content/qiRelated.ejs %></section>
+
+        <!-- ----------------------------------------------------- Footer ------------------------------------------- -->
+
+        <footer><% include partials/template/footer.ejs %></footer>
+        <% include partials/template/jsdefaults.ejs %>
+    </body>
+</html>

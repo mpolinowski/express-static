@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><% include partials/template/head.ejs %></head>
+    <body>
+        <header><% include partials/template/header.ejs %></header>
+        <!-- Navbar-->
+
+        <!-- ----------------------------------------------------- User Accounts ------------------------------------------- -->
+
+        <h2>User Account Management</h2>
+
+        <p class="text-justify">
+            The three different user levels allow you to share access to your camera without the need of granting access to all camera features. Logging in with a limited user right level removes options from the web user interface you don´t want people to have
+            access to. Please be aware that publishing your IP cam as a web cam on your website allow people to get access to your username and password. For publishing your camera access online '''always''' use a account with restricted user rights to keep your
+            camera safe.
+        </p>
+
+        <table>
+            <tr>
+                <th>Administrator</th>
+                <td>This user has all rights and can change all settings.</td>
+            </tr>
+            <tr>
+                <th>User</th>
+                <td>A user can change settings concerning the cameras image but cannot change relevant system settings.</td>
+            </tr>
+            <tr>
+                <th>Guest</th>
+                <td>Guest accounts are used for visitors and can simply display the video stream of the camera. You should use a guest login if you plan to embed the camera´s video stream inside a public website.</td>
+            </tr>
+        </table>
+
+        <p class="text-justify">
+            In order to access the user menu please click ''System'' in the web interface of your IP camera and then choose the sub menu ''Users'' as shown below. We always recommend that you to set a personal password after setting up your camera. This way you
+            make sure no one can access the video stream besides the people you grand access to. The password should consist of BIG and small letters and numbers. Please make sure the password is "not" longer then 12 characters in case of the VGA cameras or 30
+            characters in case of a HD camera. Special characters are possible but please check the characters which are "not" supported. After submitting the set password will be sent to the camera. After that you can sign back in with your newly created
+            password.
+        </p>
+
+        <div class="col-xs-12" style="margin-bottom: 40px;">
+            <figure>
+                <a href="http://wiki.instar.com/index.php/File:Benutzerkonten_HD2_EN.jpg" target="_blank">
+                    <img src="http://wiki.instar.com/images/e/e3/Benutzerkonten_HD2_EN.jpg" class="img-fluid img-rounded" style="box-shadow: 2px 2px 1px #888888;" alt="User Management for INSTAR HD Cameras">
+                </a>
+                <figcaption>User Management Overlay for the HD Line Cameras.</figcaption>
+            </figure>
+        </div>
+
+        <div class="col-xs-12" style="margin-bottom: 40px;">
+            <figure>
+                <a href="http://wiki.instar.com/index.php/File:Benutzerkonten_MJPEG_EN.jpg" target="_blank">
+                    <img src="http://wiki.instar.com/images/4/44/Benutzerkonten_MJPEG_EN.jpg" class="img-fluid img-rounded" style="box-shadow: 2px 2px 1px #888888;" alt="User Management for INSTAR VGA Cameras">
+                </a>
+                <figcaption>User Management Menu for the VGA Line Cameras.</figcaption>
+            </figure>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <h2>Default Logins</h2>
+
+        <h3>HD Camera Series</h3>
+
+        <ul>
+            <li>Administrator</li>
+            <ul>
+                <li>Default Username: ''admin''</li>
+                <li>Default Password: ''instar''</li>
+            </ul>
+            <li>User</li>
+            <ul>
+                <li>Default Username: ''user''</li>
+                <li>Default Password: ''instar''</li>
+            </ul>
+            <li>Guest</li>
+            <ul>
+                <li>Default Username: ''guest''</li>
+                <li>Default Password: ''instar''</li>
+            </ul>
+        </ul>
+
+        <h3>VGA Camera Series</h3>
+
+        <ul>
+            <li>Administrator</li>
+            <ul>
+                <li>Default Username: ''admin''</li>
+                <li>Default Password: ''<strong>none</strong>''</li>
+            </ul>
+        </ul>
+
+        <!-- ----------------------------------------------------- Related Topics ------------------------------------------- -->
+
+        <section class="mb"><% include partials/content/qiRelated.ejs %></section>
+
+        <!-- ----------------------------------------------------- Footer ------------------------------------------- -->
+
+        <footer><% include partials/template/footer.ejs %></footer>
+        <% include partials/template/jsdefaults.ejs %>
+    </body>
+</html>

@@ -102,4 +102,12 @@ quickInstallRouter.route('/Set_Up_A_Wireless_Connection')
           });
       });
 
+/* GET AMP Test Range /amp */
+quickInstallRouter.route('/AMP')
+    .get(function(req, res) {
+        res.render('AMP', {
+            title: 'Accelerated Mobile Page',
+          });
+      });
+
 module.exports = quickInstallRouter;

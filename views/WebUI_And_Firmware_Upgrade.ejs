@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><% include partials/template/head.ejs %></head>
+    <body>
+        <header><% include partials/template/header.ejs %></header>
+        <!-- Navbar-->
+
+        <!-- ----------------------------------------------------- Update ------------------------------------------- -->
+
+        <p class="text-justify">
+            Please download the newest version of the WebUI or Firmware from our website. Go to the <a href="http://download.instar.de">Download</a>
+            section on our website. Please select your camera model and scroll to the end of the page for the corresponding download links. '''Please read the instructions carefully''' to make an informed decision on which Software you have to download. Both updates - web user interface and firmware - can either be done through the INSTAR camera tool or the camera´s webUI and the update procedure is the same for <a href="http://www.instar.de/media/wysiwyg/Products/Software/Camera_Tool_Win/INSTAR_Camera_Tool_2.0.6.msi.zip">Windows</a>, <a href="https://itunes.apple.com/de/app/instar-camera-tool/id584435076?mt=12#">MacOSX</a>
+            and <a href="http://www.instar.de/media/wysiwyg/Products/Software/Camera_Tool_Linux/INSTAR_Camera_Tool_LINUX.zip">LINUX</a> respectively. '''Always update the Firmware first before updating the web user interface'''.
+        </p>
+
+        <iframe width="420" height="315" src="http://www.youtube.com/embed/FmnQAlr4vb0"></iframe>
+
+        <div class="clearfix"></div>
+
+        <p class="text-justify">
+            Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software, but it still shows you the old version ? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers:
+        </p>
+
+        [[Clear Browsing History | How to clear your Browsing History after an Update]]
+
+        <h2>Firmware</h2>
+
+        <p class="text-justify">
+            '''VERY IMPORTANT! For VGA Cameras!''' Please make sure that you are selecting the correct firmware version. You can confirm your firmware version via the web user interface (system/info) or with the INSTAR camera tool. If you are currently using the firmware version starting with xx.25 or xx.22 please make sure you are only downloading updated versions that also start with xx.25 or xx.22. Never install the versions xx.35. or xx.37.!!!
+            <br/>
+            If your firmware is currently starting with xx.35 or xx.37 please make sure that you are using the firmware updates starting with xx.35 or xx.37.
+        </p>
+
+        <hr>
+
+        <h3>HD Series</h3>
+
+        <ul>
+            <li>
+                <a href="http://wiki.instar.com/index.php/How_to_upgrade_to_a_new_WebUI_or_Firmware_(HD_Cameras)">Firmware/WebUI Update</a>
+            </li>
+            <ul>
+                <li>Download the newest Firmware/WebUI from the INSTAR <a href="http://download.instar.com">download page</a>.</li>
+                <li>Open the cameras <a href="http://wiki.instar.com/index.php/HD_Manual_WebUI">web user interface</a> and navigate to Software/Update.</li>
+                <li>Click on ''Choose File'' and select the downloaded ''pkg'' file from step 1 and submit.</li>
+                <li>Wait for the camera to apply the update and reload - '''do not unplug the camera until the update is installed!'''</li>
+            </ul>
+        </ul>
+
+    <h3>VGA Series</h3>
+
+    <ul>
+        <li>
+            <a href="http://wiki.instar.com/index.php/How_to_upgrade_to_a_new_WebUI_or_Firmware_(VGA_Cameras)">Firmware Update</a>
+        </li>
+        <ul>
+            <li>Download the newest Firmware/WebUI from the INSTAR <a href="http://download.instar.com">download page</a>.</li>
+            <li>Open the cameras and navigate to Software/Update.</li>
+            <li>Click on ''Choose File'' next to '''Upgrade Firmware''' and select the downloaded ''bin'' file from step 1 and submit.</li>
+            <li>Wait for the camera to apply the update and reload - '''do not unplug the camera until the update is installed!'''</li>
+        </ul>
+        <li>
+            <a href="http://wiki.instar.com/index.php/How_to_upgrade_to_a_new_WebUI_or_Firmware_(VGA_Cameras)">Web User Interface Update</a>
+        </li>
+        <ul>
+            <li>Download the newest Firmware/WebUI from the INSTAR <a href="http://download.instar.com">download page</a> and unzip the
+            ''bin'' file.</li>
+            <li>Open the cameras and navigate to Software/Update.</li>
+            <li>Click on ''Choose File'' next to '''Upgrade Firmware''' and select the downloaded ''bin'' file from step 1 and submit.</li>
+            <li>Wait for the camera to apply the update and reload - '''do not unplug the camera until the update is installed!'''</li>
+        </ul>
+    </ul>
+
+    <!-- ----------------------------------------------------- Related Topics ------------------------------------------- -->
+
+    <section class="mb"><% include partials/content/qiRelated.ejs %></section>
+
+    <!-- ----------------------------------------------------- Footer ------------------------------------------- -->
+
+    <footer><% include partials/template/footer.ejs %></footer>
+    <% include partials/template/jsdefaults.ejs %>
+</body>
+</html>
