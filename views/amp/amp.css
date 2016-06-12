@@ -1,17 +1,13 @@
-body {
-    background-color: #f2f2f2;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
-}
 amp-img, amp-youtube {
     margin: 5px;
-    box-shadow: 2px 2px 1px #888888;
 }
 amp-img.placeholder {
     background-color: #2a2b30;
 }
+.shadow {
+  box-shadow: 2px 2px 1px #888888;
+}
+
 @-webkit-keyframes grow {
     from {
         -ms-transform: scale(0.2);
@@ -125,11 +121,12 @@ amp-img.placeholder {
     }
 }
 body, html {
-    background-color: #fbfafb;
+    background-color: #f2f2f2;
     font-family: Roboto, verdana, arial, sans-serif;
     margin: 0;
     overflow-x: hidden;
     padding: 66px 0 0;
+    color: #555;
 }
 img {
     border: 0;
@@ -325,7 +322,7 @@ section.hero {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/static/img/background.jpg");
+    background-image: url("/images/background.jpg");
     min-height: 550px;
     padding: 65px 0 0;
     position: relative;
@@ -578,19 +575,7 @@ header .left-nav {
         width: auto;
     }
 }
-header .left-nav .header-title {
-    color: #0379C4;
-    font-family: Roboto, verdana, arial, sans-serif;
-    padding: 15px 10px 15px 50px;
-    margin: 10px 0;
-    width: auto;
-    text-transform: none;
-    white-space: nowrap;
-    background-image: url("/static/img/logo-blue.svg");
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    background-position: center left;
-}
+
 @media only screen and (max-width: 870px) {
     header .left-nav .header-title {
         width: auto;
@@ -611,7 +596,6 @@ header .left-nav .header-title {
     }
 }
 header .alt {
-    padding: 15px 0;
     text-align: right;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1084,6 +1068,7 @@ amp-sidebar ul {
 .home .blade.first .carousel-phone {
     position: absolute;
     top: -78px;
+    decoration: none;
 }
 .home .blade.first .carousel-image {
     height: 480px;
@@ -1290,7 +1275,7 @@ section.blade.blog .tab-container .tab {
     background-color: #fff;
     margin-bottom: 10px;
     color: #333;
-    background-image: url("/static/img/blog-icon.svg");
+    background-image: url("/images/blog-icon.svg");
     background-position: 20px center;
     background-repeat: no-repeat;
     border-radius: 3px;
