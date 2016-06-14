@@ -62,6 +62,30 @@ quickInstallRouter.route('/Alternative_IP_Scanner')
           });
       });
 
+/* GET Angry IP Scanner /Angry_IP_Scanner */
+quickInstallRouter.route('/Angry_IP_Scanner')
+    .get(function(req, res) {
+        res.render('Angry_IP_Scanner', {
+            title: 'Angry IP Scanner',
+          });
+      });
+
+/* GET Fing CLI /Fing_CLI */
+quickInstallRouter.route('/Fing_CLI')
+    .get(function(req, res) {
+        res.render('Fing_CLI', {
+            title: 'Fing IP Scanner - Command Line Interface',
+          });
+      });
+
+/* GET Fing Mobile /Fing_Mobile */
+quickInstallRouter.route('/Fing_Mobile')
+    .get(function(req, res) {
+        res.render('Fing_Mobile', {
+            title: 'Fing IP Scanner - Mobile App',
+          });
+      });
+
 /* GET Language Selection /Language_Selection */
 quickInstallRouter.route('/Language_Selection')
     .get(function(req, res) {

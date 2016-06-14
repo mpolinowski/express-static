@@ -322,10 +322,15 @@ section.hero {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/images/background.jpg");
     min-height: 550px;
     padding: 65px 0 0;
     position: relative;
+}
+section.hero.template {
+    background-image: url("/images/background.jpg");
+}
+section.hero.altIP {
+    background-image: url("/images/background_altIP.jpg");
 }
 section.hero .six.columns {
     display: -webkit-box;
@@ -338,8 +343,11 @@ section.hero .six.columns {
     align-items: center;
 }
 @media only screen and (max-width: 460px) {
-    section.hero {
-        background-image: url("/static/img/background-mobile.jpg");
+    section.hero.template {
+        background-image: url("/images/background-mobile.jpg");
+    }
+    section.hero.altIP {
+        background-image: url("/images/background_altIP-mobile.jpg");
     }
 }
 @media only screen and (max-width: 870px) {
@@ -1737,4 +1745,9 @@ footer .footer-image {
     width: 25px;
     margin-left: 25px;
     float: right;
+}
+footer .footer-text {
+    margin-top: 25px;
+    float: right;
+    font-size: 10px;
 }
