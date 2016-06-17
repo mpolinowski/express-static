@@ -134,4 +134,12 @@ quickInstallRouter.route('/AMP')
           });
       });
 
+/* GET AMP2 Test Range /amp2 */
+quickInstallRouter.route('/AMP2')
+    .get(function(req, res) {
+        res.render('AMP2', {
+            title: 'Accelerated Mobile Page 2',
+          });
+      });
+
 module.exports = quickInstallRouter;

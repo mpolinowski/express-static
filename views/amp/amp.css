@@ -1,13 +1,18 @@
 amp-img, amp-youtube {
     margin: 5px;
 }
+.margin {
+    margin: 40px 0 40px 0;
+}
 amp-img.placeholder {
     background-color: #2a2b30;
 }
 .shadow {
   box-shadow: 2px 2px 1px #888888;
 }
-
+.justify {
+  text-align: justify;
+}
 @-webkit-keyframes grow {
     from {
         -ms-transform: scale(0.2);
@@ -189,28 +194,28 @@ figure {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
 }
-h1 {
+h2 {
     color: #0379C4;
     font-size: 36px;
     font-weight: 300;
 }
 @media only screen and (max-width: 870px) {
-    h1 {
+    h2 {
         font-size: 30px;
         line-height: 40px;
     }
 }
 @media only screen and (max-width: 350px) {
-    h1 {
+    h2 {
         font-size: 24px;
     }
 }
-h2 {
+h1 {
     font-size: 43px;
     margin-bottom: 20px;
 }
 @media only screen and (max-width: 870px) {
-    h2 {
+    h1 {
         font-size: 30px;
         line-height: 40px;
     }
