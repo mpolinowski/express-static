@@ -57,6 +57,10 @@ p {
   color: #0275d8;
 }
 
+.nav-link {
+  font-weight: 500;
+}
+
 /* Links */
 
 a {
