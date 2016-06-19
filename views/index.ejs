@@ -5,66 +5,179 @@
 
     <body>
 
-      <div id="wrapper">
+        <div id="wrapper">
 
-        <header><% include partials/template/header.ejs %></header>
-        <!-- Navbar-->
+            <header><% include partials/template/header.ejs %></header>
+            <!-- Navbar-->
 
-        <!-- ############################################# Landing ############################################# -->
+            <!-- ############################################# Landing ############################################# -->
 
-        <section class="landing">
-            <div class="container">
-                <div class="row center-block">
-                    <div class="col-xs-8 col-xs-offset-2">
-                        <a href="/Quick_Installation"><h1 class="headline"><%= title %></h1></a>
-                        <hr>
-                        <h2 class="subheader">Knowledgebase for IP Cameras and Surveillance Networks</h2>
+            <section class="landing">
+                <div class="container">
+                    <div class="row center-block">
+                        <div class="col-xs-8 col-xs-offset-2">
+                            <h1 class="headline hidden-sm-down">INSTAR Wiki</h1>
+                            <h1 class="mobile-headline hidden-md-up">INSTAR Wiki 2.0</h1>
+                            <hr>
+                            <h2 class="subheader hidden-sm-down">Knowledgebase for IP Cameras and Surveillance Networks</h2>
+                            <h3 class="subheader hidden-md-up">Knowledge Database</h3>
+                        </div>
                     </div>
+                    <!-- /row -->
                 </div>
-                <!-- /row -->
+                <!-- /container -->
+            </section>
+            <!-- /landing -->
+
+            <section class="instarvision"><% include partials/content/instarvision.ejs %></section>
+            <!-- /instarvision -->
+
+            <!-- #############################################  Gallery ############################################# -->
+
+            <div class="row center-block mt">
+                <div class="col-md-4 col-md-offset-4 centered">
+                    <h2>
+                        <span class="headline hidden-sm-down">Wiki Topics</span>
+                        <span class="bluehead hidden-md-up">Wiki Topics</span>
+                    </h2>
+                </div>
             </div>
-            <!-- /container -->
-        </section>
-        <!-- /landing -->
 
-        <section class="instarvision"><% include partials/content/instarvision.ejs %></section>
-        <!-- /instarvision -->
+            <!-- #############################################  Quick-Installation ############################################# -->
+            <section class="container mb">
+                <div class="row mt grid">
 
-        <!-- #############################################  Gallery ############################################# -->
+                    <div class="row center-block mb">
+                        <div class="col-md-4 col-md-offset-4 centered">
+                            <hr>
+                            <h4>
+                                <span class="text-muted">Quick-Installation</span>
+                            </h4>
+                        </div>
+                    </div>
 
-        <div class="row center-block mt">
-            <div class="col-md-4 col-md-offset-4 centered">
-                <h2>
-                    <span class="headline">Wiki Topics</span>
-                </h2>
-            </div>
+                    <div class="clearfix mt"></div>
+
+                    <div class="row mb center-block">
+                        <div class="col-lg-7 col-lg-offset-1 mt">
+                            <p class="lead">INSTAR offers a Installation Wizard, that will lead you through the first steps of the camera installation.</p>
+                        </div>
+
+                        <div class="col-lg-3 mt">
+                            <p>
+                                <a href="http://install.instar.de" target="_blank">
+                                    <button type="button" class="btn btn-primary btn-lg">Installation Wizard</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Quick_Installation/First_Steps"><img src="http://placehold.it/300x300" alt="First Steps" class="img-fluid"></a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Quick_Installation/Direct_LAN_Connection"><img src="http://placehold.it/300x300" alt="Direct LAN Connection" class="img-fluid"></a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Quick_Installation/WebUI_And_Firmware_Upgrade"><img src="http://placehold.it/300x300" alt="Alternative IP Scanner" class="img-fluid"></a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Quick_Installation/Creating_User_Account"><img src="http://placehold.it/300x300" alt="Creating User Accounts" class="img-fluid"></a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Quick_Installation/Set_Up_A_Wireless_Connection"><img src="http://placehold.it/300x300" alt="Setup a Wireless Connection" class="img-fluid"></a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Quick_Installation"><img src="/images/Wiki_Tiles_QI-Overview.jpg" alt="Quickinstallation Overview" class="img-fluid"></a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="webui mb"><% include partials/content/webui.ejs %></section>
+            <!-- /webui -->
+
+            <!-- #############################################  Internet Access ############################################# -->
+
+            <section class="container mb">
+                <div class="row centered mt grid">
+
+                    <div class="row center-block mb">
+                        <div class="col-md-4 col-md-offset-4 centered ">
+                            <hr>
+                            <h4>
+                                <span class="text-muted">Internet Access</span>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Internet_Access/DDNS_Service"><img src="http://placehold.it/300x300" alt="The DDNS Service" class="img-fluid"></a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Internet_Access/Port_Forwarding"><img src="http://placehold.it/300x300" alt="Port_Forwarding" class="img-fluid"></a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Internet_Access"><img src="/images/Wiki_Tiles_IA-Overview.jpg" alt="Internet Access Overview" class="img-fluid"></a>
+                    </div>
+
+                </div>
+            </section>
+            <!-- /internetaccess -->
+
+            <!-- #############################################  Motion Detection ############################################# -->
+
+            <section class="container mb">
+                <div class="row centered mt grid">
+
+                    <div class="row center-block mb">
+                        <div class="col-md-4 col-md-offset-4 centered ">
+                            <hr>
+                            <h4>
+                                <span class="text-muted">Motion Detection</span>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Motion_Detection/Motion_Detection_Setup"><img src="http://placehold.it/300x300" alt="Motion Detection Setup" class="img-fluid"></a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Motion_Detection/Alarm_Notification"><img src="http://placehold.it/300x300" alt="Alarm Notification" class="img-fluid"></a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-4 mb">
+                        <a href="/Motion_Detection"><img src="/images/Wiki_Tiles_MD-Overview.jpg" alt="Motion Detection Overview" class="img-fluid"></a>
+                    </div>
+
+                </div>
+            </section>
+            <!-- /motiondetection -->
+
+            <!-- #############################################  Products ############################################# -->
+
+            <section class="products"><% include partials/content/products.ejs %></section>
+            <!-- /products -->
+
+            <section class="social"><% include partials/template/social.ejs %></section>
+            <!-- /social -->
+
+            <!-- ############################################# Footer ############################################# -->
+
+            <footer><% include partials/template/footer.ejs %></footer>
+
+            <% include partials/template/jsdefaults.ejs %>
+
         </div>
-
-        <section class="container mb"><% include partials/content/gallery_quickinstallation.ejs %></section>
-        <!-- /quickinstallation -->
-
-        <section class="webui mb"><% include partials/content/webui.ejs %></section>
-        <!-- /webui -->
-
-        <section class="container mb"><% include partials/content/gallery_internetaccess.ejs %></section>
-        <!-- /internetaccess -->
-
-        <section class="container mb"><% include partials/content/gallery_motiondetection.ejs %></section>
-        <!-- /motiondetection -->
-
-        <section class="products"><% include partials/content/products.ejs %></section>
-        <!-- /products -->
-
-        <section class="social"><% include partials/template/social.ejs %></section>
-        <!-- /social -->
-
-        <!-- ############################################# Footer ############################################# -->
-
-        <footer><% include partials/template/footer.ejs %></footer>
-
-        <% include partials/template/jsdefaults.ejs %>
-
-        </div> <!-- /Wrapper -->
+        <!-- /Wrapper -->
 
     </body>
 

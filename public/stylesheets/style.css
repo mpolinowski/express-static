@@ -45,11 +45,16 @@ p {
     padding-bottom: 20px;
 }
 .headline {
-    margin-top: 50px;
-    font-size: 70px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #0275d8;
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #0275d8;
+}
+.mobile-headline {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #0275d8;
 }
 
 /* Links */
@@ -115,7 +120,7 @@ a:before, a:after {
     padding-bottom: 250px;
     text-align: center;
 }
-.landing .headline {
+.landing {
     font-size: 90px;
     font-weight: 700;
     letter-spacing: 3px;
