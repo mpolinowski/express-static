@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/indexRoutes');
 var quickInstallRouter = require('./routes/quickInstallRoutes');
+var internetAccessRouter = require('./routes/internetAccessRoutes');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/Quick_Installation/', quickInstallRouter);
+app.use('/Internet_Access/', internetAccessRouter);
 
 // Catch 404 and forward to error handler
 app.use(function(req, res, next) {

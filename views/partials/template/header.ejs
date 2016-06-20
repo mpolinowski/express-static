@@ -2,6 +2,7 @@
     <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#CollapsingNav">
         &#9776;
     </button>
+    <!-- Logo -->
     <a class="hidden-lg-up pull-right" href="/">
         <img src="http://wiki.instar.de/instar_245x77.png" class="img-fluid glow" style="max-height: 30px;" alt="INSTAR Deutschland GmbH"/>
     </a>
@@ -9,6 +10,7 @@
         <a class="navbar-brand  hidden-md-down" href="/">
             <img src="http://wiki.instar.de/instar_245x77.png" class="img-fluid glow" style="max-height: 30px;" alt="INSTAR Deutschland GmbH"/>
         </a>
+        <!-- Inline List Navigation -->
         <ul class="nav navbar-nav hidden-md-down">
             <li class="nav-item" style="padding-left: 15px;">
                 <a class="nav-link" href="/Products">Products</a>
@@ -23,23 +25,30 @@
                 <a class="nav-link" href="/Motion_Detection">Motion Detection</a>
             </li>
         </ul>
-        <ul class="nav navbar-nav hidden-md-up mt">
-            <li class="nav-item">
-                <a href="/" class="nav-link"><button class="btn btn-primary" type="button">Home</button></a>
-            </li>
-            <li class="nav-item">
-                <a href="/Products" class="nav-link"><button class="btn btn-primary" type="button">Products</button></a>
-            </li>
-            <li class="nav-item">
-                <a href="/Quick_Installation" class="nav-link"><button class="btn btn-primary" type="button">Quickinstallation</button></a>
-            </li>
-            <li class="nav-item">
-                <a href="/Internet_Access" class="nav-link"><button class="btn btn-primary" type="button">Internet Access</button></a>
-            </li>
-            <li class="nav-item">
-                <a href="/Motion_Detection" class="nav-link"><button class="btn btn-primary" type="button">Motion Detection</button></a>
-            </li>
-        </ul>
+        <!-- Button Navigation for Mobile -->
+        <div class="container hidden-md-up mt">
+            <a href="/">
+                <button class="btn btn-primary btn-lg btn-block" type="button">Home</button>
+            </a>
+            <br/>
+            <a href="/Products">
+                <button class="btn btn-primary btn-lg btn-block" type="button">Products</button>
+            </a>
+            <br/>
+            <a href="/Quick_Installation">
+                <button class="btn btn-primary btn-lg btn-block" type="button">Quick-Installation</button>
+            </a>
+            <br/>
+            <a href="/Internet_Access">
+                <button class="btn btn-primary btn-lg btn-block" type="button">Internet Access</button>
+            </a>
+            <br/>
+            <a href="/Motion_Detection">
+                <button class="btn btn-primary btn-lg btn-block" type="button">Motion Detection</button>
+            </a>
+            <br/>
+        </div>
+        <!-- Search -->
         <form class="form-inline pull-xs-right hidden-md-down">
             <input class="form-control" type="text" placeholder="Search">
             <button class="btn btn-primary-outline" type="submit">Search</button>
