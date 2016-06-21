@@ -6,8 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/indexRoutes');
+var searchRouter = require('./routes/searchRoutes');
 var quickInstallRouter = require('./routes/quickInstallRoutes');
 var internetAccessRouter = require('./routes/internetAccessRoutes');
+var motionDetectionRouter = require('./routes/motionDetectionRoutes');
 
 var app = express();
 
@@ -27,8 +29,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/Search', searchRouter);
 app.use('/Quick_Installation/', quickInstallRouter);
 app.use('/Internet_Access/', internetAccessRouter);
+app.use('/Motion_Detection/', motionDetectionRouter);
 
 // Catch 404 and forward to error handler
 app.use(function(req, res, next) {

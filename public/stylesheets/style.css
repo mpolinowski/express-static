@@ -116,6 +116,15 @@ a:before, a:after {
     transform: translate(0px, -1px);
 }
 
+/* Search */
+
+.search {
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 350px;
+    text-align: center;
+}
+
 /* Landing */
 
 .landing {
