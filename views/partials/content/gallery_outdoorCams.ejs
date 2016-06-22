@@ -1,0 +1,22 @@
+<section class="row mt grid">
+
+    <div class="row center-block mb">
+        <div class="col-md-4 col-md-offset-4 centered mt">
+            <h4>
+                <span class="text-muted">Outdoor Cameras</span>
+            </h4>
+            <hr>
+        </div>
+    </div>
+
+    <!-- Take Images from gallery-quickinstallation.json for Gallery -->
+
+    <% if (outdoorPic.length > 0) { %>
+        <% for (i=1; i<outdoorPic.length; i++) { %>
+            <div class="col-xs-6 col-lg-4 mb">
+                <a href="/Quick_Installation/<%= outdoorUrl[i] %>"><img src="<%= outdoorPic[i] %>" alt="<%= outdoorPicAlt[i] %>" class="img-fluid"></a>
+            </div>
+        <% } %>
+    <% } %>
+
+</section>

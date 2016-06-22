@@ -4,7 +4,7 @@ var indexRouter = express.Router();
 /* GET home page. */
 indexRouter.route('/')
     .get(function(req, res) {
-        res.render('index', {
+        res.render('Index', {
             title: 'INSTAR Wiki',
           });
       });

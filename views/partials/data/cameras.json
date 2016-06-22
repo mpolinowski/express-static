@@ -1,0 +1,115 @@
+{
+    "articles": [{
+        "indoormodel": "IN-3001",
+        "indoorVideoSrc": "#",
+        "indoorVideoAlt": "IN-3001 Indoor IP Camera",
+        "indoorUrl": "IN-3001",
+        "indoorPic": ["http://placehold.it/300x300"],
+        "indoorPicAlt": "IN-3001 Indoor IP Camera"
+    }, {
+        "indoormodel": "IN-3003",
+        "indoorVideoSrc": "#",
+        "indoorVideoAlt": "IN-3003 Indoor IP Camera",
+        "indoorUrl": "IN-3003",
+        "indoorPic": ["http://placehold.it/300x300"],
+        "indoorPicAlt": "IN-3003 Indoor IP Camera"
+    }, {
+        "indoormodel": "IN-3010",
+        "indoorVideoSrc": "#",
+        "indoorVideoAlt": "IN-3010 Indoor IP Camera",
+        "indoorUrl": "IN-3010",
+        "indoorPic": ["http://placehold.it/300x300"],
+        "indoorPicAlt": "IN-3010 Indoor IP Camera"
+    }, {
+        "indoormodel": "IN-3011",
+        "indoorVideoSrc": "#",
+        "indoorVideoAlt": "IN-3011 Indoor IP Camera",
+        "indoorUrl": "IN-3011",
+        "indoorPic": ["http://placehold.it/300x300"],
+        "indoorPicAlt": "IN-3011 Indoor IP Camera"
+    }, {
+        "indoormodel": "IN-6001 HD",
+        "indoorVideoSrc": "#",
+        "indoorVideoAlt": "IN-6001 HD Indoor IP Camera",
+        "indoorUrl": "IN-6001_HD",
+        "indoorPic": ["http://placehold.it/300x300"],
+        "indoorPicAlt": "IN-6001 HD Indoor IP Camera"
+    }, {
+        "indoormodel": "IN-6012 HD",
+        "indoorVideoSrc": "https://www.youtube.com/watch?v=qh4-5yQBXlo",
+        "indoorVideoAlt": "IN-6012 HD Indoor IP Camera",
+        "indoorUrl": "IN-6012_HD",
+        "indoorPic": ["http://placehold.it/300x300"],
+        "indoorPicAlt": "IN-6012 HD Indoor IP Camera"
+    }, {
+        "indoormodel": "IN-6014 HD",
+        "indoorVideoSrc": "#",
+        "indoorVideoAlt": "IN-6014 HD Indoor IP Camera",
+        "indoorUrl": "IN-6014_HD",
+        "indoorPic": ["http://placehold.it/300x300"],
+        "indoorPicAlt": "IN-6014 HD Indoor IP Camera"
+    }, {
+        "outdoormodel": "IN-2904",
+        "outdoorVideoSrc": "#",
+        "outdoorVideoAlt": "IN-2904 Outdoor IP Camera",
+        "outdoorUrl": "IN-2904",
+        "outdoorPic": ["http://placehold.it/300x300"],
+        "outdoorPicAlt": "IN-2904 Outdoor IP Camera"
+    }, {
+        "outdoormodel": "IN-2905",
+        "outdoorVideoSrc": "#",
+        "outdoorVideoAlt": "IN-2905 Outdoor IP Camera",
+        "outdoorUrl": "IN-2905",
+        "outdoorPic": ["http://placehold.it/300x300"],
+        "outdoorPicAlt": "IN-2905 Outdoor IP Camera"
+    }, {
+        "outdoormodel": "IN-2908",
+        "outdoorVideoSrc": "#",
+        "outdoorVideoAlt": "IN-2908 Outdoor IP Camera",
+        "outdoorUrl": "IN-2908",
+        "outdoorPic": ["http://placehold.it/300x300"],
+        "outdoorPicAlt": "IN-2908 Outdoor IP Camera"
+    }, {
+        "outdoormodel": "IN-4009",
+        "outdoorVideoSrc": "#",
+        "outdoorVideoAlt": "IN-4009 Outdoor IP Camera",
+        "outdoorUrl": "IN-4009",
+        "outdoorPic": ["http://placehold.it/300x300"],
+        "outdoorPicAlt": "IN-4009 Outdoor IP Camera"
+    }, {
+        "outdoormodel": "IN-4010",
+        "outdoorVideoSrc": "#",
+        "outdoorVideoAlt": "IN-4010 Outdoor IP Camera",
+        "outdoorUrl": "IN-4010",
+        "outdoorPic": ["http://placehold.it/300x300"],
+        "outdoorPicAlt": "IN-4010 Outdoor IP Camera"
+    }, {
+        "outdoormodel": "IN-4011",
+        "outdoorVideoSrc": "#",
+        "outdoorVideoAlt": "IN-4011 Outdoor IP Camera",
+        "outdoorUrl": "IN-4011",
+        "outdoorPic": ["http://placehold.it/300x300"],
+        "outdoorPicAlt": "IN-4011 Outdoor IP Camera"
+    }, {
+        "outdoormodel": "IN-5905 HD",
+        "outdoorVideoSrc": ["https://www.youtube.com/watch?v=HVYMYqL9hSI","https://www.youtube.com/watch?v=KegrdIwAZsI","https://www.youtube.com/watch?v=82jjlxpPR4U","https://www.youtube.com/watch?v=gstSX6QZBFo","https://www.youtube.com/watch?v=boee4eFuJSw"],
+        "outdoorVideoAlt": "IN-5905 HD Outdoor IP Camera",
+        "outdoorUrl": "IN-5905_HD",
+        "outdoorPic": ["http://placehold.it/300x300"],
+        "outdoorPicAlt": "IN-5905 HD Outdoor IP Camera"
+    }, {
+        "outdoormodel": "IN-5907 HD",
+        "outdoorVideoSrc": ["https://www.youtube.com/watch?v=QP01JnzNlss","https://www.youtube.com/watch?v=L_nR9qY7-8I","https://www.youtube.com/watch?v=rF60Sh863yc","https://www.youtube.com/watch?v=UxnCqE1YU0k","https://www.youtube.com/watch?v=qTNFJKNBgRo","https://www.youtube.com/watch?v=c136CT0SypU","https://www.youtube.com/watch?v=RIE2TjE_JCg","https://www.youtube.com/watch?v=JUT4XxssAfA"],
+        "outdoorVideoAlt": "IN-5907 HD Outdoor IP Camera",
+        "outdoorUrl": "IN-5907_HD",
+        "outdoorPic": ["http://placehold.it/300x300"],
+        "outdoorPicAlt": "IN-5907 HD Outdoor IP Camera"
+    }, {
+        "outdoormodel": "IN-7011 HD",
+        "outdoorVideoSrc": ["https://www.youtube.com/watch?v=9JCRp329I0I","https://www.youtube.com/watch?v=dOYGMS6R838","https://www.youtube.com/watch?v=Ogx0_Ag-eVw","https://www.youtube.com/watch?v=bJr4_hJ_l6U","https://www.youtube.com/watch?v=m22JBnvRY80"],
+        "outdoorVideoAlt": "IN-7011 HD Outdoor IP Camera",
+        "outdoorUrl": "IN-7011_HD",
+        "outdoorPic": ["http://placehold.it/300x300"],
+        "outdoorPicAlt": "IN-7011 HD Outdoor IP Camera"
+    }]
+}

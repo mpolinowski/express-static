@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/indexRoutes');
 var searchRouter = require('./routes/searchRoutes');
+var productRouter = require('./routes/productRoutes');
 var quickInstallRouter = require('./routes/quickInstallRoutes');
 var internetAccessRouter = require('./routes/internetAccessRoutes');
 var motionDetectionRouter = require('./routes/motionDetectionRoutes');
@@ -30,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/Search', searchRouter);
+app.use('/Products', productRouter);
 app.use('/Quick_Installation/', quickInstallRouter);
 app.use('/Internet_Access/', internetAccessRouter);
 app.use('/Motion_Detection/', motionDetectionRouter);
