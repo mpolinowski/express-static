@@ -152,7 +152,7 @@ p {
     line-height: 24px;
 }
 ul {
-    list-style-type: none;
+    list-style-type: circle;
 }
 ul li {
     color: #757575;

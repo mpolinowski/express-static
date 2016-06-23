@@ -2,7 +2,7 @@
 <html ⚡>
     <head>
         <% include amp/amp-head.ejs %>
-        <link rel="canonical" href="/Quick-Installation/WebUI_And_Firmware_Upgrade">
+        <link rel="canonical" href="/Quick-Installation/WebUI_And_Firmware_Upgrade_HD">
     </head>
 
     <body class="home">
@@ -18,7 +18,7 @@
                         </div>
                         <div class="right alt">
 
-                            <a href="/Quick_Installation/" class="tab header-title">
+                            <a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/" class="tab header-title">
                                 <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
                             </a>
                         </div>
@@ -37,11 +37,17 @@
 
                     <div class="margin">
                         <h1>Software Update</h1>
-                        <h4>Install the newest Firmware and Web User Interface on your IP Camera</h4>
+                        <h4>Install the newest Firmware and Web User Interface on your HD IP Camera</h4>
                         <p class="text-justify">
                             Please download the newest version of the WebUI or Firmware from our website. Go to the <a href="http://download.instar.de">Download</a> section on our website. Please select your camera model and scroll to the end of the page for the corresponding download links. '''Please read the instructions carefully''' to make an informed decision on which Software you have to download. Both updates - web user interface and firmware - can either be done through the INSTAR camera tool or the camera´s webUI and the update procedure is the same for <a href="http://www.instar.de/media/wysiwyg/Products/Software/Camera_Tool_Win/INSTAR_Camera_Tool_2.0.6.msi.zip">Windows</a>, <a href="https://itunes.apple.com/de/app/instar-camera-tool/id584435076?mt=12#">MacOSX</a>
-                            and <a href="http://www.instar.de/media/wysiwyg/Products/Software/Camera_Tool_Linux/INSTAR_Camera_Tool_LINUX.zip">LINUX</a> respectively. '''Always update the Firmware first before updating the web user interface'''.
+                            and <a href="http://www.instar.de/media/wysiwyg/Products/Software/Camera_Tool_Linux/INSTAR_Camera_Tool_LINUX.zip">LINUX</a>.
                         </p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <amp-img src="/images/Download_WebUI_Firmware_en.png" width=1000 height=626 layout="responsive" class="shadow"></amp-img>
+                        <p>Download the newest Firmware and WebUI files from <a href="http://download.instar.com">download.instar.com</a></p>
                     </div>
                     <!-- /margin -->
 
@@ -53,40 +59,37 @@
                     <!-- /margin -->
 
                     <div class="margin">
+                        <h2>Update via the WebUI</h2>
                         <p class="text-justify">
-                          <strong>VERY IMPORTANT! For VGA Cameras!</strong> Please make sure that you are selecting the correct firmware version. You can confirm your firmware version via the web user interface (system/info) or with the INSTAR camera tool. If you are currently using the firmware version starting with xx.25 or xx.22 please make sure you are only downloading updated versions that also start with xx.25 or xx.22. Never install the versions xx.35. or xx.37.!!! If your firmware is currently starting with xx.35 or xx.37 please make sure that you are using the firmware updates starting with xx.35 or xx.37.
+                            To update the camera through the <a href="http://wiki.instar.com/index.php/HD_Manual_WebUI_Software">web user interface</a> simply open the <a href="http://wiki.instar.com/index.php/HD_Manual_WebUI_Software_Update">Update Menu</a> and click on <em>Choose File</em> to upload the <em>pkg update file</em> you downloaded earlier. After selecting the file click on submit to start the update. Please wait for the camera to reboot and reload the user interface. <strong>Never unplug the camera during this process!</strong>
+                            <amp-img src="/images/Update-WebUI-HD-01.png" width=432 height=364 layout="responsive" class="shadow"></amp-img>
+                            <p>Choose the pkg file you downloaded earlier and click on submit.</p>
                         </p>
                     </div>
                     <!-- /margin -->
 
                     <div class="margin">
-                        <h2>HD Series</h2>
-                        <h3><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/HD_Cameras">Firmware/WebUI Update</a></h3>
-                        <ul>
-                          <li>Download the newest Firmware/WebUI from the INSTAR <a href="http://download.instar.com">download page</a>.</li>
-                          <li>Open the cameras <a href="http://wiki.instar.de/index.php/HD_Manual_WebUI">web user interface</a> and navigate to Software/Update.</li>
-                          <li>Click on <em>Choose File</em> and select the downloaded <em>pkg</em> file from step 1 and submit.</li>
-                          <li>Wait for the camera to apply the update and reload - <em>do not unplug the camera until the update is installed!</em></li>
-                        </ul>
+                        <h2>Update via the Camera Tool</h2>
+                        <amp-img src="/images/Update-CamTool-01.png" width=641 height=386 layout="responsive" class="shadow"></amp-img>
+                        <p>Start the INSTAR camera tool and open the <em>Update</em> tab.</p>
                     </div>
                     <!-- /margin -->
 
                     <div class="margin">
-                        <h2>VGA Series</h2>
-                        <h3><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/VGA_Cameras">Firmware Update</a></h3>
-                        <ul>
-                          <li>Download the newest Firmware from the INSTAR <a href="http://download.instar.com">download page</a>.</li>
-                          <li>Open the cameras web user interface and navigate to Software/Update.</li>
-                          <li>Click on <em>Choose File</em> next to <em>Upgrade Firmware</em> and select the downloaded <em>bin</em> file from step 1 and submit.</li>
-                          <li>Wait for the camera to apply the update and reload - <em>do not unplug the camera until the update is installed!</em></li>
-                        </ul>
-                        <h3><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/VGA_Cameras">WebUI Update</a></h3>
-                        <ul>
-                          <li>Download the newest WebUI from the INSTAR <a href="http://download.instar.com">download page</a>.</li>
-                          <li>Open the cameras web user interface and navigate to Software/Update.</li>
-                          <li>Click on <em>Choose File</em> next to <em>Upgrade WebUI</em> and select the downloaded <em>bin</em> file from step 1 and submit.</li>
-                          <li>Wait for the camera to apply the update and reload - <em>do not unplug the camera until the update is installed!</em></li>
-                        </ul>
+                        <amp-img src="/images/Update-CamTool-02.png" width=641 height=383 layout="responsive" class="shadow"></amp-img>
+                        <p>Press the <em>Search</em> button and choose your camera from the list above. Type in your login user name and password for the camera.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <amp-img src="/images/Update-CamTool-03.png" width=642 height=608 layout="responsive" class="shadow"></amp-img>
+                        <p>Click on <em>Browse</em> button and select the <em>Firmware/WebUI pkg</em> file you downloaded earlier. Press <em>Open</em> to confirm your selection.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <amp-img src="/images/Update-CamTool-04.png" width=639 height=381 layout="responsive" class="shadow"></amp-img>
+                        <p>Click on <em>Submit</em> to upload the <em>Firmware/WebUI pkg</em> file to the camera. Please wait for the camera to install the new software and to reboot. This process might take up to 5min - <strong>please makes sure never to unplug the camera before the update process completed!</strong></p>
                     </div>
                     <!-- /margin -->
 

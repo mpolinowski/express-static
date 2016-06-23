@@ -63,7 +63,7 @@ quickInstallRouter.route('/Alternative_IP_Scanner')
       });
 
 /* GET Angry IP Scanner /Angry_IP_Scanner */
-quickInstallRouter.route('/Angry_IP_Scanner')
+quickInstallRouter.route('/Alternative_IP_Scanner/Angry_IP_Scanner')
     .get(function(req, res) {
         res.render('Angry_IP_Scanner', {
             title: 'Angry IP Scanner',
@@ -71,7 +71,7 @@ quickInstallRouter.route('/Angry_IP_Scanner')
       });
 
 /* GET Fing CLI /Fing_CLI */
-quickInstallRouter.route('/Fing_CLI')
+quickInstallRouter.route('/Alternative_IP_Scanner/Fing_CLI')
     .get(function(req, res) {
         res.render('Fing_CLI', {
             title: 'Fing IP Scanner - Command Line Interface',
@@ -79,7 +79,7 @@ quickInstallRouter.route('/Fing_CLI')
       });
 
 /* GET Fing Mobile /Fing_Mobile */
-quickInstallRouter.route('/Fing_Mobile')
+quickInstallRouter.route('/Alternative_IP_Scanner/Fing_Mobile')
     .get(function(req, res) {
         res.render('Fing_Mobile', {
             title: 'Fing IP Scanner - Mobile App',
@@ -110,11 +110,75 @@ quickInstallRouter.route('/WebUI_And_Firmware_Upgrade')
           });
       });
 
-/* GET How to clear your Browsing History /WebUI_And_Firmware_Upgrade */
+/* GET /WebUI_And_Firmware_Upgrade_HD */
+quickInstallRouter.route('/WebUI_And_Firmware_Upgrade/HD_Cameras')
+    .get(function(req, res) {
+        res.render('WebUI_And_Firmware_Upgrade_HD', {
+            title: 'WebUI and Firmware Upgrade for HD Cameras',
+          });
+      });
+
+/* GET /WebUI_And_Firmware_Upgrade_VGA */
+quickInstallRouter.route('/WebUI_And_Firmware_Upgrade/VGA_Cameras')
+    .get(function(req, res) {
+        res.render('WebUI_And_Firmware_Upgrade_VGA', {
+            title: 'WebUI and Firmware Upgrade for VGA Cameras',
+          });
+      });
+
+/* GET /How_To_Clear_Your_Browsing_History */
 quickInstallRouter.route('/How_To_Clear_Your_Browsing_History')
     .get(function(req, res) {
         res.render('How_To_Clear_Your_Browsing_History', {
             title: 'How to clear your Browsing History',
+          });
+      });
+
+/* GET /Internet_Explorer */
+quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Internet_Explorer')
+    .get(function(req, res) {
+        res.render('How_To_Clear_Your_Browsing_History_Internet_Explorer', {
+            title: 'How to clear your Browsing History Internet Explorer',
+          });
+      });
+
+/* GET /Mozilla_Firefox */
+quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Mozilla_Firefox')
+    .get(function(req, res) {
+        res.render('How_To_Clear_Your_Browsing_History_Mozilla_Firefox', {
+            title: 'How to clear your Browsing History Mozilla Firefox',
+          });
+      });
+
+/* GET /Google_Chromium */
+quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Google_Chromium')
+    .get(function(req, res) {
+        res.render('How_To_Clear_Your_Browsing_History_Google_Chromium', {
+            title: 'How to clear your Browsing History Google Chromium',
+          });
+      });
+
+/* GET /Opera */
+quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Opera')
+    .get(function(req, res) {
+        res.render('How_To_Clear_Your_Browsing_History_Opera', {
+            title: 'How to clear your Browsing History Opera',
+          });
+      });
+
+/* GET /Microsoft_Edge */
+quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Microsoft_Edge')
+    .get(function(req, res) {
+        res.render('How_To_Clear_Your_Browsing_History_Microsoft_Edge', {
+            title: 'How to clear your Browsing History Microsoft Edge',
+          });
+      });
+
+/* GET /Vivaldi */
+quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Vivaldi')
+    .get(function(req, res) {
+        res.render('How_To_Clear_Your_Browsing_History_Vivaldi', {
+            title: 'How to clear your Browsing History Vivaldi',
           });
       });
 
