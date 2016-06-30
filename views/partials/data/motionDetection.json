@@ -4,49 +4,49 @@
             "mdVideoSrc": "#",
             "mdVideoAlt": "Motion Detection Setup",
             "mdUrl": "Motion_Detection_Setup",
-            "mdPic": ["http://placehold.it/300x300"],
+            "mdPic": "/images/Wiki_Tiles_MD-Motion-Detection-Setup.jpg",
             "mdPicAlt": "Motion Detection Setup"
         }, {
             "mdTitle": "Email Setup and Alarm Notification",
             "mdVideoSrc": "#",
             "mdVideoAlt": "Email Setup and Alarm Notification",
             "mdUrl": "Alarm_Notification",
-            "mdPic": ["http://placehold.it/300x300"],
+            "mdPic": "/images/Wiki_Tiles_MD-Alarm-Notification.jpg",
             "mdPicAlt": "Email Setup and Alarm Notification"
         }, {
             "mdTitle": "Alarm Recording",
             "mdVideoSrc": "#",
             "mdVideoAlt": "Alarm Recording",
             "mdUrl": "Alarm_Recording",
-            "mdPic": ["http://placehold.it/300x300"],
+            "mdPic": "/images/Wiki_Tiles_MD-Alarm-Rec.jpg",
             "mdPicAlt": "Alarm Recording"
         }, {
             "mdTitle": "How to Access your SD Card",
             "mdVideoSrc": "#",
             "mdVideoAlt": "How to Access your SD Card",
             "mdUrl": "SD_Card_Access",
-            "mdPic": ["http://placehold.it/300x300"],
+            "mdPic": "/images/Wiki_Tiles_MD-SD-Card.jpg",
             "mdPicAlt": "How to Access your SD Card"
         }, {
             "mdTitle": "Alarm Upload / FTP Settings",
             "mdVideoSrc": "#",
             "mdVideoAlt": "Alarm Upload / FTP Settings",
             "mdUrl": "Alarm_FTP_Upload",
-            "mdPic": ["http://placehold.it/300x300"],
+            "mdPic": "/images/Wiki_Tiles_MD-FTP-Upload.jpg",
             "mdPicAlt": "Alarm Upload / FTP Settings"
         }, {
             "mdTitle": "FTP Server Setup",
             "mdVideoSrc": "#",
             "mdVideoAlt": "FTP Server Setup",
             "mdUrl": "FTP_Server_Setup",
-            "mdPic": ["http://placehold.it/300x300"],
+            "mdPic": "/images/Wiki_Tiles_MD-FTP-Server.jpg",
             "mdPicAlt": "FTP Server Setup"
         }, {
             "mdTitle": "Alarm Server Function",
             "mdVideoSrc": "#",
             "mdVideoAlt": "Alarm Server Function",
             "mdUrl": "Alarm_Server",
-            "mdPic": ["http://placehold.it/300x300"],
+            "mdPic": "/images/Wiki_Tiles_MD-Alarm-Server.jpg",
             "mdPicAlt": "Alarm Server Function"
         }
     ]

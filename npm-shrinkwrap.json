@@ -104,6 +104,11 @@
         }
       }
     },
+    "express-redirect": {
+      "version": "1.2.2",
+      "from": "express-redirect@latest",
+      "resolved": "https://registry.npmjs.org/express-redirect/-/express-redirect-1.2.2.tgz"
+    },
     "finalhandler": {
       "version": "0.4.1",
       "from": "finalhandler@0.4.1",
@@ -235,6 +240,11 @@
           "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz"
         }
       }
+    },
+    "sanitize-arguments": {
+      "version": "2.0.3",
+      "from": "sanitize-arguments@>=2.0.0 <2.1.0",
+      "resolved": "https://registry.npmjs.org/sanitize-arguments/-/sanitize-arguments-2.0.3.tgz"
     },
     "send": {
       "version": "0.13.1",

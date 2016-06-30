@@ -12,9 +12,9 @@
     <!-- Take Images from gallery-quickinstallation.json for Gallery -->
 
     <% if (indoorPic.length > 0) { %>
-        <% for (i=0; i<indoorPic.length; i++) { %>
+        <% for (i=indoorPic.length -2; i>=0; i--) { %>
             <div class="col-xs-6 col-lg-4 mb">
-                <a href="/Quick_Installation/<%= indoorUrl[i] %>"><img src="<%= indoorPic[i] %>" alt="<%= indoorPicAlt[i] %>" class="img-fluid"></a>
+                <a href="/Products/<%= indoorUrl[i] %>"><img src="<%= indoorPic[i] %>" alt="<%= indoorPicAlt[i] %>" class="img-fluid"></a>
             </div>
         <% } %>
     <% } %>

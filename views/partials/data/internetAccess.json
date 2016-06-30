@@ -4,21 +4,21 @@
         "iaVideoSrc": "#",
         "iaVideoAlt": "The DDNS Service",
         "iaUrl": "The_DDNS_Service",
-        "iaPic": ["http://placehold.it/300x300"],
+        "iaPic": "/images/Wiki_Tiles_IA-DDNS.jpg",
         "iaPicAlt": "The DDNS Service"
     }, {
         "iaTitle": "Port Forwarding",
         "iaVideoSrc": "#",
         "iaVideoAlt": "Port Forwarding",
         "iaUrl": "Port_Forwarding",
-        "iaPic": ["http://placehold.it/300x300"],
+        "iaPic": "/images/Wiki_Tiles_IA-Port-Forwarding.jpg",
         "iaPicAlt": "Port Forwarding"
     }, {
         "iaTitle": "Third Party DDNS Addresses",
         "iaVideoSrc": "#",
         "iaVideoAlt": "Third Party DDNS Addresses",
         "iaUrl": "Third_Party_DDNS_Addresses",
-        "iaPic": ["http://placehold.it/300x300"],
+        "iaPic": "/images/Wiki_Tiles_IA-Third-Party.jpg",
         "iaPicAlt": "Third Party DDNS Addresses"
     }]
 }
