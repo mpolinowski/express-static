@@ -190,6 +190,14 @@ quickInstallRouter.route('/Set_Up_A_Wireless_Connection')
           });
       });
 
+/* GET DEV pages /dev */
+quickInstallRouter.route('/DEV')
+    .get(function(req, res) {
+        res.render('DEV', {
+            title: 'DEV Resources',
+          });
+      });
+
 /* GET AMP Test Range /amp */
 quickInstallRouter.route('/AMP')
     .get(function(req, res) {
