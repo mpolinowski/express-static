@@ -206,4 +206,12 @@ quickInstallRouter.route('/AMP2')
           });
       });
 
+/* GET AMP3 Test Range /Redirection */
+quickInstallRouter.route('/Redirection')
+    .get(function(req, res) {
+        res.render('AMP3', {
+            title: 'Redirection',
+          });
+      });
+
 module.exports = quickInstallRouter;
