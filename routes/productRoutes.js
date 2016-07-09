@@ -1,7 +1,6 @@
 var express = require('express');
 var productRouter = express.Router();
 var appdata = require('../views/partials/data/cameras.json');
-var appdata = require('../views/partials/data/software.json');
 
 /* GET /Products */
 productRouter.route('/')
@@ -109,11 +108,11 @@ productRouter.route('/Software/iOS')
     });
 });
 
-/* GET InstarVision for Windows Phone /Windows_Phone */
-productRouter.route('/Software/Windows_Phone')
+/* GET InstarVision for Windows Phone /Other_Platforms */
+productRouter.route('/Software/Other_Platforms')
 .get(function(req, res) {
-  res.render('WindowsPhone', {
-      title: 'Software for Windows Phone',
+  res.render('Other_Platforms', {
+      title: 'Other Platforms',
     });
 });
 
