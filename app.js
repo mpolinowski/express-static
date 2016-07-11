@@ -12,6 +12,7 @@ var productRouter = require('./routes/productRoutes');
 var quickInstallRouter = require('./routes/quickInstallRoutes');
 var internetAccessRouter = require('./routes/internetAccessRoutes');
 var motionDetectionRouter = require('./routes/motionDetectionRoutes');
+var webUIRouter = require('./routes/webUIRoutes');
 
 var app = express();
 
@@ -50,11 +51,13 @@ app.redirect('/index.php/Clear_Browsing_History', '../Quick_Installation/How_To_
 app.redirect('/index.php/First_steps_to_set_up_a_Wifi_connection', '../Quick_Installation/Set_Up_A_Wireless_Connection', 301);
 
 app.use('/', indexRouter);
-app.use('/Search', searchRouter);
-app.use('/Products', productRouter);
+app.use('/Search/', searchRouter);
+app.use('/Products/', productRouter);
 app.use('/Quick_Installation/', quickInstallRouter);
 app.use('/Internet_Access/', internetAccessRouter);
 app.use('/Motion_Detection/', motionDetectionRouter);
+app.use('/Motion_Detection/', motionDetectionRouter);
+app.use('/Web_User_Interface/', webUIRouter);
 
 
 // Catch 404 and forward to error handler
