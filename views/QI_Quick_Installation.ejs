@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head><% include partials/template/head.ejs %></head>
+<% include partials/template/head.ejs %>
 
     <body>
+      <% include partials/template/outdated.ejs %>
 
       <div id="wrapper">
 
         <header><% include partials/template/header.ejs %></header>
         <!-- Navbar-->
+
+        <!-- ############################################# Landing ############################################# -->
 
         <section class="landing">
             <div class="container">
@@ -17,8 +17,8 @@
                         <a href="/Quick_Installation/DEV"><h1 class="headline hidden-sm-down">INSTAR Wiki</h1></a>
                         <h1 class="mobile-headline hidden-md-up">INSTAR Wiki 2.0</h1>
                         <hr>
-                        <h2 class="subheader hidden-sm-down">INSTAR Outdoor IP Camera</h2>
-                        <h3 class="subheader hidden-md-up">Outdoor Cameras</h3>
+                        <h2 class="subheader hidden-sm-down">Access your INSTAR IP Camera over the Internet</h2>
+                        <h3 class="subheader hidden-md-up">Internet Access</h3>
                     </div>
                 </div>
                 <!-- /row -->
@@ -29,10 +29,10 @@
 
         <!-- #############################################  Gallery ############################################# -->
 
-        <section class="container mb"><% include partials/content/gallery_outdoorCams.ejs %></section>
-        <!-- /outdoorCams -->
+        <section class="container mb"><% include partials/content/gallery_quickinstallation.ejs %></section>
+        <!-- /quickinstallation -->
 
-        <section class="instarvision"><% include partials/content/instarvision.ejs %></section>
+        <section class="webui mb"><% include partials/content/webui.ejs %></section>
         <!-- /webui -->
 
         <section class="social"><% include partials/template/social.ejs %></section>

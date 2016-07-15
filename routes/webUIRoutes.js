@@ -4,7 +4,7 @@ var webUIRouter = express.Router();
 /* GET WebUI page. */
 webUIRouter.route('/')
     .get(function(req, res) {
-        res.render('WebUserInterface', {
+        res.render('WUI_WebUserInterface', {
             title: 'INSTAR Web User Interface',
           });
       });
@@ -12,7 +12,7 @@ webUIRouter.route('/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/')
     .get(function(req, res) {
-        res.render('WebUserInterface_HD-Series', {
+        res.render('WUI_WebUserInterface_HD-Series', {
             title: 'INSTAR Web User Interface HD Series',
           });
       });
@@ -20,7 +20,7 @@ webUIRouter.route('/HD_Series/')
 /* GET fullHD WebUI page. */
 webUIRouter.route('/fullHD_Series/')
     .get(function(req, res) {
-        res.render('WebUserInterface_fullHD-Series', {
+        res.render('WUI_WebUserInterface_fullHD-Series', {
             title: 'INSTAR Web User Interface fullHD Series',
           });
       });

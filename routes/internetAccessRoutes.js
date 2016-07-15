@@ -14,7 +14,7 @@ internetAccessRouter.get('/', function(req, res) {
         iaHref = iaHref.concat(item.iaUrl);
       });
 
-    res.render('Internet_Access', {
+    res.render('IA_Internet_Access', {
         title: 'Internet Access',
         iaPic: iaPicture,
         iaPicAlt: iaPictureAlt,

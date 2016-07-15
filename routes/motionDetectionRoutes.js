@@ -14,7 +14,7 @@ motionDetectionRouter.get('/', function(req, res) {
         mdHref = mdHref.concat(item.mdUrl);
       });
 
-    res.render('Motion_Detection', {
+    res.render('MD_Motion_Detection', {
         title: 'Motion Detection',
         mdPic: mdPicture,
         mdPicAlt: mdPictureAlt,

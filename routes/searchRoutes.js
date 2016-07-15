@@ -4,7 +4,7 @@ var searchRouter = express.Router();
 /* GET Search page. */
 searchRouter.route('/')
     .get(function(req, res) {
-        res.render('Search', {
+        res.render('00_Search', {
             title: 'INSTAR Wiki Search',
           });
       });

@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head><% include partials/template/head.ejs %></head>
+<% include partials/template/head.ejs %>
 
     <body>
+      <% include partials/template/outdated.ejs %>
 
       <div id="wrapper">
 
         <header><% include partials/template/header.ejs %></header>
         <!-- Navbar-->
 
-        <!-- ############################################# Landing ############################################# -->
-
         <section class="landing">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2 text-xs-center">
-                        <h1 class="headline hidden-sm-down">INSTAR Wiki</h1>
+                        <a href="/Quick_Installation/DEV"><h1 class="headline hidden-sm-down">INSTAR Wiki</h1></a>
                         <h1 class="mobile-headline hidden-md-up">INSTAR Wiki 2.0</h1>
                         <hr>
-                        <h2 class="subheader hidden-sm-down">Camera Software for iOS</h2>
-                        <h3 class="subheader hidden-md-up">Software for iOS</h3>
+                        <h2 class="subheader hidden-sm-down">INSTAR Outdoor IP Camera</h2>
+                        <h3 class="subheader hidden-md-up">Outdoor Cameras</h3>
                     </div>
                 </div>
                 <!-- /row -->
@@ -31,10 +27,10 @@
 
         <!-- #############################################  Gallery ############################################# -->
 
-        <section class="container mb"><% include partials/content/gallery_softwareIOS.ejs %></section>
-        <!-- /quickinstallation -->
+        <section class="container mb"><% include partials/content/gallery_outdoorCams.ejs %></section>
+        <!-- /outdoorCams -->
 
-        <section class="webui mb"><% include partials/content/webui.ejs %></section>
+        <section class="instarvision"><% include partials/content/instarvision.ejs %></section>
         <!-- /webui -->
 
         <section class="social"><% include partials/template/social.ejs %></section>
