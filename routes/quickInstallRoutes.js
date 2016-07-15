@@ -14,8 +14,8 @@ quickInstallRouter.get('/', function(req, res) {
         qiHref = qiHref.concat(item.qiUrl);
       });
 
-    res.render('Quick_Installation', {
-        title: 'QI_Quick Installation',
+    res.render('QI_Quick_Installation', {
+        title: 'Quick Installation',
         qiPic: qiPicture,
         qiPicAlt: qiPictureAlt,
         qiUrl: qiHref,
