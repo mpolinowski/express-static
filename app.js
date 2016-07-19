@@ -5,6 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var redirect = require('express-redirect');
+var elasticsearch = require('elasticsearch');
+var client = new elasticsearch.Client({
+  host: 'localhost:9200',
+  log: 'trace',
+});
 
 var indexRouter = require('./routes/indexRoutes');
 var searchRouter = require('./routes/searchRoutes');
