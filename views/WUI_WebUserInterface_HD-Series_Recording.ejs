@@ -37,54 +37,140 @@
                         </div>
                     </div>
 
+                    <!-- ##################################### Schedule ############################################ -->
+
                     <div class="card-container margin">
                         <div class="twocard">
-                            <a href="/Web_User_Interface/HD_Series/Recording/Schedule/">
-                                <div class="image">
-                                    <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Schedule_mouseOver.png"></amp-img>
-                                </div>
-                            </a>
+                            <div class="image" on="tap:schedule-lightbox" role="button" tabindex="0">
+                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Schedule_mouseOver.png"></amp-img>
+                            </div>
                             <div class="content">
                                 <hr>
-                                <p>This is the schedule that will be used for planned recordings and the photoseries. Just select the service you want to use and fill out a time window for this function to be active in. Every blue block inside the schedule stands for a 30min window of activity. Please make sure that the camera is set to the correct Time Zone and that the Daylight-Saving Time parameter is set correctly.</p>
+                                <p class="schedule"></p> <!-- innerHTML Added by script below -->
                             </div>
                             <div class="action">
                                 <a href="/Web_User_Interface/HD_Series/Recording/Schedule/">Schedule Menu</a>
                             </div>
                         </div>
                         <!-- /Card -->
+                        <!-- lightbox -->
+                          <amp-lightbox id="schedule-lightbox" layout="nodisplay">
+                            <div class="lightbox" on="tap:schedule-lightbox.close" tabindex="0">
+                              <div class="twocard cardbox">
+                                  <a href="/Web_User_Interface/HD_Series/Recording/Schedule/">
+                                  <div class="image">
+                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Schedule_mouseOver.png"></amp-img>
+                                  </div>
+                                  </a>
+                                  <div class="content" on="tap:schedule-lightbox.close" tabindex="0">
+                                      <hr>
+                                      <p class="schedule2"></p> <!-- innerHTML Added by script below -->
+                                  </div>
+                                  <div class="action">
+                                      <a href="/Web_User_Interface/HD_Series/Recording/Schedule/">Click of more Information</a>
+                                  </div>
+                              </div>
+                            </div>
+                          </amp-lightbox>
+                        <!-- /lightbox -->
+                        <!-- Add Pragraph Text -->
+                        <script>
+                            var schedule = document.querySelectorAll('.schedule, .schedule2');
+                            for(var i = 0; i < schedule.length; i++) {
+                              schedule[i].innerHTML="This is the schedule that will be used for planned recordings and the photoseries. Just select the service you want to use and fill out a time window for this function to be active in. Every blue block inside the schedule stands for a 30min window of activity. Please make sure that the camera is set to the correct Time Zone and that the Daylight-Saving Time parameter is set correctly.";
+                            }
+                        </script>
+
+                        <!-- ##################################### Video ############################################ -->
+
                         <div class="twocard">
-                            <a href="/Web_User_Interface/HD_Series/Recording/Video/">
-                                <div class="image">
-                                    <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Video_mouseOver.png"></amp-img>
-                                </div>
-                            </a>
+                            <div class="image" on="tap:video-lightbox" role="button" tabindex="0">
+                                <amp-img noloading height=400 width=400 layout=responsive
+                                  src="/images/QL-Box_WebUI_Recording_Video_mouseOver.png"></amp-img>
+                              </div>
                             <div class="content">
                                 <hr>
-                                <p>Here you can activate the planned video recording. This function will record a video to the cameras internal SD card inside the time window defined by the Recording Schedule. You can set the resolution and length of each recorded video file.</p>
+                                <p class="video2"></p> <!-- innerHTML Added by script below -->
                             </div>
                             <div class="action">
                                 <a href="/Web_User_Interface/HD_Series/Recording/Video/">Video Menu</a>
                             </div>
                         </div>
                         <!-- /Card -->
+                        <!-- lightbox -->
+                          <amp-lightbox id="video-lightbox" layout="nodisplay">
+                            <div class="lightbox" on="tap:video-lightbox.close" tabindex="0">
+                              <div class="twocard cardbox">
+                                  <a href="/Web_User_Interface/HD_Series/Recording/Video/">
+                                  <div class="image">
+                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Video_mouseOver.png"></amp-img>
+                                  </div>
+                                  </a>
+                                  <div class="content" on="tap:video-lightbox.close" tabindex="0">
+                                      <hr>
+                                      <p class="video2"></p> <!-- innerHTML Added by script below -->
+                                  </div>
+                                  <div class="action">
+                                      <a href="/Web_User_Interface/HD_Series/Recording/Video/">Click of more Information</a>
+                                  </div>
+                              </div>
+                            </div>
+                          </amp-lightbox>
+                        <!-- /lightbox -->
+                        <!-- Add Pragraph Text -->
+                        <script>
+                            var video = document.querySelectorAll('.video, .video2');
+                            for(var i = 0; i < video.length; i++) {
+                              video[i].innerHTML="Here you can activate the planned video recording. This function will record a video to the cameras internal SD card inside the time window defined by the Recording Schedule. You can set the resolution and length of each recorded video file.";
+                            }
+                        </script>
                       </div>
                       <!-- Card Container -->
+
+                        <!-- ##################################### Photoseries ############################################ -->
+
                       <div class="card-container margin">
                         <div class="twocard">
-                            <a href="/Web_User_Interface/HD_Series/Recording/Photoseries/">
-                                <div class="image">
-                                    <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Photoseries_mouseOver.png"></amp-img>
+                            <div class="image" on="tap:photoseries-lightbox" role="button" tabindex="0">
+                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Photoseries_mouseOver.png"></amp-img>
                                 </div>
-                            </a>
                             <div class="content">
                                 <hr>
-                                <p>Record snapshots in an adjustable time interval and stitch them together inside a Third-party Software to create a timelapse video. You can also choose to upload the snapshot with a fixed file name. This will always overwrite the last file and allows you to easily embedd a "Live Image" of your IP camera inside your homepage.</p>
+                                <p class="photoseries"></p> <!-- innerHTML Added by script below -->
                             </div>
                             <div class="action">
                                 <a href="/Web_User_Interface/HD_Series/Recording/Photoseries/">Photoseries Menu</a>
                             </div>
                         </div>
+                        <!-- /Card -->
+                        <!-- lightbox -->
+                          <amp-lightbox id="photoseries-lightbox" layout="nodisplay">
+                            <div class="lightbox" on="tap:photoseries-lightbox.close" tabindex="0">
+                              <div class="twocard cardbox">
+                                  <a href="/Web_User_Interface/HD_Series/Recording/Photoseries/">
+                                  <div class="image">
+                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Photoseries_mouseOver.png"></amp-img>
+                                  </div>
+                                  </a>
+                                  <div class="content" on="tap:photoseries-lightbox.close" tabindex="0">
+                                      <hr>
+                                      <p class="photoseries2"></p> <!-- innerHTML Added by script below -->
+                                  </div>
+                                  <div class="action">
+                                      <a href="/Web_User_Interface/HD_Series/Recording/Photoseries/">Click of more Information</a>
+                                  </div>
+                              </div>
+                            </div>
+                          </amp-lightbox>
+                        <!-- /lightbox -->
+                        <!-- Add Pragraph Text -->
+                        <script>
+                            var photoseries = document.querySelectorAll('.photoseries, .photoseries2');
+                            for(var i = 0; i < photoseries.length; i++) {
+                              photoseries[i].innerHTML="Record snapshots in an adjustable time interval and stitch them together inside a Third-party Software to create a timelapse video. You can also choose to upload the snapshot with a fixed file name. This will always overwrite the last file and allows you to easily embedd a Live Image of your IP camera inside your homepage.";
+                            }
+                        </script>
+                        <div class="twocard invisible"></div>
                         <!-- /Card -->
                     </div>
                     <!-- /Card Container -->

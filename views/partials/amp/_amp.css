@@ -384,6 +384,9 @@ section.hero:before {
 .hidden {
     display: none;
 }
+.invisible {
+  visibility: hidden;
+}
 @media only screen and (max-width: 870px) {
     .mobile-show {
         display: block;
@@ -1754,6 +1757,9 @@ body.roadmap .stages ul {
     vertical-align: top;
     width: 45%;
 }
+.twocard .single {
+    margin-left: -50px;
+}
 .twocard:first-child {
     margin-right: 20px;
 }
@@ -1780,7 +1786,7 @@ body.roadmap .stages ul {
     font-weight: 300;
     border-radius: 0 0 2px 2px;
     text-align: left;
-    max-height: 150px;
+    height: 150px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -1819,6 +1825,24 @@ display: none;
     left: 0;
     padding: 20px;
     color: #FFF;
+}
+.cardbox {
+  width: 55%;
+}
+@media only screen and (max-width: 870px) {
+    .cardbox {
+        width: 100%;
+    }
+}
+.cardbox .content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.cardbox .content::-webkit-scrollbar {
+display: none;
+}
+.lightbox {
+  text-align: center;
 }
 .description {
     background-color: #f5f5f5;
