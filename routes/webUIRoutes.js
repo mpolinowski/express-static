@@ -96,6 +96,14 @@ webUIRouter.route('/HD_Series/Network/DDNS/')
       });
 
 /* GET HD WebUI page. */
+webUIRouter.route('/HD_Series/Network/P2P/')
+    .get(function(req, res) {
+        res.render('WUI_WebUserInterface_HD-Series_Network_P2P', {
+            title: 'Network Menu :: P2P',
+          });
+      });
+
+/* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Network/UPnP/')
     .get(function(req, res) {
         res.render('WUI_WebUserInterface_HD-Series_Network_UPnP', {

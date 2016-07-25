@@ -2,7 +2,7 @@
 <html ⚡>
     <head>
         <% include partials/amp/_amp-head.ejs %>
-        <link rel="canonical" href="/Web_User_Interface/HD_Series/Software/Update/">
+        <link rel="canonical" href="/Web_User_Interface/HD_Series/Network/UPnP/">
     </head>
 
     <body class="home">
@@ -18,7 +18,7 @@
                         </div>
                         <div class="right alt">
 
-                            <a href="/Web_User_Interface/HD_Series/Software/" class="tab header-title">
+                            <a href="/Web_User_Interface/HD_Series/Network/" class="tab header-title">
                                 <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
                             </a>
                         </div>
@@ -34,9 +34,9 @@
                         <div class="row">
                             <div class="six columns">
                                 <div class="intro-container">
-                                    <h1>Update Overlay</h1>
+                                    <h1>UPnP Overlay</h1>
                                     <p class="intro">
-                                      The INSTAR software department is constantly working to improve your experience with our product. You can check the update section from time to time to make sure your system is still up-to-date. You can also check our <a href="http://download.instar.de">download area</a> to find our newest software and corresponding changelogs.
+                                      The UPnP standard is supposed to make your life easy. Every port that is needed publicly by a device on your network will automatically be forwarded. This would make the <a href="/Internet_Access/The_DDNS_Service">DDNS</a> access to your camera very easy...unfortunately it often does not work and might be considered a security hazard by your network administrator. Please deactivate UPnP if you are working with a <a href="/Internet_Access/Port_Forwarding">manually forwarded port</a> for your camera.
                                     </p>
                                 </div>
                             </div>
@@ -56,21 +56,19 @@
                     <!-- article -->
 
                     <div class="margin">
-                        <h2 class="post-title">Keep your Camera Up-to-Date</h2>
+                        <h2 class="post-title">Automated Port Forwarding</h2>
                     </div>
                     <!-- /margin -->
 
                     <div class="margin">
 
                       <div>
-                          <amp-img on="tap:lightbox1" role="button" tabindex="0" src="/images/WebUI-Software_Update.png" width="537" height="560" layout="responsive" class="shadow"></amp-img>
-
-                          <p>You can download regular software updates for your camera from <a href="http://download.instar.de">download.instar.com</a>. Please use the browse button to set the file path once you downloaded and unzipped the update BIN and click Submit to upload the file to your camera. Use the update function only when the camera is connected to the router by LAN cable!</p>
+                          <amp-img on="tap:lightbox1" role="button" tabindex="0" src="/images/WebUI-Network_UPnP.png" width="537" height="560" layout="responsive" class="shadow"></amp-img>
                       </div>
 
                         <amp-lightbox id="lightbox1" layout="nodisplay">
                             <div class="lightbox" on="tap:lightbox1.close" tabindex="0" class="centered">
-                                <amp-img on="tap:lightbox1.close" role="button" tabindex="0" src="/images/WebUI-Software_Update.png" width="716" height="746" layout="responsive" class="shadow"></amp-img>
+                                <amp-img on="tap:lightbox1.close" role="button" tabindex="0" src="/images/WebUI-Network_UPnP.png" width="716" height="746" layout="responsive" class="shadow"></amp-img>
                             </div>
                         </amp-lightbox>
 
@@ -78,48 +76,24 @@
                     <!-- /margin -->
 
                     <div class="margin">
-                        <amp-youtube width="1280"
-                          height="720"
-                          layout=responsive
-                          data-videoid="9s3P1TTj0Lc">
-                        </amp-youtube>
-                        <p>Laden Sie sich bitte die neueste Firmware für Ihre INSTAR HD Kamera auf der linken Seite herunter und entpacken Sie die heruntergeladenen ZIP Datei. Sie finden darin dann eine "update.pkg" Datei. Öffnen Sie die Weboberfläche Ihrer Kamera und gehen Sie dort auf "Software - Upgrade" und wählen Sie dort die "update.pkg" Datei aus, um diese auf Ihre Kamera aufzuspielen. Bestätigen Sie das Ganze und warten Sie bis zu 12 Minuten bis das Update komplett aufgespielt wurde.</p>
+                        <table>
+                            <tr>
+                                <td width="20%">
+                                    <strong>UPnP Status</strong>
+                                </td>
+                                <td>Activate or deactivate the Universal Plug &amp; Play service for your camera. You can confirm the actual status in the <a href="/Web_User_Interface/HD_Series/System/Info/">System/Info Menu</a>.</td>
+                            </tr>
+                        </table>
                     </div>
                     <!-- /margin -->
 
                     <div class="margin">
-                        <table>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Camera Model</strong>
-                                </td>
-                                <td>Displays your camera model number - For more information on your camera model check our <a href="http://wiki.instar.com/index.php/IP_Cameras">complete list</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Firmware Version</strong>
-                                </td>
-                                <td>Version of the operating system of your camera. Information about a software update can be found <a href="http://wiki.instar.com/index.php/Wie_spiele_ich_eine_neue_WebUI_bzw._Firmware_auf_%28HD_Kameras%29">here</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>WebUI Version</strong>
-                                </td>
-                                <td>Version of the web user interface of your camera. Information about a software update can be found <a href="http://wiki.instar.com/index.php/Wie_spiele_ich_eine_neue_WebUI_bzw._Firmware_auf_%28HD_Kameras%29">here</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Software is up to date</strong>
-                                </td>
-                                <td>You will be shown link to the update once a newer version of the camera software becomes available. Please be aware that you have to unzip the update.pkg file from the ZIP container first, before uploading it to your camera!</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Browse</strong>
-                                </td>
-                                <td>Click here to browse for the update.pkg file and submit. More information for the software update can be found <a href="http://wiki.instar.com/index.php/Wie_spiele_ich_eine_neue_WebUI_bzw._Firmware_auf_%28HD_Kameras%29">here</a>.</td>
-                            </tr>
-                        </table>
+                        <p>If you are using Universal Plug &amp; Play for your network devices. Please activate the UPnP service in your camera to automatically set the <a href="/Internet_Access/Port_Forwarding">port forwarding</a> for your camera.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="dangercard">
+                        <p><strong>Better go Manual</strong><br/><br/>In case you are using a manual port forwarding rule in your router to access your camera from the internet, make sure the cameras UPnP service is deactivated! We recommend setting up a manual port forwarding.</p>
                     </div>
                     <!-- /margin -->
 

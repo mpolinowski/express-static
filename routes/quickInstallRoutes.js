@@ -215,7 +215,7 @@ quickInstallRouter.route('/AMP2')
       });
 
 /* GET AMP3 Test Range /Redirection */
-quickInstallRouter.route('/Redirection')
+quickInstallRouter.route('/AMP3')
     .get(function(req, res) {
         res.render('00_AMP3', {
             title: 'Redirection',
