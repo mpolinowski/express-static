@@ -13,13 +13,13 @@
         <!-- Inline List Navigation -->
         <ul class="nav navbar-nav hidden-md-down impact">
             <li class="nav-item" style="padding-left: 15px;">
-                <a class="nav-link" href="/Products"><i class="fa fa-gitlab" aria-hidden="true">&nbsp; Products</i></a>
+                <a class="nav-link" href="/Products"><i class="fa fa-shield" aria-hidden="true">&nbsp; Products</i></a>
             </li>
             <li class="nav-item" style="padding-left: 10px;">
                 <a class="nav-link" href="/Quick_Installation"><i class="fa fa-bolt" aria-hidden="true">&nbsp; Installation</i></a>
             </li>
             <li class="nav-item" style="padding-left: 10px;">
-                <a class="nav-link" href="/Internet_Access"><i class="fa fa-terminal" aria-hidden="true">&nbsp; Internet Access</i></a>
+                <a class="nav-link" href="/Internet_Access"><i class="fa fa-cloud" aria-hidden="true">&nbsp; Internet Access</i></a>
             </li>
             <li class="nav-item" style="padding-left: 10px;">
                 <a class="nav-link" href="/Motion_Detection"><i class="fa fa-user-secret" aria-hidden="true">&nbsp; Motion Detection</i></a>
@@ -53,8 +53,8 @@
             <br/>
         </div>
         <!-- Search -->
-        <form class="form-inline pull-xs-right hidden-md-down">
-            <input class="form-control" type="text" placeholder="Search">
+        <form method="get" action="/Search_Results" class="form-inline pull-xs-right hidden-md-down ">
+            <input type="text" name="q" autocomplete="off" class="form-control" type="text" placeholder="Search">
             <button class="btn btn-primary" type="submit">Search</button>
         </form>
     </div>

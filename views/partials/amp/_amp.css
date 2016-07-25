@@ -263,6 +263,7 @@ h3 {
 }
 .centered {
     text-align: center;
+    margin: 0 auto;
 }
 @media only screen and (max-width: 870px) {
     .centered {
@@ -337,6 +338,20 @@ section.hero.template {
 section.hero.altIP {
     background-image: url("/images/background_altIP.jpg");
 }
+section.hero.webUI {
+    background-image: url("/images/background_webUI.jpg");
+}
+@media only screen and (max-width: 460px) {
+    section.hero.template {
+        background-image: url("/images/background-mobile.jpg");
+    }
+    section.hero.altIP {
+        background-image: url("/images/background_altIP-mobile.jpg");
+    }
+    section.hero.webUI {
+        background-image: url("/images/background_webUI-mobile.png");
+    }
+}
 section.hero .six.columns {
     display: -webkit-box;
     display: -webkit-flex;
@@ -346,14 +361,6 @@ section.hero .six.columns {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-}
-@media only screen and (max-width: 460px) {
-    section.hero.template {
-        background-image: url("/images/background-mobile.jpg");
-    }
-    section.hero.altIP {
-        background-image: url("/images/background_altIP-mobile.jpg");
-    }
 }
 @media only screen and (max-width: 870px) {
     section.hero {
@@ -737,6 +744,13 @@ amp-sidebar ul {
     .row.table> .columns:nth-child(2) {
         padding-left: 4%;
     }
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+tr:hover {
+    background-color: #f5f5f5;
 }
 .row:after, .u-cf {
     content: "";
@@ -1833,13 +1847,6 @@ display: none;
     .cardbox {
         width: 100%;
     }
-}
-.cardbox .content {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.cardbox .content::-webkit-scrollbar {
-display: none;
 }
 .lightbox {
   text-align: center;
