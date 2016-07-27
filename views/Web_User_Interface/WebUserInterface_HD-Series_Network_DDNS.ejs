@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html ⚡>
+    <head>
+        <% include ../_partials/amp/_amp-head.ejs %>
+        <link rel="canonical" href="/Web_User_Interface/HD_Series/Network/DDNS/">
+    </head>
+
+    <body class="home">
+
+        <header class="fixed">
+            <div class="wrap">
+                <div class="container">
+                    <div class="clearfix">
+                        <div class="left-nav">
+                            <a href="/" class="tab header-title">
+                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
+                            </a>
+                        </div>
+                        <div class="right alt">
+
+                            <a href="/Web_User_Interface/HD_Series/Network/" class="tab header-title">
+                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrap">
+            <div class="content">
+                <section class="hero webUI">
+                    <div class="container">
+                        <div class="row">
+                            <div class="six columns">
+                                <div class="intro-container">
+                                    <h1>DDNS Overlay</h1>
+                                    <p class="intro">
+                                      You have two ways to access your camera over the internet - the easy way is called <a href="/Web_User_Interface/HD_Series/Network/P2P/">P2P</a>. The only way to get complete access to all your camera´s functions is called DDNS. The DDNS or Internet Address gives you access to your cameras web user interface.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Hero -->
+            </div>
+            <!-- /Content -->
+        </div>
+        <!-- /Wrap -->
+
+        <div class="wrap">
+            <div class="container main">
+
+                <article>
+                    <!-- article -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Connect over the Internet</h2>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+
+                      <div>
+                          <amp-img on="tap:lightbox1" role="button" tabindex="0" src="/images/WebUI-Network_DDNS.png" width="537" height="560" layout="responsive" class="shadow"></amp-img>
+                      </div>
+
+                      <div>
+                          <p>The DDNS Menu - Use your personal Internet Address to connect to your camera over the internet.</p>
+                      </div>
+
+                        <amp-lightbox id="lightbox1" layout="nodisplay">
+                            <div class="lightbox" on="tap:lightbox1.close" tabindex="0" class="centered">
+                                <amp-img on="tap:lightbox1.close" role="button" tabindex="0" src="/images/WebUI-Network_DDNS.png" width="716" height="746" layout="responsive" class="shadow"></amp-img>
+                            </div>
+                        </amp-lightbox>
+
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <table>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Activate INSTAR DDNS</strong>
+                                </td>
+                                <td>To access your camera´s WebUI over the internet you have to activate your <a href="/Internet_Access/The_DDNS_Service">INSTAR DDNS Address</a>. Please be aware that your camera might still be available over the DDNS address for a while, after you deactivated it. The access will be blocked once your internet service provider changes your WAN IP address - this usually happens once every 24hrs (and in some cases once you restarted your internet router).</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>INSTAR DDNS Adress</strong>
+                                </td>
+                                <td>This is your personal <a href="/Internet_Access/The_DDNS_Service">Internet Adsress</a>. You will be able to access your camera over this address once you <a href="/Internet_Access/Port_Forwarding">forwarded your camera´s http port</a>.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>QR Code</strong>
+                                </td>
+                                <td>To add your camera to our <a href="/Products/Software/iOS">iPhone</a> or <a href="/Products/Software/Android">Android</a> app, you simply have to scan the QR code.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Activate Third Party DDNS (optional)</strong>
+                                </td>
+                                <td>If you don´t want to use your INSTAR DDNS Address, just add a Thirdparty DDNS Address. Please contact your Third-party provider for details.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p>Your camera comes with a personal <a href="/Internet_Access/The_DDNS_Service">DDNS address</a> - e.g. http://xxxx77.ddns-instar.de. Everything you need for a remote access to your camera is a <a href="/Internet_Access/Port_Forwarding">port forwarding rule</a> in your router. You can access your camera afterwards through the internet using this http address. Please visit the DDNS section for detailed information on the <a href="/Internet_Access/Port_Forwarding">port forwarding</a> setup as well as video instruction for many common routers. Or refer to your router’s user manual for further guidelines on how to set up a port forwarding rule.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="dangercard">
+                        <p><strong>Be Aware</strong><br/><br/>Your camera will be accessible for everyone after you forwarded it inside your router. To prevent unwanted access, please make sure to change the user logins before you start forwarding the camera! The user logins can be adjusted in the <a href="/Web_User_Interface/HD_Series/System/User/">User Menu</a>.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p>In case you want to use an account from <a href="http://dyn.com/dns/">DynDNS</a> simply choose the third party service and type in your personal login credentials. By doing so you will temporarily <strong>deactivate your INSTAR DDNS address</strong>. In case you are using several cameras behind a single internet access point, please set up the third party address in <strong>only one</strong> of the cameras. Or if possible directly inside your router! All your cameras will be accessible through this address - just assign a unique HTTP port to every camera. For example if camera 1 is assigned the HTTP port 85 and camera 2 the HTTP port 86, use myaddress.dyndns.org:85 to reach camera 1 and myaddresse.dyndns.org:86 to be forwarded to camera 2.</p>
+                    </div>
+                    <!-- /margin -->
+
+                </article>
+                <!-- /article -->
+            </div>
+        </div>
+
+        <section class="blade blog">
+
+            <div class="container wider">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h1>Related Topics:</h1>
+                    </div>
+                </div>
+
+                <div class="tab-container">
+
+                    <a class="tab" href="/Web_User_Interface/HD_Series/Software/">
+                        <h3>The HD Web User Interface Software Overlay</h3>
+                        <div class="subtitle">Easy</div>
+                    </a>
+
+                    <a class="tab" href="/Web_User_Interface/HD_Series/">
+                        <h3>The HD Web User Interface</h3>
+                        <div class="subtitle">Easy</div>
+                    </a>
+
+                    <a class="tab" href="#">
+                        <h3>Control your camera directly over CGI commands</h3>
+                        <div class="subtitle">Advanced</div>
+                    </a>
+
+                    <a class="tab" href="/Quick_Installation/WebUI_And_Firmware_Upgrade">
+                        <h3>How to Update your Cameras Firmware and User Interface</h3>
+                        <div class="subtitle">Intermediate</div>
+                    </a>
+
+                    <a class="tab" href="/Quick_Installation/Set_Up_A_Wireless_Connection">
+                        <h3>How to Connect your Camera via WiFi</h3>
+                        <div class="subtitle">Easy</div>
+                    </a>
+
+                    <a class="tab" href="/Quick_Installation/Creating_User_Accounts">
+                        <h3>Change the Default Login of your Camera</h3>
+                        <div class="subtitle">Easy</div>
+                    </a>
+                </div>
+
+                <a href="/Quick_Installation/" target="_blank">VIEW MORE</a>
+
+            </div>
+        </section>
+
+        <footer>
+            <% include ../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>

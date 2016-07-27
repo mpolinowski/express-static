@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html ⚡>
+    <head>
+        <% include ../_partials/amp/_amp-head.ejs %>
+        <link rel="canonical" href="/Web_User_Interface/HD_Series/Recording">
+    </head>
+
+    <body class="home">
+
+        <header class="fixed">
+            <div class="wrap">
+                <div class="container">
+                    <div class="clearfix">
+                        <div class="left-nav">
+                            <a href="/" class="tab header-title">
+                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
+                            </a>
+                        </div>
+                        <div class="right alt">
+
+                            <a href="/Web_User_Interface/HD_Series/" class="tab header-title">
+                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrap">
+
+            <section class="blade get-started">
+                <div class="container">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h1>Recording Menu</h1>
+                        </div>
+                    </div>
+
+                    <!-- ##################################### Schedule ############################################ -->
+
+                    <div class="card-container margin">
+                        <div class="twocard">
+                            <div class="image" on="tap:schedule-lightbox" role="button" tabindex="0">
+                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Schedule_mouseOver.png"></amp-img>
+                            </div>
+                            <div class="content">
+                                <hr>
+                                <p class="schedule"></p> <!-- innerHTML Added by script below -->
+                            </div>
+                            <div class="action">
+                                <a href="/Web_User_Interface/HD_Series/Recording/Schedule/">Schedule Menu</a>
+                            </div>
+                        </div>
+                        <!-- /Card -->
+                        <!-- lightbox -->
+                          <amp-lightbox id="schedule-lightbox" layout="nodisplay">
+                            <div class="lightbox" on="tap:schedule-lightbox.close" tabindex="0">
+                              <div class="twocard cardbox">
+                                  <a href="/Web_User_Interface/HD_Series/Recording/Schedule/">
+                                  <div class="image">
+                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Schedule_mouseOver.png"></amp-img>
+                                  </div>
+                                  </a>
+                                  <div class="content" on="tap:schedule-lightbox.close" tabindex="0">
+                                      <hr>
+                                      <p class="schedule2"></p> <!-- innerHTML Added by script below -->
+                                  </div>
+                                  <div class="action">
+                                      <a href="/Web_User_Interface/HD_Series/Recording/Schedule/">Click of more Information</a>
+                                  </div>
+                              </div>
+                            </div>
+                          </amp-lightbox>
+                        <!-- /lightbox -->
+                        <!-- Add Pragraph Text -->
+                        <script>
+                            var schedule = document.querySelectorAll('.schedule, .schedule2');
+                            for(var i = 0; i < schedule.length; i++) {
+                              schedule[i].innerHTML="This is the schedule that will be used for planned recordings and the photoseries. Just select the service you want to use and fill out a time window for this function to be active in. Every blue block inside the schedule stands for a 30min window of activity. Please make sure that the camera is set to the correct Time Zone and that the Daylight-Saving Time parameter is set correctly.";
+                            }
+                        </script>
+
+                        <!-- ##################################### Video ############################################ -->
+
+                        <div class="twocard">
+                            <div class="image" on="tap:video-lightbox" role="button" tabindex="0">
+                                <amp-img noloading height=400 width=400 layout=responsive
+                                  src="/images/QL-Box_WebUI_Recording_Video_mouseOver.png"></amp-img>
+                              </div>
+                            <div class="content">
+                                <hr>
+                                <p class="video2"></p> <!-- innerHTML Added by script below -->
+                            </div>
+                            <div class="action">
+                                <a href="/Web_User_Interface/HD_Series/Recording/Video/">Video Menu</a>
+                            </div>
+                        </div>
+                        <!-- /Card -->
+                      </div>
+                      <!-- Card Container -->
+                        <!-- lightbox -->
+                          <amp-lightbox id="video-lightbox" layout="nodisplay">
+                            <div class="lightbox" on="tap:video-lightbox.close" tabindex="0">
+                              <div class="twocard cardbox">
+                                  <a href="/Web_User_Interface/HD_Series/Recording/Video/">
+                                  <div class="image">
+                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Video_mouseOver.png"></amp-img>
+                                  </div>
+                                  </a>
+                                  <div class="content" on="tap:video-lightbox.close" tabindex="0">
+                                      <hr>
+                                      <p class="video2"></p> <!-- innerHTML Added by script below -->
+                                  </div>
+                                  <div class="action">
+                                      <a href="/Web_User_Interface/HD_Series/Recording/Video/">Click of more Information</a>
+                                  </div>
+                              </div>
+                            </div>
+                          </amp-lightbox>
+                        <!-- /lightbox -->
+                        <!-- Add Pragraph Text -->
+                        <script>
+                            var video = document.querySelectorAll('.video, .video2');
+                            for(var i = 0; i < video.length; i++) {
+                              video[i].innerHTML="Here you can activate the planned video recording. This function will record a video to the cameras internal SD card inside the time window defined by the Recording Schedule. You can set the resolution and length of each recorded video file.";
+                            }
+                        </script>
+
+                        <!-- ##################################### Photoseries ############################################ -->
+
+                      <div class="card-container margin">
+                        <div class="twocard">
+                            <div class="image" on="tap:photoseries-lightbox" role="button" tabindex="0">
+                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Photoseries_mouseOver.png"></amp-img>
+                                </div>
+                            <div class="content">
+                                <hr>
+                                <p class="photoseries"></p> <!-- innerHTML Added by script below -->
+                            </div>
+                            <div class="action">
+                                <a href="/Web_User_Interface/HD_Series/Recording/Photoseries/">Photoseries Menu</a>
+                            </div>
+                        </div>
+                        <!-- /Card -->
+                        <!-- lightbox -->
+                          <amp-lightbox id="photoseries-lightbox" layout="nodisplay">
+                            <div class="lightbox" on="tap:photoseries-lightbox.close" tabindex="0">
+                              <div class="twocard cardbox">
+                                  <a href="/Web_User_Interface/HD_Series/Recording/Photoseries/">
+                                  <div class="image">
+                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Recording_Photoseries_mouseOver.png"></amp-img>
+                                  </div>
+                                  </a>
+                                  <div class="content" on="tap:photoseries-lightbox.close" tabindex="0">
+                                      <hr>
+                                      <p class="photoseries2"></p> <!-- innerHTML Added by script below -->
+                                  </div>
+                                  <div class="action">
+                                      <a href="/Web_User_Interface/HD_Series/Recording/Photoseries/">Click of more Information</a>
+                                  </div>
+                              </div>
+                            </div>
+                          </amp-lightbox>
+                        <!-- /lightbox -->
+                        <!-- Add Pragraph Text -->
+                        <script>
+                            var photoseries = document.querySelectorAll('.photoseries, .photoseries2');
+                            for(var i = 0; i < photoseries.length; i++) {
+                              photoseries[i].innerHTML="Record snapshots in an adjustable time interval and stitch them together inside a Third-party Software to create a timelapse video. You can also choose to upload the snapshot with a fixed file name. This will always overwrite the last file and allows you to easily embedd a Live Image of your IP camera inside your homepage.";
+                            }
+                        </script>
+                        <div class="twocard invisible"></div>
+                        <!-- /Card -->
+                    </div>
+                    <!-- /Card Container -->
+                </div>
+                <!-- /Container -->
+            </section>
+            <!-- /Blade -->
+        </div>
+        <!-- /Wrapper -->
+
+        <!-- ------------------------------------ Related ------------------------------------------------------ -->
+
+        <section class="blade blog">
+
+            <div class="container wider">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h1>Related Topics:</h1>
+                    </div>
+                </div>
+
+                <div class="tab-container">
+
+                    <a class="tab" href="/Web_User_Interface/HD_Series/Network/Push_Service/">
+                        <h3>Activate the Alarm Push Notification for your Smartphone</h3>
+                        <div class="subtitle">Push Service</div>
+                    </a>
+
+                    <a class="tab" href="/Web_User_Interface/HD_Series/System/User/">
+                        <h3>Secure Access to your Camera</h3>
+                        <div class="subtitle">User Management</div>
+                    </a>
+
+                    <a class="tab" href="/Web_User_Interface/HD_Series/Multimedia/Image/">
+                        <h3>Change the displayed Name of your Cammera</h3>
+                        <div class="subtitle">Multimedia Image Settings</div>
+                    </a>
+
+                    <a class="tab" href="/Web_User_Interface/HD_Series/Alarm/Actions/">
+                        <h3>Define Actions to be taken by your Camera in case of an Alarm</h3>
+                        <div class="subtitle">Alarm Actions</div>
+                    </a>
+
+                    <a class="tab" href="/Web_User_Interface/HD_Series/Network/DDNS/">
+                        <h3>Scan the QR Code to add your Camera to our Smartphone App</h3>
+                        <div class="subtitle">DDNS Settings</div>
+                    </a>
+
+                    <a class="tab" href="/Web_User_Interface/HD_Series/Software/Update/">
+                        <h3>Check if an Update for your Camera is available</h3>
+                        <div class="subtitle">Software Update</div>
+                    </a>
+                </div>
+
+                <a href="/Web_User_Interface/HD_Series/" target="_blank">VIEW MORE</a>
+
+            </div>
+        </section>
+
+        <footer>
+            <% include ../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>

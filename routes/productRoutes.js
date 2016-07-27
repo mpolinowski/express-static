@@ -1,11 +1,11 @@
 var express = require('express');
 var productRouter = express.Router();
-var appdata = require('../views/partials/data/cameras.json');
+var appdata = require('../views/_partials/data/cameras.json');
 
 /* GET /Products */
 productRouter.route('/')
   .get(function(req, res) {
-      res.render('P_Products', {
+      res.render('./Products/Products', {
           title: 'INSTAR Products',
         });
     });
@@ -24,7 +24,7 @@ productRouter.get('/Indoor_Cameras', function(req, res) {
         indoorHref = indoorHref.concat(item.indoorUrl);
       });
 
-    res.render('P_Indoor_Cameras', {
+    res.render('./Products/Indoor_Cameras', {
         title: 'INSTAR Indoor IP Cameras',
         indoorPic: indoorPicture,
         indoorPicAlt: indoorPictureAlt,
@@ -46,7 +46,7 @@ productRouter.get('/Outdoor_Cameras', function(req, res) {
       outdoorHref = outdoorHref.concat(item.outdoorUrl);
     });
 
-  res.render('P_Outdoor_Cameras', {
+  res.render('./Products/Outdoor_Cameras', {
       title: 'INSTAR Outdoor IP Cameras',
       outdoorPic: outdoorPicture,
       outdoorPicAlt: outdoorPictureAlt,
@@ -68,7 +68,7 @@ productRouter.get('/Software', function(req, res) {
       softwareHref = softwareHref.concat(item.url);
     });
 
-  res.render('P_Software', {
+  res.render('./Products/Software', {
       title: 'INSTAR Software',
       Pic: softwarePicture,
       PicAlt: softwarePictureAlt,
@@ -79,7 +79,7 @@ productRouter.get('/Software', function(req, res) {
 /* GET InstarVision for Windows /Windows */
 productRouter.route('/Software/Windows')
 .get(function(req, res) {
-  res.render('P_Windows', {
+  res.render('./Products/Windows', {
       title: 'Software for Windows',
     });
 });
@@ -87,7 +87,7 @@ productRouter.route('/Software/Windows')
 /* GET InstarVision for macOS /macOS */
 productRouter.route('/Software/macOS')
 .get(function(req, res) {
-  res.render('P_MacOS', {
+  res.render('./Products/MacOS', {
       title: 'Software for macOS',
     });
 });
@@ -95,7 +95,7 @@ productRouter.route('/Software/macOS')
 /* GET InstarVision for Android /Android */
 productRouter.route('/Software/Android')
 .get(function(req, res) {
-  res.render('P_Android', {
+  res.render('./Products/Android', {
       title: 'Software for Android',
     });
 });
@@ -103,7 +103,7 @@ productRouter.route('/Software/Android')
 /* GET InstarVision for iOS /iOS */
 productRouter.route('/Software/iOS')
 .get(function(req, res) {
-  res.render('P_iOS', {
+  res.render('./Products/iOS', {
       title: 'Software for iOS',
     });
 });
@@ -111,7 +111,7 @@ productRouter.route('/Software/iOS')
 /* GET InstarVision for Windows Phone /Other_Platforms */
 productRouter.route('/Software/Other_Platforms')
 .get(function(req, res) {
-  res.render('P_Other_Platforms', {
+  res.render('./Products/Other_Platforms', {
       title: 'Other Platforms',
     });
 });

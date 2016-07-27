@@ -4,7 +4,7 @@ var webUIRouter = express.Router();
 /* GET WebUI page. */
 webUIRouter.route('/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface', {
+        res.render('./Web_User_Interface/WebUserInterface', {
             title: 'INSTAR Web User Interface',
           });
       });
@@ -14,7 +14,7 @@ webUIRouter.route('/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series', {
             title: 'INSTAR Web User Interface HD Series',
           });
       });
@@ -24,7 +24,7 @@ webUIRouter.route('/HD_Series/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Software/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Software', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Software', {
             title: 'Software Menu',
           });
       });
@@ -32,7 +32,7 @@ webUIRouter.route('/HD_Series/Software/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Software/Language/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Software_Language', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Software_Language', {
             title: 'Software Menu :: Language',
           });
       });
@@ -40,7 +40,7 @@ webUIRouter.route('/HD_Series/Software/Language/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Software/Backup/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Software_Backup', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Software_Backup', {
             title: 'Software Menu :: Backup',
           });
       });
@@ -48,7 +48,7 @@ webUIRouter.route('/HD_Series/Software/Backup/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Software/Update/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Software_Update', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Software_Update', {
             title: 'Software Menu :: Update',
           });
       });
@@ -56,7 +56,7 @@ webUIRouter.route('/HD_Series/Software/Update/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Software/Reboot_Reset/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Software_Reboot_Reset', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Software_Reboot_Reset', {
             title: 'Software Menu :: Reboot & Reset',
           });
       });
@@ -66,7 +66,7 @@ webUIRouter.route('/HD_Series/Software/Reboot_Reset/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Network/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Network', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Network', {
             title: 'Network Menu',
           });
       });
@@ -74,7 +74,7 @@ webUIRouter.route('/HD_Series/Network/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Network/IP_Configuration/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Network_IP_Configuration', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Network_IP_Configuration', {
             title: 'Network Menu :: IP Configuration',
           });
       });
@@ -82,7 +82,7 @@ webUIRouter.route('/HD_Series/Network/IP_Configuration/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Network/WiFi/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Network_WiFi', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Network_WiFi', {
             title: 'Network Menu :: WiFi',
           });
       });
@@ -90,7 +90,7 @@ webUIRouter.route('/HD_Series/Network/WiFi/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Network/DDNS/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Network_DDNS', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Network_DDNS', {
             title: 'Network Menu :: DDNS',
           });
       });
@@ -98,7 +98,7 @@ webUIRouter.route('/HD_Series/Network/DDNS/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Network/P2P/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Network_P2P', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Network_P2P', {
             title: 'Network Menu :: P2P',
           });
       });
@@ -106,7 +106,7 @@ webUIRouter.route('/HD_Series/Network/P2P/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Network/UPnP/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Network_UPnP', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Network_UPnP', {
             title: 'Network Menu :: UPnP',
           });
       });
@@ -114,7 +114,7 @@ webUIRouter.route('/HD_Series/Network/UPnP/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Network/Push_Service/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Network_Push_Service', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Network_Push_Service', {
             title: 'Network Menu :: Push Service',
           });
       });
@@ -124,7 +124,7 @@ webUIRouter.route('/HD_Series/Network/Push_Service/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/System/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_System', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_System', {
             title: 'System Menu',
           });
       });
@@ -132,7 +132,7 @@ webUIRouter.route('/HD_Series/System/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/System/Info/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_System_Info', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_System_Info', {
             title: 'System Menu :: Info',
           });
       });
@@ -140,7 +140,7 @@ webUIRouter.route('/HD_Series/System/Info/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/System/Date_Time/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_System_Date_Time', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_System_Date_Time', {
             title: 'System Menu :: Date & Time',
           });
       });
@@ -148,7 +148,7 @@ webUIRouter.route('/HD_Series/System/Date_Time/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/System/User/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_System_User', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_System_User', {
             title: 'System Menu :: User',
           });
       });
@@ -156,7 +156,7 @@ webUIRouter.route('/HD_Series/System/User/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/System/Status_LED/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_System_Status_LED', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_System_Status_LED', {
             title: 'System Menu :: Status LED',
           });
       });
@@ -164,7 +164,7 @@ webUIRouter.route('/HD_Series/System/Status_LED/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/System/IR_LED/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_System_IR_LED', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_System_IR_LED', {
             title: 'System Menu :: IR LED',
           });
       });
@@ -172,7 +172,7 @@ webUIRouter.route('/HD_Series/System/IR_LED/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/System/ONVIF/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_System_ONVIF', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_System_ONVIF', {
             title: 'System Menu :: ONVIF',
           });
       });
@@ -180,7 +180,7 @@ webUIRouter.route('/HD_Series/System/ONVIF/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/System/PTZ/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_System_PTZ', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_System_PTZ', {
             title: 'System Menu :: PTZ',
           });
       });
@@ -188,7 +188,7 @@ webUIRouter.route('/HD_Series/System/PTZ/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/System/PTZ_Tour/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_System_PTZ_Tour', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_System_PTZ_Tour', {
             title: 'System Menu :: PTZ Tour',
           });
       });
@@ -196,7 +196,7 @@ webUIRouter.route('/HD_Series/System/PTZ_Tour/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/System/System_Log/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_System_System_Log', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_System_System_Log', {
             title: 'System Menu :: System Log',
           });
       });
@@ -206,7 +206,7 @@ webUIRouter.route('/HD_Series/System/System_Log/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Multimedia/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Multimedia', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Multimedia', {
             title: 'Multimedia Menu',
           });
       });
@@ -214,7 +214,7 @@ webUIRouter.route('/HD_Series/Multimedia/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Multimedia/Audio/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Multimedia_Audio', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Multimedia_Audio', {
             title: 'Multimedia Menu :: Audio',
           });
       });
@@ -222,7 +222,7 @@ webUIRouter.route('/HD_Series/Multimedia/Audio/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Multimedia/Video/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Multimedia_Video', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Multimedia_Video', {
             title: 'Multimedia Menu :: Video',
           });
       });
@@ -230,7 +230,7 @@ webUIRouter.route('/HD_Series/Multimedia/Video/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Multimedia/Image/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Multimedia_Image', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Multimedia_Image', {
             title: 'Multimedia Menu :: Image',
           });
       });
@@ -240,7 +240,7 @@ webUIRouter.route('/HD_Series/Multimedia/Image/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Alarm/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Alarm', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Alarm', {
             title: 'Alarm Menu',
           });
       });
@@ -248,7 +248,7 @@ webUIRouter.route('/HD_Series/Alarm/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Alarm/Areas/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Alarm_Areas', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Alarm_Areas', {
             title: 'Alarm Menu :: Areas',
           });
       });
@@ -256,7 +256,7 @@ webUIRouter.route('/HD_Series/Alarm/Areas/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Alarm/Privacy_Mask/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Alarm_Privacy_Mask', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Alarm_Privacy_Mask', {
             title: 'Alarm Menu :: Privacy Mask',
           });
       });
@@ -264,7 +264,7 @@ webUIRouter.route('/HD_Series/Alarm/Privacy_Mask/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Alarm/Actions/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Alarm_Actions', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Alarm_Actions', {
             title: 'Alarm Menu :: Actions',
           });
       });
@@ -272,7 +272,7 @@ webUIRouter.route('/HD_Series/Alarm/Actions/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Alarm/Schedule/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Alarm_Schedule', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Alarm_Schedule', {
             title: 'Alarm Menu :: Schedule',
           });
       });
@@ -280,7 +280,7 @@ webUIRouter.route('/HD_Series/Alarm/Schedule/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Alarm/SMTP_Server/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Alarm_SMTP_Server', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Alarm_SMTP_Server', {
             title: 'Alarm Menu :: SMTP Server',
           });
       });
@@ -288,7 +288,7 @@ webUIRouter.route('/HD_Series/Alarm/SMTP_Server/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Alarm/Email/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Alarm_Email', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Alarm_Email', {
             title: 'Alarm Menu :: Email',
           });
       });
@@ -296,7 +296,7 @@ webUIRouter.route('/HD_Series/Alarm/Email/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Alarm/FTP/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Alarm_FTP', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Alarm_FTP', {
             title: 'Alarm Menu :: FTP',
           });
       });
@@ -304,7 +304,7 @@ webUIRouter.route('/HD_Series/Alarm/FTP/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Alarm/Audio_Alarm/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Alarm_Audio_Alarm', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Alarm_Audio_Alarm', {
             title: 'Alarm Menu :: Audio Alarm',
           });
       });
@@ -312,7 +312,7 @@ webUIRouter.route('/HD_Series/Alarm/Audio_Alarm/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Alarm/SD_Card/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Alarm_SD_Card', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Alarm_SD_Card', {
             title: 'Alarm Menu :: SD Card',
           });
       });
@@ -322,7 +322,7 @@ webUIRouter.route('/HD_Series/Alarm/SD_Card/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Recording/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Recording', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Recording', {
             title: 'Recording Menu',
           });
       });
@@ -330,7 +330,7 @@ webUIRouter.route('/HD_Series/Recording/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Recording/Schedule/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Recording_Schedule', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Recording_Schedule', {
             title: 'Recording Menu :: Schedule',
           });
       });
@@ -338,7 +338,7 @@ webUIRouter.route('/HD_Series/Recording/Schedule/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Recording/Video/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Recording_Video', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Recording_Video', {
             title: 'Recording Menu :: Video',
           });
       });
@@ -346,7 +346,7 @@ webUIRouter.route('/HD_Series/Recording/Video/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Recording/Photoseries/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Recording_Photoseries', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Recording_Photoseries', {
             title: 'Recording Menu :: Photoseries',
           });
       });
@@ -356,7 +356,7 @@ webUIRouter.route('/HD_Series/Recording/Photoseries/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Menu_Bar/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Menu_Bar', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Menu_Bar', {
             title: 'Menu Bar',
           });
       });
@@ -366,7 +366,7 @@ webUIRouter.route('/HD_Series/Menu_Bar/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/Video_Menu_Bar/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_Video_Menu_Bar', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_Video_Menu_Bar', {
             title: 'Video Menu Bar',
           });
       });
@@ -376,7 +376,7 @@ webUIRouter.route('/HD_Series/Video_Menu_Bar/')
 /* GET HD WebUI page. */
 webUIRouter.route('/HD_Series/PTZ_Control/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_HD-Series_PTZ_Control', {
+        res.render('./Web_User_Interface/WebUserInterface_HD-Series_PTZ_Control', {
             title: 'PTZ Control',
           });
       });
@@ -386,7 +386,7 @@ webUIRouter.route('/HD_Series/PTZ_Control/')
 /* GET fullHD WebUI page. */
 webUIRouter.route('/fullHD_Series/')
     .get(function(req, res) {
-        res.render('WUI_WebUserInterface_fullHD-Series', {
+        res.render('./Web_User_Interface/WebUserInterface_fullHD-Series', {
             title: 'INSTAR Web User Interface fullHD Series',
           });
       });

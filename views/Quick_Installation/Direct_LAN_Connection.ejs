@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html ⚡>
+    <head>
+        <% include ../_partials/amp/_amp-head.ejs %>
+        <link rel="canonical" href="/Quick-Installation/Direct_LAN_Connection">
+    </head>
+
+    <body class="home">
+
+        <header class="fixed">
+            <div class="wrap">
+                <div class="container">
+                    <div class="clearfix">
+                        <div class="left-nav">
+                            <a href="/" class="tab header-title">
+                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
+                            </a>
+                        </div>
+                        <div class="right alt">
+
+                            <a href="/Quick_Installation/" class="tab header-title">
+                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrap">
+            <div class="container main">
+
+                <article>
+                    <!-- article -->
+
+                    <div class="margin">
+                        <h1>Direct LAN Connection</h1>
+                        <h4>How to connect your camera directly with your computer via an Ethernet cable</h4>
+                        <p class="justify">
+                            The following instructions will explain to you step by step how you can create a direct LAN connection between your computer and an INSTAR IP camera. Use this approach if you want to use the camera in an area, that does not provide a network
+                            infrastructure or to if you want to configure the camera to connect to a Wifi network when you don´t have a LAN Ethernet connection available to make the initial Wifi configuration.
+                        </p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Connect the Camera</h2>
+                        <p class="justify">
+                            Connect the camera with a regular Ethernet cable to your PC or Notebook (Very old PCs might still need a special -
+                            <a href="http://en.wikipedia.org/wiki/Ethernet_crossover_cable">Crossover</a>
+                            - cable to make this connections).
+                        </p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Search the Camera</h2>
+                        <p class="justify">
+                            Install/Open the INSTAR Camera Tool which will show you the following message after clicking the ''Search'' button: (you might have to select the correct network interface to which the camera is connected to. If for example you have a VPN connection,
+                            an active bluetooth module and the regular LAN interface, then you have to select the LAN interface in order to find your IP camera.
+                        </p>
+                        <amp-img src="/images/Direktverbindung_01en.jpg" width=600 height=389 layout="responsive" class="shadow"></amp-img>
+                        <p>Open the camera tool and press
+                            <em>Search</em>.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Assign a static IP to your Windows PC</h2>
+                        <p class="justify">
+                            Open the
+                            <em>Network- and Sharing Centre</em>
+                            (<em>Control Panel</em>
+                            ->
+                            <em>Network and Security</em>). The interface will show you a new unidentified LAN connection. Open it´s settings by clicking "Local Area Network". Go to
+                            <em>Properties</em>, select the
+                            <em>Internet Protocol Version 4 (TCP/IPv4)</em>
+                            and select
+                            <em>Properties</em>
+                            as shown below.
+                        </p>
+                        <amp-img src="/images/Direktverbindung_02en.jpg" width=700 height=629 layout="responsive" class="shadow"></amp-img>
+                        <p>Open the Windows
+                            <em>Network- and Sharing Centre</em>
+                            and go to the LAN adapter properties.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p class="justify">
+                            The following window will open and allow you to set a static IP address for your PC/Laptop. Submit the settings by clicking "OK" and return to the IP Camera Tool.
+                        </p>
+                        <amp-img src="/images/Direktverbindung_03en.jpg" width=400 height=450 layout="responsive" class="shadow"></amp-img>
+                        <p>Open the IPv4 properties.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p class="justify">
+                            Please fill in a valid IP address for your computer and set it to be new networks gateway and DNS server (see below):
+                        </p>
+                        <amp-img src="/images/Direktverbindung_04en.jpg" width=400 height=444 layout="responsive" class="shadow"></amp-img>
+                        <p>Assign a static IP address to your PC.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Assign a static IP to your Mac</h2>
+                        <p class="justify">
+                            Open the menu
+                            <em>System Preferences</em>
+                            go to
+                            <em>Network</em>
+                            and click on
+                            <em>Ethernet</em>. Please choose
+                            <em>Configure IPv4: Manually</em>
+                            and type in a valid IP address. Use the same IP address as the Router IP. Submit the new settings with
+                            <em>Apply</em>
+                            and return to the IP Camera Tool.
+                        </p>
+                        <amp-img src="/images/Direktverbindung_MAC_en.jpg" width=600 height=524 layout="responsive" class="shadow"></amp-img>
+                        <p>Go to the
+                            <em>Sytem Preferences</em>
+                            and open the
+                            <em>Ethernet</em>
+                            configuration.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Assign a static IP to your Camera</h2>
+                        <p class="justify">
+                            Click on ''IP Config'' and select your camera on the left side. Fill in the IP address for the camera. The address has to be in the same IP subnet you used for your computer in '''step 3''' but has to be different from the address you choose above -
+                            e.g. '''just add 1''' to the last octet (see example below)! The Gateway and DNS server will be the IP address of your computer that you set above.<br/><br/>If you are using a class C network the standard subnet mask is (Subnet Mask: 255.255.255.0).
+                        </p>
+                        <amp-img src="/images/Direktverbindung_05en.jpg" width=600 height=398 layout="responsive" class="shadow"></amp-img>
+                        <p>Open the IP configuration tab of the INSTAR camera tool and set a valid IP address and submit.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p class="justify">
+                            After submitting the data the camera will restart which takes about 30 seconds. Click on
+                            <em>Search</em>
+                            to find the camera again and double-click die camera entry to open the WebUI inside your default browser. If you want to use a different browser, type in the camera´s IP address into your browser´s address line and press
+                            <em>Return</em>. You are now able to change the camera´s settings and access the live stream.
+                        </p>
+                        <amp-img src="/images/Direktverbindung_06en.jpg" width=600 height=398 layout="responsive" class="shadow"></amp-img>
+                        <p>Open the camera´s new IP address with your default browser.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p class="justify">
+                            If you choose the direct connection to do the initial WLAN configuration of your camera to integrate it into an existing Wifi network, type in the WLAN information under
+                            <a href="http://wiki.instar.de/index.php/HD_Manual_WebUI_Network_WiFi">Network/WIFi</a>
+                            and change the cameras IP address to a free address in the IP subnet that is used inside the wireless network. The camera will then restart - please unplug the LAN cable right after submitting the new IP address to allow the camera to connect to your
+                            wireless LAN.
+                        </p>
+                    </div>
+                    <!-- /margin -->
+
+                    <article>
+                        <!-- article -->
+                    </div>
+                    <!-- wrap -->
+                </div>
+                <!-- container -->
+
+                <section class="blade blog">
+
+                    <div class="container wider">
+                        <div class="row">
+                            <div class="twelve columns">
+                                <h1>Related Topics:</h1>
+                            </div>
+                        </div>
+
+                        <div class="tab-container">
+
+                            <a class="tab" href="/Quick_Installation/First_Steps">
+                                <h3>First Steps to Install your INSTAR IP Camera</h3>
+                                <div class="subtitle">Easy</div>
+                            </a>
+
+                            <a class="tab" href="/Quick_Installation/After_Unpacking">
+                                <h3>What to do After Umpacking your Camera</h3>
+                                <div class="subtitle">Easy</div>
+                            </a>
+
+                            <a class="tab" href="/Quick_Installation/Direct_LAN_Connection">
+                                <h3>Connect your Camera with Computer Directly</h3>
+                                <div class="subtitle">Intermediate</div>
+                            </a>
+
+                            <a class="tab" href="/Quick_Installation/WebUI_And_Firmware_Upgrade">
+                                <h3>How to Update your Cameras Firmware and User Interface</h3>
+                                <div class="subtitle">Intermediate</div>
+                            </a>
+
+                            <a class="tab" href="/Quick_Installation/Set_Up_A_Wireless_Connection">
+                                <h3>How to Connect your Camera via WiFi</h3>
+                                <div class="subtitle">Easy</div>
+                            </a>
+
+                            <a class="tab" href="/Quick_Installation/Creating_User_Accounts">
+                                <h3>Change the Default Login of your Camera</h3>
+                                <div class="subtitle">Easy</div>
+                            </a>
+                        </div>
+
+                        <a href="/Quick_Installation/" target="_blank">VIEW MORE</a>
+
+                    </div>
+                </section>
+
+                <footer>
+                    <% include ../_partials/amp/_amp-footer.ejs %>
+                </footer>
+            </body>
+        </html>

@@ -1,6 +1,6 @@
 var express = require('express');
 var motionDetectionRouter = express.Router();
-var appdata = require('../views/partials/data/motionDetection.json');
+var appdata = require('../views/_partials/data/motionDetection.json');
 
 /* GET Internet_Access page. */
 motionDetectionRouter.get('/', function(req, res) {
@@ -14,7 +14,7 @@ motionDetectionRouter.get('/', function(req, res) {
         mdHref = mdHref.concat(item.mdUrl);
       });
 
-    res.render('MD_Motion_Detection', {
+    res.render('./Motion_Detection/Motion_Detection', {
         title: 'Motion Detection',
         mdPic: mdPicture,
         mdPicAlt: mdPictureAlt,

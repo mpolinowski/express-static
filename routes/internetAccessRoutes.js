@@ -1,6 +1,6 @@
 var express = require('express');
 var internetAccessRouter = express.Router();
-var appdata = require('../views/partials/data/internetAccess.json');
+var appdata = require('../views/_partials/data/internetAccess.json');
 
 /* GET Internet_Access page. */
 internetAccessRouter.get('/', function(req, res) {
@@ -14,7 +14,7 @@ internetAccessRouter.get('/', function(req, res) {
         iaHref = iaHref.concat(item.iaUrl);
       });
 
-    res.render('IA_Internet_Access', {
+    res.render('./Internet_Access/Internet_Access', {
         title: 'Internet Access',
         iaPic: iaPicture,
         iaPicAlt: iaPictureAlt,
