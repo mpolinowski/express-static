@@ -150,14 +150,14 @@ app.get('/Search_Results', function(req, res) {
               },
           },
       }).then(function(resp) {
-        res.render('00_Search_Results', {
+        res.render('Search_Results', {
             title: 'INSTAR Wiki Search Results',
             response: resp,
             query: req.query.q,
           });
       }, function(err) {
         console.trace(err.message);
-        res.render('00_Search_Results', {
+        res.render('Search_Results', {
             title: 'INSTAR Wiki Search Results',
             response: err.message,
           });
@@ -178,7 +178,7 @@ app.use(function(req, res, next) {
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
       res.status(err.status || 500);
-      res.render('00_error', {
+      res.render('error', {
           message: err.message,
           error: err,
         });
@@ -189,7 +189,7 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.render('00_error', {
+    res.render('error', {
         message: err.message,
         error: {},
       });

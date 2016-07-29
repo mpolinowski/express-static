@@ -193,7 +193,7 @@ quickInstallRouter.route('/Set_Up_A_Wireless_Connection')
 /* GET DEV pages /dev */
 quickInstallRouter.route('/DEV')
     .get(function(req, res) {
-        res.render('00_DEV', {
+        res.render('DEV', {
             title: 'DEV Resources',
           });
       });
@@ -201,7 +201,7 @@ quickInstallRouter.route('/DEV')
 /* GET AMP Test Range /amp */
 quickInstallRouter.route('/AMP')
     .get(function(req, res) {
-        res.render('00_AMP', {
+        res.render('AMP', {
             title: 'Accelerated Mobile Page',
           });
       });
@@ -209,7 +209,7 @@ quickInstallRouter.route('/AMP')
 /* GET AMP2 Test Range /amp2 */
 quickInstallRouter.route('/AMP2')
     .get(function(req, res) {
-        res.render('00_AMP2', {
+        res.render('AMP2', {
             title: 'Accelerated Mobile Page 2',
           });
       });
@@ -217,8 +217,16 @@ quickInstallRouter.route('/AMP2')
 /* GET AMP3 Test Range /Redirection */
 quickInstallRouter.route('/AMP3')
     .get(function(req, res) {
-        res.render('00_AMP3', {
+        res.render('AMP3', {
             title: 'Redirection',
+          });
+      });
+
+/* GET AMP3 Test Range /Redirection */
+quickInstallRouter.route('/AMP_Gallery')
+    .get(function(req, res) {
+        res.render('AMP_Gallery', {
+            title: 'AMP Gallery',
           });
       });
 

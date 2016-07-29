@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html ⚡>
     <head>
-        <% include partials/amp/_amp-head.ejs %>
-        <link rel="canonical" href="/Internet_Access/AMP">
+        <% include _partials/amp/_amp-head.ejs %>
+        <link rel="canonical" href="/Quick_Installation/AMP/">
     </head>
 
     <body class="home">
@@ -13,21 +13,13 @@
                     <div class="clearfix">
                         <div class="left-nav">
                             <a href="/" class="tab header-title">
-                              <amp-img class="placeholder shadow"
-                                       src="/images/instar_245x77.png"
-                                       height="30px" width="95px"
-                                       alt="Instar Wiki">
-                              </amp-img>
+                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
                             </a>
                         </div>
                         <div class="right alt">
 
-                            <a href="/Quick_Installation/" class="tab header-title">
-                              <amp-img class="placeholder shadow"
-                                       src="/images/return.jpg"
-                                       height="30px" width="30px"
-                                       alt="Go Back">
-                              </amp-img>
+                            <a href="/Quick_Installation/DEV/" class="tab header-title">
+                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
                             </a>
                         </div>
                     </div>
@@ -412,5 +404,9 @@
 
                 </div>  <!-- /Content -->
             </div> <!-- /Wrap -->
+
+            <footer>
+                <% include _partials/amp/_amp-footer.ejs %>
+            </footer>
         </body>
     </html>

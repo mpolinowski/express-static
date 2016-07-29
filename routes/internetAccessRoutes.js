@@ -22,4 +22,22 @@ internetAccessRouter.get('/', function(req, res) {
       });
   });
 
+internetAccessRouter.get('/The_DDNS_Service', function(req, res) {
+    res.render('./Internet_Access/The_DDNS_Service', {
+        title: 'The DDNS Service',
+      });
+  });
+
+internetAccessRouter.get('/Port_Forwarding', function(req, res) {
+    res.render('./Internet_Access/Port_Forwarding', {
+        title: 'Port_Forwarding',
+      });
+  });
+
+internetAccessRouter.get('/DDNS_Provider', function(req, res) {
+    res.render('./Internet_Access/DDNS_Provider', {
+        title: 'Third Party DDNS Provider',
+      });
+  });
+
 module.exports = internetAccessRouter;
