@@ -14,8 +14,8 @@
                 <h1>Search Results</h1>
 
                 <% if (response.hits.total > 0) { %>
-                    <h3><%= response.hits.total %> Results - Took <%= response.took %> milliseconds</h3>
-                <% } %>
+                    <h3> <%= response.hits.total %> Results - Took <%= response.took %> milliseconds</h3>
+                <% }; %>
 
                 <% if (response.hits.total > 0) { %>
                     <table class="table table-bordered">
@@ -27,23 +27,23 @@
                                 <th>Models</th>
                                 <th>Abstract</th>
                                 <th>Link</th>
-                                <th>Image
-                                    <tbody></tbody>
-                                </th>
+                                <th>Image</th>
                             </tr>
-                            <!-- <% for.each(article in response.hits.hits) { %> -->
-                            <% for(var i=0; i<response.hits.hits.length;i++){%>
-                                <tr>
-                                    <td><%= article[i]._source.title %></td>
-                                    <td><%= article[i]._source.chapter %></td>
-                                    <td><%= article[i]._source.tags %></td>
-                                    <td><%= article[i]._source.models %></td>
-                                    <td><%= article[i]._source.abstract %></td>
-                                    <td><%= article[i]._source.link %></td>
-                                    <td><%= article[i]._source.image %></td>
-                                </tr>
+                            </thead>
+                            <tbody>
+                            <% for.each(article in response.hits.hits) { %>
+                            <!-- <% for(var i=0; i<response.hits.hits.length;i++){%> -->
+                                  <tr>
+                                      <td><%= article[i]._source.title %></td>
+                                      <td><%= article[i]._source.chapter %></td>
+                                      <td><%= article[i]._source.tags %></td>
+                                      <td><%= article[i]._source.models %></td>
+                                      <td><%= article[i]._source.abstract %></td>
+                                      <td><%= article[i]._source.link %></td>
+                                      <td><%= article[i]._source.image %></td>
+                                  </tr>
+                                </tbody>
                             <% } %>
-                        </thead>
                     </table>
                 <% } %>
                 <!-- /Table -->

@@ -14,18 +14,19 @@
 
                 <div class="row col-xs-10 col-xs-offset-1">
 
-                    <form class="form-inline">
+                    <form  method="get" action="/Search/Results" class="form-inline">
                         <div class="form-group">
                             <label for="inputSearch" class="sr-only">Search Query</label>
-                            <input type="search" autofocus class="form-control" placeholder="Search Query">
+                            <input type="search" autofocus class="form-control" placeholder="Search Query" name="q" autocomplete="off" class="form-control">
                             <br/><br/>
                             <button class="btn btn-primary btn-block" type="submit">Search</button>
                         </div>
-                    </div>
-
+                    </form>
                 </div>
+                 <!-- /row -->
 
-            </form>
+            </div>
+            <!-- /wrapper -->
 
         </section>
         <!-- /search -->
