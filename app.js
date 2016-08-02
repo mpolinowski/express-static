@@ -11,7 +11,7 @@ var connectionString = 'localhost:9200';
 
 var client = new elasticsearch.Client({
     host: connectionString,
-    log: 'debug',
+    log: 'trace',
   });
 
 var _index = 'wiki';
@@ -113,17 +113,17 @@ app.get('/Search_Results', function(req, res) {
                   },
                 abstract: {
                     terms: {
-                        field: 'language.raw',
+                        field: 'abstract.raw',
                       },
                   },
                 title2: {
                     terms: {
-                        field: 'job_title.raw',
+                        field: 'title2.raw',
                       },
                   },
                 chapter: {
                     terms: {
-                        field: 'gender',
+                        field: 'chapter.raw',
                       },
                   },
               },

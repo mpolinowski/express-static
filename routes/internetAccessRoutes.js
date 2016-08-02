@@ -30,7 +30,43 @@ internetAccessRouter.get('/The_DDNS_Service', function(req, res) {
 
 internetAccessRouter.get('/Port_Forwarding', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding', {
-        title: 'Port_Forwarding',
+        title: 'Port Forwarding',
+      });
+  });
+
+internetAccessRouter.get('/Port_Forwarding/AVM_Fritzbox/', function(req, res) {
+    res.render('./Internet_Access/Port_Forwarding_AVM_Fritzbox', {
+        title: 'Port Forwarding AVM Fritzbox',
+      });
+  });
+
+internetAccessRouter.get('/Port_Forwarding/Telekom_Speedport/', function(req, res) {
+    res.render('./Internet_Access/Port_Forwarding_Telekom_Speedport', {
+        title: 'Port Forwarding Telekom Speedport',
+      });
+  });
+
+internetAccessRouter.get('/Port_Forwarding/D-Link/', function(req, res) {
+    res.render('./Internet_Access/Port_Forwarding_D-Link', {
+        title: 'Port Forwarding D-Link',
+      });
+  });
+
+internetAccessRouter.get('/Port_Forwarding/Netgear/', function(req, res) {
+    res.render('./Internet_Access/Port_Forwarding_Netgear', {
+        title: 'Port Forwarding Netgear',
+      });
+  });
+
+internetAccessRouter.get('/Port_Forwarding/Vodafone_Easybox/', function(req, res) {
+    res.render('./Internet_Access/Port_Forwarding_Vodafone_Easybox', {
+        title: 'Port Forwarding Vodafone Easybox',
+      });
+  });
+
+internetAccessRouter.get('/Port_Forwarding/Pirelli/', function(req, res) {
+    res.render('./Internet_Access/Port_Forwarding_Pirelli', {
+        title: 'Port Forwarding Pirelli',
       });
   });
 
