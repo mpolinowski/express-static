@@ -34,6 +34,12 @@ motionDetectionRouter.get('/Alarm_Notification/', function(req, res) {
       });
   });
 
+motionDetectionRouter.get('/Alarm_Notification/SMTP_Servers', function(req, res) {
+    res.render('./Motion_Detection/Alarm_Notification_SMTP_Servers', {
+        title: 'SMTP Server',
+      });
+  });
+
 motionDetectionRouter.get('/Alarm_Recording/', function(req, res) {
     res.render('./Motion_Detection/Alarm_Recording', {
         title: 'Alarm Recording',

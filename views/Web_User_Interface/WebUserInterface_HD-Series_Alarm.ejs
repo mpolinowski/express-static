@@ -39,6 +39,8 @@
 
                     <!-- ##################################### Areas ############################################ -->
 
+
+
                     <div class="card-container margin">
                         <div class="twocard">
                             <div class="image" on="tap:areas-lightbox" role="button" tabindex="0">
@@ -55,14 +57,12 @@
                         <!-- /Card -->
                         <!-- lightbox -->
                           <amp-lightbox id="areas-lightbox" layout="nodisplay">
-                            <div class="lightbox" on="tap:areas-lightbox.close" tabindex="0">
+                            <div class="lightbox" tabindex="0">
                               <div class="twocard cardbox">
-                                  <a href="/Web_User_Interface/HD_Series/Alarm/Areas/">
-                                  <div class="image">
+                                  <div class="image"on=" tap:areas-lightbox.close">
                                       <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Alarm_Areas_mouseOver.png"></amp-img>
                                   </div>
-                                  </a>
-                                  <div class="content" on="tap:areas-lightbox.close" tabindex="0">
+                                  <div class="content" tabindex="0">
                                       <hr>
                                       <p class="areas2"></p> <!-- innerHTML Added by script below -->
                                   </div>

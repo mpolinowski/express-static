@@ -31,16 +31,15 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <% for.each(article in response.hits.hits) { %>
-                            <!-- <% for(var i=0; i<response.hits.hits.length;i++){%> -->
+                            <% for(var i=0; i<response.hits.hits.length;i++){%>
                                   <tr>
-                                      <td><%= article[i]._source.title %></td>
-                                      <td><%= article[i]._source.chapter %></td>
-                                      <td><%= article[i]._source.tags %></td>
-                                      <td><%= article[i]._source.models %></td>
-                                      <td><%= article[i]._source.abstract %></td>
-                                      <td><%= article[i]._source.link %></td>
-                                      <td><%= article[i]._source.image %></td>
+                                      <td><%= response.hits.hits[i]._source.title %></td>
+                                      <td><%= response.hits.hits[i]._source.chapter %></td>
+                                      <td><%= response.hits.hits[i]._source.tags %></td>
+                                      <td><%= response.hits.hits[i]._source.models %></td>
+                                      <td><%= response.hits.hits[i]._source.abstract %></td>
+                                      <td><%= response.hits.hits[i]._source.link %></td>
+                                      <td><%= response.hits.hits[i]._source.image %></td>
                                   </tr>
                                 </tbody>
                             <% } %>
