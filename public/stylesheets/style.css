@@ -28,6 +28,9 @@ h1, h2, h3, h4, h5, h6 {
     -moz-box-shadow: 0 0 5px 2px rgba(2, 117, 216, .50);
     box-shadow: 0 0 5px 2px rgba(2, 117, 216, .50);
 }
+.shadow {
+  box-shadow: 2px 2px 1px #888888;
+}
 
 /* Paragraph */
 

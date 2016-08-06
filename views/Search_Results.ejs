@@ -1,62 +1,137 @@
 <% include _partials/template/_head.ejs %>
 
-    <body>
-      <% include _partials/template/_outdated.ejs %>
+<body>
+    <% include _partials/template/_outdated.ejs %>
 
-        <div id="wrapper">
+    <div id="wrapper">
 
-            <header><% include _partials/template/_header.ejs %></header>
-            <!-- Navbar-->
+        <header><% include _partials/template/_header.ejs %></header>
+        <!-- Navbar-->
 
-            <!-- #############################################  Search ############################################# -->
-            <section class="container" style="margin-bottom: 400px;">
+        <!-- #############################################  Search Landing ############################################# -->
 
-                <h1>Search Results</h1>
+        <section class="landing">
+          <div class="container"
+            <div class="row">
 
-                <% if (response.hits.total > 0) { %>
-                    <h3> <%= response.hits.total %> Results - Took <%= response.took %> milliseconds</h3>
-                <% }; %>
+                <div class="mb mt">
+                    <% if (response.hits.total > 0) { %>
+                        <h1 class="headline">Search Results</h1>
+                        <br/><br/>
+                        <h2 class="subheader">Run took <%= response.took %> milliseconds</h2>
+                        <h5 class="text-muted">Max search score: "<%= response.hits.max_score %>"</h5>
+                        <% } else { %>
+                            <p>No results found!</p>
+                            <br/><br/>
+                            <h2 class="subheader">¯\_(ツ)_/¯ Your keyword produced no hits ¯\_(ツ)_/¯</h2>
+                        <% } %>
+                    <hr>
+                </div>
+                 <!-- /Runtime-->
 
-                <% if (response.hits.total > 0) { %>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Chapter</th>
-                                <th>Tags</th>
-                                <th>Models</th>
-                                <th>Abstract</th>
-                                <th>Link</th>
-                                <th>Image</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <% for(var i=0; i<response.hits.hits.length;i++){%>
-                                  <tr>
-                                      <td><%= response.hits.hits[i]._source.title %></td>
-                                      <td><%= response.hits.hits[i]._source.chapter %></td>
-                                      <td><%= response.hits.hits[i]._source.tags %></td>
-                                      <td><%= response.hits.hits[i]._source.models %></td>
-                                      <td><%= response.hits.hits[i]._source.abstract %></td>
-                                      <td><%= response.hits.hits[i]._source.link %></td>
-                                      <td><%= response.hits.hits[i]._source.image %></td>
-                                  </tr>
-                                </tbody>
-                            <% } %>
-                    </table>
-                <% } %>
-                <!-- /Table -->
+           </div>
+           <!-- /Row -->
+         </div>
+         <!-- /Container -->
+       </section>
+       <!-- /Landing -->
 
-                <hr>
+       <section class="container" style="margin-bottom: 200px;">
+           <div class="row">
 
-            </section>
+                  <% if (response.hits.total > 0) { %>
+                      <div class="card-columns mb">
+                          <% for(var i=0; i<response.hits.hits.length;i++){ if (i === 8) { break; } %>
+                              <div class="card card-inverse shadow mt" style="background-color: #333; border-color: #333;">
+                                  <img class="card-img-top img-fluid" src="<%= response.hits.hits[i]._source.image %>" alt="Card image cap">
+                                  <div class="card-block" style="height: 215px;">
+                                      <h4 class="card-title"><%= response.hits.hits[i]._source.title %></h4>
+                                      <p class="card-text"><%= response.hits.hits[i]._source.abstract %></p>
+                                      <a href="<%= response.hits.hits[i]._source.link %>" class="btn btn-primary">Read More</a>
+                                  </div>
+                              </div>
+                          <% } %>
+                      </div>
+                  <% } else { %>
+                    <div class="card-deck-wrapper mb">
+                        <div class="card-deck">
+                          <div class="card">
+                            <img class="card-img-top img-fluid" src="http://placehold.it/594x380" alt="Card image cap">
+                            <div class="card-block">
+                              <h4 class="card-title">Products</h4>
+                              <p class="card-text">Get all Information about INSTAR Products. Downloads, Technical Specifications and more.</p>
+                              <a href="/Products/" class="btn btn-secondary">Read More</a>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top img-fluid" src="http://placehold.it/594x380" alt="Card image cap">
+                            <div class="card-block">
+                              <h4 class="card-title">Quick Installation</h4>
+                              <p class="card-text">Install your INSTAR camera with ease - read this guide for more information on the process.</p>
+                              <a href="/Quick_Installation/" class="btn btn-secondary">Read More</a>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top img-fluid" src="http://placehold.it/594x380" alt="Card image cap">
+                            <div class="card-block">
+                              <h4 class="card-title">Internet Access</h4>
+                              <p class="card-text">All INSTAR cameras can be accessed from the internet - click here to learn more about DDNS, P2P &amp; Co.</p>
+                              <a href="/Internet_Access/" class="btn btn-secondary">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-deck-wrapper mt">
+                          <div class="card-deck">
+                            <div class="card">
+                              <img class="card-img-top img-fluid" src="http://placehold.it/594x380" alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Motion Detection</h4>
+                                <p class="card-text">Use your INSTAR camera to notify you, whenever someone enters the surveillance areas!</p>
+                                <a href="/Motion_Detection/" class="btn btn-secondary">Read More</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top img-fluid" src="http://placehold.it/594x380" alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Advanced User</h4>
+                                <p class="card-text">IP cameras are small computers that can be tinkered with. Advanced users, programmers... read on!</p>
+                                <a href="/Advanced_User/" class="btn btn-secondary">Read More</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top img-fluid" src="http://placehold.it/594x380" alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">INSTAR Shop</h4>
+                                <p class="card-text">Interested in getting a new IP camera? Or looking for some accessories for your existing one?</p>
+                                <a href="http://instar.de" class="btn btn-secondary" target="_blank">Go Shopping</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  <% } %>
 
+            </div>
+            <!-- /Row -->
+        </section>
+        <!-- /Container -->
 
-            <!-- ############################################# Footer ############################################# -->
+        <!-- ############################################# Footer ############################################# -->
 
-        <footer><% include _partials/template/_footer.ejs %></footer>
+        <section class="footer">
 
-        <% include _partials/template/_jsdefaults.ejs %>
+            <div class="container">
+                <div class="row">
+                    <div class="pull-xs-right">
+                        <p class="text-muted"><small><i class="fa fa-copyright"></i> 2016 INSTAR Deutschland GmbH</small></p>
+                    </div>
+                </div> <!-- /row -->
+            </div> <!-- /container -->
+
+            <% include _partials/template/_jsdefaults.ejs %>
+
+      </section>
+       <!-- /footer -->
 
     </div>
 

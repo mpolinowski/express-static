@@ -1,0 +1,65 @@
+<% include _partials/template/_head.ejs %>
+
+    <body>
+      <% include _partials/template/_outdated.ejs %>
+
+        <div id="wrapper">
+
+            <header><% include _partials/template/_header.ejs %></header>
+            <!-- Navbar-->
+
+            <!-- #############################################  Search ############################################# -->
+            <section class="container" style="margin-bottom: 400px;">
+
+                <h1>Search Results</h1>
+
+                <% if (response.hits.total > 0) { %>
+                    <h3> <%= response.hits.total %> Results - Took <%= response.took %> milliseconds</h3>
+                <% }; %>
+
+                <% if (response.hits.total > 0) { %>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Chapter</th>
+                                <th>Tags</th>
+                                <th>Models</th>
+                                <th>Abstract</th>
+                                <th>Link</th>
+                                <th>Image</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <% for(var i=0; i<response.hits.hits.length;i++){%>
+                                  <tr>
+                                      <td><%= response.hits.hits[i]._source.title %></td>
+                                      <td><%= response.hits.hits[i]._source.chapter %></td>
+                                      <td><%= response.hits.hits[i]._source.tags %></td>
+                                      <td><%= response.hits.hits[i]._source.models %></td>
+                                      <td><%= response.hits.hits[i]._source.abstract %></td>
+                                      <td><%= response.hits.hits[i]._source.link %></td>
+                                      <td><%= response.hits.hits[i]._source.image %></td>
+                                  </tr>
+                                </tbody>
+                            <% } %>
+                    </table>
+                <% } %>
+                <!-- /Table -->
+
+                <hr>
+
+            </section>
+
+
+            <!-- ############################################# Footer ############################################# -->
+
+        <footer><% include _partials/template/_footer.ejs %></footer>
+
+        <% include _partials/template/_jsdefaults.ejs %>
+
+    </div>
+
+</body>
+
+</html>
