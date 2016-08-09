@@ -1,9 +1,7 @@
-<% include _partials/template/_head.ejs %>
+<% include _partials/template/_head_NO_WRAP.ejs %>
 
 <body>
     <% include _partials/template/_outdated.ejs %>
-
-    <div id="wrapper">
 
         <header><% include _partials/template/_header.ejs %></header>
         <!-- Navbar-->
@@ -13,22 +11,17 @@
         <section class="landing">
           <div class="container"
             <div class="row">
-
-                <div class="mb mt">
-                    <% if (response.hits.total > 0) { %>
-                        <h1 class="headline">Search Results</h1>
-                        <br/><br/>
-                        <h2 class="subheader">Run took <%= response.took %> milliseconds</h2>
-                        <h5 class="text-muted">Max search score: "<%= response.hits.max_score %>"</h5>
-                        <% } else { %>
-                            <p>No results found!</p>
-                            <br/><br/>
-                            <h2 class="subheader">¯\_(ツ)_/¯ Your keyword produced no hits ¯\_(ツ)_/¯</h2>
-                        <% } %>
-                    <hr>
-                </div>
-                 <!-- /Runtime-->
-
+                <% if (response.hits.total > 0) { %>
+                    <h1 class="headline">Search Results</h1>
+                    <br/>
+                    <h2 class="subheader">Run took <%= response.took %> milliseconds</h2>
+                    <h5 class="text-muted">Max search score: "<%= response.hits.max_score %>"</h5>
+                    <% } else { %>
+                        <p>No results found!</p>
+                        <br/>
+                        <h2 class="subheader">¯\_(ツ)_/¯ Your keyword produced no hits ¯\_(ツ)_/¯</h2>
+                  <% } %>
+                  <h2 class="subheader"><i class="fa fa-angle-double-down" aria-hidden="true"></i></h2><br/>
            </div>
            <!-- /Row -->
          </div>
@@ -128,13 +121,10 @@
                 </div> <!-- /row -->
             </div> <!-- /container -->
 
-            <% include _partials/template/_jsdefaults.ejs %>
+            <% include _partials/template/_jsdefaults_NO_WRAP.ejs %>
 
       </section>
        <!-- /footer -->
-
-    </div>
-
 </body>
 
 </html>
