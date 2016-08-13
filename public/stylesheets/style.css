@@ -159,6 +159,35 @@ a:before, a:after {
     padding: 0;
 }
 
+
+
+/* Results */
+
+.results {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.results .headline {
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #0275d8;
+}
+.results .subheader {
+    color: #cecece;
+    font-weight: 200;
+}
+.results hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
 /* instarvision & WebUI & Products */
 
 .instarvision, .products {

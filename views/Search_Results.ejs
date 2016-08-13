@@ -6,20 +6,23 @@
         <header><% include _partials/template/_header.ejs %></header>
         <!-- Navbar-->
 
-        <!-- #############################################  Search Landing ############################################# -->
+        <!-- #############################################  Search Results Header ############################################# -->
 
-        <section class="landing">
+        <section class="results">
           <div class="container"
             <div class="row">
                 <% if (response.hits.total > 0) { %>
                     <h1 class="headline">Search Results</h1>
+                    <hr>
                     <br/>
                     <h2 class="subheader">Run took <%= response.took %> milliseconds</h2>
                     <h5 class="text-muted">Max search score: "<%= response.hits.max_score %>"</h5>
                     <% } else { %>
-                        <p>No results found!</p>
+                        <h1 class="headline hidden-xs-down">No results found!</h1>
+                        <h2 class="headline hidden-sm-up">No Results<h2>
                         <br/>
-                        <h2 class="subheader">¯\_(ツ)_/¯ Your keyword produced no hits ¯\_(ツ)_/¯</h2>
+                        <h2 class="subheader hidden-xs-down">¯\_(ツ)_/¯ Your keyword produced no hits ¯\_(ツ)_/¯</h2>
+                        <h3 class="subheader hidden-sm-up">¯\_(ツ)_/¯</h3>
                   <% } %>
                   <h2 class="subheader"><i class="fa fa-angle-double-down" aria-hidden="true"></i></h2><br/>
            </div>
