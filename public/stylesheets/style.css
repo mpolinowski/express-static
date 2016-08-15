@@ -163,23 +163,23 @@ a:before, a:after {
 
 /* Results */
 
-.results {
+.slanding {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 30px;
     text-align: center;
 }
-.results .headline {
+.slanding .headline {
   font-size: 70px;
   font-weight: 600;
   letter-spacing: 2px;
   color: #0275d8;
 }
-.results .subheader {
+.slanding .subheader {
     color: #cecece;
     font-weight: 200;
 }
-.results hr {
+.slanding hr {
     display: block;
     height: 1px;
     border: 0;

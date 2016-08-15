@@ -52,6 +52,48 @@ motionDetectionRouter.get('/SD_Card_Access/', function(req, res) {
       });
   });
 
+motionDetectionRouter.get('/SD_Card_Access/Bitkinex/', function(req, res) {
+    res.render('./Motion_Detection/SD_Card_Access_Bitkinex', {
+        title: 'SD Card Access - Bitkinex',
+      });
+  });
+
+motionDetectionRouter.get('/SD_Card_Access/CuteFTP', function(req, res) {
+    res.render('./Motion_Detection/SD_Card_Access_CuteFTP', {
+        title: 'SD Card Access - CuteFTP',
+      });
+  });
+
+motionDetectionRouter.get('/SD_Card_Access/DownThemAll', function(req, res) {
+    res.render('./Motion_Detection/SD_Card_Access_DownThemAll', {
+        title: 'SD Card Access - DownThemAll',
+      });
+  });
+
+motionDetectionRouter.get('/SD_Card_Access/Interachy', function(req, res) {
+    res.render('./Motion_Detection/SD_Card_Access_Interarchy', {
+        title: 'SD Card Access - Interachy',
+      });
+  });
+
+motionDetectionRouter.get('/SD_Card_Access/DeepVacuum', function(req, res) {
+    res.render('./Motion_Detection/SD_Card_Access_DeepVacuum', {
+        title: 'SD Card Access - DeepVacuum',
+      });
+  });
+
+motionDetectionRouter.get('/SD_Card_Access/SiteSucker', function(req, res) {
+    res.render('./Motion_Detection/SD_Card_Access_SiteSucker', {
+        title: 'SD Card Access - SiteSucker',
+      });
+  });
+
+motionDetectionRouter.get('/SD_Card_Access/SimpleWget', function(req, res) {
+    res.render('./Motion_Detection/SD_Card_Access_SimpleWget', {
+        title: 'SD Card Access - SimpleWget',
+      });
+  });
+
 motionDetectionRouter.get('/Alarm_FTP_Upload/', function(req, res) {
     res.render('./Motion_Detection/Alarm_FTP_Upload', {
         title: 'Alarm FTP Upload',
