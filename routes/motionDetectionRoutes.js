@@ -100,8 +100,20 @@ motionDetectionRouter.get('/Alarm_FTP_Upload/', function(req, res) {
       });
   });
 
+motionDetectionRouter.get('/Router_as_a_FTP_Server/', function(req, res) {
+    res.render('./Motion_Detection/Router_as_a_FTP_Server', {
+        title: 'Router or NAS as FTP Server',
+      });
+  });
+
 motionDetectionRouter.get('/FTP_Server_Setup/', function(req, res) {
     res.render('./Motion_Detection/FTP_Server_Setup', {
+        title: 'FTP Server Setup',
+      });
+  });
+
+motionDetectionRouter.get('/FTP_Server_Setup/Install_FileZilla_Server/', function(req, res) {
+    res.render('./Motion_Detection/Install_FileZilla_Server', {
         title: 'FTP Server Setup',
       });
   });

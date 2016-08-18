@@ -9,4 +9,13 @@ indexRouter.route('/')
           });
       });
 
+
+      /* GET home page. */
+      indexRouter.route('/Glide')
+          .get(function(req, res) {
+              res.render('Glide', {
+                  title: 'Glide.js Demo',
+                });
+            });
+
 module.exports = indexRouter;
