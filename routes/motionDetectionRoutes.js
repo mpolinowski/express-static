@@ -106,6 +106,30 @@ motionDetectionRouter.get('/Router_as_a_FTP_Server/', function(req, res) {
       });
   });
 
+motionDetectionRouter.get('/Router_as_a_FTP_Server/AVM_Fritzbox_as_FTP_Server', function(req, res) {
+    res.render('./Motion_Detection/AVM_Fritzbox_as_FTP_Server', {
+        title: 'AVM Fritzbox as FTP Server',
+      });
+  });
+
+motionDetectionRouter.get('/Router_as_a_FTP_Server/Telekom_Speedport_as_FTP_Server', function(req, res) {
+    res.render('./Motion_Detection/Telekom_Speedport_as_FTP_Server', {
+        title: 'Telekom Speedport as FTP Server',
+      });
+  });
+
+motionDetectionRouter.get('/Router_as_a_FTP_Server/QNAP_as_FTP_Server', function(req, res) {
+    res.render('./Motion_Detection/QNAP_as_FTP_Server', {
+        title: 'QNAP as FTP Server',
+      });
+  });
+
+motionDetectionRouter.get('/Router_as_a_FTP_Server/WD_MyCloud_as_FTP_Server', function(req, res) {
+    res.render('./Motion_Detection/WD_MyCloud_as_FTP_Server', {
+        title: 'WD MyCloud as FTP Server',
+      });
+  });
+
 motionDetectionRouter.get('/FTP_Server_Setup/', function(req, res) {
     res.render('./Motion_Detection/FTP_Server_Setup', {
         title: 'FTP Server Setup',
