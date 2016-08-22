@@ -1,0 +1,366 @@
+<% include ../_partials/template/_head.ejs %>
+
+<body>
+    <% include ../_partials/template/_outdated.ejs %>
+
+    <div id="wrapper">
+
+        <header><% include ../_partials/template/_header.ejs %></header>
+        <!-- Navbar-->
+
+        <!-- #############################################  Body ############################################# -->
+
+        <div class="wrap">
+            <div class="container main">
+
+                <!-- ###################################################### Modal ################################################################### -->
+
+                <SECTION class="container-fluid" style="margin-bottom: 50px;">
+
+                    <div class="page-header">
+                        <h2>Complete CGI Instruction Set</h2>
+                    </div>
+
+                    <p class="text-justify">For all developers that want to integrate our cameras in their software or for everyone that wants to experiment a little, we now offer a full list of all CGI commands that can be used with our IP cameras. Please understand
+                        that this list is only for advanced users who know what they are doing. We can not give any technical support regarding our CGI commands.</p>
+
+                    <p>Click here to download the complete CGI command list:</p>
+
+                    <br/>
+
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        Complete PDF
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">List of CGI commands (VGA)</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <object type="application/pdf" data="http://wiki.instar.com/images/c/c7/INSTAR_CGI_MJPEG_Chipset_English.pdf" width="500" height="500">
+                                        <a href="http://wiki.instar.com/images/c/c7/INSTAR_CGI_MJPEG_Chipset_English.pdf">List of CGI commands (VGA)</a>
+                                    </object>
+                                </div>
+                                <div class="modal-footer">
+                                  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                      <div class="btn-group" role="group" aria-label="Download">
+                                          <form method="get" action="http://wiki.instar.com/images/c/c7/INSTAR_CGI_MJPEG_Chipset_English.pdf" target="_blank">
+                                              <button type="submit" class="btn btn-default">Download</button>
+                                          </form>
+                                      </div>
+                                      <div class="btn-group" role="group" aria-label="Close">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+                        Addendum I
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel1">List of CGI commands (VGA) Addendum I<br/>
+                                        <small>For Camera Models IN-4010 v2 and IN-4011</small>
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <object type="application/pdf" data="http://wiki.instar.com/images/9/97/INSTAR_CGI_-_IN-40xx_Decoder_Settings.pdf" width="500" height="500">
+                                        <a href="/images/9/97/INSTAR_CGI_-_IN-40xx_Decoder_Settings.pdf">For Camera Models IN-4010 v2 and IN-4011</a>
+                                    </object>
+                                </div>
+                                <div class="modal-footer">
+                                  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                      <div class="btn-group" role="group" aria-label="Download">
+                                          <form method="get" action="http://wiki.instar.com/images/9/97/INSTAR_CGI_-_IN-40xx_Decoder_Settings.pdf" target="_blank">
+                                              <button type="submit" class="btn btn-default">Download</button>
+                                          </form>
+                                      </div>
+                                      <div class="btn-group" role="group" aria-label="Close">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </SECTION>
+
+                <!-- ###################################################### Video ################################################################### -->
+
+                <div class="page-header" style="">
+                    <h2>List of the most needed CGI commands</h2>
+                </div>
+
+                <SECTION class="container-fluid" style="margin-bottom: 30px;">
+
+                    <h3>Video</h3>
+
+                    <p>
+                        <strong>/videostream.cgi[?user=&amp;pwd=&amp;resolution=&amp;rate=]</strong>
+                    </p>
+
+                    <pre class="pre-scrollable">
+
+                        resolution:（8：320*240，32：640*480）
+
+                        rate： 0-23
+
+                        0：highest/fastest
+
+                        1：20 fps
+
+                        3：15 fps
+
+                        6：10 fps
+
+                        11：5 fps
+
+                        12：4 fps
+
+                        13：3 fps
+
+                        14：2 fps
+
+                        15：1 fps
+
+                        17：1 fp/2s
+
+                        19：1 fp/3s
+
+                        21：1 fp/4s
+
+                        23：1 fp/5s
+
+                      </pre>
+
+                    <p class="text-justify">For example: If your IP is 192.168.1.190 and Port is 81 and you want a resolution of 640*480 and the fastest speed of fps then you have to type in the following:</p>
+
+                    <code>http://192.168.1.190:81/videostream.cgi?user=admin&pwd=&resolution=32&rate=0</code>
+
+                </SECTION>
+
+                <!-- ###################################################### Video ################################################################### -->
+
+                <SECTION class="container-fluid" style="margin-bottom: 30px;">
+
+                    <h3>Snapshot</h3>
+
+                    <p>
+                        <strong>/snapshot.cgi[?user=&amp;pwd=&amp;next_url=]</strong>
+                    </p>
+
+                    <p class="text-justify">After next_url the user can type in the name of the picture. If you dont include next_url then the picture will automaticly get the name (DeviceAlias + current time.jpg)</p>
+
+                    <h4>Examples:</h4>
+                    <code>http://192.168.1.190:81/snapshot.cgi?user=admin&pwd=</code>
+                    <br/>
+                    <code>http://192.168.1.190:81/snapshot.cgi?user=admin&pwd=&next_url=test</code>
+
+                </SECTION>
+
+                <!-- #################################################### Video &amp; Audio ########################################################## -->
+
+                <SECTION class="container-fluid" style="margin-bottom: 30px;">
+
+                    <h3>Video &amp; Audio</h3>
+
+                    <p>Settings are the same as videostream.cgi above.</p>
+
+                    <h4>Examples:</h4>
+                    <code>http://192.168.1.190:81/videostream.asf?user=admin&pwd=&resolution=32&rate=0</code>
+                    <br/>
+                    <h4>Configuration:</h4>
+                    <code>/camera_control.cgi?param=&value=[&user=&pwd=&next_url=]</code>
+                    <p>With the
+                        <strong>paramenter &amp; value</strong>
+                        you can set resolution, brigthness, etc. ...</p>
+
+                    <pre class="pre-scrollable">
+
+                        0 ： RESOLUTION
+
+                          2 ： qqvga
+
+                          8 ： qvga
+
+                          32 ： vga
+
+                        1 ： BRIGHTNESS 0~255
+
+                        2 ： CONTRAST 0~6
+
+                        3 ： MODE
+
+                          0 ： 50hz
+
+                          1 ： 60hz
+
+                          2 ： Outdoor
+
+                        5 ： ROTATION
+
+                          0 ： Default
+
+                          1 ： Flip Vertical
+
+                          2 ： Level Image
+
+                          3 ： Flip + horizontal Mirror Image
+
+                        </pre>
+
+                </SECTION>
+
+                <!-- #################################################### Pan &amp; Tilt ########################################################## -->
+
+                <SECTION class="container-fluid" style="margin-bottom: 30px;">
+
+                    <h3>Pan &amp; Tilt</h3>
+
+                    <p>
+                        <strong>/decoder_control.cgi?command=[&amp;onestep=&amp;user=&amp;pwd=&amp;next_url=]</strong>
+                    </p>
+
+                    <pre class="pre-scrollable">
+
+                      tilt up="/decoder_control.cgi?command=0&onestep=1&user=&pwd="
+
+                      tilt down="/decoder_control.cgi?command=2&onestep=1&user=&pwd="
+
+                      pan left="/decoder_control.cgi?command=4&onestep=1&user=&pwd="
+
+                      pan right="/decoder_control.cgi?command=6&onestep=1&user=&pwd="
+
+                      home pos="/decoder_control.cgi?command=25"
+
+                    </pre>
+
+                    <p>For a direct position change use:</p>
+
+                    <pre class="pre-scrollable">
+
+                        Pos01 = /decoder_control.cgi?command=31&user=&pwd=
+
+                        Pos02 = /decoder_control.cgi?command=33&user=&pwd=
+
+                        Pos03 = /decoder_control.cgi?command=35&user=&pwd=
+
+                        Pos04 = /decoder_control.cgi?command=37&user=&pwd=
+
+                        Pos05 = /decoder_control.cgi?command=39&user=&pwd=
+
+                        Pos06 = /decoder_control.cgi?command=41&user=&pwd=
+
+                        Pos07 = /decoder_control.cgi?command=43&user=&pwd=
+
+                        Pos08 = /decoder_control.cgi?command=45&user=&pwd=
+
+                        Pos09 = /decoder_control.cgi?command=47&user=&pwd=
+
+                        Pos10 = /decoder_control.cgi?command=49&user=&pwd=
+
+                        Pos11 = /decoder_control.cgi?command=51&user=&pwd=
+
+                        Pos12 = /decoder_control.cgi?command=53&user=&pwd=
+
+                        Pos13 = /decoder_control.cgi?command=55&user=&pwd=
+
+                        Pos14 = /decoder_control.cgi?command=57&user=&pwd=
+
+                        Pos15 = /decoder_control.cgi?command=59&user=&pwd=
+
+                      </pre>
+
+                </SECTION>
+
+                <!-- #################################################### Automatic Patrol ########################################################## -->
+
+                <SECTION class="container-fluid" style="margin-bottom: 30px;">
+
+                    <h3>Automatic Patrol</h3>
+
+                    <p>
+                        <strong>/set_misc.cgi?[led_mode=&amp;ptz_center_onstart=&amp;ptz_auto_patrol_interval=&amp;ptz_auto_patrol_type=&amp;ptz_patrol _h_rounds=&amp;ptz_patrol_v_rounds=&amp;user=&amp;pwd=&amp;next_url=]</strong>
+                    </p>
+
+                    <pre class="pre-scrollable">
+
+                      ptz_center_onstart：=1，activate center on start
+
+                      ptz_auto_patrol_interval：automatic patrol，=0：no automatic control
+
+                      ptz_auto_patrol_type：0：No；1：horizontal；2：vertical；3：horizontal and vertical
+
+                      ptz_patrol_h_rounds：Horizontal patrol laps，0：Infinite
+
+                      ptz_patrol_v_rounds：Vertical patrol laps，0：Infinite
+
+                      ptz_patrol_rate：Head Speed manual，0-100，0：Fastest
+
+                      ptz_patrol_up_rate：automatic cruise speed (up)：0-100，0：slowest
+
+                      ptz_patrol_down_rate：automatic cruising speed (down)：0-100，0：slowest
+
+                      ptz_patrol_left_rate：cruising speed automatic (left)：0-100，0：slowest
+
+                      ptz_patrol_right_rate：cruising speed automatic (right) ：0-100，0：slowest
+
+                    </pre>
+
+                </SECTION>
+
+                <!-- #################################################### Alarm ########################################################## -->
+
+                <SECTION class="container-fluid" style="margin-bottom: 30px;">
+
+                    <h3>Alarm</h3>
+
+                    <p>If you want to activate or deactivate the alarm function please enter the following command:</p>
+
+                    <code>http://192.168.1.196/set_alarm.cgi?motion_armed=1&user=admin&pwd=</code>
+                    <p>(Alarm activated)</p>
+                    <br/>
+                    <code>http://192.168.1.196/set_alarm.cgi?motion_armed=0&user=admin&pwd=</code>
+                    <p>(Alarm deactivated)</p>
+
+                </SECTION>
+
+            </article>
+            <!-- /article -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /wrap -->
+
+    <section class="webui mb"><% include ../_partials/content/_webui.ejs %></section>
+    <!-- /webui -->
+
+    <section class="social"><% include ../_partials/template/_social.ejs %></section>
+    <!-- /social -->
+
+    <!-- ############################################# Footer ############################################# -->
+
+    <footer><% include ../_partials/template/_footer.ejs %></footer>
+
+    <% include ../_partials/template/_jsdefaults.ejs %>
+
+</div>
+
+</body>
+
+</html>

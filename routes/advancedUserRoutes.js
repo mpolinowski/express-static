@@ -52,15 +52,21 @@ advancedUserRouter.get('/CGI_Commands/', function(req, res) {
       });
   });
 
-advancedUserRouter.get('/CGI_Commands/HD_Cameras_CGI_List', function(req, res) {
-    res.render('./Advanced_User/HD_Cameras_CGI_List', {
-        title: 'HD Camera CGI List',
+advancedUserRouter.get('/CGI_Commands/1080p_Series_CGI_List', function(req, res) {
+    res.render('./Advanced_User/1080p_Series_CGI_List', {
+        title: '1080p Series CGI List',
       });
   });
 
-advancedUserRouter.get('/CGI_Commands/VGA_Cameras_CGI_List', function(req, res) {
-    res.render('./Advanced_User/VGA_Cameras_CGI_List', {
-        title: 'VGA Camera CGI List',
+advancedUserRouter.get('/CGI_Commands/720p_Series_CGI_List', function(req, res) {
+    res.render('./Advanced_User/720p_Series_CGI_List', {
+        title: '720p Series CGI List',
+      });
+  });
+
+advancedUserRouter.get('/CGI_Commands/VGA_Series_CGI_List', function(req, res) {
+    res.render('./Advanced_User/VGA_Series_CGI_List', {
+        title: 'VGA Series CGI List',
       });
   });
 
