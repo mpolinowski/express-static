@@ -115,12 +115,6 @@ cgi720pRouter.get('/Complete_CGI_List/Get_Audio_Encoder_Attribute', function(req
     });
 });
 
-cgi720pRouter.get('/Complete_CGI_List/Get_Audio_Encoder_Attribute', function(req, res) {
-  res.render('./Advanced_User/720p_cmd=getaencattr', {
-      title: '720p cmd=getaencattr',
-    });
-});
-
 cgi720pRouter.get('/Complete_CGI_List/Set_Audio_Encoder_Attribute', function(req, res) {
   res.render('./Advanced_User/720p_cmd=setaencattr', {
       title: '720p cmd=setaencattr',
