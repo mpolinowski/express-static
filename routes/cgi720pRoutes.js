@@ -349,7 +349,7 @@ cgi720pRouter.get('/Complete_CGI_List/Get_Motion_Detection_Alarm_Status', functi
     });
 });
 
-cgi720pRouter.get('/Complete_CGI_List/Set_Alarm_Relay_Parameter', function(req, res) {
+cgi720pRouter.get('/Complete_CGI_List/Set_Motion_Detection_Alarm_Status', function(req, res) {
   res.render('./Advanced_User/720p_cmd=setmdalarm', {
       title: '720p cmd=setmdalarm',
     });
