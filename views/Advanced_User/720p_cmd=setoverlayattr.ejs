@@ -8,6 +8,11 @@
         <header><% include ../_partials/template/_header.ejs %></header>
         <!-- Navbar-->
 
+            <div class="container mb">
+                <h1>720p CGI Commands - Set Overlay Attribute</h1>
+                <hr>
+            </div>
+
             <!-- ######################### Breadcrumbs ############################ -->
 
             <div class="container">
@@ -25,54 +30,59 @@
 
         <!-- #############################################  Body ############################################# -->
 
-            <div class="container main">
+            <div class="container">
 
-              <section class="row" style="margin-top: 15px;"> <!-- Media Container -->
+              <section class="row" style="margin-top: 15px;">
+                <!-- Media Container -->
 
-                  <h2>Video &amp; Audio :: Set Overlay Attribute</h2>
-                  <h3>param.cgi?cmd=setoverlayattr</h3>
+                  <div class="col-xs-12">
 
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                      <tr>
-                        <th>Function</th>
-                        <td>Set OSD Parameter</td>
-                      </tr>
-                      <tr>
-                        <th>Authority</th>
-                        <td>admin</td>
-                      </tr>
-                      <tr>
-                        <th>Syntax</th>
-                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd=setoverlayattr&amp;-region=&amp;show=&amp;name=]</code></td>
-                      </tr>
-                      <tr>
-                        <th rowspan="3">Parameter</th>
-                        <td>region: Region 0 (OSD Time Zone), 1 (Name Region)</td>
-                      </tr>
-                      <tr>
-                        <td>show: OSD 1 (show), 0 (hide)</td>
-                      </tr>
-                      <tr>
-                        <td>name: OSD Name <small>Only English, Max. 16 Characters</small></td>
-                      </tr>
-                      <tr>
-                        <th>Return</th>
-                        <td>Success, Error</td>
-                      </tr>
-                      <tr>
-                        <th>Remarks</th>
-                        <td>region_0 Time OSD Region doesn’t Support to set Name Parameter</td>
-                      </tr>
-                      <tr>
-                        <th rowspan="2">Example</th>
-                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setoverlayattr&-region=0&-show=0</code></td>
-                      </tr>
-                      <tr>
-                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setoverlayattr&amp;-region=1&amp;-show=1&amp;-name=IPCam</code></td>
-                      </tr>
-                    </table>
-                  </div>
+                      <h2>Video &amp; Audio :: Set Overlay Attribute</h2>
+                      <h3>param.cgi?cmd=setoverlayattr</h3>
+
+                      <div class="table-responsive">
+                        <table class="table table-hover">
+                          <tr>
+                            <th>Function</th>
+                            <td>Set OSD Parameter</td>
+                          </tr>
+                          <tr>
+                            <th>Authority</th>
+                            <td>admin</td>
+                          </tr>
+                          <tr>
+                            <th>Syntax</th>
+                            <td><code>/cgi-bin/hi3510/param.cgi[?cmd=setoverlayattr&amp;-region=&amp;show=&amp;name=]</code></td>
+                          </tr>
+                          <tr>
+                            <th rowspan="3">Parameter</th>
+                            <td>region: Region 0 (OSD Time Zone), 1 (Name Region)</td>
+                          </tr>
+                          <tr>
+                            <td>show: OSD 1 (show), 0 (hide)</td>
+                          </tr>
+                          <tr>
+                            <td>name: OSD Name <small>Only English, Max. 16 Characters</small></td>
+                          </tr>
+                          <tr>
+                            <th>Return</th>
+                            <td>Success, Error</td>
+                          </tr>
+                          <tr>
+                            <th>Remarks</th>
+                            <td>region_0 Time OSD Region doesn’t Support to set Name Parameter</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="2">Example</th>
+                            <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setoverlayattr&-region=0&-show=0</code></td>
+                          </tr>
+                          <tr>
+                            <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setoverlayattr&amp;-region=1&amp;-show=1&amp;-name=IPCam</code></td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </div>
 
                 </section>  <!-- Close Media Container -->
 

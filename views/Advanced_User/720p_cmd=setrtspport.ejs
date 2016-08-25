@@ -9,7 +9,7 @@
         <!-- Navbar-->
 
             <div class="container mb">
-                <h1>720p CGI Commands - Set Mobile Image Attribute</h1>
+                <h1>720p CGI Commands - Set RTSP Port</h1>
                 <hr>
             </div>
 
@@ -21,8 +21,8 @@
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/720p_Series_CGI_List/">720p Series</a></li>
                 <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li>
-                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/Get_Mobile_Image_Attribute/">Get Mobile Image Attribute</a></li>
-                <li class="breadcrumb-item active">Set Mobile Image Attribute</li>
+                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/Get RTSP Port/">Get RTSP Port</a></li>
+                <li class="breadcrumb-item active">Set RTSP Port</li>
               </ol>
             </div>
 
@@ -37,14 +37,14 @@
 
                 <div class="col-xs-12">
 
-                  <h2>Video &amp; Audio :: Set Mobile Image Attribute</h2>
-                  <h3>param.cgi?cmd=setmobilesnapattr</h3>
+                  <h2>Network :: Set RTSP Port</h2>
+                  <h3>param.cgi?cmd=setrtspport</h3>
 
                   <div class="table-responsive">
                     <table class="table table-hover">
                       <tr>
                         <th>Function</th>
-                        <td>Set Mobile Phone Image Parameter</td>
+                        <td>Set RTSP Port</td>
                       </tr>
                       <tr>
                         <th>Authority</th>
@@ -52,23 +52,23 @@
                       </tr>
                       <tr>
                         <th>Syntax</th>
-                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd=setmobilesnapattr&amp;-msize=]</code></td>
+                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd=setrtspport&amp;-rtspport=]</code></td>
                       </tr>
                       <tr>
                         <th>Parameter</th>
-                        <td>msize:<br/>1: second bit rate biggest resolution<br/>2: second bit rate smallest resolution</td>
+                        <td>rtspport: RTSP Port Range [80~65535]</td>
                       </tr>
                       <tr>
                         <th>Return</th>
-                        <td>Sucess, Error</td>
+                        <td>Success, Error</td>
                       </tr>
                       <tr>
                         <th>Remarks</th>
-                        <td>Some devices don’t support to change Property, for more details, refer to Appendix1 (Device Type Definition)</td>
+                        <td>Modified successfully, the device will automatically restart</td>
                       </tr>
                       <tr>
                         <th>Example</th>
-                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setmobilesnapattr&-msize=1</code></td>
+                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setrtspport&amp;-rtspport=554</code></td>
                       </tr>
                     </table>
                   </div>

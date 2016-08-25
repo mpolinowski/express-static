@@ -8,6 +8,11 @@
         <header><% include ../_partials/template/_header.ejs %></header>
         <!-- Navbar-->
 
+            <div class="container mb">
+                <h1>720p CGI Commands - Get Mobile Image Attribute</h1>
+                <hr>
+            </div>
+
             <!-- ######################### Breadcrumbs ############################ -->
 
             <div class="container">
@@ -23,11 +28,14 @@
 
             <div class="clearfix"></div>
 
-            <div class="container main">
+            <div class="container">
 
               <!-- ######################################## Body ####################################### -->
 
-              <section class="row" style="margin-top: 15px;"> <!-- Media Container -->
+              <section class="row" style="margin-top: 15px;">
+                <!-- Media Container -->
+
+                <div class="col-xs-12">
 
                   <h2>Video &amp; Audio :: Get Mobile Image Attribute</h2>
                   <h3>param.cgi?cmd=getmobilesnapattr</h3>
@@ -61,13 +69,15 @@
                     </table>
                   </div>
 
-                </section>  <!-- Close Media Container -->
+                </div>
 
-                <div class="clearfix" style="margin-bottom: 50px;"></div>
+            </section>  <!-- Close Media Container -->
 
-          </div>
+          <div class="clearfix" style="margin-bottom: 50px;"></div>
 
-          <section class="webui mb"><% include ../_partials/content/_webui.ejs %></section>
+        </div>
+
+        <section class="webui mb"><% include ../_partials/content/_webui.ejs %></section>
               <!-- /webui -->
 
           <section class="social"><% include ../_partials/template/_social.ejs %></section>

@@ -8,6 +8,11 @@
         <header><% include ../_partials/template/_header.ejs %></header>
         <!-- Navbar-->
 
+            <div class="container mb">
+                <h1>720p CGI Commands - Set Video Attribute</h1>
+                <hr>
+            </div>
+
             <!-- ######################### Breadcrumbs ############################ -->
 
             <div class="container">
@@ -27,47 +32,53 @@
 
             <div class="container main">
 
-              <section class="row" style="margin-top: 15px;"> <!-- Media Container -->
-                  <h2>Video &amp; Audio :: Set Video Attribute</h2>
-                  <h3>param.cgi?cmd=setvideoattr</h3>
+              <section class="row" style="margin-top: 15px;">
+                <!-- Media Container -->
 
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                      <tr>
-                        <th>Function</th>
-                        <td>Set device video property</td>
-                      </tr>
-                      <tr>
-                        <th>Authority</th>
-                        <td>admin</td>
-                      </tr>
-                      <tr>
-                        <th>Syntax</th>
-                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd= setvideoattr&amp;-vinorm=]</code></td>
-                      </tr>
-                      <tr>
-                        <th>Parameter</th>
-                        <td>vinorm: P: 50Hz(PAL) | N: 60Hz(NTSC)</td>
-                      </tr>
-                      <tr>
-                        <th rowspan="3">Return</th>
-                        <td>Success: Including Success | Failed: Including Error</td>
-                      </tr>
-                      <tr>
-                        <td><u>Note:</u><br/>CCD D1 models, PAL and NTSC can be recognized automatically, vinorm settings are valid.</td>
-                      </tr>
-                      <tr>
-                        <td><u>Note:</u><br/>1HD720P Resolution: 1280x720<br/>1HDQ720P Resolution: 640x352<br/>1HDQQ720P Resolution: 320x176<br/><small>1HD720P_1HDQ720P_1HDQQ720P: 1st stream is 720P，2nd stream is Q720P，3rd stream is QQ720P</small></td>
-                      </tr>
-                      <tr>
-                        <th>Remarks</th>
-                        <td>It takes a long time to return. Device resolution is fixed, can’t be modify.</td>
-                      </tr>
-                      <tr>
-                        <th>Example</th>
-                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setvideoattr&-vinorm=N</code></td>
-                      </tr>
-                    </table>
+                  <div class="col-xs-12">
+
+                      <h2>Video &amp; Audio :: Set Video Attribute</h2>
+                      <h3>param.cgi?cmd=setvideoattr</h3>
+
+                      <div class="table-responsive">
+                        <table class="table table-hover">
+                          <tr>
+                            <th>Function</th>
+                            <td>Set device video property</td>
+                          </tr>
+                          <tr>
+                            <th>Authority</th>
+                            <td>admin</td>
+                          </tr>
+                          <tr>
+                            <th>Syntax</th>
+                            <td><code>/cgi-bin/hi3510/param.cgi[?cmd= setvideoattr&amp;-vinorm=]</code></td>
+                          </tr>
+                          <tr>
+                            <th>Parameter</th>
+                            <td>vinorm: P: 50Hz(PAL) | N: 60Hz(NTSC)</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="3">Return</th>
+                            <td>Success: Including Success | Failed: Including Error</td>
+                          </tr>
+                          <tr>
+                            <td><u>Note:</u><br/>CCD D1 models, PAL and NTSC can be recognized automatically, vinorm settings are valid.</td>
+                          </tr>
+                          <tr>
+                            <td><u>Note:</u><br/>1HD720P Resolution: 1280x720<br/>1HDQ720P Resolution: 640x352<br/>1HDQQ720P Resolution: 320x176<br/><small>1HD720P_1HDQ720P_1HDQQ720P: 1st stream is 720P，2nd stream is Q720P，3rd stream is QQ720P</small></td>
+                          </tr>
+                          <tr>
+                            <th>Remarks</th>
+                            <td>It takes a long time to return. Device resolution is fixed, can’t be modify.</td>
+                          </tr>
+                          <tr>
+                            <th>Example</th>
+                            <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setvideoattr&-vinorm=N</code></td>
+                          </tr>
+                        </table>
+                      </div>
+
                   </div>
 
               </section>
