@@ -9,7 +9,7 @@
         <!-- Navbar-->
 
             <div class="container mb">
-                <h1>720p CGI Commands - Get Wireless Attribute</h1>
+                <h1>720p CGI Commands - Check Wireless Attribute</h1>
                 <hr>
             </div>
 
@@ -21,8 +21,8 @@
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/720p_Series_CGI_List/">720p Series</a></li>
                 <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li>
-                <li class="breadcrumb-item active">Get Wireless Attribute</li>
-                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/Set_Wireless_Attribute/">Set Wireless Attribute</a></li>
+                <li class="breadcrumb-item active">Check Wireless Attribute</li>
+                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/Get_Check_Wireless_Attribute/">Get Check Wireless Attribute</a></li>
               </ol>
             </div>
 
@@ -37,14 +37,14 @@
 
                 <div class="col-xs-12">
 
-                  <h2>Network :: Get Wireless Attribute</h2>
-                  <h3>param.cgi?cmd=getwirelessattr</h3>
+                  <h2>Network :: Set Wireless Attribute</h2>
+                  <h3>param.cgi?cmd=chkwirelessattr</h3>
 
                   <div class="table-responsive">
                     <table class="table table-hover">
                       <tr>
                         <th>Function</th>
-                        <td>Get Wifi Parameter</td>
+                        <td>Set Wireless Parameter</td>
                       </tr>
                       <tr>
                         <th>Authority</th>
@@ -52,30 +52,31 @@
                       </tr>
                       <tr>
                         <th>Syntax</th>
-                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd=getwirelessattr]</code></td>
+                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd=chkwirelessattr&amp;-wf_ssid=&amp;-wf_auth=&amp;-wf_key=&amp;-wf_enc=&amp;-wf_mode=]</code></td>
                       </tr>
                       <tr>
-                        <th rowspan="6">Return</th>
-                        <td>wf_enable: 1 (WiFi enabled), 0 (WiFi disabled)</td>
+                        <th rowspan="5">Parameters</th>
+                        <td>wf_ssid: SSID (max. 32 CHaracters)</td>
                       </tr>
                       <tr>
-                        <td>wf_ssid: SSID (max. 32 Characters)</td>
+                        <td>wauth: Encryption mode - 0: (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK)</td>
                       </tr>
                       <tr>
-                        <td>wf_auth: 0 (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK)</td>
+                        <td>wf_key: WiFi Key</td>
                       </tr>
                       <tr>
-                        <td>wf_key: Key max. 63 Characters (Allowed special characters: &amp;="`\)</td>
+                        <td>wf_enc: Encryption 0 (TKIP), 1 (AES)</td>
                       </tr>
                       <tr>
-                        <td>wf_enc: Key type 0 (TKIP), 1 (AES)</td>
+                        <td>wf_mode: Connection Mode 0 (Infra), 1 (Ad-hoc)</td>
                       </tr>
                       <tr>
-                        <td>wf_mode: 0 (infra), 1 (ad-hoc)</td>
+                        <th>Return</th>
+                        <td>Success, Error</td>
                       </tr>
                       <tr>
                         <th>Example</th>
-                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=getwirelessattr</code></td>
+                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=chkwirelessattr&-wf_ssid=linksys&-wf_auth=3&amp;-wf_key=1234567890&amp;-wf_enc=0&amp;-wf_mode=0</code></td>
                       </tr>
                     </table>
                   </div>

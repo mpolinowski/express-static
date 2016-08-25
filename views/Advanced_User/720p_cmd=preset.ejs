@@ -9,7 +9,7 @@
         <!-- Navbar-->
 
             <div class="container mb">
-                <h1>720p CGI Commands - Get Wireless Attribute</h1>
+                <h1>720p CGI Commands - PTZ Preset</h1>
                 <hr>
             </div>
 
@@ -20,9 +20,7 @@
                 <li class="breadcrumb-item"><a href="/Advanced_User/">For Developers</a></li>
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/720p_Series_CGI_List/">720p Series</a></li>
-                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li>
-                <li class="breadcrumb-item active">Get Wireless Attribute</li>
-                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/Set_Wireless_Attribute/">Set Wireless Attribute</a></li>
+                <li class="breadcrumb-item active">PTZ Preset</li>
               </ol>
             </div>
 
@@ -37,45 +35,47 @@
 
                 <div class="col-xs-12">
 
-                  <h2>Network :: Get Wireless Attribute</h2>
-                  <h3>param.cgi?cmd=getwirelessattr</h3>
+                  <h2>PTZ Control :: PTZ Preset</h2>
+                  <h3>param.cgi?cmd=preset</h3>
 
                   <div class="table-responsive">
                     <table class="table table-hover">
                       <tr>
                         <th>Function</th>
-                        <td>Get Wifi Parameter</td>
+                        <td>PTZ Preset</td>
                       </tr>
                       <tr>
                         <th>Authority</th>
-                        <td>admin</td>
+                        <td>admin, user</td>
                       </tr>
                       <tr>
                         <th>Syntax</th>
-                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd=getwirelessattr]</code></td>
+                        <td><code>/cgi-bin/hi3510/param.cgi?cmd=preset[&amp;-act=&amp;-status=&amp;-number=]</code></td>
                       </tr>
                       <tr>
-                        <th rowspan="6">Return</th>
-                        <td>wf_enable: 1 (WiFi enabled), 0 (WiFi disabled)</td>
+                        <th rowspan="3">Parameter</th>
+                        <td>act: goto (call preset), set (set preset)</td>
                       </tr>
                       <tr>
-                        <td>wf_ssid: SSID (max. 32 Characters)</td>
+                        <td>status: 0 (delete preset), 1 (save preset)</td>
                       </tr>
                       <tr>
-                        <td>wf_auth: 0 (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK)</td>
+                        <td>number: preset number (1-8)</td>
                       </tr>
                       <tr>
-                        <td>wf_key: Key max. 63 Characters (Allowed special characters: &amp;="`\)</td>
+                        <th>Return</th>
+                        <td>Success, Error</td>
                       </tr>
                       <tr>
-                        <td>wf_enc: Key type 0 (TKIP), 1 (AES)</td>
+                        <th>Remarks</th>
+                        <td>Different device PTZ Parameter is different , please refer Appendix I</td>
                       </tr>
                       <tr>
-                        <td>wf_mode: 0 (infra), 1 (ad-hoc)</td>
+                        <th rowspan="2">Example</th>
+                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=preset&-act=goto&-number=1</code></td>
                       </tr>
                       <tr>
-                        <th>Example</th>
-                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=getwirelessattr</code></td>
+                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=preset&-act=set&-status=1&-number=1</code></td>
                       </tr>
                     </table>
                   </div>

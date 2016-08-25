@@ -9,7 +9,7 @@
         <!-- Navbar-->
 
             <div class="container mb">
-                <h1>720p CGI Commands - Get Wireless Attribute</h1>
+                <h1>720p CGI Commands - Set Wireless Attribute</h1>
                 <hr>
             </div>
 
@@ -21,30 +21,30 @@
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/720p_Series_CGI_List/">720p Series</a></li>
                 <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li>
-                <li class="breadcrumb-item active">Get Wireless Attribute</li>
-                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/Set_Wireless_Attribute/">Set Wireless Attribute</a></li>
+                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/Get_Wireless_Attribute/">Get Wireless Attribute</a></li>
+                <li class="breadcrumb-item active">Set Wireless Attribute</li>
               </ol>
             </div>
 
             <div class="clearfix"></div>
 
-            <div class="container main">
+        <!-- #############################################  Body ############################################# -->
 
-              <!-- ######################################## Body ####################################### -->
+            <div class="container main">
 
               <section class="row" style="margin-top: 15px;">
                 <!-- Media Container -->
 
                 <div class="col-xs-12">
 
-                  <h2>Network :: Get Wireless Attribute</h2>
-                  <h3>param.cgi?cmd=getwirelessattr</h3>
+                  <h2>Network :: Set Wireless Attribute</h2>
+                  <h3>param.cgi?cmd=setwirelessattr</h3>
 
                   <div class="table-responsive">
                     <table class="table table-hover">
                       <tr>
                         <th>Function</th>
-                        <td>Get Wifi Parameter</td>
+                        <td>Set Wifi Parameter</td>
                       </tr>
                       <tr>
                         <th>Authority</th>
@@ -52,10 +52,10 @@
                       </tr>
                       <tr>
                         <th>Syntax</th>
-                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd=getwirelessattr]</code></td>
+                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd=setwirelessattr&amp;-wf_enable=&amp;-wf_ssid=&amp;-wf_auth=&amp;-wf_key=&amp;-wf_enc=&amp;-wf_mode=]</code></td>
                       </tr>
                       <tr>
-                        <th rowspan="6">Return</th>
+                        <th rowspan="6">Parameter</th>
                         <td>wf_enable: 1 (WiFi enabled), 0 (WiFi disabled)</td>
                       </tr>
                       <tr>
@@ -74,12 +74,15 @@
                         <td>wf_mode: 0 (infra), 1 (ad-hoc)</td>
                       </tr>
                       <tr>
+                        <th>Return</th>
+                        <td>Success, Error</td>
+                      </tr>
+                      <tr>
                         <th>Example</th>
-                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=getwirelessattr</code></td>
+                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setwirelessattr&-wf_ssid=linksys&-wf_enable=1&amp;-wf_auth=2&amp;-wf_key=1234567890&amp;-wf_enc=0&amp;-wf_mode=0</code></td>
                       </tr>
                     </table>
                   </div>
-
 
                 </div>
 
@@ -88,6 +91,7 @@
                 <div class="clearfix" style="margin-bottom: 50px;"></div>
 
           </div>
+          <!-- /Container -->
 
           <section class="webui mb"><% include ../_partials/content/_webui.ejs %></section>
               <!-- /webui -->

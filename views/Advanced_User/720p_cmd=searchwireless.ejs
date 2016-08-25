@@ -9,7 +9,7 @@
         <!-- Navbar-->
 
             <div class="container mb">
-                <h1>720p CGI Commands - Get Wireless Attribute</h1>
+                <h1>720p CGI Commands - Search Wireless</h1>
                 <hr>
             </div>
 
@@ -21,8 +21,7 @@
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/720p_Series_CGI_List/">720p Series</a></li>
                 <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li>
-                <li class="breadcrumb-item active">Get Wireless Attribute</li>
-                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/Set_Wireless_Attribute/">Set Wireless Attribute</a></li>
+                <li class="breadcrumb-item active">Search Wireless</li>
               </ol>
             </div>
 
@@ -37,14 +36,14 @@
 
                 <div class="col-xs-12">
 
-                  <h2>Network :: Get Wireless Attribute</h2>
-                  <h3>param.cgi?cmd=getwirelessattr</h3>
+                  <h2>Network :: Search Wireless</h2>
+                  <h3>param.cgi?cmd=searchwireless</h3>
 
                   <div class="table-responsive">
                     <table class="table table-hover">
                       <tr>
                         <th>Function</th>
-                        <td>Get Wifi Parameter</td>
+                        <td>Search Wireless Access Point</td>
                       </tr>
                       <tr>
                         <th>Authority</th>
@@ -52,30 +51,55 @@
                       </tr>
                       <tr>
                         <th>Syntax</th>
-                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd=getwirelessattr]</code></td>
+                        <td><code>/cgi-bin/hi3510/param.cgi[?cmd=searchwireless]</code></td>
                       </tr>
                       <tr>
-                        <th rowspan="6">Return</th>
-                        <td>wf_enable: 1 (WiFi enabled), 0 (WiFi disabled)</td>
+                        <th rowspan="8">Return</th>
+                        <td>waccess_points: Wireless Network Signals</td>
                       </tr>
                       <tr>
-                        <td>wf_ssid: SSID (max. 32 Characters)</td>
+                        <td>wchannel: Channel</td>
                       </tr>
                       <tr>
-                        <td>wf_auth: 0 (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK)</td>
+                        <td>wrssi: Signal Strength</td>
                       </tr>
                       <tr>
-                        <td>wf_key: Key max. 63 Characters (Allowed special characters: &amp;="`\)</td>
+                        <td>wessid: SSID</td>
                       </tr>
                       <tr>
-                        <td>wf_enc: Key type 0 (TKIP), 1 (AES)</td>
+                        <td>wenc: Encryption Mode</td>
                       </tr>
                       <tr>
-                        <td>wf_mode: 0 (infra), 1 (ad-hoc)</td>
+                        <td>wauth: Authority Mode</td>
+                      </tr>
+                      <tr>
+                        <td>wnet: Connection mode(router mode, point to point mode)</td>
+                      </tr>
+                      <tr>
+                        <td>Note: If waccess_points >1 the CGI will return more values for each variable - Example:<br/>
+                        var waccess_points="2";<br/>
+                        var wchannel=new Array();<br/>
+                        var wrssi=new Array();<br/>
+                        var wessid=new Array();<br/>
+                        var wenc=new Array();<br/>
+                        var wauth=new Array();<br/>
+                        var wnet=new Array();<br/>
+                        wchannel[0]="6" ;<br/>
+                        wrssi[0]="-82" ;<br/>
+                        wessid[0]="My WiFi" ;<br/>
+                        wenc[0]="AES" ;<br/>
+                        wauth[0]="WPA(2)-PSK" ;<br/>
+                        wnet[0]="Infra" ;<br/>
+                        wchannel[1]="11" ;<br/>
+                        wrssi[1]="-62" ;<br/>
+                        wessid[1]="Linksys" ;<br/>
+                        wenc[1]="TKIP" ;<br/>
+                        wauth[1]="WPA(2)-PSK" ;<br/>
+                        wnet[1]="Infra" ;<br/></td>
                       </tr>
                       <tr>
                         <th>Example</th>
-                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=getwirelessattr</code></td>
+                        <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=searchwireless</code></td>
                       </tr>
                     </table>
                   </div>

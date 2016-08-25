@@ -284,38 +284,38 @@ cgi720pRouter.get('/Complete_CGI_List/PTZ_Preset', function(req, res) {
 });
 
 cgi720pRouter.get('/Complete_CGI_List/PTZ_Move_Up', function(req, res) {
-  res.render('./Advanced_User/720p_ptzup.cgi', {
-      title: '720p ptzup.cgi',
+  res.render('./Advanced_User/720p_cmd=ptzup', {
+      title: '720p cmd=ptzup',
     });
 });
 
 cgi720pRouter.get('/Complete_CGI_List/PTZ_Move_Down', function(req, res) {
-  res.render('./Advanced_User/720p_ptzdown.cgi', {
-      title: '720p ptzdown.cgi',
+  res.render('./Advanced_User/720p_cmd=ptzdown', {
+      title: '720p cmd=ptzdown',
     });
 });
 
 cgi720pRouter.get('/Complete_CGI_List/PTZ_Move_Left', function(req, res) {
-  res.render('./Advanced_User/720p_ptzleft.cgi', {
-      title: '720p ptzleft.cgi',
+  res.render('./Advanced_User/720p_cmd=ptzleft', {
+      title: '720p cmd=ptzleft',
     });
 });
 
 cgi720pRouter.get('/Complete_CGI_List/PTZ_Move_Right', function(req, res) {
-  res.render('./Advanced_User/720p_ptzright.cgi', {
-      title: '720p ptzright.cgi',
+  res.render('./Advanced_User/720p_cmd=ptzright', {
+      title: '720p cmd=ptzright',
     });
 });
 
 cgi720pRouter.get('/Complete_CGI_List/PTZ_Zoom_In', function(req, res) {
-  res.render('./Advanced_User/720p_ptzzoomin.cgi', {
-      title: '720p ptzzoomin.cgi',
+  res.render('./Advanced_User/720p_cmd=ptzzoomin', {
+      title: '720p cmd=ptzzoomin',
     });
 });
 
 cgi720pRouter.get('/Complete_CGI_List/PTZ_Zoom_Out', function(req, res) {
-  res.render('./Advanced_User/720p_ptzzoomout.cgi', {
-      title: '720p ptzzoomout.cgi',
+  res.render('./Advanced_User/720p_cmd=ptzzoomout', {
+      title: '720p cmd=ptzzoomout',
     });
 });
 
