@@ -20,9 +20,9 @@
                 <li class="breadcrumb-item"><a href="/Advanced_User/">For Developers</a></li>
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>
                 <li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/720p_Series_CGI_List/">720p Series</a></li>
-                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li>
+                <li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li>
                 <li class="breadcrumb-item active">Get Video Encoder Attribute</li>
-                <li class="breadcrumb-item"><a href="/720p_Series_CGI_List/Complete_CGI_List/Set_Video_Encoder_Attribute/">Set Video Encoder</a></li>
+                <li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Video_Encoder_Attribute/">Set Video Encoder</a></li>
               </ol>
             </div>
 
@@ -60,19 +60,19 @@
                         </tr>
                         <tr>
                           <th rowspan="7">Return</th>
-                          <td>Bitrate: bps_1, bps_2 or bps_3</td>
+                          <td>Bitrate: bps_1, bps_2 or bps_3 (32-8192) [kbps]</td>
                         </tr>
                         <tr>
-                          <td>Framerate: fps_1, fps_2 or fps_3</td>
+                          <td>Framerate: fps_1, fps_2 or fps_3 (1-30) [fps]</td>
                         </tr>
                         <tr>
-                          <td>Keyframe Interval: gop_1, gop_2or gop_3</td>
+                          <td>Keyframe Interval: gop_1, gop_2or gop_3 (2-150)</td>
                         </tr>
                         <tr>
-                          <td>Video Encode Control: 0: fixed bit rate 1: changeable bit rate | brmode_1, brmode_2 or brmode_3</td>
+                          <td>Video Encode Control: 0: fixed bitrate (CBR) or 1: variable bitrate (VBR) | brmode_1, brmode_2 or brmode_3</td>
                         </tr>
                         <tr>
-                          <td>Video Encode Quality: imagegrade_1, imagegrade_2 or imagegrade_3</td>
+                          <td>Image Quality: imagegrade_1, imagegrade_2 or imagegrade_3 (1[high]-6[low])</td>
                         </tr>
                         <tr>
                           <td>Video Width: width_1, width_2 or width_3</td>
@@ -82,7 +82,7 @@
                         </tr>
                         <tr>
                           <th>Remarks</th>
-                          <td><u>Note:</u><br/>Suffix "_1" is the 1st stream parameters, the suffix "_2" is the 2nd stream parameters, the suffix "_3" is the 3rd stream parameters</td>
+                          <td><u>Note:</u><br/>Suffix "_1" is the 1st (11) stream parameters, the suffix "_2" is the 2nd (12) stream parameters, the suffix "_3" is the 3rd (13) stream parameters</td>
                         </tr>
                         <tr>
                           <th>Example</th>

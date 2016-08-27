@@ -1,0 +1,112 @@
+Media / Video
+
+var display_mode="0";
+var brightness="50"; 0 - 100
+var saturation="0"; 0 - 255
+var sharpness="60"; 0 - 100
+var contrast="60"; 0 - 100
+var hue="50"; 0 - 100
+var wdr="on";
+var night="off";
+var shutter="1120";
+var flip="off";
+var mirror="off";
+var gc="65535";
+var ae="4";
+var targety="64"; Exposure
+var noise="0";
+var gamma="1";
+var aemode="0"; Auto Exposure 0 = auto, 1 = indoor, 2 = outdoor
+var imgmode="1";
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setvencattr&-chn=11&-bps=4608&-fps=25&-brmode=1&-imagegrade=1&-gop=25
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setvencattr&-chn=12&-bps=512&-fps=25&-brmode=1&-imagegrade=1&-gop=50
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setvencattr&-chn=13&-bps=90&-fps=10&-brmode=1&-imagegrade=1&-gop=50
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setvideoattr&-videomode=41&-vinorm=P&-profile=2
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setoverlayattr&-region=0&-show=1
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setoverlayattr&-region=1&-show=0&-name=IP+Camera
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setmobilesnapattr&-msize=2
+
+
+Media / Image
+
+var display_mode="0";
+var brightness="50";
+var saturation="0";
+var sharpness="60";
+var contrast="60";
+var hue="50";
+var wdr="on";
+var night="off";
+var shutter="1120";
+var flip="off";
+var mirror="off";
+var gc="65535";
+var ae="4";
+var targety="64";
+var noise="0";
+var gamma="1";
+var aemode="0";
+var imgmode="1";
+var name0="admin";
+var password0="123456";
+var authLevel0="15";
+var enable0="1";
+var imagesize="1080P";
+var audioflag="1";
+var model="C6F0SiZ0N0P0L0";
+var hardVersion="V1.0.0.1";
+var softVersion="V4.1.2.4";
+var webVersion="V1.0.1";
+var name="";
+var startdate="2016-08-26 18:28:33";
+var upnpstatus="off";
+var facddnsstatus="failed";
+var th3ddnsstatus="off";
+var platformstatus="0";
+var sdstatus="Ready";
+var sdfreespace="62300416";
+var sdtotalspace="62352480";
+var videomode="41";
+var vinorm="P";
+var wdrmode="1";
+var profile="2";
+var maxchn="3";
+var saradc_delay_enable="1";
+var saradc_delay_time="5";
+var saradc_switch_value="220";
+var saradc_b2c_switch_value="180";
+var ldc_enable="1";
+var ldc_xoffset="0";
+var ldc_yoffset="0";
+var ldc_ratio="26";
+var infraredstat="auto";
+var display_mode="0";
+var wdrauto="0";
+var wdrautval="0";
+var wdrmanval="0";
+var d3noauto="0";
+var d3noval="0";
+var gcauto="0";
+var gcval="0";
+var aemodeex="0";
+var aelowval="0";
+var aehighval="128";
+var aeratio="6";
+var rtmpport="1935";
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setinfrared&-infraredstat=auto
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setircutattr&-saradc_switch_value=220
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setimageattr&-brightness=50&-contrast=60&-saturation=0&-sharpness=60&-mirror=off&-flip=off&-shutter=1120&-night=off&-wdr=on&-noise=0&-gc=65535&-ae=4&-targety=64&-gamma=1&-aemode=0&-image_type=0&-imgmode=1
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setldcattr&-ldc_ratio=26
+
+http://192.168.1.15/cgi-bin/hi3510/param.cgi?cmd=setimageattrex&-image_type=0&-wdrauto=0&-wdrautval=0&-wdrmanval=0&-d3noauto=0&-d3noval=0&-gcauto=0&-gcval=0&-aemodeex=0&-aelowval=0&-aehighval=128&-aeratio=6&cmd=setvideoattr&-wdrmode=1
