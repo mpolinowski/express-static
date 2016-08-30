@@ -4,28 +4,28 @@
             "mdVideoSrc": "#",
             "mdVideoAlt": "Website Integration",
             "mdUrl": "Website_Integration",
-            "mdPic": "http://placehold.it/300x300",
+            "mdPic": "/images/Wiki_Tiles_Advanced_Integration.jpg",
             "mdPicAlt": "Website Integration"
         }, {
             "mdTitle": "CGI Commands",
             "mdVideoSrc": "#",
             "mdVideoAlt": "CGI Commands",
             "mdUrl": "CGI_Commands",
-            "mdPic": "http://placehold.it/300x300",
+            "mdPic": "/images/Wiki_Tiles_Advanced_CGIs.jpg",
             "mdPicAlt": "CGI Commands"
         }, {
             "mdTitle": "Restore your Cameras WebUI",
             "mdVideoSrc": "#",
             "mdVideoAlt": "Restore your Camera after a faulty WebUI Upgrade",
             "mdUrl": "Restore_WebUI",
-            "mdPic": "http://placehold.it/300x300",
+            "mdPic": "/images/Wiki_Tiles_Advanced_WebUI.jpg",
             "mdPicAlt": "Restore your Camera after a faulty WebUI Upgrade"
         }, {
             "mdTitle": "Restore your Cameras Firmware",
             "mdVideoSrc": "#",
             "mdVideoAlt": "Restore your Camera after a faulty Firmware Upgrade",
             "mdUrl": "Restore_Firmware",
-            "mdPic": "http://placehold.it/300x300",
+            "mdPic": "/images/Wiki_Tiles_Advanced_Firmware.jpg",
             "mdPicAlt": "Restore your Camera after a faulty Firmware Upgrade"
         }
     ]
