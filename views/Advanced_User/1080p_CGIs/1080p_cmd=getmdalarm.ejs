@@ -37,56 +37,30 @@
 
                   <div class="col-xs-12">
 
-                    <h2>Video &amp; Audio :: Get Video Encoder Attribute</h2>
-                    <h3>param.cgi?cmd=getvencattr</h3>
+                    <h2>Alarm :: Set Alarm Action Parameter</h2>
+                    <h3>param.cgi?cmd=setmdalarm</h3>
 
                     <div class="table-responsive">
                       <table class="table table-hover">
                         <tr>
                           <th>Function</th>
-                          <td>Get device video encode parameter</td>
+                          <td>Set Alarm Actions</td>
                         </tr>
                         <tr>
                           <th>Authority</th>
-                          <td>admin, user and guest</td>
+                          <td>admin</td>
                         </tr>
                         <tr>
                           <th>Syntax</th>
-                          <td><code>/cgi-bin/hi3510/getvencattr.cgi [?-chn=]</code></td>
+                          <td><code>/cgi-bin/hi3510/param.cgi[?cmd=setmdalarm&amp;-aname=]</code></td>
                         </tr>
                         <tr>
                           <th>Parameter</th>
-                          <td>chn: 11: 1st stream | 12: 2nd stream | 13：3rd stream</td>
-                        </tr>
-                        <tr>
-                          <th rowspan="7">Return</th>
-                          <td>Bitrate: bps_1, bps_2 or bps_3</td>
-                        </tr>
-                        <tr>
-                          <td>Framerate: fps_1, fps_2 or fps_3</td>
-                        </tr>
-                        <tr>
-                          <td>Keyframe Interval: gop_1, gop_2or gop_3</td>
-                        </tr>
-                        <tr>
-                          <td>Video Encode Control: 0: fixed bit rate 1: changeable bit rate | brmode_1, brmode_2 or brmode_3</td>
-                        </tr>
-                        <tr>
-                          <td>Video Encode Quality: imagegrade_1, imagegrade_2 or imagegrade_3</td>
-                        </tr>
-                        <tr>
-                          <td>Video Width: width_1, width_2 or width_3</td>
-                        </tr>
-                        <tr>
-                          <td>Video Height: height_1, height_2 or height_3</td>
-                        </tr>
-                        <tr>
-                          <th>Remarks</th>
-                          <td><u>Note:</u><br/>Suffix "_1" is the 1st stream parameters, the suffix "_2" is the 2nd stream parameters, the suffix "_3" is the 3rd stream parameters</td>
+                          <td>aname:<br/>type：Link Alarm Areas and Alarm-Input [on, off]<br/>email E-mail Alarm / Send Snapshot [on, off]<br/>snap： Save Snapshot to SD [on, off]<br/>ftpsnap：Send Snapshot to FTP Server [on, off]<br/>record：Save Video to SD [on, off]<br/>ftprec：Send Video to FTP Server [on, off]<br/>relay：Alarm Out Relay [on, off]</td>
                         </tr>
                         <tr>
                           <th>Example</th>
-                          <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/getvencattr.cgi?-chn=11</code></td>
+                          <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setmdalarm&-aname=type&-switch=on&cmd=setmdalarm&-aname=email&-switch=on&cmd=setmdalarm&-aname=snap&-switch=on&cmd=setmdalarm&-aname=record&-switch=on&cmd=setmdalarm&-aname=ftprec&-switch=on&cmd=setmdalarm&-aname=relay&-switch=on&cmd=setmdalarm&-aname=ftpsnap&-switch=on</code></td>
                         </tr>
                       </table>
                     </div>

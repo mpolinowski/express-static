@@ -39,7 +39,7 @@
             "mdVideoSrc": "#",
             "mdVideoAlt": "Router or NAS as a FTP Server",
             "mdUrl": "Router_as_a_FTP_Server",
-            "mdPic": "http://placehold.it/300x300",
+            "mdPic": "/images/Wiki_Tiles_MD-Router-FTP-Server.jpg",
             "mdPicAlt": "Router or NAS as a FTP Server"
         }, {
             "mdTitle": "FTP Server Setup",
