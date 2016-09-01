@@ -285,6 +285,13 @@ productRouter.route('/IN-2905_V2/Downloads')
     });
 });
 
+productRouter.route('/SMA_RP-SMA_Antenna_Connector')
+.get(function(req, res) {
+  res.render('./Products/SMA_RP-SMA_Antenna_Connector', {
+      title: 'SMA or RP-SMA Antenna Connector',
+    });
+});
+
 /* GET /Software */
 productRouter.get('/Software', function(req, res) {
 
