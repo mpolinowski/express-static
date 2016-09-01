@@ -70,4 +70,10 @@ advancedUserRouter.get('/Restore_Firmware/', function(req, res) {
       });
   });
 
+advancedUserRouter.get('/CCTV_vs_IP/', function(req, res) {
+    res.render('./Advanced_User/CCTV_vs_IP', {
+        title: 'Difference Between Analog And IP Cameras',
+      });
+  });
+
 module.exports = advancedUserRouter;

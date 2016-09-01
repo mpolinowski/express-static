@@ -27,6 +27,13 @@
             "mdUrl": "Restore_Firmware",
             "mdPic": "/images/Wiki_Tiles_Advanced_Firmware.jpg",
             "mdPicAlt": "Restore your Camera after a faulty Firmware Upgrade"
+        }, {
+            "mdTitle": "CCTV vs IP",
+            "mdVideoSrc": "#",
+            "mdVideoAlt": "Difference Between Analog And IP Cameras",
+            "mdUrl": "CCTV_vs_IP",
+            "mdPic": "/images/Wiki_Tiles_Advanced_CCTV.jpg",
+            "mdPicAlt": "Difference Between Analog And IP Cameras"
         }
     ]
 }
