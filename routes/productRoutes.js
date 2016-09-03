@@ -32,84 +32,84 @@ productRouter.get('/Indoor_Cameras', function(req, res) {
       });
   });
 
-productRouter.route('/IN-6014_HD')
+productRouter.route('/Indoor_Cameras/IN-6014_HD')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Overview', {
       title: 'IN-6014 HD Overview',
     });
 });
 
-productRouter.route('/IN-6014_HD/Technical_Specifications')
+productRouter.route('/Indoor_Cameras/IN-6014_HD/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Tech_Specs', {
       title: 'IN-6014 HD Technical Specifications',
     });
 });
 
-productRouter.route('/IN-6014_HD/Downloads')
+productRouter.route('/Indoor_Cameras/IN-6014_HD/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Downloads', {
       title: 'IN-6014 HD Downloads',
     });
 });
 
-productRouter.route('/IN-6012_HD')
+productRouter.route('/Indoor_Cameras/IN-6012_HD')
 .get(function(req, res) {
   res.render('./Products/IN-6012_Overview', {
       title: 'IN-6012 HD Overview',
     });
 });
 
-productRouter.route('/IN-6012_HD/Technical_Specifications')
+productRouter.route('/Indoor_Cameras/IN-6012_HD/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-6012_Tech_Specs', {
       title: 'IN-6012 HD Technical Specifications',
     });
 });
 
-productRouter.route('/IN-6012_HD/Downloads')
+productRouter.route('/Indoor_Cameras/IN-6012_HD/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-6012_Downloads', {
       title: 'IN-6012 HD Downloads',
     });
 });
 
-productRouter.route('/IN-6001_HD')
+productRouter.route('/Indoor_Cameras/IN-6001_HD')
 .get(function(req, res) {
   res.render('./Products/IN-6001_Overview', {
       title: 'IN-6001 HD Overview',
     });
 });
 
-productRouter.route('/IN-6001_HD/Technical_Specifications')
+productRouter.route('/Indoor_Cameras/IN-6001_HD/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-6001_Tech_Specs', {
       title: 'IN-6001 HD Technical Specifications',
     });
 });
 
-productRouter.route('/IN-6001_HD/Downloads')
+productRouter.route('/Indoor_Cameras/IN-6001_HD/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-6001_Downloads', {
       title: 'IN-6001 HD Downloads',
     });
 });
 
-productRouter.route('/IN-3011')
+productRouter.route('/Indoor_Cameras/IN-3011')
 .get(function(req, res) {
   res.render('./Products/IN-3011_Overview', {
       title: 'IN-3011 Overview',
     });
 });
 
-productRouter.route('/IN-3011/Technical_Specifications')
+productRouter.route('/Indoor_Cameras/IN-3011/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-3011_Tech_Specs', {
       title: 'IN-3011 Technical Specifications',
     });
 });
 
-productRouter.route('/IN-3011/Downloads')
+productRouter.route('/Indoor_Cameras/IN-3011/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-3011_Downloads', {
       title: 'IN-3011 Downloads',
@@ -138,147 +138,147 @@ productRouter.get('/Outdoor_Cameras', function(req, res) {
     });
 });
 
-productRouter.route('/IN-7011_HD')
+productRouter.route('/Outdoor_Cameras/IN-7011_HD')
 .get(function(req, res) {
   res.render('./Products/IN-7011_Overview', {
       title: 'IN-7011 HD Overview',
     });
 });
 
-productRouter.route('/IN-7011_HD/Technical_Specifications')
+productRouter.route('/Outdoor_Cameras/IN-7011_HD/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-7011_Tech_Specs', {
       title: 'IN-7011 HD Technical Specifications',
     });
 });
 
-productRouter.route('/IN-7011_HD/Downloads')
+productRouter.route('/Outdoor_Cameras/IN-7011_HD/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-7011_Downloads', {
       title: 'IN-7011 HD Downloads',
     });
 });
 
-productRouter.route('/IN-5907_HD')
+productRouter.route('/Outdoor_Cameras/IN-5907_HD')
 .get(function(req, res) {
   res.render('./Products/IN-5907_Overview', {
       title: 'IN-5907 HD Overview',
     });
 });
 
-productRouter.route('/IN-5907_HD/Technical_Specifications')
+productRouter.route('/Outdoor_Cameras/IN-5907_HD/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-5907_Tech_Specs', {
       title: 'IN-5907 HD Technical Specifications',
     });
 });
 
-productRouter.route('/IN-5907_HD/Downloads')
+productRouter.route('/Outdoor_Cameras/IN-5907_HD/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-5907_Downloads', {
       title: 'IN-5907 HD Downloads',
     });
 });
 
-productRouter.route('/IN-5905_HD')
+productRouter.route('/Outdoor_Cameras/IN-5905_HD')
 .get(function(req, res) {
   res.render('./Products/IN-5905_Overview', {
       title: 'IN-5905 HD Overview',
     });
 });
 
-productRouter.route('/IN-5905_HD/Technical_Specifications')
+productRouter.route('/Outdoor_Cameras/IN-5905_HD/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-5905_Tech_Specs', {
       title: 'IN-5905 HD Technical Specifications',
     });
 });
 
-productRouter.route('/IN-5905_HD/Downloads')
+productRouter.route('/Outdoor_Cameras/IN-5905_HD/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-5905_Downloads', {
       title: 'IN-5905 HD Downloads',
     });
 });
 
-productRouter.route('/IN-4011')
+productRouter.route('/Outdoor_Cameras/IN-4011')
 .get(function(req, res) {
   res.render('./Products/IN-4011_Overview', {
       title: 'IN-4011 Overview',
     });
 });
 
-productRouter.route('/IN-4011/Technical_Specifications')
+productRouter.route('/Outdoor_Cameras/IN-4011/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-4011_Tech_Specs', {
       title: 'IN-4011 Technical Specifications',
     });
 });
 
-productRouter.route('/IN-4011/Downloads')
+productRouter.route('/Outdoor_Cameras/IN-4011/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-4011_Downloads', {
       title: 'IN-4011 Downloads',
     });
 });
 
-productRouter.route('/IN-4010_V2')
+productRouter.route('/Outdoor_Cameras/IN-4010_V2')
 .get(function(req, res) {
   res.render('./Products/IN-4010_V2_Overview', {
       title: 'IN-4010 V2 Overview',
     });
 });
 
-productRouter.route('/IN-4010_V2/Technical_Specifications')
+productRouter.route('/Outdoor_Cameras/IN-4010_V2/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-4010_V2_Tech_Specs', {
       title: 'IN-4010 V2 Technical Specifications',
     });
 });
 
-productRouter.route('/IN-4010_V2/Downloads')
+productRouter.route('/Outdoor_Cameras/IN-4010_V2/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-4010_V2_Downloads', {
       title: 'IN-4010 V2 Downloads',
     });
 });
 
-productRouter.route('/IN-2908')
+productRouter.route('/Outdoor_Cameras/IN-2908')
 .get(function(req, res) {
   res.render('./Products/IN-2908_Overview', {
       title: 'IN-2908 Overview',
     });
 });
 
-productRouter.route('/IN-2908/Technical_Specifications')
+productRouter.route('/Outdoor_Cameras/IN-2908/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-2908_Tech_Specs', {
       title: 'IN-2908 Technical Specifications',
     });
 });
 
-productRouter.route('/IN-2908/Downloads')
+productRouter.route('/Outdoor_Cameras/IN-2908/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-2908_Downloads', {
       title: 'IN-2908 Downloads',
     });
 });
 
-productRouter.route('/IN-2905_V2')
+productRouter.route('/Outdoor_Cameras/IN-2905_V2')
 .get(function(req, res) {
   res.render('./Products/IN-2905_V2_Overview', {
       title: 'IN-2905 V2 Overview',
     });
 });
 
-productRouter.route('/IN-2905_V2/Technical_Specifications')
+productRouter.route('/Outdoor_Cameras/IN-2905_V2/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-2905_V2_Tech_Specs', {
       title: 'IN-2905 V2 Technical Specifications',
     });
 });
 
-productRouter.route('/IN-2905_V2/Downloads')
+productRouter.route('/Outdoor_Cameras/IN-2905_V2/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-2905_V2_Downloads', {
       title: 'IN-2905 V2 Downloads',
