@@ -404,6 +404,9 @@ section.hero.webUI {
 section.hero.internetAccess {
     background-image: url("/images/background_IA.png");
 }
+section.hero.lenses {
+    background-image: url("/images/background_Lenses.jpg");
+}
 @media only screen and (max-width: 460px) {
     section.hero.template {
         background-image: url("/images/background-mobile.jpg");
@@ -416,6 +419,9 @@ section.hero.internetAccess {
     }
     section.hero.internetAccess {
         background-image: url("/images/background_IA-mobile.png");
+    }
+    section.hero.lenses {
+        background-image: url("/images/background_Lenses-mobile.png");
     }
 }
 section.hero .six.columns {

@@ -314,6 +314,14 @@ productRouter.get('/Software', function(req, res) {
     });
 });
 
+/* GET Camera Lenses */
+productRouter.route('/Lenses')
+.get(function(req, res) {
+  res.render('./Products/Lenses', {
+      title: 'Camera Lenses',
+    });
+});
+
 /* GET InstarVision for Windows /Windows */
 productRouter.route('/Software/Windows')
 .get(function(req, res) {
