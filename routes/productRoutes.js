@@ -2,7 +2,7 @@ var express = require('express');
 var productRouter = express.Router();
 var appdata = require('../views/_partials/data/cameras.json');
 
-/* GET /Products */
+/* ****************************************** GET /Products ****************************************** */
 productRouter.route('/')
   .get(function(req, res) {
       res.render('./Products/Products', {
@@ -10,7 +10,7 @@ productRouter.route('/')
         });
     });
 
-/* GET /Indoor_Cameras */
+/* ****************************************** GET /Indoor_Cameras ****************************************** */
 productRouter.get('/Indoor_Cameras', function(req, res) {
 
     /* Get all Pictures from cameras.json for the gallery */
@@ -116,7 +116,7 @@ productRouter.route('/Indoor_Cameras/IN-3011/Downloads')
     });
 });
 
-/* GET /Outdoor_Cameras */
+/* ****************************************** GET /Outdoor_Cameras ****************************************** */
 productRouter.get('/Outdoor_Cameras', function(req, res) {
 
   /* Get all Pictures from cameras.json for the gallery */
@@ -292,7 +292,117 @@ productRouter.route('/SMA_RP-SMA_Antenna_Connector')
     });
 });
 
-/* GET /Software */
+/* ****************************************** GET Camera Lenses ****************************************** */
+productRouter.route('/Lenses')
+.get(function(req, res) {
+  res.render('./Products/Lenses', {
+      title: 'Camera Lenses',
+    });
+});
+
+/* ****************************************** GET S-Mount Lenses ****************************************** */
+productRouter.route('/Lenses/S-Mount/IN-0180')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-0180', {
+      title: 'IN-0180 Wideangle',
+    });
+});
+
+productRouter.route('/Lenses/S-Mount/IN-0220')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-0220', {
+      title: 'IN-0220 Wideangle',
+    });
+});
+
+productRouter.route('/Lenses/S-Mount/IN-0290')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-0290', {
+      title: 'IN-0290 Wideangle',
+    });
+});
+
+productRouter.route('/Lenses/S-Mount/IN-0360')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-0360', {
+      title: 'IN-0360 Wideangle',
+    });
+});
+
+productRouter.route('/Lenses/S-Mount/IN-0430')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-0430', {
+      title: 'IN-0430 Standard',
+    });
+});
+
+productRouter.route('/Lenses/S-Mount/IN-0600')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-0600', {
+      title: 'IN-0600 Default',
+    });
+});
+
+productRouter.route('/Lenses/S-Mount/IN-0800')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-0800', {
+      title: 'IN-0800 Tele',
+    });
+});
+
+productRouter.route('/Lenses/S-Mount/IN-1200')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-1200', {
+      title: 'IN-1200 Tele',
+    });
+});
+
+productRouter.route('/Lenses/S-Mount/IN-1600')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-1600', {
+      title: 'IN-1600 Tele',
+    });
+});
+
+productRouter.route('/Lenses/S-Mount/Lense_Comparison')
+.get(function(req, res) {
+  res.render('./Products/Lense_Comparison', {
+      title: 'S-Mount Lense Comparison',
+    });
+});
+
+/* ****************************************** GET CS-Mount Lenses ****************************************** */
+
+productRouter.route('/Lenses/CS-Mount/IN-0210cs')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-0210cs', {
+      title: 'IN-0210cs Wideangle',
+    });
+});
+
+productRouter.route('/Lenses/CS-Mount/IN-0400cs')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-0400cs', {
+      title: 'IN-0400cs Wideangle',
+    });
+});
+
+productRouter.route('/Lenses/CS-Mount/IN-0800cs')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-0800cs', {
+      title: 'IN-0800cs Standard',
+    });
+});
+
+productRouter.route('/Lenses/CS-Mount/IN-1200cs')
+.get(function(req, res) {
+  res.render('./Products/Lense_IN-1200cs', {
+      title: 'IN-1200cs Tele',
+    });
+});
+
+
+/* ****************************************** GET /Software ****************************************** */
 productRouter.get('/Software', function(req, res) {
 
   /* Get all Pictures from software.json for the gallery */
@@ -311,14 +421,6 @@ productRouter.get('/Software', function(req, res) {
       Pic: softwarePicture,
       PicAlt: softwarePictureAlt,
       url: softwareHref,
-    });
-});
-
-/* GET Camera Lenses */
-productRouter.route('/Lenses')
-.get(function(req, res) {
-  res.render('./Products/Lenses', {
-      title: 'Camera Lenses',
     });
 });
 
