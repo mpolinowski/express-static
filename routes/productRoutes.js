@@ -371,36 +371,6 @@ productRouter.route('/Lenses/S-Mount/Lense_Comparison')
     });
 });
 
-/* ****************************************** GET CS-Mount Lenses ****************************************** */
-
-productRouter.route('/Lenses/CS-Mount/IN-0210cs')
-.get(function(req, res) {
-  res.render('./Products/Lense_IN-0210cs', {
-      title: 'IN-0210cs Wideangle',
-    });
-});
-
-productRouter.route('/Lenses/CS-Mount/IN-0400cs')
-.get(function(req, res) {
-  res.render('./Products/Lense_IN-0400cs', {
-      title: 'IN-0400cs Wideangle',
-    });
-});
-
-productRouter.route('/Lenses/CS-Mount/IN-0800cs')
-.get(function(req, res) {
-  res.render('./Products/Lense_IN-0800cs', {
-      title: 'IN-0800cs Standard',
-    });
-});
-
-productRouter.route('/Lenses/CS-Mount/IN-1200cs')
-.get(function(req, res) {
-  res.render('./Products/Lense_IN-1200cs', {
-      title: 'IN-1200cs Tele',
-    });
-});
-
 
 /* ****************************************** GET /Software ****************************************** */
 productRouter.get('/Software', function(req, res) {

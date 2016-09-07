@@ -2154,12 +2154,26 @@ footer .footer-text {
 }
 .inlineContainer {
     position:relative;
-    width: 98%;
-}
-.inlineLeft, .inlineRight {
-    position:absolute;
-    display: inline;
+    clear: both;
 }
 .inlineRight {
+    position: absolute;
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
     right:0;
 }
+.inlineLeft {
+    position: absolute;
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
+    left:0;
+}
+.clear:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
