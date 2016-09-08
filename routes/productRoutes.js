@@ -371,6 +371,90 @@ productRouter.route('/Lenses/S-Mount/Lense_Comparison')
     });
 });
 
+/* ****************************************** GET /IN-LAN ****************************************** */
+
+productRouter.route('/IN-LAN')
+.get(function(req, res) {
+  res.render('./Products/IN-LAN_500', {
+      title: 'IN-LAN 500 Powerline Communication',
+    });
+});
+
+/* ****************************************** GET /IN-PoE ****************************************** */
+
+productRouter.route('/Power_over_Ethernet')
+.get(function(req, res) {
+  res.render('./Products/IN-PoE_1000', {
+      title: 'IN-PoE 1000 Power over Ethernet',
+    });
+});
+
+/* ****************************************** GET /IN-Motion ****************************************** */
+
+productRouter.route('/IN-Motion')
+.get(function(req, res) {
+  res.render('./Products/IN-Motion', {
+      title: 'IN-Motion',
+    });
+});
+
+productRouter.route('/IN-Motion/300')
+.get(function(req, res) {
+  res.render('./Products/IN-Motion_300', {
+      title: 'IN-Motion 300',
+    });
+});
+
+productRouter.route('/IN-Motion/500')
+.get(function(req, res) {
+  res.render('./Products/IN-Motion_500', {
+      title: 'IN-Motion 500',
+    });
+});
+
+productRouter.route('/IN-Motion/500/Dual_Sensor')
+.get(function(req, res) {
+  res.render('./Products/IN-Motion_500_Dual_Sensor', {
+      title: 'IN-Motion 500 - Dual Sensor',
+    });
+});
+
+productRouter.route('/IN-Motion/500/Setup')
+.get(function(req, res) {
+  res.render('./Products/IN-Motion_500_Setup', {
+      title: 'IN-Motion 500 - Setup',
+    });
+});
+
+productRouter.route('/IN-Motion/500/Wiring')
+.get(function(req, res) {
+  res.render('./Products/IN-Motion_500_Wiring', {
+      title: 'IN-Motion 500 - Wiring',
+    });
+});
+
+productRouter.route('/IN-Motion/500/User_Interface')
+.get(function(req, res) {
+  res.render('./Products/IN-Motion_500_User_Interface', {
+      title: 'IN-Motion 500 - User Interface',
+    });
+});
+
+productRouter.route('/IN-Motion/500/Considerations')
+.get(function(req, res) {
+  res.render('./Products/IN-Motion_500_Considerations', {
+      title: 'IN-Motion 500 - Considerations',
+    });
+});
+
+productRouter.route('/IN-Motion/500/Recorder')
+.get(function(req, res) {
+  res.render('./Products/IN-Motion_500_Recorder', {
+      title: 'IN-Motion 500 - Recorder',
+    });
+});
+
+
 
 /* ****************************************** GET /Software ****************************************** */
 productRouter.get('/Software', function(req, res) {

@@ -16,6 +16,11 @@ body {
     margin-top: 70px;
 }
 
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
 /* Header */
 
 h1, h2, h3, h4, h5, h6 {
