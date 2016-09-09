@@ -41,12 +41,25 @@
                     </div>
 
                     <div class="col-sm-12 col-md-8">
-                        <div class="list-group shadow">
-                            <button type="button" class="list-group-item list-group-item-action"><span class="lead">A</span>&nbsp; &nbsp; Bracket clipping mount</button>
-                            <button type="button" class="list-group-item list-group-item-action"><span class="lead">B</span>&nbsp; &nbsp; Reserved holes for wire induction</button>
-                            <button type="button" class="list-group-item list-group-item-action"><span class="lead">C</span>&nbsp; &nbsp; Reserved holes for screw mounting (Recommended to use bracket mouting)</button>
+                      <!-- Table -->
+                      <div class="table-responsive">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td><span class="lead">A</span></td>
+                                        <td>Bracket clipping mount</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="lead">B</span></td>
+                                        <td>Reserved holes for wire induction</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="lead">C</span></td>
+                                        <td>Reserved holes for screw mounting (Recommended to use bracket mouting)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <!-- /list-group -->
 
                         <div class="caption" style="padding: 5px;">
                             <p>Please remove the knockout labeled <strong>B</strong> for the power supply and signaling cable. Insert the cables through the hole before connecting it to the sensor.</p>
@@ -121,21 +134,21 @@
 
                     <div class="col-sm-12 col-md-8">
 
-                      <div class="card">
+                      <div class="card shadow">
                           <h3 class="card-header"><span class="lead">DIP 1</span>&nbsp; LED Status During Alarm</h3>
                           <div class="card-block">
                             <p class="card-text"><strong>ON:</strong>&nbsp; LED is in use during alarm <strong>default</strong>.<br> <strong>OFF:</strong>&nbsp; LED is deactivated during alarm.</p>
                           </div>
                       </div>
 
-                      <div class="card">
+                      <div class="card shadow">
                           <h3 class="card-header"><span class="lead">DIP 2</span>&nbsp; PIR Sensitivity Switch</h3>
                           <div class="card-block">
                             <p class="card-text"><strong>ON:</strong>&nbsp; Standard 2 Pulse Mode: Minimize false alerts <strong>default</strong>.<br> <strong>OFF:</strong>&nbsp; Highest Sensitivity.</p>
                           </div>
                       </div>
 
-                      <div class="card">
+                      <div class="card shadow">
                           <h3 class="card-header"><span class="lead">DIP 5</span>&nbsp; Dual Sensor Coupling</h3>
                           <div class="card-block">
                             <p class="card-text"><strong>ON:</strong>&nbsp; <em>AND Mode:</em> both Microwave and PIR have to trigger an alarm. <u>Coupling is only active with DIP 2 in the ON Position</u>.<br><strong>OFF:</strong>&nbsp;

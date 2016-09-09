@@ -30,51 +30,46 @@
 
         <div class="wrap mt">
 
-            <!-- ---------------------------------------------- Base Preparation ----------------------------------------------- -->
+            <!-- ---------------------------------------------- Wiring ----------------------------------------------- -->
 
-            <section class="container-fluid" style="margin-bottom: 40px;">
+            <section class="container" style="margin-bottom: 40px;">
 
                 <div class="row">
 
                     <div class="col-sm-12 col-md-8">
 
-                        <div class="panel panel-default">
-                            <!-- Default panel contents -->
-                            <div class="panel-heading">
-                                <h4>Wiring Connector</h4>
-                            </div>
+                      <h4>Wiring Connector</h4>
 
-                            <!-- Table -->
-                            <table class="table table-hover table-striped">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">V+</th>
-                                        <td>Power Supply +</td>
-                                        <td>Connector for the 12V power supply +</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">V-</th>
-                                        <td>Power Supply -</td>
-                                        <td>Connector for the 12V power supply -</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">C &amp; NC</th>
-                                        <td>Relay Jumper <strong>NC</strong></td>
-                                        <td>Allows you to set the relay to <em>Normally Closed</em> (C&amp;NC). In NC mode an interruption in the connection to the sensor, e.g. when it is damaged, will lead to an alarm. N.C. is the standard mode.</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">C1/T2 &amp; NO1</th>
-                                        <td>Relay Jumper <strong>NO</strong></td>
-                                        <td>Allows you to set the relay to <em>Normally Open</em> (C1/T2 &amp; NO1). In NO mode an interruption in the connection to the sensor <strong>will not</strong> cause an alarm. The N.O. mode is not recommended.</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">C1/T2 &amp; T1</th>
-                                        <td>Tamper Switch</td>
-                                        <td>This is for external tamper switch to cause an alarm in case the sensor is opened to avoid manipulation.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <!-- Table -->
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">V+</th>
+                                    <td>Power Supply +</td>
+                                    <td>Connector for the 12V power supply +</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">V-</th>
+                                    <td>Power Supply -</td>
+                                    <td>Connector for the 12V power supply -</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">C &amp; NC</th>
+                                    <td>Relay Jumper <strong>NC</strong></td>
+                                    <td>Allows you to set the relay to <em>Normally Closed</em> (C&amp;NC). In NC mode an interruption in the connection to the sensor, e.g. when it is damaged, will lead to an alarm. N.C. is the standard mode.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">C1/T2 &amp; NO1</th>
+                                    <td>Relay Jumper <strong>NO</strong></td>
+                                    <td>Allows you to set the relay to <em>Normally Open</em> (C1/T2 &amp; NO1). In NO mode an interruption in the connection to the sensor <strong>will not</strong> cause an alarm. The N.O. mode is not recommended.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">C1/T2 &amp; T1</th>
+                                    <td>Tamper Switch</td>
+                                    <td>This is for external tamper switch to cause an alarm in case the sensor is opened to avoid manipulation.</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                     </div>
 
@@ -153,6 +148,98 @@
             </section>
             <!-- Close ROW -->
 
+                <!-- ---------------------------------------------- Tech Specs ----------------------------------------------- -->
+
+                <section class="container mb">
+                    <div class="row">
+
+                          <h4>Technical Specifications</h4>
+
+                            <!-- Table -->
+                            <table class="table table-hover">
+                                <thead>
+                                    <th>Sensor Model</th>
+                                    <th>INSTAR IN-Motion 500 Dual Microwave &amp; PIR Motion Detector</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Operating Voltage</th>
+                                        <td>D.C. 12V</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Current Consumption</th>
+                                        <td>62mA @ DC12V</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Relay output</th>
+                                        <td>NC / NO, DC 25V / 100mA</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Detection Angle</th>
+                                        <td>110°</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Detection Area</th>
+                                        <td>12 m x 12 m</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Start-up Time</th>
+                                        <td>60 seconds (warm-up time up to 10 minutes in temperatures below -10°C !)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">RF Interference Compensation</th>
+                                        <td>10MHz 1GHz 20V/m</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Alarm Indicator</th>
+                                        <td>Red and Blue LED</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Alarm Output</th>
+                                        <td>N.C. or N.O., DC 25 V / 100 mA</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tamper Output</th>
+                                        <td>N.C., DC 25 V / 100 mA</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Sensor</th>
+                                        <td>Dual element pyroelectric and microwave sensor</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Environment Humidity</th>
+                                        <td>95% RH (no congelation)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Working Temperature</th>
+                                        <td>-10°C to +50°C</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Installation Mode</th>
+                                        <td>Wall mount</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Mounting Options</th>
+                                        <td>Ceiling- or wallmount</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Size (H/W/D)</th>
+                                        <td>60 mm / 45mm / 136 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Weight</th>
+                                        <td>150g</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Compatible with</th>
+                                        <td>IN-2905 V2, IN-2907, IN-2908, IN-3001, IN-3005, IN-3010, IN-3010 PoE, IN-3011, IN-4009, IN-4010, IN-4011, IN-5907HD, IN-5907HD PoE, IN-6011HD, IN-6012HD, IN-6012HD PoE, IN-7011HD, IN-7011HD PoE</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /Row -->
+                </section>
+                <!-- /Container -->
         </div>
         <!-- /Wrap -->
 
@@ -169,6 +256,7 @@
         <% include ../_partials/template/_jsdefaults.ejs %>
 
     </div>
+    <!-- /Wrapper -->
 
 </body>
 

@@ -380,6 +380,15 @@ productRouter.route('/IN-LAN')
     });
 });
 
+/* ****************************************** GET /IN-Lighting ****************************************** */
+
+productRouter.route('/IR_Lighting')
+.get(function(req, res) {
+  res.render('./Products/IR-Lighting', {
+      title: 'INSTAR Infrared Spotlights',
+    });
+});
+
 /* ****************************************** GET /IN-PoE ****************************************** */
 
 productRouter.route('/Power_over_Ethernet')
