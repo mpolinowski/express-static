@@ -398,6 +398,24 @@ productRouter.route('/Power_over_Ethernet')
     });
 });
 
+/* ****************************************** GET /IN-Mikro ****************************************** */
+
+productRouter.route('/IN-Mikro')
+.get(function(req, res) {
+  res.render('./Products/IN-Mikro', {
+      title: 'IN-Mikro IP Camera Microphones',
+    });
+});
+
+/* ****************************************** GET /IN-Mikro ****************************************** */
+
+productRouter.route('/IN-Route')
+.get(function(req, res) {
+  res.render('./Products/IN-Route', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
 /* ****************************************** GET /IN-Motion ****************************************** */
 
 productRouter.route('/IN-Motion')
