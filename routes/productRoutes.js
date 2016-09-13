@@ -486,9 +486,93 @@ productRouter.route('/IN-Route/Overview')
     });
 });
 
+productRouter.route('/IN-Route/Overview/Status')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_O_Status', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Overview/WAN_Status')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_O_WAN', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Overview/Mode')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_O_Mode', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Overview/File_Explorer')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_O_File', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
 productRouter.route('/IN-Route/Network')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Network', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Network/LAN')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Network_LAN', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Network/WiFi_Settings')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Network_WiFi', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Network/Repeater_Settings')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Network_Repeater', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Network/3G_Settings')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Network_3G', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Network/Router_Mode')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Network_Router', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Network/DHCP')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Network_DHCP', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Network/DDNS')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Network_DDNS', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Network/FTP')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Network_FTP', {
       title: 'IN-Route P52 Travel Router',
     });
 });
@@ -500,6 +584,34 @@ productRouter.route('/IN-Route/Firewall')
     });
 });
 
+productRouter.route('/IN-Route/Firewall/Port_Forwarding')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Firewall_Forwarding', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Firewall/Device_Filter')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Firewall_Filter', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Firewall/DMZ_Host')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Firewall_DMZ', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Firewall/Webfilter')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Firewall_Webfilter', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
 productRouter.route('/IN-Route/System')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_System', {
@@ -507,9 +619,72 @@ productRouter.route('/IN-Route/System')
     });
 });
 
+productRouter.route('/IN-Route/System/Log')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_System_Log', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/System/Login')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_System_Login', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/System/NTP_Setup')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_System_NTP', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/System/Statistics')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_System_Statistics', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/System/Import')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_System_Import', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/System/Reboot')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_System_Reboot', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/System/Upgrade')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_System_Upgrade', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
 productRouter.route('/IN-Route/Help')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Help', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Help/Features')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Help_Features', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Help/About_Us')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Help_About', {
       title: 'IN-Route P52 Travel Router',
     });
 });
