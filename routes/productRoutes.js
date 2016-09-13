@@ -407,11 +407,109 @@ productRouter.route('/IN-Mikro')
     });
 });
 
-/* ****************************************** GET /IN-Mikro ****************************************** */
+/* ****************************************** GET /IN-Route ****************************************** */
 
 productRouter.route('/IN-Route')
 .get(function(req, res) {
-  res.render('./Products/IN-Route', {
+  res.render('./Products/IN-Route_P52', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/First_Steps')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_First_Steps', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/First_Steps/Introduction')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_First_Steps_Introduction', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/First_Steps/Charging')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_First_Steps_Charging', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/First_Steps/Login')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_First_Steps_Login', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/First_Steps/Wizard')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_First_Steps_Wizard', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/First_Steps/Quick_Access')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_First_Steps_QA', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/First_Steps/Quick_Access/Router_Modes')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_First_Steps_QA_Router', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/First_Steps/Quick_Access/Repeater_Mode')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_First_Steps_QA_Repeater', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/First_Steps/Quick_Access/3G_Mode')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_First_Steps_QA_3G', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Overview')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Overview', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Network')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Network', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Firewall')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Firewall', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/System')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_System', {
+      title: 'IN-Route P52 Travel Router',
+    });
+});
+
+productRouter.route('/IN-Route/Help')
+.get(function(req, res) {
+  res.render('./Products/IN-Route_P52_Help', {
       title: 'IN-Route P52 Travel Router',
     });
 });
