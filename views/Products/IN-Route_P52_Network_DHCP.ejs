@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html ⚡>
+    <head>
+        <% include ../_partials/amp/_amp-head.ejs %>
+        <link rel="canonical" href="/Products/IN-Route/Network/DHCP">
+    </head>
+
+    <body class="home">
+
+        <header class="fixed">
+          <div class="wrap">
+              <div class="container">
+                  <div class="clearfix">
+                      <div class="left-nav">
+                          <a href="/" class="tab header-title">
+                              <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
+                          </a>
+                      </div>
+                      <div class="right alt">
+
+                          <a href="/Products/IN-Route/Network" class="tab header-title">
+                              <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </header>
+
+        <div class="wrap">
+            <div class="content">
+
+                <section class="blade get-started">
+                    <div class="container">
+                        <div class="row">
+                            <div class="twelve columns">
+                                <h1>IN-Route P52</h1>
+                                <h2>Network</h2>
+                            </div>
+                        </div>
+
+                        <div class="margin">
+                          <h3>DHCP</h3>
+                          <p class="text-justify">In this and the following articles we will talk about the IN-Route P52 web user interface (webUI). To access the interface, please charge your router, switch it into WiFi mode and connect to it´s WiFi network. For more details please follow the instructions for the <a href="/Products/IN-Route/First_Steps/Login">router login</a>. To follow this article, please make sure that your router´s webUI is switched to the Advanced Mode - the Simple Mode will not contain all the options we are covering here. Please be also aware that what we are doing here can be considered an advanced configuration. In most cases you will be fine just following the <a href="/Products/IN-Route/First_Steps">First Steps Configuration</a> discussed earlier. So, are you up to some advanced routing terminologies and exciting features? Then lets go!</p>
+                          <br>
+                          <div>
+                              <amp-img src="/images/IN-Route_P52_15en.png" width="1000" height="566" layout="responsive" class="shadow"></amp-img>
+                          </div>
+                            <p>Here you can adjust the DHCP server that you were able to activate/deactivate under Network/LAN.</p>
+                            <br>
+                            <p>The DHCP Service allows your router to automatically integrate new devices into your network by assigning them a IP address. The start and end IP defines the range of IP addresses that are managed by the routers DHCP service. The amount of IP addresses inside this range are available for the router to automatically assigned to new Wifi devices. Set your wireless devices (laptop, mobile phone, etc.) to Obtain an IP Address Automatically to take advantage of this service.</p>
+                            <p>If you use an IP camera inside the IN-Route´s network it is recommended to assign a static IP address to it over it´s own web user interface, if you want to access the camera via a port forwarding rule. Please choose an IP address outside of the DHCP range for your camera, e.g. 192.168.169.201 or higher in the example above.</p>
+                            <br>
+                            <p>The <strong>Subnet Mask</strong> is usually 255.255.255.0. </p>
+                            <br>
+                            <p>Your Default Gateway and DNS Server are, in most cases, the IN-Route´s default IP address: 192.168.169.1. In this case all devices inside the IN-Route network will use the IN-Route to connect to the internet (if an access is available) and they will ask the IN-Route to resolve internet addresses for them. If you are using the device behind a primary router, this router should automatically assign a DNS server address as well as Gateway. To find out your default DNS server on a Windows system connect your computer the main router, open the command prompt and type ipconfig /all. Adding a secondary DNS server to the LAN setup is optional.</p>
+                            <p>By default the DNS server addresses are set to <a href="http://www.opendns.com/">OpenDNS</a> and <a href="https://developers.google.com/speed/public-dns/">Google Public DNS</a>, which should give you a domain name resolution, even if the IN-Route is not assigned a DNS server by the external router it is connected to.</p>
+                        </div>
+                        <!-- /margin -->
+
+                    </div>
+                    <!-- /Container -->
+                  </section>
+                  <!-- /blade -->
+                </div>
+                <!-- /Content -->
+              </div>
+              <!-- /WRAP -->
+
+                <section class="blade blog">
+
+                    <div class="container wider">
+                        <div class="row">
+                            <div class="twelve columns">
+                                <h1>Related Topics:</h1>
+                            </div>
+                        </div>
+
+                        <div class="tab-container">
+
+                            <a class="tab" href="/Quick_Installation/First_Steps">
+                                <h3>First Steps to Install your INSTAR IP Camera</h3>
+                                <div class="subtitle">Easy</div>
+                            </a>
+
+                            <a class="tab" href="/Quick_Installation/After_Unpacking">
+                                <h3>What to do After Umpacking your Camera</h3>
+                                <div class="subtitle">Easy</div>
+                            </a>
+
+                            <a class="tab" href="/Quick_Installation/Direct_LAN_Connection">
+                                <h3>Connect your Camera with Computer Directly</h3>
+                                <div class="subtitle">Intermediate</div>
+                            </a>
+
+                            <a class="tab" href="/Quick_Installation/WebUI_And_Firmware_Upgrade">
+                                <h3>How to Update your Cameras Firmware and User Interface</h3>
+                                <div class="subtitle">Intermediate</div>
+                            </a>
+
+                            <a class="tab" href="/Quick_Installation/Set_Up_A_Wireless_Connection">
+                                <h3>How to Connect your Camera via WiFi</h3>
+                                <div class="subtitle">Easy</div>
+                            </a>
+
+                            <a class="tab" href="/Quick_Installation/Creating_User_Accounts">
+                                <h3>Change the Default Login of your Camera</h3>
+                                <div class="subtitle">Easy</div>
+                            </a>
+                        </div>
+
+                        <a href="/Quick_Installation/" target="_blank">VIEW MORE</a>
+
+                    </div>
+                </section>
+
+                <footer>
+                    <% include ../_partials/amp/_amp-footer.ejs %>
+                </footer>
+                </body>
+            </html>
