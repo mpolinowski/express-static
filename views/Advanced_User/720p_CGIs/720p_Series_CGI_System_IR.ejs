@@ -21,7 +21,7 @@
                     <a class="breadcrumb-item" href="/Advanced_User/CGI_Commands">CGI Commands</a>
                     <a class="breadcrumb-item" href="/720p_Series_CGI_List">720p CGIs</a>
                     <a class="breadcrumb-item" href="/720p_Series_CGI_List/System_Menu">System Menu</a>
-                    <span class="breadcrumb-item active">Date &amp; Time Overlay</span>
+                    <span class="breadcrumb-item active">IR LEDs Overlay</span>
                     <a class="breadcrumb-item" href="/720p_Series_CGI_List/Complete_CGI_List">Complete List</a>
                 </nav>
 
@@ -34,63 +34,63 @@
 
             <section class="container mt mb"> <!-- Media Container -->
               <div class="row mb">
-                <h2><a href="/index.php/HD_Manual_WebUI_System_Date-Time">The Date-Time Overlay</a></h2>
-                <h3>param.cgi?cmd=getntpattr</h3>
+                <h2><a href="/index.php/HD_Manual_WebUI_System_IR_LEDs">The IR LEDs Overlay</a></h2>
+                <h3>param.cgi?cmd=setinfrared</h3>
 
                 <div class="table-responsive">
                   <table class="table table-hover">
                     <tr>
                       <th>Function</th>
-                      <td>Get Server Info</td>
+                      <td>Set IR Light Parameter</td>
                     </tr>
                     <tr>
                       <th>Authority</th>
                       <td>admin</td>
                     </tr>
                     <tr>
-                      <th>Return</th>
-                      <td>ntpenable: Enable (1), disable (0) NTP sync.;<br/>ntpserver: 0.de.pool.ntp.org, 1.de.pool.ntp.org, time.nist.gov, time.kriss.re.kr, time.windows.com, time.nuri.net<br/>ntpinterval: Sync interval (1-24 hrs);<br/></td>
+                      <th>Parameter</th>
+                      <td>infraredstat: IR Status - auto, open and close</td>
                     </tr>
-
                     <tr>
                       <th>Remarks</th>
-                      <td>See <a href="/720p_Series_CGI_List/Complete_CGI_List/Get_NTP_Server_Attribute">Param.cgi?cmd=getntpattr</a> and <a href="/720p_Series_CGI_List/Complete_CGI_List/Set_NTP_Server_Attribute">Param.cgi?cmd=setntpattr</a></td>
+                      <td>See <a href="/720p_Series_CGI_List/Complete_CGI_List/Get_Infrared_Attribute">Param.cgi?cmd=getinfrared</a> and <a href="/720p_Series_CGI_List/Complete_CGI_List/Set_Infrared_Attribute">Param.cgi?cmd=setinfrared</a></td>
                     </tr>
                     <tr>
                       <th>Example</th>
-                      <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setntpattr&-ntpenable=1&-ntpserver=0.de.pool.ntp.org&-ntpinterval=1&cmd=setservertime&-timezone=Europe/Amsterdam&cmd=set_instar_admin&-index=50&-value=off</code></td>
+                      <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setinfrared&-infraredstat=auto</code></td>
                     </tr>
                   </table>
                 </div>
+
             </div>
             <!-- /Row -->
 
             <div class="row mb">
-              <h2><a href="/index.php/HD_Manual_WebUI_System_Date-Time">The Date-Time Overlay</a></h2>
-              <h3>param.cgi?cmd=get_instar_admin&amp;-index=50</h3>
+              <h2><a href="/index.php/HD_Manual_WebUI_System_IR_LEDs">The IR LEDs Overlay</a></h2>
+              <h3>param.cgi?cmd=setplancgi</h3>
 
               <div class="table-responsive">
                 <table class="table table-hover">
                   <tr>
                     <th>Function</th>
-                    <td>Get Admin Variable for Daylight Saving Time</td>
+                    <td>Define a Time Window to Switch IR LEDs from close to auto</td>
                   </tr>
                   <tr>
                     <th>Authority</th>
                     <td>admin</td>
                   </tr>
                   <tr>
-                    <th>Return</th>
-                    <td>value: [on, off]<br/></td>
+                    <th>Parameter</th>
+                    <td>plancgi_enable_0, plancgi_enable_1: [0,1]<br/>plancgi_time_0, plancgi_time_1: [0 - 86399] in seconds = 0:00:00 - 23:59:59 o´clock</td>
                   </tr>
-
                   <tr>
                     <th>Remarks</th>
-                    <td>See <a href="/720p_Series_CGI_List/Complete_CGI_List/Get_Admin_Variables">Param.cgi?cmd=get_instar_admin</a> and <a href="/720p_Series_CGI_List/Complete_CGI_List/Set_Admin_Variables">Param.cgi?cmd=set_instar_admin</a></td>
+                    <td>See <a href="#">Param.cgi?cmd=setplancgi</a></td>
                   </tr>
                   <tr>
                     <th>Example</th>
-                    <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setntpattr&-ntpenable=1&-ntpserver=0.de.pool.ntp.org&-ntpinterval=1&cmd=setservertime&-timezone=Europe/Amsterdam&cmd=set_instar_admin&-index=50&-value=off</code></td>
+                    <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setplancgi&-plancgi_enable_0=0&-plancgi_enable_1=0</code><br/>
+                    <code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setplancgi&-plancgi_enable_0=1&-plancgi_enable_1=1&-plancgi_time_0=21600&-plancgi_time_1=64800</code></td>
                   </tr>
                 </table>
               </div>

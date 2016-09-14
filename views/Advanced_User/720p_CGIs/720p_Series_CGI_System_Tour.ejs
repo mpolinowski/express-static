@@ -21,7 +21,7 @@
                     <a class="breadcrumb-item" href="/Advanced_User/CGI_Commands">CGI Commands</a>
                     <a class="breadcrumb-item" href="/720p_Series_CGI_List">720p CGIs</a>
                     <a class="breadcrumb-item" href="/720p_Series_CGI_List/System_Menu">System Menu</a>
-                    <span class="breadcrumb-item active">Date &amp; Time Overlay</span>
+                    <span class="breadcrumb-item active">PTZ Tour</span>
                     <a class="breadcrumb-item" href="/720p_Series_CGI_List/Complete_CGI_List">Complete List</a>
                 </nav>
 
@@ -34,66 +34,33 @@
 
             <section class="container mt mb"> <!-- Media Container -->
               <div class="row mb">
-                <h2><a href="/index.php/HD_Manual_WebUI_System_Date-Time">The Date-Time Overlay</a></h2>
-                <h3>param.cgi?cmd=getntpattr</h3>
+                <h2><a href="/index.php/HD_Manual_WebUI_System_PTZ_Tour">The PTZ Tour Overlay</a></h2>
+                <h3>param.cgi?cmd=setptztour</h3>
 
                 <div class="table-responsive">
                   <table class="table table-hover">
                     <tr>
                       <th>Function</th>
-                      <td>Get Server Info</td>
+                      <td>Set a Pan&amp;Tilt Tour</td>
                     </tr>
                     <tr>
                       <th>Authority</th>
                       <td>admin</td>
                     </tr>
                     <tr>
-                      <th>Return</th>
-                      <td>ntpenable: Enable (1), disable (0) NTP sync.;<br/>ntpserver: 0.de.pool.ntp.org, 1.de.pool.ntp.org, time.nist.gov, time.kriss.re.kr, time.windows.com, time.nuri.net<br/>ntpinterval: Sync interval (1-24 hrs);<br/></td>
+                      <th>Parameter</th>
+                      <td>var tour_enable[0, 1] - If Active the <a href="/720p_Series_CGI_List/System_Menu/PTZ">Alarmpreset Function</a> has to be Deactivated!;<br/>var tour_times: [1-50] Tour Repetitions;<br/>var tour_index: Positions 0-7 divided by Semicolons;<br/>var tour_interval: Resting Time on Position in Seconds [5-43200] divided by Semicolons;</td>
                     </tr>
-
                     <tr>
                       <th>Remarks</th>
-                      <td>See <a href="/720p_Series_CGI_List/Complete_CGI_List/Get_NTP_Server_Attribute">Param.cgi?cmd=getntpattr</a> and <a href="/720p_Series_CGI_List/Complete_CGI_List/Set_NTP_Server_Attribute">Param.cgi?cmd=setntpattr</a></td>
+                      <td>See <a href="#">Param.cgi?cmd=getptztour</a> and <a href="#">Param.cgi?cmd=setptztour</a>. If Active, the <a href="/720p_Series_CGI_List/System_Menu/PTZ">Alarmpreset Function</a> has to be deactivated!</td>
                     </tr>
                     <tr>
                       <th>Example</th>
-                      <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setntpattr&-ntpenable=1&-ntpserver=0.de.pool.ntp.org&-ntpinterval=1&cmd=setservertime&-timezone=Europe/Amsterdam&cmd=set_instar_admin&-index=50&-value=off</code></td>
+                      <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setptztour&-tour_enable=1&-tour_index=0;1;2;3;4;5;6;7&-tour_interval=5;5;5;5;5;5;5;5&-tour_times=50&cmd=setmdalarm&-aname=preset&-switch=off</code></td>
                     </tr>
                   </table>
                 </div>
-            </div>
-            <!-- /Row -->
-
-            <div class="row mb">
-              <h2><a href="/index.php/HD_Manual_WebUI_System_Date-Time">The Date-Time Overlay</a></h2>
-              <h3>param.cgi?cmd=get_instar_admin&amp;-index=50</h3>
-
-              <div class="table-responsive">
-                <table class="table table-hover">
-                  <tr>
-                    <th>Function</th>
-                    <td>Get Admin Variable for Daylight Saving Time</td>
-                  </tr>
-                  <tr>
-                    <th>Authority</th>
-                    <td>admin</td>
-                  </tr>
-                  <tr>
-                    <th>Return</th>
-                    <td>value: [on, off]<br/></td>
-                  </tr>
-
-                  <tr>
-                    <th>Remarks</th>
-                    <td>See <a href="/720p_Series_CGI_List/Complete_CGI_List/Get_Admin_Variables">Param.cgi?cmd=get_instar_admin</a> and <a href="/720p_Series_CGI_List/Complete_CGI_List/Set_Admin_Variables">Param.cgi?cmd=set_instar_admin</a></td>
-                  </tr>
-                  <tr>
-                    <th>Example</th>
-                    <td><code>http://admin:instar@192.168.178.88/cgi-bin/hi3510/param.cgi?cmd=setntpattr&-ntpenable=1&-ntpserver=0.de.pool.ntp.org&-ntpinterval=1&cmd=setservertime&-timezone=Europe/Amsterdam&cmd=set_instar_admin&-index=50&-value=off</code></td>
-                  </tr>
-                </table>
-              </div>
 
             </div>
             <!-- /Row -->
