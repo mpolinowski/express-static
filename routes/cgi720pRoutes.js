@@ -13,8 +13,68 @@ cgi720pRouter.get('/Software_Menu', function(req, res) {
     });
 });
 
+cgi720pRouter.get('/Software_Menu/Language', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Software_Language', {
+      title: '720p Software CGIs',
+    });
+});
+
+cgi720pRouter.get('/Software_Menu/Reboot-Reset', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Software_Reboot', {
+      title: '720p Software CGIs',
+    });
+});
+
+cgi720pRouter.get('/Software_Menu/Backup-Restore', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Software_Backup', {
+      title: '720p Software CGIs',
+    });
+});
+
+cgi720pRouter.get('/Software_Menu/Update', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Software_Update', {
+      title: '720p Software CGIs',
+    });
+});
+
 cgi720pRouter.get('/Network_Menu', function(req, res) {
   res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Network', {
+      title: '720p Network CGIs',
+    });
+});
+
+cgi720pRouter.get('/Network_Menu/IP_Config', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Network_IP', {
+      title: '720p Network CGIs',
+    });
+});
+
+cgi720pRouter.get('/Network_Menu/DDNS', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Network_DDNS', {
+      title: '720p Network CGIs',
+    });
+});
+
+cgi720pRouter.get('/Network_Menu/WiFi', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Network_WiFi', {
+      title: '720p Network CGIs',
+    });
+});
+
+cgi720pRouter.get('/Network_Menu/P2P', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Network_P2P', {
+      title: '720p Network CGIs',
+    });
+});
+
+cgi720pRouter.get('/Network_Menu/UPnP', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Network_UPnP', {
+      title: '720p Network CGIs',
+    });
+});
+
+cgi720pRouter.get('/Network_Menu/Push_Service', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Network_Push', {
       title: '720p Network CGIs',
     });
 });
@@ -25,8 +85,80 @@ cgi720pRouter.get('/System_Menu', function(req, res) {
     });
 });
 
+cgi720pRouter.get('/System_Menu/Info', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_System_Info', {
+      title: '720p System CGIs',
+    });
+});
+
+cgi720pRouter.get('/System_Menu/Date-Time', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_System_Date', {
+      title: '720p System CGIs',
+    });
+});
+
+cgi720pRouter.get('/System_Menu/User', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_System_User', {
+      title: '720p System CGIs',
+    });
+});
+
+cgi720pRouter.get('/System_Menu/Status_LED', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_System_Status', {
+      title: '720p System CGIs',
+    });
+});
+
+cgi720pRouter.get('/System_Menu/IR_LEDs', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_System_IR', {
+      title: '720p System CGIs',
+    });
+});
+
+cgi720pRouter.get('/System_Menu/ONVIF', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_System_ONVIF', {
+      title: '720p System CGIs',
+    });
+});
+
+cgi720pRouter.get('/System_Menu/PTZ', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_System_PTZ', {
+      title: '720p System CGIs',
+    });
+});
+
+cgi720pRouter.get('/System_Menu/PTZ_Tour', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_System_Tour', {
+      title: '720p System CGIs',
+    });
+});
+
+cgi720pRouter.get('/System_Menu/Log', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_System_Log', {
+      title: '720p System CGIs',
+    });
+});
+
 cgi720pRouter.get('/Multimedia_Menu', function(req, res) {
   res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Multimedia', {
+      title: '720p Multimedia CGIs',
+    });
+});
+
+cgi720pRouter.get('/Multimedia_Menu/Audio', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Multimedia_Audio', {
+      title: '720p Multimedia CGIs',
+    });
+});
+
+cgi720pRouter.get('/Multimedia_Menu/Video', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Multimedia_Video', {
+      title: '720p Multimedia CGIs',
+    });
+});
+
+cgi720pRouter.get('/Multimedia_Menu/Image', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Multimedia_Image', {
       title: '720p Multimedia CGIs',
     });
 });
@@ -37,8 +169,86 @@ cgi720pRouter.get('/Alarm_Menu', function(req, res) {
     });
 });
 
+cgi720pRouter.get('/Alarm_Menu/Areas', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Alarm_Areas', {
+      title: '720p Alarm CGIs',
+    });
+});
+
+cgi720pRouter.get('/Alarm_Menu/Privacy_Mask', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Alarm_Privacy', {
+      title: '720p Alarm CGIs',
+    });
+});
+
+cgi720pRouter.get('/Alarm_Menu/Actions', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Alarm_Actions', {
+      title: '720p Alarm CGIs',
+    });
+});
+
+cgi720pRouter.get('/Alarm_Menu/Schedule', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Alarm_Schedule', {
+      title: '720p Alarm CGIs',
+    });
+});
+
+cgi720pRouter.get('/Alarm_Menu/SMTP_Server', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Alarm_SMTP', {
+      title: '720p Alarm CGIs',
+    });
+});
+
+cgi720pRouter.get('/Alarm_Menu/Email', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Alarm_Email', {
+      title: '720p Alarm CGIs',
+    });
+});
+
+cgi720pRouter.get('/Alarm_Menu/FTP', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Alarm_FTP', {
+      title: '720p Alarm CGIs',
+    });
+});
+
+cgi720pRouter.get('/Alarm_Menu/Alarm_Server', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Alarm_Server', {
+      title: '720p Alarm CGIs',
+    });
+});
+
+cgi720pRouter.get('/Alarm_Menu/Audio_Alarm', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Alarm_Audio', {
+      title: '720p Alarm CGIs',
+    });
+});
+
+cgi720pRouter.get('/Alarm_Menu/SD_Card', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Alarm_SD', {
+      title: '720p Alarm CGIs',
+    });
+});
+
 cgi720pRouter.get('/Recording_Menu', function(req, res) {
   res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Recording', {
+      title: '720p Recording CGIs',
+    });
+});
+
+cgi720pRouter.get('/Recording_Menu/Schedule', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Recording_Schedule', {
+      title: '720p Recording CGIs',
+    });
+});
+
+cgi720pRouter.get('/Recording_Menu/Video', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Recording_Video', {
+      title: '720p Recording CGIs',
+    });
+});
+
+cgi720pRouter.get('/Recording_Menu/Photoseries', function(req, res) {
+  res.render('./Advanced_User/720p_CGIs/720p_Series_CGI_Recording_Photoseries', {
       title: '720p Recording CGIs',
     });
 });
