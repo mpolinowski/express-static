@@ -250,3 +250,22 @@ a:before, a:after {
     color: white;
     font-weight: 400;
 }
+
+.footer-items li {
+	list-style-type: none;
+	color: grey;
+}
+
+.footer-heading {
+	color: white;
+}
+
+a:hover {
+	color: white;
+}
+.borderless td, .borderless th {
+    border: none;
+}
+.right {
+  margin-right: -5px;
+}
