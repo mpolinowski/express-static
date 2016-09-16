@@ -94,6 +94,86 @@ quickInstallRouter.route('/Language_Selection')
           });
       });
 
+/* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video', {
+            title: 'Live Video',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/ActiveX')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_ActiveX', {
+            title: 'Live Video ActiveX',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/QuickTime')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_QuickTime', {
+            title: 'Live Video QuickTime',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/MJPEG')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_MJPEG', {
+            title: 'Live Video MJPEG',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/Troubleshooting/Avast')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_Avast', {
+            title: 'Live Video Avast',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/Troubleshooting/Kaspersky_2013')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_Kaspersky_2013', {
+            title: 'Live Video Kaspersky 2013',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/Troubleshooting/Kaspersky_2014')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_Kaspersky_2014', {
+            title: 'Live Video Kaspersky 2014',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/Troubleshooting/AVG')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_AVG', {
+            title: 'Live Video AVG',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/Troubleshooting/AVIRA')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_AVIRA', {
+            title: 'Live Video AVIRA',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/Troubleshooting/F-Secure')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_F-Secure', {
+            title: 'Live Video F-Secure',
+          });
+      });
+
 /* GET Creating user accounts on your camera /Creating_User_Accounts */
 quickInstallRouter.route('/Creating_User_Accounts')
     .get(function(req, res) {

@@ -42,6 +42,13 @@
         "qiPic": "/images/Wiki_Tiles_QI-Language_Selection.jpg",
         "qiPicAlt": "Language Selection"
     }, {
+        "qiTitle": "Live Video",
+        "qiVideoSrc": "#",
+        "qiVideoAlt": "Live Video",
+        "qiUrl": "Live_Video",
+        "qiPic": "/images/Wiki_Tiles_QI-Live_Video.jpg",
+        "qiPicAlt": "Live Video"
+    }, {
         "qiTitle": "Creating user accounts on your camera",
         "qiVideoSrc": "#",
         "qiVideoAlt": "Creating user accounts on your camera",
