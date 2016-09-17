@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html ⚡>
+    <head>
+        <% include ../_partials/amp/_amp-head.ejs %>
+        <link rel="canonical" href="/Quick_Installation/Live_Video/AVIRA">
+    </head>
+
+    <body class="home">
+
+        <header class="fixed">
+            <div class="wrap">
+                <div class="container">
+                    <div class="clearfix">
+                        <div class="left-nav">
+                            <a href="/" class="tab header-title">
+                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
+                            </a>
+                        </div>
+                        <div class="right alt">
+
+                            <a href="/Quick_Installation/Live_Video" class="tab header-title">
+                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrap">
+            <div class="content">
+
+                <section class="blade get-started">
+                    <div class="container">
+                        <div class="row">
+                            <div class="twelve columns">
+                                <h1>AVIRA Antivirus Pro</h1>
+                                <h2>Set an Exception for your IP Camera</h2>
+                            </div>
+                        </div>
+
+                        <div class="margin">
+                            <div>
+                                <p class="justify">
+                                  Avira Antivirus Pro might cause prevent you from displaying the video stream when you access our IP cameras for the first time with Internet Explorer (other browsers are not affected). The problem is caused by Avira´s real-time scanner blocking the ActiveX control used by the camera (SEWebClientPlus.ocx for the HD cameras or DVM_IPCam2.ocx for VGA cameras). Please deactivate the real-time scanner and reload the camera WebUI inside your Internet Explorer. You will be asked to install the ActiveX again - simply confirm the installation process, then reactivate your Antivirus protection. Reload the WebUI - the video should now load automatically.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /margin -->
+
+                       <div class="card-container">
+                           <div class="twocard">
+                               <div class="image">
+                                   <amp-img class="shadow" noloading height=225 width=200 layout=responsive src="/images/Anvira_01.png"></amp-img>
+                               </div>
+                               <div class="content">
+                                  <br>
+                                  <h3>Open the Configuration Menu</h3>
+                                  <br>
+                                   <p>Please right-click the Avira Umbrella Icon in the taskbar systray next to the system clock.</p>
+                               </div>
+                           </div>
+                            <!-- /Twocard -->
+                           <div class="twocard">
+                               <div class="image">
+                                   <amp-img class="shadow" noloading height=225 width=200 layout=responsive src="/images/Anvira_02.png"></amp-img>
+                               </div>
+                               <div class="content">
+                                  <br>
+                                  <h3>Deactivate the Real-Time Scanner</h3>
+                                  <br>
+                                  <p>Choose to deactivate the real-time scanner and install the ActiveX plug in. Reactivate the scanner afterwards.</p>
+                               </div>
+                           </div>
+                            <!-- /Twocard -->
+                       </div>
+                        <!-- /Card-Container -->
+
+                        <div class="margin">
+                            <div>
+                                <p class="justify">
+                                    The ActiveX plugin for the HD camera can be found in C:/Windows/SystemWOW64 (or System32) and is called SEWebClientPlus.ocx for the HD cameras (or DVM_IPCam2.ocx in C:\Windows\Downloaded Program Files for the VGA cameras). In case that the HD camera´s video is working but you cannot start the integrated media player - you will need an exception for the file SEPlayerPlus.exe that is also located in C:/Windows/SystemWOW64 (or System32).
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /margin -->
+
+                    </div>
+                    <!-- /Container -->
+                </section>
+                <!-- /blade -->
+            </div>
+            <!-- /Content -->
+        </div>
+        <!-- /WRAP -->
+
+        <section class="blade blog">
+
+            <div class="container wider">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h1>Related Topics:</h1>
+                    </div>
+                </div>
+
+                <div class="tab-container">
+
+                    <a class="tab" href="/Quick_Installation/First_Steps">
+                        <h3>First Steps to Install your INSTAR IP Camera</h3>
+                        <div class="subtitle">Easy</div>
+                    </a>
+
+                    <a class="tab" href="/Quick_Installation/After_Unpacking">
+                        <h3>What to do After Umpacking your Camera</h3>
+                        <div class="subtitle">Easy</div>
+                    </a>
+
+                    <a class="tab" href="/Quick_Installation/Direct_LAN_Connection">
+                        <h3>Connect your Camera with Computer Directly</h3>
+                        <div class="subtitle">Intermediate</div>
+                    </a>
+
+                    <a class="tab" href="/Quick_Installation/WebUI_And_Firmware_Upgrade">
+                        <h3>How to Update your Cameras Firmware and User Interface</h3>
+                        <div class="subtitle">Intermediate</div>
+                    </a>
+
+                    <a class="tab" href="/Quick_Installation/Set_Up_A_Wireless_Connection">
+                        <h3>How to Connect your Camera via WiFi</h3>
+                        <div class="subtitle">Easy</div>
+                    </a>
+
+                    <a class="tab" href="/Quick_Installation/Creating_User_Accounts">
+                        <h3>Change the Default Login of your Camera</h3>
+                        <div class="subtitle">Easy</div>
+                    </a>
+                </div>
+
+                <a href="/Quick_Installation/" target="_blank">VIEW MORE</a>
+
+            </div>
+        </section>
+
+        <footer>
+            <% include ../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>

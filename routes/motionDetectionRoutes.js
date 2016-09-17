@@ -124,6 +124,12 @@ motionDetectionRouter.get('/Router_as_a_FTP_Server/QNAP_as_FTP_Server', function
       });
   });
 
+motionDetectionRouter.get('/Router_as_a_FTP_Server/Synology_as_FTP_Server', function(req, res) {
+    res.render('./Motion_Detection/Synology_as_FTP_Server', {
+        title: 'Synology as FTP Server',
+      });
+  });
+
 motionDetectionRouter.get('/Router_as_a_FTP_Server/WD_MyCloud_as_FTP_Server', function(req, res) {
     res.render('./Motion_Detection/WD_MyCloud_as_FTP_Server', {
         title: 'WD MyCloud as FTP Server',

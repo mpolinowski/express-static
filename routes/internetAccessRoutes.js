@@ -52,6 +52,12 @@ internetAccessRouter.get('/Port_Forwarding/D-Link/', function(req, res) {
       });
   });
 
+internetAccessRouter.get('/Port_Forwarding/TP-Link/', function(req, res) {
+    res.render('./Internet_Access/Port_Forwarding_TP-Link', {
+        title: 'Port Forwarding TP-Link',
+      });
+  });
+
 internetAccessRouter.get('/Port_Forwarding/Netgear/', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding_Netgear', {
         title: 'Port Forwarding Netgear',

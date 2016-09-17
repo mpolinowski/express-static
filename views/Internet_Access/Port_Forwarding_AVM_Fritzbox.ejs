@@ -57,6 +57,9 @@
 
                     <div class="margin">
                         <h3>General Recommendation</h3>
+                        <br>
+                        <amp-youtube data-videoid="pgHhCcSAV2w" layout="responsive" width="480" height="270" alt="AVM Fritzbox Port Forwarding" class="shadow"></amp-youtube>
+                        <br>
                         <p>INSTAR VGA camera live streams can only be accessed via the HTTP port (default 80) that is also used by the web user interface (webUI). In case of an INSTAR HD camera you can also use the RTSP stream that is transported via a different port (default 554).<br/><br/>It is recommended not to open the default ports to the internet - as this can make your local network vulnerable against attacks. There is also a problem that default ports might be used by different services and not be available. Some internet provider even block all ports from 1 - 1024, forcing you to use a much higher port for your camera. Fortunately, there are plenty of ports to choose from - <strong>65536</strong> ( 2<sup>16</sup> ) to be specific. We recommend you try using a port that is bigger than 8080 - the last port that is regularly used by web based services. Please keep in mind that changing the default HTTP port of your camera forces you to add this new port to the IP address of your camera separated by a ":" if you want to access the web user interface with your browser locally - e.g. 192.168.178.199:<strong>8081</strong>. It might, therefore, be more convenient to forward the RTSP port instead and access the camera through our smartphone app as "RTSP" camera. This way you will not be able to access the cameras webUI - but this can be an advantage from a security point of view. </p>
                     </div>
                     <!-- /margin -->
