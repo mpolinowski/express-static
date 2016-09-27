@@ -778,7 +778,7 @@ productRouter.get('/Software', function(req, res) {
     });
 });
 
-/* GET InstarVision for Windows /Windows */
+/* ****************************  GET InstarVision for Windows /Windows ************************************* */
 productRouter.route('/Software/Windows')
 .get(function(req, res) {
   res.render('./Products/Windows', {
@@ -786,7 +786,112 @@ productRouter.route('/Software/Windows')
     });
 });
 
-/* GET InstarVision for macOS /macOS */
+productRouter.route('/Software/Windows/InstarVision')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision', {
+      title: 'InstarVision for Windows',
+    });
+});
+
+productRouter.route('/Software/Windows/InsarVision_WindowsPhone')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_WP', {
+      title: 'InstarVision for WindowsPhone',
+    });
+});
+
+productRouter.route('/Software/Windows/InsarVision_Metro')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Metro', {
+      title: 'InstarVision for Windows Metro',
+    });
+});
+
+productRouter.route('/Software/Windows/iSpy')
+.get(function(req, res) {
+  res.render('./Products/Windows_iSpy', {
+      title: 'iSpy Connect',
+    });
+});
+
+productRouter.route('/Software/Windows/Sighthound')
+.get(function(req, res) {
+  res.render('./Products/Windows_Sighthound', {
+      title: 'Sighthound',
+    });
+});
+
+productRouter.route('/Software/Windows/P2P_Client')
+.get(function(req, res) {
+  res.render('./Products/Windows_P2P_Client', {
+      title: 'P2P Client',
+    });
+});
+
+productRouter.route('/Software/Windows/go1984')
+.get(function(req, res) {
+  res.render('./Products/Windows_go1984', {
+      title: 'Logiware go1984',
+    });
+});
+
+productRouter.route('/Software/Windows/VLC')
+.get(function(req, res) {
+  res.render('./Products/Windows_VLC', {
+      title: 'VLC Player',
+    });
+});
+
+productRouter.route('/Software/Windows/CCTV_Plugin')
+.get(function(req, res) {
+  res.render('./Products/Windows_CCTV_Plugin', {
+      title: 'CCTV Plugin',
+    });
+});
+
+productRouter.route('/Software/Windows/Blue_Iris')
+.get(function(req, res) {
+  res.render('./Products/Windows_Blue_Iris', {
+      title: 'Blue Iris',
+    });
+});
+
+productRouter.route('/Software/Windows/YAW_Cam')
+.get(function(req, res) {
+  res.render('./Products/Windows_YAW_Cam', {
+      title: 'YAW Cam',
+    });
+});
+
+productRouter.route('/Software/Windows/Zone_Trigger')
+.get(function(req, res) {
+  res.render('./Products/Windows_Zone_Trigger', {
+      title: 'Zone Trigger',
+    });
+});
+
+productRouter.route('/Software/Windows/WebcamXP')
+.get(function(req, res) {
+  res.render('./Products/Windows_WebcamXP', {
+      title: 'WebcamXP',
+    });
+});
+
+productRouter.route('/Software/Windows/Webcam_Motion_Detector')
+.get(function(req, res) {
+  res.render('./Products/Windows_Webcam_Motion_Detector', {
+      title: 'Webcam Motion Detector',
+    });
+});
+
+productRouter.route('/Software/Windows/Zebra_Surveillance')
+.get(function(req, res) {
+  res.render('./Products/Windows_Zebra_Surveillance', {
+      title: 'Zebra Surveillance',
+    });
+});
+
+/* *************************  GET InstarVision for macOS /macOS *********************************** */
 productRouter.route('/Software/macOS')
 .get(function(req, res) {
   res.render('./Products/MacOS', {
@@ -794,7 +899,35 @@ productRouter.route('/Software/macOS')
     });
 });
 
-/* GET InstarVision for Android /Android */
+productRouter.route('/Software/macOS/Sighthound')
+.get(function(req, res) {
+  res.render('./Products/macOS_Sighthound', {
+      title: 'Sighthound',
+    });
+});
+
+productRouter.route('/Software/macOS/EvoCam')
+.get(function(req, res) {
+  res.render('./Products/macOS_EvoCam', {
+      title: 'EvoCam',
+    });
+});
+
+productRouter.route('/Software/macOS/VLC')
+.get(function(req, res) {
+  res.render('./Products/macOS_VLC', {
+      title: 'VLC',
+    });
+});
+
+productRouter.route('/Software/macOS/SecuritySpy')
+.get(function(req, res) {
+  res.render('./Products/macOS_SecuritySpy', {
+      title: 'SecuriySpy',
+    });
+});
+
+/* ************************************ GET InstarVision for Android /Android ************************ */
 productRouter.route('/Software/Android')
 .get(function(req, res) {
   res.render('./Products/Android', {
@@ -802,7 +935,28 @@ productRouter.route('/Software/Android')
     });
 });
 
-/* GET InstarVision for iOS /iOS */
+productRouter.route('/Software/Android/InstarVision')
+.get(function(req, res) {
+  res.render('./Products/Android_InstarVision', {
+      title: 'InstarVision for Android',
+    });
+});
+
+productRouter.route('/Software/Android/TinyCam_Monitor')
+.get(function(req, res) {
+  res.render('./Products/Android_TinyCam', {
+      title: 'TinyCam Monitor',
+    });
+});
+
+productRouter.route('/Software/Android/IP_Cam_Viewer')
+.get(function(req, res) {
+  res.render('./Products/Android_IP_CamViewer', {
+      title: 'IP Cam Viewer',
+    });
+});
+
+/* *********************************** GET InstarVision for iOS /iOS ******************************* */
 productRouter.route('/Software/iOS')
 .get(function(req, res) {
   res.render('./Products/iOS', {
@@ -810,11 +964,74 @@ productRouter.route('/Software/iOS')
     });
 });
 
-/* GET InstarVision for Windows Phone /Other_Platforms */
+productRouter.route('/Software/iOS/InstarVision')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision', {
+      title: 'InstarVision for iOS',
+    });
+});
+
+productRouter.route('/Software/iOS/LiveCams')
+.get(function(req, res) {
+  res.render('./Products/iOS_LiveCams', {
+      title: 'LiveCams',
+    });
+});
+
+productRouter.route('/Software/iOS/IP_Vision_Pro')
+.get(function(req, res) {
+  res.render('./Products/iOS_IP_Vision_Pro', {
+      title: 'IP VIsion Pro',
+    });
+});
+
+productRouter.route('/Software/iOS/ICCAM')
+.get(function(req, res) {
+  res.render('./Products/iOS_ICCAM', {
+      title: 'ICCAM',
+    });
+});
+
+productRouter.route('/Software/iOS/IP_Cam_Viewer')
+.get(function(req, res) {
+  res.render('./Products/iOS_IP_Cam_Viewer', {
+      title: 'IP Cam Viewer',
+    });
+});
+
+productRouter.route('/Software/iOS/P2P_Cam_Live')
+.get(function(req, res) {
+  res.render('./Products/iOS_P2P_Cam_Live', {
+      title: 'P2P Cam Live',
+    });
+});
+
+/* ************************************ GET InstarVision for Windows Phone /Other_Platforms *************** */
 productRouter.route('/Software/Other_Platforms')
 .get(function(req, res) {
   res.render('./Products/Other_Platforms', {
       title: 'Other Platforms',
+    });
+});
+
+productRouter.route('/Software/Other_Platforms/QNAP')
+.get(function(req, res) {
+  res.render('./Products/Other_Platforms_QNAP', {
+      title: 'QNAP',
+    });
+});
+
+productRouter.route('/Software/Other_Platforms/Synology')
+.get(function(req, res) {
+  res.render('./Products/Other_Platforms_Synology', {
+      title: 'Synology',
+    });
+});
+
+productRouter.route('/Software/Other_Platforms/AVM_Fritzphone')
+.get(function(req, res) {
+  res.render('./Products/Other_Platforms_AVM_Fritzphone', {
+      title: 'AVM Fritzphone',
     });
 });
 
