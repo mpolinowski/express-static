@@ -793,14 +793,14 @@ productRouter.route('/Software/Windows/InstarVision')
     });
 });
 
-productRouter.route('/Software/Windows/InsarVision_WindowsPhone')
+productRouter.route('/Software/Windows/InstarVision_WindowsPhone')
 .get(function(req, res) {
   res.render('./Products/Windows_InstarVision_WP', {
       title: 'InstarVision for WindowsPhone',
     });
 });
 
-productRouter.route('/Software/Windows/InsarVision_Metro')
+productRouter.route('/Software/Windows/InstarVision_Metro')
 .get(function(req, res) {
   res.render('./Products/Windows_InstarVision_Metro', {
       title: 'InstarVision for Windows Metro',
@@ -835,14 +835,14 @@ productRouter.route('/Software/Windows/go1984')
     });
 });
 
-productRouter.route('/Software/Windows/VLC')
+productRouter.route('/Software/Windows/VLC_Player')
 .get(function(req, res) {
   res.render('./Products/Windows_VLC', {
       title: 'VLC Player',
     });
 });
 
-productRouter.route('/Software/Windows/CCTV_Plugin')
+productRouter.route('/Software/Windows/CCTV_Chrome_Plugin')
 .get(function(req, res) {
   res.render('./Products/Windows_CCTV_Plugin', {
       title: 'CCTV Plugin',
