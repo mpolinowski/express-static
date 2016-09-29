@@ -10,6 +10,7 @@ This App was created in several steps:
 3. []()
   * []()
 4. [Install NGINX on CentOS]()
+5. [Install Node.js on CentOS]()
 
 ### 1 Install Node.js and Express.js to serve our Web Application
 ___
@@ -126,4 +127,33 @@ Test:
 *http://server_domain_name_or_IP/*
 
 * **Step Four** — Nginx as a Service
+
+To enable Nginx to start when your system boots, enter the following command:
+*sudo systemctl enable nginx*
+
+
+
+### 5 Install Node.js on a CentOS 7 web server
+___
+
+* **Step One** — Download the Node.js Source
+
+Choose your version and download the source:
+*curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -*
+
+* **Step Two** — Install Node.js
+
+Then install, as root:
+*yum -y install nodejs*
+
+* **Step Three** — Start Nginx
+
+Nginx does not start on its own. To get Nginx running, type:
+*sudo systemctl start nginx*
+Test:
+*http://server_domain_name_or_IP/*
+
+* **Step Four** — Nginx as a Service
+
+To enable Nginx to start when your system boots, enter the following command:
 *sudo systemctl enable nginx*
