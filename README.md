@@ -8,11 +8,8 @@ This App was created in several steps:
 1. [Install Node.js and Express.js to serve our Web Application](#1-install-nodejs-and-expressjs-to-serve-our-web-application)
 2. [Preparing the Site Structure](#2-preparing-the-site-structure)
 3. []()
-4. []()
-5. []()
-6. []()
   * []()
-
+4. [Install NGINX on CentOS]()
 
 ### 1 Install Node.js and Express.js to serve our Web Application
 ___
@@ -105,3 +102,28 @@ Now we can for-loop over all required elements in our gallery partials:
     <% } %>
 <% } %>
 ```
+
+
+### 4 Install NGINX on a CentOS 7 web server
+___
+
+* **Step One** — Add Nginx Repository
+
+Step One—Add Nginx Repository
+To add the CentOS 7 EPEL repository, open terminal and use the following command:
+*sudo yum install epel-release*
+
+* **Step Two** — Install Nginx
+
+Now that the Nginx repository is installed on your server, install Nginx using the following yum command:
+*sudo yum install nginx*
+
+* **Step Three** — Start Nginx
+
+Nginx does not start on its own. To get Nginx running, type:
+*sudo systemctl start nginx*
+Test:
+*http://server_domain_name_or_IP/*
+
+* **Step Four** — Nginx as a Service
+*sudo systemctl enable nginx*
