@@ -11,7 +11,9 @@ This App was created in several steps:
   * []()
 4. [Install NGINX on CentOS]()
 5. [Install Node.js on CentOS]()
-5. [Clone Repo from Git]()
+6. [Clone Repo from Git]()
+7. [Run the app as a service]()
+8. [Install Elasticsearch]()
 
 ### 1 Install Node.js and Express.js to develop our Web Application
 ___
