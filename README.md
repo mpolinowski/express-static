@@ -5,15 +5,15 @@
 
 This App was created in several steps:
 
-1. [Install Node.js and Express.js to serve our Web Application](#1-install-nodejs-and-expressjs-to-serve-our-web-application)
+1. [Install Node.js and Express.js to develop our Web Application](#1-install-nodejs-and-expressjs-to-serve-our-web-application)
 2. [Preparing the Site Structure](#2-preparing-the-site-structure)
-3. []()
+3. [Import JSON Elements]()
   * []()
 4. [Install NGINX on CentOS]()
 5. [Install Node.js on CentOS]()
 5. [Clone Repo from Git]()
 
-### 1 Install Node.js and Express.js to serve our Web Application
+### 1 Install Node.js and Express.js to develop our Web Application
 ___
 
 * Install [Node.js](https://nodejs.org/en/download/).
@@ -184,12 +184,70 @@ Putting your Git code on your server:
  npm install
 ```
 
-* **Step Two** — Install Node.js
 
-Then install, as root:
+### 7 Run the app as a service
+___
+
+* **Step One** — Systemd service
+
+Put this in /etc/systemd/system/node-app-1.service but don’t forget to replace your_app_user_name with the appropriate user name.
 ```
- sudo yum -y install nodejs
+ [Service]
+ ExecStart=/usr/bin/node /opt/apps/app.js
+ Restart=always
+ StandardOutput=syslog
+ StandardError=syslog
+ SyslogIdentifier=wiki2_en
+ User=your_app_user_name
+ Group=your_app_user_name
+ Environment=NODE_ENV=production PORT=3000
+
+ [Install]
+ WantedBy=multi-user.target
 ```
+As you can see this small file tells systemd to restart the service when it dies, to use syslog for logging all output and to provide 3000 as a port. Put this in /etc/systemd/system/node-app-1.service but don’t forget to replace your_app_user_name with the appropriate user name.
+
 ```
- sudo yum install -y gcc-c++ make
+ cd /opt/
+ sudo mkdir apps
+ sudo chown your_app_user_name app
+ git clone https://github.com/INSTAR-Deutschland/express-static.git apps
+ cd apps
+ npm install
 ```
+
+
+### 8 Install Elasticsearch
+___
+
+* **Step One** — Public Signing Key
+
+Download and install the public signing key:
+```
+ rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch
+```
+Add the following in your /etc/yum.repos.d/ directory in a file with a .repo suffix, for example elasticsearch.repo
+```
+[elasticsearch-2.x]
+name=Elasticsearch repository for 2.x packages
+baseurl=https://packages.elastic.co/elasticsearch/2.x/centos
+gpgcheck=1
+gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+```
+And your repository is ready for use. You can install it with:
+```
+sudo yum install elasticsearch
+```
+
+| Type | Description | Location RHEL/CentOS |
+| ------------- |:-------------:| -----:|
+| home | Home of elasticsearch installation. | /usr/share/elasticsearch |
+| bin | Binary scripts including elasticsearch to start a node. | /usr/share/elasticsearch/bin |
+| conf | Configuration files elasticsearch.yml and logging.yml. | /etc/elasticsearch |
+| conf | Environment variables including heap size, file descriptors. | /etc/sysconfig/elasticsearch |
+| data | The location of the data files of each index / shard allocated on the node. | /var/lib/elasticsearch |
+| logs | Log files location | /var/log/elasticsearch |
+| plugins | Plugin files location. Each plugin will be contained in a subdirectory. | /usr/share/elasticsearch/plugins |
+| repo | Shared file system repository locations. | Not configured |
+| script | Location of script files. | /etc/elasticsearch/scripts |
