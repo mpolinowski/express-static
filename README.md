@@ -11,6 +11,7 @@ This App was created in several steps:
   * []()
 4. [Install NGINX on CentOS]()
 5. [Install Node.js on CentOS]()
+5. [Clone Repo from Git]()
 
 ### 1 Install Node.js and Express.js to serve our Web Application
 ___
@@ -112,25 +113,34 @@ ___
 
 Step One—Add Nginx Repository
 To add the CentOS 7 EPEL repository, open terminal and use the following command:
-*sudo yum install epel-release*
+```
+ sudo yum install epel-release
+```
 
 * **Step Two** — Install Nginx
 
 Now that the Nginx repository is installed on your server, install Nginx using the following yum command:
-*sudo yum install nginx*
+```
+ sudo yum install nginx
+```
 
 * **Step Three** — Start Nginx
 
 Nginx does not start on its own. To get Nginx running, type:
-*sudo systemctl start nginx*
+```
+ sudo systemctl start nginx
+```
 Test:
-*http://server_domain_name_or_IP/*
+```
+http://server_domain_name_or_IP/
+```
 
 * **Step Four** — Nginx as a Service
 
 To enable Nginx to start when your system boots, enter the following command:
-*sudo systemctl enable nginx*
-
+```
+ sudo systemctl enable nginx
+```
 
 
 ### 5 Install Node.js on a CentOS 7 web server
@@ -139,21 +149,47 @@ ___
 * **Step One** — Download the Node.js Source
 
 Choose your version and download the source:
-*curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -*
+```
+ curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+```
 
 * **Step Two** — Install Node.js
 
 Then install, as root:
-*yum -y install nodejs*
+```
+ sudo yum -y install nodejs
+```
+```
+ sudo yum install -y gcc-c++ make
+```
 
-* **Step Three** — Start Nginx
 
-Nginx does not start on its own. To get Nginx running, type:
-*sudo systemctl start nginx*
-Test:
-*http://server_domain_name_or_IP/*
+### 6 Clone Repo from Git
+___
 
-* **Step Four** — Nginx as a Service
+* **Step One** — Install Git
 
-To enable Nginx to start when your system boots, enter the following command:
-*sudo systemctl enable nginx*
+After this line you will have Git installed on your CentOS server:
+```
+ sudo yum install -y git
+```
+Putting your Git code on your server:
+
+```
+ cd /opt/
+ sudo mkdir apps
+ sudo chown your_app_user_name app
+ git clone https://github.com/INSTAR-Deutschland/express-static.git apps
+ cd apps
+ npm install
+```
+
+* **Step Two** — Install Node.js
+
+Then install, as root:
+```
+ sudo yum -y install nodejs
+```
+```
+ sudo yum install -y gcc-c++ make
+```
