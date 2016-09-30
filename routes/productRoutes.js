@@ -870,9 +870,9 @@ productRouter.route('/Software/Windows/Zone_Trigger')
     });
 });
 
-productRouter.route('/Software/Windows/WebcamXP')
+productRouter.route('/Software/Windows/Webcam_XP')
 .get(function(req, res) {
-  res.render('./Products/Windows_WebcamXP', {
+  res.render('./Products/Windows_Webcam_XP', {
       title: 'WebcamXP',
     });
 });
