@@ -994,7 +994,7 @@ productRouter.route('/Software/iOS/ICCAM')
 
 productRouter.route('/Software/iOS/IP_Cam_Viewer')
 .get(function(req, res) {
-  res.render('./Products/iOS_IP_Cam_Viewer', {
+  res.render('./Products/Android_IP_CamViewer', {
       title: 'IP Cam Viewer',
     });
 });
