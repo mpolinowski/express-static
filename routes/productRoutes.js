@@ -870,9 +870,9 @@ productRouter.route('/Software/Windows/Zone_Trigger')
     });
 });
 
-productRouter.route('/Software/Windows/WebcamXP')
+productRouter.route('/Software/Windows/Webcam_XP')
 .get(function(req, res) {
-  res.render('./Products/Windows_WebcamXP', {
+  res.render('./Products/Windows_Webcam_XP', {
       title: 'WebcamXP',
     });
 });
@@ -901,7 +901,7 @@ productRouter.route('/Software/macOS')
 
 productRouter.route('/Software/macOS/Sighthound')
 .get(function(req, res) {
-  res.render('./Products/macOS_Sighthound', {
+  res.render('./Products/Windows_Sighthound', {
       title: 'Sighthound',
     });
 });
@@ -913,10 +913,10 @@ productRouter.route('/Software/macOS/EvoCam')
     });
 });
 
-productRouter.route('/Software/macOS/VLC')
+productRouter.route('/Software/macOS/VLC_Player')
 .get(function(req, res) {
-  res.render('./Products/macOS_VLC', {
-      title: 'VLC',
+  res.render('./Products/Windows_VLC', {
+      title: 'VLC Player',
     });
 });
 
@@ -994,7 +994,7 @@ productRouter.route('/Software/iOS/ICCAM')
 
 productRouter.route('/Software/iOS/IP_Cam_Viewer')
 .get(function(req, res) {
-  res.render('./Products/iOS_IP_Cam_Viewer', {
+  res.render('./Products/Android_IP_CamViewer', {
       title: 'IP Cam Viewer',
     });
 });
