@@ -901,7 +901,7 @@ productRouter.route('/Software/macOS')
 
 productRouter.route('/Software/macOS/Sighthound')
 .get(function(req, res) {
-  res.render('./Products/macOS_Sighthound', {
+  res.render('./Products/Windows_Sighthound', {
       title: 'Sighthound',
     });
 });
@@ -913,10 +913,10 @@ productRouter.route('/Software/macOS/EvoCam')
     });
 });
 
-productRouter.route('/Software/macOS/VLC')
+productRouter.route('/Software/macOS/VLC_Player')
 .get(function(req, res) {
-  res.render('./Products/macOS_VLC', {
-      title: 'VLC',
+  res.render('./Products/Windows_VLC', {
+      title: 'VLC Player',
     });
 });
 
