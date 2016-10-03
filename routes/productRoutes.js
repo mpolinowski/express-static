@@ -130,13 +130,6 @@ productRouter.route('/Indoor_Cameras/IN-3011')
     });
 });
 
-productRouter.route('/Indoor_Cameras/IN-3011/Usermanual')
-.get(function(req, res) {
-  res.render('./Products/IN-3011_Usermanual', {
-      title: 'IN-3011 Usermanual',
-    });
-});
-
 productRouter.route('/Indoor_Cameras/IN-3011/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-3011_Tech_Specs', {
@@ -264,13 +257,6 @@ productRouter.route('/Outdoor_Cameras/IN-4011')
     });
 });
 
-productRouter.route('/Outdoor_Cameras/IN-4011/Usermanual')
-.get(function(req, res) {
-  res.render('./Products/IN-4011_Usermanual', {
-      title: 'IN-4011 Usermanual',
-    });
-});
-
 productRouter.route('/Outdoor_Cameras/IN-4011/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-4011_Tech_Specs', {
@@ -289,13 +275,6 @@ productRouter.route('/Outdoor_Cameras/IN-4010_V2')
 .get(function(req, res) {
   res.render('./Products/IN-4010_V2_Overview', {
       title: 'IN-4010 V2 Overview',
-    });
-});
-
-productRouter.route('/Outdoor_Cameras/IN-4010_V2/Usermanual')
-.get(function(req, res) {
-  res.render('./Products/IN-4010_V2_Usermanual', {
-      title: 'IN-4010 V2 Usermanual',
     });
 });
 
@@ -320,13 +299,6 @@ productRouter.route('/Outdoor_Cameras/IN-2908')
     });
 });
 
-productRouter.route('/Outdoor_Cameras/IN-2908/Usermanual')
-.get(function(req, res) {
-  res.render('./Products/IN-2908_Usermanual', {
-      title: 'IN-2908 Usermanual',
-    });
-});
-
 productRouter.route('/Outdoor_Cameras/IN-2908/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-2908_Tech_Specs', {
@@ -345,13 +317,6 @@ productRouter.route('/Outdoor_Cameras/IN-2905_V2')
 .get(function(req, res) {
   res.render('./Products/IN-2905_V2_Overview', {
       title: 'IN-2905 V2 Overview',
-    });
-});
-
-productRouter.route('/Outdoor_Cameras/IN-2905_V2/Usermanual')
-.get(function(req, res) {
-  res.render('./Products/IN-2905_V2_Usermanual', {
-      title: 'IN-2905 V2 Usermanual',
     });
 });
 
