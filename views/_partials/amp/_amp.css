@@ -1808,7 +1808,7 @@ body.roadmap .stages ul {
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 14px;
 }
 .card .image {
@@ -1889,7 +1889,7 @@ display: none;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 14px;
 }
 .twocard .image {
@@ -1956,7 +1956,7 @@ display: none;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 14px;
 }
 .onecard .image {
