@@ -2,7 +2,7 @@ var express = require('express');
 var productRouter = express.Router();
 var appdata = require('../views/_partials/data/cameras.json');
 
-/* ****************************************** GET /Products ****************************************** */
+/* ****************************************** GET /General Product Routes ****************************************** */
 productRouter.route('/')
   .get(function(req, res) {
       res.render('./Products/Products', {
@@ -381,6 +381,34 @@ productRouter.route('/Indoor_Cameras/IN-6001_HD/Usermanual')
     });
 });
 
+productRouter.route('/Indoor_Cameras/IN-6001_HD/Product_Features')
+.get(function(req, res) {
+  res.render('./Products/IN-6001_Product_Features', {
+      title: 'IN-6001 HD Product Features',
+    });
+});
+
+productRouter.route('/Indoor_Cameras/IN-6001_HD/Point2Point')
+.get(function(req, res) {
+  res.render('./Products/IN-6001_Point2Point', {
+      title: 'IN-6001 HD Point 2 Point',
+    });
+});
+
+productRouter.route('/Indoor_Cameras/IN-6001_HD/Quick_Installation')
+.get(function(req, res) {
+  res.render('./Products/IN-6001_Quick_Installation', {
+      title: 'IN-6001 HD Quick Installation',
+    });
+});
+
+productRouter.route('/Indoor_Cameras/IN-6001_HD/Lense_Adjustment')
+.get(function(req, res) {
+  res.render('./Products/IN-6001_Lense_Adjustment', {
+      title: 'IN-6001 HD Lense Adjustment',
+    });
+});
+
 productRouter.route('/Indoor_Cameras/IN-6001_HD/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-6001_Tech_Specs', {
@@ -449,6 +477,34 @@ productRouter.route('/Outdoor_Cameras/IN-7011_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Products/IN-7011_Usermanual', {
       title: 'IN-7011 HD Usermanual',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-7011_HD/Product_Features')
+.get(function(req, res) {
+  res.render('./Products/IN-7011_Product_Features', {
+      title: 'IN-7011 HD Product Features',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-7011_HD/Point2Point')
+.get(function(req, res) {
+  res.render('./Products/IN-7011_Point2Point', {
+      title: 'IN-7011 HD Point 2 Point',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-7011_HD/Quick_Installation')
+.get(function(req, res) {
+  res.render('./Products/IN-7011_Quick_Installation', {
+      title: 'IN-7011 HD Quick Installation',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-7011_HD/Lense_Adjustment')
+.get(function(req, res) {
+  res.render('./Products/IN-7011_Lense_Adjustment', {
+      title: 'IN-7011 HD Lense Adjustment',
     });
 });
 
