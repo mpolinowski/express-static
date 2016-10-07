@@ -536,6 +536,34 @@ productRouter.route('/Outdoor_Cameras/IN-5907_HD/Usermanual')
     });
 });
 
+productRouter.route('/Outdoor_Cameras/IN-5907_HD/Product_Features')
+.get(function(req, res) {
+  res.render('./Products/IN-5907_Product_Features', {
+      title: 'IN-5907 HD Product Features',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-5907_HD/Point2Point')
+.get(function(req, res) {
+  res.render('./Products/IN-5907_Point2Point', {
+      title: 'IN-5907 HD Point 2 Point',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-5907_HD/Quick_Installation')
+.get(function(req, res) {
+  res.render('./Products/IN-5907_Quick_Installation', {
+      title: 'IN-5907 HD Quick Installation',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-5907_HD/Lense_Adjustment')
+.get(function(req, res) {
+  res.render('./Products/IN-5907_Lense_Adjustment', {
+      title: 'IN-5907 HD Lense Adjustment',
+    });
+});
+
 productRouter.route('/Outdoor_Cameras/IN-5907_HD/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-5907_Tech_Specs', {
@@ -561,6 +589,34 @@ productRouter.route('/Outdoor_Cameras/IN-5905_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Products/IN-5905_Usermanual', {
       title: 'IN-5905 HD Usermanual',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-5905_HD/Product_Features')
+.get(function(req, res) {
+  res.render('./Products/IN-5905_Product_Features', {
+      title: 'IN-5905 HD Product Features',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-5905_HD/Point2Point')
+.get(function(req, res) {
+  res.render('./Products/IN-5905_Point2Point', {
+      title: 'IN-5905 HD Point 2 Point',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-5905_HD/Quick_Installation')
+.get(function(req, res) {
+  res.render('./Products/IN-5905_Quick_Installation', {
+      title: 'IN-5905 HD Quick Installation',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-5905_HD/Lense_Adjustment')
+.get(function(req, res) {
+  res.render('./Products/IN-5905_Lense_Adjustment', {
+      title: 'IN-5905 HD Lense Adjustment',
     });
 });
 
