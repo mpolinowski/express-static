@@ -1268,6 +1268,48 @@ productRouter.route('/Software/Windows/InstarVision/Record')
     });
 });
 
+productRouter.route('/Software/Windows/InstarVision/Record/General')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Record_General', {
+      title: 'InstarVision v2 Record General',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Record/Schedule')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Record_Schedule', {
+      title: 'InstarVision v2 Record Schedule',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Record/Alarm')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Record_Alarm', {
+      title: 'InstarVision v2 Record Alarm',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Record/Photoseries')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Record_Photoseries', {
+      title: 'InstarVision v2 Record Photoseries',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Record/Email')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Record_Email', {
+      title: 'InstarVision v2 Record Email',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Record/FTP')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Record_FTP', {
+      title: 'InstarVision v2 Record FTP',
+    });
+});
+
 productRouter.route('/Software/Windows/InstarVision/System')
 .get(function(req, res) {
   res.render('./Products/Windows_InstarVision_System', {
@@ -1282,17 +1324,17 @@ productRouter.route('/Software/Windows/InstarVision/Users')
     });
 });
 
+productRouter.route('/Software/Windows/InstarVision/Advanced')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Advanced', {
+      title: 'InstarVision v2 Advanced',
+    });
+});
+
 productRouter.route('/Software/Windows/InstarVision/About')
 .get(function(req, res) {
   res.render('./Products/Windows_InstarVision_About', {
       title: 'InstarVision v2 About',
-    });
-});
-
-productRouter.route('/Software/Windows/InstarVision/Camera_List')
-.get(function(req, res) {
-  res.render('./Products/Windows_InstarVision_Camera_List', {
-      title: 'InstarVision v2 Camera List',
     });
 });
 
@@ -1464,6 +1506,20 @@ productRouter.route('/Software/iOS')
 .get(function(req, res) {
   res.render('./Products/iOS', {
       title: 'Software for iOS',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPhone')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPhone', {
+      title: 'InstarVision for iPhone',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPad')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPad', {
+      title: 'InstarVision for iPad',
     });
 });
 
