@@ -52,6 +52,9 @@ p {
 .pb {
     padding-bottom: 20px;
 }
+.pt {
+    padding-bottom: 20px;
+}
 .headline {
   font-size: 90px;
   font-weight: 700;
