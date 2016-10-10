@@ -1338,16 +1338,16 @@ productRouter.route('/Software/Windows/InstarVision/About')
     });
 });
 
-productRouter.route('/Software/Windows/InstarVision_WindowsPhone')
+productRouter.route('/Software/Windows/InstarVision/Windows_Phone')
 .get(function(req, res) {
-  res.render('./Products/Windows_InstarVision_WP', {
+  res.render('./Products/Windows_Phone_InstarVision', {
       title: 'InstarVision for WindowsPhone',
     });
 });
 
-productRouter.route('/Software/Windows/InstarVision_Metro')
+productRouter.route('/Software/Windows/InstarVision/Metro')
 .get(function(req, res) {
-  res.render('./Products/Windows_InstarVision_Metro', {
+  res.render('./Products/Windows_Metro_InstarVision', {
       title: 'InstarVision for Windows Metro',
     });
 });
@@ -1487,6 +1487,41 @@ productRouter.route('/Software/Android/InstarVision')
     });
 });
 
+productRouter.route('/Software/Android/InstarVision/DDNS')
+.get(function(req, res) {
+  res.render('./Products/Android_InstarVision_DDNS', {
+      title: 'InstarVision for Android - DDNS',
+    });
+});
+
+productRouter.route('/Software/Android/InstarVision/P2P')
+.get(function(req, res) {
+  res.render('./Products/Android_InstarVision_P2P', {
+      title: 'InstarVision for Android - P2P',
+    });
+});
+
+productRouter.route('/Software/Android/InstarVision/Multiview')
+.get(function(req, res) {
+  res.render('./Products/Android_InstarVision_Multiview', {
+      title: 'InstarVision for Android - Multiview',
+    });
+});
+
+productRouter.route('/Software/Android/InstarVision/Recording')
+.get(function(req, res) {
+  res.render('./Products/Android_InstarVision_Recording', {
+      title: 'InstarVision for Android - Recording',
+    });
+});
+
+productRouter.route('/Software/Android/InstarVision/Settings')
+.get(function(req, res) {
+  res.render('./Products/Android_InstarVision_Settings', {
+      title: 'InstarVision for Android - Settings',
+    });
+});
+
 productRouter.route('/Software/Android/TinyCam_Monitor')
 .get(function(req, res) {
   res.render('./Products/Android_TinyCam', {
@@ -1570,6 +1605,13 @@ productRouter.route('/Software/Other_Platforms')
 .get(function(req, res) {
   res.render('./Products/Other_Platforms', {
       title: 'Other Platforms',
+    });
+});
+
+productRouter.route('/Software/Other_Platforms/InstarVision_Blackberry')
+.get(function(req, res) {
+  res.render('./Products/Android_InstarVision_Blackberry', {
+      title: 'InstarVision Blackberry',
     });
 });
 
