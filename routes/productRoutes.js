@@ -1551,10 +1551,80 @@ productRouter.route('/Software/iOS/InstarVision/iPhone')
     });
 });
 
+productRouter.route('/Software/iOS/InstarVision/iPhone/DDNS')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPhone_DDNS', {
+      title: 'InstarVision for iOS - DDNS',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPhone/P2P')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPhone_P2P', {
+      title: 'InstarVision for iOS - P2P',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPhone/Multiview')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPhone_Multiview', {
+      title: 'InstarVision for iOS - Multiview',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPhone/Recording')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPhone_Recording', {
+      title: 'InstarVision for iOS - Recording',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPhone/Settings')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPhone_Settings', {
+      title: 'InstarVision for iOS - Settings',
+    });
+});
+
 productRouter.route('/Software/iOS/InstarVision/iPad')
 .get(function(req, res) {
   res.render('./Products/iOS_InstarVision_iPad', {
       title: 'InstarVision for iPad',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPad/DDNS')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPad_DDNS', {
+      title: 'InstarVision for iOS - DDNS',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPad/P2P')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPad_P2P', {
+      title: 'InstarVision for iOS - P2P',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPad/Multiview')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPad_Multiview', {
+      title: 'InstarVision for iOS - Multiview',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPad/Recording')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPad_Recording', {
+      title: 'InstarVision for iOS - Recording',
+    });
+});
+
+productRouter.route('/Software/iOS/InstarVision/iPad/Settings')
+.get(function(req, res) {
+  res.render('./Products/iOS_InstarVision_iPad_Settings', {
+      title: 'InstarVision for iOS - Settings',
     });
 });
 
