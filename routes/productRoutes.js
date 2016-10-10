@@ -1338,16 +1338,16 @@ productRouter.route('/Software/Windows/InstarVision/About')
     });
 });
 
-productRouter.route('/Software/Windows/InstarVision_WindowsPhone')
+productRouter.route('/Software/Windows/InstarVision/Windows_Phone')
 .get(function(req, res) {
-  res.render('./Products/Windows_InstarVision_WP', {
+  res.render('./Products/Windows_Phone_InstarVision', {
       title: 'InstarVision for WindowsPhone',
     });
 });
 
-productRouter.route('/Software/Windows/InstarVision_Metro')
+productRouter.route('/Software/Windows/InstarVision/Metro')
 .get(function(req, res) {
-  res.render('./Products/Windows_InstarVision_Metro', {
+  res.render('./Products/Windows_Metro_InstarVision', {
       title: 'InstarVision for Windows Metro',
     });
 });
