@@ -1345,10 +1345,80 @@ productRouter.route('/Software/Windows/InstarVision/Windows_Phone')
     });
 });
 
+productRouter.route('/Software/Windows/InstarVision/Windows_Phone/DDNS')
+.get(function(req, res) {
+  res.render('./Products/Windows_Phone_InstarVision_DDNS', {
+      title: 'InstarVision for Windows Phone - DDNS',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Windows_Phone/P2P')
+.get(function(req, res) {
+  res.render('./Products/Windows_Phone_InstarVision_P2P', {
+      title: 'InstarVision for Windows Phone - P2P',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Windows_Phone/Multiview')
+.get(function(req, res) {
+  res.render('./Products/Windows_Phone_InstarVision_Multiview', {
+      title: 'InstarVision for Windows Phone - Multiview',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Windows_Phone/Recording')
+.get(function(req, res) {
+  res.render('./Products/Windows_Phone_InstarVision_Recording', {
+      title: 'InstarVision for Windows Phone - Recording',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Windows_Phone/Settings')
+.get(function(req, res) {
+  res.render('./Products/Windows_Phone_InstarVision_Settings', {
+      title: 'InstarVision for Windows Phone - Settings',
+    });
+});
+
 productRouter.route('/Software/Windows/InstarVision/Metro')
 .get(function(req, res) {
   res.render('./Products/Windows_Metro_InstarVision', {
       title: 'InstarVision for Windows Metro',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Metro/DDNS')
+.get(function(req, res) {
+  res.render('./Products/Windows_Metro_InstarVision_DDNS', {
+      title: 'InstarVision for Windows Metro - DDNS',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Metro/P2P')
+.get(function(req, res) {
+  res.render('./Products/Windows_Metro_InstarVision_P2P', {
+      title: 'InstarVision for Windows Metro - P2P',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Metro/Multiview')
+.get(function(req, res) {
+  res.render('./Products/Windows_Metro_InstarVision_Multiview', {
+      title: 'InstarVision for Windows Metro - Multiview',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Metro/Recording')
+.get(function(req, res) {
+  res.render('./Products/Windows_Metro_InstarVision_Recording', {
+      title: 'InstarVision for Windows Metro - Recording',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Metro/Settings')
+.get(function(req, res) {
+  res.render('./Products/Windows_Metro_InstarVision_Settings', {
+      title: 'InstarVision for Windows Metro - Settings',
     });
 });
 
