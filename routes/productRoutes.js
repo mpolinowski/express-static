@@ -1331,6 +1331,41 @@ productRouter.route('/Software/Windows/InstarVision/Advanced')
     });
 });
 
+productRouter.route('/Software/Windows/InstarVision/Advanced/License')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Advanced_License', {
+      title: 'InstarVision v2 Advanced License',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Advanced/Log')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Advanced_Log', {
+      title: 'InstarVision v2 Advanced Log',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Advanced/Export')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Advanced_Export', {
+      title: 'InstarVision v2 Advanced Export',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Advanced/Player')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Advanced_Player', {
+      title: 'InstarVision v2 Advanced Player',
+    });
+});
+
+productRouter.route('/Software/Windows/InstarVision/Advanced/Explorer')
+.get(function(req, res) {
+  res.render('./Products/Windows_InstarVision_Advanced_Explorer', {
+      title: 'InstarVision v2 Advanced Explorer',
+    });
+});
+
 productRouter.route('/Software/Windows/InstarVision/About')
 .get(function(req, res) {
   res.render('./Products/Windows_InstarVision_About', {
