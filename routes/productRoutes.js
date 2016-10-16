@@ -1573,7 +1573,7 @@ productRouter.route('/Software/macOS/VLC_Player')
 productRouter.route('/Software/macOS/SecuritySpy')
 .get(function(req, res) {
   res.render('./Products/macOS_SecuritySpy', {
-      title: 'SecuriySpy',
+      title: 'SecuritySpy',
     });
 });
 
