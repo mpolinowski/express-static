@@ -5,29 +5,35 @@
 
         <div id="wrapper">
 
-            <header><% include _partials/template/_header.ejs %></header>
-            <!-- Navbar-->
+          <header><% include _partials/template/_header.ejs %></header>
+          <!-- Navbar-->
 
-            <!-- #############################################  Search ############################################# -->
+          <!-- #############################################  Search ############################################# -->
 
-            <section class="container search mb">
+          <section class="container search mb">
+              <div class="row">
 
-                <div class="row col-xs-10 offset-xs-1">
+                  <div class="col-xs-12 col-sm-8 offset-sm-2 mb">
+                    <div class="mb">
+                      <img src="/images/instar_logo.png" class="img-rounded m-x-auto d-block img-fluid shadow" alt="INSTAR Deutschland GmbH">
+                    </div>
+                    <br><br><hr><br>
+                    <h2 class="subheader">Knowledge Database Search</h2>
+                  </div>
 
-                    <form  method="get" action="/Search/Results" class="form-inline">
-                        <div class="form-group">
-                            <label for="inputSearch" class="sr-only">Search Query</label>
-                            <input type="search" autofocus class="form-control" placeholder="Search Query" name="q" autocomplete="off" class="form-control">
-                            <br/><br/>
-                            <button class="btn btn-primary btn-block" type="submit">Search</button>
-                        </div>
-                    </form>
-                </div>
-                 <!-- /row -->
+                  <div class="clearfix mb"></div>
 
-            </div>
-            <!-- /wrapper -->
+                  <form  method="get" action="/Search/Results" class="form-inline text-xs-center">
+                      <br><br><br>
+                      <div class="form-group has-primary">
+                        <label for="inputSearch" class="sr-only">Search Query</label>
+                        <input type="search" autofocus class="form-control" placeholder="Search Query" name="q" autocomplete="off" class="form-control">
+                      </div>
+                      <button class="btn btn-primary" type="submit">Search</button>
+                  </form>
 
+              </div>
+               <!-- /row -->
         </section>
         <!-- /search -->
 
@@ -42,6 +48,9 @@
         <footer><% include _partials/template/_footer.ejs %></footer>
 
         <% include _partials/template/_jsdefaults.ejs %>
+
+     </div>
+     <!-- /wrapper -->
 
     </div>
 
