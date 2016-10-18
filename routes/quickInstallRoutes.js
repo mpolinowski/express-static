@@ -151,6 +151,14 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/Kaspersky_2014')
       });
 
 /* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/Troubleshooting/Kaspersky_2017')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_Kaspersky_2017', {
+            title: 'Live Video Kaspersky 2017',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
 quickInstallRouter.route('/Live_Video/Troubleshooting/AVG')
     .get(function(req, res) {
         res.render('./Quick_Installation/Live_Video_AVG', {
