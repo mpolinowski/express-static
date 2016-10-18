@@ -125,6 +125,42 @@ productRouter.route('/Outdoor_Cameras/IN-5905_HD/Camera_Reset')
         });
     });
 	
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Safety_Warnings')
+  .get(function(req, res) {
+      res.render('./Products/Usermanuals_Safety_Warnings', {
+          title: 'IN-8015 HD Safety Warnings',
+          model: 'IN-8015_HD',
+		  type: 'Indoor'
+        });
+    });
+	
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Warranty')
+  .get(function(req, res) {
+      res.render('./Products/Usermanuals_Warranty', {
+          title: 'IN-8015 HD Warranty & Disposal',
+          model: 'IN-8015_HD',
+		  type: 'Indoor'
+        });
+    });
+	
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Video_Streaming')
+  .get(function(req, res) {
+      res.render('./Products/Usermanuals_Video_Streaming', {
+          title: 'IN-8015 HD Video Streaming',
+          model: 'IN-8015_HD',
+		  type: 'Indoor'
+        });
+    });
+	
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Camera_Reset')
+  .get(function(req, res) {
+      res.render('./Products/Usermanuals_Camera_Reset', {
+          title: 'IN-8015 HD Hardware Reset',
+          model: 'IN-8015_HD',
+		  type: 'Indoor'
+        });
+    });
+	
 productRouter.route('/Indoor_Cameras/IN-6014_HD/Safety_Warnings')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Safety_Warnings', {
@@ -255,6 +291,62 @@ productRouter.get('/Indoor_Cameras', function(req, res) {
       });
   });
 
+productRouter.route('/Indoor_Cameras/IN-8015_HD')
+.get(function(req, res) {
+  res.render('./Products/IN-8015_Overview', {
+      title: 'IN-8015 HD Overview',
+    });
+});
+
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Usermanual')
+.get(function(req, res) {
+  res.render('./Products/IN-8015_Usermanual', {
+      title: 'IN-8015 HD Usermanual',
+    });
+});
+
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Product_Features')
+.get(function(req, res) {
+  res.render('./Products/IN-8015_Product_Features', {
+      title: 'IN-8015 HD Product Features',
+    });
+});
+
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Point2Point')
+.get(function(req, res) {
+  res.render('./Products/IN-8015_Point2Point', {
+      title: 'IN-8015 HD Point 2 Point',
+    });
+});
+
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Quick_Installation')
+.get(function(req, res) {
+  res.render('./Products/IN-8015_Quick_Installation', {
+      title: 'IN-8015 HD Quick Installation',
+    });
+});
+
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Lense_Adjustment')
+.get(function(req, res) {
+  res.render('./Products/IN-8015_Lense_Adjustment', {
+      title: 'IN-8015 HD Lense Adjustment',
+    });
+});
+
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Technical_Specifications')
+.get(function(req, res) {
+  res.render('./Products/IN-8015_Tech_Specs', {
+      title: 'IN-8015 HD Technical Specifications',
+    });
+});
+
+productRouter.route('/Indoor_Cameras/IN-8015_HD/Downloads')
+.get(function(req, res) {
+  res.render('./Products/IN-8015_Downloads', {
+      title: 'IN-8015 HD Downloads',
+    });
+});  
+  
 productRouter.route('/Indoor_Cameras/IN-6014_HD')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Overview', {
