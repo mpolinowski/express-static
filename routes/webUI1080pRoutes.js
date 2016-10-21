@@ -62,10 +62,18 @@ webUI1080pRouter.route('/System/Language/')
       });
 
 /* GET HD WebUI page. */
+webUI1080pRouter.route('/System/User/')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_User', {
+            title: 'System Menu :: User',
+          });
+      });
+
+/* GET HD WebUI page. */
 webUI1080pRouter.route('/System/Log/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Log', {
-            title: 'System Menu :: Backup',
+            title: 'System Menu :: Log',
           });
       });
 
@@ -82,6 +90,14 @@ webUI1080pRouter.route('/System/Reset/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Reset', {
             title: 'System Menu :: Reset',
+          });
+      });
+
+/* GET HD WebUI page. */
+webUI1080pRouter.route('/System/Update/')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Update', {
+            title: 'System Menu :: Update',
           });
       });
 
@@ -174,6 +190,14 @@ webUI1080pRouter.route('/Features/PTZ/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_PTZ', {
             title: 'Features Menu :: PTZ',
+          });
+      });
+
+/* GET HD WebUI page. */
+webUI1080pRouter.route('/Features/SD_Card/')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_SD_Card', {
+            title: 'Features Menu :: SD Card',
           });
       });
 

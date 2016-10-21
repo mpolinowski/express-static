@@ -18,7 +18,7 @@
                         </div>
                         <div class="right alt">
 
-                            <a href="/Web_User_Interface/720p_Series/" class="tab header-title">
+                            <a href="/Web_User_Interface/1080p_Series/" class="tab header-title">
                                 <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
                             </a>
                         </div>
@@ -37,413 +37,174 @@
                         </div>
                     </div>
 
-                    <!-- ##################################### Info ############################################ -->
+                    <!-- ##################################### Info ##################################### -->
 
                     <div class="card-container margin">
-                        <div class="twocard">
-                            <div class="image" on="tap:info-lightbox" role="button" tabindex="0">
-                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_Info_mouseOver.png"></amp-img>
-                                </div>
-                            </a>
-                            <div class="content">
-                                <hr>
-                                <p class="info"></p> <!-- innerHTML Added by script below -->
+                      <div class="twocard">
+                          <div class="image">
+                              <amp-img noloading height=400 width=400 layout=responsive
+                                src="/images/1080p_webUI/QL-Box_WebUI_1080p_System_Info.png"></amp-img>
                             </div>
-                            <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/System/Info/">Info Menu</a>
-                            </div>
-                        </div>
-                        <!-- /Card -->
-                        <!-- lightbox -->
-                          <amp-lightbox id="info-lightbox" layout="nodisplay">
-                            <div class="lightbox" on="tap:info-lightbox.close" tabindex="0">
-                              <div class="twocard cardbox">
-                                  <a href="/Web_User_Interface/720p_Series/System/Info/">
-                                  <div class="image">
-                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_Info_mouseOver.png"></amp-img>
-                                  </div>
-                                  </a>
-                                  <div class="content" on="tap:info-lightbox.close" tabindex="0">
-                                      <hr>
-                                      <p class="info2"></p> <!-- innerHTML Added by script below -->
-                                  </div>
-                                  <div class="action">
-                                      <a href="/Web_User_Interface/720p_Series/System/Info/">Click of more Information</a>
-                                  </div>
-                              </div>
-                            </div>
-                          </amp-lightbox>
-                        <!-- /lightbox -->
-                        <!-- Add Pragraph Text -->
-                        <script>
-                            var info = document.querySelectorAll('.info, .info2');
-                            for(var i = 0; i < info.length; i++) {
-                              info[i].innerHTML="Info is simply a collection of a lot of system internals that are interesting if you have to start troubleshooting your set up. You DDNS access doesn´t work? Check the DDNS status (has to be successful) and the UPnP Status (most likely has to be deactivated). You can also try accessing your camera via it´s WAN IP (instead of DDNS address) - to check wether it is the DDNS address or your port forwarding that is the culprit.";
-                            }
-                        </script>
+                          <div class="content">
+                              <hr>
+                              <p>Info is simply a collection of a lot of system internals that are interesting if you have to start troubleshooting your set up. You DDNS access doesn´t work? Check the DDNS status (has to be successful) and the UPnP Status (most likely has to be deactivated). You can also try accessing your camera via it´s WAN IP (instead of DDNS address) - to check wether it is the DDNS address or your port forwarding that is the culprit.</p>
+                          </div>
+                          <div class="action">
+                              <a href="/Web_User_Interface/720p_Series/System/Info/">Info Menu</a>
+                          </div>
+                      </div>
+                      <!-- /Card -->
 
-                        <!-- ##################################### Date ############################################ -->
+                        <!-- ##################################### Email #################################### -->
 
                         <div class="twocard">
-                            <div class="image" on="tap:date-lightbox" role="button" tabindex="0">
-                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_Date_mouseOver.png"></amp-img>
+                            <div class="image">
+                                <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_System_Email.png"></amp-img>
                                 </div>
-                            </a>
                             <div class="content">
                                 <hr>
-                                <p class="date"></p> <!-- innerHTML Added by script below -->
+                                <p>Here you need to input the sender, the receivers, the subject as well as optional a short email text with a maximum 64 characters. The sender address should be in accordance with the SMTP server settings, though some email provider let you choose this field freely. If you want to send the email to more than one address, simply separate the addresses with a semicolon ;. E.g. max.mustermann@instar.de ; franz.fingerhut@instar.de. It is recommended to fill out the subject line and the email text body to avoid the mail to be caught by any spam guards in place.</p>
                             </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/System/Date_Time/">Date &amp; Time Menu</a>
+                                <a href="/Web_User_Interface/720p_Series/System/Email/">Email Menu</a>
                             </div>
                         </div>
                         <!-- /Card -->
                       </div>
                       <!-- Card Container -->
-                      <!-- lightbox -->
-                        <amp-lightbox id="date-lightbox" layout="nodisplay">
-                          <div class="lightbox" on="tap:date-lightbox.close" tabindex="0">
-                            <div class="twocard cardbox">
-                                <a href="/Web_User_Interface/720p_Series/System/Date_Time/">
-                                <div class="image">
-                                    <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_Date_mouseOver.png"></amp-img>
-                                </div>
-                                </a>
-                                <div class="content" on="tap:date-lightbox.close" tabindex="0">
-                                    <hr>
-                                    <p class="date2"></p> <!-- innerHTML Added by script below -->
-                                </div>
-                                <div class="action">
-                                    <a href="/Web_User_Interface/720p_Series/System/Date_Time/">Click of more Information</a>
-                                </div>
-                            </div>
-                          </div>
-                        </amp-lightbox>
-                      <!-- /lightbox -->
-                      <!-- Add Pragraph Text -->
-                      <script>
-                          var date = document.querySelectorAll('.date, .date2');
-                          for(var i = 0; i < date.length; i++) {
-                            date[i].innerHTML="Your camera will automatically contact a so-called NTP Server to set the internal clock. It is recommended to leave this feature on at all times. But if your camera cannot connect to the internet, you can synchronize the clock with your computer. But be aware that this has to be done regularly to keep your camera on-time.";
-                          }
-                      </script>
 
-                      <!-- ##################################### User ############################################ -->
+                      <!-- ##################################### User ##################################### -->
 
                       <div class="card-container margin">
                         <div class="twocard">
-                            <div class="image" on="tap:user-lightbox" role="button" tabindex="0">
-                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_User_mouseOver.png"></amp-img>
-                            </div>
+                            <div class="image">
+                                <amp-img noloading height=400 width=400 layout=responsive
+                                  src="/images/1080p_webUI/QL-Box_WebUI_1080p_System_User.png"></amp-img>
+                              </div>
                             <div class="content">
                                 <hr>
-                                <p class="user"></p> <!-- innerHTML Added by script below -->
+                                <p>Your camera will be set up with 3 user classes - administrator, user and visitor - and one password for all of them - instar. Please change this as soon as you want to forward your camera to the internet. And don´t forget to change all three of them. You can use the RTSP Stream if you want to allow users to access your camera without the hassle of a password.</p>
                             </div>
                             <div class="action">
                                 <a href="/Web_User_Interface/720p_Series/System/User/">User Menu</a>
                             </div>
                         </div>
                         <!-- /Card -->
-                        <!-- lightbox -->
-                          <amp-lightbox id="user-lightbox" layout="nodisplay">
-                            <div class="lightbox" on="tap:user-lightbox.close" tabindex="0">
-                              <div class="twocard cardbox">
-                                  <a href="/Web_User_Interface/720p_Series/System/User/">
-                                  <div class="image">
-                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_User_mouseOver.png"></amp-img>
-                                  </div>
-                                  </a>
-                                  <div class="content" on="tap:user-lightbox.close" tabindex="0">
-                                      <hr>
-                                      <p class="user2"></p> <!-- innerHTML Added by script below -->
-                                  </div>
-                                  <div class="action">
-                                      <a href="/Web_User_Interface/720p_Series/System/Date_Time/">Click of more Information</a>
-                                  </div>
-                              </div>
-                            </div>
-                          </amp-lightbox>
-                        <!-- /lightbox -->
-                        <!-- Add Pragraph Text -->
-                        <script>
-                            var user = document.querySelectorAll('.user, .user2');
-                            for(var i = 0; i < user.length; i++) {
-                              user[i].innerHTML="Your camera will be set up with 3 user classes - administrator, user and visitor - and one password for all of them - instar. Please change this as soon as you want to forward your camera to the internet. And don´t forget to change all three of them. You can use the RTSP Stream if you want to allow users to access your camera without the hassle of a password.";
-                            }
-                        </script>
 
-                        <!-- ##################################### Status_LED ############################################ -->
+                          <!-- ##################################### Date Time #################################### -->
 
-                        <div class="twocard">
-                            <div class="image" on="tap:status-lightbox" role="button" tabindex="0">
-                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_Status_LED_mouseOver.png"></amp-img>
-                            </div>
-                            <div class="content">
-                                <hr>
-                                <p class="statusled"></p> <!-- innerHTML Added by script below -->
-                            </div>
-                            <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/System/Status_LED/">Status LED Menu</a>
-                            </div>
-                        </div>
-                        <!-- /Card -->
-                      </div>
-                      <!-- Card Container -->
-                      <!-- lightbox -->
-                        <amp-lightbox id="status-lightbox" layout="nodisplay">
-                          <div class="lightbox" on="tap:status-lightbox.close" tabindex="0">
-                            <div class="twocard cardbox">
-                                <a href="/Web_User_Interface/720p_Series/System/Status_LED/">
-                                <div class="image">
-                                    <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_Status_LED_mouseOver.png"></amp-img>
-                                </div>
-                                </a>
-                                <div class="content" on="tap:status-lightbox.close" tabindex="0">
-                                    <hr>
-                                    <p class="statusled2"></p> <!-- innerHTML Added by script below -->
-                                </div>
-                                <div class="action">
-                                    <a href="/Web_User_Interface/720p_Series/System/Status_LED/">Click of more Information</a>
-                                </div>
-                            </div>
-                          </div>
-                        </amp-lightbox>
-                      <!-- /lightbox -->
-                      <!-- Add Pragraph Text -->
-                      <script>
-                          var statusled = document.querySelectorAll('.statusled, .statusled2');
-                          for(var i = 0; i < statusled.length; i++) {
-                            statusled[i].innerHTML="Did you notice the blue and blinking LED on the camera? It can be very annoying in a dark room. But it can be used to troubleshoot your network connection or to make people aware that they are being recorded. For all other purposes come here to deactivate it.";
-                          }
-                      </script>
-
-                      <!-- ##################################### IR LED ############################################ -->
-
-                      <div class="card-container margin">
-                        <div class="twocard">
-                            <div class="image" on="tap:irled-lightbox" role="button" tabindex="0">
-                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_IR_LEDs_mouseOver.png"></amp-img>
-                            </div>
-                            <div class="content">
-                                <hr>
-                                <p class="irled"></p> <!-- innerHTML Added by script below -->
-                            </div>
-                            <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/System/IR_LED/">IR LED Menu</a>
-                            </div>
-                        </div>
-                        <!-- /Card -->
-                        <!-- lightbox -->
-                          <amp-lightbox id="irled-lightbox" layout="nodisplay">
-                            <div class="lightbox" on="tap:irled-lightbox.close" tabindex="0">
-                              <div class="twocard cardbox">
-                                  <a href="/Web_User_Interface/720p_Series/System/IR_LED/">
-                                  <div class="image">
-                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_IR_LEDs_mouseOver.png"></amp-img>
-                                  </div>
-                                  </a>
-                                  <div class="content" on="tap:irled-lightbox.close" tabindex="0">
-                                      <hr>
-                                      <p class="irled2"></p> <!-- innerHTML Added by script below -->
-                                  </div>
-                                  <div class="action">
-                                      <a href="/Web_User_Interface/720p_Series/System/IR_LED/">Click of more Information</a>
-                                  </div>
-                              </div>
-                            </div>
-                          </amp-lightbox>
-                        <!-- /lightbox -->
-                        <!-- Add Pragraph Text -->
-                        <script>
-                            var irled = document.querySelectorAll('.irled, .irled2');
-                            for(var i = 0; i < irled.length; i++) {
-                              irled[i].innerHTML="Your camera´s IR LEDs are switched on and off automatically by the internal light sensor. If you want to use your camera behind a highly reflective window or you are using your camera as a weather webcam and don´t need the IR light, simply deactivate the LEDs here. Be aware that the automatic IRcut filter will be moved in front of the lense permanently in this mode. That means you cannot use an external IR spotlight with your camera, if the internal IR lights are turned off.";
-                            }
-                        </script>
-
-                        <!-- ##################################### ONVIF ############################################ -->
-
-                        <div class="twocard">
-                            <div class="image" on="tap:onvif-lightbox" role="button" tabindex="0">
-                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_ONVIF_mouseOver.png"></amp-img>
-                            </div>
-                            <div class="content">
-                                <hr>
-                                <p class="onvif"></p> <!-- innerHTML Added by script below -->
-                            </div>
-                            <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/System/ONVIF/">ONVIF Menu</a>
-                            </div>
-                        </div>
-                        <!-- /Card -->
-                    </div>
-                    <!-- /Card Container -->
-                    <!-- lightbox -->
-                      <amp-lightbox id="onvif-lightbox" layout="nodisplay">
-                        <div class="lightbox" on="tap:onvif-lightbox.close" tabindex="0">
-                          <div class="twocard cardbox">
-                              <a href="/Web_User_Interface/720p_Series/System/ONVIF/">
+                          <div class="twocard">
                               <div class="image">
-                                  <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_ONVIF_mouseOver.png"></amp-img>
-                              </div>
-                              </a>
-                              <div class="content" on="tap:onvif-lightbox.close" tabindex="0">
+                                  <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_System_Date.png"></amp-img>
+                                  </div>
+                              <div class="content">
                                   <hr>
-                                  <p class="onvif2"></p> <!-- innerHTML Added by script below -->
+                                  <p>Your camera will automatically contact a so-called NTP Server to set the internal clock. It is recommended to leave this feature on at all times. But if your camera cannot connect to the internet, you can synchronize the clock with your computer. But be aware that this has to be done regularly to keep your camera on-time.</p>
                               </div>
                               <div class="action">
-                                  <a href="/Web_User_Interface/720p_Series/System/ONVIF/">Click of more Information</a>
+                                  <a href="/Web_User_Interface/720p_Series/System/Date_Time/">Date &amp; Time Menu</a>
                               </div>
                           </div>
+                          <!-- /Card -->
                         </div>
-                      </amp-lightbox>
-                    <!-- /lightbox -->
-                    <!-- Add Pragraph Text -->
-                    <script>
-                        var onvif = document.querySelectorAll('.onvif, .onvif2');
-                        for(var i = 0; i < onvif.length; i++) {
-                          onvif[i].innerHTML="The surveillance industry has created an open standard protocol called ONVIF that allows cameras to communicate with each other and with network recording devices. You can activate or deactivate this service and change the port that it is using - as needed by your receiving ONVIF device.";
-                        }
-                    </script>
+                        <!-- Card Container -->
 
-                    <!-- ##################################### PTZ ############################################ -->
+                        <!-- ##################################### User ##################################### -->
 
-                    <div class="card-container margin">
-                      <div class="twocard">
-                          <div class="image" on="tap:ptz-lightbox" role="button" tabindex="0">
-                              <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_PTZ_moueOver.png"></amp-img>
-                              </div>
-                          </a>
-                          <div class="content">
-                              <hr>
-                              <p class="ptz"></p> <!-- innerHTML Added by script below -->
-                          </div>
-                          <div class="action">
-                              <a href="/Web_User_Interface/720p_Series/System/PTZ/">PTZ Menu</a>
-                          </div>
-                      </div>
-                      <!-- /Card -->
-                      <!-- lightbox -->
-                        <amp-lightbox id="ptz-lightbox" layout="nodisplay">
-                          <div class="lightbox" on="tap:ptz-lightbox.close" tabindex="0">
-                            <div class="twocard cardbox">
-                                <a href="/Web_User_Interface/720p_Series/System/PTZ/">
-                                <div class="image">
-                                    <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_PTZ_moueOver.png"></amp-img>
-                                </div>
-                                </a>
-                                <div class="content" on="tap:ptz-lightbox.close" tabindex="0">
-                                    <hr>
-                                    <p class="ptz2"></p> <!-- innerHTML Added by script below -->
-                                </div>
-                                <div class="action">
-                                    <a href="/Web_User_Interface/720p_Series/System/PTZ/">Click of more Information</a>
-                                </div>
-                            </div>
-                          </div>
-                        </amp-lightbox>
-                      <!-- /lightbox -->
-                      <!-- Add Pragraph Text -->
-                      <script>
-                          var ptz = document.querySelectorAll('.ptz, .ptz2');
-                          for(var i = 0; i < ptz.length; i++) {
-                            ptz[i].innerHTML="Deactivate your camera´s calibration run at startup (will also deactivate the saved positions). Let your camera go to a saved position after a restart or limit the range of the pan &amp; tilt motion for privacy concerns.";
-                          }
-                      </script>
-
-                      <!-- ##################################### Tour ############################################ -->
-
-                      <div class="twocard">
-                          <div class="image" on="tap:tour-lightbox" role="button" tabindex="0">
-                              <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_PTZ_moueOver.png"></amp-img>
-                          </div>
-                          <div class="content">
-                              <hr>
-                              <p class="tour"></p> <!-- innerHTML Added by script below -->
-                          </div>
-                          <div class="action">
-                              <a href="/Web_User_Interface/720p_Series/System/PTZ_Tour/">PTZ Tour Menu</a>
-                          </div>
-                      </div>
-                      <!-- /Card -->
-                  </div>
-                  <!-- /Card Container -->
-                  <!-- lightbox -->
-                    <amp-lightbox id="tour-lightbox" layout="nodisplay">
-                      <div class="lightbox" on="tap:tour-lightbox.close" tabindex="0">
-                        <div class="twocard cardbox">
-                            <a href="/Web_User_Interface/720p_Series/System/PTZ_Tour/">
-                            <div class="image">
-                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_PTZ_moueOver.png"></amp-img>
-                            </div>
-                            </a>
-                            <div class="content" on="tap:tour-lightbox.close" tabindex="0">
-                                <hr>
-                                <p class="tour2"></p> <!-- innerHTML Added by script below -->
-                            </div>
-                            <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/System/PTZ_Tour/">Click of more Information</a>
-                            </div>
-                        </div>
-                      </div>
-                    </amp-lightbox>
-                  <!-- /lightbox -->
-                  <!-- Add Pragraph Text -->
-                  <script>
-                      var tour = document.querySelectorAll('.tour, .tour2');
-                      for(var i = 0; i < tour.length; i++) {
-                        tour[i].innerHTML="Deactivate your camera´s calibration run at startup (will also deactivate the saved positions). Let your camera go to a saved position after a restart or limit the range of the pan &amp; tilt motion for privacy concerns.";
-                      }
-                  </script>
-
-                  <!-- ##################################### Log ############################################ -->
-
-                  <div class="card-container margin">
-                    <div class="twocard">
-                        <div class="image" on="tap:log-lightbox" role="button" tabindex="0">
-                            <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_Log_mouseOver.png"></amp-img>
-                            </div>
-                        </a>
-                        <div class="content">
-                            <hr>
-                            <p class="log"></p> <!-- innerHTML Added by script below -->
-                        </div>
-                        <div class="action">
-                            <a href="/Web_User_Interface/720p_Series/System/System_Log/">System Log Menu</a>
-                        </div>
-                    </div>
-                    <!-- /Card -->
-                    <!-- lightbox -->
-                      <amp-lightbox id="log-lightbox" layout="nodisplay">
-                        <div class="lightbox" on="tap:log-lightbox.close" tabindex="0">
-                          <div class="twocard cardbox">
-                              <a href="/Web_User_Interface/720p_Series/System/System_Log/">
+                        <div class="card-container margin">
+                          <div class="twocard">
                               <div class="image">
-                                  <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_System_Log_mouseOver.png"></amp-img>
-                              </div>
-                              </a>
-                              <div class="content" on="tap:log-lightbox.close" tabindex="0">
+                                  <amp-img noloading height=400 width=400 layout=responsive
+                                    src="/images/1080p_webUI/QL-Box_WebUI_1080p_System_Language.png"></amp-img>
+                                </div>
+                              <div class="content">
                                   <hr>
-                                  <p class="log2"></p> <!-- innerHTML Added by script below -->
+                                  <p>Change the language of the web user interface to German, English, French or Chinese. The user interface automatically sets the language according to the language of your operating system. You can manually change it, if the auto-detection fails or you want the UI to be displayed in different languages on different computers. Your selection will be saved locally as a cookie and not globally on your camera.</p>
                               </div>
                               <div class="action">
-                                  <a href="/Web_User_Interface/720p_Series/System/System_Log/">Click of more Information</a>
+                                  <a href="/Web_User_Interface/720p_Series/System/Language/">Language Menu</a>
                               </div>
                           </div>
-                        </div>
-                      </amp-lightbox>
-                    <!-- /lightbox -->
-                    <!-- Add Pragraph Text -->
-                    <script>
-                        var log = document.querySelectorAll('.log, .log2');
-                        for(var i = 0; i < log.length; i++) {
-                          log[i].innerHTML="Something doesn´t work anymore? Check the system log file for information. You don´t receive Alarm Emails anymore but your SMTP settings look fine? Check the log if there are still motion trigger events. Or you get spammed with Alarm Emails but motion detection is already deactivated? Check your log - maybe the events are triggered by the Audio Alarm or an external trigger.";
-                        }
-                    </script>
-                    <div class="twocard invisible"></div>
-                    <!-- /Card -->
-                </div>
-                <!-- /Card Container -->
+                          <!-- /Card -->
+
+                            <!-- ##################################### Date Time ################################# -->
+
+                            <div class="twocard">
+                                <div class="image">
+                                    <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_System_Log.png"></amp-img>
+                                    </div>
+                                <div class="content">
+                                    <hr>
+                                    <p>Something doesn´t work anymore? Check the system log file for information. You don´t receive Alarm Emails anymore but your SMTP settings look fine? Check the log if there are still motion trigger events. Or you get spammed with Alarm Emails but motion detection is already deactivated? Check your log - maybe the events are triggered by the Audio Alarm or an external trigger.</p>
+                                </div>
+                                <div class="action">
+                                    <a href="/Web_User_Interface/720p_Series/System/Log/">System Log</a>
+                                </div>
+                            </div>
+                            <!-- /Card -->
+                          </div>
+                          <!-- Card Container -->
+
+                          <!-- ##################################### Update ##################################### -->
+
+                          <div class="card-container margin">
+                            <div class="twocard">
+                                <div class="image">
+                                    <amp-img noloading height=400 width=400 layout=responsive
+                                      src="/images/1080p_webUI/QL-Box_WebUI_1080p_System_Update.png"></amp-img>
+                                  </div>
+                                <div class="content">
+                                    <hr>
+                                    <p>The INSTAR software department is constantly working to improve your experience with our product. You can check the update section from time to time to make sure your system is still up-to-date. You can also check our <a href="http://download.instar.com" target="_blank">DOWNLOAD AREA</a> to find our newest software and corresponding changelogs.</p>
+                                </div>
+                                <div class="action">
+                                    <a href="/Web_User_Interface/720p_Series/System/Update/">Update Menu</a>
+                                </div>
+                            </div>
+                            <!-- /Card -->
+
+                              <!-- ##################################### Reboot ################################# -->
+
+                              <div class="twocard">
+                                  <div class="image">
+                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_System_Reboot.png"></amp-img>
+                                      </div>
+                                  <div class="content">
+                                      <hr>
+                                      <p>Use this function to reboot or reset your camera safely. It is not recommended to simply unplug/replug your camera or use the hardware reset unnecessarily (those actions can be harmful to running operations as well as causing hardware defects on the internal SD card). Please always use the soft- restart and reset via the web user interface. Use the hardware reset in case that you have lost access to the interface.</p>
+                                  </div>
+                                  <div class="action">
+                                      <a href="/Web_User_Interface/720p_Series/System/Reboot/">Reboot Menu</a>
+                                  </div>
+                              </div>
+                              <!-- /Card -->
+                            </div>
+                            <!-- Card Container -->
+
+                            <!-- ##################################### Reset ##################################### -->
+
+                            <div class="card-container margin">
+                              <div class="twocard">
+                                  <div class="image">
+                                      <amp-img noloading height=400 width=400 layout=responsive
+                                        src="/images/1080p_webUI/QL-Box_WebUI_1080p_System_Reset.png"></amp-img>
+                                    </div>
+                                  <div class="content">
+                                      <hr>
+                                      <p>Use this function to reboot or reset your camera safely. It is not recommended to simply unplug/replug your camera or use the hardware reset unnecessarily (those actions can be harmful to running operations as well as causing hardware defects on the internal SD card). Please always use the soft- restart and reset via the web user interface. Use the hardware reset in case that you have lost access to the interface.</p>
+                                  </div>
+                                  <div class="action">
+                                      <a href="/Web_User_Interface/720p_Series/System/Reset/">Reset Menu</a>
+                                  </div>
+                              </div>
+                              <!-- /Card -->
+
+                                <div class="twocard invidible">
+                                </div>
+                                <!-- /Card -->
+                              </div>
+                              <!-- Card Container -->
+
                 </div>
                 <!-- /Container -->
             </section>
