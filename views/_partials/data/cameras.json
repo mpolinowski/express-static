@@ -28,6 +28,13 @@
         "indoorPic": "/images/Wiki_Tiles_P-IN-6014HD.jpg",
         "indoorPicAlt": "IN-6014 HD Indoor IP Camera"
     }, {
+        "indoormodel": "IN-8015 HD",
+        "indoorVideoSrc": "#",
+        "indoorVideoAlt": "IN-8015 HD Indoor IP Camera",
+        "indoorUrl": "Indoor_Cameras/IN-8015_HD",
+        "indoorPic": "/images/Wiki_Tiles_P-IN-8015HD.jpg",
+        "indoorPicAlt": "IN-8015 HD Indoor IP Camera"
+    }, {
         "outdoormodel": "IN-2905",
         "outdoorVideoSrc": "#",
         "outdoorVideoAlt": "IN-2905 Outdoor IP Camera",
