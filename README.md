@@ -145,6 +145,11 @@ To enable Nginx to start when your system boots, enter the following command:
  sudo systemctl enable nginx
 ```
 
+To restart the Nginx service, enter the following command:
+```
+ service nginx restart
+```
+
 
 ### 5 Install Node.js on a CentOS 7 web server
 ___
