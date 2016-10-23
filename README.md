@@ -215,10 +215,6 @@ The first thing you will want to do is use the pm2 start command to run your app
 
 This also adds your application to PM2's process list, which is outputted every time you start an application:
 
-|  | id | mode | pid  | status | restart | uptime | mem     | watching |
-| --------- | -- | ---- | ---- |------- |-------- |------- |-------- |-------- |
-| app      | 0  | fork | 9495 | online | 0       | 0s     | 36.4 MB | disabled |
-
 | App name        | id           | mode  | pid  | status  | restart  | uptime  | mem  | watching  |
 | ------------- |:-------------:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| -----:|
 | app      | 0 | fork | 9495 | online | 0 | 0s | 36.4 MB | disabled |
