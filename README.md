@@ -219,6 +219,12 @@ This also adds your application to PM2's process list, which is outputted every 
 | --------- | -- | ---- | ---- |------- |-------- |------- |-------- |-------- |
 | app      | 0  | fork | 9495 | online | 0       | 0s     | 36.4 MB | disabled |
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 Applications that are running under PM2 will be restarted automatically if the application crashes or is killed, but an additional step needs to be taken to get the application to launch on system startup (boot or reboot). Luckily, PM2 provides an easy way to do this, the startup subcommand.
 
 The startup subcommand generates and configures a startup script to launch PM2 and its managed processes on server boots. You must also specify the init system you are running on, which is systemd, in our case:
