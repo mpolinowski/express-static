@@ -176,8 +176,8 @@ After this line you will have Git installed on your CentOS server:
 ```
  sudo yum install -y git
 ```
-Putting your Git code on your server:
 
+Putting your Git code on your server:
 ```
  cd /opt/
  sudo mkdir apps
@@ -185,6 +185,11 @@ Putting your Git code on your server:
  git clone https://github.com/INSTAR-Deutschland/express-static.git apps
  cd apps
  npm install
+```
+
+Update an existing repo by cd into directory and:
+```
+ git pull origin master
 ```
 
 
