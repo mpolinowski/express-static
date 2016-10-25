@@ -178,10 +178,10 @@ webUI1080pRouter.route('/Features/Status_LED/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Features/IR_LED/')
+webUI1080pRouter.route('/Features/IR_LEDs/')
     .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_IR_LED', {
-            title: 'Features Menu :: IR LED',
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_IR_LEDs', {
+            title: 'Features Menu :: IR LEDs',
           });
       });
 
