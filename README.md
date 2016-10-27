@@ -13,7 +13,7 @@ This App was created in several steps:
 4. [Install NGINX on CentOS]()
 5. [Install Node.js on CentOS]()
 6. [Clone Repo from Git]()
-7. [Run the app as a service]()
+7. [Run the app as a service (PM2)]()
 8. [Install Elasticsearch]()
 
 
@@ -146,6 +146,11 @@ To enable Nginx to start when your system boots, enter the following command:
  sudo systemctl enable nginx
 ```
 
+To restart the Nginx service, enter the following command:
+```
+ service nginx restart
+```
+
 
 ### 5 Install Node.js on a CentOS 7 web server
 ___
@@ -194,35 +199,66 @@ Update an existing repo by cd into directory and:
 ```
 
 
-### 7 Run the app as a service
+### 7 Run the app as a service (PM2)
 ___
 
-* **Step One** — Systemd service
+* **Step One** — Demonization
 
-Put this in /etc/systemd/system/node-app-1.service but don’t forget to replace your_app_user_name with the appropriate user name.
-```
- [Service]
- ExecStart=/usr/bin/node /opt/apps/app.js
- Restart=always
- StandardOutput=syslog
- StandardError=syslog
- SyslogIdentifier=wiki2_en
- User=your_app_user_name
- Group=your_app_user_name
- Environment=NODE_ENV=production PORT=3000
+Now we will install PM2, which is a process manager for Node.js applications. PM2 provides an easy way to manage and daemonize applications (run them as a service).
 
- [Install]
- WantedBy=multi-user.target
+We will use Node Packaged Modules (NPM), which is basically a package manager for Node modules that installs with Node.js, to install PM2 on our app server. Use this command to install PM2:
 ```
-As you can see this small file tells systemd to restart the service when it dies, to use syslog for logging all output and to provide 3000 as a port. Put this in /etc/systemd/system/node-app-1.service but don’t forget to replace your_app_user_name with the appropriate user name.
+ sudo npm install pm2@latest -g
+```
+
+* **Step Two** — Manage Application with PM2
+
+The first thing you will want to do is use the pm2 start command to run your application, app.js, in the background. With node Node apps the entry point is the app.js (or index.js). In case you used Express-Generator to do your app scaffolding, use the www file in the /bin directory instead :
 
 ```
- cd /opt/
- sudo mkdir apps
- sudo chown your_app_user_name app
- git clone https://github.com/INSTAR-Deutschland/express-static.git apps
- cd apps
- npm install
+ pm2 start app.js
+```
+
+This also adds your application to PM2's process list, which is outputted every time you start an application:
+
+| App name        | id           | mode  | pid  | status  | restart  | uptime  | mem  | watching  |
+| ------------- |:-------------:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| -----:|
+| app      | 0 | fork | 9495 | online | 0 | 0s | 36.4 MB | disabled |
+
+Applications that are running under PM2 will be restarted automatically if the application crashes or is killed, but an additional step needs to be taken to get the application to launch on system startup (boot or reboot). Luckily, PM2 provides an easy way to do this, the startup subcommand.
+
+The startup subcommand generates and configures a startup script to launch PM2 and its managed processes on server boots. You must also specify the init system you are running on, which is systemd, in our case:
+
+```
+ sudo pm2 startup systemd
+```
+
+
+* **Step Three** — Other PM2 Commands (Optional)
+
+Stop an application with this command (specify the PM2 App name or id):
+```
+ sudo pm2 stop app
+```
+
+Restart an application with this command (specify the PM2 App name or id):
+```
+ sudo pm2 restart app
+```
+
+The list of applications currently managed by PM2 can also be looked up with the list subcommand:
+```
+ pm2 list
+```
+
+More information about a specific application can be found by using the info subcommand (specify the PM2 App name or id):
+```
+ pm2 info app
+```
+
+The PM2 process monitor can be pulled up with the monit subcommand. This displays the application status, CPU, and memory usage:
+```
+ pm2 monit
 ```
 
 
