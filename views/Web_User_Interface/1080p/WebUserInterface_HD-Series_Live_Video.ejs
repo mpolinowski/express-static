@@ -2,7 +2,7 @@
 <html ⚡>
     <head>
         <% include ../../_partials/amp/_amp-head.ejs %>
-        <link rel="canonical" href="/Web_User_Interface/1080p_Series/System/Info/">
+        <link rel="canonical" href="/Web_User_Interface/1080p_Series/PTZ_Control/">
     </head>
 
     <body class="home">
@@ -18,34 +18,12 @@
                       </div>
                       <div class="right alt">
                         <a href="/Search/"><button class="navGo desktop-up">Search</button></a>
-                        <a href="/Web_User_Interface/1080p_Series/System/"><button class="navGo">Up</button></a>
+                        <a href="/Web_User_Interface/1080p_Series/"><button class="navGo">Up</button></a>
                       </div>
                   </div>
               </div>
           </div>
       </header>
-
-        <div class="wrap mobile-down">
-            <div class="content">
-                <section class="hero webUI">
-                    <div class="container">
-                        <div class="row">
-                            <div class="six columns">
-                                <div class="intro-container">
-                                    <h1>Info Overlay</h1>
-                                    <p class="intro">
-                                      Info is simply a collection of a lot of system internals that are interesting if you have to start troubleshooting your set up. You DDNS access doesn´t work? Check the <a href="/Web_User_Interface/720p_Series/Network/DDNS/">DDNS status</a> (has to be successful) and the UPnP Status (<a href="/Web_User_Interface/720p_Series/Network/UPnP/">most likely has to be deactivated</a>). You can also try accessing your camera via it´s WAN IP (instead of DDNS address) - to check wether it is the DDNS address or your <a href="/Internet_Access/Port_Forwarding">port forwarding</a> that is the culprit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- /Hero -->
-            </div>
-            <!-- /Content -->
-        </div>
-        <!-- /Wrap -->
 
         <div class="wrap">
             <div class="container main">
@@ -195,90 +173,226 @@
                     <!-- article -->
 
                     <div class="margin">
-                        <h2 class="post-title">Keep an Eye on your Camera´s Operation</h2>
+                        <h1 class="post-title">Live Video</h1>
                     </div>
                     <!-- /margin -->
 
-                    <div class="margin">
+                    <!-- ##################################### Live Video ############################################ -->
 
+                    <div class="margin">
                       <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Info.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Info.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                          <amp-img src="/images/1080p_webUI/1080p_View.png" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
                       </div>
-
                     </div>
                     <!-- /margin -->
 
                     <div class="margin">
-                        <table>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Camera ID</strong>
-                                </td>
-                                <td>Model number of your camera.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Firmware Version</strong>
-                                </td>
-                                <td>Version of your camera´s operating system. You can always find the newest version of the Firmware/WebUI in our <a href="http://download.instar.de/">Download Area</a>. The software is uploaded to your camera through the <a href="/Web_User_Interface/720p_Series/Software/Update/">Update Menu</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>WebUI Version</strong>
-                                </td>
-                                <td>Version of your camera´s web user interface. You can always find the newest version of the Firmware/WebUI in our <a href="http://download.instar.de/">Download Area</a>. The software is uploaded to your camera through the <a href="/Web_User_Interface/720p_Series/Software/Update/">Update Menu</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Network Interface</strong>
-                                </td>
-                                <td>Displays whether your camera is connected by WiFi or Ethernet cable.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>MAC Address</strong>
-                                </td>
-                                <td>Hardware identification of the active (LAN or WLAN) network interface.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>SD Status</strong>
-                                </td>
-                                <td>Displays if your camera´s SD card is ready for operation and it´s remaining capacity (the SD card is used as a ring buffer - the oldest folder is deleted once the capacity is reached).</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>IR LED Status</strong>
-                                </td>
-                                <td>Operating mode of your nightvision LEDs - either switched on automatically (when it is getting dark) or permanently deactivated.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>WAN IP Address</strong>
-                                </td>
-                                <td><strong>W</strong>ide <strong>A</strong>rea <strong>N</strong>etwork Address of your internet connection. This is the address that your <a href="/Internet_Access/The_DDNS_Service">DDNS Address</a> will be translated to, to make your camera availabe from the internet (needs a <a href="/Internet_Access/Port_Forwarding">Port Forwarding</a>!).</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>DDNS Status</strong>
-                                </td>
-                                <td>This function checks if your <a href="/Web_User_Interface/720p_Series/Network/DDNS/">DDNS Address</a> was successfully updated with your actual WAN IP Address. This is a requirement to <a href="/Internet_Access/The_DDNS_Service">ccess your camera from the internet</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>UPnP Status</strong>
-                                </td>
-                                <td>The UPnP service automatically tries to set a <a href="/Internet_Access/Port_Forwarding">Port Forwarding</a> for the DDNS access to your camera. <strong>We recommend</strong> to <a href="/Web_User_Interface/720p_Series/Network/UPnP/">deactivate this service</a> and create a manual forwarding instead.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Camera active since</strong>
-                                </td>
-                                <td>Up-time of your camera since the last reboot.</td>
-                            </tr>
-                        </table>
+                        <p>Here you can adjust the behaviour of the red Status LED at the power connector of the camera. Enable it to have it display camera activity - which is especially helpful during the installation process. Or deactivate it for normal operation.</p>
                     </div>
                     <!-- /margin -->
+
+                    <!-- ##################################### Settings ############################################ -->
+
+                    <div>
+                        <h2>Settings</h2>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                      <div>
+                          <amp-img src="/images/1080p_webUI/1080p_View_Settings.png" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                      </div>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p>Here you can adjust the behaviour of the red Status LED at the power connector of the camera. Enable it to have it display camera activity - which is especially helpful during the installation process. Or deactivate it for normal operation.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                      <div>
+                          <amp-img src="/images/1080p_webUI/1080p_Settings_Live_Video.png" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                      </div>
+                    </div>
+                    <!-- /margin -->
+
+                    <!-- ##################################### SD Card ############################################ -->
+
+                    <div>
+                        <h2>SD Card</h2>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                      <div>
+                          <amp-img src="/images/1080p_webUI/1080p_View_SD_Card.png" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                      </div>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p>Here you can adjust the behaviour of the red Status LED at the power connector of the camera. Enable it to have it display camera activity - which is especially helpful during the installation process. Or deactivate it for normal operation.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                      <div>
+                          <amp-img srcset="/images/1080p_webUI/1080p_SD_Card.jpg 100w, /images/1080p_webUI/1080p_SD_Card.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                      </div>
+                    </div>
+                    <!-- /margin -->
+
+                    <!-- ##################################### PTZ ############################################ -->
+
+                    <div>
+                        <h2>PTZ</h2>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                      <div>
+                          <amp-img src="/images/1080p_webUI/1080p_View_Relay.png" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                      </div>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p>Here you can adjust the behaviour of the red Status LED at the power connector of the camera. Enable it to have it display camera activity - which is especially helpful during the installation process. Or deactivate it for normal operation.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                      <div>
+                          <amp-img src="/images/1080p_webUI/1080p_View_PTZ.png" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                      </div>
+                    </div>
+                    <!-- /margin -->
+
+                    <div>
+                        <h2>Side Nav</h2>
+                    </div>
+                    <!-- /margin -->
+
+                    <!-- ##################################### Snapshot ##################################### -->
+
+                    <div class="card-container margin">
+                      <div class="twocard">
+                          <div class="image">
+                              <amp-img noloading height=302 width=270 layout=responsive src="/images/1080p_webUI/1080p_View_Logout_cut.png"></amp-img>
+                            </div>
+                          <div class="content">
+                              <hr>
+                              <p>Snapshot</p>
+                          </div>
+                      </div>
+                      <!-- /Card -->
+
+                        <!-- ##################################### INSTAR #################################### -->
+
+                        <div class="twocard">
+                            <div class="image">
+                                <amp-img noloading height=302 width=270 layout=responsive src="/images/1080p_webUI/1080p_View_Logout_cut.png"></amp-img>
+                              </div>
+                            <div class="content">
+                                <hr>
+                                <p>INSTAR</p>
+                            </div>
+                        </div>
+                        <!-- /Card -->
+                      </div>
+                      <!-- Card Container -->
+
+                      <!-- ##################################### Recording ##################################### -->
+
+                      <div class="card-container margin">
+                        <div class="twocard">
+                            <div class="image">
+                                <amp-img noloading height=302 width=269 layout=responsive
+                                  src="/images/1080p_webUI/1080p_View_Recording_cut.png"></amp-img>
+                              </div>
+                            <div class="content">
+                                <hr>
+                                <p>Recording</p>
+                            </div>
+                        </div>
+                        <!-- /Card -->
+
+                          <!-- ##################################### IR LEDs #################################### -->
+
+                          <div class="twocard">
+                              <div class="image">
+                                  <amp-img noloading height=304 width=269 layout=responsive src="/images/1080p_webUI/1080p_View_Relay_cut.jpg"></amp-img>
+                                </div>
+                              <div class="content">
+                                  <hr>
+                                  <p>IR LEDs</p>
+                              </div>
+                          </div>
+                          <!-- /Card -->
+                        </div>
+                        <!-- Card Container -->
+
+                        <!-- ##################################### Relay ##################################### -->
+
+                        <div class="card-container margin">
+                          <div class="twocard">
+                              <div class="image">
+                                  <amp-img noloading height=303 width=271 layout=responsive
+                                    src="/images/1080p_webUI/1080p_View_Relay_cut.jpg"></amp-img>
+                                </div>
+                              <div class="content">
+                                  <hr>
+                                  <p>Relay</p>
+                              </div>
+                          </div>
+                          <!-- /Card -->
+
+                            <!-- ##################################### Motion Detection #################################### -->
+
+                            <div class="twocard">
+                                <div class="image">
+                                    <amp-img noloading height=304 width=270 layout=responsive src="/images/1080p_webUI/1080p_View_Alarm_cut.jpg"></amp-img>
+                                  </div>
+                                <div class="content">
+                                    <hr>
+                                    <p>Motion Detection</p>
+                                </div>
+                            </div>
+                            <!-- /Card -->
+                          </div>
+                          <!-- Card Container -->
+
+                          <!-- ##################################### Chat ##################################### -->
+
+                          <div class="card-container margin">
+                            <div class="twocard">
+                                <div class="image">
+                                    <amp-img noloading height=302 width=268 layout=responsive
+                                      src="/images/1080p_webUI/1080p_View_Chat_cut.png"></amp-img>
+                                  </div>
+                                <div class="content">
+                                    <hr>
+                                    <p>Chat</p>
+                                </div>
+                            </div>
+                            <!-- /Card -->
+
+                              <!-- ##################################### Email #################################### -->
+
+                              <div class="twocard">
+                                  <div class="image">
+                                      <amp-img noloading height=303 width=269 layout=responsive src="/images/1080p_webUI/1080p_View_Mail_cut.png"></amp-img>
+                                    </div>
+                                  <div class="content">
+                                      <hr>
+                                      <p>Email</p>
+                                  </div>
+                              </div>
+                              <!-- /Card -->
+                            </div>
+                            <!-- Card Container -->
+
                 </article>
                 <!-- /article -->
 

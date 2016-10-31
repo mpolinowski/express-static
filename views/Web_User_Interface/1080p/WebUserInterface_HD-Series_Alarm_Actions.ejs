@@ -7,227 +7,368 @@
 
     <body class="home">
 
-        <header class="fixed">
-            <div class="wrap">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="left-nav">
-                            <a href="/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right alt">
-
-                            <a href="/Web_User_Interface/1080p_Series/Alarm/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="wrap mobile-down">
-            <div class="content">
-                <section class="hero webUI">
-                    <div class="container">
-                        <div class="row">
-                            <div class="six columns">
-                                <div class="intro-container">
-                                    <h1>Actions Overlay</h1>
-                                    <p class="intro">
-                                      Adjust the cameras behaviour in case of a motion alert trigger event. You can set the camera to send you an email and to save snapshots or videos on your SD card. Please make sure you set your <a href="/Web_User_Interface/1080p_Series/Alarm/SMTP_Server/">SMTP Server settings</a> before activating the <a href="/Web_User_Interface/1080p_Series/Alarm/Email/">email notification</a> and that you have a SD card in your cameras SDHC card slot (max. 32 GB) to use the <a href="/Web_User_Interface/1080p_Series/Recording/">video recording</a> and <a href="/Web_User_Interface/1080p_Series/Alarm/FTP/">send-to-FTP function</a> - a 4 GB SD card is included in the delivery.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- /Hero -->
-            </div>
-            <!-- /Content -->
-        </div>
-        <!-- /Wrap -->
-
-        <div class="wrap">
-            <div class="container main">
-
-                <article>
-                    <!-- article -->
-
-                    <div class="margin">
-                        <h2 class="post-title">Set what your Camera should do in Case of an Alert</h2>
-                    </div>
-                    <!-- /margin -->
-
-                    <div class="margin">
-                      <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Alarm_Actions.jpg 100w, /images/1080p_webUI/1080p_Settings_Alarm_Actions.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+      <header class="fixed">
+          <div class="wrap">
+              <div class="container">
+                  <div class="clearfix">
+                      <div class="left-nav">
+                          <a href="/" class="tab header-title">
+                              <amp-img class="shadow" src="/images/instar_245x77.png" height="40px" width="127px" alt="Instar Wiki"></amp-img>
+                          </a>
                       </div>
-                    </div>
-                    <!-- /margin -->
+                      <div class="right alt">
+                        <a href="/Search/"><button class="navGo desktop-up">Search</button></a>
+                        <a href="/Web_User_Interface/1080p_Series/Alarm/"><button class="navGo">Up</button></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
 
-                    <div class="margin">
-                        <table>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Send Alarm Email</strong>
-                                </td>
-                                <td>All alarm actions can be triggerd by the <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">motion detection areas</a>, the alarm input as well as the <a href="/Web_User_Interface/1080p_Series/Alarm/Audio_Alarm/">audio alarm</a>. Here you can activate the alarm notification by email. Please be aware, that you first have to set your <a href="/Web_User_Interface/1080p_Series/Alarm/SMTP_Server/">outgoing mail server (SMTP)</a> and <a href="/Web_User_Interface/1080p_Series/Alarm/Email/">email receiver</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Send Alarm Video to SD Card</strong>
-                                </td>
-                                <td>Activate to save a video on the internal <a href="/Web_User_Interface/1080p_Series/Alarm/SD_Card/">SD Card</a> in case of an alarm. An alarm video file name always starts with an <strong>A</strong> and continuous with a time stamp. Your camera always records 3 seconds before the alarm event and 15 seconds after the trigger.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Send Alarm Video to FTP Server</strong>
-                                </td>
-                                <td>Activate sending a video to your FTP server after an alarm trigger. Please be aware, that you first have to set your <a href="/Web_User_Interface/1080p_Series/Alarm/FTP/">FTP Server Information</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Send Alarm Snapshot to SD Card</strong>
-                                </td>
-                                <td>Activate saving snapshots to the internal <a href="/Web_User_Interface/1080p_Series/Alarm/SD_Card/">SD card</a> in case of an alarm.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Send Alarm Snapshot to FTP Server</strong>
-                                </td>
-                                <td>Activate sending snapshots to your FTP server in case of an alarm. Please be aware, that you first have to set your FTP information in the <a href="/Web_User_Interface/1080p_Series/Alarm/FTP/">FTP menu</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Snapshot Resolution</strong>
-                                </td>
-                                <td>Set the resolution used for the snapshots uploaded to FTP, Email or saved to SD card in case of an alarm.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Photos in Email</strong>
-                                </td>
-                                <td>Set how many snapshots you want to be attached to an alarm email. Please be aware, that the email might be delayed if you attach too many images. If you want to be notified without a delay, please use the <a href="/Web_User_Interface/1080p_Series/Network/Push_Service/">Push Service</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Photos on SD Card</strong>
-                                </td>
-                                <td>Set how many images you want to be saved to <a href="/Web_User_Interface/1080p_Series/Alarm/SD_Card/">SD card</a> in case of an alarm.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Photos per FTP Upload</strong>
-                                </td>
-                                <td>Set how many images you want your camera to send to your <a href="/Web_User_Interface/1080p_Series/Alarm/FTP/">FTP server</a> in case of an alarm.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Activate External Output</strong>
-                                </td>
-                                <td>Activate your cameras alarm output (not all camera models), and let your camera close the relay in case of an alarm.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Relay closing time in seconds</strong>
-                                </td>
-                                <td>Set for how long the alarm output relay should be closed in case of an alarm.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Activate external alarm input</strong>
-                                </td>
-                                <td>Activate your camera´s alarm input (not all camera models). Information about connecting an extern sensor can be found here. You can connect every sensor to your camera that is operated via a potential free contact.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Relay closing time in seconds</strong>
-                                </td>
-                                <td>Set for how long the alarm output relay should be closed in case of an alarm.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Activate external alarm input</strong>
-                                </td>
-                                <td>Activate your camera´s alarm input (not all camera models). Information about connecting an extern sensor can be found <a href="/Products/IN-Motion/">here</a>. You can connect every sensor to your camera that is operated via a potential free contact.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Electric circuit during alarm / Alarm device set to</strong>
-                                </td>
-                                <td>Set if your external sensor is configured to close the circuit in case of a detection or if it will open the contact (see also <a href="/Products/IN-Motion/">IN-Motion 500</a>). Please be aware that your camera will be in a constant state of alarm, if you set the alarm input to N.C. and you don´t connect an external sensor.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Link alarm input and alarm areas</strong>
-                                </td>
-                                <td>It is recommended to couple the <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">internal motion detection</a> with the external sensor. Please be aware, that you have to have at least one detection area active, when using the coupled state.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Activate internal PIR sensor</strong>
-                                </td>
-                                <td><strong>Only IN-6014 HD</strong> - Activate the internal passive infrared sensor (PIR Motion Detector) to trigger an alert once a person enters the surveillance area. You can deactivate the <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">alarm areas</a> once the PIR sensor is active.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Link PIR and motion detect areas</strong>
-                                </td>
-                                <td><strong>Only IN-6014 HD</strong> - You can also couple the <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">alarm areas</a> with the internal PIR sensor. Use this function to effectively screen out false alerts. Please be aware, that you have to at least activate one of the alarm areas to use this function! You also have to deactivate both the <a href="/Products/Software/iOS">Eye Symbol</a> as well as the <a href="/Products/Software/iOS">Burglar Symbol</a> in our smartphone app to deactivate the alarm.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>Activate acoustic signal</strong>
-                                </td>
-                                <td><strong>Only IN-6014 HD</strong> - Set if you want your camera to play an alarm signal in case of an alarm. For <u>all other camera models</u> have this function in the <a href="/Web_User_Interface/1080p_Series/Multimedia/Audio/">Audio Menu</a>.</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <!-- /margin -->
+      <div class="wrap mobile-down">
+          <div class="content">
+              <section class="hero webUI">
+                  <div class="container">
+                      <div class="row">
+                          <div class="six columns">
+                              <div class="intro-container">
+                                  <h1>Actions Overlay</h1>
+                                  <p class="intro">
+                                    Adjust the cameras behaviour in case of a motion alert trigger event. You can set the camera to send you an email and to save snapshots or videos on your SD card. Please make sure you set your <a href="/Web_User_Interface/1080p_Series/Alarm/SMTP_Server/">SMTP Server settings</a> before activating the <a href="/Web_User_Interface/1080p_Series/Alarm/Email/">email notification</a> and that you have a SD card in your cameras SDHC card slot (max. 32 GB) to use the <a href="/Web_User_Interface/1080p_Series/Recording/">video recording</a> and <a href="/Web_User_Interface/1080p_Series/Alarm/FTP/">send-to-FTP function</a> - a 4 GB SD card is included in the delivery.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <!-- /Hero -->
+          </div>
+          <!-- /Content -->
+      </div>
+      <!-- /Wrap -->
 
-                    <div class="margin">
-                        <h3>What do you want the Camera to do in Case of an Alarm</h3>
-                        <p>Adjust the cameras behaviour in case of a motion alert trigger event. You can set the camera to send you an email and to save snapshots or videos on your SD card. Please make sure you set your <a href="/Web_User_Interface/1080p_Series/Alarm/SMTP_Server/">SMTP server settings</a> before activating the <a href="/Web_User_Interface/1080p_Series/Alarm/Email/">email notification</a> and that you have a SD card in your cameras SDHC card slot (max. 32 GB) to use the <a href="/Web_User_Interface/1080p_Series/Recording/">video recording</a> and <a href="/Web_User_Interface/1080p_Series/Alarm/FTP/">send-to-FTP function</a> - a 4 GB SD card is included in the delivery.</p>
-                    </div>
-                    <!-- /margin -->
+    <div class="wrap">
+        <div class="container main">
 
-                    <div class="margin">
-                        <h3>Software-based Motion Detection</h3>
-                        <p>The software-based motion detection used by your camera for the activated <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">Alarm Areas</a> does not need any additional hardware to work and can be very precise in controlled indoor environments. The disadvantage is that the detection does not discriminate causes for changes inside the cameras field of view - a cloud moving by in front of the sun, raindrops or vegetation moving in the wind. Everything can cause an alarm.</p>
-                    </div>
-                    <!-- /margin -->
+            <nav class="desktop-up">
+                <ul class="margin">
+                    <li>
+                        <h2>1080p</h2>
+                    </li>
+                    <li>
+                        <h3><a href="/Web_User_Interface/1080p_Series/">Web User Interface</a></h3>
+                    </li>
+                    <hr>
+                    <li>
+                        <h4><a href="/Web_User_Interface/1080p_Series/Live_Video/">Live Video</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></h4>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Multimedia/Audio/">Audio</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Multimedia/Video/">Video</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Multimedia/Image/">Image</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Multimedia/Privacy_Mask/">Privacy Mask</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <h4><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></h4>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Alarm/Actions/">Actions</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">Areas</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Alarm/Schedule/">Schedule</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Alarm/Push_Service/">Push Service</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Alarm/Alarm_Server/">Alarm Server</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <h4><a href="/Web_User_Interface/1080p_Series/Recording/">Recording Task</a></h4>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Recording/Photoseries/">Photoseries</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Recording/Video/">Video</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <h4><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></h4>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Network/IP_Configuration/">IP Configuration</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Network/WiFi/">WiFi</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">Remote Access</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Network/FTP/">FTP</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Network/UPnP/">UPnP</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Network/ONVIF/">ONVIF</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <h4><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></h4>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Features/IR_LEDs/">IR LEDs</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Features/PTZ/">PTZ</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Features/SD_Card/">SD Card</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Features/Status_LED/">Status LED</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/Features/PTZ_Tour/">PTZ Tour</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <h4><a href="/Web_User_Interface/1080p_Series/System/">System</a></h4>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/System/Info/">Info</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/System/Email/">Email</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/System/User/">User</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/System/Date_Time/">Date &amp; Time</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/System/Language/">Language</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/System/Log/">System Log</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/System/Update/">Update</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/System/Reboot/">Reboot</a>
+                        </li>
+                        <li>
+                            <a href="/Web_User_Interface/1080p_Series/System/Reset/">Reset</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <h4><a href="/Web_User_Interface/1080p_Series/Cloud/">Cloud</a></h4>
+                    </li>
+                </ul>
+            </nav>
 
-                    <div class="margin">
-                        <h3>Use an external Sensor</h3>
-                        <p>You can use a motion detector like the <a href="/Products/IN-Motion">IN-Motion 500</a> to improve the detection rate of your camera (Only cameras with an Alarm-In contact) if your camera does not yet come with a PIR motion sensor equipped like the IN-6014 HD. Simply connect the sensor to the alarm input and activate the external input. The camera will trigger an alarm when the pins 3&amp;4 are bridged and the relay state is set to closed on alarm (n.o. “Normally Open”). If it is set to open on alarm, the alarm will be triggered once the circuit is broken by the relay inside the detector (n.c. “Normally Closed”) or if the wire is disconnected. The state you have to choose depends on your sensor - the wrong choice will give a continuous alert once the detector is connected.</p>
-                    </div>
-                    <!-- /margin -->
+              <article>
+                  <!-- article -->
 
-                    <div class="dangercard">
-                        <p><strong><u>Remark:</u></strong><br/><br/>When you are using an external sensor (or the internal PIR sensor in case of the IN-6014 HD), then you have to either deactivate the internal motion detection (Alarm Areas) or have to couple it with the Alarm Input! The alarm cannot be triggered otherwise.<br/><br/>Once you coupled both detection methods, you always have to deactivate both to deactivate the motion detection!</p>
-                    </div>
-                    <!-- /margin -->
+                  <div class="margin">
+                      <h2 class="post-title">Set what your Camera should do in Case of an Alert</h2>
+                  </div>
+                  <!-- /margin -->
 
-                    <div class="margin">
-                        <h3>Use the internal Sensor (<strong>IN-6014 HD</strong>)</h3>
-                        <p>Activating the internal or external PIR sensor allows you to limit the motion detection to bodies whose temperature differs from the background. In most cases, this will be a person or animal in front of the cameras or the warm motor of a car. Changes in light conditions, fog in front of the camera at night or movements in the wind will not be detected by the PIR sensor.<br/><br/>By coupling the PIR sensor with the detection areas, you will only get an alarm event if both detection methods were triggered at the same time. This will greatly reduce the number of false alerts you might have. But be aware that it also might eliminate a few positive alerts.</p>
-                    </div>
-                    <!-- /margin -->
+                  <div class="margin">
+                      <h3>What do you want the Camera to do in Case of an Alarm</h3>
+                      <p>Adjust the cameras behaviour in case of a motion alert trigger event. You can set the camera to send you an email and to save snapshots or videos on your SD card. Please make sure you set your <a href="/Web_User_Interface/1080p_Series/Alarm/SMTP_Server/">SMTP server settings</a> before activating the <a href="/Web_User_Interface/1080p_Series/Alarm/Email/">email notification</a> and that you have a SD card in your cameras SDHC card slot (max. 32 GB) to use the <a href="/Web_User_Interface/1080p_Series/Recording/">video recording</a> and <a href="/Web_User_Interface/1080p_Series/Alarm/FTP/">send-to-FTP function</a> - a 4 GB SD card is included in the delivery.</p>
+                  </div>
+                  <!-- /margin -->
 
-                    <div class="margin">
-                        <h3>Switch external devices in case of an alarm (or manually)</h3>
-                        <p>The external output connects to a relay inside the camera that can be switched manually or automatically in case of an alarm event. Please check Activate External Output to let the camera open or close a circuit with an external device connected to the pins 1&amp;2. The external output can be used with the cameras motion detection to activate signalling devices like sirens or LED lights. It can also be used to control connected devices manually, e.g. via our smartphone app. The relay can be connected to circuits with up to 60 V direct current / 125 V alternating current and max. 1 A.</p>
-                    </div>
-                    <!-- /margin -->
+                  <div class="margin">
+                      <h3>Software-based Motion Detection</h3>
+                      <p>The software-based motion detection used by your camera for the activated <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">Alarm Areas</a> does not need any additional hardware to work and can be very precise in controlled indoor environments. The disadvantage is that the detection does not discriminate causes for changes inside the cameras field of view - a cloud moving by in front of the sun, raindrops or vegetation moving in the wind. Everything can cause an alarm.</p>
+                  </div>
+                  <!-- /margin -->
 
-                </article>
-                <!-- /article -->
+                  <div class="margin">
+                    <div>
+                        <amp-img srcset="/images/1080p_webUI/1080p_Settings_Alarm_Actions.jpg 100w, /images/1080p_webUI/1080p_Settings_Alarm_Actions.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                    </div>
+                  </div>
+                  <!-- /margin -->
+
+                  <div class="margin">
+                      <table>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Send Alarm Email</strong>
+                              </td>
+                              <td>All alarm actions can be triggerd by the <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">motion detection areas</a>, the alarm input as well as the <a href="/Web_User_Interface/1080p_Series/Alarm/Audio_Alarm/">audio alarm</a>. Here you can activate the alarm notification by email. Please be aware, that you first have to set your <a href="/Web_User_Interface/1080p_Series/Alarm/SMTP_Server/">outgoing mail server (SMTP)</a> and <a href="/Web_User_Interface/1080p_Series/Alarm/Email/">email receiver</a>.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Send Alarm Video to SD Card</strong>
+                              </td>
+                              <td>Activate to save a video on the internal <a href="/Web_User_Interface/1080p_Series/Alarm/SD_Card/">SD Card</a> in case of an alarm. An alarm video file name always starts with an <strong>A</strong> and continuous with a time stamp. Your camera always records 3 seconds before the alarm event and 15 seconds after the trigger.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Send Alarm Video to FTP Server</strong>
+                              </td>
+                              <td>Activate sending a video to your FTP server after an alarm trigger. Please be aware, that you first have to set your <a href="/Web_User_Interface/1080p_Series/Alarm/FTP/">FTP Server Information</a>.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Send Alarm Snapshot to SD Card</strong>
+                              </td>
+                              <td>Activate saving snapshots to the internal <a href="/Web_User_Interface/1080p_Series/Alarm/SD_Card/">SD card</a> in case of an alarm.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Send Alarm Snapshot to FTP Server</strong>
+                              </td>
+                              <td>Activate sending snapshots to your FTP server in case of an alarm. Please be aware, that you first have to set your FTP information in the <a href="/Web_User_Interface/1080p_Series/Alarm/FTP/">FTP menu</a>.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Snapshot Resolution</strong>
+                              </td>
+                              <td>Set the resolution used for the snapshots uploaded to FTP, Email or saved to SD card in case of an alarm.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Photos in Email</strong>
+                              </td>
+                              <td>Set how many snapshots you want to be attached to an alarm email. Please be aware, that the email might be delayed if you attach too many images. If you want to be notified without a delay, please use the <a href="/Web_User_Interface/1080p_Series/Network/Push_Service/">Push Service</a>.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Photos on SD Card</strong>
+                              </td>
+                              <td>Set how many images you want to be saved to <a href="/Web_User_Interface/1080p_Series/Alarm/SD_Card/">SD card</a> in case of an alarm.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Photos per FTP Upload</strong>
+                              </td>
+                              <td>Set how many images you want your camera to send to your <a href="/Web_User_Interface/1080p_Series/Alarm/FTP/">FTP server</a> in case of an alarm.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Activate External Output</strong>
+                              </td>
+                              <td>Activate your cameras alarm output (not all camera models), and let your camera close the relay in case of an alarm.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Relay closing time in seconds</strong>
+                              </td>
+                              <td>Set for how long the alarm output relay should be closed in case of an alarm.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Activate external alarm input</strong>
+                              </td>
+                              <td>Activate your camera´s alarm input (not all camera models). Information about connecting an extern sensor can be found here. You can connect every sensor to your camera that is operated via a potential free contact.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Relay closing time in seconds</strong>
+                              </td>
+                              <td>Set for how long the alarm output relay should be closed in case of an alarm.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Activate external alarm input</strong>
+                              </td>
+                              <td>Activate your camera´s alarm input (not all camera models). Information about connecting an extern sensor can be found <a href="/Products/IN-Motion/">here</a>. You can connect every sensor to your camera that is operated via a potential free contact.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Electric circuit during alarm / Alarm device set to</strong>
+                              </td>
+                              <td>Set if your external sensor is configured to close the circuit in case of a detection or if it will open the contact (see also <a href="/Products/IN-Motion/">IN-Motion 500</a>). Please be aware that your camera will be in a constant state of alarm, if you set the alarm input to N.C. and you don´t connect an external sensor.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Link alarm input and alarm areas</strong>
+                              </td>
+                              <td>It is recommended to couple the <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">internal motion detection</a> with the external sensor. Please be aware, that you have to have at least one detection area active, when using the coupled state.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Activate internal PIR sensor</strong>
+                              </td>
+                              <td><strong>Only IN-6014 HD</strong> - Activate the internal passive infrared sensor (PIR Motion Detector) to trigger an alert once a person enters the surveillance area. You can deactivate the <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">alarm areas</a> once the PIR sensor is active.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Link PIR and motion detect areas</strong>
+                              </td>
+                              <td><strong>Only IN-8015 HD and IN-9008 HD</strong> - You can also couple the <a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">alarm areas</a> with the internal PIR sensor. Use this function to effectively screen out false alerts. Please be aware, that you have to at least activate one of the alarm areas to use this function! You also have to deactivate both the <a href="/Products/Software/iOS">Eye Symbol</a> as well as the <a href="/Products/Software/iOS">Burglar Symbol</a> in our smartphone app to deactivate the alarm.</td>
+                          </tr>
+                          <tr>
+                              <td width="20%">
+                                  <strong>Activate acoustic signal</strong>
+                              </td>
+                              <td><strong>Only IN-6014 HD</strong> - Set if you want your camera to play an alarm signal in case of an alarm. For <u>all other camera models</u> have this function in the <a href="/Web_User_Interface/1080p_Series/Multimedia/Audio/">Audio Menu</a>.</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <!-- /margin -->
+
+                  <div class="margin">
+                      <h3>Use an external Sensor</h3>
+                      <p>You can use a motion detector like the <a href="/Products/IN-Motion">IN-Motion 500</a> to improve the detection rate of your camera (Only cameras with an Alarm-In contact) if your camera does not yet come with a PIR motion sensor equipped like the IN-6014 HD. Simply connect the sensor to the alarm input and activate the external input. The camera will trigger an alarm when the pins 3&amp;4 are bridged and the relay state is set to closed on alarm (n.o. “Normally Open”). If it is set to open on alarm, the alarm will be triggered once the circuit is broken by the relay inside the detector (n.c. “Normally Closed”) or if the wire is disconnected. The state you have to choose depends on your sensor - the wrong choice will give a continuous alert once the detector is connected.</p>
+                  </div>
+                  <!-- /margin -->
+
+                  <div class="dangercard">
+                      <p><strong><u>Remark:</u></strong><br/><br/>When you are using an external sensor (or the internal PIR sensor in case of the IN-6014 HD), then you have to either deactivate the internal motion detection (Alarm Areas) or have to couple it with the Alarm Input! The alarm cannot be triggered otherwise.<br/><br/>Once you coupled both detection methods, you always have to deactivate both to deactivate the motion detection!</p>
+                  </div>
+                  <!-- /margin -->
+
+                  <div class="margin">
+                      <h3>Use the internal Sensor (<strong>IN-6014 HD</strong>)</h3>
+                      <p>Activating the internal or external PIR sensor allows you to limit the motion detection to bodies whose temperature differs from the background. In most cases, this will be a person or animal in front of the cameras or the warm motor of a car. Changes in light conditions, fog in front of the camera at night or movements in the wind will not be detected by the PIR sensor.<br/><br/>By coupling the PIR sensor with the detection areas, you will only get an alarm event if both detection methods were triggered at the same time. This will greatly reduce the number of false alerts you might have. But be aware that it also might eliminate a few positive alerts.</p>
+                  </div>
+                  <!-- /margin -->
+
+                  <div class="margin">
+                      <h3>Switch external devices in case of an alarm (or manually)</h3>
+                      <p>The external output connects to a relay inside the camera that can be switched manually or automatically in case of an alarm event. Please check Activate External Output to let the camera open or close a circuit with an external device connected to the pins 1&amp;2. The external output can be used with the cameras motion detection to activate signalling devices like sirens or LED lights. It can also be used to control connected devices manually, e.g. via our smartphone app. The relay can be connected to circuits with up to 60 V direct current / 125 V alternating current and max. 1 A.</p>
+                  </div>
+                  <!-- /margin -->
+              </article>
+              <!-- /article -->
+
             </div>
+            <!-- /container main -->
         </div>
+        <!-- /wrap-->
 
-        <section class="blade blog">
+        <section class="blade blog mobile-down">
 
             <div class="container wider">
                 <div class="row">
@@ -238,38 +379,43 @@
 
                 <div class="tab-container">
 
-                    <a class="tab" href="/Web_User_Interface/1080p_Series/Alarm/">
-                        <h3>The HD Web User Interface Alarm Overlay</h3>
-                        <div class="subtitle">Easy</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Multimedia/">
+                      <h3>Multimedia Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Web_User_Interface/1080p_Series/">
-                        <h3>The HD Web User Interface</h3>
-                        <div class="subtitle">Easy</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Alarm/">
+                      <h3>Alarm Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="#">
-                        <h3>Control your camera directly over CGI commands</h3>
-                        <div class="subtitle">Advanced</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Recording/">
+                      <h3>Recording Tasks Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Quick_Installation/WebUI_And_Firmware_Upgrade">
-                        <h3>How to Update your Cameras Firmware and User Interface</h3>
-                        <div class="subtitle">Intermediate</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Network/">
+                      <h3>Network Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Quick_Installation/Set_Up_A_Wireless_Connection">
-                        <h3>How to Connect your Camera via WiFi</h3>
-                        <div class="subtitle">Easy</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Features/">
+                      <h3>Features Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Quick_Installation/Creating_User_Accounts">
-                        <h3>Change the Default Login of your Camera</h3>
-                        <div class="subtitle">Easy</div>
-                    </a>
-                </div>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/System/">
+                      <h3>System Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                <a href="/Quick_Installation/" target="_blank">VIEW MORE</a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Cloud/">
+                      <h3>Cloud Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
+              </div>
+
+              <a href="/Web_User_Interface/1080p_Series/" target="_blank">VIEW MORE</a>
 
             </div>
         </section>

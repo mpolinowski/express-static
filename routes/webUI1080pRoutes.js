@@ -335,13 +335,13 @@ webUI1080pRouter.route('/Recording/Photoseries/')
           });
       });
 
-/* ###################################### fullHD Series Menu Bar ###################################### */
+/* ###################################### fullHD Series LiveVideo ###################################### */
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Menu_Bar/')
+webUI1080pRouter.route('/Live_Video/')
     .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Menu_Bar', {
-            title: 'Menu Bar',
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Live_Video', {
+            title: 'Live Video',
           });
       });
 
@@ -352,16 +352,6 @@ webUI1080pRouter.route('/Cloud/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Cloud', {
             title: 'INSTAR Cloud',
-          });
-      });
-
-/* ###################################### fullHD Series PTZ ###################################### */
-
-/* GET HD WebUI page. */
-webUI1080pRouter.route('/PTZ_Control/')
-    .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_PTZ_Control', {
-            title: 'PTZ Control',
           });
       });
 

@@ -25,38 +25,42 @@ searchRouter.route('/')
 searchRouter.route('/Results')
     .get(function(req, res) {
 
-      var userQuery = request.params.search_query;
+  var aggValue = req.query.agg_value;
+  var aggField = req.query.agg_field;
 
-      var searchParams = {
-        index: '_index',
-        body: {
+  var filter = {};
+  filter[aggField] = aggValue;
+
+  client.search({
+      index: _index,
+      type: _type,
+      body: {
           query: {
-            filtered: {
-              query: {
-                match: {
-                  // Match the query agains all of
-                  // the fields in the posts index
-                  _all: userQuery,
+              filtered: {
+                  query: {
+                      multi_match: {
+                          query: req.query.q,
+                          fields: ['title^100', 'tags^50', 'abstract^20', 'description^10', 'models^5', 'chapter^5', 'title2^5'],
+                          fuzziness: 1,
+                        },
+                    },
                 },
-              },
-            },
-          },
-        },
-      };
-      client.search(searchParams, function(err, res) {
-        console.trace(err.message);
-        res.render('Search_Results', {
-            title: 'INSTAR Wiki Search Results',
-            response: err.message,
-          });
 
-        response.render('Search_Results', {
-          results: res.hits.hits,
-          page: pageNum,
-          pages: Math.ceil(res.hits.total / perPage),
+            },
+        },
+    }).then(function(resp) {
+      res.render('Search_Results', {
           title: 'INSTAR Wiki Search Results',
+          response: resp,
+          query: req.query.q,
         });
-      });
+    }, function(err) {
+      console.trace(err.message);
+      res.render('Search_Results', {
+          title: 'INSTAR Wiki Search Results',
+          response: err.message,
+        });
     });
+});
 
 module.exports = searchRouter;
