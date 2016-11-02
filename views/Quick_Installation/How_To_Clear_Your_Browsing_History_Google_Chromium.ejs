@@ -7,63 +7,55 @@
 
     <body class="home">
 
-        <header class="fixed">
-          <div class="wrap">
-              <div class="container">
-                  <div class="clearfix">
-                      <div class="left-nav">
-                          <a href="/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                          </a>
-                      </div>
-                      <div class="right alt">
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-                          <a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </header>
+    <div class="wrap">
+        <div class="container main">
 
-        <section class="blade get-started">
-            <div class="container">
-                <div class="row">
-                    <div class="twelve columns">
-                      <h2>Erase your Browsing History in Google Chromium</h2>
-                      <p class="justify">Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software, but it still shows you the old version? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers:</p>
+            <% include ../_partials/content/_bluenav-qi.ejs %>
+
+            <section class="blade get-started">
+                <div class="container">
+                    <div class="row">
+                        <div class="twelve columns">
+                          <h2>Erase your Browsing History in Google Chromium</h2>
+                          <p class="justify">Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software, but it still shows you the old version? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers:</p>
+                        </div>
                     </div>
+
+                    <div class="margin">
+                        <amp-img src="/images/Chrome-Clean-History_01.png" width=800 height=335 layout="responsive" class="shadow"></amp-img>
+                        <p>Open the Options menu and choose <strong>Settings</strong>.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <amp-img src="/images/Chrome-Clean-History_02.png" width=800 height=428 layout="responsive" class="shadow"></amp-img>
+                        <p>Click on <strong>Advanced Settings</strong> and scroll down to the <strong>Privacy</strong> section.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <amp-img src="/images/Chrome-Clean-History_03.png" width=800 height=424 layout="responsive" class="shadow"></amp-img>
+                        <p>Click on <strong>Clear Browsing Data</strong>.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <amp-img src="/images/Chrome-Clean-History_04.png" width=800 height=427 layout="responsive" class="shadow"></amp-img>
+                        <p>Click on <strong>Clear Browsing Data</strong>.</p>
+                    </div>
+                    <!-- /margin -->
+
                 </div>
+            </section>
 
-                <div class="margin">
-                    <amp-img src="/images/Chrome-Clean-History_01.png" width=800 height=335 layout="responsive" class="shadow"></amp-img>
-                    <p>Open the Options menu and choose <strong>Settings</strong>.</p>
-                </div>
-                <!-- /margin -->
+          </div>
+          <!-- /Container -->
+        </div>
+        <!-- /wrap -->
 
-                <div class="margin">
-                    <amp-img src="/images/Chrome-Clean-History_02.png" width=800 height=428 layout="responsive" class="shadow"></amp-img>
-                    <p>Click on <strong>Advanced Settings</strong> and scroll down to the <strong>Privacy</strong> section.</p>
-                </div>
-                <!-- /margin -->
-
-                <div class="margin">
-                    <amp-img src="/images/Chrome-Clean-History_03.png" width=800 height=424 layout="responsive" class="shadow"></amp-img>
-                    <p>Click on <strong>Clear Browsing Data</strong>.</p>
-                </div>
-                <!-- /margin -->
-
-                <div class="margin">
-                    <amp-img src="/images/Chrome-Clean-History_04.png" width=800 height=427 layout="responsive" class="shadow"></amp-img>
-                    <p>Click on <strong>Clear Browsing Data</strong>.</p>
-                </div>
-                <!-- /margin -->
-
-            </div>
-        </section>
-
-        <section class="blade blog">
+        <section class="blade blog mobile-down">
 
             <div class="container wider">
                 <div class="row">

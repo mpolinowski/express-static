@@ -7,27 +7,9 @@
 
     <body class="home">
 
-        <header class="fixed">
-            <div class="wrap">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="left-nav">
-                            <a href="/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right alt">
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-                            <a href="/Internet_Access/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="wrap">
+        <div class="wrap mobile-down">
             <div class="content">
                 <section class="hero internetAccess">
                     <div class="container">
@@ -116,62 +98,56 @@
                     </div>
                     <!-- /margin -->
 
+                    <div class="card-container margin">
+                        <div class="card">
+                            <div class="image">
+                                <a href="/Internet_Access/DDNS_Provider/NoIP/">
+                                  <amp-img noloading height=150 width=200 layout=responsive src="/images/DDNS_No-IP.png"></amp-img>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4>No-IP (English)</h4>
+                            </div>
+                            <div class="action">
+                                <a href="/Internet_Access/DDNS_Provider/NoIP/">Read the Introduction</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <a href="/Internet_Access/DDNS_Provider/Selfhost/">
+                                  <amp-img noloading height=150 width=200 layout=responsive src="/images/DDNS_Selfhost.png"></amp-img>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4>Selfhost (German)</h4>
+                            </div>
+                            <div class="action">
+                                <a href="/Internet_Access/DDNS_Provider/Selfhost/">Read the Introduction</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <a href="/Internet_Access/DDNS_Provider/DDNSS/">
+                                  <amp-img noloading height=150 width=200 layout=responsive src="/images/DDNS_DDNSS.png"></amp-img>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4>DDNSS (German)</h4>
+                            </div>
+                            <div class="action">
+                                <a href="/Internet_Access/DDNS_Provider/DDNSS/">Read the Introduction</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Card-Container -->
+
                 </article>
                 <!-- /article -->
+
             </div>
             <!-- /container -->
         </div>
         <!-- /wrap -->
-
-        <section class="blade get-started">
-            <div class="container">
-
-                <div class="card-container">
-                    <div class="card">
-                        <div class="image">
-                            <a href="/Internet_Access/DDNS_Provider/NoIP/">
-                              <amp-img noloading height=150 width=200 layout=responsive src="/images/DDNS_No-IP.png"></amp-img>
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h4>No-IP (English)</h4>
-                        </div>
-                        <div class="action">
-                            <a href="/Internet_Access/DDNS_Provider/NoIP/">Read the Introduction</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                            <a href="/Internet_Access/DDNS_Provider/Selfhost/">
-                              <amp-img noloading height=150 width=200 layout=responsive src="/images/DDNS_Selfhost.png"></amp-img>
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h4>Selfhost (German)</h4>
-                        </div>
-                        <div class="action">
-                            <a href="/Internet_Access/DDNS_Provider/Selfhost/">Read the Introduction</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                            <a href="/Internet_Access/DDNS_Provider/DDNSS/">
-                              <amp-img noloading height=150 width=200 layout=responsive src="/images/DDNS_DDNSS.png"></amp-img>
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h4>DDNSS (German)</h4>
-                        </div>
-                        <div class="action">
-                            <a href="/Internet_Access/DDNS_Provider/DDNSS/">Read the Introduction</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Card-Container -->
-            </div>
-            <!-- /Container -->
-        </section>
-        <!-- /Cards -->
 
         <section class="blade blog">
 

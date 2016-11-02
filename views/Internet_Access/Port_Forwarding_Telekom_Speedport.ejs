@@ -7,27 +7,9 @@
 
     <body class="home">
 
-        <header class="fixed">
-            <div class="wrap">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="left-nav">
-                            <a href="/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right alt">
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-                            <a href="/Internet_Access/Port_Forwarding/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="wrap">
+        <div class="wrap mobile-down">
             <div class="content">
                 <section class="hero internetAccess">
                     <div class="container">
@@ -53,13 +35,15 @@
         <div class="wrap">
             <div class="container main">
 
+                <% include ../_partials/content/_bluenav-ia.ejs %>
+
                 <article>
                     <!-- article -->
 
                     <div class="margin">
                         <h3>Telekom Speedport (300, 500 and 700 Series)</h3>
                         <br>
-                        <amp-youtube data-videoid="ttyTWZGLLps" layout="responsive" width="480" height="270" alt="Telekom Speedport Port Forwarding" class="shadow"></amp-youtube>
+                        <amp-youtube data-videoid="ttyTWZGLLps" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
                         <br>
                         <p>In your router please click on <strong>Netzwerk</strong> and then choose <strong>NAT &amp; Portregeln</strong>. If you have a W500V Speedport router then you have to also choose <strong>Neues Gerät hinzufügen</strong> at NAT &amp; Portregeln so you add the camera as a new device in the router. Therefor you need to know the MAC address of your IP camera. You can check the cameras MAC address by opening the command line in windows which you find at "Start - Programs - Accessories - Command". This will open a small window in Dos Mode. Here you can simply type in "arp - a". This will list you all IP addresses that your computer is connected with including the MAC address. Search for your cameras IP and write down the MAC address of the camera. Now please go back in the Speedport router and add the device. All other Speedport routers normally do not need this setting.</p>
                     </div>
@@ -137,7 +121,7 @@
         </div>
         <!-- /wrap -->
 
-        <section class="blade blog">
+        <section class="blade blog mobile-down">
 
             <div class="container wider">
                 <div class="row">
