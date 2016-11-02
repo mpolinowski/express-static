@@ -2185,24 +2185,6 @@ flex: none
     background-color:#f7f7f9;
     border-radius:.25rem
 }
-footer {
-    padding: 40px 0 60px 100px;
-    background-color: #fff
-}
-footer p {
-    margin: 0;
-}
-footer .footer-image {
-    height: 25px;
-    width: 25px;
-    margin-left: 25px;
-    float: right;
-}
-footer .footer-text {
-    margin-top: 25px;
-    float: right;
-    font-size: 10px;
-}
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -2327,4 +2309,100 @@ nav ol li {
 
 .main h1 {
     margin-top: 0
+}
+
+/* Footer */
+
+.footer{
+	background-color: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 10px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer h3{
+	font: normal 36px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer .footer-links{
+	margin: 20px 0 12px;
+	padding: 0;
+  list-style: none;
+}
+
+.footer .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+/* Footer Center */
+
+.footer .footer-center{
+	width: 35%;
+}
+
+
+/* Footer Right */
+
+.footer .footer-right{
+	width: 20%;
+}
+
+.footer .footer-icons{
+	margin-top: 25px;
+}
+
+.footer .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+
+	.footer{
+		font: bold 14px sans-serif;
+	}
+
+	.footer .footer-left,
+	.footer .footer-center,
+	.footer .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
 }
