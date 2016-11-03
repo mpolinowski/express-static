@@ -7,88 +7,57 @@
 
     <body class="home">
 
-        <header class="fixed">
-          <div class="wrap">
-              <div class="container">
-                  <div class="clearfix">
-                      <div class="left-nav">
-                          <a href="/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                          </a>
-                      </div>
-                      <div class="right alt">
-                          <a href="/Search/" class="tab header-title">
-                            <amp-img class="placeholder shadow" src="/images/search.png" height="30px" width="30px" alt="Go Back"></amp-img>
-                          </a>
-                          <a href="/Products/IN-Route" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </header>
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-        <div class="wrap">
-            <div class="content">
+      <div class="wrap">
+          <div class="container main">
 
-                <section class="blade get-started">
-                    <div class="container">
-                        <div class="row">
-                            <div class="twelve columns">
-                                <h1>IN-Route P52</h1>
-                                <h2>Web User Interface</h2>
-                                <h3>Help</h3>
-                            </div>
-                        </div>
+            <% include ../_partials/content/_bluenav-p.ejs %>
 
-                        <div class="card-container">
-                            <div class="card">
-                                <div class="image">
-                                  <a href="/Products/IN-Route/Help/Features">
-                                    <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Help.png"></amp-img>
-                                  </a>
-                                </div>
-                                <div class="content">
-                                    <h3>Features</h3>
-                                </div>
-                                <div class="action">
-                                    <a href="/Products/IN-Route/Help/Features">Read More</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="image">
-                                  <a href="/Products/IN-Route/Help/About_Us">
-                                    <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_About.png"></amp-img>
-                                  </a>
-                                </div>
-                                <div class="content">
-                                    <h3>About Us</h3>
-                                </div>
-                                <div class="action">
-                                    <a href="/Products/IN-Route/Help/About_Us">Read More</a>
-                                </div>
-                            </div>
-                            <div class="card invisble">
-                            </div>
-                        </div>
-                        <!-- /Card Container -->
+                <article class="content">
 
+                    <div class="margin">
+                        <h1>IN-Route P52</h1>
+                        <h2>Web User Interface</h2>
+                        <h3>Help</h3>
                     </div>
-                    <!-- /Container -->
-                  </section>
-                  <!-- /blade -->
+
+                    <div class="card-container">
+                        <div class="twocard">
+                            <div class="image">
+                              <a href="/Products/IN-Route/Help/Features">
+                                <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Help.png"></amp-img>
+                              </a>
+                            </div>
+                            <div class="action">
+                                <h3>Features</h3>
+                                <br><br>
+                                <a href="/Products/IN-Route/Help/Features">Read More</a>
+                            </div>
+                        </div>
+                        <div class="twocard">
+                            <div class="image">
+                              <a href="/Products/IN-Route/Help/About_Us">
+                                <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_About.png"></amp-img>
+                              </a>
+                            </div>
+                            <div class="action">
+                                <h3>About Us</h3>
+                                <br><br>
+                                <a href="/Products/IN-Route/Help/About_Us">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Card Container -->
+
+                    </article>
+                    <!-- /article -->
                 </div>
                 <!-- /Content -->
               </div>
               <!-- /WRAP -->
 
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /Container -->
-
-                <section class="blade blog">
+                <section class="blade blog mobile-down">
 
                     <div class="container wider">
                         <div class="row">

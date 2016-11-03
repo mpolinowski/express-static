@@ -148,7 +148,8 @@ productRouter.route('/Indoor_Cameras/IN-8015_HD/Video_Streaming')
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-8015 HD Video Streaming',
           model: 'IN-8015_HD',
-		  type: 'Indoor'
+		  type: 'Indoor',
+		  uplink: '/Products/Indoor_Cameras/IN-8015_HD/Usermanual/'
         });
     });
 	
@@ -157,7 +158,8 @@ productRouter.route('/Indoor_Cameras/IN-8015_HD/Camera_Reset')
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-8015 HD Hardware Reset',
           model: 'IN-8015_HD',
-		  type: 'Indoor'
+		  type: 'Indoor',
+		  uplink: '/Products/Indoor_Cameras/IN-8015_HD/Usermanual/'
         });
     });
 	
@@ -295,6 +297,7 @@ productRouter.route('/Indoor_Cameras/IN-8015_HD')
 .get(function(req, res) {
   res.render('./Products/IN-8015_Overview', {
       title: 'IN-8015 HD Overview',
+	  uplink: '/Products/Indoor_Cameras/'
     });
 });
 
@@ -302,6 +305,7 @@ productRouter.route('/Indoor_Cameras/IN-8015_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Products/IN-8015_Usermanual', {
       title: 'IN-8015 HD Usermanual',
+	  uplink: '/Products/Indoor_Cameras/IN-8015_HD/'
     });
 });
 
@@ -309,6 +313,7 @@ productRouter.route('/Indoor_Cameras/IN-8015_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Products/IN-8015_Product_Features', {
       title: 'IN-8015 HD Product Features',
+	  uplink: '/Products/Indoor_Cameras/IN-8015_HD/Usermanual/'
     });
 });
 
@@ -316,6 +321,7 @@ productRouter.route('/Indoor_Cameras/IN-8015_HD/Point2Point')
 .get(function(req, res) {
   res.render('./Products/IN-8015_Point2Point', {
       title: 'IN-8015 HD Point 2 Point',
+	  uplink: '/Products/Indoor_Cameras/IN-8015_HD/Usermanual/'
     });
 });
 
@@ -323,6 +329,7 @@ productRouter.route('/Indoor_Cameras/IN-8015_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Products/IN-8015_Quick_Installation', {
       title: 'IN-8015 HD Quick Installation',
+	  uplink: '/Products/Indoor_Cameras/IN-8015_HD/Usermanual/'
     });
 });
 
@@ -330,13 +337,14 @@ productRouter.route('/Indoor_Cameras/IN-8015_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Products/IN-8015_Lense_Adjustment', {
       title: 'IN-8015 HD Lense Adjustment',
+	  uplink: '/Products/Indoor_Cameras/IN-8015_HD/Usermanual/'
     });
 });
 
 productRouter.route('/Indoor_Cameras/IN-8015_HD/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Products/IN-8015_Tech_Specs', {
-      title: 'IN-8015 HD Technical Specifications',
+      title: 'IN-8015 HD Technical Specifications'
     });
 });
 
@@ -344,6 +352,7 @@ productRouter.route('/Indoor_Cameras/IN-8015_HD/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-8015_Downloads', {
       title: 'IN-8015 HD Downloads',
+	  uplink: '/Products/Indoor_Cameras/IN-8015_HD/Usermanual/'
     });
 });  
   
@@ -822,6 +831,7 @@ productRouter.route('/Lenses')
 .get(function(req, res) {
   res.render('./Products/Lenses', {
       title: 'Camera Lenses',
+	  uplink: '/Products/',
     });
 });
 
@@ -830,6 +840,7 @@ productRouter.route('/Lenses/S-Mount/IN-0180')
 .get(function(req, res) {
   res.render('./Products/Lense_IN-0180', {
       title: 'IN-0180 Wideangle',
+	  uplink: '/Products/Lenses/',
     });
 });
 
@@ -837,6 +848,7 @@ productRouter.route('/Lenses/S-Mount/IN-0220')
 .get(function(req, res) {
   res.render('./Products/Lense_IN-0220', {
       title: 'IN-0220 Wideangle',
+	  uplink: '/Products/Lenses/',
     });
 });
 
@@ -844,6 +856,7 @@ productRouter.route('/Lenses/S-Mount/IN-0290')
 .get(function(req, res) {
   res.render('./Products/Lense_IN-0290', {
       title: 'IN-0290 Wideangle',
+	  uplink: '/Products/Lenses/',
     });
 });
 
@@ -851,6 +864,7 @@ productRouter.route('/Lenses/S-Mount/IN-0360')
 .get(function(req, res) {
   res.render('./Products/Lense_IN-0360', {
       title: 'IN-0360 Wideangle',
+	  uplink: '/Products/Lenses/',
     });
 });
 
@@ -858,6 +872,7 @@ productRouter.route('/Lenses/S-Mount/IN-0430')
 .get(function(req, res) {
   res.render('./Products/Lense_IN-0430', {
       title: 'IN-0430 Standard',
+	  uplink: '/Products/Lenses/',
     });
 });
 
@@ -865,6 +880,7 @@ productRouter.route('/Lenses/S-Mount/IN-0600')
 .get(function(req, res) {
   res.render('./Products/Lense_IN-0600', {
       title: 'IN-0600 Default',
+	  uplink: '/Products/Lenses/',
     });
 });
 
@@ -872,6 +888,7 @@ productRouter.route('/Lenses/S-Mount/IN-0800')
 .get(function(req, res) {
   res.render('./Products/Lense_IN-0800', {
       title: 'IN-0800 Tele',
+	  uplink: '/Products/Lenses/',
     });
 });
 
@@ -879,6 +896,7 @@ productRouter.route('/Lenses/S-Mount/IN-1200')
 .get(function(req, res) {
   res.render('./Products/Lense_IN-1200', {
       title: 'IN-1200 Tele',
+	  uplink: '/Products/Lenses/',
     });
 });
 
@@ -886,6 +904,7 @@ productRouter.route('/Lenses/S-Mount/IN-1600')
 .get(function(req, res) {
   res.render('./Products/Lense_IN-1600', {
       title: 'IN-1600 Tele',
+	  uplink: '/Products/Lenses/',
     });
 });
 
@@ -893,6 +912,7 @@ productRouter.route('/Lenses/S-Mount/Lense_Comparison')
 .get(function(req, res) {
   res.render('./Products/Lense_Comparison', {
       title: 'S-Mount Lense Comparison',
+	  uplink: '/Products/Lenses/',
     });
 });
 
@@ -902,6 +922,7 @@ productRouter.route('/IN-LAN')
 .get(function(req, res) {
   res.render('./Products/IN-LAN_500', {
       title: 'IN-LAN 500 Powerline Communication',
+	  uplink: '/Products/',
     });
 });
 
@@ -920,6 +941,7 @@ productRouter.route('/Power_over_Ethernet')
 .get(function(req, res) {
   res.render('./Products/IN-PoE_1000', {
       title: 'IN-PoE 1000 Power over Ethernet',
+	  uplink: '/Products/',
     });
 });
 
@@ -938,6 +960,7 @@ productRouter.route('/IN-Route')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/',
     });
 });
 
@@ -945,6 +968,7 @@ productRouter.route('/IN-Route/First_Steps')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_First_Steps', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/',
     });
 });
 
@@ -952,6 +976,7 @@ productRouter.route('/IN-Route/First_Steps/Introduction')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_First_Steps_Introduction', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/First_Steps/',
     });
 });
 
@@ -959,6 +984,7 @@ productRouter.route('/IN-Route/First_Steps/Charging')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_First_Steps_Charging', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/First_Steps/',
     });
 });
 
@@ -966,6 +992,7 @@ productRouter.route('/IN-Route/First_Steps/Login')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_First_Steps_Login', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/First_Steps/',
     });
 });
 
@@ -973,6 +1000,7 @@ productRouter.route('/IN-Route/First_Steps/Wizard')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_First_Steps_Wizard', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/First_Steps/',
     });
 });
 
@@ -980,6 +1008,7 @@ productRouter.route('/IN-Route/First_Steps/Quick_Access')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_First_Steps_QA', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/First_Steps/',
     });
 });
 
@@ -987,6 +1016,7 @@ productRouter.route('/IN-Route/First_Steps/Quick_Access/Router_Modes')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_First_Steps_QA_Router', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/First_Steps/Quick_Access/',
     });
 });
 
@@ -994,6 +1024,7 @@ productRouter.route('/IN-Route/First_Steps/Quick_Access/Repeater_Mode')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_First_Steps_QA_Repeater', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/First_Steps/Quick_Access/',
     });
 });
 
@@ -1001,6 +1032,7 @@ productRouter.route('/IN-Route/First_Steps/Quick_Access/3G_Mode')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_First_Steps_QA_3G', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/First_Steps/Quick_Access/',
     });
 });
 
@@ -1008,6 +1040,7 @@ productRouter.route('/IN-Route/Overview')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Overview', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/',
     });
 });
 
@@ -1015,6 +1048,7 @@ productRouter.route('/IN-Route/Overview/Status')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_O_Status', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Overview/',
     });
 });
 
@@ -1022,6 +1056,7 @@ productRouter.route('/IN-Route/Overview/WAN_Status')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_O_WAN', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Overview/',
     });
 });
 
@@ -1029,6 +1064,7 @@ productRouter.route('/IN-Route/Overview/Mode')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_O_Mode', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Overview/',
     });
 });
 
@@ -1036,6 +1072,7 @@ productRouter.route('/IN-Route/Overview/File_Explorer')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_O_File', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Overview/',
     });
 });
 
@@ -1043,6 +1080,7 @@ productRouter.route('/IN-Route/Network')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Network', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/',
     });
 });
 
@@ -1050,6 +1088,7 @@ productRouter.route('/IN-Route/Network/LAN')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Network_LAN', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Network/',
     });
 });
 
@@ -1057,6 +1096,7 @@ productRouter.route('/IN-Route/Network/WiFi_Settings')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Network_WiFi', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Network/',
     });
 });
 
@@ -1064,6 +1104,7 @@ productRouter.route('/IN-Route/Network/Repeater_Settings')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Network_Repeater', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Network/',
     });
 });
 
@@ -1071,6 +1112,7 @@ productRouter.route('/IN-Route/Network/3G_Settings')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Network_3G', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Network/',
     });
 });
 
@@ -1078,6 +1120,7 @@ productRouter.route('/IN-Route/Network/Router_Mode')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Network_Router', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Network/',
     });
 });
 
@@ -1085,6 +1128,7 @@ productRouter.route('/IN-Route/Network/DHCP')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Network_DHCP', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Network/',
     });
 });
 
@@ -1092,6 +1136,7 @@ productRouter.route('/IN-Route/Network/DDNS')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Network_DDNS', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Network/',
     });
 });
 
@@ -1099,6 +1144,7 @@ productRouter.route('/IN-Route/Network/FTP')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Network_FTP', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Network/',
     });
 });
 
@@ -1106,6 +1152,7 @@ productRouter.route('/IN-Route/Firewall')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Firewall', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/',
     });
 });
 
@@ -1113,6 +1160,7 @@ productRouter.route('/IN-Route/Firewall/Port_Forwarding')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Firewall_Forwarding', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Firewall/',
     });
 });
 
@@ -1120,6 +1168,7 @@ productRouter.route('/IN-Route/Firewall/Device_Filter')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Firewall_Filter', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Firewall/',
     });
 });
 
@@ -1127,6 +1176,7 @@ productRouter.route('/IN-Route/Firewall/DMZ_Host')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Firewall_DMZ', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Firewall/',
     });
 });
 
@@ -1134,6 +1184,7 @@ productRouter.route('/IN-Route/Firewall/Webfilter')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Firewall_Webfilter', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Firewall/',
     });
 });
 
@@ -1141,6 +1192,7 @@ productRouter.route('/IN-Route/System')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_System', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/',
     });
 });
 
@@ -1148,6 +1200,7 @@ productRouter.route('/IN-Route/System/Log')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_System_Log', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/System/',
     });
 });
 
@@ -1155,6 +1208,7 @@ productRouter.route('/IN-Route/System/Login')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_System_Login', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/System/',
     });
 });
 
@@ -1162,6 +1216,7 @@ productRouter.route('/IN-Route/System/NTP_Setup')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_System_NTP', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/System/',
     });
 });
 
@@ -1169,6 +1224,7 @@ productRouter.route('/IN-Route/System/Statistics')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_System_Statistics', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/System/',
     });
 });
 
@@ -1176,6 +1232,7 @@ productRouter.route('/IN-Route/System/Import')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_System_Import', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/System/',
     });
 });
 
@@ -1183,6 +1240,7 @@ productRouter.route('/IN-Route/System/Reboot')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_System_Reboot', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/System/',
     });
 });
 
@@ -1190,6 +1248,7 @@ productRouter.route('/IN-Route/System/Upgrade')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_System_Upgrade', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/System/',
     });
 });
 
@@ -1197,6 +1256,7 @@ productRouter.route('/IN-Route/Help')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Help', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/',
     });
 });
 
@@ -1204,6 +1264,7 @@ productRouter.route('/IN-Route/Help/Features')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Help_Features', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Help/',
     });
 });
 
@@ -1211,6 +1272,7 @@ productRouter.route('/IN-Route/Help/About_Us')
 .get(function(req, res) {
   res.render('./Products/IN-Route_P52_Help_About', {
       title: 'IN-Route P52 Travel Router',
+	  uplink: '/Products/IN-Route/Help/',
     });
 });
 
@@ -1220,6 +1282,7 @@ productRouter.route('/IN-Motion')
 .get(function(req, res) {
   res.render('./Products/IN-Motion', {
       title: 'IN-Motion',
+	  uplink: '/Products/',
     });
 });
 
@@ -1553,6 +1616,7 @@ productRouter.route('/Software/Windows/iSpy')
 .get(function(req, res) {
   res.render('./Products/Windows_iSpy', {
       title: 'iSpy Connect',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1560,6 +1624,7 @@ productRouter.route('/Software/Windows/Sighthound')
 .get(function(req, res) {
   res.render('./Products/Windows_Sighthound', {
       title: 'Sighthound',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1567,6 +1632,7 @@ productRouter.route('/Software/Windows/P2P_Client')
 .get(function(req, res) {
   res.render('./Products/Windows_P2P_Client', {
       title: 'P2P Client',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1574,6 +1640,7 @@ productRouter.route('/Software/Windows/go1984')
 .get(function(req, res) {
   res.render('./Products/Windows_go1984', {
       title: 'Logiware go1984',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1581,6 +1648,7 @@ productRouter.route('/Software/Windows/VLC_Player')
 .get(function(req, res) {
   res.render('./Products/Windows_VLC', {
       title: 'VLC Player',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1588,6 +1656,7 @@ productRouter.route('/Software/Windows/CCTV_Chrome_Plugin')
 .get(function(req, res) {
   res.render('./Products/Windows_CCTV_Plugin', {
       title: 'CCTV Plugin',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1595,6 +1664,7 @@ productRouter.route('/Software/Windows/Blue_Iris')
 .get(function(req, res) {
   res.render('./Products/Windows_Blue_Iris', {
       title: 'Blue Iris',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1602,6 +1672,7 @@ productRouter.route('/Software/Windows/YAW_Cam')
 .get(function(req, res) {
   res.render('./Products/Windows_YAW_Cam', {
       title: 'YAW Cam',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1609,6 +1680,7 @@ productRouter.route('/Software/Windows/Zone_Trigger')
 .get(function(req, res) {
   res.render('./Products/Windows_Zone_Trigger', {
       title: 'Zone Trigger',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1616,6 +1688,7 @@ productRouter.route('/Software/Windows/Webcam_XP')
 .get(function(req, res) {
   res.render('./Products/Windows_Webcam_XP', {
       title: 'WebcamXP',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1623,6 +1696,7 @@ productRouter.route('/Software/Windows/Webcam_Motion_Detector')
 .get(function(req, res) {
   res.render('./Products/Windows_Webcam_Motion_Detector', {
       title: 'Webcam Motion Detector',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1630,6 +1704,7 @@ productRouter.route('/Software/Windows/Zebra_Surveillance')
 .get(function(req, res) {
   res.render('./Products/Windows_Zebra_Surveillance', {
       title: 'Zebra Surveillance',
+	  uplink: '/Products/Software/Windows/',
     });
 });
 
@@ -1645,6 +1720,7 @@ productRouter.route('/Software/macOS/Sighthound')
 .get(function(req, res) {
   res.render('./Products/Windows_Sighthound', {
       title: 'Sighthound',
+	  uplink: '/Products/Software/macOS/',
     });
 });
 
@@ -1652,6 +1728,7 @@ productRouter.route('/Software/macOS/EvoCam')
 .get(function(req, res) {
   res.render('./Products/macOS_EvoCam', {
       title: 'EvoCam',
+	  uplink: '/Products/Software/macOS/',
     });
 });
 
@@ -1659,6 +1736,7 @@ productRouter.route('/Software/macOS/VLC_Player')
 .get(function(req, res) {
   res.render('./Products/Windows_VLC', {
       title: 'VLC Player',
+	  uplink: '/Products/Software/macOS/',
     });
 });
 
@@ -1666,6 +1744,7 @@ productRouter.route('/Software/macOS/SecuritySpy')
 .get(function(req, res) {
   res.render('./Products/macOS_SecuritySpy', {
       title: 'SecuritySpy',
+	  uplink: '/Products/Software/macOS/',
     });
 });
 
@@ -1723,6 +1802,7 @@ productRouter.route('/Software/Android/TinyCam_Monitor')
 .get(function(req, res) {
   res.render('./Products/Android_TinyCam', {
       title: 'TinyCam Monitor',
+	  uplink: '/Products/Software/Android/',
     });
 });
 
@@ -1730,6 +1810,7 @@ productRouter.route('/Software/Android/IP_Cam_Viewer')
 .get(function(req, res) {
   res.render('./Products/Android_IP_CamViewer', {
       title: 'IP Cam Viewer',
+	  uplink: '/Products/Software/Android/',
     });
 });
 
@@ -1836,6 +1917,7 @@ productRouter.route('/Software/iOS/LiveCams')
 .get(function(req, res) {
   res.render('./Products/iOS_LiveCams', {
       title: 'LiveCams',
+	  uplink: '/Products/Software/iOS/',
     });
 });
 
@@ -1843,6 +1925,7 @@ productRouter.route('/Software/iOS/IP_Vision_Pro')
 .get(function(req, res) {
   res.render('./Products/iOS_IP_Vision_Pro', {
       title: 'IP VIsion Pro',
+	  uplink: '/Products/Software/iOS/',
     });
 });
 
@@ -1850,6 +1933,7 @@ productRouter.route('/Software/iOS/ICCAM')
 .get(function(req, res) {
   res.render('./Products/iOS_ICCAM', {
       title: 'ICCAM',
+	  uplink: '/Products/Software/iOS/',
     });
 });
 
@@ -1857,6 +1941,7 @@ productRouter.route('/Software/iOS/IP_Cam_Viewer')
 .get(function(req, res) {
   res.render('./Products/Android_IP_CamViewer', {
       title: 'IP Cam Viewer',
+	  uplink: '/Products/Software/iOS/',
     });
 });
 
@@ -1864,10 +1949,11 @@ productRouter.route('/Software/iOS/P2P_Cam_Live')
 .get(function(req, res) {
   res.render('./Products/iOS_P2P_Cam_Live', {
       title: 'P2P Cam Live',
+	  uplink: '/Products/Software/iOS/',
     });
 });
 
-/* ************************************ GET InstarVision for Windows Phone /Other_Platforms *************** */
+/* ************************************ GET /Other_Platforms *************** */
 productRouter.route('/Software/Other_Platforms')
 .get(function(req, res) {
   res.render('./Products/Other_Platforms', {
@@ -1879,6 +1965,7 @@ productRouter.route('/Software/Other_Platforms/InstarVision_Blackberry')
 .get(function(req, res) {
   res.render('./Products/Android_InstarVision_Blackberry', {
       title: 'InstarVision Blackberry',
+	  uplink: '/Products/Software/Other_Platforms/',
     });
 });
 
@@ -1886,6 +1973,7 @@ productRouter.route('/Software/Other_Platforms/QNAP')
 .get(function(req, res) {
   res.render('./Products/Other_Platforms_QNAP', {
       title: 'QNAP',
+	  uplink: '/Products/Software/Other_Platforms/',
     });
 });
 
@@ -1893,6 +1981,7 @@ productRouter.route('/Software/Other_Platforms/Synology')
 .get(function(req, res) {
   res.render('./Products/Other_Platforms_Synology', {
       title: 'Synology',
+	  uplink: '/Products/Software/Other_Platforms/',
     });
 });
 
@@ -1900,6 +1989,7 @@ productRouter.route('/Software/Other_Platforms/AVM_Fritzphone')
 .get(function(req, res) {
   res.render('./Products/Other_Platforms_AVM_Fritzphone', {
       title: 'AVM Fritzphone',
+	  uplink: '/Products/Software/Other_Platforms/',
     });
 });
 

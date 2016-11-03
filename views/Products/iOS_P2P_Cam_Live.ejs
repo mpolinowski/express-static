@@ -7,30 +7,12 @@
 
     <body class="home">
 
-        <header class="fixed">
-            <div class="wrap">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="left-nav">
-                            <a href="/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right alt">
-                            <a href="/Search/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/search.png" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                            <a href="/Products/Software/iOS/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-        <div class="wrap">
-            <div class="container main">
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../_partials/content/_bluenav-p.ejs %>
 
                 <article class="margin">
                     <!-- article -->
@@ -49,7 +31,7 @@
                       <p class="justify">Launch P2P Cam Live on your iPhone or iPad, click on the Add Camera button and search for P2P cameras on your local network. Select the camera you want to add and type in a camera name and your adminstrator password for the camera´s login. Click on Save in the top right corner to add your camera.</p>
                       <br>
                       <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/P2P_Cam_Live_(1).jpg"></amp-img>
                               </div>
@@ -57,15 +39,13 @@
                                   <p><strong>Fig1.</strong> Let the software search for P2P cameras on your local area network and select the camera you want to add.</p>
                               </div>
                           </div>
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/P2P_Cam_Live_(2).jpg"></amp-img>
                               </div>
                               <div class="action">
                                   <p><strong>Fig2.</strong> Type in a name and your admin password for the camera. Then click on Save to add your camera.</p>
                               </div>
-                          </div>
-                          <div class="card invisible">
                           </div>
                       </div>
                       <!-- Card Container -->
@@ -77,7 +57,7 @@
                       <p>Click the Camera button to go back to the camera list view. Select your camera to open it´s live stream. You can use the buttons below to take snapshots, record videos or activate the audio stream.</p>
                       <br>
                       <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/P2P_Cam_Live_(3).jpg"></amp-img>
                               </div>
@@ -85,15 +65,13 @@
                                   <p><strong>Fig3.</strong> Click on the Camera button to go back to the camera list. Select your camera to open it´s live stream.</p>
                               </div>
                           </div>
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/P2P_Cam_Live_(4).jpg"></amp-img>
                               </div>
                               <div class="action">
                                   <p><strong>Fig4.</strong> Click on the media buttons in the lower left corner to take snapshots, record a video or activate the audio stream.</p>
                               </div>
-                          </div>
-                          <div class="card invisible">
                           </div>
                       </div>
                       <!-- Card Container -->
@@ -107,7 +85,7 @@
         </div>
         <!-- /wrap -->
 
-        <section class="blade blog">
+        <section class="blade blog mobile-down">
 
             <div class="container wider">
                 <div class="row">

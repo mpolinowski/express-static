@@ -7,28 +7,12 @@
 
     <body class="home">
 
-        <header class="fixed">
-          <div class="wrap">
-              <div class="container">
-                  <div class="clearfix">
-                      <div class="left-nav">
-                          <a href="/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                          </a>
-                      </div>
-                      <div class="right alt">
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-                          <a href="/Products/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </header>
+      <div class="wrap">
+          <div class="container main">
 
-        <div class="wrap">
-            <div class="content">
+            <% include ../_partials/content/_bluenav-p.ejs %>
 
                 <section class="blade get-started">
                     <div class="container">
@@ -43,35 +27,41 @@
                         </div>
 
                         <div class="card-container">
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
                                     <amp-img noloading height=367 width=500 layout=responsive src="/images/IN-PoE_1000_web.png"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-PoE 1000</h3>
                                     <br>
                                     <p>The <a href="http://www.instar.de/accessories/poe-accessories/in-poe1000-poe-injector-black.html" target="_blank">IN-PoE 1000</a> Power-over-Ethernet adapter to power your PoE devices - available in black or white.</p>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
                                     <amp-img noloading height=367 width=500 layout=responsive src="/images/IN-PoE100_web_black_1.jpg"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-PoE 1000</h3>
                                     <br>
                                     <p>The <a href="http://www.instar.de/accessories/poe-accessories/in-poe1000-poe-injector-white.html" target="_blank">IN-PoE 1000</a> Power-over-Ethernet adapter - the plug&amp;play companion for your PoE IP camera.</p>
                                 </div>
                             </div>
-                            <div class="card">
+                        </div>
+                        <!-- /Card Container -->
+
+                        <div class="card-container">
+                            <div class="twocard">
                                 <div class="image">
                                     <amp-img noloading height=367 width=500 layout=responsive src="/images/IN-PoE_8000_web.png"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-PoE 8/4000</h3>
                                     <br>
                                     <p>The <a href="http://www.instar.de/accessories/poe-accessories/in-poe-8000-poe-switch.html" target="_blank">IN-PoE 8000</a> or <a href="http://www.instar.de/accessories/poe-accessories/in-poe-4000-poe-switch.html" target="_blank">IN-PoE 4000</a> Power over Ethernet Switches for 4 or 8 INSTAR PoE Cameras.</p>
                                 </div>
+                            </div>
+                            <div class="twocard invisible">
                             </div>
                         </div>
                         <!-- /Card Container -->
@@ -91,27 +81,22 @@
                             </ul>
                         </div>
                         <!-- /margin -->
-                        
-                        <div class="boxes">
-                          <div class="box shadow">
-                            <div class="box__inner">
-                              <div class="box__content">
-                                  <h2>Content:</h2>
-                                  <br><br>
-                                  <ul>
-                                    <li>1x IN-PoE1000 (PoE Injector) in black or white</li>
-                                    <li>1x Power cable</li>
-                                    <li>1x Quick installation guide</li>
-                                  </ul>
-                              </div>
-                              <!-- /box__content -->
+
+                        <div class="card-container">
+                            <div class="twocard">
+                                <div class="action">
+                                    <h2>Content:</h2>
+                                    <br><br>
+                                    <ul>
+                                      <li>1x IN-PoE1000 (PoE Injector) in black or white</li>
+                                      <li>1x Power cable</li>
+                                      <li>1x Quick installation guide</li>
+                                      <br><br><br><br><br>
+                                    </ul>
+                                </div>
                             </div>
-                            <!-- /box__inner -->
-                          </div>
-                          <!-- /box -->
-                          <div class="box shadow">
-                            <div class="box__inner">
-                              <div class="box__content">
+                            <div class="twocard">
+                                <div class="action">
                                   <h2>Specifications</h2>
                                   <br><br>
                                   <ul>
@@ -120,14 +105,10 @@
                                     <li>Output voltage: up to 48V @ 35 W</li>
                                     <li>Weight x height x depth: 88 x 51 x 166 mm</li>
                                   </ul>
-                              </div>
-                              <!-- /box__content -->
+                                </div>
                             </div>
-                            <!-- /box__inner -->
-                          </div>
-                          <!-- /box -->
                         </div>
-                        <!-- /boxes -->
+                        <!-- /Card Container -->
 
                     </div>
                     <!-- /Container -->
@@ -139,7 +120,7 @@
               </div>
               <!-- /WRAP -->
 
-                <section class="blade blog">
+                <section class="blade blog mobile-down">
 
                     <div class="container wider">
                         <div class="row">
