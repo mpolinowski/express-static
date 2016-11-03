@@ -159,7 +159,7 @@ ___
 
 Choose your version and download the source:
 ```
- curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+ curl --silent --location https://rpm.nodesource.com/setup_7.x | bash -
 ```
 
 * **Step Two** — Install Node.js

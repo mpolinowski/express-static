@@ -7,27 +7,9 @@
 
     <body class="home">
 
-        <header class="fixed">
-            <div class="wrap">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="left-nav">
-                            <a href="/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right alt">
+      <% include ../../_partials/amp/_amp-header.ejs %>
 
-                            <a href="/Web_User_Interface/720p_Series/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="wrap">
+        <div class="wrap mobile-down">
             <div class="content">
                 <section class="hero webUI">
                     <div class="container">
@@ -49,67 +31,74 @@
         </div>
         <!-- /Wrap -->
 
-        <section class="blade get-started">
-            <div class="container">
-                <div class="row">
-                    <div class="twelve columns">
-                        <h1>Video Menu Bar</h1>
-                        <p>
-                          Only <a href="/Web_User_Interface/720p_Series/Recording/Video/">ActiveX Video Plugin</a>
-                        </p>
-                    </div>
-                </div>
+      <div class="wrap">
+          <div class="container main">
 
-                <div class="card-container">
-                    <div class="card">
-                        <div class="image">
-                            <amp-img noloading height=90 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_Audio.png"></amp-img>
-                        </div>
-                        <div class="content">
-                            <h4>Camera Microfone</h4>
-                            <p>Click here to activate the cameras audiostream. Adjust the volume in the <a href="/Web_User_Interface/720p_Series/Multimedia/Audio/">Audio Menu</a>.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                            <amp-img noloading height=90 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_Microphone.png"></amp-img>
-                        </div>
-                        <div class="content">
-                            <h4>Camera Loudspeaker</h4>
-                            <p>In case your PC is equipped with a microphone click here to activate the audio-out of your camera.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                            <amp-img noloading height=90 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_Zoom.png"></amp-img>
-                        </div>
-                        <div class="content">
-                            <h4>Digital Zoom</h4>
-                            <p>Click here to adjust the cameras 3 x digital zoom - use the 3rd button to bring it back to normal.</p>
-                        </div>
-                    </div>
-                </div>
+              <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
 
-                <div class="card-container">
-                    <div class="card">
-                        <div class="image">
-                            <amp-img noloading height=224 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_RecPath.png"></amp-img>
-                        </div>
-                        <div class="content">
-                            <h4>Record Path</h4>
-                            <p>Here you can set the record path for your <a href="/Web_User_Interface/720p_Series/Video_Menu_Bar/">manually recorded</a> videos and snapshots. The set path is used by all your INSTAR HD Cameras! Your camera will automatically create subdirectories with the current date and its IP address when you start recording or take a snapshot. All snapshots will be saved in the subdirectory Snap and all videos in the subdirectory Record.</p>
-                        </div>
-                    </div>
-                    <div class="card invisible">
-                    </div>
-                    <div class="card invisible">
-                    </div>
-                </div>
+              <section class="blade get-started">
+                  <div class="container">
+                      <div class="row">
+                          <div class="twelve columns">
+                              <h1>Video Menu Bar</h1>
+                              <p>
+                                Only <a href="/Web_User_Interface/720p_Series/Recording/Video/">ActiveX Video Plugin</a>
+                              </p>
+                          </div>
+                      </div>
 
-            </div>
-        </section>  <!-- /Cards -->
+                      <div class="card-container">
+                          <div class="twocard">
+                              <div class="image">
+                                  <amp-img noloading height=90 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_Audio.png"></amp-img>
+                              </div>
+                              <div class="content">
+                                  <h4>Camera Microfone</h4>
+                                  <p>Click here to activate the cameras audiostream. Adjust the volume in the <a href="/Web_User_Interface/720p_Series/Multimedia/Audio/">Audio Menu</a>.</p>
+                              </div>
+                          </div>
+                          <div class="twocard">
+                              <div class="image">
+                                  <amp-img noloading height=90 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_Microphone.png"></amp-img>
+                              </div>
+                              <div class="content">
+                                  <h4>Camera Loudspeaker</h4>
+                                  <p>In case your PC is equipped with a microphone click here to activate the audio-out of your camera.</p>
+                              </div>
+                          </div>
+                      </div>
 
-        <section class="blade blog">
+                      <div class="card-container">
+                          <div class="twocard">
+                              <div class="image">
+                                  <amp-img noloading height=90 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_Zoom.png"></amp-img>
+                              </div>
+                              <div class="content">
+                                  <h4>Digital Zoom</h4>
+                                  <p>Click here to adjust the cameras 3 x digital zoom - use the 3rd button to bring it back to normal.</p>
+                              </div>
+                          </div>
+                          <div class="twocard">
+                              <div class="image">
+                                  <amp-img noloading height=224 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_RecPath.png"></amp-img>
+                              </div>
+                              <div class="content">
+                                  <h4>Record Path</h4>
+                                  <p>Here you can set the record path for your <a href="/Web_User_Interface/720p_Series/Video_Menu_Bar/">manually recorded</a> videos and snapshots. The set path is used by all your INSTAR HD Cameras! Your camera will automatically create subdirectories with the current date and its IP address when you start recording or take a snapshot. All snapshots will be saved in the subdirectory Snap and all videos in the subdirectory Record.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </section>
+              <!-- /Cards -->
+
+          </div>
+          <!-- /Container -->
+        </div>
+        <!-- /Wrap -->
+
+        <section class="blade blog mobile-down">
 
             <div class="container wider">
                 <div class="row">

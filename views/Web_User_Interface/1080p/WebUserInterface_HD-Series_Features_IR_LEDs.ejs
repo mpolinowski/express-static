@@ -7,25 +7,7 @@
 
     <body class="home">
 
-        <header class="fixed">
-            <div class="wrap">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="left-nav">
-                            <a href="/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right alt">
-
-                            <a href="/Web_User_Interface/1080p_Series/Features/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+      <% include ../../_partials/amp/_amp-header.ejs %>
 
         <div class="wrap mobile-down">
             <div class="content">
@@ -51,6 +33,8 @@
 
         <div class="wrap">
             <div class="container main">
+
+                <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
 
                 <article>
                     <!-- article -->
@@ -91,13 +75,15 @@
                         <p><strong>Please be aware</strong><br/><br/>that it is not possible to permanently activate the IR LEDs. If you deactivate the IR LEDs by night you might get false alerts from the internal motion detection. In this case, you will have to deactivate the motion detection during the night using the alarm schedule.</p>
                     </div>
                     <!-- /margin -->
-
                 </article>
                 <!-- /article -->
-            </div>
-        </div>
 
-        <section class="blade blog">
+              </div>
+              <!-- /container main -->
+          </div>
+          <!-- /wrap-->
+
+        <section class="blade blog mobile-down">
 
             <div class="container wider">
                 <div class="row">
@@ -108,38 +94,43 @@
 
                 <div class="tab-container">
 
-                    <a class="tab" href="/Web_User_Interface/1080p_Series/Features/">
-                        <h3>The HD Web User Interface System Overlay</h3>
-                        <div class="subtitle">Easy</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Multimedia/">
+                      <h3>Multimedia Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Web_User_Interface/720p_Series/">
-                        <h3>The HD Web User Interface</h3>
-                        <div class="subtitle">Easy</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Alarm/">
+                      <h3>Alarm Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="#">
-                        <h3>Control your camera directly over CGI commands</h3>
-                        <div class="subtitle">Advanced</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Recording/">
+                      <h3>Recording Tasks Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Quick_Installation/WebUI_And_Firmware_Upgrade">
-                        <h3>How to Update your Cameras Firmware and User Interface</h3>
-                        <div class="subtitle">Intermediate</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Network/">
+                      <h3>Network Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Quick_Installation/Set_Up_A_Wireless_Connection">
-                        <h3>How to Connect your Camera via WiFi</h3>
-                        <div class="subtitle">Easy</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Features/">
+                      <h3>Features Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Quick_Installation/Creating_User_Accounts">
-                        <h3>Change the Default Login of your Camera</h3>
-                        <div class="subtitle">Easy</div>
-                    </a>
-                </div>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/System/">
+                      <h3>System Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                <a href="/Quick_Installation/" target="_blank">VIEW MORE</a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Cloud/">
+                      <h3>Cloud Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
+              </div>
+
+              <a href="/Web_User_Interface/1080p_Series/" target="_blank">VIEW MORE</a>
 
             </div>
         </section>

@@ -7,27 +7,12 @@
 
     <body class="home">
 
-        <header class="fixed">
-            <div class="wrap">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="left-nav">
-                            <a href="/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right alt">
-
-                            <a href="/Web_User_Interface/1080p_Series/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+      <% include ../../_partials/amp/_amp-header.ejs %>
 
         <div class="wrap">
+            <div class="container main">
+
+                <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
 
             <section class="blade get-started">
                 <div class="container">
@@ -42,9 +27,11 @@
                     <div class="card-container margin">
                       <div class="twocard">
                           <div class="image">
-                              <amp-img noloading height=400 width=400 layout=responsive
-                                src="/images/1080p_webUI/QL-Box_WebUI_1080p_Recording_Video.png"></amp-img>
-                            </div>
+                              <a href="/Web_User_Interface/1080p_Series/Recording/Video/">
+                                <amp-img noloading height=400 width=400 layout=responsive
+                                  src="/images/1080p_webUI/QL-Box_WebUI_1080p_Recording_Video.png"></amp-img>
+                              </a>
+                          </div>
                           <div class="content">
                               <hr>
                               <p>Here you can activate the planned video recording. This function will record a video to the cameras internal SD card inside the time window defined by the Recording Schedule. You can set the resolution and length of each recorded video file.</p>
@@ -59,8 +46,10 @@
 
                         <div class="twocard">
                             <div class="image">
-                                <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Recording_Photoseries.png"></amp-img>
-                                </div>
+                                <a href="/Web_User_Interface/1080p_Series/Recording/Photoseries/">
+                                  <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Recording_Photoseries.png"></amp-img>
+                                </a>
+                            </div>
                             <div class="content">
                                 <hr>
                                 <p>Record snapshots in an adjustable time interval and stitch them together inside a Third-party Software to create a timelapse video. You can also choose to upload the snapshot with a fixed file name. This will always overwrite the last file and allows you to easily embedd a Live Image of your IP camera inside your homepage.</p>
@@ -72,17 +61,19 @@
                         <!-- /Card -->
                       </div>
                       <!-- Card Container -->
-
                 </div>
                 <!-- /Container -->
             </section>
             <!-- /Blade -->
-        </div>
-        <!-- /Wrapper -->
+
+          </div>
+          <!-- /container main -->
+      </div>
+      <!-- /wrap-->
 
         <!-- ------------------------------------ Related ------------------------------------------------------ -->
 
-        <section class="blade blog">
+        <section class="blade blog mobile-down">
 
             <div class="container wider">
                 <div class="row">
@@ -93,38 +84,38 @@
 
                 <div class="tab-container">
 
-                    <a class="tab" href="/Web_User_Interface/720p_Series/Network/Push_Service/">
-                        <h3>Activate the Alarm Push Notification for your Smartphone</h3>
-                        <div class="subtitle">Push Service</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Multimedia/">
+                      <h3>Multimedia Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Web_User_Interface/720p_Series/System/User/">
-                        <h3>Secure Access to your Camera</h3>
-                        <div class="subtitle">User Management</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Alarm/">
+                      <h3>Alarm Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Web_User_Interface/720p_Series/Multimedia/Image/">
-                        <h3>Change the displayed Name of your Cammera</h3>
-                        <div class="subtitle">Multimedia Image Settings</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Network/">
+                      <h3>Network Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Web_User_Interface/720p_Series/Alarm/Actions/">
-                        <h3>Define Actions to be taken by your Camera in case of an Alarm</h3>
-                        <div class="subtitle">Alarm Actions</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Features/">
+                      <h3>Features Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Web_User_Interface/720p_Series/Network/DDNS/">
-                        <h3>Scan the QR Code to add your Camera to our Smartphone App</h3>
-                        <div class="subtitle">DDNS Settings</div>
-                    </a>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/System/">
+                      <h3>System Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
 
-                    <a class="tab" href="/Web_User_Interface/720p_Series/Software/Update/">
-                        <h3>Check if an Update for your Camera is available</h3>
-                        <div class="subtitle">Software Update</div>
-                    </a>
-                </div>
+                  <a class="tab" href="/Web_User_Interface/1080p_Series/Cloud/">
+                      <h3>Cloud Menu</h3>
+                      <div class="subtitle">1080p Web User Interface</div>
+                  </a>
+              </div>
 
-                <a href="/Web_User_Interface/720p_Series/" target="_blank">VIEW MORE</a>
+              <a href="/Web_User_Interface/1080p_Series/" target="_blank">VIEW MORE</a>
 
             </div>
         </section>
