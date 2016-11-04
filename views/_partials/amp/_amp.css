@@ -660,6 +660,10 @@ header .left-nav {
     letter-spacing: 0.04em;
     margin-left: 0;
 }
+.left-align {
+  float: left;
+  margin-left: -15px;
+}
 @media only screen and (max-width: 870px) {
     header .left-nav {
         -webkit-box-pack: start;

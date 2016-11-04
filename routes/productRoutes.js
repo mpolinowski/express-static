@@ -40,7 +40,8 @@ productRouter.route('/Outdoor_Cameras/IN-7011_HD/Video_Streaming')
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-7011 HD Video Streaming',
           model: 'IN-7011_HD',
-		  type: 'Outdoor'
+		  type: 'Outdoor',
+		  uplink: '/Products/Outdoor_Cameras/IN-7011_HD/Usermanual/'
         });
     });
 	
@@ -49,7 +50,8 @@ productRouter.route('/Outdoor_Cameras/IN-7011_HD/Camera_Reset')
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-7011 HD Hardware Reset',
           model: 'IN-7011_HD',
-		  type: 'Outdoor'
+		  type: 'Outdoor',
+		  uplink: '/Products/Outdoor_Cameras/IN-7011_HD/Usermanual/'
         });
     });
 	
@@ -76,7 +78,8 @@ productRouter.route('/Outdoor_Cameras/IN-5907_HD/Video_Streaming')
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-5907 HD Video Streaming',
           model: 'IN-5907_HD',
-		  type: 'Outdoor'
+		  type: 'Outdoor',
+		  uplink: '/Products/Outdoor_Cameras/IN-5907_HD/Usermanual/'
         });
     });
 	
@@ -85,7 +88,8 @@ productRouter.route('/Outdoor_Cameras/IN-5907_HD/Camera_Reset')
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-5907 HD Hardware Reset',
           model: 'IN-5907_HD',
-		  type: 'Outdoor'
+		  type: 'Outdoor',
+		  uplink: '/Products/Outdoor_Cameras/IN-5907_HD/Usermanual/'
         });
     });
 	
@@ -112,7 +116,8 @@ productRouter.route('/Outdoor_Cameras/IN-5905_HD/Video_Streaming')
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-5905 HD Video Streaming',
           model: 'IN-5905_HD',
-		  type: 'Outdoor'
+		  type: 'Outdoor',
+		  uplink: '/Products/Outdoor_Cameras/IN-5905_HD/Usermanual/'
         });
     });
 	
@@ -121,7 +126,8 @@ productRouter.route('/Outdoor_Cameras/IN-5905_HD/Camera_Reset')
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-5905 HD Hardware Reset',
           model: 'IN-5905_HD',
-		  type: 'Outdoor'
+		  type: 'Outdoor',
+		  uplink: '/Products/Outdoor_Cameras/IN-5905_HD/Usermanual/'
         });
     });
 	
@@ -186,7 +192,8 @@ productRouter.route('/Indoor_Cameras/IN-6014_HD/Video_Streaming')
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-6014 HD Video Streaming',
           model: 'IN-6014_HD',
-		  type: 'Indoor'
+		  type: 'Indoor',
+		  uplink: '/Products/Indoor_Cameras/IN-6014_HD/Usermanual/'
         });
     });
 	
@@ -195,7 +202,8 @@ productRouter.route('/Indoor_Cameras/IN-6014_HD/Camera_Reset')
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-6014 HD Hardware Reset',
           model: 'IN-6014_HD',
-		  type: 'Indoor'
+		  type: 'Indoor',
+		  uplink: '/Products/Indoor_Cameras/IN-6014_HD/Usermanual/'
         });
     });
 	
@@ -222,7 +230,8 @@ productRouter.route('/Indoor_Cameras/IN-6012_HD/Video_Streaming')
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-6012 HD Video Streaming',
           model: 'IN-6012_HD',
-		  type: 'Indoor'
+		  type: 'Indoor',
+		  uplink: '/Products/Indoor_Cameras/IN-6012_HD/Usermanual/'
         });
     });
 	
@@ -231,7 +240,8 @@ productRouter.route('/Indoor_Cameras/IN-6012_HD/Camera_Reset')
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-6012 HD Hardware Reset',
           model: 'IN-6012_HD',
-		  type: 'Indoor'
+		  type: 'Indoor',
+		  uplink: '/Products/Indoor_Cameras/IN-6012_HD/Usermanual/'
         });
     });
 	
@@ -258,7 +268,8 @@ productRouter.route('/Indoor_Cameras/IN-6001_HD/Video_Streaming')
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-6001 HD Video Streaming',
           model: 'IN-6001_HD',
-		  type: 'Indoor'
+		  type: 'Indoor',
+		  uplink: '/Products/Indoor_Cameras/IN-6001_HD/Usermanual/'
         });
     });
 	
@@ -267,7 +278,8 @@ productRouter.route('/Indoor_Cameras/IN-6001_HD/Camera_Reset')
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-6001 HD Hardware Reset',
           model: 'IN-6001_HD',
-		  type: 'Indoor'
+		  type: 'Indoor',
+		  uplink: '/Products/Indoor_Cameras/IN-6001_HD/Usermanual/'
         });
     });
 
@@ -360,6 +372,7 @@ productRouter.route('/Indoor_Cameras/IN-6014_HD')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Overview', {
       title: 'IN-6014 HD Overview',
+	  uplink: '/Products/Indoor_Cameras/'
     });
 });
 
@@ -367,6 +380,7 @@ productRouter.route('/Indoor_Cameras/IN-6014_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Usermanual', {
       title: 'IN-6014 HD Usermanual',
+	  uplink: '/Products/Indoor_Cameras/IN-6014_HD/'
     });
 });
 
@@ -374,6 +388,7 @@ productRouter.route('/Indoor_Cameras/IN-6014_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Product_Features', {
       title: 'IN-6014 HD Product Features',
+	  uplink: '/Products/Indoor_Cameras/IN-6014_HD/Usermanual/'
     });
 });
 
@@ -381,6 +396,7 @@ productRouter.route('/Indoor_Cameras/IN-6014_HD/Point2Point')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Point2Point', {
       title: 'IN-6014 HD Point 2 Point',
+	  uplink: '/Products/Indoor_Cameras/IN-6014_HD/Usermanual/'
     });
 });
 
@@ -388,6 +404,7 @@ productRouter.route('/Indoor_Cameras/IN-6014_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Quick_Installation', {
       title: 'IN-6014 HD Quick Installation',
+	  uplink: '/Products/Indoor_Cameras/IN-6014_HD/Usermanual/'
     });
 });
 
@@ -395,6 +412,7 @@ productRouter.route('/Indoor_Cameras/IN-6014_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Lense_Adjustment', {
       title: 'IN-6014 HD Lense Adjustment',
+	  uplink: '/Products/Indoor_Cameras/IN-6014_HD/Usermanual/'
     });
 });
 
@@ -409,6 +427,7 @@ productRouter.route('/Indoor_Cameras/IN-6014_HD/Downloads')
 .get(function(req, res) {
   res.render('./Products/IN-6014_Downloads', {
       title: 'IN-6014 HD Downloads',
+	  uplink: '/Products/Indoor_Cameras/IN-6014_HD/Usermanual/'
     });
 });
 
@@ -423,6 +442,7 @@ productRouter.route('/Indoor_Cameras/IN-6012_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Products/IN-6012_Usermanual', {
       title: 'IN-6012 HD Usermanual',
+	  uplink: '/Products/Indoor_Cameras/IN-6012_HD/'
     });
 });
 
@@ -430,6 +450,7 @@ productRouter.route('/Indoor_Cameras/IN-6012_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Products/IN-6012_Product_Features', {
       title: 'IN-6012 HD Product Features',
+	  uplink: '/Products/Indoor_Cameras/IN-6012_HD/Usermanual/'
     });
 });
 
@@ -437,6 +458,7 @@ productRouter.route('/Indoor_Cameras/IN-6012_HD/Point2Point')
 .get(function(req, res) {
   res.render('./Products/IN-6012_Point2Point', {
       title: 'IN-6012 HD Point 2 Point',
+	  uplink: '/Products/Indoor_Cameras/IN-6012_HD/Usermanual/'
     });
 });
 
@@ -444,6 +466,7 @@ productRouter.route('/Indoor_Cameras/IN-6012_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Products/IN-6012_Quick_Installation', {
       title: 'IN-6012 HD Quick Installation',
+	  uplink: '/Products/Indoor_Cameras/IN-6012_HD/Usermanual/'
     });
 });
 
@@ -451,6 +474,7 @@ productRouter.route('/Indoor_Cameras/IN-6012_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Products/IN-6012_Lense_Adjustment', {
       title: 'IN-6012 HD Lense Adjustment',
+	  uplink: '/Products/Indoor_Cameras/IN-6012_HD/Usermanual/'
     });
 });
 
@@ -479,6 +503,7 @@ productRouter.route('/Indoor_Cameras/IN-6001_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Products/IN-6001_Usermanual', {
       title: 'IN-6001 HD Usermanual',
+	  uplink: '/Products/Indoor_Cameras/IN-6001_HD/'
     });
 });
 
@@ -486,6 +511,7 @@ productRouter.route('/Indoor_Cameras/IN-6001_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Products/IN-6001_Product_Features', {
       title: 'IN-6001 HD Product Features',
+	  uplink: '/Products/Indoor_Cameras/IN-6001_HD/Usermanual/'
     });
 });
 
@@ -493,6 +519,7 @@ productRouter.route('/Indoor_Cameras/IN-6001_HD/Point2Point')
 .get(function(req, res) {
   res.render('./Products/IN-6001_Point2Point', {
       title: 'IN-6001 HD Point 2 Point',
+	  uplink: '/Products/Indoor_Cameras/IN-6001_HD/Usermanual/'
     });
 });
 
@@ -500,6 +527,7 @@ productRouter.route('/Indoor_Cameras/IN-6001_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Products/IN-6001_Quick_Installation', {
       title: 'IN-6001 HD Quick Installation',
+	  uplink: '/Products/Indoor_Cameras/IN-6001_HD/Usermanual/'
     });
 });
 
@@ -507,6 +535,7 @@ productRouter.route('/Indoor_Cameras/IN-6001_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Products/IN-6001_Lense_Adjustment', {
       title: 'IN-6001 HD Lense Adjustment',
+	  uplink: '/Products/Indoor_Cameras/IN-6001_HD/Usermanual/'
     });
 });
 
@@ -578,6 +607,7 @@ productRouter.route('/Outdoor_Cameras/IN-7011_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Products/IN-7011_Usermanual', {
       title: 'IN-7011 HD Usermanual',
+	  uplink: '/Products/Outdoor_Cameras/IN-7011_HD/'
     });
 });
 
@@ -585,6 +615,7 @@ productRouter.route('/Outdoor_Cameras/IN-7011_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Products/IN-7011_Product_Features', {
       title: 'IN-7011 HD Product Features',
+	  uplink: '/Products/Outdoor_Cameras/IN-7011_HD/Usermanual/'
     });
 });
 
@@ -592,6 +623,7 @@ productRouter.route('/Outdoor_Cameras/IN-7011_HD/Point2Point')
 .get(function(req, res) {
   res.render('./Products/IN-7011_Point2Point', {
       title: 'IN-7011 HD Point 2 Point',
+	  uplink: '/Products/Outdoor_Cameras/IN-7011_HD/Usermanual/'
     });
 });
 
@@ -599,6 +631,7 @@ productRouter.route('/Outdoor_Cameras/IN-7011_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Products/IN-7011_Quick_Installation', {
       title: 'IN-7011 HD Quick Installation',
+	  uplink: '/Products/Outdoor_Cameras/IN-7011_HD/Usermanual/'
     });
 });
 
@@ -606,6 +639,7 @@ productRouter.route('/Outdoor_Cameras/IN-7011_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Products/IN-7011_Lense_Adjustment', {
       title: 'IN-7011 HD Lense Adjustment',
+	  uplink: '/Products/Outdoor_Cameras/IN-7011_HD/Usermanual/'
     });
 });
 
@@ -627,6 +661,7 @@ productRouter.route('/Outdoor_Cameras/IN-5907_HD')
 .get(function(req, res) {
   res.render('./Products/IN-5907_Overview', {
       title: 'IN-5907 HD Overview',
+	  uplink: '/Products/Outdoor_Cameras/'
     });
 });
 
@@ -634,6 +669,7 @@ productRouter.route('/Outdoor_Cameras/IN-5907_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Products/IN-5907_Usermanual', {
       title: 'IN-5907 HD Usermanual',
+	  uplink: '/Products/Outdoor_Cameras/IN-5907_HD/'
     });
 });
 
@@ -641,6 +677,7 @@ productRouter.route('/Outdoor_Cameras/IN-5907_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Products/IN-5907_Product_Features', {
       title: 'IN-5907 HD Product Features',
+	  uplink: '/Products/Outdoor_Cameras/IN-5907_HD/Usermanual/'
     });
 });
 
@@ -648,6 +685,7 @@ productRouter.route('/Outdoor_Cameras/IN-5907_HD/Point2Point')
 .get(function(req, res) {
   res.render('./Products/IN-5907_Point2Point', {
       title: 'IN-5907 HD Point 2 Point',
+	  uplink: '/Products/Outdoor_Cameras/IN-5907_HD/Usermanual/'
     });
 });
 
@@ -655,6 +693,7 @@ productRouter.route('/Outdoor_Cameras/IN-5907_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Products/IN-5907_Quick_Installation', {
       title: 'IN-5907 HD Quick Installation',
+	  uplink: '/Products/Outdoor_Cameras/IN-5907_HD/Usermanual/'
     });
 });
 
@@ -662,6 +701,7 @@ productRouter.route('/Outdoor_Cameras/IN-5907_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Products/IN-5907_Lense_Adjustment', {
       title: 'IN-5907 HD Lense Adjustment',
+	  uplink: '/Products/Outdoor_Cameras/IN-5907_HD/Usermanual/'
     });
 });
 
@@ -683,6 +723,7 @@ productRouter.route('/Outdoor_Cameras/IN-5905_HD')
 .get(function(req, res) {
   res.render('./Products/IN-5905_Overview', {
       title: 'IN-5905 HD Overview',
+	  uplink: '/Products/Outdoor_Cameras/'
     });
 });
 
@@ -690,6 +731,7 @@ productRouter.route('/Outdoor_Cameras/IN-5905_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Products/IN-5905_Usermanual', {
       title: 'IN-5905 HD Usermanual',
+	  uplink: '/Products/Outdoor_Cameras/IN-5905_HD/'
     });
 });
 
@@ -697,6 +739,7 @@ productRouter.route('/Outdoor_Cameras/IN-5905_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Products/IN-5905_Product_Features', {
       title: 'IN-5905 HD Product Features',
+	  uplink: '/Products/Outdoor_Cameras/IN-5905_HD/Usermanual/'
     });
 });
 
@@ -704,6 +747,7 @@ productRouter.route('/Outdoor_Cameras/IN-5905_HD/Point2Point')
 .get(function(req, res) {
   res.render('./Products/IN-5905_Point2Point', {
       title: 'IN-5905 HD Point 2 Point',
+	  uplink: '/Products/Outdoor_Cameras/IN-5905_HD/Usermanual/'
     });
 });
 
@@ -711,6 +755,7 @@ productRouter.route('/Outdoor_Cameras/IN-5905_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Products/IN-5905_Quick_Installation', {
       title: 'IN-5905 HD Quick Installation',
+	  uplink: '/Products/Outdoor_Cameras/IN-5905_HD/Usermanual/'
     });
 });
 
@@ -718,6 +763,7 @@ productRouter.route('/Outdoor_Cameras/IN-5905_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Products/IN-5905_Lense_Adjustment', {
       title: 'IN-5905 HD Lense Adjustment',
+	  uplink: '/Products/Outdoor_Cameras/IN-5905_HD/Usermanual/'
     });
 });
 
