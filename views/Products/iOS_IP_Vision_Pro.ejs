@@ -7,30 +7,12 @@
 
     <body class="home">
 
-        <header class="fixed">
-            <div class="wrap">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="left-nav">
-                            <a href="/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right alt">
-                            <a href="/Search/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/search.png" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                            <a href="/Products/Software/iOS/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-        <div class="wrap">
-            <div class="container main">
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../_partials/content/_bluenav-p.ejs %>
 
                 <article class="margin">
                     <!-- article -->
@@ -54,8 +36,9 @@
                         <li><strong>pwd</strong>: Stands for your password that you set up inside the camera. The default value is instar</li>
                       </ul>
                       <br>
+
                       <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(1).jpg"></amp-img>
                               </div>
@@ -63,7 +46,7 @@
                                   <p><strong>Fig1.</strong> Press the Camera button to open the add-camera dialog.</p>
                               </div>
                           </div>
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(2).jpg"></amp-img>
                               </div>
@@ -71,7 +54,11 @@
                                   <p><strong>Fig2.</strong> Press the Edit button to add your camera to the default camera group.</p>
                               </div>
                           </div>
-                          <div class="card">
+                      </div>
+                      <!-- Card Container -->
+
+                      <div class="card-container">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(3).jpg"></amp-img>
                               </div>
@@ -79,10 +66,7 @@
                                   <p><strong>Fig3.</strong> Press the Add Camera button to add your camera information.</p>
                               </div>
                           </div>
-                      </div>
-                      <!-- Card Container -->
-                      <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(4).jpg"></amp-img>
                               </div>
@@ -90,7 +74,11 @@
                                   <p><strong>Fig4.</strong> Just choose the corresponding INSTAR preset for your VGA camera. For HD cameras choose the generic model and add the MJPEG CGI command from above.</p>
                               </div>
                           </div>
-                          <div class="card">
+                      </div>
+                      <!-- Card Container -->
+
+                      <div class="card-container">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(5).jpg"></amp-img>
                               </div>
@@ -98,7 +86,7 @@
                                   <p><strong>Fig5.</strong> Add your camera´s IP address, port and login. Then press Save.</p>
                               </div>
                           </div>
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(6).jpg"></amp-img>
                               </div>
@@ -109,7 +97,7 @@
                       </div>
                       <!-- Card Container -->
                       <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(7).jpg"></amp-img>
                               </div>
@@ -117,9 +105,7 @@
                                   <p><strong>Fig7.</strong> Press Back to return to the camera view.</p>
                               </div>
                           </div>
-                          <div class="card invisible">
-                          </div>
-                          <div class="card invisible">
+                          <div class="twocard invisible">
                           </div>
                       </div>
                       <!-- Card Container -->
@@ -130,8 +116,9 @@
                       <h3>View your cameras live video and start local recordings</h3>
                       <p>You will be greeted by your camera live video every time you open IP Vision Pro. Just click on the video area to access advanced functions like video and snapshot recordings.</p>
                       <br>
+
                       <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(8).jpg"></amp-img>
                               </div>
@@ -139,7 +126,7 @@
                                   <p><strong>Fig8.</strong> Click on your camera´s live video to access advanced functions.</p>
                               </div>
                           </div>
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(9).jpg"></amp-img>
                               </div>
@@ -147,7 +134,11 @@
                                   <p><strong>Fig9.</strong> Activate a video or snapshot recording to your local storage by pressing the corresponding buttons.</p>
                               </div>
                           </div>
-                          <div class="card">
+                      </div>
+                      <!-- Card Container -->
+
+                      <div class="card-container">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(10).jpg"></amp-img>
                               </div>
@@ -155,8 +146,11 @@
                                   <p><strong>Fig10.</strong> The red dot signals that a video recording is in progress terminate it by clicking the recording button a second time.</p>
                               </div>
                           </div>
+                          <div class="twocard invisible">
+                          </div>
                       </div>
                       <!-- Card Container -->
+
                     </div>
                     <!-- /margin -->
 
@@ -167,7 +161,7 @@
         </div>
         <!-- /wrap -->
 
-        <section class="blade blog">
+        <section class="blade blog mobile-down">
 
             <div class="container wider">
                 <div class="row">

@@ -7,124 +7,90 @@
 
     <body class="home">
 
-        <header class="fixed">
-          <div class="wrap">
-              <div class="container">
-                  <div class="clearfix">
-                      <div class="left-nav">
-                          <a href="/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                          </a>
-                      </div>
-                      <div class="right alt">
-                          <a href="/Search/" class="tab header-title">
-                            <amp-img class="placeholder shadow" src="/images/search.png" height="30px" width="30px" alt="Go Back"></amp-img>
-                          </a>
-                          <a href="/Products/IN-Route" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </header>
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-        <div class="wrap">
-            <div class="content">
+      <div class="wrap">
+          <div class="container main">
 
-                <section class="blade get-started">
-                    <div class="container">
-                        <div class="row">
-                            <div class="twelve columns">
-                                <h1>IN-Route P52</h1>
-                                <h2>Web User Interface</h2>
-                                <h3>Overview</h3>
-                            </div>
+            <% include ../_partials/content/_bluenav-p.ejs %>
+
+              <article class="content">
+
+                        <div class="margin">
+                            <h1>IN-Route P52</h1>
+                            <h2>Web User Interface</h2>
+                            <h3>Overview</h3>
                         </div>
 
                         <div class="card-container">
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
                                   <a href="/Products/IN-Route/Overview/Status">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Status.png"></amp-img>
                                   </a>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>Status</h3>
                                     <p>Overview of the System Operations</p>
-                                </div>
-                                <div class="action">
+                                    <br><br>
                                     <a href="/Products/IN-Route/Overview/Status">Read More</a>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
                                   <a href="/Products/IN-Route/Overview/WAN_Status">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_WAN_Status.png"></amp-img>
                                   </a>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>WAN Status</h3>
                                     <p>Wide Area Network Connection</p>
-                                </div>
-                                <div class="action">
+                                    <br><br>
                                     <a href="/Products/IN-Route/Overview/WAN_Status">Read More</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="image">
-                                  <a href="/Products/IN-Route/Overview/Mode">
-                                    <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Mode.png"></amp-img>
-                                  </a>
-                                </div>
-                                <div class="content">
-                                    <h3>Mode</h3>
-                                    <p>Router, 3G Router or Repeater Mode</p>
-                                </div>
-                                <div class="action">
-                                    <a href="/Products/IN-Route/Overview/Mode">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <!-- /Card Container -->
 
                         <div class="card-container">
-                            <div class="card">
+                            <div class="twocard">
+                                <div class="image">
+                                  <a href="/Products/IN-Route/Overview/Mode">
+                                    <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Mode.png"></amp-img>
+                                  </a>
+                                </div>
+                                <div class="action">
+                                    <h3>Mode</h3>
+                                    <p>Router, 3G Router or Repeater Mode</p>
+                                    <br><br>
+                                    <a href="/Products/IN-Route/Overview/Mode">Read More</a>
+                                </div>
+                            </div>
+                            <div class="twocard">
                                 <div class="image">
                                   <a href="/Products/IN-Route/Overview/File_Explorer">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Overview.png"></amp-img>
                                   </a>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>File Explorer</h3>
                                     <p>Use your IN-Route as a NAS</p>
-                                </div>
-                                <div class="action">
+                                    <br><br>
                                     <a href="/Products/IN-Route/Overview/File_Explorer">Read More</a>
                                 </div>
-                            </div>
-                            <div class="card invisible">
-                            </div>
-                            <div class="card invisible">
                             </div>
                         </div>
                         <!-- /Card Container -->
 
-                    </div>
-                    <!-- /Container -->
-                  </section>
-                  <!-- /blade -->
+                    </article>
+                    <!-- /article -->
+
                 </div>
                 <!-- /Content -->
               </div>
-              <!-- /WRAP -->
+              <!-- /WRAP  -->
 
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /Container -->
-
-                <section class="blade blog">
+                <section class="blade blog mobile-down">
 
                     <div class="container wider">
                         <div class="row">

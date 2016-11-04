@@ -7,30 +7,12 @@
 
     <body class="home">
 
-        <header class="fixed">
-          <div class="wrap">
-              <div class="container">
-                  <div class="clearfix">
-                      <div class="left-nav">
-                          <a href="/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                          </a>
-                      </div>
-                      <div class="right alt">
-                          <a href="/Search/" class="tab header-title">
-                            <amp-img class="placeholder shadow" src="/images/search.png" height="30px" width="30px" alt="Go Back"></amp-img>
-                          </a>
-                          <a href="/Products/IN-Route/First_Steps/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </header>
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-        <div class="wrap">
-            <div class="content">
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../_partials/content/_bluenav-p.ejs %>
 
                 <section class="blade get-started">
                     <div class="container">
@@ -245,7 +227,7 @@
               </div>
               <!-- /WRAP -->
 
-                <section class="blade blog">
+                <section class="blade blog mobile-down">
 
                     <div class="container wider">
                         <div class="row">

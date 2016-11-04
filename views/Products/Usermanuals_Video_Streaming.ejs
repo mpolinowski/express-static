@@ -8,29 +8,7 @@
 
 <body class="home">
 
-    <header class="fixed">
-        <div class="wrap">
-            <div class="container">
-                <div class="clearfix">
-                    <div class="left-nav">
-                        <a href="/" class="tab header-title">
-                            <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                        </a>
-                    </div>
-                    <div class="right alt">
-                        <a href="/Search/" class="tab header-title">
-                          <amp-img class="placeholder shadow" src="/images/search.png" height="30px" width="30px" alt="Go Back"></amp-img>
-                        </a>
-                        <a href="/Products/<%= type %>_Cameras/<%= model %>/Usermanual/" class="tab header-title">
-                            <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <body>
+  <% include ../_partials/amp/_amp-header.ejs %>
 
         <div class="wrap">
             <div class="container main">
@@ -45,9 +23,6 @@
                         </li>
                         <li>
                             <a href="/Advanced_User/CGI_Commands">CGI Commands</a>
-                        </li>
-                        <li>
-                            <a href="/Products/Indoor_Cameras/IN-6014_HD/Quick_Installation">Quick Installation</a>
                         </li>
                         <li>
                             <a href="/Advanced_User/Restore_WebUI">Restore WebUI</a>

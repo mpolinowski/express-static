@@ -7,30 +7,12 @@
 
     <body class="home">
 
-        <header class="fixed">
-            <div class="wrap">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="left-nav">
-                            <a href="/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right alt">
-                            <a href="/Search/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/search.png" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                            <a href="/Products/Software/iOS/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-        <div class="wrap">
-            <div class="container main">
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../_partials/content/_bluenav-p.ejs %>
 
                 <article class="margin">
                     <!-- article -->
@@ -48,8 +30,9 @@
                       <h3>Add a P2P Camera to ICCAM (iOS)</h3>
                       <p class="justify">Launch ICCAM on your iPhone or iPad and press Add a new camera. Choose Search in LAN to scan for P2P cameras in your local network. Finalize the setup by giving your camera a name and add the password for your administrator account - then click Save.</p>
                       <br>
+
                       <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/ICCAM_(1).jpg"></amp-img>
                               </div>
@@ -57,7 +40,7 @@
                                   <p><strong>Fig1.</strong> Press Add a new camera to add your INSTAR P2P camera.</p>
                               </div>
                           </div>
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/ICCAM_(2).jpg"></amp-img>
                               </div>
@@ -65,7 +48,11 @@
                                   <p><strong>Fig2.</strong> Press Search in LAN to let the app find your P2P camera inside your local network.</p>
                               </div>
                           </div>
-                          <div class="card">
+                      </div>
+                      <!-- Card Container -->
+
+                      <div class="card-container">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/ICCAM_(3).jpg"></amp-img>
                               </div>
@@ -73,10 +60,7 @@
                                   <p><strong>Fig3.</strong> Select your camera from the list.</p>
                               </div>
                           </div>
-                      </div>
-                      <!-- Card Container -->
-                      <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/ICCAM_(4).jpg"></amp-img>
                               </div>
@@ -84,12 +68,9 @@
                                   <p><strong>Fig4.</strong> And add your camera name and administrator login.</p>
                               </div>
                           </div>
-                          <div class="card invisible">
-                          </div>
-                          <div class="card invisible">
-                          </div>
                       </div>
                       <!-- Card Container -->
+
                     </div>
                     <!-- /margin -->
 
@@ -98,7 +79,7 @@
                       <p>The camera list will show you all connected cameras. Click on a camera to access the live video and advanced functions, like video or snapshot recording and audio streams.</p>
                       <br>
                       <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(5).jpg"></amp-img>
                               </div>
@@ -106,15 +87,13 @@
                                   <p><strong>Fig5.</strong> First select your camera from the list view.</p>
                               </div>
                           </div>
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
                                   <amp-img noloading height=960 width=640 layout=responsive src="/images/IP_Vision_Pro_(6).jpg"></amp-img>
                               </div>
                               <div class="action">
                                   <p><strong>Fig6.</strong> You will see your camera´s live stream. Use the buttons below to access advanced functions like video recordings.</p>
                               </div>
-                          </div>
-                          <div class="card invisible">
                           </div>
                       </div>
                       <!-- Card Container -->
@@ -128,7 +107,7 @@
         </div>
         <!-- /wrap -->
 
-        <section class="blade blog">
+        <section class="blade blog mobile-down">
 
             <div class="container wider">
                 <div class="row">

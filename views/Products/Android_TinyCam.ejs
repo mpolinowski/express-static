@@ -7,30 +7,12 @@
 
     <body class="home">
 
-        <header class="fixed">
-            <div class="wrap">
-                <div class="container">
-                    <div class="clearfix">
-                        <div class="left-nav">
-                            <a href="/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right alt">
-                            <a href="/Search/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/search.png" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                            <a href="/Products/Software/Android/" class="tab header-title">
-                                <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-        <div class="wrap">
-            <div class="container main">
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../_partials/content/_bluenav-p.ejs %>
 
                 <article class="margin">
                     <!-- article -->
@@ -162,6 +144,40 @@
                     </div>
                     <!-- /margin -->
 
+                    <div class="card-container">
+                        <div class="twocard">
+                          <div class="image">
+                              <amp-img class="shadow" noloading height=229 width=143 layout=responsive src="/images/TinyCam-Monitor_(16).png"></amp-img>
+                          </div>
+                          <div class="action">
+                              <p>Open the advanced settings to set the JPG image address.</p>
+                          </div>
+                        </div>
+                        <div class="twocard">
+                          <div class="image">
+                              <amp-img class="shadow" noloading height=229 width=143 layout=responsive src="/images/TinyCam-Monitor_(18).png"></amp-img>
+                          </div>
+                          <div class="action">
+                              <p>The tmpfs/snap.jpg path will give you the full resolution JPG stream.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- /card-container -->
+
+                        <div class="card-container">
+                            <div class="twocard">
+                              <div class="image">
+                                  <amp-img class="shadow" noloading height=229 width=143 layout=responsive src="/images/TinyCam-Monitor_(19).png"></amp-img>
+                              </div>
+                              <div class="action">
+                                  <p>The tmpfs/auto.jpg path will give you the compressed JPG stream.</p>
+                              </div>
+                            </div>
+                            <div class="twocard invisible">
+                            </div>
+                        </div>
+                        <!-- /card-container -->
+                        
                 </article>
                 <!-- /article -->
             </div>
@@ -169,41 +185,7 @@
         </div>
         <!-- /wrap -->
 
-        <section class="blade get-started">
-            <div class="container">
-
-                <div class="card-container">
-                    <div class="card">
-                      <div class="image">
-                          <amp-img class="shadow" noloading height=229 width=143 layout=responsive src="/images/TinyCam-Monitor_(16).png"></amp-img>
-                      </div>
-                      <div class="action">
-                          <p>Open the advanced settings to set the JPG image address.</p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="image">
-                          <amp-img class="shadow" noloading height=229 width=143 layout=responsive src="/images/TinyCam-Monitor_(18).png"></amp-img>
-                      </div>
-                      <div class="action">
-                          <p>The tmpfs/snap.jpg path will give you the full resolution JPG stream.</p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="image">
-                          <amp-img class="shadow" noloading height=229 width=143 layout=responsive src="/images/TinyCam-Monitor_(19).png"></amp-img>
-                      </div>
-                      <div class="action">
-                          <p>The tmpfs/auto.jpg path will give you the compressed JPG stream.</p>
-                      </div>
-                    </div>
-                </div>
-                <!-- /card-container -->
-            </div>
-            <!-- /container -->
-        </section>
-
-        <section class="blade blog">
+        <section class="blade blog mobile-down">
 
             <div class="container wider">
                 <div class="row">

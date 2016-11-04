@@ -7,102 +7,78 @@
 
     <body class="home">
 
-        <header class="fixed">
-          <div class="wrap">
-              <div class="container">
-                  <div class="clearfix">
-                      <div class="left-nav">
-                          <a href="/" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/instar_245x77.png" height="30px" width="95px" alt="Instar Wiki"></amp-img>
-                          </a>
-                      </div>
-                      <div class="right alt">
-                          <a href="/Search/" class="tab header-title">
-                            <amp-img class="placeholder shadow" src="/images/search.png" height="30px" width="30px" alt="Go Back"></amp-img>
-                          </a>
-                          <a href="/Products/IN-Route/First_Steps" class="tab header-title">
-                              <amp-img class="placeholder shadow" src="/images/return.jpg" height="30px" width="30px" alt="Go Back"></amp-img>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </header>
+      <% include ../_partials/amp/_amp-header.ejs %>
 
-        <div class="wrap">
-            <div class="content">
+      <div class="wrap">
+          <div class="container main">
 
-                <section class="blade get-started">
-                    <div class="container">
-                        <div class="row">
-                            <div class="twelve columns">
-                                <h1>IN-Route P52</h1>
-                                <h2>Quick Access</h2>
-                                <h4>Automatic Configuration of your Routers Operation Modes</h4>
-                            </div>
-                        </div>
+            <% include ../_partials/content/_bluenav-p.ejs %>
 
-                        <div class="card-container">
-                            <div class="card">
-                                <div class="image">
-                                  <a href="/Products/IN-Route/First_Steps/Quick_Access/Router_Modes">
-                                    <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Quick_Access_Router.png"></amp-img>
-                                  </a>
-                                </div>
-                                <div class="content">
-                                    <h3>Router Modes</h3>
-                                    <p>Use your IN-Route as the Main Network Router</p>
-                                </div>
-                                <div class="action">
-                                    <a href="/Products/IN-Route/First_Steps/Quick_Access/Router_Modes">Read More</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="image">
-                                  <a href="/Products/IN-Route/First_Steps/Quick_Access/Repeater_Mode">
-                                    <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Quick_Access_Repeater.png"></amp-img>
-                                  </a>
-                                </div>
-                                <div class="content">
-                                    <h3>Repeater Mode</h3>
-                                    <p>Use your IN-Route as a secondary Access Point</p>
-                                </div>
-                                <div class="action">
-                                    <a href="/Products/IN-Route/First_Steps/Quick_Access/Repeater_Mode">Read More</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="image">
-                                  <a href="/Products/IN-Route/First_Steps/Quick_Access/3G_Mode">
-                                    <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Quick_Access_3G.png"></amp-img>
-                                  </a>
-                                </div>
-                                <div class="content">
-                                    <h3>3G Mode</h3>
-                                    <p>Use your IN-Route on the Road with a 3G Dongle</p>
-                                </div>
-                                <div class="action">
-                                    <a href="/Products/IN-Route/First_Steps/Quick_Access/3G_Mode">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Card Container -->
+            <article class="content">
 
+                    <div class="margin">
+                        <h1>IN-Route P52</h1>
+                        <h2>Quick Access</h2>
+                        <h4>Automatic Configuration of your Routers Operation Modes</h4>
                     </div>
-                    <!-- /Container -->
-                  </section>
-                  <!-- /blade -->
+
+                    <div class="card-container">
+                        <div class="twocard">
+                            <div class="image">
+                              <a href="/Products/IN-Route/First_Steps/Quick_Access/Router_Modes">
+                                <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Quick_Access_Router.png"></amp-img>
+                              </a>
+                            </div>
+                            <div class="action">
+                                <h3>Router Modes</h3>
+                                <p>Use your IN-Route as the Main Network Router</p>
+                                <br><br>
+                                <a href="/Products/IN-Route/First_Steps/Quick_Access/Router_Modes">Read More</a>
+                            </div>
+                        </div>
+                        <div class="twocard">
+                            <div class="image">
+                              <a href="/Products/IN-Route/First_Steps/Quick_Access/Repeater_Mode">
+                                <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Quick_Access_Repeater.png"></amp-img>
+                              </a>
+                            </div>
+                            <div class="action">
+                                <h3>Repeater Mode</h3>
+                                <p>Use your IN-Route as a secondary Access Point</p>
+                                <br><br>
+                                <a href="/Products/IN-Route/First_Steps/Quick_Access/Repeater_Mode">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Card Container -->
+
+                    <div class="card-container">
+                        <div class="twocard">
+                            <div class="image">
+                              <a href="/Products/IN-Route/First_Steps/Quick_Access/3G_Mode">
+                                <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-Route_Card_Quick_Access_3G.png"></amp-img>
+                              </a>
+                            </div>
+                            <div class="action">
+                                <h3>3G Mode</h3>
+                                <p>Use your IN-Route on the Road with a 3G Dongle</p>
+                                <br><br>
+                                <a href="/Products/IN-Route/First_Steps/Quick_Access/3G_Mode">Read More</a>
+                            </div>
+                        </div>
+                        <div class="twocard invisible">
+                        </div>
+                    </div>
+                    <!-- /Card Container -->
+
+                  </article>
+
                 </div>
                 <!-- /Content -->
               </div>
               <!-- /WRAP -->
 
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /Container -->
-
-                <section class="blade blog">
+                <section class="blade blog mobile-down">
 
                     <div class="container wider">
                         <div class="row">
