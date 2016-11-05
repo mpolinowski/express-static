@@ -434,3 +434,11 @@ You will now need to start Kibana:
 ```
 ./bin/kibana
 ```
+
+The apps are now available via:
+```
+http://localhost:5601/app/kibana
+http://localhost:5601/app/sense
+```
+
+Use Sense to feed Elasticsearch with mappings/postings (see wiki-data.json)
