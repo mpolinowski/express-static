@@ -14,7 +14,9 @@ This App was created in several steps:
 5. [Install Node.js on CentOS]()
 6. [Clone Repo from Git]()
 7. [Run the app as a service (PM2)]()
-8. [Install Elasticsearch]()
+8. [Install Java]()
+9. [Install Elasticsearch]()
+10. [Install Kibana]()
 
 
 ### 1 Install Node.js and Express.js to develop our Web Application
@@ -262,7 +264,30 @@ The PM2 process monitor can be pulled up with the monit subcommand. This display
 ```
 
 
-### 8 Install Elasticsearch
+### 8 Install Java
+___
+
+* **Step One** — Public Signing Key
+
+Download the Oracle Java 8:
+```
+ cd ~
+ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u73-b02/jdk-8u73-linux-x64.rpm"
+```
+* **Step Two** - Install Java 8:
+```
+sudo yum -y localinstall jdk-8u73-linux-x64.rpm
+```
+
+Now Java should be installed at /usr/java/jdk1.8.0_73/jre/bin/java, and linked from /usr/bin/java. u may delete the archive file that you downloaded earlier:
+```
+rm ~/jdk-8u*-linux-x64.rpm
+```
+
+
+
+
+### 9 Install Elasticsearch
 ___
 
 * **Step One** — Public Signing Key
@@ -271,6 +296,7 @@ Download and install the public signing key:
 ```
  rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch
 ```
+
 Add the following in your /etc/yum.repos.d/ directory in a file with a .repo suffix, for example elasticsearch.repo
 ```
 [elasticsearch-2.x]
@@ -280,10 +306,29 @@ gpgcheck=1
 gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch
 enabled=1
 ```
-And your repository is ready for use. You can install it with:
+
+* **Step Two**  - Install Elasticsearch with this command:
 ```
 sudo yum install elasticsearch
 ```
+
+* **Step Three** - restrict outside access to your Elasticsearch instance (port 9200)
+```
+sudo vi /etc/elasticsearch/elasticsearch.yml
+
+-> network.host: localhost
+```
+
+* **Step Four** - Now start Elasticsearch:
+```
+sudo systemctl start elasticsearch
+```
+
+Run the following command to start Elasticsearch automatically on boot up:
+```
+sudo systemctl enable elasticsearch
+```
+
 
 | Type | Description | Location RHEL/CentOS |
 | ------------- |:-------------:| -----:|
@@ -296,3 +341,105 @@ sudo yum install elasticsearch
 | plugins | Plugin files location. Each plugin will be contained in a subdirectory. | /usr/share/elasticsearch/plugins |
 | repo | Shared file system repository locations. | Not configured |
 | script | Location of script files. | /etc/elasticsearch/scripts |
+
+
+
+
+### 10 Install Kibana
+___
+
+* **Step One** — Create and edit a new yum repository file for Kibana:
+```
+ sudo vi /etc/yum.repos.d/kibana.repo
+```
+
+Add the following repository configuration:
+```
+[kibana-4.5]
+name=Kibana repository for 4.5.x packages
+baseurl=http://packages.elastic.co/kibana/4.5/centos
+gpgcheck=1
+gpgkey=http://packages.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+```
+
+* **Step Two** - Restrict outside access to Kibana:
+```
+sudo vi /opt/kibana/config/kibana.yml
+
+-> server.host: "localhost"
+```
+
+* **Step Three** - Now start the Kibana service, and enable it:
+```
+sudo systemctl start kibana
+sudo chkconfig kibana on
+```
+Type sudo systemctl stop kibana to stop the service.
+
+* **Step Four** - Use NGINX to securely access Kibana and use htpasswd to create an admin user:
+```
+sudo yum -y install httpd-tools
+sudo htpasswd -c /etc/nginx/htpasswd.users admin
+```
+Add your password.
+
+* **Step Five** - Securing Kibana in a Nginx server block:
+```
+sudo vi /etc/nginx/nginx.conf
+```
+
+Find the default server block (starts with server {), the last configuration block in the file, and delete it. When you are done, the last two lines in the file should look like this:
+```
+include /etc/nginx/conf.d/*.conf;
+}
+```
+
+Now we will create an Nginx server block in a new file:
+```
+sudo vi /etc/nginx/conf.d/kibana.conf
+```
+
+Paste the following code block into the file. Be sure to update the server_name to match your server's name:
+```
+server {
+    listen 80;
+
+    server_name example.com;
+
+    auth_basic "Restricted Access";
+    auth_basic_user_file /etc/nginx/htpasswd.users;
+
+    location / {
+        proxy_pass http://localhost:5601;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;        
+    }
+}
+```
+
+Now start and enable Nginx to put our changes into effect:
+```
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
+
+* **Step Six** - Once Kibana is installed, you can install Sense running the following command from your /opt/kibana folder:
+```
+./bin/kibana plugin --install elastic/sense
+```
+You will now need to start Kibana:
+```
+./bin/kibana
+```
+
+The apps are now available via:
+```
+http://localhost:5601/app/kibana
+http://localhost:5601/app/sense
+```
+
+Use Sense to feed Elasticsearch with mappings/postings (see wiki-data.json)
