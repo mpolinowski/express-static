@@ -1,4 +1,5 @@
-#A Node/Express App with Static Content (Training)
+# Node/Express Wiki/Knowledgebase
+**Bootstrap/Accelerated Mobile Pages**
 
 
  This code is part of a training in web development with **Node.js** and **Express /Generator**. Goal of this course is to quickly set up a node/express environment to serve static HTML/CSS/JS content.
