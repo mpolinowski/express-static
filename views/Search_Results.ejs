@@ -39,7 +39,9 @@
                       <div class="card-columns mb">
                           <% for(var i=0; i<response.hits.hits.length;i++){ if (i === 8) { break; } %>
                               <div class="card card-inverse shadow mt" style="background-color: #333; border-color: #333;">
-                                  <img class="card-img-top img-fluid" src="<%= response.hits.hits[i]._source.image %>" alt="Card image cap">
+                                   <a href="<%= response.hits.hits[i]._source.link %>">
+                                     <img class="card-img-top img-fluid" src="<%= response.hits.hits[i]._source.image %>" alt="Card image cap">
+                                  </a>
                                   <div class="card-block" style="height: 215px;">
                                       <h4 class="card-title"><%= response.hits.hits[i]._source.title %></h4>
                                       <p class="card-text"><%= response.hits.hits[i]._source.abstract %></p>
