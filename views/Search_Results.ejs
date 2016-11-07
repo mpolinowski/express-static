@@ -12,7 +12,8 @@
           <div class="container"
             <div class="row">
                 <% if (response.hits.total > 0) { %>
-                    <h1 class="headline">Search Results</h1>
+                    <h1 class="headline hidden-xs-down">Search Results</h1>
+                    <h2 class="headline hidden-sm-up">Results<h2>
                     <hr>
                     <br/>
                     <h2 class="subheader">Run took <%= response.took %> milliseconds</h2>
