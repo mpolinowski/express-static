@@ -2317,96 +2317,69 @@ nav ol li {
 
 /* Footer */
 
-.footer{
-	background-color: #fff;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 10px;
+footer {
+    padding: 0px 0 0px 0px;
+    background-color: #fff
+}
+footer p {
+    margin: 0;
+}
+footer .footer-image {
+    height: 25px;
+    width: 25px;
+    margin-left: 0px;
+    float: center;
+}
+footer .footer-text {
+    margin-top: 25px;
+    float: center;
+    font-size: 10px;
+}
+.footer-card {
+    background: #fff;
+    margin-bottom: 0px;
+    padding-left: 6px;
+    padding-right: 12px;
+    padding-top: 20px;
 }
 
-.footer .footer-left,
-.footer .footer-center,
-.footer .footer-right{
-	display: inline-block;
-	vertical-align: top;
+.footer-card-content {
+    padding-right: 2px;
+    padding-bottom: 2px;
+    font-weight: 200;
+    border-radius: 0 0 2px 2px;
+    text-align: right;
 }
 
-/* Footer left */
-
-.footer .footer-left{
-	width: 40%;
+.footer-heading {
+    font-weight: lighter;
+    font-size: 21px;
+    color: #0080FF;
 }
 
-/* The company logo */
-
-.footer h3{
-	font: normal 36px;
-	margin: 0;
+.card-view {
+   display: inline-block;
+   width: 230px;
+   height: 200px;
 }
 
-/* Footer links */
-
-.footer .footer-links{
-	margin: 20px 0 12px;
-	padding: 0;
-  list-style: none;
+.footer-all {
+  width: 100%;
+  text-align: center;
 }
 
-.footer .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
+.appcard {
+  background: #fff;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  width: 230px;
+  height: 210px;
+  padding-top: 10px;
+  text-align: right;
 }
 
-/* Footer Center */
-
-.footer .footer-center{
-	width: 35%;
-}
-
-
-/* Footer Right */
-
-.footer .footer-right{
-	width: 20%;
-}
-
-.footer .footer-icons{
-	margin-top: 25px;
-}
-
-.footer .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	border-radius: 2px;
-
-	font-size: 20px;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-@media (max-width: 880px) {
-
-	.footer{
-		font: bold 14px sans-serif;
-	}
-
-	.footer .footer-left,
-	.footer .footer-center,
-	.footer .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
+.footer-link {
+  color: black;
 }
