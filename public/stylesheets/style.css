@@ -274,3 +274,10 @@ a:hover {
 .apps {
   margin-right: 10px -5px 10px 0;
 }
+
+/* nAVBAR */
+
+.nav-item h6 {
+  color: #CECECE;
+  padding-top: 5px;
+}
