@@ -1,4 +1,4 @@
-var ctx = document.getElementById('nightvision');
+var ctx = document.getElementById('nightvision8015');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
