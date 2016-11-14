@@ -1,4 +1,4 @@
-<% include ../_partials/template/_head.ejs %>
+<% include ../_partials/template/_head_chart.ejs %>
 
     <body>
       <% include ../_partials/template/_outdated.ejs %>
@@ -43,16 +43,80 @@
                   <a href="/Products/Indoor_Cameras/IN-6012_HD/Technical_Specifications"><button type="button" class="btn btn-primary">Technical Specifications</button></a>
                 </div>
 
+                <div class="clearfix"></div>
+
+            <!-- #############################################  Chart JS ############################################# -->
+
+                <div class="col-lg-6 mb">
+                  <div class="card shadow">
+                    <div class="card-header">
+                      <h5>Nightvision (Minimum / Maximum) [m]</h5>
+                    </div>
+                    <div class="card-block">
+                      <canvas id="nightvision6012" width="600" height="400"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb">
+                  <div class="card shadow">
+                    <div class="card-header">
+                      <h5>Angle of View (Diagonal, Horizontal, Vertical) [°]</h5>
+                    </div>
+                    <div class="card-block">
+                      <canvas id="angleofview6012" width="600" height="400"></canvas>
+                    </div>
+                  </div>
+                </div>
+
+                <script src="/javascripts/chartjs/overview6012_angleofview.js"></script>
+                <script src="/javascripts/chartjs/overview6012_nightvision.js"></script>
+
+            <!-- #############################################  Chart JS ############################################# -->
+
+            <div class="clearfix"></div>
+
                 <div class="col-xs-12">
                     <div class="col-sm-12 embed-responsive embed-responsive-16by9 mb">
                         <iframe src="https://www.youtube.com/embed/qh4-5yQBXlo" class="shadow" alt="INSTAR IN-6012 HD IP Camera - HD Indoor Pan&amp;Tilt Camera"></iframe>
                     </div>
                 </div>
 
-                <div class="col-xs-12">
+                <div class="col-xs-12 mb">
                   <p class="text-justify">The IN-6012HD is an all round solution for indoor surveillance. The camera head is remotely controllable and equipped with infrared diodes to utilize night vision in pitch dark environments. The integrated IR cut filter on the other hand allows for the capturing of native colours, as seen by the human eye. Through the use of an efficient h.264 compression codec it is able of recording video files on a SD memory card with comparably small size but best picture results. Any device (i.e. smartphones) can connect to the cameras web interface and allows you to control the pan &amp; tilt feature. With 350 degree horizontally and 100 degree vertically range of movement. Thanks to its compact size and its modern design you won't be just limited to use it as a surveillance camera but also for your personal projects. The FTP support allows you to use the IN-6012 HD as a multi functional webcam for integration on your website.</p>
-                  <p class="text-justify">The 1/3 inch WDR sensor is built on a 4.3 micron OmniPixel3-HS™ Pixel enabling 720p HD at unparalleled low-light sensitivity and a dynamic range in colour of 115 dB – compared to the 60 db of a regular VGA IP Camera. WDR allows you to capture high detailed colour videos even in high-contrast environmental lighting conditions.</p>
                 </div>
+
+            <div class="clearfix"></div>
+
+            <!-- #############################################  Chart JS ############################################# -->
+
+                <div class="col-lg-6 mb">
+                  <div class="card shadow">
+                    <div class="card-header">
+                      <h5>IN-6014 HD vs. IN-8015 HD</h5>
+                    </div>
+                    <div class="card-block">
+                      <canvas id="radar6014_8015" width="600" height="400"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb">
+                  <div class="card shadow">
+                    <div class="card-header">
+                      <h5>IN-6014 HD vs. IN-3011</h5>
+                    </div>
+                    <div class="card-block">
+                      <canvas id="radar6014_3011" width="600" height="400"></canvas>
+                    </div>
+                  </div>
+                </div>
+
+
+                <script src="/javascripts/chartjs/overview6014_radar8015.js"></script>
+                <script src="/javascripts/chartjs/overview6014_radar3011.js"></script>
+
+            <!-- #############################################  Chart JS ############################################# -->
+
+            <div class="clearfix"></div>
 
             </div>
             <!-- /row -->
@@ -117,14 +181,18 @@
 
           <div class="row mt">
 
-              <div class="col-xs-12 mb">
+              <div class="col-xs-12 mt">
                   <h2 class="text-muted">Lense Adjustment</h2>
               </div>
 
-              <div class="col-xs-12 mb">
-                  <div class="col-sm-12 embed-responsive embed-responsive-16by9 mb shadow">
-                      <iframe src="https://www.youtube.com/embed/f3Xz5vfFrXM" alt="INSTAR IN-6012 HD IP Camera - HD Indoor Pan&amp;Tilt Camera"></iframe>
+              <div class="col-xs-12 mt">
+                  <div class="col-sm-12 embed-responsive embed-responsive-16by9 mb">
+                      <iframe src="https://www.youtube.com/embed/f3Xz5vfFrXM" class="shadow" alt="INSTAR IN-6012 HD IP Camera - HD Indoor Pan&amp;Tilt Camera"></iframe>
                   </div>
+              </div>
+
+              <div class="col-xs-12">
+                <p class="text-justify">The 1/3 inch WDR sensor is built on a 4.3 micron OmniPixel3-HS™ Pixel enabling 720p HD at unparalleled low-light sensitivity and a dynamic range in colour of 115 dB – compared to the 60 db of a regular VGA IP Camera. WDR allows you to capture high detailed colour videos even in high-contrast environmental lighting conditions.</p>
               </div>
 
           </div>

@@ -1,4 +1,4 @@
-<% include ../_partials/template/_head.ejs %>
+<% include ../_partials/template/_head_chart.ejs %>
 
     <body>
       <% include ../_partials/template/_outdated.ejs %>
@@ -42,6 +42,38 @@
                   <br/>
                   <a href="/Products/Indoor_Cameras/IN-6001_HD/Technical_Specifications"><button type="button" class="btn btn-primary">Technical Specifications</button></a>
                 </div>
+
+                <div class="clearfix"></div>
+
+            <!-- #############################################  Chart JS ############################################# -->
+
+                <div class="col-lg-6 mb">
+                  <div class="card shadow">
+                    <div class="card-header">
+                      <h5>Nightvision (Minimum / Maximum) [m]</h5>
+                    </div>
+                    <div class="card-block">
+                      <canvas id="nightvision6001" width="600" height="400"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb">
+                  <div class="card shadow">
+                    <div class="card-header">
+                      <h5>Angle of View (Diagonal, Horizontal, Vertical) [°]</h5>
+                    </div>
+                    <div class="card-block">
+                      <canvas id="angleofview6001" width="600" height="400"></canvas>
+                    </div>
+                  </div>
+                </div>
+
+                <script src="/javascripts/chartjs/overview6001_angleofview.js"></script>
+                <script src="/javascripts/chartjs/overview6001_nightvision.js"></script>
+
+            <!-- #############################################  Chart JS ############################################# -->
+
+            <div class="clearfix"></div>
 
                 <div class="col-xs-12">
                   <p class="text-justify">The IN-6001 HD is the smallest INSTAR HD 720p camera for indoor surveillance inside your office or house. The camera can easily be controlled through your smartphone from inside your network and also over the internet. The camera can easily be connected to your network by using its 108MBit (802.11b/g/n) Wi-Fi module (WPA/WPA2) or through the 100MBit network interface to ensure a fluid video stream. The camera can also see during the night thanks to 8 Infrared LEDs operating at a wavelength of 850nm. The max. indoor range for the cameras night vision is around 5-10 meters. The spiritual successor of the IN-3001 will bring you all the features that you are used to from our VGA series, combined with a superior resolution of 1280x720 Pixel and the possibility to record videos on an integrated SD card. If an alarm is triggered the camera can send an email to notify you. Each email also has 4 pictures attached. This way it will be very easy to check quickly what caused the motion to make sure your home is safe.</p>
@@ -103,6 +135,39 @@
                 <li>Record videos directly on your PC (only IE)</li>
               </ul>
             </div>
+
+        <div class="clearfix"></div>
+
+        <!-- #############################################  Chart JS ############################################# -->
+
+            <div class="col-lg-6 mb mt">
+              <div class="card shadow">
+                <div class="card-header">
+                  <h5>IN-6001 HD vs. IN-8015 HD</h5>
+                </div>
+                <div class="card-block">
+                  <canvas id="radar6001_8015" width="600" height="400"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mb mt">
+              <div class="card shadow">
+                <div class="card-header">
+                  <h5>IN-6001 HD vs. IN-3011</h5>
+                </div>
+                <div class="card-block">
+                  <canvas id="radar6001_3011" width="600" height="400"></canvas>
+                </div>
+              </div>
+            </div>
+
+
+            <script src="/javascripts/chartjs/overview6001_radar8015.js"></script>
+            <script src="/javascripts/chartjs/overview6001_radar3011.js"></script>
+
+        <!-- #############################################  Chart JS ############################################# -->
+
+        <div class="clearfix"></div>
 
           </div>
           <!-- /row -->
