@@ -16,9 +16,9 @@
                         <div class="row">
                             <div class="six columns">
                                 <div class="intro-container">
-                                    <h1>Audio Alarm Overlay</h1>
+                                    <h1>Alarm Server</h1>
                                     <p class="intro">
-                                      The camera’s Audio Alarm uses the integrated microphone to detect noises and trigger alarm events. These events are handled just like motion detection events and will trigger the activated <a href="/Web_User_Interface/1080p_Series/Alarm/Actions/">Alarm Actions</a>. Please be aware that the sensitivity of the detection is both influenced by the sensitivity slider here, as well as by the overall volume of the microphone signal. You can adjust the amplification of the signal in the <a href="/Web_User_Interface/1080p_Series/Multimedia/Audio/">Multimedia Section</a>.
+                                      You can use the Alarm Server function to send a http request to a connected server. The server needs a compatible software to recognize this request as an alarm event and trigger further actions. This function is often supported by home alarm systems. You can add custom commands to the request to trigger specific actions in the receiving server software.
                                     </p>
                                 </div>
                             </div>
@@ -40,21 +40,26 @@
                     <!-- article -->
 
                     <div class="margin">
-                        <h2 class="post-title">Use your Camera as a Baby Monitor</h2>
+                        <h2 class="post-title">Alarm Server and Home Automation System</h2>
                     </div>
                     <!-- /margin -->
 
                     <div class="margin">
-                        <h3>Use your camera´s microphone to detect noises</h3>
-                        <p>The camera’s Audio Alarm uses the integrated microphone to detect noises and trigger alarm events. These events are handled just like motion detection events and will trigger the activated <a href="/Web_User_Interface/1080p_Series/Alarm/Actions/">Alarm Actions</a>. Please be aware that the sensitivity of the detection is both influenced by the sensitivity slider here, as well as by the overall volume of the microphone signal. You can adjust the amplification of the signal in the <a href="/Web_User_Interface/1080p_Series/Multimedia/Audio/">Multimedia Section</a>.</p>
+                        <h3>Let Camera to send a HTTP GET Command</h3>
                     </div>
                     <!-- /margin -->
 
                     <div class="margin">
 
                       <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Alarm_Alarmserver.jpg 100w, /images/1080p_webUI/1080p_Settings_Alarm_Alarmserver.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Alarm_Alarmserver.jpg 100w, /images/1080p_webUI/1080p_Settings_Alarm_Alarmserver.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:alarmServer" role="button" tabindex="0"></amp-img>
                       </div>
+
+                      <amp-lightbox id="alarmServer" layout="nodisplay">
+                        <div class="lightbox">
+                          <amp-img src="/images/1080p_webUI/1080p_Settings_Alarm_Alarmserver.jpg" width="800" height="550" on="tap:alarmServer.close" role="button" tabindex="1">
+                        </div>
+                      </amp-lightbox>
 
                     </div>
                     <!-- /margin -->
@@ -63,19 +68,50 @@
                         <table>
                             <tr>
                                 <td width="20%">
-                                    <strong>Audio alarm by acustic signal</strong>
+                                    <strong>Contact Alarm Server</strong>
                                 </td>
-                                <td>If your camera has an internal microphone - or you have connected an external microphone to your cameras audio-in - you can use it to trigger alarm actions in case of a noise in front of the camera. This might be useful, if you want to use your camera as a babyphone. The audio alarm can trigger all functions that you activated in the Alarm Actions Menu as well as the Push Notification.</td>
+                                <td>Activate the Alarm Server Function</td>
                             </tr>
                             <tr>
                                 <td width="20%">
-                                    <strong>Audio alarm sensitivity</strong>
+                                    <strong>Alarm Server Address</strong>
                                 </td>
-                                <td>Adjust the sensitivity of the the audio detection here. Please be aware that the sensitivity also depends on the signal amplification of the Audio Input.</td>
+                                <td>Type in the IP Adress of your Alarm Server - e.g. your <a href="http://fhem.de/fhem.html">FHEM</a> Server.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Server Port</strong>
+                                </td>
+                                <td>Type in the TCP Port that your Alarm Server is listening on.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Server Path</strong>
+                                </td>
+                                <td>Type im the URL that your Server expects to see.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Parameter</strong>
+                                </td>
+                                <td>You can add optional parameter to the URL.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Append Alarm Trigger</strong>
+                                </td>
+                                <td>???</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Authentication</strong>
+                                </td>
+                                <td>Add your Server Login to the URL.</td>
                             </tr>
                         </table>
                     </div>
                     <!-- /margin -->
+
                 </article>
                 <!-- /article -->
 
