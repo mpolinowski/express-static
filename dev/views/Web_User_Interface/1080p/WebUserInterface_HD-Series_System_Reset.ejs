@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ⚡>
+    <head>
+        <% include ../../_partials/amp/_amp-head.ejs %>
+        <link rel="canonical" href="/Web_User_Interface/1080p_Series/System/Reset/">
+    </head>
+
+    <body class="home">
+
+      <% include ../../_partials/amp/_amp-header.ejs %>
+
+        <div class="wrap mobile-down">
+            <div class="content">
+                <section class="hero webUI">
+                    <div class="container">
+                        <div class="row">
+                            <div class="six columns">
+                                <div class="intro-container">
+                                    <h1>Backup Overlay</h1>
+                                    <p class="intro">
+                                      You can backup your camera configuration after setting everything up. Download the file and name it appropriately for a later restore. Please be aware that software updates sometimes add new variables / functions to the camera and you won´t be able to use your old backup files anymore. Always create a new backup after an software update to be sure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Hero -->
+            </div>
+            <!-- /Content -->
+        </div>
+        <!-- /Wrap -->
+
+        <div class="wrap">
+            <div class="container main">
+
+                <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+
+                <article>
+                    <!-- article -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Backup your Camera Configuration</h2>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+
+                      <div>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Reset.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Reset.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+
+                          <p>To save your camera settings please check the corresponding box, click <strong>submit</strong> and you will be asked for a file path and name. The default is <em>config_backup.bin</em> and the file path is the download folder of your browser. To restore the settings check <em>Load Backup Copy</em>, browse for the backup file and click <strong>submit</strong>.</p>
+                      </div>
+
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <table>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Save Backup Copy</strong>
+                                </td>
+                                <td>Save you settings in a config_backup.bin file after you configured up your camera. Simply check the save backup box and submit.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Load Backup Copy</strong>
+                                </td>
+                                <td>To restore your settings, e.g. after a reset, check the load backup box, browse for the backup file and submit.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Browse</strong>
+                                </td>
+                                <td>Click here to search for your config_backup.bin backup file. Just submit the file to restore your settings.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /margin -->
+                </article>
+                <!-- /article -->
+
+              </div>
+              <!-- /container main -->
+          </div>
+          <!-- /wrap-->
+
+          <% include ../../_partials/content/_bluenav-1080p-webUI-mobile.ejs %>
+
+        <footer>
+            <% include ../../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>

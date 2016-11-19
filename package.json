@@ -1,5 +1,5 @@
-	{
-  "name": "express-static",
+{
+  "name": "wiki2_en",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,16 @@
   "dependencies": {
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.2.0",
+    "debug": "~2.3.0",
     "ejs": "~2.5.1",
-    "elasticsearch": "~12.0.0",
+    "elasticsearch": "~12.1.0",
     "express": "~4.14.0",
     "express-redirect": "^1.2.2",
-    "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "morgan": "~1.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-newer": "^1.3.0"
   }
 }

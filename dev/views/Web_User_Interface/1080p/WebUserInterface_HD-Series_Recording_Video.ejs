@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ⚡>
+    <head>
+        <% include ../../_partials/amp/_amp-head.ejs %>
+        <link rel="canonical" href="/Web_User_Interface/1080p_Series/Recording/Video/">
+    </head>
+
+    <body class="home">
+
+      <% include ../../_partials/amp/_amp-header.ejs %>
+
+        <div class="wrap mobile-down">
+            <div class="content">
+                <section class="hero webUI">
+                    <div class="container">
+                        <div class="row">
+                            <div class="six columns">
+                                <div class="intro-container">
+                                    <h1>Video Recording Overlay</h1>
+                                    <p class="intro">
+                                      Here you can activate the planned video recording. This function will record a video to the cameras internal SD card inside the time window defined by the <a href="/Web_User_Interface/1080p_Series/Recording/Schedule/">Recording Schedule</a>. You can set the resolution and length of each recorded video file.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Hero -->
+            </div>
+            <!-- /Content -->
+        </div>
+        <!-- /Wrap -->
+
+        <div class="wrap">
+            <div class="container main">
+
+                <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+
+                <article>
+                    <!-- article -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Configure the Planned Video Recording on the SD Card</h2>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+
+                      <div>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Multimedia_Audio.jpg 100w, /images/1080p_webUI/1080p_Settings_Multimedia_Audio.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                      </div>
+
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <table>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Activate scheduled video recording on SD card</strong>
+                                </td>
+                                <td>Activate the scheduled recording to the internal SD card. Please be aware, that the recording will only start if the <a href="/Web_User_Interface/1080p_Series/Recording/Schedule/">recording schedule</a> is active as well.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Video Resolution</strong>
+                                </td>
+                                <td>Set the video resolution for the planned recording.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Video length in seconds</strong>
+                                </td>
+                                <td>It is recommended to divide recordings in small files to improve your data security in case of an writing error during the recording. The maximum lenght of a single video file is 900 seconds - this are 15 minutes.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Duration of manual video recording on SD card</strong>
+                                </td>
+                                <td>You can start the recording via menu bar and with our smartphone app (iPhone, iPad or Android). It is recommended to set a maximum length to divided your recordings into serveral files.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /margin -->
+                </article>
+                <!-- /article -->
+
+              </div>
+              <!-- /container main -->
+          </div>
+          <!-- /wrap-->
+
+          <% include ../../_partials/content/_bluenav-1080p-webUI-mobile.ejs %>
+
+        <footer>
+            <% include ../../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>
