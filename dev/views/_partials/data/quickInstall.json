@@ -1,0 +1,80 @@
+{
+    "articles": [{
+        "qiTitle": "How does an IP-Camera-Network work?",
+        "qiVideoSrc": "https://www.youtube.com/embed/JWa1L_rBRW4",
+        "qiVideoAlt": "How does an IP-Camera Network work?",
+        "qiUrl": "How_Does_An_IP_Camera_Work",
+        "qiPic": "/images/Wiki_Tiles_QI-How_Does_An_IP_Camera_Work.jpg",
+        "qiPicAlt": "How does an IP-Camera Network work?"
+    }, {
+        "qiTitle": "First Steps to get your IP camera working",
+        "qiVideoSrc": "https://www.youtube.com/embed/ByMkfVgjl3c",
+        "qiVideoAlt": "First Steps to get your IP camera working",
+        "qiUrl": "First_Steps",
+        "qiPic": "/images/Wiki_Tiles_QI-First_Steps.jpg",
+        "qiPicAlt": "First Steps to get your IP camera working"
+    }, {
+        "qiTitle": "After unpacking your INSTAR IP Camera",
+        "qiVideoSrc": "https://www.youtube.com/embed/ByMkfVgjl3c",
+        "qiVideoAlt": "After unpacking your INSTAR IP Camera",
+        "qiUrl": "After_Unpacking",
+        "qiPic": "/images/Wiki_Tiles_QI-After_Unpacking.jpg",
+        "qiPicAlt": "After unpacking your INSTAR IP Camera"
+    }, {
+        "qiTitle": "Direct connection with a PC or Notebook",
+        "qiVideoSrc": "#",
+        "qiVideoAlt": "Direct connection with a PC or Notebook",
+        "qiUrl": "Direct_LAN_Connection",
+        "qiPic": "/images/Wiki_Tiles_QI-Direct_Connection.jpg",
+        "qiPicAlt": "Direct connection with a PC or Notebook"
+    }, {
+        "qiTitle": "How to find your IP Camera with an alternative IP Scanner",
+        "qiVideoSrc": "#",
+        "qiVideoAlt": "How to find your IP Camera with an alternative IP Scanner",
+        "qiUrl": "Alternative_IP_Scanner",
+        "qiPic": "/images/Wiki_Tiles_QI-Alternative_IP_Scanner.jpg",
+        "qiPicAlt": "How to find your IP Camera with an alternative IP Scanner"
+    }, {
+        "qiTitle": "Language Selection",
+        "qiVideoSrc": "#",
+        "qiVideoAlt": "Language Selection",
+        "qiUrl": "Language_Selection",
+        "qiPic": "/images/Wiki_Tiles_QI-Language_Selection.jpg",
+        "qiPicAlt": "Language Selection"
+    }, {
+        "qiTitle": "Live Video",
+        "qiVideoSrc": "#",
+        "qiVideoAlt": "Live Video",
+        "qiUrl": "Live_Video",
+        "qiPic": "/images/Wiki_Tiles_QI-Live_Video.jpg",
+        "qiPicAlt": "Live Video"
+    }, {
+        "qiTitle": "Creating user accounts on your camera",
+        "qiVideoSrc": "#",
+        "qiVideoAlt": "Creating user accounts on your camera",
+        "qiUrl": "Creating_User_Accounts",
+        "qiPic": "/images/Wiki_Tiles_QI-Creating_User_Accounts.jpg",
+        "qiPicAlt": "Creating user accounts on your camera"
+    }, {
+        "qiTitle": "WebUI and Firmware Upgrade",
+        "qiVideoSrc": "#",
+        "qiVideoAlt": "WebUI and Firmware Upgrade",
+        "qiUrl": "WebUI_And_Firmware_Upgrade",
+        "qiPic": ["/images/Wiki_Tiles_QI-WebUI_And_Firmware_Upgrade.jpg"],
+        "qiPicAlt": "WebUI and Firmware Upgrade"
+    }, {
+        "qiTitle": "How to clear your Browsing History",
+        "qiVideoSrc": "#",
+        "qiVideoAlt": "How to clear your Browsing History",
+        "qiUrl": "How_To_Clear_Your_Browsing_History",
+        "qiPic": "/images/Wiki_Tiles_QI-Clear_History.jpg",
+        "qiPicAlt": "How to clear your Browsing History"
+    }, {
+        "qiTitle": "How to set up a Wireless Connection",
+        "qiVideoSrc": "#",
+        "qiVideoAlt": "How to set up a Wireless Connection",
+        "qiUrl": "Set_Up_A_Wireless_Connection",
+        "qiPic": "/images/Wiki_Tiles_QI-Wireless_Connection.jpg",
+        "qiPicAlt": "How to set up a Wireless Connection"
+    }]
+}

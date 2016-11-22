@@ -1,0 +1,1 @@
+var express=require("express"),indexRouter=express.Router();indexRouter.route("/").get(function(e,r){r.render("Index",{title:"INSTAR Wiki"})}),indexRouter.route("/Glide").get(function(e,r){r.render("Glide",{title:"Glide.js Demo"})}),module.exports=indexRouter;

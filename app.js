@@ -5,22 +5,22 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var redirect = require('express-redirect');
 
-var indexRouter = require('./routes/indexRoutes');
-var searchRouter = require('./routes/searchRoutes');
-var productRouter = require('./routes/productRoutes');
-var quickInstallRouter = require('./routes/quickInstallRoutes');
-var internetAccessRouter = require('./routes/internetAccessRoutes');
-var motionDetectionRouter = require('./routes/motionDetectionRoutes');
-var advancedUserRouter = require('./routes/advancedUserRoutes');
-var cgi720pRouter = require('./routes/cgi720pRoutes');
-var cgi1080pRouter = require('./routes/cgi1080pRoutes');
-var webUI720pRouter = require('./routes/webUI720pRoutes');
-var webUI1080pRouter = require('./routes/webUI1080pRoutes');
+var indexRouter = require('./build/routes/indexRoutes');
+var searchRouter = require('./build/routes/searchRoutes');
+var productRouter = require('./build/routes/productRoutes');
+var quickInstallRouter = require('./build/routes/quickInstallRoutes');
+var internetAccessRouter = require('./build/routes/internetAccessRoutes');
+var motionDetectionRouter = require('./build/routes/motionDetectionRoutes');
+var advancedUserRouter = require('./build/routes/advancedUserRoutes');
+var cgi720pRouter = require('./build/routes/cgi720pRoutes');
+var cgi1080pRouter = require('./build/routes/cgi1080pRoutes');
+var webUI720pRouter = require('./build/routes/webUI720pRoutes');
+var webUI1080pRouter = require('./build/routes/webUI1080pRoutes');
 
 var app = express();
 
 // View engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'build/views'));
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 3000);
 
@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({
     extended: false,
   }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'build/public')));
 
 // Redirect
 redirect(app);
