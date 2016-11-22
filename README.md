@@ -8,15 +8,15 @@ This App was created in several steps:
 
 1. [Install Node.js and Express.js to develop our Web Application](#1-install-nodejs-and-expressjs-to-serve-our-web-application)
 2. [Preparing the Site Structure](#2-preparing-the-site-structure)
-3. [Import JSON Elements]()
-4. [Install and Configure Gulp.js]()
-5. [Install NGINX on CentOS]()
-6. [Install Node.js on CentOS]()
-7. [Clone Repo from Git]()
-8. [Run the app as a service (PM2)]()
-9. [Install Java]()
-10. [Install Elasticsearch]()
-11. [Install Kibana]()
+3. [Import JSON Elements](#3-import-json-elements)
+4. [Install and Configure Gulp.js](#4-install-and-configure-gulpjs)
+5. [Install NGINX on CentOS](#5-install-nginx-on-a-centos-7-web-server)
+6. [Install Node.js on CentOS](#6-install-nodejs-on-a-centos-7-web-server)
+7. [Clone Repo from Git](#7-clone-repo-from-git)
+8. [Run the app as a service (PM2)](#8-run-the-app-as-a-service-pm2)
+9. [Install Java](#9-install-java)
+10. [Install Elasticsearch](#10-install-elasticsearch)
+11. [Install Kibana](#11-install-kibana)
 
 
 ### 1 Install Node.js and Express.js to develop our Web Application
@@ -26,11 +26,13 @@ ___
 * Install express-generator globally to set up our node/express scaffolding: *npm install -g express-generator*
 * Apply the generator with the EJS templating engine (*-e*) and give your app an name (*e.g. express-static*): *express -e express-static*
 * Switch to the created express-static folder and install dependencies: *cd express-static && npm install*
-* Start the app with: DBEUG=my-application ./bin/www
+* Start the app with: DEBUG=my-application ./bin/www
 
 
 ### 2 Preparing the Site Structure
 ___
+
+The following folders and files will be created in the **dev** folder. Later [Gulp.js](#4-install-and-configure-gulpjs) will be used to create a distilled version ready for deployment in the **build** folder.
 
 * Add *partials/content* to the *views* folder
 * Add *partials/template* to views and add *head.ejs*, *header.ejs*, *footer.ejs* and *jsdefaults.ejs*
@@ -158,6 +160,8 @@ and install gulp-newer to allow you to ignore images that have already been proc
 npm install --save-dev gulp-newer
 ```
 
+Create a gulpfile.js in your apps root directory and add the following code:
+
 ```javascript
 var
   gulp = require('gulp'),
@@ -193,6 +197,107 @@ gulp images
 ```
 
 to compress all images in ./dev/public/images and save them in ./build/public/images.
+
+* **Step Six** — Add a Gulp Task to minify CSS, EJS/HTML and JS:
+
+install the gulp-htmlclean (minify EJS), gulp-clean-css (minify CSS) and gulp-uglify (minify JS) plugin:
+
+```
+npm install --save-dev gulp-htmlclean gulp-clean-css gulp-uglify
+```
+
+Add those plugins to top of your gulpfile:
+
+```
+htmlclean = require('gulp-htmlclean'),
+cleancss = require('gulp-clean-css'),
+uglify = require('gulp-uglify'),
+```
+
+Now we need to point to all directories that contain EJS, CSS and JS files - add the following lines to the File Location section of your gulpfile.js:
+
+```javascript
+ejs = {
+  in: source + 'views/**/*' + '*.ejs',
+  watch: source + 'views/**/*' + '*.ejs',
+  out: dest + 'views/',
+},
+
+css = {
+  in: source + 'public/stylesheets/*' + '*.css',
+  out: dest + 'public/stylesheets/',
+},
+
+js = {
+  in: source + 'public/javascripts/**/*' + '*.js',
+  out: dest + 'public/javascripts/',
+},
+
+routes = {
+  in: source + 'routes/**/*' + '*.js',
+  out: dest + 'routes/',
+},
+```
+
+Now we have to create minify jobs for each file type - (add more tasks if needed):
+
+```javascript
+// Minify EJS files
+gulp.task('ejs', function() {
+  return gulp.src(ejs.in) //Point to the source directory
+    .pipe(newer(ejs.out)) //Compare with source - only run for new files
+    .pipe(htmlclean()) //Pipe all files through the minify plugin
+    .pipe(gulp.dest(ejs.out)); //and save them to the build directory
+});
+
+// Minify CSS files
+gulp.task('css', function() {
+  return gulp.src(css.in)
+    .pipe(newer(css.out))
+    .pipe(cleancss())
+    .pipe(gulp.dest(css.out));
+});
+
+// Minify JS files
+gulp.task('js', function() {
+  return gulp.src(js.in)
+    .pipe(newer(js.out))
+    .pipe(uglify())
+    .pipe(gulp.dest(js.out));
+});
+
+// Minify routes
+gulp.task('routes', function() {
+  return gulp.src(routes.in)
+    .pipe(newer(routes.out))
+    .pipe(uglify())
+    .pipe(gulp.dest(routes.out))
+});
+```
+
+All those tasks can be triggered individually - e.g.:
+
+```
+gulp ejs
+```
+
+But to make it more convenient, we will create a combined task:
+
+```javascript
+// Build task
+gulp.task('build', ['ejs', 'css', 'js', 'routes', 'images'], function() {
+
+});
+```
+
+You can build the with the following command:
+
+```
+gulp build
+```
+
+This task will grab all files from the dev folder, minify/compress them and save them in the build folder.
+
 
 
 ### 5 Install NGINX on a CentOS 7 web server

@@ -3,10 +3,10 @@ var
   newer = require('gulp-newer'),
   imagemin = require('gulp-imagemin'),
   htmlclean = require('gulp-htmlclean'),
-  cleancss = require('gulp-clean-css');
-del = require('del');
-uglify = require('gulp-uglify');
-pump = require('pump');
+  cleancss = require('gulp-clean-css'),
+  del = require('del'),
+  uglify = require('gulp-uglify'),
+  watch = require('gulp-watch');
 
 // File locations
 var
@@ -53,7 +53,7 @@ var
 gulp.task('clean', function() {
   del([
     dest + '*',
-  ]);
+  ])
 });
 
 // Manage images
@@ -75,6 +75,7 @@ gulp.task('json', function() {
 gulp.task('ampcss', function() {
   return gulp.src(ampcss.in)
     .pipe(newer(ampcss.out))
+    .pipe(cleancss())
     .pipe(gulp.dest(ampcss.out));
 });
 
@@ -107,11 +108,11 @@ gulp.task('routes', function() {
   return gulp.src(routes.in)
     .pipe(newer(routes.out))
     .pipe(uglify())
-    .pipe(gulp.dest(routes.out));
+    .pipe(gulp.dest(routes.out))
 });
 
-// Default task
-gulp.task('default', ['ejs', 'css', 'js', 'routes', 'images', 'json', 'ampcss'], function() {
+// Watch task
+gulp.task('watch', function() {
 
   // Image changes
   gulp.watch(images.in, ['images']);
@@ -133,5 +134,17 @@ gulp.task('default', ['ejs', 'css', 'js', 'routes', 'images', 'json', 'ampcss'],
 
   // Ampcss changes
   gulp.watch(ampcss.in, ['ampcss']);
+
+});
+
+// Build task
+gulp.task('build', ['ejs', 'css', 'js', 'routes', 'images', 'json', 'ampcss'], function() {
+
+});
+
+// Default task
+gulp.task('default', function() {
+
+  // Default Task
 
 });
