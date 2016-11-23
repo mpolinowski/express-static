@@ -45,13 +45,16 @@
                     <!-- /margin -->
 
                     <div class="margin">
-
                       <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Features_Nightvision.jpg 100w, /images/1080p_webUI/1080p_Settings_Features_Nightvision.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Features_Nightvision.jpg 100w, /images/1080p_webUI/1080p_Settings_Features_Nightvision.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:featuresIR" role="button" tabindex="0"></amp-img>
                       </div>
-
                     </div>
                     <!-- /margin -->
+                    <amp-lightbox id="featuresIR" layout="nodisplay">
+                      <div class="lightbox">
+                        <amp-img src="/images/1080p_webUI/1080p_Settings_Features_Nightvision.jpg" width="800" height="550" on="tap:featuresIR.close" role="button" tabindex="1">
+                      </div>
+                    </amp-lightbox>
 
                     <div class="margin">
                         <table>
@@ -59,7 +62,7 @@
                                 <td width="20%">
                                     <strong>Infrared LED Status</strong>
                                 </td>
-                                <td>Here you can adjust the behaviour of the infrared LEDs of the camera. You can choose between 2 modes in which the LEDs are either always off or automatically switched on by a photodiode when it is getting dark.</td>
+                                <td>Here you can adjust the behaviour of the infrared LEDs of the camera. You can choose between 3 modes in which the LEDs are either always off, always on or automatically switched on by a photo sensor when it is getting dark.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
@@ -72,7 +75,7 @@
                     <!-- /margin -->
 
                     <div class="warningcard">
-                        <p><strong>Please be aware</strong><br/><br/>that it is not possible to permanently activate the IR LEDs. If you deactivate the IR LEDs by night you might get false alerts from the internal motion detection. In this case, you will have to deactivate the motion detection during the night using the alarm schedule.</p>
+                        <p><strong>Please be aware</strong><br/><br/>If you deactivate the IR LEDs by night you might get false alerts from the internal motion detection. In this case, you will have to deactivate the motion detection during the night using the <a href="/Web_User_Interface/1080p_Series/Alarm/Schedule/"><strong>alarm schedule</strong></a>.</p>
                     </div>
                     <!-- /margin -->
                 </article>

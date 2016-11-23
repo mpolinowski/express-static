@@ -46,31 +46,34 @@
                     <!-- /margin -->
 
                     <div class="margin">
-
                       <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Multimedia_Audio.jpg 100w, /images/1080p_webUI/1080p_Settings_Multimedia_Audio.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Multimedia_Audio.jpg 100w, /images/1080p_webUI/1080p_Settings_Multimedia_Audio.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:multiAudio" role="button" tabindex="0"></amp-img>
                       </div>
-
                     </div>
                     <!-- /margin -->
+                    <amp-lightbox id="multiAudio" layout="nodisplay">
+                      <div class="lightbox">
+                        <amp-img src="/images/1080p_webUI/1080p_Settings_Multimedia_Audio.jpg" width="800" height="550" on="tap:multiAudio.close" role="button" tabindex="1">
+                      </div>
+                    </amp-lightbox>
 
                     <div class="margin">
                         <table>
                             <tr>
                                 <td width="20%">
-                                    <strong>Enable Audio</strong>
+                                    <strong>Enable audio</strong>
                                 </td>
                                 <td>Activate or deactivate the audio of your camera. This deactivates both, the audio input and output.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
-                                    <strong>Input Sensitivity</strong>
+                                    <strong>Input sensitivity</strong>
                                 </td>
-                                <td>The audio input volume controls the internal or (optional) external microphone of your camera. Please be aware, that the volume indirectly influences the sensitivity of the <a href="/Web_User_Interface/1080p_Series/Alarm/Audio_Alarm/">audio detection</a>.</td>
+                                <td>The audio input volume controls the internal or (optional) external microphone of your camera. Please be aware, that the volume indirectly influences the sensitivity of the <a href="/Web_User_Interface/1080p_Series/Alarm/Actions/">audio detection</a>.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
-                                    <strong>Output Volume</strong>
+                                    <strong>Output volume</strong>
                                 </td>
                                 <td>Here you can adjust the audio volume for the internal or optional external loudspeaker of your camera.</td>
                             </tr>

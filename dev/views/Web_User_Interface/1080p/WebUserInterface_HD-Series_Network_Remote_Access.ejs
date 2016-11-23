@@ -18,7 +18,7 @@
                                 <div class="intro-container">
                                     <h1>DDNS Overlay</h1>
                                     <p class="intro">
-                                      You have two ways to access your camera over the internet - the easy way is called <a href="/Web_User_Interface/1080p_Series/Network/P2P/">P2P</a>. The only way to get complete access to all your camera´s functions is called DDNS. The DDNS or Internet Address gives you access to your cameras web user interface.
+                                      You have two ways to access your camera over the internet - the easy way is called P2P. The only way to get complete access to all your camera´s functions is called DDNS. The DDNS or Internet Address gives you access to your cameras web user interface.
                                     </p>
                                 </div>
                             </div>
@@ -50,17 +50,16 @@
                     <!-- /margin -->
 
                     <div class="margin">
-
                       <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Network_Remote_Access.jpg 100w, /images/1080p_webUI/1080p_Settings_Network_Remote_Access.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Network_Remote_Access.jpg 100w, /images/1080p_webUI/1080p_Settings_Network_Remote_Access.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:netRemote" role="button" tabindex="0"></amp-img>
                       </div>
-
-                      <div>
-                          <p>The DDNS Menu - Use your personal Internet Address to connect to your camera over the internet.</p>
-                      </div>
-
                     </div>
                     <!-- /margin -->
+                    <amp-lightbox id="netRemote" layout="nodisplay">
+                      <div class="lightbox">
+                        <amp-img src="/images/1080p_webUI/1080p_Settings_Network_Remote_Access.jpg" width="800" height="550" on="tap:netRemote.close" role="button" tabindex="1">
+                      </div>
+                    </amp-lightbox>>
 
                     <div class="margin">
                         <table>
