@@ -45,13 +45,16 @@
                     <!-- /margin -->
 
                     <div class="margin">
-
                       <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_User.jpg 100w, /images/1080p_webUI/1080p_Settings_System_User.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_User.jpg 100w, /images/1080p_webUI/1080p_Settings_System_User.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:netRemote" role="button" tabindex="0"></amp-img>
                       </div>
-
                     </div>
                     <!-- /margin -->
+                    <amp-lightbox id="netRemote" layout="nodisplay">
+                      <div class="lightbox">
+                        <amp-img src="/images/1080p_webUI/1080p_Settings_System_User.jpg" width="800" height="550" on="tap:netRemote.close" role="button" tabindex="1">
+                      </div>
+                    </amp-lightbox>
 
                     <div class="margin">
                         <table>

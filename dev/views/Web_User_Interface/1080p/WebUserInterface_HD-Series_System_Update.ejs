@@ -45,15 +45,16 @@
                     <!-- /margin -->
 
                     <div class="margin">
-
                       <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Update.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Update.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
-
-                          <p>You can download regular software updates for your camera from <a href="http://download.instar.de">download.instar.com</a>. Please use the browse button to set the file path once you downloaded and unzipped the update BIN and click Submit to upload the file to your camera. Use the update function only when the camera is connected to the router by LAN cable!</p>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Update.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Update.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:sysUp" role="button" tabindex="0"></amp-img>
                       </div>
-
                     </div>
                     <!-- /margin -->
+                    <amp-lightbox id="sysUp" layout="nodisplay">
+                      <div class="lightbox">
+                        <amp-img src="/images/1080p_webUI/1080p_Settings_System_Update.jpg" width="800" height="550" on="tap:sysUp.close" role="button" tabindex="1">
+                      </div>
+                    </amp-lightbox>
 
                     <div class="margin">
                         <amp-youtube width="1280"
@@ -69,21 +70,15 @@
                         <table>
                             <tr>
                                 <td width="20%">
-                                    <strong>Camera Model</strong>
-                                </td>
-                                <td>Displays your camera model number - For more information on your camera model check our <a href="http://wiki.instar.com/index.php/IP_Cameras">complete list</a>.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
                                     <strong>Firmware Version</strong>
                                 </td>
-                                <td>Version of the operating system of your camera. Information about a software update can be found <a href="http://wiki.instar.com/index.php/Wie_spiele_ich_eine_neue_WebUI_bzw._Firmware_auf_%28HD_Kameras%29">here</a>.</td>
+                                <td>Version of the operating system of your camera. Information about a software update can be found <a href="/Quick_Installation/WebUI_And_Firmware_Upgrade">here</a>.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
                                     <strong>WebUI Version</strong>
                                 </td>
-                                <td>Version of the web user interface of your camera. Information about a software update can be found <a href="http://wiki.instar.com/index.php/Wie_spiele_ich_eine_neue_WebUI_bzw._Firmware_auf_%28HD_Kameras%29">here</a>.</td>
+                                <td>Version of the web user interface of your camera. Information about a software update can be found <a href="/Quick_Installation/WebUI_And_Firmware_Upgrade">here</a>.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
@@ -93,9 +88,9 @@
                             </tr>
                             <tr>
                                 <td width="20%">
-                                    <strong>Browse</strong>
+                                    <strong>Choose file...</strong>
                                 </td>
-                                <td>Click here to browse for the update.pkg file and submit. More information for the software update can be found <a href="http://wiki.instar.com/index.php/Wie_spiele_ich_eine_neue_WebUI_bzw._Firmware_auf_%28HD_Kameras%29">here</a>.</td>
+                                <td>Click here to browse for the update.pkg file and submit. More information for the software update can be found <a href="/Quick_Installation/WebUI_And_Firmware_Upgrade">here</a>.</td>
                             </tr>
                         </table>
                     </div>
