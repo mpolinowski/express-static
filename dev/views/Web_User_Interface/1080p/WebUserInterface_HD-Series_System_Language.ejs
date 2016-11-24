@@ -46,15 +46,18 @@
                     <!-- /margin -->
 
                     <div class="margin">
-
                       <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Language.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Language.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
-
-                          <p>Here you can choose the language of the web user interface. The web user interface will reload after you click Submit.</p>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Language.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Language.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:sysLang" role="button" tabindex="0"></amp-img>
                       </div>
 
+                      <p>Here you can choose the language of the web user interface. The web user interface will reload after you click Submit.</p>
                     </div>
                     <!-- /margin -->
+                    <amp-lightbox id="sysLang" layout="nodisplay">
+                      <div class="lightbox">
+                        <amp-img src="/images/1080p_webUI/1080p_Settings_System_Language.jpg" width="800" height="550" on="tap:sysLang.close" role="button" tabindex="1">
+                      </div>
+                    </amp-lightbox>
 
                     <div class="margin">
                         <table>

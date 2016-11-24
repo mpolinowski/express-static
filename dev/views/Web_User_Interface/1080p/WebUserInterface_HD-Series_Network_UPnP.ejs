@@ -45,13 +45,16 @@
                     <!-- /margin -->
 
                     <div class="margin">
-
                       <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Network_UPnP.jpg 100w, /images/1080p_webUI/1080p_Settings_Network_UPnP.png 1500w" width="1371" height="949" layout="responsive" class="shadow"></amp-img>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Network_UPnP.jpg 100w, /images/1080p_webUI/1080p_Settings_Network_UPnP.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:netUPnP" role="button" tabindex="0"></amp-img>
                       </div>
-
                     </div>
                     <!-- /margin -->
+                    <amp-lightbox id="netUPnP" layout="nodisplay">
+                      <div class="lightbox">
+                        <amp-img src="/images/1080p_webUI/1080p_Settings_Network_UPnP.jpg" width="800" height="550" on="tap:netUPnP.close" role="button" tabindex="1">
+                      </div>
+                    </amp-lightbox>
 
                     <div class="margin">
                         <table>
@@ -59,14 +62,19 @@
                                 <td width="20%">
                                     <strong>UPnP Status</strong>
                                 </td>
-                                <td>Activate or deactivate the Universal Plug &amp; Play service for your camera. You can confirm the actual status in the <a href="/Web_User_Interface/720p_Series/System/Info/">System/Info Menu</a>.</td>
+                                <td>Activate or deactivate the Universal Plug &amp; Play service for your camera.</td>
                             </tr>
                         </table>
                     </div>
                     <!-- /margin -->
 
+                    <div class="dangercard">
+                        <p><strong>Be Aware</strong><br/><br/>Your camera will be accessible for everyone after you forwarded it inside your router. To prevent unwanted access, please make sure to change the user logins before you start forwarding the camera! The user logins can be adjusted in the <a href="/Web_User_Interface/1080p_Series/System/User/"><strong>User Menu</strong></a>.</p>
+                    </div>
+                    <!-- /margin -->
+
                     <div class="margin">
-                        <p>If you are using Universal Plug &amp; Play for your network devices. Please activate the UPnP service in your camera to automatically set the <a href="/Internet_Access/Port_Forwarding">port forwarding</a> for your camera.</p>
+                        <p>If you are using Universal Plug &amp; Play for your network devices, please activate the UPnP service to automatically set the <a href="/Internet_Access/Port_Forwarding">port forwarding</a> for your camera.</p>
                     </div>
                     <!-- /margin -->
 
