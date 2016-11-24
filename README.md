@@ -401,6 +401,13 @@ We will use Node Packaged Modules (NPM), which is basically a package manager fo
  sudo npm install pm2@latest -g
 ```
 
+To update PM2 in memory
+```
+ sudo npm install pm2@latest -g
+
+ pm2 update
+```
+
 * **Step Two** — Manage Application with PM2
 
 The first thing you will want to do is use the pm2 start command to run your application, app.js, in the background. With node Node apps the entry point is the app.js (or index.js). In case you used Express-Generator to do your app scaffolding, use the www file in the /bin directory instead :
@@ -415,10 +422,19 @@ This also adds your application to PM2's process list, which is outputted every 
 | ------------- |:-------------:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| -----:|
 | app      | 0 | fork | 9495 | online | 0 | 0s | 36.4 MB | disabled |
 
+Type the following to save your app list:
+```
+ pm2 save
+```
+
 Applications that are running under PM2 will be restarted automatically if the application crashes or is killed, but an additional step needs to be taken to get the application to launch on system startup (boot or reboot). Luckily, PM2 provides an easy way to do this, the startup subcommand.
 
-The startup subcommand generates and configures a startup script to launch PM2 and its managed processes on server boots. You must also specify the init system you are running on, which is systemd, in our case:
+Once you started all apps, type the following to make sure that they restart after a server restart:
+```
+ pm2 startup
+```
 
+The startup subcommand generates and configures a startup script to launch PM2 and its managed processes on server boots. You must also specify the init system you are running on, which is systemd, in our case:
 ```
  sudo pm2 startup systemd
 ```
@@ -434,6 +450,16 @@ Stop an application with this command (specify the PM2 App name or id):
 Restart an application with this command (specify the PM2 App name or id):
 ```
  sudo pm2 restart app
+```
+
+Will 0s downtime reload (for NETWORKED apps):
+```
+ sudo pm2 reload all
+```
+
+Will remove process 0 from pm2 list:
+```
+ pm2 delete 0
 ```
 
 The list of applications currently managed by PM2 can also be looked up with the list subcommand:
