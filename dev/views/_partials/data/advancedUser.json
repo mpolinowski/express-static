@@ -34,6 +34,13 @@
             "mdUrl": "CCTV_vs_IP",
             "mdPic": "/images/Wiki_Tiles_Advanced_CCTV.jpg",
             "mdPicAlt": "Difference Between Analog And IP Cameras"
+        }, {
+            "mdTitle": "VPN Tunnel",
+            "mdVideoSrc": "#",
+            "mdVideoAlt": "Use a VPN Tunnel to access your Camera",
+            "mdUrl": "VPN_AVM_Fritzbox",
+            "mdPic": "/images/Wiki_Tiles_Advanced_VPN.jpg",
+            "mdPicAlt": "Use a VPN Tunnel to access your Camera"
         }
     ]
 }
