@@ -2288,10 +2288,13 @@ nav a {
     color: #fff
 }
 
-nav ul li,
-nav ol li {
+nav ul li {
     margin-bottom: 10px;
-    list-style: none
+    list-style: none;
+}
+
+nav ol li {
+    margin-left: -15px;
 }
 .main .content {
     -webkit-box-flex: 1;
