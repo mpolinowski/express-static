@@ -815,6 +815,24 @@ header .tab.hamburger {
 .navGo:hover {
     box-shadow: -1px 6px 6px -3px rgba(0, 0, 0, 0.22);
 }
+.navGoRed {
+    height: 40px;
+    width: 120px;
+    background-color: #d9534f;
+    border: 0;
+    color: #fff;
+    padding: 0 5px;
+    margin: -15px 0 0 15px;
+    border-radius: 4px;
+    font-family: Roboto, verdana, arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.navGoRed:hover {
+    box-shadow: -1px 6px 6px -3px rgba(0, 0, 0, 0.22);
+}
 amp-sidebar ul {
     list-style-type: square;
     padding-right: 1em;
@@ -1826,11 +1844,10 @@ body.roadmap .stages ul {
     padding: 20px;
 }
 .card a {
-    color: #112d42;
+    color: #0275d8;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
     text-transform: uppercase;
-    text-decoration: underline;
     font-size: 14px;
 }
 .card .image {
@@ -1907,11 +1924,10 @@ display: none;
     padding: 20px;
 }
 .twocard a {
-    color: #112d42;
+    color: #0275d8;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
     text-transform: uppercase;
-    text-decoration: underline;
     font-size: 14px;
 }
 .twocard .image {
@@ -1974,11 +1990,10 @@ display: none;
     padding: 20px;
 }
 .onecard a {
-    color: #112d42;
+    color: #0275d8;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
     text-transform: uppercase;
-    text-decoration: underline;
     font-size: 14px;
 }
 .onecard .image {
@@ -2273,10 +2288,13 @@ nav a {
     color: #fff
 }
 
-nav ul li,
-nav ol li {
+nav ul li {
     margin-bottom: 10px;
-    list-style: none
+    list-style: none;
+}
+
+nav ol li {
+    margin-left: -15px;
 }
 .main .content {
     -webkit-box-flex: 1;
@@ -2383,4 +2401,7 @@ footer .footer-text {
 .footer-link {
   color: black;
 }
-
+.inlineHeader {
+  display: inline;
+  margin: 0;
+}
