@@ -46,9 +46,12 @@
 
                     <div class="margin">
 
-                      <div>
-                          <amp-img src="/images/WebUI-Network_P2P.png" width="537" height="560" layout="responsive" class="shadow"></amp-img>
-                      </div>
+                        <amp-img on="tap:lightbox1" role="button" tabindex="0" src="/images/WebUI-Network_P2P.png" width="537" height="560" layout="responsive" class="shadow"></amp-img>
+                        <amp-lightbox id="lightbox1" layout="nodisplay">
+                            <div class="lightbox" on="tap:lightbox1.close" role="button" tabindex="0" class="centered">
+                                <amp-img on="tap:lightbox1.close" role="button" tabindex="0" src="/images/WebUI-Network_P2P.png" width="537" height="560" layout="responsive" class="shadow"></amp-img>
+                            </div>
+                        </amp-lightbox>
 
                     </div>
                     <!-- /margin -->
@@ -89,7 +92,7 @@
                         <br><br>
                         The Relay Server only works as a mediator between your smartphone and your camera. But it can also receive your camera´s stream and forward it to your phone, in case the direct connection can not be established. This is a fall-back safeguard to guarantee that you will be able to access your camera. The server will only log that the direct connection failed - <strong>no video data will be saved on our server under any circumstances</strong>.
                         <br><br>
-                        You can always use the <a href="/Web_User_Interface/720p_Series/Network/DDNS/">DDNS Adress</a> instead to avoid sending your videostream through other servers. Most routers also offer support for VPN tunnels - allowing you to access your camera fully encrypted over it´s local IP address  - this is easily configured with a router like the <a href="https://en.avm.de/service/vpn/overview/ "target=_blank" ">AVM Fritzbox</a> or similar.</p>
+                        You can always use the <a href="/Web_User_Interface/720p_Series/Network/DDNS/">DDNS Adress</a> instead to avoid sending your videostream through other servers. Most routers also offer support for VPN tunnels - allowing you to access your camera fully encrypted over it´s local IP address  - this is easily configured with a router like the <a href="https://en.avm.de/service/vpn/overview/" target="_blank">AVM Fritzbox</a> or similar.</p>
                     </div>
                     <!-- /margin -->
 
