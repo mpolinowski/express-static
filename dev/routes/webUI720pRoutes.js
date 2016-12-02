@@ -8,7 +8,7 @@ webUI720pRouter.route('/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series', {
             title: 'INSTAR Web User Interface HD Series',
-			uplink: '/Web_User_Interface/1080p_Series/Overview/',
+            uplink: '/Web_User_Interface/1080p_Series/Overview/',
           });
       });
 
@@ -19,7 +19,7 @@ webUI720pRouter.route('/Software/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Software', {
             title: 'Software Menu',
-			uplink: '/Web_User_Interface/720p_Series/',
+            uplink: '/Web_User_Interface/720p_Series/',
           });
       });
 
@@ -28,7 +28,7 @@ webUI720pRouter.route('/Software/Language/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Software_Language', {
             title: 'Software Menu :: Language',
-			uplink: '/Web_User_Interface/720p_Series/Software/',
+            uplink: '/Web_User_Interface/720p_Series/Software/',
           });
       });
 
@@ -37,7 +37,7 @@ webUI720pRouter.route('/Software/Backup/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Software_Backup', {
             title: 'Software Menu :: Backup',
-			uplink: '/Web_User_Interface/720p_Series/Software/',
+            uplink: '/Web_User_Interface/720p_Series/Software/',
           });
       });
 
@@ -46,7 +46,7 @@ webUI720pRouter.route('/Software/Update/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Software_Update', {
             title: 'Software Menu :: Update',
-			uplink: '/Web_User_Interface/720p_Series/Software/',
+            uplink: '/Web_User_Interface/720p_Series/Software/',
           });
       });
 
@@ -55,7 +55,7 @@ webUI720pRouter.route('/Software/Reboot_Reset/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Software_Reboot_Reset', {
             title: 'Software Menu :: Reboot & Reset',
-			uplink: '/Web_User_Interface/720p_Series/Software/',
+            uplink: '/Web_User_Interface/720p_Series/Software/',
           });
       });
 
@@ -66,7 +66,7 @@ webUI720pRouter.route('/Network/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Network', {
             title: 'Network Menu',
-			uplink: '/Web_User_Interface/720p_Series/',
+            uplink: '/Web_User_Interface/720p_Series/',
           });
       });
 
@@ -75,7 +75,7 @@ webUI720pRouter.route('/Network/IP_Configuration/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Network_IP_Configuration', {
             title: 'Network Menu :: IP Configuration',
-			uplink: '/Web_User_Interface/720p_Series/Network/',
+            uplink: '/Web_User_Interface/720p_Series/Network/',
           });
       });
 
@@ -84,7 +84,7 @@ webUI720pRouter.route('/Network/WiFi/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Network_WiFi', {
             title: 'Network Menu :: WiFi',
-			uplink: '/Web_User_Interface/720p_Series/Network/',
+            uplink: '/Web_User_Interface/720p_Series/Network/',
           });
       });
 
@@ -93,7 +93,7 @@ webUI720pRouter.route('/Network/DDNS/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Network_DDNS', {
             title: 'Network Menu :: DDNS',
-			uplink: '/Web_User_Interface/720p_Series/Network/',
+            uplink: '/Web_User_Interface/720p_Series/Network/',
           });
       });
 
@@ -102,7 +102,7 @@ webUI720pRouter.route('/Network/P2P/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Network_P2P', {
             title: 'Network Menu :: P2P',
-			uplink: '/Web_User_Interface/720p_Series/Network/',
+            uplink: '/Web_User_Interface/720p_Series/Network/',
           });
       });
 
@@ -111,7 +111,7 @@ webUI720pRouter.route('/Network/UPnP/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Network_UPnP', {
             title: 'Network Menu :: UPnP',
-			uplink: '/Web_User_Interface/720p_Series/Network/',
+            uplink: '/Web_User_Interface/720p_Series/Network/',
           });
       });
 
@@ -120,7 +120,7 @@ webUI720pRouter.route('/Network/Push_Service/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Network_Push_Service', {
             title: 'Network Menu :: Push Service',
-			uplink: '/Web_User_Interface/720p_Series/Network/',
+            uplink: '/Web_User_Interface/720p_Series/Network/',
           });
       });
 
@@ -131,7 +131,7 @@ webUI720pRouter.route('/System/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_System', {
             title: 'System Menu',
-			uplink: '/Web_User_Interface/720p_Series/',
+            uplink: '/Web_User_Interface/720p_Series/',
           });
       });
 
@@ -140,7 +140,7 @@ webUI720pRouter.route('/System/Info/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_System_Info', {
             title: 'System Menu :: Info',
-			uplink: '/Web_User_Interface/720p_Series/System/',
+            uplink: '/Web_User_Interface/720p_Series/System/',
           });
       });
 
@@ -149,7 +149,7 @@ webUI720pRouter.route('/System/Date_Time/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_System_Date_Time', {
             title: 'System Menu :: Date & Time',
-			uplink: '/Web_User_Interface/720p_Series/System/',
+            uplink: '/Web_User_Interface/720p_Series/System/',
           });
       });
 
@@ -158,7 +158,7 @@ webUI720pRouter.route('/System/User/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_System_User', {
             title: 'System Menu :: User',
-			uplink: '/Web_User_Interface/720p_Series/System/',
+            uplink: '/Web_User_Interface/720p_Series/System/',
           });
       });
 
@@ -167,7 +167,7 @@ webUI720pRouter.route('/System/Status_LED/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_System_Status_LED', {
             title: 'System Menu :: Status LED',
-			uplink: '/Web_User_Interface/720p_Series/System/',
+            uplink: '/Web_User_Interface/720p_Series/System/',
           });
       });
 
@@ -176,7 +176,7 @@ webUI720pRouter.route('/System/IR_LED/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_System_IR_LED', {
             title: 'System Menu :: IR LED',
-			uplink: '/Web_User_Interface/720p_Series/System/',
+            uplink: '/Web_User_Interface/720p_Series/System/',
           });
       });
 
@@ -185,7 +185,7 @@ webUI720pRouter.route('/System/ONVIF/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_System_ONVIF', {
             title: 'System Menu :: ONVIF',
-			uplink: '/Web_User_Interface/720p_Series/System/',
+            uplink: '/Web_User_Interface/720p_Series/System/',
           });
       });
 
@@ -194,7 +194,7 @@ webUI720pRouter.route('/System/PTZ/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_System_PTZ', {
             title: 'System Menu :: PTZ',
-			uplink: '/Web_User_Interface/720p_Series/System/',
+            uplink: '/Web_User_Interface/720p_Series/System/',
           });
       });
 
@@ -203,7 +203,7 @@ webUI720pRouter.route('/System/PTZ_Tour/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_System_PTZ_Tour', {
             title: 'System Menu :: PTZ Tour',
-			uplink: '/Web_User_Interface/720p_Series/System/',
+            uplink: '/Web_User_Interface/720p_Series/System/',
           });
       });
 
@@ -212,7 +212,7 @@ webUI720pRouter.route('/System/System_Log/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_System_System_Log', {
             title: 'System Menu :: System Log',
-			uplink: '/Web_User_Interface/720p_Series/System/',
+            uplink: '/Web_User_Interface/720p_Series/System/',
           });
       });
 
@@ -223,7 +223,7 @@ webUI720pRouter.route('/Multimedia/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Multimedia', {
             title: 'Multimedia Menu',
-			uplink: '/Web_User_Interface/720p_Series/',
+            uplink: '/Web_User_Interface/720p_Series/',
           });
       });
 
@@ -232,7 +232,7 @@ webUI720pRouter.route('/Multimedia/Audio/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Multimedia_Audio', {
             title: 'Multimedia Menu :: Audio',
-			uplink: '/Web_User_Interface/720p_Series/Multimedia/',
+            uplink: '/Web_User_Interface/720p_Series/Multimedia/',
           });
       });
 
@@ -333,6 +333,15 @@ webUI720pRouter.route('/Alarm/Audio_Alarm/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Alarm_Audio_Alarm', {
             title: 'Alarm Menu :: Audio Alarm',
+			uplink: '/Web_User_Interface/720p_Series/Alarm/',
+          });
+      });
+
+/* GET HD WebUI page. */
+webUI720pRouter.route('/Alarm/Alarmserver/')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/720p/WebUserInterface_HD-Series_Alarm_Alarmserver', {
+            title: 'Alarm Menu :: Alarmserver',
 			uplink: '/Web_User_Interface/720p_Series/Alarm/',
           });
       });
