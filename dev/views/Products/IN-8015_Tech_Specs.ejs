@@ -1,4 +1,4 @@
-<% include ../_partials/template/_head.ejs %>
+<% include ../_partials/template/_head_chartist.ejs %>
 
     <body>
         <% include ../_partials/template/_outdated.ejs %>
@@ -175,6 +175,9 @@
                         <!-- ###################################### Image Gallery ################################### -->
 
                         <div class="mb offset-md-1 col-md-10">
+
+                            <h2>Image Quality</h2>
+                            <br>
                             <div id="carousel" class="carousel slide" data-ride="carousel">
                               <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -183,7 +186,7 @@
                               </ol>
                               <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
-                                  <img src="/images/IN-8015HD-vs-IN-6012HD.png" class="img-fluid" alt="IN-8015HD vs IN-6014HD">
+                                  <img src="/images/IN-8015HD-vs-IN-6014HD.png" class="img-fluid" alt="IN-8015HD vs IN-6014HD">
                                 </div>
                                 <div class="carousel-item">
                                   <img src="/images/IN-8015HD-vs-IN-6012HD.png" class="img-fluid" alt="IN-8015HD vs IN-6012HD">
@@ -308,7 +311,103 @@
 
                         <!-- ################################## Hardware Graph ################################### -->
 
+                        <div class="offset-md-1 col-md-10 hidden-xs-down">
 
+                            <h2>Power consumption</h2>
+                            <p><span style="color: #0275d8;">IN-8015 HD</span> vs. <span style="color: #f0ad4e;">IN-6014 HD</span> <a href="/Products/Indoor_Cameras/IN-6014_HD"> &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>&nbsp; vs. <span style="color: #373a3c;">IN-3011</span> <a href="/Products/Indoor_Cameras/IN-3011"> &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a> in [W]</p>
+                            <hr>
+
+                            <div class="ct-chart ct-golden-section" id="chart1"></div>
+
+                            <script type="text/javascript">
+                              var data = {
+                                // A labels array that can contain any sort of values
+                                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                                // Our series array that contains series objects or in this case series data arrays
+                                series: [
+                                  [
+                                    {meta: 'IN-8015HD: Booting (min) [W]', value: 2.04},
+                                    {meta: 'IN-8015HD: Booting (max) [W]', value: 6.80},
+                                    {meta: 'IN-8015HD: Booting (IR on) [W]', value: 7.30},
+                                    {meta: 'IN-8015HD: Idle [W]', value: 3.52},
+                                    {meta: 'IN-8015HD: Idle (IR on) [W]', value: 4.63},
+                                    {meta: 'IN-8015HD: Idle (WLAN + IR on) [W]', value: 5.32},
+                                    {meta: 'IN-8015HD: Pan&Tilt [W]', value: 4.32},
+                                    {meta: 'IN-8015HD: Pan&Tilt (IR on) [W]', value: 5.47},
+                                    {meta: 'IN-8015HD: Recording [W]', value: 3.65},
+                                    {meta: 'IN-8015HD: Recording (IR on) [W]', value: 4.70}
+                                  ],
+                                  [
+                                    {meta: 'IN-6014HD: Booting (min) [W]', value: 1.94},
+                                    {meta: 'IN-6014HD: Booting (max) [W]', value: 6.42},
+                                    {meta: 'IN-6014HD: Booting (IR on) [W]', value: 7.49},
+                                    {meta: 'IN-6014HD: Idle [W]', value: 2.94},
+                                    {meta: 'IN-6014HD: Idle (IR on) [W]', value: 4.29},
+                                    {meta: 'IN-8015HD: Idle (WLAN + IR on) [W]', value: 5.09},
+                                    {meta: 'IN-6014HD: Pan&Tilt [W]', value: 4.74},
+                                    {meta: 'IN-6014HD: Pan&Tilt (IR on) [W]', value: 5.67},
+                                    {meta: 'IN-6014HD: Recording [W]', value: 2.97},
+                                    {meta: 'IN-6014HD: Recording (IR on) [W]', value: 4.54}
+                                  ],
+                                  [
+                                    {meta: 'IN-3011: Booting (min) [W]', value: 2.20},
+                                    {meta: 'IN-3011: Booting (max) [W]', value: 6.80},
+                                    {meta: 'IN-3011: Booting (IR on) [W]', value: 7.20},
+                                    {meta: 'IN-3011: Idle [W]', value: 3.30},
+                                    {meta: 'IN-3011: Idle (IR on) [W]', value: 3.80},
+                                    {meta: 'IN-8015HD: Idle (WLAN + IR on) [W]', value: 4.50},
+                                    {meta: 'IN-3011: Pan&Tilt [W]', value: 5.10},
+                                    {meta: 'IN-3011: Pan&Tilt (IR on) [W]', value: 7.6},
+                                    {meta: 'IN-3011: Recording [W]', value: 4.50},
+                                    {meta: 'IN-3011: Recording (IR on) [W]', value: 4.00}
+                                  ]
+                                ]
+                              };
+
+                              // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
+                              // as you saw in the previous example
+                              var options = {
+                                width: 900,
+                                height: 500,
+                                showArea: true,
+                                showLine: true,
+                                showPoint: true,
+                                fullWidth: true,
+                                // Remove this configuration to see that chart rendered with cardinal spline interpolation
+                                // Sometimes, on large jumps in data values, it's better to use simple smoothing.
+                                lineSmooth: Chartist.Interpolation.simple({
+                                  divisor: 2
+                                }),
+                                fullWidth: true,
+                                chartPadding: {
+                                  right: 20
+                                },
+                                low: 0,
+                                plugins: [
+                                  Chartist.plugins.tooltip()
+                                ]
+                              };
+
+                              var responsiveOptions = [
+                                ['screen and (min-width: 975px) and (max-width: 1050px)', {
+                                  width: 775,
+                                  height: 430,
+                                }],
+                                ['screen and (min-width: 746px) and (max-width: 974px)', {
+                                  width: 568,
+                                  height: 315,
+                                }],
+                                ['screen and (max-width: 745px)', {
+                                  width: 510,
+                                  height: 283,
+                                }]
+                              ];
+
+                              new Chartist.Line('#chart1', data, options, responsiveOptions);
+
+                            </script>
+
+                        </div>
 
                         <!-- ###################################### Software ######################################## -->
 
@@ -360,68 +459,82 @@
 
                         <!-- ################################## Software Cards ################################### -->
 
-                      <div class="mb offset-md-1 col-md-10">
+                        <div class="mb offset-md-1 col-md-10 hidden-sm-down">
 
-                        <div class="card-deck-wrapper">
-                          <div class="card-deck">
-                            <div class="card shadow">
-                              <img class="card-img-top img-fluid" src="/images/Software_Tiles_Windows.png" alt="Windows Applications">
-                              <div class="card-block">
-                                <h4 class="card-title">Windows</h4>
-                                <p class="card-text">Windows XP - 10 and Windows Phone apps for your INSTAR IP Camera.</p>
-                                <a href="/Products/Software/Windows/" class="btn btn-primary">More</a>
+                          <h2>Supported Software</h2>
+                          <br>
+                          <div class="card-deck-wrapper">
+                            <div class="card-deck">
+                              <div class="card shadow">
+                                <a href="/Products/Software/Windows/">
+                                  <img class="card-img-top img-fluid" src="/images/Software_Tiles_Windows.png" alt="Windows Applications">
+                                </a>
+                                <div class="card-block hidden-md-down">
+                                  <h4 class="card-title">Windows</h4>
+                                  <p class="card-text">Windows XP - 10 and Windows Phone apps for your INSTAR IP Camera.</p>
+                                  <a href="/Products/Software/Windows/" class="btn btn-primary">More</a>
+                                </div>
                               </div>
-                            </div>
-                            <div class="card shadow">
-                              <img class="card-img-top img-fluid" src="/images/Software_Tiles_macOS.png" alt="macOS Applications">
-                              <div class="card-block">
-                                <h4 class="card-title">macOS</h4>
-                                <p class="card-text">Applications for macOS to use with your INSTAR IP Camera.</p>
-                                <a href="/Products/Software/macOS/" class="btn btn-primary">More</a>
+                              <div class="card shadow">
+                                <a href="/Products/Software/macOS/">
+                                  <img class="card-img-top img-fluid" src="/images/Software_Tiles_macOS.png" alt="macOS Applications">
+                                </a>
+                                <div class="card-block hidden-md-down">
+                                  <h4 class="card-title">macOS</h4>
+                                  <p class="card-text">Applications for macOS to use with your INSTAR IP Camera.</p>
+                                  <a href="/Products/Software/macOS/" class="btn btn-primary">More</a>
+                                </div>
                               </div>
-                            </div>
-                            <div class="card shadow">
-                              <img class="card-img-top img-fluid" src="/images/Software_Tiles_WebUI.png" alt="Web User Interface">
-                              <div class="card-block">
-                                <h4 class="card-title">WebUI</h4>
-                                <p class="card-text">Your cameras Web User Interface for your default web browser.</p>
-                                <a href="/Web_User_Interface/1080p_Series/" class="btn btn-primary">More</a>
+                              <div class="card shadow">
+                                <a href="/Web_User_Interface/1080p_Series/">
+                                  <img class="card-img-top img-fluid" src="/images/Software_Tiles_WebUI.png" alt="Web User Interface">
+                                </a>
+                                <div class="card-block hidden-md-down">
+                                  <h4 class="card-title">WebUI</h4>
+                                  <p class="card-text">Your cameras Web User Interface for your default web browser.</p>
+                                  <a href="/Web_User_Interface/1080p_Series/" class="btn btn-primary">More</a>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="card-deck-wrapper">
-                          <div class="card-deck">
-                            <div class="card shadow">
-                              <img class="card-img-top img-fluid" src="/images/Software_Tiles_Android.png" alt="Android Applications">
-                              <div class="card-block">
-                                <h4 class="card-title">Android</h4>
-                                <p class="card-text">Android phone and tablet apps for your INSTAR IP Camera.</p>
-                                <a href="/Products/Software/Android/" class="btn btn-primary">More</a>
+                          <div class="card-deck-wrapper">
+                            <div class="card-deck">
+                              <div class="card shadow">
+                                <a href="/Products/Software/Android/">
+                                  <img class="card-img-top img-fluid" src="/images/Software_Tiles_Android.png" alt="Android Applications">
+                                </a>
+                                <div class="card-block hidden-md-down">
+                                  <h4 class="card-title">Android</h4>
+                                  <p class="card-text">Android phone and tablet apps for your INSTAR IP Camera.</p>
+                                  <a href="/Products/Software/Android/" class="btn btn-primary">More</a>
+                                </div>
                               </div>
-                            </div>
-                            <div class="card shadow">
-                              <img class="card-img-top img-fluid" src="/images/Software_Tiles_iOS.png" alt="iOS Applications">
-                              <div class="card-block">
-                                <h4 class="card-title">iOS</h4>
-                                <p class="card-text">iPhone and iPad apps to use with your INSTAR IP Camera.</p>
-                                <a href="/Products/Software/iOS/" class="btn btn-primary">More</a>
+                              <div class="card shadow">
+                                <a href="/Products/Software/iOS/">
+                                  <img class="card-img-top img-fluid" src="/images/Software_Tiles_iOS.png" alt="iOS Applications">
+                                </a>
+                                <div class="card-block hidden-md-down">
+                                  <h4 class="card-title">iOS</h4>
+                                  <p class="card-text">iPhone and iPad apps to use with your INSTAR IP Camera.</p>
+                                  <a href="/Products/Software/iOS/" class="btn btn-primary">More</a>
+                                </div>
                               </div>
-                            </div>
-                            <div class="card shadow">
-                              <img class="card-img-top img-fluid" src="/images/Software_Tiles_Other.png" alt="Other Applications">
-                              <div class="card-block">
-                                <h4 class="card-title">Other</h4>
-                                <p class="card-text">Other applications for your INSTAR IP Camera.</p>
-                                <a href="/Products/Software/Other_Platforms/" class="btn btn-primary">More</a>
+                              <div class="card shadow">
+                                <a href="/Products/Software/Other_Platforms/">
+                                  <img class="card-img-top img-fluid" src="/images/Software_Tiles_Other.png" alt="Other Applications">
+                                </a>
+                                <div class="card-block hidden-md-down">
+                                  <h4 class="card-title">Other</h4>
+                                  <p class="card-text">Other applications for your INSTAR IP Camera.</p>
+                                  <a href="/Products/Software/Other_Platforms/" class="btn btn-primary">More</a>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                      </div>
-                      <!-- /cards row -->
+                        </div>
+                        <!-- /cards row -->
 
                     </div>
                     <!-- /row -->
