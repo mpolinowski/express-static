@@ -146,7 +146,7 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">Field of View</th>
-                                        <td>90° dia.</td>
+                                        <td>71° dia.</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Infrared LEDs</th>
@@ -175,8 +175,8 @@
                         <!-- ###################################### Image Gallery ################################### -->
 
                         <div class="mb offset-md-1 col-md-10">
-
                             <h2>Image Quality</h2>
+                            <hr>
                             <br>
                             <div id="carousel" class="carousel slide" data-ride="carousel">
                               <ol class="carousel-indicators">
@@ -204,6 +204,64 @@
                                 <span class="sr-only">Next</span>
                               </a>
                             </div>
+                        </div>
+
+                        <div class="clearfix mb"></div>
+
+                        <!-- ################################## Software Cards ################################### -->
+
+                        <div class="mb offset-md-1 col-md-10 hidden-sm-down">
+
+                          <h2>Resolution Comparison</h2>
+                          <br>
+                          <div class="card-deck-wrapper">
+                            <div class="card-deck">
+                              <div class="card shadow">
+                                  <img class="card-img-top img-fluid" src="/images/IN-8015v6014_resTest.png" alt="IN-8015 HD vs IN-6014 HD">
+                                <div class="card-block hidden-md-down">
+                                  <p class="card-text">IN-8015 HD 4.3mm lense against IN-6014 HD 4.3mm lense.</p>
+                                </div>
+                              </div>
+                              <div class="card shadow">
+                                  <img class="card-img-top img-fluid" src="/images/IN-8015v6012_resTest.png" alt="IN-8015 HD vs IN-6012 HD">
+                                <div class="card-block hidden-md-down">
+                                  <p class="card-text">IN-8015 HD 4.3mm lense against IN-6012 HD 8mm lense.</p>
+                                </div>
+                              </div>
+                              <div class="card shadow">
+                                  <img class="card-img-top img-fluid" src="/images/IN-8015v6012_resTest.png" alt="IN-8015 HD vs IN-6014 HD">
+                                <div class="card-block hidden-md-down">
+                                  <p class="card-text">IN-8015 HD 4.3mm lense against IN-6012 HD 8mm lense.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <!-- /Card Row -->
+
+                        <div class="clearfix mb"></div>
+
+                        <div class="offset-md-1 col-md-10 hidden-xs-down">
+                            <h2>4.3mm Wide Angle Lense</h2>
+                            <p>IN-8015 HD Angle of View: Image width [m] and height [m] as a function of Distance *</p>
+                            <hr>
+
+                            <div class="ct-chart ct-golden-section" id="chart2"></div>
+                            <p class="text-muted">*The larger the distance between your camera and the surveillance area, the larger the area becomes that your camera´s image covers. For example, if the object is at a distance of 10m from your camera, your camera´s image will cover a width of 27.25m.</p>
+
+                            <script src="/javascripts/chartjs/overview8015_angle.js"></script>
+                        </div>
+
+                        <div class="offset-md-1 col-md-10 hidden-xs-down">
+                            <h2>Image Width Comparison</h2>
+                            <p><span style="color: #0275d8;">IN-8015 HD</span> vs. <span style="color: #f0ad4e;">IN-6014 HD</span> <a href="/Products/Indoor_Cameras/IN-6014_HD" target="_blank"> &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>&nbsp; vs. <span style="color: #373a3c;">IN-6012 HD</span> <a href="/Products/Indoor_Cameras/IN-6012_HD" target="_blank"> &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a> in [m] *</p>
+                            <hr>
+
+                            <div class="ct-chart ct-golden-section" id="chart3"></div>
+                            <p class="text-muted">*The Model IN-6012HD only offers half the resolution, compared to the IN-8015HD, but - with it´s reduced angle of view - still offers a very detailed image. The camera model IN-6014HD uses the same lense as the IN-8015HD, but offers a bigger field of view because of it´s slightly bigger sensor. This makes the IN-6014HD an interesting model, if the distance to the object is not that far to suffer from it´s lack of resolution.</p>
+
+                            <script src="/javascripts/chartjs/overview8015_angleCompare.js"></script>
                         </div>
 
                         <!-- ###################################### Hardware ######################################## -->
@@ -319,93 +377,7 @@
 
                             <div class="ct-chart ct-golden-section" id="chart1"></div>
 
-                            <script type="text/javascript">
-                              var data = {
-                                // A labels array that can contain any sort of values
-                                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
-                                // Our series array that contains series objects or in this case series data arrays
-                                series: [
-                                  [
-                                    {meta: 'IN-8015HD: Booting (min) [W]', value: 2.04},
-                                    {meta: 'IN-8015HD: Booting (max) [W]', value: 6.80},
-                                    {meta: 'IN-8015HD: Booting (IR on) [W]', value: 7.30},
-                                    {meta: 'IN-8015HD: Idle [W]', value: 3.52},
-                                    {meta: 'IN-8015HD: Idle (IR on) [W]', value: 4.63},
-                                    {meta: 'IN-8015HD: Idle (WLAN + IR on) [W]', value: 5.32},
-                                    {meta: 'IN-8015HD: Pan&Tilt [W]', value: 4.32},
-                                    {meta: 'IN-8015HD: Pan&Tilt (IR on) [W]', value: 5.47},
-                                    {meta: 'IN-8015HD: Recording [W]', value: 3.65},
-                                    {meta: 'IN-8015HD: Recording (IR on) [W]', value: 4.70}
-                                  ],
-                                  [
-                                    {meta: 'IN-6014HD: Booting (min) [W]', value: 1.94},
-                                    {meta: 'IN-6014HD: Booting (max) [W]', value: 6.42},
-                                    {meta: 'IN-6014HD: Booting (IR on) [W]', value: 7.49},
-                                    {meta: 'IN-6014HD: Idle [W]', value: 2.94},
-                                    {meta: 'IN-6014HD: Idle (IR on) [W]', value: 4.29},
-                                    {meta: 'IN-8015HD: Idle (WLAN + IR on) [W]', value: 5.09},
-                                    {meta: 'IN-6014HD: Pan&Tilt [W]', value: 4.74},
-                                    {meta: 'IN-6014HD: Pan&Tilt (IR on) [W]', value: 5.67},
-                                    {meta: 'IN-6014HD: Recording [W]', value: 2.97},
-                                    {meta: 'IN-6014HD: Recording (IR on) [W]', value: 4.54}
-                                  ],
-                                  [
-                                    {meta: 'IN-3011: Booting (min) [W]', value: 2.20},
-                                    {meta: 'IN-3011: Booting (max) [W]', value: 6.80},
-                                    {meta: 'IN-3011: Booting (IR on) [W]', value: 7.20},
-                                    {meta: 'IN-3011: Idle [W]', value: 3.30},
-                                    {meta: 'IN-3011: Idle (IR on) [W]', value: 3.80},
-                                    {meta: 'IN-8015HD: Idle (WLAN + IR on) [W]', value: 4.50},
-                                    {meta: 'IN-3011: Pan&Tilt [W]', value: 5.10},
-                                    {meta: 'IN-3011: Pan&Tilt (IR on) [W]', value: 7.6},
-                                    {meta: 'IN-3011: Recording [W]', value: 4.50},
-                                    {meta: 'IN-3011: Recording (IR on) [W]', value: 4.00}
-                                  ]
-                                ]
-                              };
-
-                              // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
-                              // as you saw in the previous example
-                              var options = {
-                                width: 900,
-                                height: 500,
-                                showArea: true,
-                                showLine: true,
-                                showPoint: true,
-                                fullWidth: true,
-                                // Remove this configuration to see that chart rendered with cardinal spline interpolation
-                                // Sometimes, on large jumps in data values, it's better to use simple smoothing.
-                                lineSmooth: Chartist.Interpolation.simple({
-                                  divisor: 2
-                                }),
-                                fullWidth: true,
-                                chartPadding: {
-                                  right: 20
-                                },
-                                low: 0,
-                                plugins: [
-                                  Chartist.plugins.tooltip()
-                                ]
-                              };
-
-                              var responsiveOptions = [
-                                ['screen and (min-width: 975px) and (max-width: 1050px)', {
-                                  width: 775,
-                                  height: 430,
-                                }],
-                                ['screen and (min-width: 746px) and (max-width: 974px)', {
-                                  width: 568,
-                                  height: 315,
-                                }],
-                                ['screen and (max-width: 745px)', {
-                                  width: 510,
-                                  height: 283,
-                                }]
-                              ];
-
-                              new Chartist.Line('#chart1', data, options, responsiveOptions);
-
-                            </script>
+                            <script src="/javascripts/chartjs/overview8015_power.js"></script>
 
                         </div>
 

@@ -284,7 +284,7 @@ a:hover {
 }
 
 .ct-series-a .ct-area, .ct-series-a .ct-slice-pie {
-    fill: #0275d8;
+    fill: #FFF;
 }
 
 .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
@@ -292,7 +292,7 @@ a:hover {
 }
 
 .ct-series-b .ct-area, .ct-series-b .ct-slice-pie {
-    fill: #f0ad4e;
+    fill: #FFF;
 }
 
 .ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut {
@@ -300,5 +300,5 @@ a:hover {
 }
 
 .ct-series-c .ct-area, .ct-series-c .ct-slice-pie {
-    fill: #373a3c;
+    fill: #FFF;
 }
