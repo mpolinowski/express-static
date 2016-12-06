@@ -4,7 +4,7 @@ var myChart = new Chart(ctx, {
       data: {
         labels: ['Nightvision [m]', 'Megapixel', 'Power Consumptions [W]', 'IR LEDs', 'Focal Length [mm]'],
         datasets: [{
-          label: 'IN-7011 HD',
+          label: 'IN-5907 HD',
           backgroundColor: 'rgba(2, 117, 216, 0.5)',
           borderColor: 'rgba(2, 117, 216, 1)',
           data: [20, 1, 13, 3, 8],

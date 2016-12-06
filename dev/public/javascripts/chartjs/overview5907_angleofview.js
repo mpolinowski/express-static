@@ -7,19 +7,19 @@ var myChart = new Chart(ctx, {
             {
                 type: 'bar',
                 label: 'Diagonal Angle [°]',
-                data: [45, 90, 45.9, 90, 60, 90],
+                data: [44.1, 75.3, 45.9, 72.3, 56.8, 75.3],
                 backgroundColor: '#373a3c',
               },
 							{
                 type: 'bar',
                 label: 'Horizontal Angle [°]',
-                data: [37, 81, 36.8, 81, 54, 81],
+                data: [37.5, 64.0, 36.8, 61.4, 48.2, 64.0],
                 backgroundColor: 'rgba(2, 117, 216, 1)',
               },
             	{
                 type: 'bar',
                 label: 'Vertical Angle [°]',
-                data: [28, 61, 28.4, 61, 41, 61],
+                data: [23.3, 39.7, 28.4, 38.1, 29.9, 39.7],
                 backgroundColor: 'rgba(240, 173, 78, 1)',
               },
         ],
