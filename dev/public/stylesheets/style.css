@@ -302,3 +302,13 @@ a:hover {
 .ct-series-c .ct-area, .ct-series-c .ct-slice-pie {
     fill: #FFF;
 }
+
+
+
+.ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut {
+  stroke: #d32f2f;
+}
+
+.ct-series-d .ct-area, .ct-series-d .ct-slice-pie {
+    fill: #FFF;
+}

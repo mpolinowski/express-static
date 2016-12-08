@@ -83,5 +83,12 @@
         "outdoorUrl": "Outdoor_Cameras/IN-7011_HD",
         "outdoorPic": "/images/Wiki_Tiles_P-IN-7011HD.jpg",
         "outdoorPicAlt": "IN-7011 HD Outdoor IP Camera"
+    }, {
+        "outdoormodel": "IN-9008 HD",
+        "outdoorVideoSrc": "#",
+        "outdoorVideoAlt": "IN-9008 HD Outdoor IP Camera",
+        "outdoorUrl": "Outdoor_Cameras/IN-9008_HD",
+        "outdoorPic": "/images/Wiki_Tiles_P-IN-9008HD.jpg",
+        "outdoorPicAlt": "IN-9008 HD Outdoor IP Camera"
     }]
 }

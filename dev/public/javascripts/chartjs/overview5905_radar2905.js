@@ -7,7 +7,7 @@ var myChart = new Chart(ctx, {
           label: 'IN-5905 HD',
           backgroundColor: 'rgba(2, 117, 216, 0.5)',
           borderColor: 'rgba(2, 117, 216, 1)',
-          data: [20, 1, 7, 5, 4.2],
+          data: [20, 1, 7, 5, 4.0],
         }, {
           label: 'IN-2905',
           backgroundColor: 'rgba(240, 173, 78, 0.5)',

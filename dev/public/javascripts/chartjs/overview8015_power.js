@@ -1,6 +1,6 @@
 var data = {
   // A labels array that can contain any sort of values
-  labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
+  labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
   // Our series array that contains series objects or in this case series data arrays
   series: [
     [
