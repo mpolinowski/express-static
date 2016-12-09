@@ -12,7 +12,7 @@
     <!-- Take Images from gallery-quickinstallation.json for Gallery -->
 
     <% if (indoorPic.length > 0) { %>
-        <% for (i=indoorPic.length -2; i>=0; i--) { %>
+        <% for (i=indoorPic.length -3; i>=0; i--) { %>
             <div class="col-xs-6 col-lg-4 mb">
                 <a href="/Products/<%= indoorUrl[i] %>"><img src="<%= indoorPic[i] %>" alt="<%= indoorPicAlt[i] %>" class="img-fluid"></a>
             </div>

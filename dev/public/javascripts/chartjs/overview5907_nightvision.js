@@ -7,13 +7,13 @@ var myChart = new Chart(ctx, {
             {
                 type: 'bar',
                 label: 'Nightvision min. [m]',
-                data: [15, 5, 8, 18, 8, 12],
+                data: [18, 5, 8, 12, 8, 12],
                 backgroundColor: 'rgba(2, 117, 216, 1)',
               },
             {
                 type: 'bar',
                 label: 'Nightvision max. [m]',
-                data: [20, 10, 12, 25, 12, 20],
+                data: [25, 10, 12, 20, 12, 20],
                 backgroundColor: 'rgba(240, 173, 78, 1)',
               },
         ],
