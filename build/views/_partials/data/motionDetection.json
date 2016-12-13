@@ -55,6 +55,13 @@
             "mdUrl": "Alarm_Server",
             "mdPic": "/images/Wiki_Tiles_MD-Alarm-Server.jpg",
             "mdPicAlt": "Alarm Server Function"
+        }, {
+            "mdTitle": "INSTAR Cloud Platform",
+            "mdVideoSrc": "#",
+            "mdVideoAlt": "INSTAR Cloud Platform",
+            "mdUrl": "INSTAR_Cloud",
+            "mdPic": "/images/Wiki_Tiles_MD-INSTAR-Cloud.jpg",
+            "mdPicAlt": "INSTAR Cloud Platform"
         }
     ]
 }
