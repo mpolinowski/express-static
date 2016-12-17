@@ -6,11 +6,12 @@
 /* Body */
 
 body {
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
+    background-color: #fcfcfc;
     font-family: "Roboto";
     font-weight: 300;
     font-size: 16px;
-    color: #555;
+    /* color: #555; */
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     margin-top: 70px;
@@ -26,7 +27,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Ubuntu";
     font-weight: 300;
-    color: #333;
+    /* color: #333; */
 }
 .shadow {
   box-shadow: 2px 2px 1px #888888;
