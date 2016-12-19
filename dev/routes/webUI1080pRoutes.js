@@ -17,6 +17,8 @@ webUI1080pRouter.route('/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series', {
             title: 'INSTAR Web User Interface fullHD Series',
 			uplink: '/Web_User_Interface/1080p_Series/Overview/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series',
           });
       });
 
@@ -28,6 +30,8 @@ webUI1080pRouter.route('/System/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System', {
             title: 'System Menu',
 			uplink: '/Web_User_Interface/1080p_Series/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: System',
           });
       });
 
@@ -37,6 +41,8 @@ webUI1080pRouter.route('/System/Date_Time/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Date_Time', {
             title: 'System Menu :: Date & Time',
 			uplink: '/Web_User_Interface/1080p_Series/System/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: System :: Time',
           });
       });
 
@@ -46,6 +52,8 @@ webUI1080pRouter.route('/System/Email/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Email', {
             title: 'System Menu :: Email',
 			uplink: '/Web_User_Interface/1080p_Series/System/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: System :: Email',
           });
       });
 
@@ -55,6 +63,8 @@ webUI1080pRouter.route('/System/Info/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Info', {
             title: 'System Menu :: Info',
 			uplink: '/Web_User_Interface/1080p_Series/System/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: System :: Info',
           });
       });
 
@@ -64,6 +74,8 @@ webUI1080pRouter.route('/System/Language/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Language', {
             title: 'System Menu :: Language',
 			uplink: '/Web_User_Interface/1080p_Series/System/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: System :: Language',
           });
       });
 
@@ -73,6 +85,8 @@ webUI1080pRouter.route('/System/User/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_User', {
             title: 'System Menu :: User',
 			uplink: '/Web_User_Interface/1080p_Series/System/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: System :: User',
           });
       });
 
@@ -82,6 +96,8 @@ webUI1080pRouter.route('/System/Log/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Log', {
             title: 'System Menu :: Log',
 			uplink: '/Web_User_Interface/1080p_Series/System/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: System :: Log',
           });
       });
 
@@ -91,6 +107,8 @@ webUI1080pRouter.route('/System/Reboot/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Reboot', {
             title: 'System Menu :: Reboot',
 			uplink: '/Web_User_Interface/1080p_Series/System/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: System :: Reboot',
           });
       });
 
@@ -100,6 +118,8 @@ webUI1080pRouter.route('/System/Reset/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Reset', {
             title: 'System Menu :: Reset',
 			uplink: '/Web_User_Interface/1080p_Series/System/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: System :: Reset',
           });
       });
 
@@ -109,6 +129,8 @@ webUI1080pRouter.route('/System/Update/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Update', {
             title: 'System Menu :: Update',
 			uplink: '/Web_User_Interface/1080p_Series/System/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: System :: Update',
           });
       });
 
@@ -120,6 +142,8 @@ webUI1080pRouter.route('/Network/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network', {
             title: 'Network Menu',
 			uplink: '/Web_User_Interface/1080p_Series/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Network',
           });
       });
 
@@ -129,6 +153,8 @@ webUI1080pRouter.route('/Network/IP_Configuration/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_IP_Configuration', {
             title: 'Network Menu :: IP Configuration',
 			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Network :: IP Config',
           });
       });
 
@@ -138,6 +164,8 @@ webUI1080pRouter.route('/Network/WiFi/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_WiFi', {
             title: 'Network Menu :: WiFi',
 			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Network :: WiFi',
           });
       });
 
@@ -147,6 +175,8 @@ webUI1080pRouter.route('/Network/Remote_Access/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_Remote_Access', {
             title: 'Network Menu :: Remote Access',
 			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Network :: Remote Access',
           });
       });
 
@@ -156,6 +186,8 @@ webUI1080pRouter.route('/Network/ONVIF/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_ONVIF', {
             title: 'Network Menu :: ONVIF',
 			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Network :: ONVIF',
           });
       });
 
@@ -165,6 +197,8 @@ webUI1080pRouter.route('/Network/UPnP/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_UPnP', {
             title: 'Network Menu :: UPnP',
 			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Network :: UPnP',
           });
       });
 
@@ -174,6 +208,8 @@ webUI1080pRouter.route('/Network/FTP/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_FTP', {
             title: 'Network Menu :: FTP',
 			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Network :: FTP',
           });
       });
 
@@ -185,6 +221,8 @@ webUI1080pRouter.route('/Features/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features', {
             title: 'Features Menu',
 			uplink: '/Web_User_Interface/1080p_Series/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features',
           });
       });
 
@@ -194,6 +232,8 @@ webUI1080pRouter.route('/Features/Status_LED/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_Status_LED', {
             title: 'Features Menu :: Status LED',
 			uplink: '/Web_User_Interface/1080p_Series/Features/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features :: Status LED',
           });
       });
 
@@ -203,6 +243,8 @@ webUI1080pRouter.route('/Features/IR_LEDs/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_IR_LEDs', {
             title: 'Features Menu :: IR LEDs',
 			uplink: '/Web_User_Interface/1080p_Series/Features/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features :: IR LEDs',
           });
       });
 
@@ -212,6 +254,8 @@ webUI1080pRouter.route('/Features/PTZ/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_PTZ', {
             title: 'Features Menu :: PTZ',
 			uplink: '/Web_User_Interface/1080p_Series/Features/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features :: PTZ',
           });
       });
 
@@ -221,6 +265,8 @@ webUI1080pRouter.route('/Features/SD_Card/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_SD_Card', {
             title: 'Features Menu :: SD Card',
 			uplink: '/Web_User_Interface/1080p_Series/Features/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features :: SD Card',
           });
       });
 
@@ -230,6 +276,8 @@ webUI1080pRouter.route('/Features/PTZ_Tour/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_PTZ_Tour', {
             title: 'Features Menu :: PTZ Tour',
 			uplink: '/Web_User_Interface/1080p_Series/Features/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features :: PTZ Tour',
           });
       });
 
@@ -241,6 +289,8 @@ webUI1080pRouter.route('/Multimedia/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia', {
             title: 'Multimedia Menu',
 			uplink: '/Web_User_Interface/1080p_Series/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia',
           });
       });
 
@@ -250,6 +300,8 @@ webUI1080pRouter.route('/Multimedia/Audio/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Audio', {
             title: 'Multimedia Menu :: Audio',
 			uplink: '/Web_User_Interface/1080p_Series/Multimedia/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Audio',
           });
       });
 
@@ -259,6 +311,8 @@ webUI1080pRouter.route('/Multimedia/Video/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Video', {
             title: 'Multimedia Menu :: Video',
 			uplink: '/Web_User_Interface/1080p_Series/Multimedia/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Video',
           });
       });
 
@@ -268,6 +322,8 @@ webUI1080pRouter.route('/Multimedia/Image/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Image', {
             title: 'Multimedia Menu :: Image',
 			uplink: '/Web_User_Interface/1080p_Series/Multimedia/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Image',
           });
       });
 
@@ -277,6 +333,8 @@ webUI1080pRouter.route('/Multimedia/Privacy_Mask/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Privacy_Mask', {
             title: 'Multimedia Menu :: Privacy Mask',
 			uplink: '/Web_User_Interface/1080p_Series/Multimedia/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Privacy Mask',
           });
       });
 
@@ -288,6 +346,8 @@ webUI1080pRouter.route('/Alarm/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm', {
             title: 'Alarm Menu',
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Alarm',
           });
       });
 
@@ -297,6 +357,8 @@ webUI1080pRouter.route('/Alarm/Areas/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Areas', {
             title: 'Alarm Menu :: Areas',
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Areas',
           });
       });
 
@@ -306,6 +368,8 @@ webUI1080pRouter.route('/Alarm/Actions/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Actions', {
             title: 'Alarm Menu :: Actions',
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Actions',
           });
       });
 
@@ -315,6 +379,8 @@ webUI1080pRouter.route('/Alarm/Schedule/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Schedule', {
             title: 'Alarm Menu :: Schedule',
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Schedule',
           });
       });
 
@@ -324,6 +390,8 @@ webUI1080pRouter.route('/Alarm/Alarm_Server/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Alarm_Server', {
             title: 'Alarm Menu :: Alarm Server',
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Alarm Server',
           });
       });
 
@@ -333,6 +401,8 @@ webUI1080pRouter.route('/Alarm/Email/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Email', {
             title: 'Alarm Menu :: Email',
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Email',
           });
       });
 
@@ -342,6 +412,8 @@ webUI1080pRouter.route('/Alarm/Push_Service/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Push_Service', {
             title: 'Alarm Menu :: Push Service',
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Push Service',
           });
       });
 
@@ -353,6 +425,8 @@ webUI1080pRouter.route('/Recording/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Recording', {
             title: 'Recording Menu',
 			uplink: '/Web_User_Interface/1080p_Series/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Recording',
           });
       });
 
@@ -362,6 +436,8 @@ webUI1080pRouter.route('/Recording/Video/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Recording_Video', {
             title: 'Recording Menu :: Video',
 			uplink: '/Web_User_Interface/1080p_Series/Recording/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Recording :: Video',
           });
       });
 
@@ -371,6 +447,8 @@ webUI1080pRouter.route('/Recording/Photoseries/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Recording_Photoseries', {
             title: 'Recording Menu :: Photoseries',
 			uplink: '/Web_User_Interface/1080p_Series/Recording/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Recording :: Photoseries',
           });
       });
 
@@ -382,6 +460,8 @@ webUI1080pRouter.route('/Live_Video/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Live_Video', {
             title: 'Live Video',
 			uplink: '/Web_User_Interface/1080p_Series/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Live Video',
           });
       });
 
@@ -393,6 +473,8 @@ webUI1080pRouter.route('/Cloud/')
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Cloud', {
             title: 'INSTAR Cloud',
 			uplink: '/Web_User_Interface/1080p_Series/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: INSTAR Cloud',
           });
       });
 

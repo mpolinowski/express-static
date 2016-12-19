@@ -28,6 +28,8 @@ quickInstallRouter.route('/How_Does_An_IP_Camera_Work')
         res.render('./Quick_Installation/How_Does_An_IP_Camera_Work', {
             title: 'How Does An IP Camera Work?',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_HowDoesAnIPCameraWork.jpg',
+            headline: 'How Does An IP Camera Work?',
           });
       });
 
@@ -37,6 +39,8 @@ quickInstallRouter.route('/First_Steps')
         res.render('./Quick_Installation/First_Steps', {
             title: 'First Steps to get your IP camera working',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_FirstStepsWithYourIPCamera.jpg',
+            headline: 'First Steps to get your IP camera working',
           });
       });
 
@@ -46,6 +50,8 @@ quickInstallRouter.route('/After_Unpacking')
         res.render('./Quick_Installation/After_Unpacking', {
             title: 'After unpacking your INSTAR IP Camera',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_AfterUnpackingYourIPCamera.jpg',
+            headline: 'After unpacking your INSTAR IP Camera',
           });
       });
 
@@ -55,6 +61,8 @@ quickInstallRouter.route('/Direct_LAN_Connection')
         res.render('./Quick_Installation/Direct_LAN_Connection', {
             title: 'Direct connection with a PC or Notebook',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_DirectConnectionWithYourPC.jpg',
+            headline: 'Direct connection with a PC or Notebook',
           });
       });
 
@@ -64,6 +72,8 @@ quickInstallRouter.route('/Alternative_IP_Scanner')
         res.render('./Quick_Installation/Alternative_IP_Scanner', {
             title: 'How to find your IP Camera with an alternative IP Scanner',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg',
+            headline: 'How to find your IP Camera with an alternative IP Scanner',
           });
       });
 
@@ -73,6 +83,8 @@ quickInstallRouter.route('/Alternative_IP_Scanner/Angry_IP_Scanner')
         res.render('./Quick_Installation/Angry_IP_Scanner', {
             title: 'Angry IP Scanner',
             uplink: '/Quick_Installation/Alternative_IP_Scanner/',
+            ampimg: '/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg',
+            headline: 'Angry IP Scanner',
           });
       });
 
@@ -82,6 +94,8 @@ quickInstallRouter.route('/Alternative_IP_Scanner/Fing_CLI')
         res.render('./Quick_Installation/Fing_CLI', {
             title: 'Fing IP Scanner - Command Line Interface',
             uplink: '/Quick_Installation/Alternative_IP_Scanner/',
+            ampimg: '/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg',
+            headline: 'Fing CLI',
           });
       });
 
@@ -91,6 +105,8 @@ quickInstallRouter.route('/Alternative_IP_Scanner/Fing_Mobile')
         res.render('./Quick_Installation/Fing_Mobile', {
             title: 'Fing IP Scanner - Mobile App',
             uplink: '/Quick_Installation/Alternative_IP_Scanner/',
+            ampimg: '/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg',
+            headline: 'Fing Mobile',
           });
       });
 
@@ -100,6 +116,8 @@ quickInstallRouter.route('/Language_Selection')
         res.render('./Quick_Installation/Language_Selection', {
             title: 'Language Selection',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_LanguageSettings.jpg',
+            headline: 'Language Selection',
           });
       });
 
@@ -109,6 +127,8 @@ quickInstallRouter.route('/Live_Video')
         res.render('./Quick_Installation/Live_Video', {
             title: 'Live Video',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
+            headline: 'Live Video',
           });
       });
 
@@ -118,6 +138,8 @@ quickInstallRouter.route('/Live_Video/ActiveX')
         res.render('./Quick_Installation/Live_Video_ActiveX', {
             title: 'Live Video ActiveX',
             uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_ActiveXPluginSetup.jpg',
+            headline: 'Live Video ActiveX',
           });
       });
 
@@ -127,6 +149,8 @@ quickInstallRouter.route('/Live_Video/QuickTime')
         res.render('./Quick_Installation/Live_Video_QuickTime', {
             title: 'Live Video QuickTime',
             uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_QuickTimePluginSetup.jpg',
+            headline: 'Live Video Quicktime',
           });
       });
 
@@ -136,6 +160,8 @@ quickInstallRouter.route('/Live_Video/MJPEG')
         res.render('./Quick_Installation/Live_Video_MJPEG', {
             title: 'Live Video MJPEG',
             uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_LiveVideoInMicrosoftEdge.jpg',
+            headline: 'Live Video MJPEG',
           });
       });
 
@@ -145,6 +171,8 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/Avast')
         res.render('./Quick_Installation/Live_Video_Avast', {
             title: 'Live Video Avast',
             uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
+            headline: 'Live Video Troubleshooting Avast',
           });
       });
 
@@ -154,6 +182,8 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/Kaspersky_2013')
         res.render('./Quick_Installation/Live_Video_Kaspersky_2013', {
             title: 'Live Video Kaspersky 2013',
             uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
+            headline: 'Live Video Troubleshooting Kaspersky 2013',
           });
       });
 
@@ -163,6 +193,8 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/Kaspersky_2014')
         res.render('./Quick_Installation/Live_Video_Kaspersky_2014', {
             title: 'Live Video Kaspersky 2014',
             uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
+            headline: 'Live Video TroubleshootingKaspersky 2014',
           });
       });
 
@@ -172,6 +204,8 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/Kaspersky_2017')
         res.render('./Quick_Installation/Live_Video_Kaspersky_2017', {
             title: 'Live Video Kaspersky 2017',
             uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
+            headline: 'Live Video Troubleshooting Kaspersky 2017',
           });
       });
 
@@ -181,6 +215,8 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/AVG')
         res.render('./Quick_Installation/Live_Video_AVG', {
             title: 'Live Video AVG',
             uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
+            headline: 'Live Video Troubleshooting AVG',
           });
       });
 
@@ -190,6 +226,8 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/AVIRA')
         res.render('./Quick_Installation/Live_Video_AVIRA', {
             title: 'Live Video AVIRA',
             uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
+            headline: 'Live Video Troubleshooting AVIRA',
           });
       });
 
@@ -199,6 +237,8 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/F-Secure')
         res.render('./Quick_Installation/Live_Video_F-Secure', {
             title: 'Live Video F-Secure',
             uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
+            headline: 'Live Video Troubleshooting F-Secure',
           });
       });
 
@@ -208,6 +248,8 @@ quickInstallRouter.route('/Creating_User_Accounts')
         res.render('./Quick_Installation/Creating_User_Accounts', {
             title: 'Creating user accounts on your camera',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_CreatingUserAccounts.jpg',
+            headline: 'Creating user accounts on your camera',
           });
       });
 
@@ -217,6 +259,8 @@ quickInstallRouter.route('/WebUI_And_Firmware_Upgrade')
         res.render('./Quick_Installation/WebUI_And_Firmware_Upgrade', {
             title: 'WebUI and Firmware Upgrade',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUIFirmwareUpgrade.jpg',
+            headline: 'WebUI and Firmware Upgrade',
           });
       });
 
@@ -226,6 +270,8 @@ quickInstallRouter.route('/WebUI_And_Firmware_Upgrade/HD_Cameras')
         res.render('./Quick_Installation/WebUI_And_Firmware_Upgrade_HD', {
             title: 'WebUI and Firmware Upgrade for HD Cameras',
             uplink: '/Quick_Installation/WebUI_And_Firmware_Upgrade/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUIFirmwareUpgrade.jpg',
+            headline: 'VGA WebUI and Firmware Upgrade',
           });
       });
 
@@ -235,6 +281,8 @@ quickInstallRouter.route('/WebUI_And_Firmware_Upgrade/VGA_Cameras')
         res.render('./Quick_Installation/WebUI_And_Firmware_Upgrade_VGA', {
             title: 'WebUI and Firmware Upgrade for VGA Cameras',
             uplink: '/Quick_Installation/WebUI_And_Firmware_Upgrade/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUIFirmwareUpgrade.jpg',
+            headline: 'HD WebUI and Firmware Upgrade',
           });
       });
 
@@ -244,6 +292,8 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History')
         res.render('./Quick_Installation/How_To_Clear_Your_Browsing_History', {
             title: 'How to clear your Browsing History',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
+            headline: 'How to clear your Browsing History',
           });
       });
 
@@ -253,6 +303,8 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Internet_Explorer'
         res.render('./Quick_Installation/How_To_Clear_Your_Browsing_History_Internet_Explorer', {
             title: 'How to clear your Browsing History Internet Explorer',
             uplink: '/Quick_Installation/How_To_Clear_Your_Browsing_History/',
+            ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
+            headline: 'How to clear your Browsing History Internet Explorer',
           });
       });
 
@@ -262,6 +314,8 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Mozilla_Firefox')
         res.render('./Quick_Installation/How_To_Clear_Your_Browsing_History_Mozilla_Firefox', {
             title: 'How to clear your Browsing History Mozilla Firefox',
             uplink: '/Quick_Installation/How_To_Clear_Your_Browsing_History/',
+            ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
+            headline: 'How to clear your Browsing History Mozilla Firefox',
           });
       });
 
@@ -271,6 +325,8 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Google_Chromium')
         res.render('./Quick_Installation/How_To_Clear_Your_Browsing_History_Google_Chromium', {
             title: 'How to clear your Browsing History Google Chromium',
             uplink: '/Quick_Installation/How_To_Clear_Your_Browsing_History/',
+            ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
+            headline: 'How to clear your Browsing History Google Chromium',
           });
       });
 
@@ -280,6 +336,8 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Opera')
         res.render('./Quick_Installation/How_To_Clear_Your_Browsing_History_Opera', {
             title: 'How to clear your Browsing History Opera',
             uplink: '/Quick_Installation/How_To_Clear_Your_Browsing_History/',
+            ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
+            headline: 'How to clear your Browsing History Opera',
           });
       });
 
@@ -289,6 +347,8 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Microsoft_Edge')
         res.render('./Quick_Installation/How_To_Clear_Your_Browsing_History_Microsoft_Edge', {
             title: 'How to clear your Browsing History Microsoft Edge',
             uplink: '/Quick_Installation/How_To_Clear_Your_Browsing_History/',
+            ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
+            headline: 'How to clear your Browsing History Microsoft Edge',
           });
       });
 
@@ -298,6 +358,8 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Vivaldi')
         res.render('./Quick_Installation/How_To_Clear_Your_Browsing_History_Vivaldi', {
             title: 'How to clear your Browsing History Vivaldi',
             uplink: '/Quick_Installation/How_To_Clear_Your_Browsing_History/',
+            ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
+            headline: 'How to clear your Browsing History Vivaldi',
           });
       });
 
@@ -307,6 +369,8 @@ quickInstallRouter.route('/Set_Up_A_Wireless_Connection')
         res.render('./Quick_Installation/Set_Up_A_Wireless_Connection', {
             title: 'How to set up a Wireless Connection',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_WLAN.jpg',
+            headline: 'How to set up a Wireless Connection',
           });
       });
 
@@ -316,6 +380,8 @@ quickInstallRouter.route('/ONVIF')
         res.render('./Quick_Installation/ONVIF', {
             title: 'ONVIF',
             uplink: '/Quick_Installation/',
+            ampimg: '/images/Search/QI_SearchThumb_QuickInstallation.jpg',
+            headline: 'ONVIF',
           });
       });
 
@@ -324,6 +390,8 @@ quickInstallRouter.route('/DEV')
     .get(function(req, res) {
         res.render('DEV', {
             title: 'DEV Resources',
+            ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+            headline: 'INSTAR Cloud',
           });
       });
 
@@ -332,6 +400,8 @@ quickInstallRouter.route('/AMP')
     .get(function(req, res) {
         res.render('AMP', {
             title: 'Accelerated Mobile Page',
+            ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+            headline: 'INSTAR Cloud',
           });
       });
 
@@ -340,6 +410,8 @@ quickInstallRouter.route('/AMP2')
     .get(function(req, res) {
         res.render('AMP2', {
             title: 'Accelerated Mobile Page 2',
+            ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+            headline: 'INSTAR Cloud',
           });
       });
 
@@ -348,6 +420,8 @@ quickInstallRouter.route('/AMP3')
     .get(function(req, res) {
         res.render('AMP3', {
             title: 'Redirection',
+            ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+            headline: 'INSTAR Cloud',
           });
       });
 
@@ -356,6 +430,8 @@ quickInstallRouter.route('/AMP_Gallery')
     .get(function(req, res) {
         res.render('AMP_Gallery', {
             title: 'AMP Gallery',
+            ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+            headline: 'INSTAR Cloud',
           });
       });
 
