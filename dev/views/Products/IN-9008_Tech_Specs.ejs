@@ -179,7 +179,7 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">Effective Range (IR)</th>
-                                        <td>15-25 m</td>
+                                        <td>12-20 m</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">intgr. IRcut Filter</th>
@@ -370,15 +370,111 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">Alarm I/O</th>
-                                        <td>Yes (and integrated heat sensor <strong>PIR</strong> for motion detection)</td>
+                                        <td>Yes (and integrated heat sensor <strong>P</strong>assive <strong>I</strong>nfrared <strong>R</strong>ed for motion detection)</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">PIR Detector Angle</th>
-                                        <td>120° horizontal view</td>
+                                        <th scope="row">Pyroelectric Motion Sensor</th>
+                                        <td><a href="https://na.industrial.panasonic.com/products/sensors/sensors-automotive-industrial-applications/pir-motion-sensor-papirs/series/vz-series/2481">Panasonic PaPIR EKMC16</a> <span class="text-muted">Long Distance Sensor</span>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <!-- Button trigger modal -->
+                                            <button class="btn btn-xs btn-primary" data-toggle="modal" data-target="#PIR-FOV">
+                                              Specifications
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="PIR-FOV" tabindex="-1" role="dialog" aria-labelledby="PIR-FOV" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4 class="modal-title">PIR Sensor Technical Specifications</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <img src="/images/PaPIR_Specifications.png" class="img-fluid"></img>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <div class="col-xs-6">
+                                                            <p class="text-muted pull-left">Panasonic PaPIR EKMC16</p>
+                                                          </div>
+                                                          <div class="col-xs-6">
+                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /modal -->
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">PIR Field of View</th>
+                                        <td>102° x 92° (108° x 99°)</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">PIR Detector Range</th>
-                                        <td>12 meter</td>
+                                        <td>max. 12 meter
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <!-- Button trigger modal -->
+                                            <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#PIRcaution">
+                                              Caution
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="PIRcaution" tabindex="-1" role="dialog" aria-labelledby="PIRcaution" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4 class="modal-title">Basic Principles</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p class="text-justify">PaPIRs are pyroelectric infrared sensors that detect variations in infrared rays. However, detection may not be successful in the following cases: lack of movement or no temperature change in the heat source. They could also detect the presence of heat sources other than a human body. Efficiency and reliability of the system may vary depending on the actual operating conditions:</p>
+                                                            <ul>
+                                                              <li>Detecting heat sources other than the human body, such as:</li>
+                                                              <ul>
+                                                                <li>small animals entering the detection area</li>
+                                                                <li class="text-justify">When a heat source, for example sun light, incandescent lamp, car headlights etc, or strong light beam hit the sensor regardless whether the detection area is inside or outside</li>
+                                                                <li class="text-justify">Sudden temperature change inside or around the detection area caused by hot or cold wind from HVAC, or vapor from a humidifier, etc.</li>
+                                                              </ul>
+                                                              <li>Difficulty in sensing the heat source</li>
+                                                              <ul>
+                                                                <li class="text-justify">Glass, acrylic or similar materials standing between the target and the sensor may not allow a correct transmission of infrared rays</li>
+                                                                <li class="text-justify">Non-movement or quick movements of the heat source inside the detection area</li>
+                                                              </ul>
+                                                              <li class="text-justify">Expansion of the detection area: In case of a considerable difference in the ambient temperature and the human body temperature, the detection area may be larger than the configured detection area</li>
+                                                              <li class="text-justify">Detection distance: Panasonic's PIR Motion sensors state the detection distance in the specifications because they are usually provided with the lens (please refer to item 6) for lensless types. The PIR Motion sensor could detect variations in infrared rays however such variations are decided by following three factors</li>
+                                                              <ul>
+                                                                <li class="text-justify">The temperature difference between the target and the surroundings: The larger the temperature difference, the easier it is to detect targets</li>
+                                                                <li class="text-justify">Movement speed: If the target is moving at a slower or faster speed than specified in the tables, the detection ability may be lower</li>
+                                                                <li class="text-justify">Target size: The human body is the standard. If the target is smaller or larger than specified in the table, the detection ability may be lower</li>
+                                                              </ul>
+                                                              <li class="text-justify">The detection distance explained in our data sheet is defined by the three factors mentioned above. Panasonic's standard for the temperature difference between the target and the surrounding is defined as 4°C. The larger the temperature difference, the longer the detection distance. If the temperature difference is 8°C, which is twice as much as standard, the detection distance will be approx. 1.4 times longer than the distance at 4°C. For example, if targets at a distance of 5m can be detected at 4°C, then the sensor can detect targets at a distance of 7m at 8°C. (This is based on the theory that the detection sensitivity will vary inversely with the square of the distance.)</li>
+                                                              <li class="text-justify">Lens material and the plate setting in front of the lens: Typically, the only material that can be passed by infrared rays is Polyethylene. (The lens material of Panasonic's PIR Motion sensors is "High density polyethylene, HDPE".) When you need to set a plate in front of the lens, please choose one made from the Polyethylene. Please note the thickness or color of the plate will affect the detection ability, e.g. it may make the detection distance shorter. Therefore, please confirm by testing the sensor with the plate under realistic conditions.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /modal -->
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">PIR Detection Zone</th>
+                                        <td>92 beams</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">PIR Detection Condition</th>
+                                      <td>
+                                        <ul>
+                                          <li>The temperature difference between the target and the surroundings must be higher than 4°C</li>
+                                          <li>Movement speed: 1.0m/s</li>
+                                          <li>Target concept: Human body with an approx. size of 700×250mm</li>
+                                          <li>Target moving direction: Crossing the detection beam</li>
+                                        </ul>
+                                      </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">SD Card</th>
@@ -418,11 +514,11 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">Power Supply</th>
-                                        <td>110-240V ac @ 50-60Hz to 5V dc and 1500mA</td>
+                                        <td>110-240V ac @ 50-60Hz to 12V dc and 2000mA</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Power Plug</th>
-                                        <td>1.35mm In / 3.5mm Out</td>
+                                        <td>2-pin Plug</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Power Consumption</th>
