@@ -16,7 +16,7 @@ webUI1080pRouter.route('/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series', {
             title: 'INSTAR Web User Interface fullHD Series',
-			uplink: '/Web_User_Interface/1080p_Series/Overview/',
+            uplink: '/Web_User_Interface/1080p_Series/Overview/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series',
           });
@@ -29,7 +29,7 @@ webUI1080pRouter.route('/System/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System', {
             title: 'System Menu',
-			uplink: '/Web_User_Interface/1080p_Series/',
+            uplink: '/Web_User_Interface/1080p_Series/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System',
           });
@@ -40,7 +40,7 @@ webUI1080pRouter.route('/System/Date_Time/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Date_Time', {
             title: 'System Menu :: Date & Time',
-			uplink: '/Web_User_Interface/1080p_Series/System/',
+            uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Time',
           });
@@ -51,7 +51,7 @@ webUI1080pRouter.route('/System/Email/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Email', {
             title: 'System Menu :: Email',
-			uplink: '/Web_User_Interface/1080p_Series/System/',
+            uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Email',
           });
@@ -62,7 +62,7 @@ webUI1080pRouter.route('/System/Info/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Info', {
             title: 'System Menu :: Info',
-			uplink: '/Web_User_Interface/1080p_Series/System/',
+            uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Info',
           });
@@ -73,7 +73,7 @@ webUI1080pRouter.route('/System/Language/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Language', {
             title: 'System Menu :: Language',
-			uplink: '/Web_User_Interface/1080p_Series/System/',
+            uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Language',
           });
@@ -84,7 +84,7 @@ webUI1080pRouter.route('/System/User/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_User', {
             title: 'System Menu :: User',
-			uplink: '/Web_User_Interface/1080p_Series/System/',
+            uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: User',
           });
@@ -95,7 +95,7 @@ webUI1080pRouter.route('/System/Log/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Log', {
             title: 'System Menu :: Log',
-			uplink: '/Web_User_Interface/1080p_Series/System/',
+            uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Log',
           });
@@ -106,7 +106,7 @@ webUI1080pRouter.route('/System/Reboot/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Reboot', {
             title: 'System Menu :: Reboot',
-			uplink: '/Web_User_Interface/1080p_Series/System/',
+            uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Reboot',
           });
@@ -117,7 +117,7 @@ webUI1080pRouter.route('/System/Reset/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Reset', {
             title: 'System Menu :: Reset',
-			uplink: '/Web_User_Interface/1080p_Series/System/',
+            uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Reset',
           });
@@ -128,7 +128,7 @@ webUI1080pRouter.route('/System/Update/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Update', {
             title: 'System Menu :: Update',
-			uplink: '/Web_User_Interface/1080p_Series/System/',
+            uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Update',
           });
@@ -141,7 +141,7 @@ webUI1080pRouter.route('/Network/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network', {
             title: 'Network Menu',
-			uplink: '/Web_User_Interface/1080p_Series/',
+            uplink: '/Web_User_Interface/1080p_Series/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network',
           });
@@ -152,7 +152,7 @@ webUI1080pRouter.route('/Network/IP_Configuration/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_IP_Configuration', {
             title: 'Network Menu :: IP Configuration',
-			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: IP Config',
           });
@@ -163,7 +163,7 @@ webUI1080pRouter.route('/Network/WiFi/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_WiFi', {
             title: 'Network Menu :: WiFi',
-			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: WiFi',
           });
@@ -174,7 +174,7 @@ webUI1080pRouter.route('/Network/Remote_Access/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_Remote_Access', {
             title: 'Network Menu :: Remote Access',
-			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: Remote Access',
           });
@@ -185,7 +185,7 @@ webUI1080pRouter.route('/Network/ONVIF/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_ONVIF', {
             title: 'Network Menu :: ONVIF',
-			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: ONVIF',
           });
@@ -196,7 +196,7 @@ webUI1080pRouter.route('/Network/UPnP/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_UPnP', {
             title: 'Network Menu :: UPnP',
-			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: UPnP',
           });
@@ -207,7 +207,7 @@ webUI1080pRouter.route('/Network/FTP/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_FTP', {
             title: 'Network Menu :: FTP',
-			uplink: '/Web_User_Interface/1080p_Series/Network/',
+            uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: FTP',
           });
@@ -313,6 +313,17 @@ webUI1080pRouter.route('/Multimedia/Video/')
 			uplink: '/Web_User_Interface/1080p_Series/Multimedia/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Video',
+          });
+      });
+
+/* GET HD WebUI page. */
+webUI1080pRouter.route('/Multimedia/Video/Wide_Dynamic_Range')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Video_WDR', {
+            title: 'Multimedia Menu :: Video WDR',
+			uplink: '/Web_User_Interface/1080p_Series/Multimedia/Video/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: WDR Video',
           });
       });
 
