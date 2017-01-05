@@ -70,13 +70,25 @@
                     <!-- /margin -->
 
                     <div class="margin">
-                        <amp-img src="/images/Benutzerkonten_HD2_EN.jpg" width=700 height=378 layout="responsive" class="shadow"></amp-img>
+                      <amp-img
+                          on="tap:lightbox1"
+                          role="button"
+                          tabindex="0"
+                          src="/images/Benutzerkonten_HD2_EN.jpg" width=700 height=378 layout="responsive" class="shadow">
+                      </amp-img>
+                      <amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
                         <p>User Management Overlay for the HD Line Cameras.</p>
                     </div>
                     <!-- /margin -->
 
                     <div class="margin">
-                        <amp-img src="/images/Benutzerkonten_MJPEG_EN.jpg" width=700 height=469 layout="responsive" class="shadow"></amp-img>
+                      <amp-img
+                          on="tap:lightbox2"
+                          role="button"
+                          tabindex="0"
+                          src="/images/Benutzerkonten_MJPEG_EN.jpg" width=700 height=469 layout="responsive" class="shadow">
+                      </amp-img>
+                      <amp-image-lightbox id="lightbox2" layout="nodisplay"></amp-image-lightbox>
                         <p>User Management Menu for the VGA Line Cameras.</p>
                     </div>
                     <!-- /margin -->
