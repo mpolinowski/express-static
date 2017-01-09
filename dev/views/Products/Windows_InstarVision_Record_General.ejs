@@ -12,7 +12,7 @@
 
         <div class="container mb">
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-12">
               <nav class="breadcrumb" style="padding: 5px; margin: 0 0 10px 0;">
                 <a class="breadcrumb-item" href="/Products/Software/Windows/InstarVision">Software Overview</a>
                   <a class="breadcrumb-item" href="/Products/Software/Windows/InstarVision/Record">Recording Menu</a>
@@ -33,7 +33,7 @@
                 <img src="/images/Banner_en-InstarVision2-0_Record.png" class="shadow img-fluid" alt="InstarVision 2 Webserver"/>
             </div>
 
-            <div class="hidden-md-up col-xs-12 text-xs-center">
+            <div class="hidden-md-up col-12 text-xs-center">
                 <img src="/images/Banner_en-InstarVision2-0_small_Record.png" class="shadow img-fluid" alt="InstarVision 2.0 Webserver"/>
             </div>
 
@@ -47,7 +47,7 @@
         <section class="container">
           <div class="row">
 
-              <div class="col-xs-12 mt mb">
+              <div class="col-12 mt mb">
                 <h1><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp; Side Navigation - General Recording Settings</h1>
               </div>
 
@@ -61,7 +61,7 @@
                 <p class="text-justify"><span class="lead">RECORD DIRECTORIES</span>  You have to set a recording directory first before executing any functions that write files to your hard drive. By default your Document folder will be selected. If your server uses more than one hard drive, you can set several directories - it is recommended to avoid using the main hard drive (Operating System Partition) for data storage. The software will then automatically jump to the next directory, in case the active hard drive does not have any space left (<strong>Overflow</strong>). Use the Up and Down Arrows to adjust the list positions and order that your directories will be used in. To be able to use network storage devices, they have to be mapped (show up like local hard drives in Windows Explorer) in Windows - <a href="http://www.howtogeek.com/school/windows-network-sharing/lesson8/all/" target="_blank">see tutorial here</a>.</p>
               </div>
 
-              <div class="col-xs-12">
+              <div class="col-12">
                   <h2>Recording Directories</h2>
                   <br>
                   <p class="text-justify">The colour, in which the directory is displayed, corresponds to the following:</p>
@@ -74,7 +74,7 @@
                   <p class="text-justify"><span class="lead">STORAGE MANAGEMENT</span>  InstarVision can automatically delete old recordings after a certain amount of days. Activate Auto Deletion and set the number of days you need to save your recordings.</p>
               </div>
 
-              <div class="col-xs-12">
+              <div class="col-12">
                   <h2>Video Recording</h2>
                   <br>
                   <p class="text-justify"><span class="lead">VIDEO ENCODING</span>  Set the file format, media codec and quality parameters for your video recordings for each channel. It is recommended to use the same encoding that is used by the camera - e.g. for INSTAR HD cameras the videos streams will be h.264/mp3 - this way, the software does not have to re-encode the stream and the processor load will be minimized. It is also recommended to use small time increments for the Create New File Every value, to minimize the damage in case a file becomes corrupted. You can also display a time stamp (<strong>On-Screen Display</strong>) if you deactivated this function inside the camera. The Soft-OSD for the MP4, AVI and MKV container further reduces the computing requirements compared to the hardcoded version.</p>
@@ -91,7 +91,7 @@
             <div class="row">
 
               <!-- Button trigger modal -->
-              <div class="col-xs-12 text-xs-right">
+              <div class="col-12 text-xs-right">
                 <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">
                   Corrupted Video Files?
                 </button>
@@ -145,7 +145,7 @@
         <section class="instarvision mb"><% include ../_partials/content/_instarvision.ejs %></section>
         <!-- /webui -->
 
-        <section class="social"><% include ../_partials/template/_social.ejs %></section>
+        <section class="social"><% include ../_partials/content/_social.ejs %></section>
         <!-- /social -->
 
         <!-- ############################################# Footer ############################################# -->

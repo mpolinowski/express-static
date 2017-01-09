@@ -11,18 +11,15 @@
           <!-- #############################################  Search ############################################# -->
 
           <section class="container search mb">
-              <div class="row">
+            <div class="row justify-content-center">
+                <div class="mb">
+                  <img src="/images/instar_logo.png" class="img-rounded img-fluid shadow mb" alt="INSTAR Deutschland GmbH">
+                  <br><br><hr><br>
+                  <h2 class="subheader">Knowledge Database Search</h2>
+                </div>
+            </div>
 
-                  <div class="col-xs-12 col-sm-8 offset-sm-2 mb">
-                    <div class="mb">
-                      <img src="/images/instar_logo.png" class="img-rounded mx-auto d-block img-fluid shadow" alt="INSTAR Deutschland GmbH">
-                    </div>
-                    <br><br><hr><br>
-                    <h2 class="subheader">Knowledge Database Search</h2>
-                  </div>
-
-                  <div class="clearfix mb"></div>
-
+            <div class="row justify-content-center">
                   <form  method="get" action="/Search/Results" class="form-inline text-xs-center">
                       <br><br><br>
                       <div class="form-group has-primary">
@@ -31,16 +28,15 @@
                       </div>
                       <button class="btn btn-primary" type="submit">Search</button>
                   </form>
-
               </div>
-               <!-- /row -->
+              <!-- /row -->
         </section>
         <!-- /search -->
 
         <section class="instarvision"><% include _partials/content/_instarvision.ejs %></section>
         <!-- /webui -->
 
-        <section class="social"><% include _partials/template/_social.ejs %></section>
+        <section class="social"><% include _partials/content/_social.ejs %></section>
         <!-- /social -->
 
         <!-- ############################################# Footer ############################################# -->
