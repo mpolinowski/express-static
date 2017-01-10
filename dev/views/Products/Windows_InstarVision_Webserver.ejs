@@ -70,20 +70,26 @@
                   <p class="text-justify">To access the web user interface from the internet, first click on the Internet IP button to resolve your WAN IP address, then forward a port inside your router to the IP address of your InstarVision Server. You will be able to access the interface from the internet by using your internet IP followed by the forwarded port that you choose in the System settings. The default web server port is set to be 80. Please go to the <a href="/Products/Software/Windows/InstarVision/System">System Settings</a> to change the web port to the port that you forwarded inside your router´s NAT firewall. We recommend to use ports that are higher than 8080. The Internet Address of your internet access is most likely to change every 24h - please use the DDNS address of your INSTAR IP camera to access the software instead (see below).</p>
               </div>
 
-              <div class="col-12 mb">
-                  <div class="list-group col-md-6">
-                    <a href="#" class="list-group-item list-group-item-action active shadow">
-                      <h5 class="list-group-item-heading lead">admin</h5>
-                      <p class="list-group-item-text">Default Username</p>
-                    </a>
-                  </div>
-                  <div class="list-group col-md-6">
-                    <a href="#" class="list-group-item list-group-item-action active shadow">
-                      <h5 class="list-group-item-heading lead">instar</h5>
-                      <p class="list-group-item-text">Default Password</p>
-                    </a>
-                  </div>
-              </div>
+          </div>
+          <!-- /row -->
+
+          <div class="row">
+            <div class="list-group col mb">
+              <a href="#" class="list-group-item justify-content-between list-group-item-action active shadow">
+                <p class="list-group-item-text">Default Username</p>
+                <h5 class="list-group-item-heading lead">admin</h5>
+              </a>
+            </div>
+            <div class="list-group col mb">
+              <a href="#" class="list-group-item justify-content-between list-group-item-action active shadow">
+                <p class="list-group-item-text">Default Password</p>
+                <h5 class="list-group-item-heading lead">instar</h5>
+              </a>
+            </div>
+          </div>
+          <!-- /row -->
+
+          <div class="row">
 
               <div class="col-12 mb mt">
                   <h2><i class="fa fa-bars" aria-hidden="true"></i>&nbsp; Choose the right Video Plugin</h2>
@@ -124,7 +130,7 @@
                   <div class="card card-inverse card-primary shadow">
                     <div class="card-block">
                       <h4 class="card-title">Portforwarding &amp; DDNS</h4>
-                      <p class="card-text">All these broadcasting modes need you to forward the software HTTP (or RTSP) port to the server that runs the Surveillance Center. Please refer to our <code><a href="/Internet_Access/Port_Forwarding">forwarding instruction</a></code> for further information - note: in these instructions, we forward a port directly to each camera you want to access. In case of the Surveillance Center broadcast we only need to forward one port (HTTP or RTSP) directly to the server that runs the software and are able to access all camera streams maintained by the Surveillance Center! Remember that you can still use your camera´s <code><a href="/Internet_Access/The_DDNS_Service">DDNS address</a></code> to access the software - just type in the DDNS address of your camera (that is operated on the same network as the Surveillance Center) and add the port that you forwarded to your server. E.g. if your camera is accessible from the internet via the address <code>abcd12.ddns-instar.de:8081</code> and you forwarded port 8082 to the server, use type in <code>http://abcd12.ddns-instar.de:8082</code> to access the software web user interface!</p>
+                      <p class="text-justify" style="color: #fff">All these broadcasting modes need you to forward the software HTTP (or RTSP) port to the server that runs the Surveillance Center. Please refer to our <code><a href="/Internet_Access/Port_Forwarding">forwarding instruction</a></code> for further information - note: in these instructions, we forward a port directly to each camera you want to access. In case of the Surveillance Center broadcast we only need to forward one port (HTTP or RTSP) directly to the server that runs the software and are able to access all camera streams maintained by the Surveillance Center! Remember that you can still use your camera´s <code><a href="/Internet_Access/The_DDNS_Service">DDNS address</a></code> to access the software - just type in the DDNS address of your camera (that is operated on the same network as the Surveillance Center) and add the port that you forwarded to your server. E.g. if your camera is accessible from the internet via the address <code>abcd12.ddns-instar.de:8081</code> and you forwarded port 8082 to the server, use type in <code>http://abcd12.ddns-instar.de:8082</code> to access the software web user interface!</p>
                     </div>
                   </div>
               </div>
@@ -149,7 +155,7 @@
 
               <div class="card-deck-wrapper mb">
                 <div class="card-deck">
-                    <div class="card card-inverse shadow" style="background-color: #333; border-color: #333;">
+                    <div class="card card-inverse shadow mb" style="background-color: #333; border-color: #333;">
                       <img class="card-img-top img-fluid" src="/images/InstarVision2_Webserver_01.png" alt="InstarVision 2.0 :: Webserver">
                       <div class="card-block">
                         <p class="card-text"><span class="fa-stack">
@@ -158,7 +164,7 @@
                         </span> Go to the <a href="/Products/Software/Windows/InstarVision/System">System Menu</a> and change the Webserver Port to a port higher than 8080. You can also deactivate the required login here.</p>
                       </div>
                     </div>
-                    <div class="card card-inverse shadow" style="background-color: #333; border-color: #333;">
+                    <div class="card card-inverse shadow mb" style="background-color: #333; border-color: #333;">
                       <img class="card-img-top img-fluid" src="/images/InstarVision2_Webserver_02.png" alt="InstarVision 2.0 :: Webserver">
                       <div class="card-block">
                         <p class="card-text"><span class="fa-stack">
@@ -173,7 +179,7 @@
 
               <div class="card-deck-wrapper mb">
                 <div class="card-deck">
-                  <div class="card card-inverse shadow" style="background-color: #333; border-color: #333;">
+                  <div class="card card-inverse shadow mb" style="background-color: #333; border-color: #333;">
                     <img class="card-img-top img-fluid" src="/images/InstarVision2_Webserver_03.png" alt="InstarVision 2.0 :: Webserver">
                     <div class="card-block">
                       <p class="card-text"><span class="fa-stack">
@@ -182,7 +188,7 @@
                       </span> Wait for the web user interface to load and choose the Simple JPEG Viewer - this is the only mode that does not require a browser plugin to display the video.</p>
                     </div>
                   </div>
-                  <div class="card card-inverse shadow" style="background-color: #333; border-color: #333;">
+                  <div class="card card-inverse shadow mb" style="background-color: #333; border-color: #333;">
                     <img class="card-img-top img-fluid" src="/images/InstarVision2_Webserver_04.png" alt="InstarVision 2.0 :: Webserver">
                     <div class="card-block">
                       <p class="card-text"><span class="fa-stack">
@@ -197,7 +203,7 @@
 
               <div class="card-deck-wrapper mb">
                 <div class="card-deck">
-                  <div class="card card-inverse shadow" style="background-color: #333; border-color: #333;">
+                  <div class="card card-inverse shadow mb" style="background-color: #333; border-color: #333;">
                     <img class="card-img-top img-fluid" src="/images/InstarVision2_Webserver_05.png" alt="InstarVision 2.0 :: Webserver">
                     <div class="card-block">
                       <p class="card-text"><span class="fa-stack">
@@ -206,7 +212,7 @@
                       </span> In Internet Explorer choose the ActiveX Viewer and install the ActiveX plugin. Please make sure the plugin is not blocked by your Antivirus/Firewall.</p>
                     </div>
                   </div>
-                  <div class="card card-inverse shadow" style="background-color: #333; border-color: #333;">
+                  <div class="card card-inverse shadow mb" style="background-color: #333; border-color: #333;">
                     <img class="card-img-top img-fluid" src="/images/InstarVision2_Webserver_06.png" alt="InstarVision 2.0 :: Webserver">
                     <div class="card-block">
                       <p class="card-text"><span class="fa-stack">
@@ -221,7 +227,7 @@
 
               <div class="card-deck-wrapper mb">
                 <div class="card-deck">
-                  <div class="card card-inverse shadow" style="background-color: #333; border-color: #333;">
+                  <div class="card card-inverse shadow mb" style="background-color: #333; border-color: #333;">
                     <img class="card-img-top img-fluid" src="/images/InstarVision2_Webserver_07.png" alt="InstarVision 2.0 :: Webserver">
                     <div class="card-block">
                       <p class="card-text"><span class="fa-stack">
@@ -230,7 +236,7 @@
                       </span> To embed the web broadcast in your website, choose your Viewer in the Webserver Menu. The template files will be saved in your <a href="/Products/Software/Windows/InstarVision/Record/General">REC Directory</a>.</p>
                     </div>
                   </div>
-                  <div class="card card-inverse shadow" style="background-color: #333; border-color: #333;">
+                  <div class="card card-inverse shadow mb" style="background-color: #333; border-color: #333;">
                     <img class="card-img-top img-fluid" src="/images/InstarVision2_Webserver_08.png" alt="InstarVision 2.0 :: Webserver">
                     <div class="card-block">
                       <p class="card-text"><span class="fa-stack">
