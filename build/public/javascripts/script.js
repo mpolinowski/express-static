@@ -1,0 +1,1 @@
+Pace.on("done",function(){$("#wrapper").fadeIn(1500)}),$(document).on("click",".navbar-collapse.in",function(a){$(a.target).is("a")&&"dropdown-toggle"!=$(a.target).attr("class")&&$(this).collapse("hide")});

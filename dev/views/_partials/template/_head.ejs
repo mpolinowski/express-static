@@ -12,10 +12,10 @@
         <title>
             <%= title %>
         </title>
-        <script src="/javascripts/pace.min.js"></script>
         <script src="/javascripts/modernizr-2.8.3.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+        <script src="/javascripts/pace.min.js"></script>
         <link rel="stylesheet" href="/stylesheets/pace.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
         <link rel="stylesheet" href="/stylesheets/style.css"/>
@@ -26,12 +26,4 @@
 
         </style>
         <!-- Hide Content until loaded /PACE -->
-        <script type="text/javascript">
-            $(document).on('click', '.navbar-collapse.in', function(e) {
-                if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
-                    $(this).collapse('hide');
-                }
-            });
-        </script>
-        <!-- Close Collapsing Bootstrap NAVBAR on Click -->
     </head>
