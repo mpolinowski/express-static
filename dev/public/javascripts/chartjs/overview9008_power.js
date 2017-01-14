@@ -49,8 +49,8 @@ var data = {
 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
 // as you saw in the previous example
 var options = {
-  width: 900,
-  height: 500,
+  width: 800,
+  height: 445,
   showArea: true,
   showLine: true,
   showPoint: true,
@@ -71,11 +71,7 @@ var options = {
 };
 
 var responsiveOptions = [
-  ['screen and (min-width: 975px) and (max-width: 1050px)', {
-    width: 775,
-    height: 430,
-  },],
-  ['screen and (min-width: 746px) and (max-width: 974px)', {
+  ['screen and (min-width: 746px) and (max-width: 1050px)', {
     width: 568,
     height: 315,
   },],
