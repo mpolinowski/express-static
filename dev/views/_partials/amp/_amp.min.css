@@ -70,6 +70,11 @@ amp-img.placeholder {
 .shadow {
   box-shadow: 2px 2px 1px #888888;
 }
+.bevel {
+  border-top-style: outset;
+  border-color: #eee;
+  border-top-width: thin;
+}
 .justify {
   text-align: justify;
 }
@@ -832,6 +837,24 @@ header .tab.hamburger {
     transition-duration: 0.4s;
 }
 .navGoRed:hover {
+    box-shadow: -1px 6px 6px -3px rgba(0, 0, 0, 0.22);
+}
+.btnPrimary {
+    height: 40px;
+    width: 175px;
+    background-color: #0275d8;
+    border: 0;
+    color: #fff;
+    margin: 15px 5px;
+    padding: 0 5px;
+    border-radius: 4px;
+    font-family: Roboto, verdana, arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.btnPrimary:hover {
     box-shadow: -1px 6px 6px -3px rgba(0, 0, 0, 0.22);
 }
 amp-sidebar ul {
