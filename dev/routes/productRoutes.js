@@ -844,6 +844,26 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi'
     });
 });
 
+productRouter.route('/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/Ethernet')
+.get(function(req, res) {
+  res.render('./Products/IN-9008_Quick_Installation_1hole_lan', {
+      title: 'IN-9008 HD Quick Installation - PoE or WiFi',
+	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/Quick_Installation/PoE_or_WiFi/',
+      ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
+      headline: 'INSTAR Products Outdoor IP Cameras',
+    });
+});
+
+productRouter.route('/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/WPS')
+.get(function(req, res) {
+  res.render('./Products/IN-9008_Quick_Installation_1hole_wps', {
+      title: 'IN-9008 HD Quick Installation - PoE or WiFi',
+	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/Quick_Installation/PoE_or_WiFi/',
+      ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
+      headline: 'INSTAR Products Outdoor IP Cameras',
+    });
+});
+
 productRouter.route('/Outdoor_Cameras/IN-9008_HD/Quick_Installation/Ethernet')
 .get(function(req, res) {
   res.render('./Products/IN-9008_Quick_Installation_2hole', {
