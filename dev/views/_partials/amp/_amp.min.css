@@ -207,7 +207,7 @@ a {
     text-decoration: none;
 }
 h1, h2, h3 {
-    color: #3ab3eb;
+    color: #0275d8;
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -1843,6 +1843,8 @@ body.roadmap .stages ul {
     }
 }
 .card .title {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 10px;
     font-size: 24px;
     font-weight: 300;
     line-height: 48px;
@@ -1852,7 +1854,7 @@ body.roadmap .stages ul {
     padding: 20px;
     font-weight: 300;
     border-radius: 0 0 2px 2px;
-    text-align: left;
+    text-align: justify;
     max-height: 120px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -1866,6 +1868,7 @@ body.roadmap .stages ul {
 .card .action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px;
+    text-align: justify;
 }
 .card a {
     color: #0275d8;
@@ -1928,11 +1931,19 @@ body.roadmap .stages ul {
         width: 100%;
     }
 }
+.twocard .title {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: left;
+}
 .twocard .content {
     padding: 20px;
     font-weight: 300;
     border-radius: 0 0 2px 2px;
-    text-align: left;
+    text-align: justify;
     height: 150px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -1946,6 +1957,7 @@ display: none;
 .twocard .action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px;
+    text-align: justify;
 }
 .twocard a {
     color: #0275d8;
@@ -1994,11 +2006,19 @@ display: none;
         margin-left: 0;
     }
 }
+.onecard .title {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: justify;
+}
 .onecard .content {
     padding: 20px;
     font-weight: 300;
     border-radius: 0 0 2px 2px;
-    text-align: left;
+    text-align: justify;
     height: 150px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -2012,6 +2032,7 @@ display: none;
 .onecard .action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px;
+    text-align: left;
 }
 .onecard a {
     color: #0275d8;
