@@ -64,7 +64,11 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Safety_Warnings')
       res.render('./Products/Usermanuals_Safety_Warnings', {
           title: 'IN-9008 HD Safety Warnings',
           model: 'IN-9008_HD',
-		  type: 'Outdoor'
+		  type: 'Outdoor',
+		  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/',
+          ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
+          headline: 'INSTAR Products Outdoor IP Cameras',
+          breadcrumbs: '<li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Products/Outdoor_Cameras/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Safety_Warnings/">Safety Warnings</a></li>',
         });
     });
 	
@@ -73,7 +77,11 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Warranty')
       res.render('./Products/Usermanuals_Warranty', {
           title: 'IN-9008 HD Warranty & Disposal',
           model: 'IN-9008_HD',
-		  type: 'Outdoor'
+		  type: 'Outdoor',
+		  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/',
+          ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
+          headline: 'INSTAR Products Outdoor IP Cameras',
+          breadcrumbs: '<li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Warranty/">Warranty</a></li>',
         });
     });
 	
@@ -86,6 +94,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Video_Streaming')
 		  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
           headline: 'INSTAR Products Outdoor IP Cameras',
+          breadcrumbs: '<li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Video_Streaming/">Video Streaming</a></li>',
         });
     });
 	
@@ -98,6 +107,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Camera_Reset')
 		  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
           headline: 'INSTAR Products Outdoor IP Cameras',
+          breadcrumbs: '<li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Camera_Reset/">Camera Reset</a></li>',
         });
     });
 	
@@ -801,6 +811,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Usermanual')
 	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
+	  breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Products/Outdoor_Cameras/">Outdoor Cams</a></li><li><a href="/Products/Outdoor_Cameras/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/">Usermanual</a></li>',
     });
 });
 
@@ -811,16 +822,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Product_Features')
 	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
-    });
-});
-
-productRouter.route('/Outdoor_Cameras/IN-9008_HD/Point2Point')
-.get(function(req, res) {
-  res.render('./Products/IN-9008_Point2Point', {
-      title: 'IN-9008 HD Point 2 Point',
-	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/',
-      ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
-      headline: 'INSTAR Products Outdoor IP Cameras',
+	  breadcrumbs: '<li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Products/Outdoor_Cameras/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Product_Features/">Product Features</a></li>',
     });
 });
 
@@ -831,6 +833,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Quick_Installation')
 	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
+	  breadcrumbs: '<li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Products/Outdoor_Cameras/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/">Quick Installation</a></li>',
     });
 });
 
@@ -841,6 +844,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi'
 	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
+	  breadcrumbs: '<li><a href="/Products/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/">Quick Installation</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/">WiFi or PoE</a></li>',
     });
 });
 
@@ -851,6 +855,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/
 	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
+	  breadcrumbs: '<li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/">Quick Installation</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/">WiFi or PoE</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/Ethernet/">Ethernet</a></li>',
     });
 });
 
@@ -861,6 +866,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/
 	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
+	  breadcrumbs: '<li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/">Quick Installation</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/">WiFi or PoE</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/WPS/">WPS</a></li>',
     });
 });
 
@@ -871,6 +877,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Quick_Installation/Ethernet')
 	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
+	  breadcrumbs: '<li><a href="/Products/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/">Quick Installation</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/Ethernet/">Ethernet</a></li>',
     });
 });
 
@@ -881,6 +888,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Quick_Installation/Ethernet_and
 	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
+	  breadcrumbs: '<li><a href="/Products/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/">Quick Installation</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Quick_Installation/Ethernet_and_Audio-Out/">Ethernet & Audio</a></li>',
     });
 });
 
@@ -891,6 +899,7 @@ productRouter.route('/Outdoor_Cameras/IN-9008_HD/Lense_Adjustment')
 	  uplink: '/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
+      breadcrumbs: '<li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Products/Outdoor_Cameras/Outdoor_Cameras/IN-9008_HD/">IN-9008 HD</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Usermanual/">Usermanual</a></li><li><a href="/Products/Outdoor_Cameras/IN-9008_HD/Lense_Adjustment/">Lense Adjustment</a></li>',
     });
 });
 
