@@ -975,9 +975,9 @@ header .tab.hamburger {
 }
 
 .arrows li:nth-of-type(1) a { color: hsl(0, 0%, 70%); }
-.arrows li:nth-of-type(2) a { color: hsl(0, 0%, 65%); }
-.arrows li:nth-of-type(3) a { color: hsl(0, 0%, 50%); }
-.arrows li:nth-of-type(4) a { color: hsl(0, 0%, 45%); }
+.arrows li:nth-of-type(2) a { color: hsl(0, 0%, 45%); }
+.arrows li:nth-of-type(3) a { color: hsl(0, 0%, 35%); }
+.arrows li:nth-of-type(4) a { color: hsl(0, 0%, 30%); }
 
 .navGo {
     height: 40px;
