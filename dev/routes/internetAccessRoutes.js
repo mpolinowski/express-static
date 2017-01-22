@@ -28,6 +28,7 @@ internetAccessRouter.get('/The_DDNS_Service/', function(req, res) {
         uplink: '/Internet_Access/',
         ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
         headline: 'The DDNS Service',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/The_DDNS_Service/">The DDNS Service</a></li>',
       });
   });
 
@@ -37,6 +38,7 @@ internetAccessRouter.get('/Port_Forwarding/', function(req, res) {
         uplink: '/Internet_Access/',
         ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
         headline: 'Port Forwarding',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li>',
       });
   });
 
@@ -46,6 +48,7 @@ internetAccessRouter.get('/Port_Forwarding/AVM_Fritzbox/', function(req, res) {
         uplink: '/Internet_Access/Port_Forwarding/',
         ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
         headline: 'Port Forwarding AVM Fritzbox',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/AVM_Fritzbox/">AVM Fritzbox</a></li>',
       });
   });
 
@@ -55,6 +58,7 @@ internetAccessRouter.get('/Port_Forwarding/Telekom_Speedport/', function(req, re
         uplink: '/Internet_Access/Port_Forwarding/',
         ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
         headline: 'Port Forwarding Telekom Speedport',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/Telekom_Speedport/">Telekom Speedport</a></li>',
       });
   });
 
@@ -64,6 +68,7 @@ internetAccessRouter.get('/Port_Forwarding/D-Link/', function(req, res) {
         uplink: '/Internet_Access/Port_Forwarding/',
         ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
         headline: 'Port Forwarding D-Link',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/D-Link/">D-Link</a></li>',
       });
   });
 
@@ -73,6 +78,7 @@ internetAccessRouter.get('/Port_Forwarding/TP-Link/', function(req, res) {
         uplink: '/Internet_Access/Port_Forwarding/',
         ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
         headline: 'Port Forwarding TP-Link',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/TP-Link/">TP-Link</a></li>',
       });
   });
 
@@ -82,6 +88,7 @@ internetAccessRouter.get('/Port_Forwarding/Netgear/', function(req, res) {
         uplink: '/Internet_Access/Port_Forwarding/',
         ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
         headline: 'Port Forwarding Netgear',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/Netgear/">Netgear</a></li>',
       });
   });
 
@@ -91,6 +98,7 @@ internetAccessRouter.get('/Port_Forwarding/Vodafone_Easybox/', function(req, res
         uplink: '/Internet_Access/Port_Forwarding/',
         ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
         headline: 'Port Forwarding Vodafone Easybox',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/Vodafone_Easybox/">Vodafone Easybox</a></li>',
       });
   });
 
@@ -100,6 +108,7 @@ internetAccessRouter.get('/Port_Forwarding/Pirelli/', function(req, res) {
         uplink: '/Internet_Access/Port_Forwarding/',
         ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
         headline: 'Port Forwarding Pirelli',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/Pirelli/">Pirelli</a></li>',
       });
   });
 
@@ -109,6 +118,7 @@ internetAccessRouter.get('/DDNS_Provider/', function(req, res) {
         uplink: '/Internet_Access/',
         ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
         headline: 'Third Party DDNS Provider',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/DDNS_Provider/">DDNS Provider</a></li>',
       });
   });
 
@@ -118,6 +128,7 @@ internetAccessRouter.get('/DDNS_Provider/NoIP/', function(req, res) {
         uplink: '/Internet_Access/DDNS_Provider/',
         ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
         headline: 'Third Party DDNS Provider',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/DDNS_Provider/">DDNS Provider</a></li><li><a href="/Internet_Access/DDNS_Provider/NoIP/">NoIP</a></li>',
       });
   });
 
@@ -127,6 +138,7 @@ internetAccessRouter.get('/DDNS_Provider/Selfhost/', function(req, res) {
         uplink: '/Internet_Access/DDNS_Provider/',
         ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
         headline: 'Third Party DDNS Provider',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/DDNS_Provider/">DDNS Provider</a></li><li><a href="/Internet_Access/DDNS_Provider/Selfhost/">Selfhost</a></li>',
       });
   });
 
@@ -136,6 +148,7 @@ internetAccessRouter.get('/DDNS_Provider/DDNSS/', function(req, res) {
         uplink: '/Internet_Access/DDNS_Provider/',
         ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
         headline: 'Third Party DDNS Provider',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/DDNS_Provider/">DDNS Provider</a></li><li><a href="/Internet_Access/DDNS_Provider/DDNSS/">DDNSS</a></li>',
       });
   });
 
