@@ -1,0 +1,94 @@
+<% include ../_partials/template/_head.ejs %>
+
+    <body>
+      <% include ../_partials/template/_outdated.ejs %>
+
+      <div id="wrapper">
+
+        <header><% include ../_partials/template/_header.ejs %></header>
+        <!-- Navbar-->
+        <div class="clearfix mb"></div>
+        <!-- #############################################  Content ############################################# -->
+
+        <div class="container mb">
+          <div class="row">
+            <div class="col-12">
+              <nav class="breadcrumb" style="padding: 5px; margin: 0 0 10px 0;">
+                <a class="breadcrumb-item" href="/Software/Windows/InstarVision">Software Overview</a>
+                  <a class="breadcrumb-item" href="/Software/Windows/InstarVision/Advanced">Advanced Menu</a>
+                <span class="breadcrumb-item active">License</span>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!--############################################Banner#################################################-->
+
+        <section class="container mb">
+          <div class="row">
+
+            <div class="hidden-sm-down col-md-12 text-xs-center">
+                <img src="/images/Banner_en-InstarVision2-0_Advanced.png" class="shadow img-fluid" alt="InstarVision 2 Advanced"/>
+            </div>
+
+            <div class="hidden-md-up col-12 text-xs-center">
+                <img src="/images/Banner_en-InstarVision2-0_small_Advanced.png" class="shadow img-fluid" alt="InstarVision 2.0 Advanced"/>
+            </div>
+
+          </div>
+          <!-- /row -->
+        </section>
+        <!-- /container -->
+
+        <!--###################################### Camera List ###########################################-->
+
+        <section class="container">
+          <div class="row">
+
+              <div class="col-12 mt mb">
+                <h1><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp; Side Navigation - Advanced Settings</h1>
+              </div>
+
+              <div class="col-md-12 col-lg-4 mt mb" style="padding-top: 5px;">
+                  <img src="/images/Image003.png" alt="InstarVision 2.0 Surveillance Center User Interface - Record Menu" class="shadow img-fluid"/>
+              </div>
+
+              <div class="col-md-12 col-lg-8 mt">
+                <p class="lead">Validate your License Code online or by Email</p>
+                <p class="text-justify">You will be asked to register your software once you open InstarVision for the first time. You can click on Trial Version to start a 14 days unlimited trial run. The license can be bought in our web shop at <a href="http://www.instar.de/software.html">www.instar.de</a>. Once bought, copy &amp; paste your license code, that you received by Email, into the input field and click on Register Online to unlock your software. Please be aware that your license will be bound to the PC you installed the software on and cannot be transferred to another workstation once validated! In case you want to upgrade your license, simply open the menu, delete the old license and past your new one in the input field - then click on Register Online to validate. Please contact us if you need to reset your license to install the software on another workstation.</p>
+              </div>
+
+              <div class="col-12">
+                  <p class="text-justify">If the PC you are working on is not connected to the internet, click on Create ID File and send the file, that is created, by Email to <a href="mailto: support@instar.de?subject=InstarVision%202.0%20ID%20File%20Validation&amp;body=Please%20send%20me%20the%20registration%20file%20for%20InstarVision%202.0%20based%20on%20the%20ID%20file%20in%20the%20attachment.%0A%0AMy%20Customer%20ID%20is%20%3A%0A%0A%0A%0AI%20am%20Aware%20that%20the%20registration%20file%20will%20only%20work%20on%20the%20PC%20that%20the%20ID%20file%20was%20generated%20on.%20The%20license%20for%20InstarVision%20cannot%20be%20transfered%20to%20another%20workstation.">support@instar.de</a>. You will receive a reply with the registration file - save the file from the email attachment, click on Register from File and the select it in the following dialogue box.</p>
+              </div>
+
+            </div>
+            <!-- /row -->
+          </section>
+          <!-- /container -->
+
+
+      <div class="clearfix mt"></div>
+
+        <!-- #############################################  Gallery ############################################# -->
+
+        <section class="instarvision mb"><% include ../_partials/content/_instarvision.ejs %></section>
+        <!-- /webui -->
+
+        <section class="social"><% include ../_partials/content/_social.ejs %></section>
+        <!-- /social -->
+
+        <!-- ############################################# Footer ############################################# -->
+
+        <footer><% include ../_partials/template/_footer.ejs %></footer>
+
+        <% include ../_partials/template/_jsdefaults.ejs %>
+
+        </div>
+        <!-- /Wrapper -->
+
+    </body>
+
+</html>

@@ -8,6 +8,7 @@ var redirect = require('express-redirect');
 var indexRouter = require('./build/routes/indexRoutes');
 var searchRouter = require('./build/routes/searchRoutes');
 var productRouter = require('./build/routes/productRoutes');
+var softwareRouter = require('./build/routes/softwareRoutes');
 var quickInstallRouter = require('./build/routes/quickInstallRoutes');
 var internetAccessRouter = require('./build/routes/internetAccessRoutes');
 var motionDetectionRouter = require('./build/routes/motionDetectionRoutes');
@@ -54,6 +55,7 @@ app.redirect('/index.php/First_steps_to_set_up_a_Wifi_connection', '../Quick_Ins
 app.use('/', indexRouter);
 app.use('/Search/', searchRouter);
 app.use('/Products/', productRouter);
+app.use('/Software/', softwareRouter);
 app.use('/Quick_Installation/', quickInstallRouter);
 app.use('/Internet_Access/', internetAccessRouter);
 app.use('/Motion_Detection/', motionDetectionRouter);

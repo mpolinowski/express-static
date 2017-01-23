@@ -1,0 +1,162 @@
+<% include ../_partials/template/_head.ejs %>
+
+    <body>
+      <% include ../_partials/template/_outdated.ejs %>
+
+      <div id="wrapper">
+
+        <header><% include ../_partials/template/_header.ejs %></header>
+        <!-- Navbar-->
+        <div class="clearfix mb"></div>
+        <!-- #############################################  Content ############################################# -->
+
+        <div class="container mb">
+          <div class="row">
+            <div class="col-12">
+              <nav class="breadcrumb" style="padding: 5px; margin: 0 0 10px 0;">
+                <a class="breadcrumb-item" href="/Software/Windows/InstarVision">Software Overview</a>
+                  <a class="breadcrumb-item" href="/Software/Windows/InstarVision/Record">Recording Menu</a>
+                <span class="breadcrumb-item active">General Settings</span>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!--############################################Banner#################################################-->
+
+        <section class="container mb">
+          <div class="row">
+
+            <div class="hidden-sm-down col-md-12 text-xs-center">
+                <img src="/images/Banner_en-InstarVision2-0_Record.png" class="shadow img-fluid" alt="InstarVision 2 Webserver"/>
+            </div>
+
+            <div class="hidden-md-up col-12 text-xs-center">
+                <img src="/images/Banner_en-InstarVision2-0_small_Record.png" class="shadow img-fluid" alt="InstarVision 2.0 Webserver"/>
+            </div>
+
+          </div>
+          <!-- /row -->
+        </section>
+        <!-- /container -->
+
+        <!--###################################### Camera List ###########################################-->
+
+        <section class="container">
+          <div class="row">
+
+              <div class="col-12 mt mb">
+                <h1><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp; Side Navigation - General Recording Settings</h1>
+              </div>
+
+              <div class="col-md-12 col-lg-4 mt mb" style="padding-top: 5px;">
+                  <img src="/images/Image043.png" alt="InstarVision 2.0 Surveillance Center User Interface - Record Menu" class="shadow img-fluid"/>
+              </div>
+
+              <div class="col-md-12 col-lg-8 mt">
+                <h2>Storage Management</h2>
+                <br>
+                <p class="text-justify"><span class="lead">RECORD DIRECTORIES</span>  You have to set a recording directory first before executing any functions that write files to your hard drive. By default your Document folder will be selected. If your server uses more than one hard drive, you can set several directories - it is recommended to avoid using the main hard drive (Operating System Partition) for data storage. The software will then automatically jump to the next directory, in case the active hard drive does not have any space left (<strong>Overflow</strong>). Use the Up and Down Arrows to adjust the list positions and order that your directories will be used in. To be able to use network storage devices, they have to be mapped (show up like local hard drives in Windows Explorer) in Windows - <a href="http://www.howtogeek.com/school/windows-network-sharing/lesson8/all/" target="_blank">see tutorial here</a>.</p>
+              </div>
+
+              <div class="col-12">
+                  <h2>Recording Directories</h2>
+                  <br>
+                  <p class="text-justify">The colour, in which the directory is displayed, corresponds to the following:</p>
+                  <ul>
+                    <li><span style="color: Orange;"><strong>Orange</strong></span>: Active recording directory.</li>
+                    <li><strong>Black</strong>: Backup directory - the software will automatically switch to the next backup directory once the active directory becomes unavailable or the capacity of the drive is reached.</li>
+                    <li><span style="color: Red;"><strong>Red</strong></span>: Directory unavailable.</li>
+                  </ul>
+                  <br>
+                  <p class="text-justify"><span class="lead">STORAGE MANAGEMENT</span>  InstarVision can automatically delete old recordings after a certain amount of days. Activate Auto Deletion and set the number of days you need to save your recordings.</p>
+              </div>
+
+              <div class="col-12">
+                  <h2>Video Recording</h2>
+                  <br>
+                  <p class="text-justify"><span class="lead">VIDEO ENCODING</span>  Set the file format, media codec and quality parameters for your video recordings for each channel. It is recommended to use the same encoding that is used by the camera - e.g. for INSTAR HD cameras the videos streams will be h.264/mp3 - this way, the software does not have to re-encode the stream and the processor load will be minimized. It is also recommended to use small time increments for the Create New File Every value, to minimize the damage in case a file becomes corrupted. You can also display a time stamp (<strong>On-Screen Display</strong>) if you deactivated this function inside the camera. The Soft-OSD for the MP4, AVI and MKV container further reduces the computing requirements compared to the hardcoded version.</p>
+              </div>
+
+            </div>
+            <!-- /row -->
+          </section>
+          <!-- /container -->
+
+          <!-- #################################### Modal ############################################# -->
+
+          <section class="container mb">
+            <div class="row">
+
+              <!-- Button trigger modal -->
+              <div class="col-12 text-xs-right">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+                  Corrupted Video Files?
+                </button>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content" style="padding: 10px;">
+
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h3 class="modal-title" id="myModalLabel">Corrupted video files after a software crash</h3>
+                    </div>
+
+                    <div class="container-fluid center-block">
+                      <figure class="mb">
+                          <img src="/images/Corrupted_video_file.png" class="img-fluid" alt="Corrupted Video File">
+                        </a>
+                      </figure>
+                    </div>
+
+                    <p class="text-justify" style="margin-bottom: 20px;">In case the video recording function of the software is interrupted, e.g. due to a PC crash, the video will not be finalized and your video player might not be able to render it!</p>
+
+                    <p class="text-justify" style="margin-bottom: 20px;">But in most cases a free programm like the <a href="http://www.videolan.org/vlc/download-windows.html">VLC Player</a> will still be able to play parts of the file. We recommend that you use the AVI container for your recordings and choose a filesize that is as small/short as possible to avoid data loss.</p>
+
+                    <div class="container-fluid center-block">
+                      <figure class="mb">
+                          <img src="/images/Corrupted_video_file_01.png" class="img-fluid" alt="Corrupted Video File">
+                        </a>
+                      </figure>
+                    </div>
+
+                    <p class="text-justify" style="margin-bottom: 20px;">Both the robust AVI recording format and a short recording length will increase your data security.</p>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
+      <div class="clearfix mt"></div>
+
+        <!-- #############################################  Gallery ############################################# -->
+
+        <section class="instarvision mb"><% include ../_partials/content/_instarvision.ejs %></section>
+        <!-- /webui -->
+
+        <section class="social"><% include ../_partials/content/_social.ejs %></section>
+        <!-- /social -->
+
+        <!-- ############################################# Footer ############################################# -->
+
+        <footer><% include ../_partials/template/_footer.ejs %></footer>
+
+        <% include ../_partials/template/_jsdefaults.ejs %>
+
+        </div>
+        <!-- /Wrapper -->
+
+    </body>
+
+</html>

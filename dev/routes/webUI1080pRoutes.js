@@ -19,6 +19,7 @@ webUI1080pRouter.route('/')
             uplink: '/Web_User_Interface/1080p_Series/Overview/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li>',
           });
       });
 
@@ -32,6 +33,7 @@ webUI1080pRouter.route('/System/')
             uplink: '/Web_User_Interface/1080p_Series/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li>',
           });
       });
 
@@ -43,6 +45,7 @@ webUI1080pRouter.route('/System/Date_Time/')
             uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Time',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Date_Time/">Date & Time</a></li>',
           });
       });
 
@@ -54,6 +57,7 @@ webUI1080pRouter.route('/System/Email/')
             uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Email',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Email/">Email</a></li>',
           });
       });
 
@@ -65,6 +69,7 @@ webUI1080pRouter.route('/System/Info/')
             uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Info',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Info/">Info</a></li>',
           });
       });
 
@@ -76,6 +81,7 @@ webUI1080pRouter.route('/System/Language/')
             uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Language',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Language/">Language</a></li>',
           });
       });
 
@@ -87,6 +93,7 @@ webUI1080pRouter.route('/System/User/')
             uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: User',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/User/">User</a></li>',
           });
       });
 
@@ -98,6 +105,7 @@ webUI1080pRouter.route('/System/Log/')
             uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Log',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Log/">Log</a></li>',
           });
       });
 
@@ -109,6 +117,7 @@ webUI1080pRouter.route('/System/Reboot/')
             uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Reboot',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Reboot/">Reboot</a></li>',
           });
       });
 
@@ -120,6 +129,7 @@ webUI1080pRouter.route('/System/Reset/')
             uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Reset',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Reset/">Reset</a></li>',
           });
       });
 
@@ -131,6 +141,7 @@ webUI1080pRouter.route('/System/Update/')
             uplink: '/Web_User_Interface/1080p_Series/System/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Update',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Update/">Update</a></li>',
           });
       });
 
@@ -144,6 +155,7 @@ webUI1080pRouter.route('/Network/')
             uplink: '/Web_User_Interface/1080p_Series/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></li>',
           });
       });
 
@@ -155,6 +167,7 @@ webUI1080pRouter.route('/Network/IP_Configuration/')
             uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: IP Config',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/IP_Configuration/">IP Configuration</a></li>',
           });
       });
 
@@ -166,6 +179,7 @@ webUI1080pRouter.route('/Network/WiFi/')
             uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: WiFi',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/WiFi/">WiFi</a></li>',
           });
       });
 
@@ -177,6 +191,7 @@ webUI1080pRouter.route('/Network/Remote_Access/')
             uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: Remote Access',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">Remote Access</a></li>',
           });
       });
 
@@ -188,6 +203,7 @@ webUI1080pRouter.route('/Network/ONVIF/')
             uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: ONVIF',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/ONVIF/">ONVIF</a></li>',
           });
       });
 
@@ -199,6 +215,7 @@ webUI1080pRouter.route('/Network/UPnP/')
             uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: UPnP',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/UPnP/">UPnP</a></li>',
           });
       });
 
@@ -210,6 +227,7 @@ webUI1080pRouter.route('/Network/FTP/')
             uplink: '/Web_User_Interface/1080p_Series/Network/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Network :: FTP',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/FTP/">FTP</a></li>',
           });
       });
 
@@ -223,6 +241,7 @@ webUI1080pRouter.route('/Features/')
 			uplink: '/Web_User_Interface/1080p_Series/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Features',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li>',
           });
       });
 
@@ -234,6 +253,7 @@ webUI1080pRouter.route('/Features/Status_LED/')
 			uplink: '/Web_User_Interface/1080p_Series/Features/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Features :: Status LED',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/Status_LED">Status LED</a></li>',
           });
       });
 
@@ -245,6 +265,7 @@ webUI1080pRouter.route('/Features/IR_LEDs/')
 			uplink: '/Web_User_Interface/1080p_Series/Features/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Features :: IR LEDs',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/IR_LEDs">IR LEDs</a></li>',
           });
       });
 
@@ -256,6 +277,7 @@ webUI1080pRouter.route('/Features/PTZ/')
 			uplink: '/Web_User_Interface/1080p_Series/Features/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Features :: PTZ',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/PTZ">PTZ</a></li>',
           });
       });
 
@@ -267,6 +289,7 @@ webUI1080pRouter.route('/Features/SD_Card/')
 			uplink: '/Web_User_Interface/1080p_Series/Features/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Features :: SD Card',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/SD_Card">SD Card</a></li>',
           });
       });
 
@@ -278,6 +301,7 @@ webUI1080pRouter.route('/Features/PTZ_Tour/')
 			uplink: '/Web_User_Interface/1080p_Series/Features/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Features :: PTZ Tour',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/PTZ_Tour">PTZ Tour</a></li>',
           });
       });
 
@@ -291,6 +315,7 @@ webUI1080pRouter.route('/Multimedia/')
 			uplink: '/Web_User_Interface/1080p_Series/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Multimedia',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li>',
           });
       });
 
@@ -302,6 +327,7 @@ webUI1080pRouter.route('/Multimedia/Audio/')
 			uplink: '/Web_User_Interface/1080p_Series/Multimedia/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Audio',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Audio">Audio</a></li>',
           });
       });
 
@@ -313,6 +339,7 @@ webUI1080pRouter.route('/Multimedia/Video/')
 			uplink: '/Web_User_Interface/1080p_Series/Multimedia/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Video',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Video">Video</a></li>',
           });
       });
 
@@ -324,6 +351,7 @@ webUI1080pRouter.route('/Multimedia/Video/Wide_Dynamic_Range')
 			uplink: '/Web_User_Interface/1080p_Series/Multimedia/Video/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: WDR Video',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Wide_Dynamic_Range">WDR</a></li>',
           });
       });
 
@@ -335,6 +363,7 @@ webUI1080pRouter.route('/Multimedia/Image/')
 			uplink: '/Web_User_Interface/1080p_Series/Multimedia/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Image',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image">Image</a></li>',
           });
       });
 
@@ -346,6 +375,7 @@ webUI1080pRouter.route('/Multimedia/Privacy_Mask/')
 			uplink: '/Web_User_Interface/1080p_Series/Multimedia/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Privacy Mask',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Privacy_Mask">Privacy Mask</a></li>',
           });
       });
 
@@ -359,6 +389,7 @@ webUI1080pRouter.route('/Alarm/')
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Alarm',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li>',
           });
       });
 
@@ -370,6 +401,7 @@ webUI1080pRouter.route('/Alarm/Areas/')
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Areas',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">Areas</a></li>',
           });
       });
 
@@ -381,6 +413,7 @@ webUI1080pRouter.route('/Alarm/Actions/')
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Actions',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Actions/">Actions</a></li>',
           });
       });
 
@@ -392,6 +425,7 @@ webUI1080pRouter.route('/Alarm/Schedule/')
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Schedule',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Schedule/">Schedule</a></li>',
           });
       });
 
@@ -403,6 +437,7 @@ webUI1080pRouter.route('/Alarm/Alarm_Server/')
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Alarm Server',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Alarm_Server/">Alarm Server</a></li>',
           });
       });
 
@@ -414,6 +449,7 @@ webUI1080pRouter.route('/Alarm/Email/')
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Email',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Email/">Email</a></li>',
           });
       });
 
@@ -425,6 +461,7 @@ webUI1080pRouter.route('/Alarm/Push_Service/')
 			uplink: '/Web_User_Interface/1080p_Series/Alarm/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Push Service',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Push_Service/">Push Service</a></li>',
           });
       });
 
@@ -438,6 +475,7 @@ webUI1080pRouter.route('/Recording/')
 			uplink: '/Web_User_Interface/1080p_Series/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Recording',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Recording/">Recording</a></li>',
           });
       });
 
@@ -449,6 +487,7 @@ webUI1080pRouter.route('/Recording/Video/')
 			uplink: '/Web_User_Interface/1080p_Series/Recording/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Recording :: Video',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Recording/">Recording</a></li><li><a href="/Web_User_Interface/1080p_Series/Recording/Video">Video</a></li>',
           });
       });
 
@@ -460,6 +499,7 @@ webUI1080pRouter.route('/Recording/Photoseries/')
 			uplink: '/Web_User_Interface/1080p_Series/Recording/',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Recording :: Photoseries',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Recording/">Recording</a></li><li><a href="/Web_User_Interface/1080p_Series/Recording/Photoseries">Photoseries</a></li>',
           });
       });
 
