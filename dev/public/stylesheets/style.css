@@ -23,7 +23,7 @@
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(/types/Roboto-700.ttf) format('truetype');
 }
-@font-face {
+@font-face { 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
