@@ -160,17 +160,6 @@ indoorCamsRouter.route('/IN-8015_HD/Technical_Specifications')
     });
 });
 
-indoorCamsRouter.route('/IN-8015_HD/Downloads')
-.get(function(req, res) {
-  res.render('./Indoor_Cams/IN-8015_Downloads', {
-      title: 'IN-8015 HD Downloads',
-	  uplink: '/Indoor_Cameras/IN-8015_HD/Usermanual/',
-      ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
-      headline: 'INSTAR Products Indoor IP Cameras',
-      breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Indoor_Cameras/">Indoor Cams</a></li><li><a href="/Indoor_Cameras/IN-8015_HD/">IN-8015 HD</a></li><li><a href="/Indoor_Cameras/IN-8015_HD/Downloads/">Downloads</a></li>',
-    });
-});
-
 
 /* ###################################################### IN-6014 HD ###################################################### */
 
@@ -300,17 +289,6 @@ indoorCamsRouter.route('/IN-6014_HD/Technical_Specifications')
       ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
       headline: 'INSTAR Products Indoor IP Cameras',
       breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Indoor_Cameras/">Indoor Cams</a></li><li><a href="/Indoor_Cameras/IN-6014_HD/">IN-6014 HD</a></li><li><a href="/Indoor_Cameras/IN-6014_HD/Technical_Specifications/">Technical Specifications</a></li>',
-    });
-});
-
-indoorCamsRouter.route('/IN-6014_HD/Downloads')
-.get(function(req, res) {
-  res.render('./Indoor_Cams/IN-6014_Downloads', {
-      title: 'IN-6014 HD Downloads',
-	  uplink: '/Indoor_Cameras/IN-6014_HD/Usermanual/',
-      ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
-      headline: 'INSTAR Products Indoor IP Cameras',
-      breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Indoor_Cameras/">Indoor Cams</a></li><li><a href="/Indoor_Cameras/IN-6014_HD/">IN-6014 HD</a></li><li><a href="/Indoor_Cameras/IN-6014_HD/Downloads/">Downloads</a></li>',
     });
 });
 
@@ -447,14 +425,6 @@ indoorCamsRouter.route('/IN-6012_HD/Technical_Specifications')
     });
 });
 
-indoorCamsRouter.route('/IN-6012_HD/Downloads')
-.get(function(req, res) {
-  res.render('./Indoor_Cams/IN-6012_Downloads', {
-      title: 'IN-6012 HD Downloads',
-      breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Indoor_Cameras/">Indoor Cams</a></li><li><a href="/Indoor_Cameras/IN-6012_HD/">IN-6012 HD</a></li><li><a href="/Indoor_Cameras/IN-6012_HD/Downloads/">Downloads</a></li>',
-    });
-});
-
 
 /* ###################################################### IN-6001 HD ###################################################### */
 
@@ -587,14 +557,6 @@ indoorCamsRouter.route('/IN-6001_HD/Technical_Specifications')
     });
 });
 
-indoorCamsRouter.route('/IN-6001_HD/Downloads')
-.get(function(req, res) {
-  res.render('./Indoor_Cams/IN-6001_Downloads', {
-      title: 'IN-6001 HD Downloads',
-      breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Indoor_Cameras/">Indoor Cams</a></li><li><a href="/Indoor_Cameras/IN-6001_HD/">IN-6001 HD</a></li><li><a href="/Indoor_Cameras/IN-6001_HD/Downloads/">Downloads</a></li>',
-    });
-});
-
 
 /* ###################################################### VGA ###################################################### */
 
@@ -610,13 +572,6 @@ indoorCamsRouter.route('/IN-3011/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Indoor_Cams/IN-3011_Tech_Specs', {
       title: 'IN-3011 Technical Specifications',
-    });
-});
-
-indoorCamsRouter.route('/IN-3011/Downloads')
-.get(function(req, res) {
-  res.render('./Indoor_Cams/IN-3011_Downloads', {
-      title: 'IN-3011 Downloads',
     });
 });
 

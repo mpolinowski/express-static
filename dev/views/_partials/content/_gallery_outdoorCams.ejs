@@ -5,7 +5,7 @@
     <% if (outdoorPic.length > 0) { %>
         <% for (i=outdoorPic.length - 1; i>=0; i--) { %>
             <div class="col-6 col-lg-4 mb">
-                <a href="/Products/<%= outdoorUrl[i] %>"><img src="<%= outdoorPic[i] %>" alt="<%= outdoorPicAlt[i] %>" class="img-fluid"></a>
+                <a href="/<%= outdoorUrl[i] %>"><img src="<%= outdoorPic[i] %>" alt="<%= outdoorPicAlt[i] %>" class="img-fluid"></a>
             </div>
         <% } %>
     <% } %>

@@ -196,21 +196,9 @@ outdoorCamsRouter.route('/IN-9008_HD/Technical_Specifications')
     });
 });
 
-outdoorCamsRouter.route('/IN-9008_HD/Downloads')
-.get(function(req, res) {
-  res.render('./Outdoor_Cams/IN-9008_Downloads', {
-      title: 'IN-9008 HD Downloads',
-    });
-});
-
-
-
-
-
-
-
 
 /* ###################################################### IN-7011 HD ###################################################### */
+
 
 outdoorCamsRouter.route('/IN-7011_HD/Safety_Warnings')
   .get(function(req, res) {
@@ -336,19 +324,6 @@ outdoorCamsRouter.route('/IN-7011_HD/Technical_Specifications')
       title: 'IN-7011 HD Technical Specifications',
     });
 });
-
-outdoorCamsRouter.route('/IN-7011_HD/Downloads')
-.get(function(req, res) {
-  res.render('./Outdoor_Cams/IN-7011_Downloads', {
-      title: 'IN-7011 HD Downloads',
-    });
-});
-
-
-
-
-
-
 
 
 /* ###################################################### IN-5907 HD ###################################################### */
@@ -480,22 +455,9 @@ outdoorCamsRouter.route('/IN-5907_HD/Technical_Specifications')
     });
 });
 
-outdoorCamsRouter.route('/IN-5907_HD/Downloads')
-.get(function(req, res) {
-  res.render('./Outdoor_Cams/IN-5907_Downloads', {
-      title: 'IN-5907 HD Downloads',
-      breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Outdoor_Cameras/IN-5907_HD/">IN-5907 HD</a></li><li><a href="/Outdoor_Cameras/IN-5907_HD/Downloads/">Downloads</a></li>',
-    });
-});
-
-
-
-
-
-
-
 
 /* ###################################################### IN-5905 HD ###################################################### */
+
 
 outdoorCamsRouter.route('/IN-5905_HD/Safety_Warnings')
   .get(function(req, res) {
@@ -623,21 +585,9 @@ outdoorCamsRouter.route('/IN-5905_HD/Technical_Specifications')
     });
 });
 
-outdoorCamsRouter.route('/IN-5905_HD/Downloads')
-.get(function(req, res) {
-  res.render('./Outdoor_Cams/IN-5905_Downloads', {
-      title: 'IN-5905 HD Downloads',
-      breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Outdoor_Cameras/IN-5905_HD/">IN-5905 HD</a></li><li><a href="/Outdoor_Cameras/IN-5905_HD/Downloads/">Downloads</a></li>',
-    });
-});
-
-
-
-
-
-
 
 /* ###################################################### VGA ###################################################### */
+
 
 outdoorCamsRouter.route('/IN-4011')
 .get(function(req, res) {
@@ -650,13 +600,6 @@ outdoorCamsRouter.route('/IN-4011/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-4011_Tech_Specs', {
       title: 'IN-4011 Technical Specifications',
-    });
-});
-
-outdoorCamsRouter.route('/IN-4011/Downloads')
-.get(function(req, res) {
-  res.render('./Outdoor_Cams/IN-4011_Downloads', {
-      title: 'IN-4011 Downloads',
     });
 });
 
@@ -674,13 +617,6 @@ outdoorCamsRouter.route('/IN-4010_V2/Technical_Specifications')
     });
 });
 
-outdoorCamsRouter.route('/IN-4010_V2/Downloads')
-.get(function(req, res) {
-  res.render('./Outdoor_Cams/IN-4010_V2_Downloads', {
-      title: 'IN-4010 V2 Downloads',
-    });
-});
-
 outdoorCamsRouter.route('/IN-2908')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-2908_Overview', {
@@ -695,13 +631,6 @@ outdoorCamsRouter.route('/IN-2908/Technical_Specifications')
     });
 });
 
-outdoorCamsRouter.route('/IN-2908/Downloads')
-.get(function(req, res) {
-  res.render('./Outdoor_Cams/IN-2908_Downloads', {
-      title: 'IN-2908 Downloads',
-    });
-});
-
 outdoorCamsRouter.route('/IN-2905_V2')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-2905_V2_Overview', {
@@ -713,13 +642,6 @@ outdoorCamsRouter.route('/IN-2905_V2/Technical_Specifications')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-2905_V2_Tech_Specs', {
       title: 'IN-2905 V2 Technical Specifications',
-    });
-});
-
-outdoorCamsRouter.route('/IN-2905_V2/Downloads')
-.get(function(req, res) {
-  res.render('./Outdoor_Cams/IN-2905_V2_Downloads', {
-      title: 'IN-2905 V2 Downloads',
     });
 });
 
