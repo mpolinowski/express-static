@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ⚡>
+    <head>
+        <% include ../../_partials/amp/_amp-head.ejs %>
+        <link rel="canonical" href="/Web_User_Interface/1080p_Series/Features/IR_LED/">
+    </head>
+
+    <body class="home">
+
+      <% include ../../_partials/amp/_amp-header.ejs %>
+
+        <div class="wrap mobile-down">
+            <div class="content">
+                <section class="hero webUI">
+                    <div class="container">
+                        <div class="row">
+                            <div class="six columns">
+                                <div class="intro-container">
+                                    <h1>Manual Recording</h1>
+                                    <p class="intro">
+                                      You can start the recording via menu bar and with our smartphone app (iPhone, iPad or Android). It is recommended to set a maximum length to divided your recordings into serveral files.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Hero -->
+            </div>
+            <!-- /Content -->
+        </div>
+        <!-- /Wrap -->
+
+        <div class="wrap">
+            <div class="container main">
+
+                <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+
+                <article>
+                    <!-- article -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Set the Length of Manual Recordings</h2>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                      <div>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Features_ManualRec.jpg 100w, /images/1080p_webUI/1080p_Settings_Features_ManualRec.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:featuresIR" role="button" tabindex="0"></amp-img>
+                      </div>
+                    </div>
+                    <!-- /margin -->
+                    <amp-lightbox id="featuresIR" layout="nodisplay">
+                      <div class="lightbox">
+                        <amp-img src="/images/1080p_webUI/1080p_Settings_Features_ManualRec.jpg" width="800" height="550" on="tap:featuresIR.close" role="button" tabindex="1">
+                      </div>
+                    </amp-lightbox>
+
+                    <div class="margin">
+                        <table>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Duration of manual video recording on SD card</strong>
+                                </td>
+                                <td>You can start the recording via menu bar and with our smartphone app (iPhone, iPad or Android). It is recommended to set a maximum length to divided your recordings into serveral files.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /margin -->
+                </article>
+                <!-- /article -->
+
+              </div>
+              <!-- /container main -->
+          </div>
+          <!-- /wrap-->
+
+          <% include ../../_partials/content/_bluenav-1080p-webUI-mobile.ejs %>
+
+        <footer>
+            <% include ../../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>

@@ -305,6 +305,18 @@ webUI1080pRouter.route('/Features/PTZ_Tour/')
           });
       });
 
+/* GET HD WebUI page. */
+webUI1080pRouter.route('/Features/Manual_Recording/')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_ManualRec', {
+            title: 'Features Menu :: Manual Recording',
+			uplink: '/Web_User_Interface/1080p_Series/Features/',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features :: Manual Recording',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/Manual_Recording">Manual Recording</a></li>',
+          });
+      });
+
 /* ###################################### fullHD Series Multimedia ###################################### */
 
 /* GET HD WebUI page. */
