@@ -122,72 +122,83 @@ ___
 npm install --global gulp-cli
 ```
 
-* **Step Two** — Install Gulp into your Project - cd to project directory and:
+* **Step Two** — Install [Gulp 4](https://github.com/gulpjs/gulp/tree/4.0) into your Project - cd to project directory and:
 
 ```
-npm install --save-dev gulp
+npm install --save-dev gulpjs/gulp#4.0
 ```
 
-* **Step Three** — Create a gulpfile.js at the root of your project:
+* **Step Three** — Create a gulpfile.babel.js at the root of your project:
+
+Node already supports a lot of ES2015, to avoid compatibility problem we suggest to install Babel and rename your gulpfile.js as gulpfile.babel.js.
+
+```
+npm install --save-dev babel-register babel-preset-es2015
+```
+
+Then create a .babelrc file with the preset configuration.
+
+```
+{
+  "presets": [ "es2015" ]
+}
+```
+
+Now install all Gulp dependencies that you want to use
+
+```
+npm install --save-dev gulp-babel gulp-uglify gulp-rename gulp-clean-css gulp-htmlclean gulp-newer gulp-imagemin del
+```
+
+Now write the gulpfile.babel.js and import all gulp dependencies...
 
 ```javascript
-var gulp = require('gulp');
-
-gulp.task('default', function() {
-  // place code for your default task here
-});
+import gulp from 'gulp';
+import babel from 'gulp-babel';
+import uglify from 'gulp-uglify';
+import rename from 'gulp-rename';
+import cleanCSS from 'gulp-clean-css';
+import cleanHTML from 'gulp-htmlclean';
+import newer from 'gulp-newer';
+import imagemin from 'gulp-imagemin';
+import del from 'del';
 ```
 
-* **Step Four** — Run the Gulp default task:
+... and write your Gulp Tasks.
 
-```
-gulp
-```
-
-The default task will run and do nothing.
-
-* **Step Five** — Add a Gulp Task to compress your images:
-
-install the gulp-imagemin plugin to compress your images:
-
-```
-npm install --save-dev gulp-imagemin
-```
-
-and install gulp-newer to allow you to ignore images that have already been processed:
-
-```
-npm install --save-dev gulp-newer
-```
-
-Create a gulpfile.js in your apps root directory and add the following code:
+* **Step Four** — Define your source and destination directories:
 
 ```javascript
-var
-  gulp = require('gulp'),
-  newer = require('gulp-newer'),
-  imagemin = require('gulp-imagemin');
+const paths = {
+  views: {
+    src: 'dev/views/**/*.ejs',
+    dest: 'build/views/',
+  },
+  images: {
+    src: 'dev/public/images/**/*.{jpg,jpeg,png}',
+    dest: 'build/public/images/',
+  },
+  styles: {
+    src: 'dev/public/stylesheets/**/*.css',
+    dest: 'build/public/stylesheets/',
+  },
+  scripts: {
+    src: 'dev/public/javascripts/**/*.js',
+    dest: 'build/public/javascripts/',
+  },
+};
+```
 
-// File locations
-var
-  source = './dev/',
-  dest = './build/',
-  images = {
-    in: source + 'public/images/**/*',
-    out: dest + 'public/images/',
-  };
+* **Step Five** — Add a Gulp Task [using imagemin](https://www.npmjs.com/package/gulp-imagemin) to compress your images:
 
-// Manage images
-gulp.task('images', function() {
-  return gulp.src(images.in)
+```javascript
+export function images() {
+  return gulp.src(paths.images.src)
+    .pipe(newer(paths.images.dest))
+    // Pass through newer files only
     .pipe(imagemin())
-    .pipe(newer(images.out))
-    .pipe(gulp.dest(images.out));
-});
-
-gulp.task('default', function() {
-  // Place code for your default task here
-});
+    .pipe(gulp.dest(paths.images.dest));
+}
 ```
 
 Run the task with:
@@ -200,71 +211,41 @@ to compress all images in ./dev/public/images and save them in ./build/public/im
 
 * **Step Six** — Add a Gulp Task to minify CSS, EJS/HTML and JS:
 
-install the gulp-htmlclean (minify EJS), gulp-clean-css (minify CSS) and gulp-uglify (minify JS) plugin:
-
-```
-npm install --save-dev gulp-htmlclean gulp-clean-css gulp-uglify
-```
-
-Add those plugins to top of your gulpfile:
-
-```
-htmlclean = require('gulp-htmlclean'),
-cleancss = require('gulp-clean-css'),
-uglify = require('gulp-uglify'),
-```
-
-Now we need to point to all directories that contain EJS, CSS and JS files - add the following lines to the File Location section of your gulpfile.js:
-
-```javascript
-ejs = {
-  in: source + 'views/**/*' + '*.ejs',
-  watch: source + 'views/**/*' + '*.ejs',
-  out: dest + 'views/',
-},
-
-css = {
-  in: source + 'public/stylesheets/*' + '*.css',
-  out: dest + 'public/stylesheets/',
-},
-
-js = {
-  in: source + 'public/javascripts/**/*' + '*.js',
-  out: dest + 'public/javascripts/',
-},
-
-routes = {
-  in: source + 'routes/**/*' + '*.js',
-  out: dest + 'routes/',
-},
-```
-
 Now we have to create minify jobs for each file type - (add more tasks if needed):
 
 ```javascript
 // Minify EJS files
-gulp.task('ejs', function() {
-  return gulp.src(ejs.in) //Point to the source directory
-    .pipe(newer(ejs.out)) //Compare with source - only run for new files
-    .pipe(htmlclean()) //Pipe all files through the minify plugin
-    .pipe(gulp.dest(ejs.out)); //and save them to the build directory
-});
+export function views() {
+  return gulp.src(paths.views.src)
+    .pipe(newer(paths.views.dest))
+    // Pass through newer files only
+    .pipe(cleanHTML())
+    .pipe(gulp.dest(paths.views.dest));
+}
 
 // Minify CSS files
-gulp.task('css', function() {
-  return gulp.src(css.in)
-    .pipe(newer(css.out))
-    .pipe(cleancss())
-    .pipe(gulp.dest(css.out));
-});
+export function styles() {
+  return gulp.src(paths.styles.src)
+    .pipe(newer(paths.styles.dest))
+    // Pass through newer files only
+    .pipe(cleanCSS())
+    // Pass in options to the stream
+    .pipe(rename({
+      basename: 'main',
+      suffix: '.min',
+    }))
+    .pipe(gulp.dest(paths.styles.dest));
+}
 
 // Minify JS files
-gulp.task('js', function() {
-  return gulp.src(js.in)
-    .pipe(newer(js.out))
+export function scripts() {
+  return gulp.src(paths.routes.src, { sourcemaps: true })
+    .pipe(newer(paths.routes.dest))
+    // Pass through newer files only
+    .pipe(babel())
     .pipe(uglify())
-    .pipe(gulp.dest(js.out));
-});
+    .pipe(gulp.dest(paths.routes.dest));
+}
 
 // Minify routes
 gulp.task('routes', function() {
@@ -278,19 +259,24 @@ gulp.task('routes', function() {
 All those tasks can be triggered individually - e.g.:
 
 ```
-gulp ejs
+gulp views
 ```
 
-But to make it more convenient, we will create a combined task:
+But to make it more convenient, we will create a combined task - that will also watch for changes:
 
 ```javascript
-// Build task
-gulp.task('build', ['ejs', 'css', 'js', 'routes', 'images'], function() {
-
-});
+export function watch() {
+  gulp.watch(paths.views.src, views);
+  gulp.watch(paths.images.src, images);
+}
 ```
 
-You can build the with the following command:
+You can create a build task to create a fresh build:
+
+```javascript
+Const build = gulp.series(clean, gulp.parallel(views, images, styles, scripts));
+export { build };
+```
 
 ```
 gulp build
