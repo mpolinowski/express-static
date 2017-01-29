@@ -17,6 +17,10 @@ const paths = {
     src: 'dev/public/images/**/*.{jpg,jpeg,png}',
     dest: 'build/public/images/',
   },
+  routes: {
+    src: 'dev/routes/**/*.js',
+    dest: 'build/routes/',
+  },
   styles: {
     src: 'dev/public/stylesheets/**/*.css',
     dest: 'build/public/stylesheets/',
@@ -51,6 +55,16 @@ export function images() {
     .pipe(gulp.dest(paths.images.dest));
 }
 
+// Clean Express Routes
+
+export function routes() {
+  return gulp.src(paths.routes.src, { sourcemaps: true })
+    .pipe(newer(paths.routes.dest))
+    // Pass through newer files only
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.routes.dest));
+}
+
 // Clean CSS
 
 export function styles() {
@@ -69,17 +83,18 @@ export function styles() {
 // Clean JS
 
 export function scripts() {
-  return gulp.src(paths.routes.src, { sourcemaps: true })
-    .pipe(newer(paths.routes.dest))
+  return gulp.src(paths.scripts.src, { sourcemaps: true })
+    .pipe(newer(paths.scripts.dest))
     // Pass through newer files only
     .pipe(babel())
     .pipe(uglify())
-    .pipe(gulp.dest(paths.routes.dest));
+    .pipe(gulp.dest(paths.scripts.dest));
 }
 
 export function watch() {
   gulp.watch(paths.views.src, views);
   gulp.watch(paths.images.src, images);
+  gulp.watch(paths.routes.src, routes);
 }
 
 // Const build = gulp.series(clean, gulp.parallel(views, images, styles, scripts));
