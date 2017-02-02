@@ -19,6 +19,7 @@ quickInstallRouter.get('/', function(req, res) {
         qiPic: qiPicture,
         qiPicAlt: qiPictureAlt,
         qiUrl: qiHref,
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Quick_Installation/">Quick Installation</a></li>',
       });
   });
 

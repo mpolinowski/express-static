@@ -19,6 +19,7 @@ motionDetectionRouter.get('/', function(req, res) {
         mdPic: mdPicture,
         mdPicAlt: mdPictureAlt,
         mdUrl: mdHref,
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Motion_Detection/">Motion Detection</a></li>',
       });
   });
 

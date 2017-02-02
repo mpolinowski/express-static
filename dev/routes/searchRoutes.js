@@ -83,12 +83,14 @@ searchRouter.route('/Results')
           title: 'INSTAR Wiki Search Results',
           response: resp,
           query: req.query.q,
+          breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Search_Results/">Search Results</a></li>',
         });
     }, function(err) {
       console.trace(err.message);
       res.render('Search_Results', {
           title: 'INSTAR Wiki Search Results',
           response: err.message,
+          breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Search_Results/">Search Results</a></li>',
         });
     });
 });

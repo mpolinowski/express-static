@@ -19,6 +19,7 @@ advancedUserRouter.get('/', function(req, res) {
         mdPic: mdPicture,
         mdPicAlt: mdPictureAlt,
         mdUrl: mdHref,
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li>',
       });
   });
 
@@ -65,14 +66,14 @@ advancedUserRouter.get('/Website_Integration/HD_Camera_Integration', function(re
 advancedUserRouter.get('/CGI_Commands/', function(req, res) {
     res.render('./Advanced_User/CGI_Commands', {
         title: 'CGI Commands',
-        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>',
       });
   });
 
 advancedUserRouter.get('/CGI_Commands/VGA_Series_CGI_List', function(req, res) {
     res.render('./Advanced_User/VGA_Series_CGI_List', {
         title: 'VGA Series CGI List',
-        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/Advanced_User/CGI_Commands/VGA_Series_CGI_List/">VGA Series</a></li>',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/VGA_Series_CGI_List/">VGA Series</a></li>',
       });
   });
 

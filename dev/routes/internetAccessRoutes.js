@@ -19,6 +19,7 @@ internetAccessRouter.get('/', function(req, res) {
         iaPic: iaPicture,
         iaPicAlt: iaPictureAlt,
         iaUrl: iaHref,
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Internet_Access/">Access your Camera over the Internet</a></li>',
       });
   });
 
