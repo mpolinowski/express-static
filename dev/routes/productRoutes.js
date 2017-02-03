@@ -694,7 +694,7 @@ productRouter.route('/IN-Motion/500/User_Interface')
 .get(function(req, res) {
   res.render('./Products/IN-Motion_500_User_Interface', {
       title: 'IN-Motion 500 - User Interface',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Products/IN-Motion/">IN-Motion</a></li><li class="breadcrumb-item"><a href="/Products/IN-Motion/500/">500</a></li><li class="breadcrumb-item"><a href="/Products/IN-Motion/500/User_Interface/">BUser Interface</a></li>',
+      breadcrumbs: '<li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Products/IN-Motion/">IN-Motion</a></li><li class="breadcrumb-item"><a href="/Products/IN-Motion/500/">500</a></li><li class="breadcrumb-item"><a href="/Products/IN-Motion/500/User_Interface/">User Interface</a></li>',
     });
 });
 
