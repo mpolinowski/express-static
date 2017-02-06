@@ -1,0 +1,1338 @@
+POST /wiki2_en/article
+{
+    "title": "Website Integration",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Website Integration (HD Cameras). READ MORE. Cambozola JAVA Plugin. READ MORE. Open IP Camera Manager (PHP). READ MORE",
+    "link": "/Advanced_User/Website_Integration",
+    "title2": "Integration in eine Webseite",
+    "chapter": "Advanced User",
+    "tags": ["Website", "Web", "Webcam", "Weather", "Online"],
+    "image": "/images/Search/AU_SearchThumb_WebsiteIntegration.jpg",
+    "abstract": "Integration into a Website"
+}
+POST /wiki2_en/article
+{
+    "title": "Website Integration (HD Cameras)",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Website Integration (HD Cameras) - Integration of the live video stream in your website: The Video Stream - There is two ways to integrate the HD video stream of your camera in your website. H264: This method will use the H264 video stream of your camera. This will need a computer to have the Apple Quicktime Plugin installed. When using Internet Explorer an ActiveX Plugin will be needed. MJPEG: This method will work with every web browser. We will recommend you to use this way of integration to make sure the video stream of your camera can be displayed in any web browser. Edit the HTML Page Step 1: Please download our HTML package and unpack the ZIP file. The ZIP file can be found HERE. Download and unzip the files. Step 2: If you want to integrate the H264 video stream in your website please open the file h264_video.html in order to make modifications for your camera. In order to access your camera over the internet (Portforwarding) or your internal network you have to fill in the DDNS or IP address of your camera. You will also need to type in the username and the password of your camera. Optional you can also select the video resolution which you want to display. Please change the following parameters: var url = http: 192.168.1.165:80; var streamnum = 11; Videostream 11 for 1280 x 720 pixel, 12 for 640 x 352 pixel and 13 for 320 x 176 pixel resolution var name0 = admin; Camera Username var password0 = instar; Camera Password Edit the h264_video.html file if you want to integrate the HD camera´s h.264 video stream. Step 3: If you want to integrate the MJPEG stream please modify the file mjpeg_video.html in the same way as explained in step 2 above. Edit the mjpeg_video.html file if you want to integrate the HD camera´s MJPEG video stream. Upload the Page to your Server - Step 4: Now please use a FTP client in order to upload the files to your web space. In our example we are using the software FileZilla. If you are not so familiar with HTML we recommend you to upload all files in the same folder where your index.html file is located which is normally the main page of your website. Edit the mjpeg_video.html file if you want to integrate the HD camera´s MJPEG video stream. Step 4.1: Afterwards all files should be in the same folder as shown below. Edit the mjpeg_video.html file if you want to integrate the HD camera´s MJPEG video stream. Step 5: All you need to do is either to link the file h264_video.html or mjpeg_video.html in your website. If you are familiar with HTML you can also simply integrate the HTML code in an existing site in order to integrate the video stream in any of your existing websites. In case of questions please feel free to contact us any time.",
+    "link": "/Advanced_User/Website_Integration/HD_Camera_Integration",
+    "title2": "Integration in eine Webseite",
+    "chapter": "Advanced User",
+    "tags": ["Website", "Web", "Webcam", "Weather", "Online"],
+    "image": "/images/Search/AU_SearchThumb_WebsiteIntegration.jpg",
+    "abstract": "Integrate your HD Camera into your Website"
+}
+POST /wiki2_en/article
+{
+    "title": "Cambozola JAVA Plugin",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Cambozola JAVA Plugin - In order to integrate your IP camera in a website we recommend you the Cambozola Java plugin. The plugin will allow to display the MJPEG cameras live stream in any web browser. Cambozola is a very simple viewer for multipart jpeg streams that are streamed out by a IP cameras or webcam server. To integrate your INSTAR IP camera in Cambozola we recommend you to download the latest version from HERE. Add a New Camera. After you have downloaded the newest version, please unpack the zip archive. You will then find different folders and files as shown in the screenshot below. Download and unzip the Cambozola files. Now please copy the folder DIST to your webserver. Please make sure that the folder is in the same directory in which you will place the index.html. Select the DIST directory. We are using the program FileZilla to transfer the files to our webserver. But you can use any kind of FTP program to upload the data. Upload the DIST directory to your webserver. Now please create a simple html file. In this file please include the following Code and save it as index.html: applet code=com.charliemouse.cambozola.Viewer archive=dist cambozola.jar width=640 height=480 param name= url value= http: username:password@xxx.dyndns.org:80 videostream.cgi applet It is very important that in the 3rd line (value=...) you replace the username and the password with the username and password that you have set in your IP camera. Also the internet address of the camera has to be exchanged with the correct internet address of your camera. You can compare the code above with our sample code below to have a better understanding. If you didn´t change the username and password in the camera the default username is admin and no password. Create a simple index.html file with the content seen here. Please upload the file index.html in the same folder in which you earlier copied the folder DIST. Copy the index.html to the same folder you used earlier. Please upload the file index.html in the same folder in which you earlier copied the folder DIST. Copy the index.html to the same folder you used earlier. After successfully uploading the file index.html please open it by typing in the path in your web browser. If you are opening the website for the first time in can take a short while until the java plugin has started. It might also happen that a security warning will show up. Please make a mark that it should always be allowed to use this applet. After that please select Allow. This is necessary so that the java plugin gets the necessary access right to show the live stream. Start the Java Plugin. After you have now confirmed the security warning the live stream will be shown in your web browser. And you are done!",
+    "link": "/Advanced_User/Website_Integration/Cambozola",
+    "title2": "Integration in eine Webseite (Cambozola)",
+    "chapter": "Advanced User",
+    "tags": ["Website", "Web", "Webcam", "Weather", "Online"],
+    "image": "/images/Search/AU_SearchThumb_WebsiteIntegration.jpg",
+    "abstract": "Integration into a Website (Cambozola)"
+}
+POST /wiki2_en/article
+{
+    "title": "Open IP Camera Manager (PHP)",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Snowman - UPDATE The free software Open IP Camera Manager was superseded by the software Simple and Open Webcam Management. Parts of the information below are still relevant for an installation on a Windows PC or Mac - for a detailed Installation Guide in Ubuntu follow this LINK.",
+    "link": "/Advanced_User/Website_Integration/Open_IP_Camera_Manager",
+    "title2": "Integration in eine Webseite (PHP)",
+    "chapter": "Advanced User",
+    "tags": ["Website", "Web", "Webcam", "Weather", "Online"],
+    "image": "/images/Search/AU_SearchThumb_WebsiteIntegration.jpg",
+    "abstract": "Integration into a Website (PHP)"
+}
+POST /wiki2_en/article
+{
+    "title": "Restore your Cameras WebUI",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Restore your Camera after a faulty WebUI Upgrade - You updated your camera´s web user interface - but now you are unable to log into your camera with your web browser. You still see the camera inside your network and might even be able to access the video stream with our smartphone app. But your web browser simply refuses to open the interface. In this case the webUI was damaged during the installation process and all that needs to be done is updating it a second time. The easiest way to do this, is using the INSTAR Camera Tool, go to the Update tab and load the webUI file onto the camera. But what if this update also fails? Simple Update Tool HD You tried to update your HD camera´s software but everything you tried fails and you are no longer able to access the web user interface from your web browser? Use the Simple Updater as a mean of last resort, before grabbing your soldering iron. You can download the updater from HERE The update tool consists of some simple HTML files and some javascript and CSS. Unpack those files and open the update.html with your default browser. Download the desired update.pkg file for your camera from HERE. Now upload the file through the update.html to your camera. The update will take about 300 seconds. Simple Update Tool VGA You tried to update your VGA camera´s software but everything you tried fails and you are no longer able to access the web user interface from your web browser? Use the Simple Updater as a mean of last resort, before grabbing your soldering iron. You can download the updater from HERE The update tool consists of some simple HTML files and some CSS. Unpack those files and open the SimpleUpdateManager.html with your default browser. Download the desired update file for your camera from HERE. Now upload the file through the SimpleUpdateManager.html to your camera. The update will take about 150 seconds.",
+    "link": "/Advanced_User/Restore_WebUI",
+    "title2": "Wiederherstellen der Weboberflaeche",
+    "chapter": "Advanced User",
+    "tags": ["WebUI", "userinterface", "restore", "fault", "update"],
+    "image": "/images/Search/AU_SearchThumb_ResetAfterWebUIError.jpg",
+    "abstract": "Restore your Camera after a faulty WebUI Upgrade"
+}
+POST /wiki2_en/article
+{
+    "title": "Restore your Cameras Firmware",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Restore your Camera after a faulty Firmware Upgrade ONLY FOR VGA CAMERAS What you need USB to serial UART Interface (3.3 logic needed) available online. 4x connection cable with female pins on both sided and 4 pin plugs. Software HyperTerminal (Windows XP) or Software TerraTerm (Vista 7 8): Hyperterminal Windows XP: Start → Programs → Accessories → Communication → HyperTerminal Tera Term Windows Vista 7 8: follow the link and download install the program - Click here to Download Download the newest firmware and web user interface from our download area. Click here to Download your FirmwareWebUI Download the linux-romfs.zip container and unpack it. File:Linux-romfs.zip How to prepare your Hardware Connect your USB to UART interface with the cable. Connect the plug to the GND, Rxd, Txd and 3.3u pins - you may want to solder them in place to make sure that the stay in place. Now connect the other side with the camera mainboard and solder them in place. Make the connection according to: Pin 1 Ground Ground Pin 2 Rxd Txd Pin 3 Txd Rxd Pin 4 3.3u 3.3u Make sure that the connection is solid and that you don´t have a loose contact somewhere. The UART Status LED should light up after plugging in the USB connector (depends on the model you are using). For Windows XP-User - HyperTerminal First you have to define a new connection after starting up the HyperTerminal. Type in any name and click on OK. Select the COM port of your UART interface and confirm with OK. You can check the COM port under Control Panel → Device Manager → Ports COM & LTP. Adjust the settings according to the following screenshot and click OK to confirm. Save your settings under File → Save As Now open the connection by double-clicking the shortcut on your desktop that was created in the previous step. The program should automatically launch the mainboards bootloader - then press ESC. You should now see the following screen. Now type in the following two commands: del 6 Enter THEN del 7 Enter (Don´t forget the SPACE!!!) Now type in the following: fx 6 romfs.img 0x7f0e0000 0x7f0e0000 -a Enter Waiting for download... will be displayed. Select the romfs.img file you downloaded earlier in Transfer → Send file → choose the romfs image file by browsing to the location you extracted it to earlier. Then set the protocol to Xmodem and click on Send. After the upload is completet repeat these steps for the Linux.zip file. Type in: fx 7 linux.zip 0x7f020000 0x8000 -acxz Enter Choose the file linux.zip from the earlier download and select the protocol Xmodem. Now type in boot and confirm with Enter. You can now reassemble your camera and check if you can connect it to your local cable network. For Windows Vista 7 8 User - TeraTerm After starting TeraTerm you first have to set up a new connection. Choose a serial connection (Seriell) and select the port the UART interface is connected to. Confirm these settings with OK. You can check the COM port under Control Panel → Device Manager → Ports COM & LTP. Now go to Einstellungen (Settings) and choose Serieller Port (Serial Port). Adjust the settings according to the following screenshot and click OK to confirm. The program should automatically launch the mainboards bootloader - then press ESC. You should now see the following screen. * Now type in the following two commands: del 6 Enter THEN del 7 Enter (Don´t forget the SPACE!!!) Now type: fx 6 romfs.img 0x7f0e0000 0x7f0e0000 -a Enter. The program now waits for the file to transfer. Now go to Datei → Transfer → XMODEM → Senden and browse for the romfs.img you downloaded in the beginning. Click on Open to start the file transfer. Now we have to repeat those steps for the Linux.zip file. Type: fx 7 linux.zip 0x7f020000 0x8000 -acxz Enter. and choose the file linux.zip. Afterwards, type boot and confirm with Enter. You can now reassemble your camera and check if you can connect it to your local cable network.",
+    "link": "/Advanced_User/Restore_Firmware",
+    "title2": "Wiederherstellen der Firmware",
+    "chapter": "Advanced User",
+    "tags": ["Firmware", "restore", "fault", "update"],
+    "image": "/images/Search/AU_SearchThumb_ResetAfterFirmwareError.jpg",
+    "abstract": "Restore your Camera after a faulty Firmware Upgrade"
+}
+POST /wiki2_en/article
+{
+    "title": "CGI Commands",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Programming Interface for your Camera. CGI: Common Gateway Interface. Common Gateway Interface (CGI) is a standard method used to generate dynamic content on web pages. CGI provides an interface between the web server and programs that generate the web content. These programs are known as CGI scripts or simply CGIs. The CGI commands listed in the following allow you to directly communicate with your INSTAR IP camera through your web browser. Simply add your camera's IP address to the command submit it through your browser's address field. Like the camera's own web user interface, they can also be used embedded in HTML pages. 1080p Series - The INSTAR fullHD Series builds on the HighChip (HC) chipset that is modelled after the HighSilicon (HS) solution. The following commands can be applied to all camera models with a 1080p resolution. 720p Series - The current INSTAR HD Series builds on the Grainmedia (GM) chipset that is modelled after the HighSilicon (HS) solution. The following commands can be applied the both GM (like the IN-5907HD, IN-6012HD and IN-7011HD) and HS (IN-6011HD) camera models. VGA Series - The current INSTAR VGA Series builds on the Winbond (WB) chipset. The WB solution is very common among VGA IP cameras and following commands can, therefore be applied to a wide variety of cameras. The compatible INSTAR cameras are the 29xx series, the 30xx series and the 40xx series. CGI Commands for your Camera - 1080p Series, 720p Series and VGA Series.",
+    "link": "/Advanced_User/CGI_Commands",
+    "title2": "CGI Befehle",
+    "chapter": "Advanced User",
+    "tags": ["CGI", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "Programming Interface for your Camera"
+}
+POST /wiki2_en/article
+{
+    "title": "CGI Command List (720p)",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "CGI Command List (720p) - For all developers that want to integrate our cameras in their software or for everyone that wants to experiment a little, we now offer a full list of all CGI commands that can be used with our IP cameras. Please understand that this list is only for advanced users who know what they are doing. We can not give any technical support regarding our CGI commands. WebUI Network CGI Commands: Software Menu - Network Menu - System Menu - Multimedia Menu - Alarm Menu - Recording Menu - WebUI Complete CGI Commands Complete List - WebUI 720p Series Web User Interface. List of the most needed CGI commands - Video Commands: rtsp: admin:instar@IP-Address:RTSP-Port 11 :: VLC Stream. http: admin:instar@IP-Address:Port iphone 11 :: Quicktime Stream. http: IP-Address:Port tmpfs snap.jpg?usr=admin&pwd=instar :: Snapshot (720p 1280x720 Pixel). http: IP-Address:Port tmpfs auto.jpg?usr=admin&pwd=instar :: Snapshot (352p or 176p). http: IP-Address:Port cgi-bin hi3510 mjpegstream.cgi?-chn=11&-usr=admin&-pwd=instar :: MJPEG Stream. also note the additional SDK documentation for accessing video audio. Pan & Tilt CGI Commands: http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=0&-act=right :: Moves continuously right. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=0&-act=left :: Moves continuously left. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=0&-act=up :: Moves continuously up. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=0&-act=down :: Moves continuously down. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=0&-act=stop :: Stops moving camera-head. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=1&-act=right :: Moves one step right. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=1&-act=left :: Moves one step left. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=1&-act=up :: Moves one step up. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=1&-act=down :: Moves one step down. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=0&-act=home :: Go to Center Position. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=0&-act=hscan :: Scan horizontal. http: IP-Address:Port cgi-bin hi3510 ptzctrl.cgi?-step=0&-act=vscan :: Scan vertical. http: IP-Address:Port cgi-bin hi3510 preset.cgi?-act=set&-status=1&-number=[0-7] :: set a position. http: IP-Address:Port cgi-bin hi3510 preset.cgi?-act=set&-status=0&-number=[0-7] :: unset a position. http: IP-Address:Port cgi-bin hi3510 preset.cgi?-act=goto&-status=1&-number=[0-7] :: goto to a set position. Image CGI Commands: http: IP-Address:Port cgi-bin hi3510 param.cgi?cmd=setimageattr :: Sets the Image Parameter. You can set the following parameters: brightness :: [0 - 255] the bigger the value the brighter the image. saturation :: [0 - 255] the bigger the value the more saturation the image has. contrast :: [0 - 255] the bigger the value the more contrast the image has. hue :: [0 - 127] the bigger the value the more hue the image has. flip :: (on , off) flips the image. mirror :: (on , off) flips the image. scene :: (auto , indoor , outdoor) sets the white balance mode. Example: http: IP-Address:Port cgi-bin hi3510 param.cgi?cmd=setimageattr&-brightness=0&-saturation=0&-contrast=0&-hue=0&-flip=off&-mirror=off&-scene=auto. WLAN CGI Commands: Reset the Parameter Values - http: 192.168.xxx.xxx. cgi-bin hi3510 param.cgi?cmd=setwirelessattr&-wf_ssid=SSID&-wf_enable=0&-wf_auth=2&-wf_key=1234&-wf_enc=1&-wf_mode=0. IR-LED CGI Commands: http: 192.168.178.87 cgi-bin hi3510 param.cgi?cmd=setinfrared&-infraredstat=auto :: Sets IR LED s to auto mode. http: 192.168.178.87 cgi-bin/hi3510 param.cgi?cmd=setinfrared&-infraredstat=open :: Sets IR LED s always active :: only IN-6011. http: 192.168.178.87 cgi-bin hi3510 param.cgi?cmd=setinfrared&-infraredstat=close :: Sets IR LED s always inactive. ALARM CGI Commands: http: admin:instar@192.168.xxx.xxx cgi-bin hi3510 param.cgi?cmd=setmdattr&-enable=1&-name=1 :: enables the md area 1. http: admin:instar@192.168.xxx.xxx cgi-bin hi3510 param.cgi?cmd=setmdattr&-enable=0&-name=1 :: disables the md area 1. http: 192.168.x.x cgi-bin hi3510 param.cgi?cmd=setioattr&-io_enable=1&-io_flag=1 :: enable disable external alarm in to trigger recording. Example: http: admin:instar@192.168.xxx.xxx cgi-bin hi3510 param.cgi?cmd=setmdattr&-enable=0&-name=1&cmd=setmdattr&-enable=0&-name=2&cmd=setmdattr&-enable=0&-name=3&cmd=setmdattr&-enable=0&-name=4",
+    "link": "/720p_Series_CGI_List",
+    "title2": "CGI Befehle 720p Series",
+    "chapter": "720p Series CGI List",
+    "tags": ["CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "Programming Interface for your 720p Series Camera"
+}
+POST /wiki2_en/article
+{
+    "title": "INSTAR 720p IP Camera CGI Application Guide",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "INSTAR 720p IP Camera CGI Application Guide IP Camera CGI Introduction CGI listed in this file which is provided for your INSTAR IP camera, is an interface based on the HTTP protocol and the client application (e.g. a webpage in your web browsers or other applications). You can make various operations on the device by this set of CGI commands. CGI authentication: to access below CGI commands you need to authenticate your user level. Different CGI commands need different authority: visitor, operator or admin. The authentication is handled over the http protocol by attaching the user name and password directly to the CGI parameter. Example: cgi-bin hi3510 cleanlog.cgi?usr=admin&pwd=instar All the CGI commands support GET and POST operation - except upgrade.cgi and restore.cgi, which can only be used in a POST operation. GET Example: form name=form2 method= get action= cgi-bin hi3510 cleanlog.cgi input name=cururl type=hidden input name=name type=hidden value=access form POST Example: form name=form5 method=post target=retframe enctype = multipart form-data action=cgi-bin/hi3510/upgrade.cgi onSubmit=return upgrade() td colspan= 3 input type=filename =setting_file input type=submit value=submit form CGI Return： Depending on the returned info, the returns can be divided into two cases: GET CGI of device status and parameter, if successful，will return plain txt which includes the device status or parameter. The format is specified as javascript and every status or parameter as a variable： var bps_1=2048; var fps_1=25; var gop_1=50; var brmode_1=1; var imagegrade_1=1; var width_1=704; var height_1=576; if the GET fails, it will return：[Error]GET video attribution error! errcode is 0xa10e6008.Set device parameter will return plain txt including the result of the operation. If successful, the return will be HTTP 1.0 200 OK. If the operation fails an error message will be returned, like: [Error][Data-Length:91] unrecognized or incomplete command line..CGI commands can be typed into your web browsers address line directly for testing: http: 192.168.1.88 cgi-bin hi3510 param.cgi?cmd=getvencattr&-chn=11. http: 192.168.1.88 cgi-bin hi3510 param.cgi?cmd=setvencattr&-chn=11&-fps=15. http: 192.168.1.88 cgi-bin getwifi.cgi. CGI Overview : Video and Audio & param.cgi?cmd=getvideoattr & param.cgi?cmd=setvideoattr & param.cgi?cmd=getvencattr & param.cgi?cmd=setvencattr & param.cgi?cmd=getimageattr & param.cgi?cmd=setimageattr & param.cgi?cmd=getoverlayattr & param.cgi?cmd=setoverlayattr & param.cgi?cmd=getmobilesnapattr & param.cgi?cmd=setmobilesnapattr & param.cgi?cmd=getaencattr & param.cgi?cmd=setaencattr & param.cgi?cmd=getaudioinvolume & param.cgi?cmd=setaudioinvolume & param.cgi?cmd=getaudiooutvolume & param.cgi?cmd=setaudiooutvolume & param.cgi?cmd=requestifrm & IR Light control & param.cgi?cmd=getinfrared & param.cgi?cmd=setinfrared & Network & param.cgi?cmd=getnetattr & param.cgi?cmd=setnetattr & param.cgi?cmd=gethttpport & param.cgi?cmd=sethttpport & param.cgi?cmd=getrtspport & param.cgi?cmd=setrtspport & param.cgi?cmd=getinterip & param.cgi?cmd=getupnpattr & param.cgi?cmd=setupnpattr & param.cgi?cmd=getonvifattr & param.cgi?cmd=setonvifattr & WiFi & param.cgi?cmd=getwirelessattr & param.cgi?cmd=setwirelessattr & param.cgi?cmd=searchwireless & param.cgi?cmd=chkwirelessattr & param.cgi?cmd=getchkwireless & DDNS & param.cgi?cmd=get3thddnsattr & param.cgi?cmd=set3thddnsattr & PTZ Control & param.cgi?cmd=ptzctrl & param.cgi?cmd=preset & ptzup.cgi & ptzdown.cgi & ptzleft.cgi & ptzright.cgi & ptzzoomin.cgi & ptzzoomout.cgi & Motion Detection and IO Alarm & param.cgi?cmd=getmdattr & param.cgi?cmd=setmdattr & param.cgi?cmd=getioattr & param.cgi?cmd=setioattr & param.cgi?cmd=getmdalarm & param.cgi?cmd=setmdalarm & param.cgi?cmd=getrelayattr & param.cgi?cmd=setrelayattr & param.cgi?cmd=getalarmsnapattr & param.cgi?cmd=setalarmsnapattr & param.cgi?cmd=getscheduleex & param.cgi?cmd=setscheduleex & param.cgi?cmd=getplanrecattr & param.cgi?cmd=setplanrecattr & param.cgi?cmd=getalarmserverattr & param.cgi?cmd=setalarmserverattr & User Management & param.cgi?cmd=getuserattr & param.cgi?cmd=setuserattr & param.cgi?cmd=getuserinfo & Snapshot & param.cgi?cmd=getsnaptimerattrex & param.cgi?cmd=setsnaptimerattrex & FTP & param.cgi?cmd=getftpattr & param.cgi?cmd=setftpattr & param.cgi?cmd=testftp & SMTP & param.cgi?cmd=getsmtpattr & param.cgi?cmd=setsmtpattr & param.cgi?cmd=testsmtp & SD Card & param.cgi?cmd=sdfrmt & param.cgi?cmd=sdstop & System Settings & param.cgi?cmd=getserverinfo & param.cgi?cmd=getdevtype & param.cgi?cmd=getstreamnum & param.cgi?cmd=getservertime & param.cgi?cmd=setservertime & param.cgi?cmd=getntpattr & param.cgi?cmd=setntpattr & param.cgi?cmd=getdevices & param.cgi?cmd=setdevices & mjpegstream.cgi & param.cgi?cmd= snapimage & Sysreset.cgi & Sysreboot.cgi & backup.cgi & restore.cgi & upgrade.cgi & param.cgi?cmd=get_instar_admin & param.cgi?cmd=set_instar_admin & System Log & param.cgi?cmd=logsync & param.cgi?cmd=cleanlog",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List",
+    "title2": "CGI Guide 720p Series",
+    "chapter": "720p Series CGI List",
+    "tags": ["CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "Programming Interface for your 720p Series Camera"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Video Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Video Attribute - Video & Audio :: Get Video Attribute param.cgi?cmd=getvideoattr Function Get device video property, the resolution of first second third stream and video format Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getvideoattr] Parameter no Return videomode 31: 1HD720P_1HDQ720P_1HDQQ720P vinorm P: 50Hz(PAL) N: 60Hz(NTSC) Remarks Note: 1HD720P Resolution: 1280x720 1HDQ720P Resolution: 640x352 1HDQQ720P Resolution: 320x176 1HD720P_1HDQ720P_1HDQQ720P: 1st stream is 720P，2nd stream is Q720P，3rd stream is QQ720P Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getvideoattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Video_Attribute",
+    "title2": "720p CGI Commands - Get Video Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Video Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Video Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Video Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Video Attribute: Video & Audio :: Set Video Attribute param.cgi?cmd=setvideoattr Function Set device video property Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd= setvideoattr&-vinorm=] Parameter vinorm: P: 50Hz(PAL) N: 60Hz(NTSC) Return Success: Including Success Failed: Including Error Note: CCD D1 models, PAL and NTSC can be recognized automatically, vinorm settings are valid. Note: 1HD720P Resolution: 1280x720 1HDQ720P Resolution: 640x352 1HDQQ720P Resolution: 320x176 1HD720P_1HDQ720P_1HDQQ720P: 1st stream is 720P，2nd stream is Q720P，3rd stream is QQ720P Remarks It takes a long time to return. Device resolution is fixed, can’t be modify. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setvideoattr&-vinorm=N",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Video_Attribute",
+    "title2": "720p CGI Commands - Set Video Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Video Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Video Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Video Encoder Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Video Encoder Attribute - Video & Audio :: Get Video Encoder Attribute param.cgi?cmd=getvencattr Function Get device video encode parameter Authority admin, user and guest Syntax /cgi-bin/hi3510/getvencattr.cgi [?-chn=] Parameter chn: 11: 1st stream 12: 2nd stream | 13：3rd stream Return Bitrate: bps_1, bps_2 or bps_3 Framerate: fps_1, fps_2 or fps_3 Keyframe Interval: gop_1, gop_2or gop_3 Video Encode Control: 0: fixed bit rate 1: changeable bit rate brmode_1, brmode_2 or brmode_3 Video Encode Quality: imagegrade_1, imagegrade_2 or imagegrade_3 Video Width: width_1, width_2 or width_3 Video Height: height_1, height_2 or height_3 Remarks Note: Suffix _1 is the 1st stream parameters, the suffix _2 is the 2nd stream parameters, the suffix _3 is the 3rd stream parameters Example http: admin:instar@192.168.178.88 cgi-bin hi3510 getvencattr.cgi?-chn=11",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Video_Encoder_Attribute",
+    "title2": "720p CGI Commands - Get Video Encoder Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Video Encoder Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Video Encoder Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Video Encoder Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Video Encoder Attribute Video & Audio :: Set Video Encoder Attribute param.cgi?cmd=setvencattr Function Config device video encode parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setvencattr&-chn=&-bps=&-fps=&-brmode=&-imagegrade=&-gop=] Parameter Stream: chn=11 1st Stream chn=12 2nd Stream chn=13 3rd Stream Bitrate: 720P：Range [32 ~ 4096 kbps] D1：Range [32 ~ 2048 kbps] CIF：Range [32 ~ 512 kbps] QCIF：Range [32 ~ 256 kbps] VGA：Range [32 ~ 2048 kbps] QVGA：Range [32 ~ 512 kbps] QQVGA：Range [32 ~ 256 kbps] Framerate: PAL：Range [1 ~ 25] NTSC：Range [1 ~ 30] Keyframe Interval: gop Range [2 ~ 150] Video Encode Control: 0: fixed bit rate 1: variable bit rate Video Encode Quality: imagegrade Range [1 ~ 6] The smaller the value, the better the image quality Return Success Failed Examples http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setvencattr&-chn=11&-bps=1536&-fps=25&-brmode=1&-imagegrade=1&-gop=50 http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setvencattr&-chn=12&-bps=1536&-fps=25&-brmode=1&-imagegrade=1&-gop=50 http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setvencattr&-chn=11&-bps=1536&-fps=25",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Video_Encoder_Attribute",
+    "title2": "720p CGI Commands - Set Video Encoder Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Video Encoder Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Video Encoder Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Image Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Image Attribute Video & Audio :: Get Image Attribute param.cgi?cmd=getimageattr Function Get image parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getimageattr] Return brightness saturation contrast sharpness hue flip: on, off mirror: on, off night: on, off shutter wdr: on, off gc: Night illumination, value Range [0 -255] Remarks Different device, different image parameter, for details, pleae refer to Appendix 1 (Device Type Definition) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getimageattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Image_Attribute",
+    "title2": "720p CGI Commands - Get Image Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Image Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Image Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Image Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Image Attribute Video & Audio :: Set Image Attribute param.cgi?cmd=setimageattr Function Set image parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setimageattr&-brightness=&-saturation=&-contrast=&-hue=&-flip=&-mirror=&-scene=] Parameter brightness: 0-255 saturation: 0-255 contrast: 0-7 sharpness hue: 0-255 flip: on, off mirror: on, off night: on, off shutter wdr: on, off gc: Night illumination, value Range [0 -255] Return Success, Error Remarks Different device, different image parameter, for details, pleae refer to Appendix 1 (Device Type Definition) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setimageattr&-brightness=1&-saturation=1&-contrast=1&-hue=1&-flip=on&-mirror=on&-scene=indoor",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Image_Attribute",
+    "title2": "720p CGI Commands - Set Image Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Image Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Image Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Overlay Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Get Overlay Attribute Video & Audio :: Get Overlay Attribute param.cgi?cmd=getoverlayattr Function Get OSD Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getoverlayattr&-region=] Parameter Region: 0 (OSD Time Zone), 1 (OSD Name Region) Return x_[region]: Region x Coordinate y_[region]: Region y Coordinate w_[region]: Region Width h_[region]: Region Height show_[region]: 1 (show), 0 (hide) name_[region]: OSD Name Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getoverlayattr&-region=0",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Overlay_Attribute",
+    "title2": "720p CGI Commands - Get Overlay Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Overlay Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Overlay Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Overlay Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Overlay Attribute Video & Audio :: Set Overlay Attribute param.cgi?cmd=setoverlayattr Function Set OSD Parameter Authority admin Syntax /cgi-bin/hi3510/param.cgi[?cmd=setoverlayattr&-region=&show=&name=] Parameter region: Region 0 (OSD Time Zone), 1 (Name Region) show: OSD 1 (show), 0 (hide) name: OSD Name Only English, Max. 16 Characters Return Success, Error Remarks region_0 Time OSD Region doesn’t Support to set Name Parameter Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setoverlayattr&-region=0&-show=0 http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setoverlayattr&-region=1&-show=1&-name=IPCam",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Overlay_Attribute",
+    "title2": "720p CGI Commands - Set Overlay Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Overlay Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Overlay Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Mobile Image Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Mobile Image Attribute Video & Audio :: Get Mobile Image Attribute param.cgi?cmd=getmobilesnapattr Function Get Mobile Phone Image Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getmobilesnapattr] Return msize: 1: second bit rate biggest resolution 2: second bit rate smallest resolution Remarks Some devices don’t support to change Property, for more details, refer to Appendix1 (Device Type Definition) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getmobilesnapattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Mobile_Image_Attribute",
+    "title2": "720p CGI Commands - Get Mobile Image Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Mobile Image Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Mobile Image Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Mobile Image Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Mobile Image Attribute Video & Audio :: Set Mobile Image Attribute param.cgi?cmd=setmobilesnapattr Function Set Mobile Phone Image Parameter Authority admin Syntax /cgi-bin/hi3510/param.cgi[?cmd=setmobilesnapattr&-msize=] Parameter msize: 1: second bit rate biggest resolution 2: second bit rate smallest resolution Return Sucess, Error Remarks Some devices don’t support to change Property, for more details, refer to Appendix1 (Device Type Definition) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setmobilesnapattr&-msize=1",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Mobile_Image_Attribute",
+    "title2": "720p CGI Commands - Set Mobile Image Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Mobile Image Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Mobile Image Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Audio Encoder Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Audio Encoder Attribute Video & Audio :: Get Audio Encoder Attribute param.cgi?cmd=getaencattr Function Get Audio Encoder Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getaencattr&-chn=] Parameter chn: 11: first bit rate 12：Second bit rate 13: third bit rate Return aeswitch_1, aeswitch_2 or aeswitch_3 Audio Encoder Switch 0: switch off, 1: switch on aeformat_1, aeformat_2 or aeformat_3 Audio Encoder Format g711a: G711A 64Kbps, g726: G726 16Kbps Remarks _1 first bit rate, _2 second bit rate ,_3 3rd bit rate Audio sampling: 8K, mono: 16 bits wide Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaencattr&-chn=11",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Audio_Encoder_Attribute",
+    "title2": "720p CGI Commands - Get Audio Encoder Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Audio Encoder Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Audio Encoder Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Audio Encoder Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Audio Encoder Attribute Video & Audio :: Set Audio Encoder Attribute param.cgi?cmd=setaencattr Function Set Audio Encoder Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setaencattr&-chn=] Parameter chn: 11: first bit rate 12：Second bit rate 13: third bit rate aeswitch Audio Encoder Switch 0: switch off, 1: switch on aeformat Audio Encoder Format g711a: G711A 64Kbps, g726: G726 16Kbps Return Success, Error Remarks Audio sampling: 8K, mono: 16 bits wide Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaencattr&-chn=11&-aeswitch=0 http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaencattr&-chn=12&-aeswitch=1&-aeformat=g726",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Audio_Encoder_Attribute",
+    "title2": "720p CGI Commands - Set Audio Encoder Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Audio Encoder Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Audio Encoder Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Audio-In Volume Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Audio-In Volume Attribute Video & Audio :: Get Audio-In Volume Attribute param.cgi?cmd=getaudioinvolume Function Get Audio-In Volume Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getaudioinvolume] Return volume: 1-100 Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaudioinvolume",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Audio-In_Volume_Attribute",
+    "title2": "720p CGI Commands - Get Audio-In Volume Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Audio-In Volume Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Audio-In Volume Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Audio-In Volume Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Audio-In Volume Attribute Video & Audio :: Set Audio-In Volume Attribute param.cgi?cmd=setaudioinvolume Function Set Audio-In Volume Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setaudioinvolume&-volume=] Parameter volume: 1-100 Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaudioinvolume&-volume=80",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Audio-In_Volume_Attribute",
+    "title2": "720p CGI Commands - Set Audio-In Volume Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Audio-In Volume Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Audio-In Volume Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Audio-Out Volume Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Audio-Out Volume Attribute Video & Audio :: Get Audio-Out Volume Attribute param.cgi?cmd=getaudiooutvolume Function Get Audio-Out Volume Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getaudiooutvolume] Return ao_volume: 1-100 Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaudiooutvolume",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Audio-Out_Volume_Attribute",
+    "title2": "720p CGI Commands - Get Audio-Out Volume Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Audio-Out Volume Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Audio-Out Volume Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Audio-Out Volume Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Audio-Out Volume Attribute Video & Audio :: Set Audio-Out Volume Attribute param.cgi?cmd=setaudiooutvolume Function Set Audio-Out Volume Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setaudiooutvolume&-volume=] Parameter volume: 1-100 Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaudiooutvolume&-volume=80",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Audio-Out_Volume_Attribute",
+    "title2": "720p CGI Commands - Set Audio-Out Volume Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Audio-Out Volume Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Audio-Out Volume Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Request Keyframe",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Request Keyframe Video & Audio :: Request Keyframe param.cgi?cmd=requestifrm Function Request an Video I Frame Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=requestifrm&-chn=] Parameter chn: 11, 12, 13 Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=requestifrm&-chn=11",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Request_Keyframe",
+    "title2": "720p CGI Commands - Request Keyframe",
+    "chapter": "720p Series CGI List",
+    "tags": ["Request Keyframe", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Request Keyframe"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Audio Encoder Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Audio Encoder Attribute IR Light Control :: Get Infrared Attribute param.cgi?cmd=getinfrared Function Get IR Light Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getinfrared] Return infraredstat: IR Status - auto, open and close Remarks Some devices don’t support to this Property, for more details, refer to Appendix1 (Device Type Definition) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getinfrared",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Infrared_Attribute",
+    "title2": "720p CGI Commands - Get Audio Encoder Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Audio Encoder Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Audio Encoder Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Infrared Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Infrared Attribute IR Light Control :: Set Infrared Attribute param.cgi?cmd=setinfrared Function Set IR Light Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setinfrared] Parameter infraredstat: IR Status - auto, open and close Return Success, Error Remarks Some devices don’t support to this Property, for more details, refer to Appendix1 (Device Type Definition) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setinfrared&-infraredstat=auto",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Infrared_Attribute",
+    "title2": "720p CGI Commands - Set Infrared Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Infrared Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Infrared Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Network Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Network Attribute Network :: Get Device Network Parameter param.cgi?cmd=getnetattr Function Get Device Network Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getnetattr] Return dhcpflag: on (DHCP enabled), off: (DHCP disabled) ip: LAN IP Address netmask: LAN Subnet Mask gateway: LAN Gateway dnsstat: DNS Status: 0 (manually), 1 (auto) fdnsip: Primary DNS sdnsip: Secondary DNS macaddress: Active MAC Address (LAN or WiFi) networktype: Network Type: LAN, WiFi Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getnetattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Network_Attribute",
+    "title2": "720p CGI Commands - Get Network Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Network Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Network Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Network Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Network Attribute Network :: Set Device Network Parameter param.cgi?cmd=setnetattr Function Set LAN Network Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setnetattr&-dhcp=&-ipaddr=&-netmask=&-gateway=&-dnsstat=&-fdnsip=&-sdnsip=] Parameter dhcp: on (DHCP enabled), off: (DHCP disabled) ipaddr: LAN IP Address netmask: LAN Subnet Mask gateway: LAN Gateway dnsstat: DNS Status: 0 (manually), 1 (from DHCP Server) fdnsip: Primary DNS sdnsip: Secondary DNS Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setnetattr&-dhcp=off&-ipaddr=192.168.1.88&-netmask=255.255.255.0&-gateway=192.168.1.1&-dnsstat=0&-fdnsip=192.168.1.1&-sdnsip=",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Network_Attribute",
+    "title2": "720p CGI Commands - Set Network Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Network Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Network Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get HTTP Port",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get HTTP Port Network :: Get HTTP Port param.cgi?cmd=gethttpport Function Get HTTP Port Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=gethttpport] Return httpport Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=gethttpport",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_HTTP_Port",
+    "title2": "720p CGI Commands - Get HTTP Port",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get HTTP Port", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get HTTP Port"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set HTTP Port",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set HTTP Port Network :: Set HTTP Port param.cgi?cmd=sethttpport Function Set HTTP Port Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=sethttpport&-httpport=] Parameter httpport: Range [80~65535] Return Success, Error Remarks Modified successfully, the device will automatically restart Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=sethttpport&-httpport=80",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_HTTP_Port",
+    "title2": "720p CGI Commands - Set HTTP Port",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set HTTP Port", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set HTTP Port"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get RTSP Port",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get RTSP Port Network :: Get RTSP Port param.cgi?cmd=getrtspport Function Get RTSP Port Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getrtspport] Return rtspport: RTSP Port Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getrtspport",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_RTSP_Port",
+    "title2": "720p CGI Commands - Get RTSP Port",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get RTSP Port", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get RTSP Port"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set RTSP Port",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set RTSP Port Network :: Set RTSP Port param.cgi?cmd=setrtspport Function Set RTSP Port Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setrtspport&-rtspport=] Parameter rtspport: RTSP Port Range [80~65535] Return Success, Error Remarks Modified successfully, the device will automatically restart Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setrtspport&-rtspport=554",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_RTSP_Port",
+    "title2": "720p CGI Commands - Set RTSP Port",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set RTSP Port", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set RTSP Port"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Internet IP",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Internet IP Network :: Get Internet IP param.cgi?cmd=getinterip Function Get WAN IP Address Authority admin Syntax cgi-bin param.cgi?cmd=getinterip Return interip: Example var internetip=220.112.14.173 Example http: admin:instar@192.168.178.88 cgi-bin param.cgi?cmd=getinterip",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Internet_IP",
+    "title2": "720p CGI Commands - Get Internet IP",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Internet IP", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Internet IP"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get UPnP Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get UPnP Attribute Network :: Get UPnP Attribute param.cgi?cmd=getupnpattr Function Get UPNP Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getupnpattr] Return upm_enable: 0 (UPnP disabled), 1 (UPnP enabled) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getupnpattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_UPnP_Attribute",
+    "title2": "720p CGI Commands - Get UPnP Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get UPnP Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get UPnP Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set UPnP Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set UPnP Attribute Network :: Set UPnP Attribute param.cgi?cmd=setupnpattr Function Set UPNP Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setupnpattr&-upm_enable=] Parameter upm_enable: 0 (UPnP disabled), 1 (UPnP enabled) Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setupnpattr&-upm_enable=1",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_UPnP_Attribute",
+    "title2": "720p CGI Commands - Set UPnP Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set UPnP Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set UPnP Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get ONVIF Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get ONVIF Attribute Network :: Get ONVIF Attribute param.cgi?cmd=getonvifattr Function Get ONVIF Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getonvifattr] Return ov_enable: 1 (on), 0 (off) ov_port: ONVIF Port (8080-65536) ov_authflag: Authentification 1 (on), 0 (off) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getonvifattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_ONVIF_Attribute",
+    "title2": "720p CGI Commands - Get ONVIF Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get ONVIF Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get ONVIF Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set ONVIF Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set ONVIF Attribute Network :: Set ONVIF Attribute param.cgi?cmd=setonvifattr Function Set ONVIF Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setonvifattr&-ov_enable=&-ov_port=&ov_authflag=] Parameter ov_enable: 1 (ONVIF enabled), 0 (ONVIF disabled) ov_port: ONVIF Port (8080-65536) ov_authflag: Authentification 1 (on), 0 (off) Return Success, Error Remarks Modified successfully, the device will automatically restart Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setonvifattr&-ov_enable=1&-ov_port=8080&ov_authflag=0",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_ONVIF_Attribute",
+    "title2": "720p CGI Commands - Set ONVIF Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set ONVIF Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set ONVIF Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Wireless Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Wireless Attribute Network :: Get Wireless Attribute param.cgi?cmd=getwirelessattr Function Get Wifi Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getwirelessattr] Return wf_enable: 1 (WiFi enabled), 0 (WiFi disabled) wf_ssid: SSID (max. 32 Characters) wf_auth: 0 (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK) wf_key: Key max. 63 Characters (Allowed special characters: &=) wf_enc: Key type 0 (TKIP), 1 (AES) wf_mode: 0 (infra), 1 (ad-hoc) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getwirelessattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Wireless_Attribute",
+    "title2": "720p CGI Commands - Get Wireless Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Wireless Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Wireless Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Wireless Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Wireless Attribute Network :: Set Wireless Attribute param.cgi?cmd=setwirelessattr Function Set Wifi Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setwirelessattr&-wf_enable=&-wf_ssid=&-wf_auth=&-wf_key=&-wf_enc=&-wf_mode=] Parameter wf_enable: 1 (WiFi enabled), 0 (WiFi disabled) wf_ssid: SSID (max. 32 Characters) wf_auth: 0 (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK) wf_key: Key max. 63 Characters (Allowed special characters: &=) wf_enc: Key type 0 (TKIP), 1 (AES) wf_mode: 0 (infra), 1 (ad-hoc) Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setwirelessattr&-wf_ssid=linksys&-wf_enable=1&-wf_auth=2&-wf_key=1234567890&-wf_enc=0&-wf_mode=0",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Wireless_Attribute",
+    "title2": "720p CGI Commands - Set Wireless Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Wireless Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Wireless Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Search Wireless",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Search Wireless Network :: Search Wireless param.cgi?cmd=searchwireless Function Search Wireless Access Point Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=searchwireless] Return waccess_points: Wireless Network Signals wchannel: Channel wrssi: Signal Strength wessid: SSID wenc: Encryption Mode wauth: Authority Mode wnet: Connection mode(router mode, point to point mode) Note: If waccess_points >1 the CGI will return more values for each variable - Example: var waccess_points=2; var wchannel=new Array(); var wrssi=new Array(); var wessid=new Array(); var wenc=new Array(); var wauth=new Array(); var wnet=new Array(); wchannel[0]=6 ;wrssi[0]=-82 ; wessid[0]=My WiFi ; wenc[0]=AES ; wauth[0]=WPA(2)-PSK ; wnet[0]=Infra ; wchannel[1]=11 ; wrssi[1]=-62 ; wessid[1]=Linksys ; wenc[1]=TKIP ; wauth[1]=WPA(2)-PSK ; wnet[1]=Infra ;Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=searchwireless",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Search_Wireless",
+    "title2": "720p CGI Commands - Search Wireless",
+    "chapter": "720p Series CGI List",
+    "tags": ["Search Wireless", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Search Wireless"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Check Wireless Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Check Wireless Attribute Network :: Set Wireless Attribute param.cgi?cmd=chkwirelessattr Function Set Wireless Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=chkwirelessattr&-wf_ssid=&-wf_auth=&-wf_key=&-wf_enc=&-wf_mode=] Parameters wf_ssid: SSID (max. 32 CHaracters) wauth: Encryption mode - 0: (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK) wf_key: WiFi Key wf_enc: Encryption 0 (TKIP), 1 (AES) wf_mode: Connection Mode 0 (Infra), 1 (Ad-hoc) Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=chkwirelessattr&-wf_ssid=linksys&-wf_auth=3&-wf_key=1234567890&-wf_enc=0&-wf_mode=0",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Check_Wireless_Attribute",
+    "title2": "720p CGI Commands - Check Wireless Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Check Wireless Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Check Wireless Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Check Wireless Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Check Wireless Attribute Network :: Check Wireless Results param.cgi?cmd=getchkwireless Function Get WIFI Check Result Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getchkwireless] Return chkres: Check result 0 (failure), 1 (success) Remarks Apply first param.cgi?cmd=chkwirelessattr Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getchkwireless",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Check_Wireless_Attribute",
+    "title2": "720p CGI Commands - Get Check Wireless Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Check Wireless Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Check Wireless Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Thirdparty DDNS Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Thirdparty DDNS Attribute DDNS :: Get Thirdparty DDNS Attribute param.cgi?cmd=get3thddnsattr Function Get 3rd party DDNSParameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=get3thddnsattr] Return d3th_enable: Enable or Diable 3rd Party DDNS (0, 1) d3th_service: DDNS Provider 0 (DynDNS), 1 (NoIP) d3th_uname: DDNS Username d3th_passwd: DDNS Password d3th_domain: DDNS Domain Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=get3thddnsattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Thirdparty_DDNS_Attribute",
+    "title2": "720p CGI Commands - Get Thirdparty DDNS Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Thirdparty DDNS Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Thirdparty DDNS Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Thirdparty DDNS Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Thirdparty DDNS Attribute DDNS :: Set Thirdparty DDNS Attribute param.cgi?cmd=set3thddnsattr Function Set 3rd party DDNSParameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=set3thddnsattr.&-d3th_enable=&-d3th_service=&-d3th_uname=&-d3th_passwd=&-d3th_domain=] Parameter d3th_enable: Enable or Diable 3rd Party DDNS (0, 1) d3th_service: DDNS Provider 0 (DynDNS), 1 (NoIP) d3th_uname: DDNS Username d3th_passwd: DDNS Password d3th_domain: DDNS Domain Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=set3thddnsattr&-d3th_enable=1&-d3th_service=1&-d3th_uname=sample&-d3th_passwd=1234&-d3th_domain=sample.dyndns.org",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Thirdparty_DDNS_Attribute",
+    "title2": "720p CGI Commands - Set Thirdparty DDNS Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Thirdparty DDNS Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Thirdparty DDNS Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - PTZ Control",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - PTZ Control PTZ Control :: PTZ Control param.cgi?cmd=ptzctrl Function PTZ Control Authority admin, user Syntax cgi-bin hi3510 param.cgi?cmd=ptzctrl.cgi[&-step=&-act=&-speed=] Parameter step: 0 (move until stop command), 1 (one-step) act: Control Command left; right; up; down; home; zoomin; zoomout; hscan (pan scan); vscan (tilt scan); stop; speed: PTZ Speed Value 1-63 Return Success, Error Remarks Different device PTZ Parameter is different , please refer Appendix I Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=ptzctrl&-step=0&-act=left&-speed=45",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/PTZ_Control",
+    "title2": "720p CGI Commands - PTZ Control",
+    "chapter": "720p Series CGI List",
+    "tags": ["PTZ Control", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: PTZ Control"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - PTZ Preset",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - PTZ Preset PTZ Control :: PTZ Preset param.cgi?cmd=preset Function PTZ Preset Authority admin, user Syntax cgi-bin hi3510 param.cgi?cmd=preset[&-act=&-status=&-number=] Parameter act: goto (call preset), set (set preset) status: 0 (delete preset), 1 (save preset) number: preset number (1-8) Return Success, Error Remarks Different device PTZ Parameter is different , please refer Appendix I Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=preset&-act=goto&-number=1 http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=preset&-act=set&-status=1&-number=1",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/PTZ_Preset",
+    "title2": "720p CGI Commands - PTZ Preset",
+    "chapter": "720p Series CGI List",
+    "tags": ["PTZ Preset", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: PTZ Preset"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - PTZ Move Up",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - PTZ Move Up PTZ Control :: PTZ Move Up ptzup.cgi Function PTZ Move Up (use for PTZ control on mobile view) Authority admin, user Syntax cgi-bin hi3510 ptzup.cgi Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 ptzup.cgi",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Up",
+    "title2": "720p CGI Commands - PTZ Move Up",
+    "chapter": "720p Series CGI List",
+    "tags": ["PTZ Move Up", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: PTZ Move Up"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - PTZ Move Down",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - PTZ Move Down PTZ Control :: PTZ Move Down ptzdown.cgi Function PTZ Move Down (use for PTZ control on mobile view) Authority admin, user Syntax cgi-bin/hi3510/ptzdown.cgi Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 ptzdown.cgi",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Down",
+    "title2": "720p CGI Commands - PTZ Move Down",
+    "chapter": "720p Series CGI List",
+    "tags": ["PTZ Move Down", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: PTZ Move Down"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - PTZ Move Left",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - PTZ Move Left PTZ Control :: PTZ Move Left ptzleft.cgi Function PTZ Move Left (use for PTZ control on mobile view) Authority admin, user Syntax cgi-bin hi3510 ptzleft.cgi Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 ptzleft.cgi",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Left",
+    "title2": "720p CGI Commands - PTZ Move Left",
+    "chapter": "720p Series CGI List",
+    "tags": ["PTZ Move Left", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: PTZ Move Left"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - PTZ Move Right",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - PTZ Move Right PTZ Control :: PTZ Move Right ptzright.cgi Function PTZ Move Right (use for PTZ control on mobile view) Authority admin, user Syntax cgi-bin hi3510 ptzright.cgi Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 ptzright.cgi",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Right",
+    "title2": "720p CGI Commands - PTZ Move Right",
+    "chapter": "720p Series CGI List",
+    "tags": ["PTZ Move Right", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: PTZ Move Right"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - PTZ Zoom In",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - PTZ Zoom In PTZ Control :: PTZ Zoom In ptzzoomin.cgi Function PTZ Zoom In (use for PTZ control on mobile view) Authority admin, user Syntax cgi-bin hi3510 ptzzoomin.cgi Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 ptzzoomin.cgi",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/PTZ_Zoom_In",
+    "title2": "720p CGI Commands - PTZ Zoom In",
+    "chapter": "720p Series CGI List",
+    "tags": ["PTZ Zoom In", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: PTZ Zoom In"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - PTZ Zoom Out",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - PTZ Zoom Out PTZ Control :: PTZ Zoom Out ptzzoomout.cgi Function PTZ Zoom Out (use for PTZ control on mobile view) Authority admin, user Syntax cgi-bin hi3510 ptzzoomout.cgi Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 ptzzoomout.cgi",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/PTZ_Zoom_Out",
+    "title2": "720p CGI Commands - PTZ Zoom Out",
+    "chapter": "720p Series CGI List",
+    "tags": ["PTZ Zoom Out", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: PTZ Zoom Out"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Motion Detection Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Motion Detection Attribute Alarm :: Get Motion Detection Area Parameter param.cgi?cmd=getmdattr Function Get Motion Detection Parameter Authority admin Syntax cgi-bin/hi3510/param.cgi[?cmd=getmdattr] Return m1_enable: Enable or Disable Motion Detection Area 1 (1,0) m1_x: Area 1 x-Coordinate m1_y: Area 1 y-Coordinate m1_w: Area 1 Width m1_h: Area 1 Height m1_sensitivity: Area 1 Motion Detection Sensitivity m1_threshold: Area 1 Threshold m2_enable: Enable or Disable Motion Detection Area 2 (1,0) m2_x: Area 2 x-Coordinate m2_y: Area 2 y-Coordinate m2_w: Area 2 Width m2_h: Area 2 Height m2_sensitivity: Area 2 Motion Detection Sensitivity m2_threshold: Area 2 Threshold m3_enable: Enable or Disable Motion Detection Area 3 (1,0) m3_x: Area 3 x-Coordinate m3_y: Area 3 y-Coordinate m3_w: Area 3 Width m3_h: Area 3 Height m3_sensitivity: Area 3 Motion Detection Sensitivity m3_threshold: Area 3 Threshold m4_enable: Enable or Disable Motion Detection Area 4 (1,0) m4_x: Area 4 x-Coordinate m4_y: Area 4 y-Coordinate m4_w: Area 4 Width m4_h: Area 4 Height m4_sensitivity: Area 4 Motion Detection Sensitivity m4_threshold: Area 4 Threshold Remarks The max coordinate and height and width are based on the max resolution Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getmdattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Motion_Detection_Attribute",
+    "title2": "Get Motion Detection Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Motion Detection Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Motion Detection Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Motion Detection Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Motion Detection Attribute Alarm :: Set Motion Detection Attribute param.cgi?cmd=setmdattr Function Set Motion Detection Area Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setmdattr&-enable=&-s=&-name=&-x=&-y=&-w=&-h=] Parameter enable: Enable or Disable Motion Detection for Area [name] (1,0) s: Sensitivity Scope [0-100] name: Alarm Area Scope [1-4] x: Area x-Coordinate y: Area y-Coordinate w: Area Width h: Area Height Return Success, Error Remarks The max coordinate and height and width are based on the max resolution Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setmdattr&-enable=1&-s=50&-name=1&-x=0&-y=0&-w=60&-h=60",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Motion_Detection_Attribute",
+    "title2": "Set Motion Detection Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Motion Detection Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Motion Detection Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Alarm Input Output Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Alarm Input Output Attribute Alarm :: Get Alarm Input Output Attribute param.cgi?cmd=getioattr Function Get Input/Output Alarm Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getioattr] Return io_enable: Enable or Disable IO Alarm-in (1,0) io_flag: IO Alarm mode 0 (close), 1 (open) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getioattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Input_Output_Attribute",
+    "title2": "Get Alarm Input Output Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Alarm Input Output Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Alarm Input Output Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Alarm Input Output Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Alarm Input Output Attribute Alarm :: Set Alarm Input Output Attribute param.cgi?cmd=setioattr Function Set Input/Output Alarm Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setioattr &-io_enable=&-io_flag=] Parameter io_enable: Enable or Disable IO Alarm-in (1,0) io_flag: IO Alarm mode 0 (close), 1 (open) Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setioattr&-io_enable=0&-io_flag=1",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Input_Output_Attribute",
+    "title2": "Set Alarm Input Output Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Alarm Input Output Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Alarm Input Output Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Motion Detection Alarm Status",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Motion Detection Alarm Status Video & Audio :: Get Video Encoder Attribute param.cgi?cmd=getvencattr Function Get device video encode parameter Authority admin, user and guest Syntax cgi-bin hi3510 getvencattr.cgi [?-chn=] Parameter chn: 11: 1st stream | 12: 2nd stream | 13：3rd stream Return Bitrate: bps_1, bps_2 or bps_3 Framerate: fps_1, fps_2 or fps_3 Keyframe Interval: gop_1, gop_2or gop_3 Video Encode Control: 0: fixed bit rate 1: changeable bit rate | brmode_1, brmode_2 or brmode_3 Video Encode Quality: imagegrade_1, imagegrade_2 or imagegrade_3 Video Width: width_1, width_2 or width_3 Video Height: height_1, height_2 or height_3 Remarks Note: Suffix _1 is the 1st stream parameters, the suffix _2 is the 2nd stream parameters, the suffix _3 is the 3rd stream parameters Example http: admin:instar@192.168.178.88 cgi-bin hi3510 getvencattr.cgi?-chn=11",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Motion_Detection_Alarm_Status",
+    "title2": "Get Motion Detection Alarm Status",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Motion Detection Alarm Status", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Motion Detection Alarm Status"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Alarm Relay Delay Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Alarm Relay Delay Attribute Alarm :: Get Alarm Relay Delay Attribute param.cgi?cmd=getrelayattr Function Get Alarm Relay Time-out Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getrelayattr] Return time [s]: Example var time=10; Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getrelayattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Relay_Delay_Attribute",
+    "title2": "Get Alarm Relay Delay Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Alarm Relay Delay Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Alarm Relay Delay Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Alarm Relay Delay Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Alarm Relay Delay Attribute Alarm :: Set Alarm Relay Delay Attribute param.cgi?cmd=setrelayattr Function Set Alarm Relay Time-out Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setrelayattr&-time=] Parameter time [s]: Scope [5,10,20,30] Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setrelayattr&-time=10",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Relay_Delay_Attribute",
+    "title2": "Set Alarm Relay Delay Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Alarm Relay Delay Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Alarm Relay Delay Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Alarm Snap Quantity Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Alarm Snap Quantity Attribute Alarm :: Get Alarm Snapshot Quantity Attribute param.cgi?cmd=getalarmsnapattr Function Get Alarm Snapshot Quantity Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getalarmsnapattr] Return snap_count: Get Snap Pic Quantity Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getalarmsnapattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Snap_Quantity_Attribute",
+    "title2": "Get Alarm Snap Quantity Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Alarm Snap Quantity Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Alarm Snap Quantity Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Alarm Snap Quantity Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Alarm Snap Quantity Attribute Alarm :: Set Alarm Snapshot Quantity Attribute param.cgi?cmd=setalarmsnapattr Function Set Alarm Snapshot Quantity Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setalarmsnapattr&-snap_count=] Parameter snap_chn: Take Snapshot from Channel [11, 12, 13] snap_name: Alarm Snapshot Name on SD Card - leave Empty for Timestamp snap_timer_name: Snapshot Name for Photoseries - leave Empty for Timestamp snap_count: Get Alarm Snapshot Quantity to SD Card [1-8] snap_name_mode: [0-1] email_snap_count: Get Alarm Snapshot Quantity by Email [1-8] ftp_snap_count: Get Alarm Snapshot Quantity to FTP Server [1-8] Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setalarmsnapattr&-snap_count=2",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Snap_Quantity_Attribute",
+    "title2": "Set Alarm Snap Quantity Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Alarm Snap Quantity Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Alarm Snap Quantity Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Alarm And Planned Recording Schedule",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Alarm And Planned Recording Schedule Alarm :: Get Alarm And Planned Recording Schedule param.cgi?cmd=getscheduleex Function Get Alarm and Planned Recording Time Window Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setscheduleex&-ename=] Parameter ename: md (alarm armed), plan (planned recording) Return week0：Sun, week1：Mon, week2：Tue, week3：Wed, week4：Thu, week5：Fri, week6：Sat, P : armed, N : disabled week0=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week1=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week2=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week3=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week4=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week5=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week6=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP Remarks Parameter-week0 ~ -week6, every day is divided by 48 creating 30min time segments. Use P or N to indicate if the recording is armed (P) or closed (N). Time starts at 0:00. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getscheduleex&-ename=md",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Alarm_And_Planned_Recording_Schedule",
+    "title2": "Get Alarm And Planned Recording Schedule",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Alarm And Planned Recording Schedule", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Alarm/Planned Rec Schedule"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Alarm And Planned Recording Schedule",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Alarm And Planned Recording Schedule Alarm :: Set Alarm And Planned Recording Schedule param.cgi?cmd=setscheduleex Function Set Alarm and Planned Recording Time Window Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getscheduleex&-ename=&-week0=&-week1=&-week2=&-week3=&-week4=&-week5=&-week6=] Parameter ename: md (alarm armed), plan (planned video recording), snap (planned photoseries) week0：Sun, week1：Mon, week2：Tue, week3：Wed, week4：Thu, week5：Fri, week6：Sat Each day is divided in 48 30min intervals Each interval can be P (armed) or N (disabled): week0=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week1=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week2=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week3=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week4=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week5=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP week6=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP Return Success, Error Remarks Parameter-week0 ~ -week6, every day is divided by 48 creating 30min time segments. Use P or N to indicate if the recording is armed (P) or closed (N). Time starts at 0:00. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getscheduleex&-ename=md&-week0=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week1=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week2=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week3=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week4=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week5=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week6=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Alarm_And_Planned_Recording_Schedule",
+    "title2": "Set Alarm And Planned Recording Schedule",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Alarm And Planned Recording Schedule", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Alarm And Planned Recording Schedule"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Planned Recording Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Planned Recording Attribute Alarm :: Get Planned Recording Attribute param.cgi?cmd=getplanrecattr Function Get Plan Recording Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd= getplanrecattr] Return planrec_enable: 1 (enable plan recording), 0 (disable plan recording) planrec_time: Recoding time (15-900seconds) planrec_chn: 11, 12, 13 Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getplanrecattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Planned_Recording_Attribute",
+    "title2": "Get Planned Recording Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Planned Recording Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Planned Recording Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Planned Recording Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Planned Recording Attribute Alarm :: Set Planned Recording Attribute param.cgi?cmd=setplanrecattr Function Set Plan Recording Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setplanrecattr&-planrec_enable=&-planrec_time&-planrec_chn] Parameter planrec_enable: 1 (enable plan recording), 0 (disable plan recording) planrec_time: Recoding time (15-900seconds) planrec_chn: 11, 12, 13 Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setplanrecattr&-planrec_enable=1&-planrec_time=30&-planrec_chn=12",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Planned_Recording_Attribute",
+    "title2": "Set Planned Recording Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Planned Recording Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Planned Recording Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Alarm Server Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Alarm Server Attribute Alarm :: Get Alarm Server Attribute param.cgi?cmd=getalarmserverattr Function Get the HTTP GET command to be send to the alarm server in case of an alert Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getalarmserverattr] Return as_server: Alarm Server Address as_port: Server port(1-65535) as_username: User Name as_password: Password Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getalarmserverattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Server_Attribute",
+    "title2": "Get Alarm Server Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Alarm Server Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Alarm Server Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Alarm Server Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Alarm Server Attribute Alarm :: Set Alarm Server Attribute param.cgi?cmd=setalarmserverattr Function Set a HTTP GET Command to be send to the Alarmserver in case of an alert Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setalarmserverattr&-as_server=&-as_port=&-as_username=&-as_password=] Parameter as_server: Alarm Server Address as_port: Server port(1-65535) as_username: User Name as_password: Password Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setalarmserverattr&-as_server=alarm.net&-as_port=8990&-as_username=asdf&-as_password=1234",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Server_Attribute",
+    "title2": "Set Alarm Server Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Alarm Server Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Alarm Server Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get User Attributes",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get User Attributes User Management :: Get User Attributes param.cgi?cmd=getuserattr Function Get all User Info Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getuserattr] Return at_name: User Name at_password: Password Remarks Command returns all user info as: var at_name0=admin; var at_password0=admin; var at_name1=user; var at_password1=user; var at_name2=guest; var at_password2=guest; Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getuserattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_User_Attributes",
+    "title2": "Get User Attributes",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get User Attributes", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get User Attributes"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set User Attributes",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set User Attributes User Management :: Set User Attributes param.cgi?cmd=setuserattr Function Set User Info Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setuserattr&-at_username=&-at_password=] Parameter at_name: User Name [admin, user, guest] at_password: Password (max 16 bit) Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setuserattr&-at_username=admin&-at_password=instar",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_User_Attributes",
+    "title2": "Set User Attributes",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set User Attributes", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set User Attributes"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Active User Info",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Active User Info User Management :: Get Active User Info param.cgi?cmd=getuserinfo Function Get Active User Info Authority admin, user or guest Syntax cgi-bin hi3510 param.cgi?cmd=getuserinfo Return name: User Name password: Password authLevel: 15 (admin), 3 (user), 1 (guest) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getuserinfo",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Active_User_Info",
+    "title2": "Get Active User Info",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Active User Info", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Active User Info"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Snapshot Attributes",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Snapshot Attributes Snapshot :: Get Snapshot Attribute param.cgi?cmd=getsnaptimerattrex Function Get Snapshot Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getsnaptimerattrex] Return as_snap_enable: Enable (1) or Disable (0) Snapshot to SD Card as_snap_interval: Time Interval in Seconds (Range : 1-86400) as_email_enable: Enable (1) or Disable (0) Snapshot to E-mail as_email_interval: Time Interval in Seconds (Range : 1-86400) as_ftp_enable: Enable (1) or Disable (0) Snapshot to FTP Server as_ftp_interval: Time Interval in Seconds (Range : 1-86400) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getsnaptimerattrex",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Snapshot_Attributes",
+    "title2": "Get Snapshot Attributes",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Snapshot Attributes", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Snapshot Attributes"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Snapshot Attributes",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Snapshot Attributes Snapshot :: Set Snapshot Attribute param.cgi?cmd=setsnaptimerattrex Function Set Snapshot Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setsnaptimerattrex&-as_enable=&-as_interval=&-as_type=] Parameter as_enable: Enable (1) or Disable (0) Snapshot as_interval: Time Interval in Seconds (Range : 1-86400) as_type: Type Send Snapshot to SD card (snap), by Email (email) or to FTP Server (ftp) Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setsnaptimerattrex&-as_enable=1&-as_interval=60&-as_type=snap",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Snapshot_Attributes",
+    "title2": "Set Snapshot Attributes",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Snapshot Attributes", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Snapshot Attributes"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get FTP Attributes",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get FTP Attributes FTP :: Get FTP Attribute param.cgi?cmd=getftpattr Function Get FTP Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getftpattr] Return ft_server: FTP Server Address ft_port: FTP Server Port ft_username: FTP Username ft_password: FTP Password ft_dirname: FTP Directory ft_mode: FTP Mode Port (0) or Passive (1) Example http: admin:instar@192.168.178.88 cgi-bin/hi3510 param.cgi?cmd=getftpattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_FTP_Attributes",
+    "title2": "Get FTP Attributes",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get FTP Attributes", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get FTP Attributes"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set FTP Attributes",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set FTP Attributes FTP :: Set FTP Attribute param.cgi?cmd=setftpattr Function Set FTP Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setftpattr&-ft_server=&-ft_port=&-ft_username=&-ft_password=&-ft_dirname=&-ft_mode=] Parameter ft_server: FTP Server Address ft_port: FTP Server Port ft_username: FTP Username ft_password: FTP Password ft_dirname: FTP Directory ft_mode: FTP Mode Port (0) or Passive (1) Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setftpattr&-ft_server=220.112.14.173&-ft_port=21&-ft_username=FTPUsername&-ft_password=FTPPassword&-ft_dirname=ProgramFiles&-ft_mode=1",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_FTP_Attributes",
+    "title2": "Set FTP Attributes",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set FTP Attributes", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set FTP Attributes"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Test FTP",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Test FTP FTP :: Test FTP param.cgi?cmd=testftp Function Test FTP Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=testftp] Return Type: 0 (successful) -1 (unknown error) -2 (no connection to server) -3 (username or password wrong) -4 (path error) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=testftp",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Test_FTP",
+    "title2": "Test FTP",
+    "chapter": "720p Series CGI List",
+    "tags": ["Test FTP", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Test FTP"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get SMTP Attributes",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get SMTP Attributes SMTP :: Get SMTP Attributes param.cgi?cmd=getsmtpattr Function Get SMTP Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getsmtpattr] Return ma_server: SMTP Server Address ma_port: SMTP Server Port ma_ssl: Enable (1) or Disable (0) SSL ma_logintype: Enable (1) or Disable (3) Authentication ma_username: SMTP Server Username ma_password: SMTP Server Password ma_from: Server Address ma_to: Receiver Address ma_subject: Mail Subject ma_text: Mail Content Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getsmtpattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_SMTP_Attributes",
+    "title2": "Get SMTP Attributes",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get SMTP Attributes", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get SMTP Attributes"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set SMTP Attributes",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set SMTP Attributes SMTP :: Set SMTP Attributes param.cgi?cmd=setsmtpattr Function Set SMTP Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setsmtpattr&-ma_server=&-ma_port=&-ma_ssl=&-ma_logintype=&-ma_username=&-ma_password=&-ma_from=&-ma_to=&-ma_subject=&-ma_text=] Parameter ma_server: SMTP Server Address ma_port: SMTP Server Port ma_ssl: Enable (1) or Disable (0) SSL ma_logintype: Enable (1) or Disable (3) Authentication ma_username: SMTP Server Username ma_password: SMTP Server Password ma_from: Server Address ma_to: Receiver Address ma_subject: Mail Subject ma_text: Mail Content Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setsmtpattr&-ma_server=stmp.example.com&-ma_from=123@example.com&-ma_to=456@example.com&-ma_subject=demosubject&-ma_text=demotext&-ma_logintype=1&-ma_username=demo&-ma_password=123456&-ma_port=25&-ma_ssl=0",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_SMTP_Attributes",
+    "title2": "Set SMTP Attributes",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set SMTP Attributes", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set SMTP Attributes"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Test SMTP",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Test SMTP SMTP :: Test SMTP Attributes param.cgi?cmd=testsmtp Function Test SMTP Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=smtp] Return Type: 0 (successful) -1 (unknown error) -2 (no connection to server) -3 (username or password error) -4 (path error) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=testsmtp",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Test_SMTP",
+    "title2": "Test SMTP",
+    "chapter": "720p Series CGI List",
+    "tags": ["Test SMTP", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Test SMTP"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Format SD Card",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Format SD Card SD Card :: Format SD Card param.cgi?cmd=sdfrmt Function Format SD Card with FAT32 Authority admin Syntax cgi-bin hi3510 param.cgi?cmd=sdfrmt Return Format SD Card Successful Remark Will take a long time - be patient Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=sdfrmt",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Format_SD_Card",
+    "title2": "Format SD Card",
+    "chapter": "720p Series CGI List",
+    "tags": ["Format SD Card", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Format SD Card"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Unmount SD Card",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Unmount SD Card SD Card :: Unmount SD Card param.cgi?cmd=sdstop Function Unmount SD Card Authority admin Syntax cgi-bin hi3510 param.cgi?cmd=sdstop Return Stop SD Card Successful Remark Firmware will try to re-mount SD card in regular intervals! Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=sdstop",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Unmount_SD_Card",
+    "title2": "Unmount SD Card",
+    "chapter": "720p Series CGI List",
+    "tags": ["Unmount SD Card", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Unmount SD Card"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Device Info",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Device Info System :: Get Device Info param.cgi?cmd=getserverinfo Function Get Device Info Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getserverinfo] Return model: Device ID hardVersion: Hardware Version softVersion: Firmware Version webVersion: Web User Interface Version name: Device Name startdate: System Start Time upnpstatus: Upnp Status ok, off, failed facddnsstatus: Factory DDNS Status ok, off, failed th3ddnsstatus: 3rd party DDNS Status ok, off, failed sdstatus: SD Card Status out, ready, read-only sdfreespace: SD free space，KB sdtotalspace: SD total space，KB Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getserverinfo",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Device_Info",
+    "title2": "Get Device Info",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Device Info", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Device Info"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Device Type",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Device Type System :: Get Device Type Info param.cgi?cmd=getdevtype Function Get Device Type Info Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getdevtype] Return devtype: Device Type Remarks Please refer App I Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getdevtype",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Device_Type",
+    "title2": "Get Device Type",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Device Type", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Device Type"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Streaming User Number",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Streaming User Number System :: Get Number of active Streams param.cgi?cmd=getstreamnum Function Get streaming user number Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getstreamnum] Return stream_num: User , var stream_num = 1 ; Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getstreamnum",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Streaming_User_Number",
+    "title2": "Get Streaming User Number",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Streaming User Number", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Streaming User Number"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Server Time",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Server Time System :: Get Server Time param.cgi?cmd=getservertime Function Get server time Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getservertime] Return time: Current time - [yyyy][mm][dd][hh][mm][ss] E.g. time=20110802182638; timeZone: e.g. timeZone=Asia/Hong_Kong; dstmode: set summer time enable (on) disable (off) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getservertime",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Server_Time",
+    "title2": "Get Server Time",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Server Time", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Server Time"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Server Time",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Server Time System :: Set Server Time param.cgi?cmd=setservertime Function Set server time Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setservertime&-time=&-timezone=&-dstmode=] Parameter time: Current time - [yyyy][mm][dd][hh][mm][ss] E.g. time=20110802182638; timezone: e.g. timeZone=Asia/Hong_Kong; dstmode: set summer time enable (on) disable (off) Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setservertime&-time=2011.08.23.10.35.08&-timezone=Asia Hong_Kong&-dstmode=off",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Server_Time",
+    "title2": "Set Server Time",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Server Time", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Server Time"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get NTP Server Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get NTP Server Attribute System :: Get NTP Server param.cgi?cmd=getntpattr Function Get NTP Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=getntpattr] Return ntpenable: Enable (1), disable (0) NTP sync. ntpserver: 0.de.pool.ntp.org 1.de.pool.ntp.org time.nist.gov time.kriss.re.kr time.windows.com time.nuri.net ntpinterval: Sync interval Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getntpattr",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_NTP_Server_Attribute",
+    "title2": "Get NTP Server Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get NTP Server Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set NTP Server Attribute",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set NTP Server Attribute System :: Set NTP Server param.cgi?cmd=setntpattr Function Set NTP Parameter Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=setntpattr&-ntpenable=&-ntpserver=&-ntpinterval=] Parameter ntpenable: Enable (1), disable (0) NTP sync. ntpserver: 0.de.pool.ntp.org 1.de.pool.ntp.org time.nist.gov time.kriss.re.kr time.windows.com time.nuri.net ntpinterval: Sync interval (1-24 hrs) Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setntpattr&-ntpenable=1&-ntpinterval=2&-ntpserver=time.nist.gov",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_NTP_Server_Attribute",
+    "title2": "Set NTP Server Attribute",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set NTP Server Attribute", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set NTP Server Attribute"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Multi-Device Parameter",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Multi-Device Parameter System :: Get Multi Device Param.cgi?cmd=getdevices Function Get multi-device Parameter Authority admin Syntax cgi-bin hi3510 param.cgi?[cmd=getdevices] Return d_host[0]: CH 1 device IP d_alias[0]: Name d_port[0]: Port d_username[0]: Username d_password[0]: Password d_host[0]: CH 2 device IP d_alias[1]: Name d_port[1]: Port d_username[1]: Username d_password[1]: Password d_host[0]: CH 3 device IP d_alias[2]: Name d_port[2]: Port d_username[2]: Username d_password[2]: Password d_host[0]: CH 4 device IP d_alias[3]: Name d_port[3]: Port d_username[3]: Username d_password[3]: Password d_host[0]: CH 5 device IP d_alias[4]: Name d_port[4]: Port d_username[4]: Username d_password[4]: Password d_host[0]: CH 6 device IP d_alias[5]: Name d_port[5]: Port d_username[5]: Username d_password[5]: Password d_host[0]: CH 7 device IP d_alias[6]: Name d_port[6]: Port d_username[6]: Username d_password[6]: Password d_host[0]: CH 8 device IP d_alias[7]: Name d_port[7]: Port d_username[7]: Username d_password[7]: Password Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getdevices",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Multi-Device_Parameter",
+    "title2": "Get Multi-Device Parameter",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Multi-Device Parameter", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Multi-Device Parameter"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Multi-Device Parameter",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Multi-Device Parameter System :: Set Multi Device Param.cgi?cmd=setdevices Function Set multi-device Parameter Authority admin Syntax cgi-bin hi3510 param.cgi?[cmd=setdevices&-d_number=&-d_alias=&-d_host=&-d_port=&-d_username=&-d_password=&] Parameter d_number: number (0-7) d_host: IP Address d_alias: Camera Name d_port: HTTP Port d_username: Username d_password: Password Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setdevices&-d_number=0&-d_alias=test1&-d_host=192.168.1.7&-d_port=80&-d_username=admin&-d_password=admin",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Multi-Device_Parameter",
+    "title2": "Set Multi-Device Parameter",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Multi-Device Parameter", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Multi-Device Parameter"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - MJPEG Videostream",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - MJPEG Videostream System :: MJPEG Stream mjpegstream.cgi Function Motion JPG Videostream Authority admin, user and guest Syntax cgi-bin hi3510 [mjpegstream.cgi?-chn=&-usr=&-pwd=] Parameter chn: First stream (11), second stream (12), third stream (13) usr: User name pwd: Password Return auto.jpg Example http: admin:instar@192.168.178.88 cgi-bin hi3510 mjpegstream.cgi?-chn=12",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/MJPEG_Videostream",
+    "title2": "MJPEG Videostream",
+    "chapter": "720p Series CGI List",
+    "tags": ["MJPEG Videostream", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: MJPEG Videostream"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Snapshot Size",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Snapshot Size System :: Set Snapshot JPG Size param.cgi?cmd=snapimage Function Set the size of the JPG for the JPG path (tmpfs snap.jpg) Authority admin, user and guest Syntax cgi-bin hi3510 param.cgi[?cmd=snapimage&-chn=] Parameter chn: First stream (11), second stream (12), third stream (13) Return Success, Error Remark Example JPG Path: http: 192.168.178.88 tmpfs snap.jpg&usr=admin&pwd=instar Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=snapimage&-chn=011",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Set_Snapshot_Size",
+    "title2": "Set Snapshot Size",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Snapshot Size", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Snapshot Size"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - System Reset",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - System Reset System :: Reset Sysreset.cgi Function Restore factory default setting Authority admin Syntax cgi-bin hi3510 sysreset.cgi Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 sysreset.cgi",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/System_Reset",
+    "title2": "System Reset",
+    "chapter": "720p Series CGI List",
+    "tags": ["System Reset", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: System Reset"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - System Reboot",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - System Reboot System :: Reboot Sysreboot.cgi Function Reboot Authority admin Syntax cgi-bin hi3510 sysreboot.cgi Return Success, Error Example http: admin:instar@192.168.178.88 cgi-bin hi3510 sysreboot.cgi",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/System_Reboot",
+    "title2": "System Reboot",
+    "chapter": "720p Series CGI List",
+    "tags": ["System Reboot", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: System Reboot"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - System Backup",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - System Backup System :: Backup backup.cgi Function Back up set data Authority admin Syntax cgi-bin hi3510 backup.cgi Return config_backup.bin Example http: admin:instar@192.168.178.88 cgi-bin hi3510 backup.cgi",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/System_Backup",
+    "title2": "System Backup",
+    "chapter": "720p Series CGI List",
+    "tags": ["System Backup", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: System Backup"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - System Restore",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - System Restore System :: Restore restore.cgi Function Restore to settings from a backup file Authority admin Syntax cgi-bin hi3510 restore.cgi[?-setting_file=] Parameter setting_file: System set file path Remarks This cgi must used as a POST. The update file is then send to the IP address. Example form name=form6 method=post enctype=multipart form-data action=cgi-bin/hi3510/restore.cgi input type=file name=setting_file input type=submit value=restore form",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/System_Restore",
+    "title2": "System Restore",
+    "chapter": "720p Series CGI List",
+    "tags": ["System Restore", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: System Restore"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - System Upgrade",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - System Upgrade System :: Upgrade upgrade.cgi Function System upgrade Authority admin Syntax cgi-bin hi3510 upgrade.cgi[?-filename=] Parameter filename: name of the update package Remarks This cgi must used as a POST - update files can be found under download.instar.de Example form name=form5 method=post target=retframe enctype=multipart form-data action=cgi-bin hi3510 upgrade.cgi input type=file name=setting_file input type=submit value=upgrade form",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/System_Upgrade",
+    "title2": "System Upgrade",
+    "chapter": "720p Series CGI List",
+    "tags": ["System Upgrade", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: System Upgrade"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Admin Variables",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Admin Variables System :: Get Admin Variables param.cgi?cmd=get_instar_admin Function Get Admin Variables Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=get_instar_admin] Return admin_value[0] : multi camera view data for camera 0 admin_value[1] : multi camera view data for camera 1 admin_value[2] : multi camera view data for camera 2 admin_value[3] : multi camera view data for camera 3 admin_value[4] : multi camera view data for camera 4 admin_value[5] : multi camera view data for camera 5 admin_value[6] : multi camera view data for camera 6 admin_value[7] : multi camera view data for camera 7 admin_value[8] : multi camera view data for camera 8 admin_value[9] :  hide camera data sheet ; if admin_value[9] == 1 hide menu else show it admin_value[10] : webUI language ; 1 = german, 2 = english, 3 = french, 4 = chinese admin_value[11] : help status admin_value[12] : installation wizard; if 0 the wizard is loaded otherwise ignored admin_value[13] : admin_value[14] : 1 ; sets Area Selection to area.html admin_value[15] : set status of relay  admin_value[16] : admin_value[17] : admin_value[18] : admin_value[19] : admin_value[20] : admin_value[21] : admin_value[22] : admin_value[23] : admin_value[24] : admin_value[25] : admin_value[26] : admin_value[27] : admin_value[28] : admin_value[29] : admin_value[30] : admin_value[31] : admin_value[32] : h264 resolution [11, 12, 13], mjpeg resolution [11, 12, 13], mode [h.264 (0), MJPEG (1)] mjpeg fps [e.g. 3] - default 11:11:0:3 admin_value[33] : admin_value[34] : admin_value[35] : INSTAR JPEG MODE [true, false] admin_value[36] : admin_value[37] : admin_value[38] : admin_value[39] : admin_value[40] : admin_value[41] : admin_value[42] : video plugin (flash, activeX, quicktime) admin_value[43] : Length of manual SD record admin_value[44] : INSTAR JPEG MODE; Timeout determines the time the JPEG mode waits for the to load a new image (default 250ms) admin_value[45] : PTZ Steps (0 = off; 1 = on) admin_value[46] : admin_value[47] : admin_value[48] : INSTAR show QTConfirm --> if this is used it is wrong init null pushserver init status [true, false] admin_value[49] : holds the status of day light saving time [on, off] Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=get_instar_admin",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Admin_Variables",
+    "title2": "Get Admin Variables",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Admin Variables", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Admin Variables"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Set Admin Variables",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Set Admin Variables System :: Set Admin Variables param.cgi?cmd=set_instar_admin Function Set Admin Variables Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=set_instar_admin&-index=&-value=] Parameter admin_value[0] : multi camera view data for camera 0 admin_value[1] : multi camera view data for camera 1 admin_value[2] : multi camera view data for camera 2 admin_value[3] : multi camera view data for camera 3 admin_value[4] : multi camera view data for camera 4 admin_value[5] : multi camera view data for camera 5 admin_value[6] : multi camera view data for camera 6 admin_value[7] : multi camera view data for camera 7 admin_value[8] : multi camera view data for camera 8 admin_value[9] : hide camera data sheet ; if admin_value[9] == 1 hide menu else show it admin_value[10] : webUI language ; 1 = german, 2 = english, 3 = french, 4 = chinese admin_value[11] : help status admin_value[12] : installation wizard; if 0 the wizard is loaded otherwise ignored admin_value[13] : admin_value[14] : 1 ; sets Area Selection to area.html admin_value[15] : set status of relay admin_value[16] : admin_value[17] : admin_value[18] : admin_value[19] : admin_value[20] : admin_value[21] : admin_value[22] : admin_value[23] : admin_value[24] : admin_value[25] : admin_value[26] : admin_value[27] : admin_value[28] : admin_value[29] : admin_value[30] : admin_value[31] : admin_value[32] : h264 resolution [11, 12, 13], mjpeg resolution [11, 12, 13], mode [h.264 (0), MJPEG (1)] mjpeg fps [e.g. 3] - default 11:11:0:3 admin_value[33] : admin_value[34] : admin_value[35] : INSTAR JPEG MODE [true, false] admin_value[36] : admin_value[37] : admin_value[38] : admin_value[39] : admin_value[40] : admin_value[41] : admin_value[42] : video plugin (flash, activeX, quicktime) admin_value[43] : Length of manual SD record admin_value[44] : INSTAR JPEG MODE; Timeout determines the time the JPEG mode waits for the to load a new image (default 250ms) admin_value[45] : PTZ Steps (0 = off; 1 = on) admin_value[46] : admin_value[47] : admin_value[48] : INSTAR show QTConfirm --> if this is used it is wrong init null pushserver init status [true, false] admin_value[49] : holds the status of day light saving time [on, off] Return Success, Error Example http: admin:instar@192.168.178.88 param.cgi?cmd=set_instar_admin&-index=11&-value=2&cmd=set_instar_admin&-index=50&-value=off",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Admin_Variables",
+    "title2": "Set Admin Variables",
+    "chapter": "720p Series CGI List",
+    "tags": ["Set Admin Variables", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Set Admin Variables"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Get Login Data",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Get Login Data System :: Get Login Data param.cgi?cmd=logsync Function Get Login Data Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=logsync] Remarks The CGI refreshes the log information after implementation, through the access log accesslog.txt. Note: When device restarts login will be cleared. Example cgi-bin hi3510 param.cgi?cmd=logsync log syslog.txt",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Login_Data",
+    "title2": "Get Login Data",
+    "chapter": "720p Series CGI List",
+    "tags": ["Get Login Data", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Get Login Data"
+}
+POST /wiki2_en/article
+{
+    "title": "720p CGI Commands - Clear Login Data",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p CGI Commands - Clear Login Data System :: Clear Login Data param.cgi?cmd=cleanlog Function Clear Login Data Authority admin Syntax cgi-bin hi3510 param.cgi[?cmd=cleanlog&-name=] Parameter name: clean log in info command name access Return Success, Error Example cgi-bin hi3510 param.cgi?cmd=cleanlog&-name=sys",
+    "link": "/720p_Series_CGI_List/Complete_CGI_List/Get_Login_Data",
+    "title2": "Clear Login Data",
+    "chapter": "720p Series CGI List",
+    "tags": ["Clear Login Data", "CGI", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "720p CGIs :: Clear Login Data"
+}
+POST /wiki2_en/article
+{
+    "title": "CGI Instruction Set for the VGA Series",
+    "series": ["VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011"],
+    "description": "Complete CGI Instruction Set for the VGA Series For all developers that want to integrate our cameras in their software or for everyone that wants to experiment a little, we now offer a full list of all CGI commands that can be used with our IP cameras. Please understand that this list is only for advanced users who know what they are doing. We can not give any technical support regarding our CGI commands. Click here to download the complete CGI command list: List of the most needed CGI commands Video videostream.cgi[?user=&pwd=&resolution=&rate=] resolution:（8：320*240，32：640*480）rate： 0-23 0：highest/fastest 1：20 fps 3：15 fps 6：10 fps 11：5 fps 12：4 fps 13：3 fps 14：2 fps 15：1 fps 17：1 fp/2s 19：1 fp/3s 21：1 fp/4s 23：1 fp/5s For example: If your IP is 192.168.1.190 and Port is 81 and you want a resolution of 640*480 and the fastest speed of fps then you have to type in the following: http: 192.168.1.190:81 videostream.cgi?user=admin&pwd=&resolution=32&rate=0 Snapshot: snapshot.cgi[?user=&pwd=&next_url=] After next_url the user can type in the name of the picture. If you dont include next_url then the picture will automaticly get the name (DeviceAlias + current time.jpg) Examples: http: 192.168.1.190:81 snapshot.cgi?user=admin&pwd= http: 192.168.1.190:81 snapshot.cgi?user=admin&pwd=&next_url=test Video & Audio: Settings are the same as videostream.cgi above. Examples: http: 192.168.1.190:81 videostream.asf?user=admin&pwd=&resolution=32&rate=0 Configuration: camera_control.cgi?param=&value=[&user=&pwd=&next_url=] With the paramenter & value you can set resolution, brigthness, etc. ... 0 ： RESOLUTION 2 ： qqvga 8 ： qvga 32 ： vga 1 ： BRIGHTNESS 0~255 2 ： CONTRAST 0~6 3 ： MODE 0 ： 50hz 1 ： 60hz 2 ： Outdoor 5 ： ROTATION 0 ： Default 1 ： Flip Vertical 2 ： Level Image 3 ： Flip + horizontal Mirror Image Pan & Tilt: decoder_control.cgi?command=[&onestep=&user=&pwd=&next_url=] tilt up= decoder_control.cgi?command=0&onestep=1&user=&pwd= tilt down= decoder_control.cgi?command=2&onestep=1&user=&pwd= pan left= decoder_control.cgi?command=4&onestep=1&user=&pwd= pan right= decoder_control.cgi?command=6&onestep=1&user=&pwd= home pos= decoder_control.cgi?command=25 For a direct position change use: Pos01 = decoder_control.cgi?command=31&user=&pwd= Pos02 = decoder_control.cgi?command=33&user=&pwd= Pos03 = decoder_control.cgi?command=35&user=&pwd= Pos04 = decoder_control.cgi?command=37&user=&pwd= Pos05 = decoder_control.cgi?command=39&user=&pwd= Pos06 = decoder_control.cgi?command=41&user=&pwd= Pos07 = decoder_control.cgi?command=43&user=&pwd= Pos08 = decoder_control.cgi?command=45&user=&pwd= Pos09 = decoder_control.cgi?command=47&user=&pwd= Pos10 = decoder_control.cgi?command=49&user=&pwd= Pos11 = decoder_control.cgi?command=51&user=&pwd= Pos12 = decoder_control.cgi?command=53&user=&pwd= Pos13 = decoder_control.cgi?command=55&user=&pwd= Pos14 = decoder_control.cgi?command=57&user=&pwd= Pos15 = decoder_control.cgi?command=59&user=&pwd= Automatic Patrol set_misc.cgi?[led_mode=&ptz_center_onstart=&ptz_auto_patrol_interval=&ptz_auto_patrol_type=&ptz_patrol _h_rounds=&ptz_patrol_v_rounds=&user=&pwd=&next_url=] ptz_center_onstart：=1，activate center on start ptz_auto_patrol_interval：automatic patrol，=0：no automatic control ptz_auto_patrol_type：0：No；1：horizontal；2：vertical；3：horizontal and vertical ptz_patrol_h_rounds：Horizontal patrol laps，0：Infinite ptz_patrol_v_rounds：Vertical patrol laps，0：Infinite ptz_patrol_rate：Head Speed manual，0-100，0：Fastest ptz_patrol_up_rate：automatic cruise speed (up)：0-100，0：slowest ptz_patrol_down_rate：automatic cruising speed (down)：0-100，0：slowest ptz_patrol_left_rate：cruising speed automatic (left)：0-100，0：slowest ptz_patrol_right_rate：cruising speed automatic (right) ：0-100，0：slowest Alarm: If you want to activate or deactivate the alarm function please enter the following command: http: 192.168.1.196 set_alarm.cgi?motion_armed=1&user=admin&pwd= (Alarm activated) http: 192.168.1.196 set_alarm.cgi?motion_armed=0&user=admin&pwd= (Alarm deactivated)",
+    "link": "/Advanced_User/CGI_Commands/VGA_Series_CGI_List/",
+    "title2": "CGI Befehle der VGA Kameraserie",
+    "chapter": "720p Series CGI List",
+    "tags": ["CGI Instruction Set for the VGA Series", "720p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands.jpg",
+    "abstract": "CGI Instruction Set for the VGA Series"
+}
