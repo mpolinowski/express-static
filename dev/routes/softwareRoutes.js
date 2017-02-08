@@ -778,7 +778,7 @@ softwareRouter.route('/Other_Platforms/AVM_Fritzphone')
 softwareRouter.route('/Other_Platforms/Domovea')
 .get(function(req, res) {
   res.render('./Software/Other_Platforms_Domovea', {
-      title: 'QNAP',
+      title: 'Domovea',
 	  uplink: '/Software/Other_Platforms/',
       ampimg: '/images/Search/P_SearchThumb_Products.jpg',
       headline: 'INSTAR Products',
