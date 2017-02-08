@@ -1,0 +1,25 @@
+{
+    "articles": [{
+        "howDoes": "/Quick_Installation/How_Does_An_IP_Camera_Work/"
+    }, {
+        "firstSteps": "/Quick_Installation/First_Steps/"
+    }, {
+        "afterUnpacking": "/Quick_Installation/After_Unpacking/"
+    }, {
+        "directCon": "/Quick_Installation/Direct_LAN_Connection/"
+    }, {
+        "altScan": "/Quick_Installation/Alternative_IP_Scanner/"
+    }, {
+        "langSelection": "/Quick_Installation/Language_Selection/"
+    }, {
+        "liveVid": "/Quick_Installation/Live_Video/"
+    }, {
+        "userAccounts": "/Quick_Installation/Creating_User_Accounts/"
+    }, {
+        "softUpgrade": "/Quick_Installation/WebUI_And_Firmware_Upgrade/"
+    }, {
+        "browsingHistory": "/Quick_Installation/How_To_Clear_Your_Browsing_History/"
+    }, {
+        "wirelessCon": "/Quick_Installation/Set_Up_A_Wireless_Connection/"
+    }]
+}

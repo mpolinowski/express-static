@@ -775,4 +775,15 @@ softwareRouter.route('/Other_Platforms/AVM_Fritzphone')
     });
 });
 
+softwareRouter.route('/Other_Platforms/Domovea')
+.get(function(req, res) {
+  res.render('./Software/Other_Platforms_Domovea', {
+      title: 'QNAP',
+	  uplink: '/Software/Other_Platforms/',
+      ampimg: '/images/Search/P_SearchThumb_Products.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Other_Platforms/">Other</a></li><li><a href="/Software/Other_Platforms/Domovea/">Domovea</a></li>',
+    });
+});
+
 module.exports = softwareRouter;
