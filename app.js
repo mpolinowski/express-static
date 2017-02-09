@@ -47,6 +47,11 @@ app.redirect('/index.php/After_unpacking_your_INSTAR_IP_Camera', '../Quick_Insta
 app.redirect('/index.php/Direct_LAN_connection_with_your_IP_camera', '../Quick_Installation/Direct_LAN_Connection', 301);
 app.redirect('/index.php/Finding_your_IP_camera_in_the_network_if_the_IP_Camera_Tool_is_not_working', '../Quick_Installation/Alternative_IP_Scanner', 301);
 app.redirect('/index.php/ONVIF', '../Quick_Installation/ONVIF', 301);
+app.redirect('/index.php/ActiveX_Plugin_Installation_on_Windows', '../Quick_Installation/Live_Video', 301);
+app.redirect('/index.php/Quicktime_Plugin_Setup', '../Quick_Installation/Live_Video', 301);
+app.redirect('/index.php/Exception_for_your_IP_camera_in_Avast_Internet_Security', '../Quick_Installation/Live_Video/Troubleshooting/Avast', 301);
+app.redirect('/index.php/Exception_for_your_IP_camera_in_GDATA_Internet_Security_2016', '../Quick_Installation/Live_Video/Troubleshooting/GDATA', 301);
+app.redirect('/index.php/Live_Video_in_Microsoft_Edge', '../Quick_Installation/Live_Video', 301);
 app.redirect('/index.php/Language_Selection', '../Quick_Installation/Language_Selection', 301);
 app.redirect('/index.php/Creating_User_Accounts', '../Quick_Installation/Creating_User_Accounts', 301);
 app.redirect('/index.php/How_to_upgrade_to_a_new_WebUI_or_Firmware', '../Quick_Installation/WebUI_And_Firmware_Upgrade', 301);

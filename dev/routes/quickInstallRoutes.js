@@ -240,6 +240,18 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/AVG')
       });
 
 /* GET Live Video Selection /Live_Video */
+quickInstallRouter.route('/Live_Video/Troubleshooting/GDATA')
+    .get(function(req, res) {
+        res.render('./Quick_Installation/Live_Video_GDATA', {
+            title: 'Live Video GDATA',
+            uplink: '/Quick_Installation/Live_Video/',
+            ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
+            headline: 'Live Video Troubleshooting GDATA',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/Troubleshooting/GDATA/">GDATA</a></li>',
+          });
+      });
+
+/* GET Live Video Selection /Live_Video */
 quickInstallRouter.route('/Live_Video/Troubleshooting/AVIRA')
     .get(function(req, res) {
         res.render('./Quick_Installation/Live_Video_AVIRA', {
