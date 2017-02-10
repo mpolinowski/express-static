@@ -12,7 +12,7 @@ downloadsRouter.get('/', function(req, res) {
   });
 
 downloadsRouter.get('/Indoor_Cameras/', function(req, res) {
-    res.render('./Downloads/Downloads_Indoor_Cams', {
+    res.render('./Downloads/Indoor_Cameras', {
         title: 'Downloads for Indoor Cameras',
         ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
         uplink: '/Downloads/',
@@ -22,7 +22,7 @@ downloadsRouter.get('/Indoor_Cameras/', function(req, res) {
   });
 
 downloadsRouter.get('/Outdoor_Cameras/', function(req, res) {
-    res.render('./Downloads/Downloads_Outoor_Cams', {
+    res.render('./Downloads/Outdoor_Cameras', {
         title: 'Downloads for Outdoor Cameras',
         ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
         uplink: '/Downloads/',
@@ -31,8 +31,8 @@ downloadsRouter.get('/Outdoor_Cameras/', function(req, res) {
       });
   });
 
-downloadsRouter.get('/Software/', function(req, res) {
-    res.render('./Downloads/Downloads_Software', {
+downloadsRouter.get('/Desktop_Software/', function(req, res) {
+    res.render('./Downloads/Desktop_Software', {
         title: 'Downloads for Desktop Software',
         ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
         uplink: '/Downloads/',
@@ -42,7 +42,7 @@ downloadsRouter.get('/Software/', function(req, res) {
   });
 
 downloadsRouter.get('/Mobile_Apps/', function(req, res) {
-    res.render('./Downloads/Downloads_Apps', {
+    res.render('./Downloads/Mobile_Apps', {
         title: 'Downloads for Apps',
         ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
         uplink: '/Downloads/',
@@ -52,7 +52,7 @@ downloadsRouter.get('/Mobile_Apps/', function(req, res) {
   });
 
 downloadsRouter.get('/Accessories/', function(req, res) {
-    res.render('./Downloads/Downloads_Accessories', {
+    res.render('./Downloads/Accessories', {
         title: 'Downloads for Accessories',
         ampimg: '/images/Search/QI_SearchThumb_QuickInstallation.jpg',
         uplink: '/Downloads/',
@@ -62,7 +62,7 @@ downloadsRouter.get('/Accessories/', function(req, res) {
   });
 
 downloadsRouter.get('/Network_Accessories/', function(req, res) {
-    res.render('./Downloads/Downloads_NetAccessories', {
+    res.render('./Downloads/Network_Accessories', {
         title: 'Downloads for Network Accessories',
         ampimg: '/images/Search/QI_SearchThumb_QuickInstallation.jpg',
         uplink: '/Downloads/',
@@ -76,7 +76,7 @@ downloadsRouter.get('/Network_Accessories/', function(req, res) {
 
 downloadsRouter.route('/Indoor_Cameras/IN-8015_HD/')
 .get(function(req, res) {
-  res.render('./Indoor_Cams/Downloads_Indoor_Cams_8015', {
+  res.render('./Downloads/Indoor_Cameras_8015', {
       title: 'IN-8015 HD Downloads',
       uplink: '/Downloads/Indoor_Cameras/',
       ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
@@ -88,7 +88,7 @@ downloadsRouter.route('/Indoor_Cameras/IN-8015_HD/')
 
 downloadsRouter.route('/Indoor_Cameras/IN-6014_HD/')
 .get(function(req, res) {
-  res.render('./Indoor_Cams/Downloads_Indoor_Cams_6014', {
+  res.render('./Downloads/Indoor_Cameras_6014', {
       title: 'IN-6014 HD Downloads',
       uplink: '/Downloads/Indoor_Cameras/',
       ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
@@ -100,7 +100,7 @@ downloadsRouter.route('/Indoor_Cameras/IN-6014_HD/')
 
 downloadsRouter.route('/Indoor_Cameras/IN-6012_HD/')
 .get(function(req, res) {
-  res.render('./Indoor_Cams/Downloads_Indoor_Cams_6012', {
+  res.render('./Downloads/Indoor_Cameras_6012', {
       title: 'IN-6012 HD Downloads',
       uplink: '/Downloads/Indoor_Cameras/',
       ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
@@ -112,7 +112,7 @@ downloadsRouter.route('/Indoor_Cameras/IN-6012_HD/')
 
 downloadsRouter.route('/Indoor_Cameras/IN-6001_HD/')
 .get(function(req, res) {
-  res.render('./Indoor_Cams/Downloads_Indoor_Cams_6001', {
+  res.render('./Downloads/Indoor_Cameras_6001', {
       title: 'IN-6001 HD Downloads',
       uplink: '/Downloads/Indoor_Cameras/',
       ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
@@ -124,7 +124,7 @@ downloadsRouter.route('/Indoor_Cameras/IN-6001_HD/')
 
 downloadsRouter.route('/Indoor_Cameras/IN-3011/')
 .get(function(req, res) {
-  res.render('./Indoor_Cams/Downloads_Indoor_Cams_3011', {
+  res.render('./Downloads/Indoor_Cameras_3011', {
       title: 'IN-3011 Downloads',
       uplink: '/Downloads/Indoor_Cameras/',
       ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
@@ -139,7 +139,7 @@ downloadsRouter.route('/Indoor_Cameras/IN-3011/')
 
 downloadsRouter.route('/Outdoor_Cameras/IN-9008_HD/')
 .get(function(req, res) {
-  res.render('./Outdoor_Cams/Downloads_Outdoor_Cams_9008', {
+  res.render('./Downloads/Outdoor_Cameras_9008', {
       title: 'IN-9008 HD Downloads',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       uplink: '/Downloads/Outdoor_Cameras/',
@@ -151,7 +151,7 @@ downloadsRouter.route('/Outdoor_Cameras/IN-9008_HD/')
 
 downloadsRouter.route('/Outdoor_Cameras/IN-7011_HD/')
 .get(function(req, res) {
-  res.render('./Outdoor_Cams/Downloads_Outdoor_Cams_7011', {
+  res.render('./Downloads/Outdoor_Cameras_7011', {
       title: 'IN-7011 HD Downloads',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       uplink: '/Downloads/Outdoor_Cameras/',
@@ -163,7 +163,7 @@ downloadsRouter.route('/Outdoor_Cameras/IN-7011_HD/')
 
 downloadsRouter.route('/Outdoor_Cameras/IN-5907_HD/')
 .get(function(req, res) {
-  res.render('./Outdoor_Cams/Downloads_Outdoor_Cams_5907', {
+  res.render('./Downloads/Outdoor_Cameras_5907', {
       title: 'IN-5907 HD Downloads',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       uplink: '/Downloads/Outdoor_Cameras/',
@@ -175,7 +175,7 @@ downloadsRouter.route('/Outdoor_Cameras/IN-5907_HD/')
 
 downloadsRouter.route('/Outdoor_Cameras/IN-5905_HD/')
 .get(function(req, res) {
-  res.render('./Outdoor_Cams/Downloads_Outdoor_Cams_5905', {
+  res.render('./Downloads/Outdoor_Cameras_5905', {
       title: 'IN-5905 HD Downloads',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       uplink: '/Downloads/Outdoor_Cameras/',
@@ -187,7 +187,7 @@ downloadsRouter.route('/Outdoor_Cameras/IN-5905_HD/')
 
 downloadsRouter.route('/Outdoor_Cameras/IN-4011/')
 .get(function(req, res) {
-  res.render('./Outdoor_Cams/Downloads_Outdoor_Cams_4011', {
+  res.render('./Downloads/Outdoor_Cameras_4011', {
       title: 'IN-4011 Downloads',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       uplink: '/Downloads/Outdoor_Cameras/',
@@ -199,7 +199,7 @@ downloadsRouter.route('/Outdoor_Cameras/IN-4011/')
 
 downloadsRouter.route('/Outdoor_Cameras/IN-4010_V2/')
 .get(function(req, res) {
-  res.render('./Outdoor_Cams/Downloads_Outdoor_Cams_4010', {
+  res.render('./Downloads/Outdoor_Cameras_4010', {
       title: 'IN-4010 V2 Downloads',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       uplink: '/Downloads/Outdoor_Cameras/',
@@ -211,7 +211,7 @@ downloadsRouter.route('/Outdoor_Cameras/IN-4010_V2/')
 
 downloadsRouter.route('/Outdoor_Cameras/IN-2908/')
 .get(function(req, res) {
-  res.render('./Outdoor_Cams/Downloads_Outdoor_Cams_2908', {
+  res.render('./Downloads/Outdoor_Cameras_2908', {
       title: 'IN-2908 Downloads',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       uplink: '/Downloads/Outdoor_Cameras/',
@@ -223,7 +223,7 @@ downloadsRouter.route('/Outdoor_Cameras/IN-2908/')
 
 downloadsRouter.route('/Outdoor_Cameras/IN-2905_V2/')
 .get(function(req, res) {
-  res.render('./Outdoor_Cams/Downloads_Outdoor_Cams_2905', {
+  res.render('./Downloads/Outdoor_Cameras_2905', {
       title: 'IN-2905 V2 Downloads',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       uplink: '/Downloads/Outdoor_Cameras/',
