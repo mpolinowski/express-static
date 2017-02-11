@@ -195,3 +195,15 @@ POST /wiki2_en/article
   "image": "/images/Search/QI_SearchThumb_HowDoesAnIPCameraWork.jpg",
   "abstract": "How do IP Cameras work in my Network"
 }
+
+
+
+
+################################################################ Update Field
+
+POST /wiki/article/AVXzjlPh7CL0F31EvU-m/_update
+{
+  "doc": {
+    "image": "/images/Search/InstarWiki_SearchThumb_HowDoesAnIPCameraWork.jpg"
+  }
+}

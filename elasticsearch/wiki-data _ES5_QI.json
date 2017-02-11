@@ -1,0 +1,260 @@
+POST /wiki2_en/article
+{
+    "title": "How Does An IP Camera Work?",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "How does an IP-Camera-Network work? LAN or Wifi connectivity. Remote access to your camera via DDNS (Dynamic Domain Name Service). Internal IP address vs internet address (DDNS). What is the difference between the internal IP (LAN) and the external IP address (WAN). Internal port / external port - How to open a door to the internet (Port Forwarding)",
+    "link": "/Quick_Installation/How_Does_An_IP_Camera_Work",
+    "title2": "Wie arbeitet eine IP Kamera?",
+    "chapter": "Quick Installation",
+    "tags": ["Introduction", "Quickinstallation"],
+    "image": "/images/Search/QI_SearchThumb_HowDoesAnIPCameraWork.jpg",
+    "abstract": "How do IP Cameras work in my Network"
+}
+POST /wiki2_en/article
+{
+    "title": "First Steps",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "This video contains a quick overview over the first steps involved in setting up your IP camera. Please go to the website Installation Wizard and follow the step by step instructions in order to set up your ip camera. Initial setup - Power supply, Wifi Antenna and camera boot up Network integration (LAN). The INSTAR search tool (Search Tool) and web user interface (webUI). How to set a static IP address (TCP/IP). Camera login and standard passwords (Default Passwords). Wifi integration (WLAN). Image quality settings (Image Settings)",
+    "link": "/Quick_Installation/First_Steps",
+    "title2": "Erste Schritte um Ihre IP Kamera zum laufen zu bringens",
+    "chapter": "Quick Installation",
+    "tags": ["Introduction", "Quickinstallation"],
+    "image": "/images/Search/QI_SearchThumb_FirstStepsWithYourIPCamera.jpg",
+    "abstract": "First Steps to set up your Camera"
+}
+POST /wiki2_en/article
+{
+    "title": "After Unpacking",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "After unpacking your Camera. The following video contains a quick overview over the necessary steps of the network integration. Please go to the website www.install.instar.de and follow the step by step instructions in order to set up your IP camera. Initial setup - Power supply, Wifi Antenna and camera boot up. Network integration (LAN). The INSTAR search tool (Search Tool) and web user interface (webUI). How to set a static IP address (TCP/IP). Camera login and standard passwords (Default Passwords). Wifi integration (WLAN). Image quality settings (Image Settings)",
+    "link": "/Quick_Installation/After_Unpacking",
+    "title2": "Nach dem auspacken Ihrer INSTAR IP Kamera",
+    "chapter": "Quick Installation",
+    "tags": ["Introduction", "Quickinstallation"],
+    "image": "/images/Search/QI_SearchThumb_AfterUnpackingYourIPCamera.jpg",
+    "abstract": "After Unpacking your Camera"
+}
+POST /wiki2_en/article
+{
+    "title": "Direct LAN Connection",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Direct LAN Connection How to connect your camera directly with your computer via an Ethernet cable The following instructions will explain to you step by step how you can create a direct LAN connection between your computer and an INSTAR IP camera. Use this approach if you want to use the camera in an area, that does not provide a network infrastructure or to if you want to configure the camera to connect to a Wifi network when you don´t have a LAN Ethernet connection available to make the initial Wifi configuration. Connect the Camera Connect the camera with a regular Ethernet cable to your PC or Notebook(Very old PCs might still need a special - Crossover - cable to make this connections). Search the Camera Install/Open the INSTAR Camera Tool which will show you the following message after clicking the ''Search'' button:(you might have to select the correct network interface to which the camera is connected to. If for example you have a VPN connection, an active bluetooth module and the regular LAN interface, then you have to select the LAN interface in order to find your IP camera. Open the camera tool and press Search. Assign a static IP to your Windows PC Open the Network- and Sharing Centre(Control Panel ->Network and Security). The interface will show you a new unidentified LAN connection. Open it´s settings by clicking Local Area Network. Go to Properties, select the Internet Protocol Version 4(TCP/IPv4) and select Properties as shown below. Open the Windows Network- and Sharing Centre and go to the LAN adapter properties. The following window will open and allow you to set a static IP address for your PC/Laptop. Submit the settings by clicking OK and return to the IP Camera Tool. Open the IPv4 properties. Please fill in a valid IP address for your computer and set it to be new networks gateway and DNS server(see below):Assign a static IP address to your PC. Assign a static IP to your Mac Open the menu System Preferences go to Network and click on Ethernet. Please choose Configure IPv4:Manually and type in a valid IP address. Use the same IP address as the Router IP. Submit the new settings with Apply and return to the IP Camera Tool. Go to the Sytem Preferences and open the Ethernet configuration. Assign a static IP to your Camera Click on ''IP Config'' and select your camera on the left side. Fill in the IP address for the camera. The address has to be in the same IP subnet you used for your computer in '''step 3''' but has to be different from the address you choose above - e.g. '''just add 1''' to the last octet(see example below)!The Gateway and DNS server will be the IP address of your computer that you set above. If you are using a class C network the standard subnet mask is(Subnet Mask:255.255.255.0). Open the IP configuration tab of the INSTAR camera tool and set a valid IP address and submit. After submitting the data the camera will restart which takes about 30 seconds. Click on Search to find the camera again and double-click die camera entry to open the WebUI inside your default browser. If you want to use a different browser, type in the camera´s IP address into your browser´s address line and press Return. You are now able to change the camera´s settings and access the live stream. Open the camera´s new IP address with your default browser. If you choose the direct connection to do the initial WLAN configuration of your camera to integrate it into an existing Wifi network, type in the WLAN information under Network/WIFi and change the cameras IP address to a free address in the IP subnet that is used inside the wireless network. The camera will then restart - please unplug the LAN cable right after submitting the new IP address to allow the camera to connect to your wireless LAN.",
+    "link": "/Quick_Installation/Direct_LAN_Connection",
+    "title2": "Direkte Verbindung mit einem PC oder Notebook",
+    "chapter": "Quick Installation",
+    "tags": ["Introduction", "Quickinstallation", "Network"],
+    "image": "/images/Search/QI_SearchThumb_DirectConnectionWithYourPC.jpg",
+    "abstract": "Direct Connection between your Computer and your Camera"
+}
+POST /wiki2_en/article
+{
+    "title": "Alternative Scanner to Find your Camera",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Use an Alternative Scanner to Find your Camera The most convenient way to connect to find your camera on your local network, is the INSTAR Camera Tool. The following alternatives should only be used if the default tool fails. Alternative IP Scanner. Angry IP scanner is a very fast open-source IP address and port scanner. It is available for Windows, MacOSX as well as Linux. Fing is an easy-to-use command line tool to keep an eye on your local IP network. The software is available for Windows, macOS and LINUX. Easily discover all the devices on your personal and professional networks from your mobile phone. Available for Android and iOS.",
+    "link": "/Quick_Installation/Alternative_IP_Scanner",
+    "title2": "Wie Sie Ihrer IP Kamera mit einem alternativen IP Scanner finden",
+    "chapter": "Quick Installation",
+    "tags": ["Introduction", "Quickinstallation", "Network"],
+    "image": "/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg",
+    "abstract": "Angry IP Scanner, Fing, Fing Mobile"
+}
+POST /wiki2_en/article
+{
+    "title": "Angry IP Scanner",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "The Angry IP Scanner Angry IP scanner is a very fast IP address and port scanner. It is cross-platform and lightweight. Not requiring any installations, it can be freely copied and used anywhere. Angry IP scanner simply pings each IP address to check if it’s alive, then optionally it is resolving its hostname, determines the MAC address, scans ports, etc. Alternative IP Scanner How to find your IP Camera in the network with an alternative IP Scanner The IP Camera Tool(Windows), IP Camera Tool(MacOSX) or IP Camera Tool(Linux) is for sure the most comfortable way to find your IP camera inside your network. Instructions on how to set up your INSTAR IP camera with the Camera Tool can be found here. If, for some reason, the IP Camera Tool does not work on your computer, here are a few other options to discover the IP address. The camera will try to receive an IP address automatically(DHCP) during the first installation. Most routers will give you a log file of fresh DHCP requests, in which you should be able to find the camera´s IP address. You should reach the cameras login portal by typing this address into the web browser´s address bar. If you do not have access to your router or if your router does not have any log files please refer to alternative IP scanners - an examples is:Angry IP Scanner(Windows/MacOSX/Linux) You can find the newest Version here for Windows/MacOSX/Linux - install and start the application, type in the IP range and start the search. Please fill out the field IP Range with the IP range that your router´s DHCP service is set to. If you do not know the IP range, then simply use the command line on Windows, type in ipconfig and check your computers IPv4 address(see screenshot below). Use this IP address in Angry IP Scanner and just change the last octet to 1 for the start IP address and 254 for the last IP address to search the complete /24 subnet. Make sure your camera is disconnected from your network and then press Start to begin the scan. You can use the ipconfig command to confirm the IP range of your network. The scanner will now display all active devices in your network(marked in blue as shown below). In the case below we have 5 active devices. The scan reveals that there are 5 active devices inside the given IP range. Now connect your camera to your router and re-run the scan. The scanner will display a new network device with the hostname ipcamera (only VGA cameras). If the Angry IP scanner does not resolve the hostname, it under Tools - Fetchers. If you are using more then one camera in your network we recommend, you only connect one camera at a time in order to differentiate them. If you are unsure which host is the camera, unplug the camera and re-scan the network. The now missing entry will reveal the cameras IP address. Once you discovered your camera´s IP address, simply copy the address by right-clicking on it and paste it into your web browsers address bar and press the Return button. Copy the IP address and paste it into your browsers address bar to load the cameras web user interface. You will now be greeted by the camera´s login page - the default credentials are username admin and the password can be left blank(or type in instar in case of a HD camera model). Congratulations!You now entered the cameras Web User Interface.",
+    "link": "/Quick_Installation/Alternative_IP_Scanner/Angry_IP_Scanner",
+    "title2": "Wie Sie Ihrer IP Kamera mit einem alternativen IP Scanner finden",
+    "chapter": "Quick Installation",
+    "tags": ["Introduction", "Quickinstallation", "Network"],
+    "image": "/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg",
+    "abstract": "Use the Angry IP Scanner to Find your Camera"
+}
+POST /wiki2_en/article
+{
+    "title": "Fing CLI",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Fing CLI Fing is the super-fast and reliable network scanning App. Find out which devices are connected to your Wi-Fi network, in just a few seconds. Fast and accurate, Fing is a professional App for network analysis. A simple and intuitive interface helps you evaluate security levels, detect intruders and resolve network issues. Alternative IP Scanner How to find your IP Camera in the network with an alternative IP Scanner The IP Camera Tool(Windows), IP Camera Tool(MacOSX) or IP Camera Tool(Linux) is for sure the most comfortable way to find your IP camera inside your network. Instructions on how to set up your INSTAR IP camera with the Camera Tool can be found here. If, for some reason, the IP Camera Tool does not work on your computer, here are a few other options to discover the IP address. The camera will try to receive an IP address automatically (DHCP) during the first installation. Most routers will give you a log file of fresh DHCP requests, in which you should be able to find the camera´s IP address. You should reach the cameras login portal by typing this address into the web browser´s address bar. If you do not have access to your router or if your router does not have any log files please refer to alternative IP scanners - an examples is:Fing CLI(Windows/MacOSX/Linux) The newest version of the freeware application Fing can be found on here for Windows/macOSX/Linux. After installation type fing into your command console to start the software:Type fing into your commandline tool to start the program. Make sure that your camera is unplugged - then scan your network. Now connect the camera to your router and re-run the scan. The camera should have received an IP address by DHCP and be listed as a network device:Let the Fing scan your network for a new active host. You can now use the camera´s IP address to access the Web User Interface with your default web browser.",
+    "link": "/Quick_Installation/Alternative_IP_Scanner/Fing_CLI",
+    "title2": "Wie Sie Ihrer IP Kamera mit einem alternativen IP Scanner finden",
+    "chapter": "Quick Installation",
+    "tags": ["Introduction", "Quickinstallation", "Network"],
+    "image": "/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg",
+    "abstract": "Use the Fing Command Line Interface to Find your Camera"
+}
+POST /wiki2_en/article
+{
+    "title": "Fing Mobile",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "The Fing Mobile App Fing is the super-fast and reliable network scanning App. Easily discover all the devices on your personal and professional networks from your mobile phone. Find out which devices are connected to your Wi-Fi network, in just a few seconds. Fast and accurate, Fing is a professional App for network analysis. A simple and intuitive interface helps you evaluate security levels, detect intruders and resolve network issues. Alternative IP Scanner How to find your IP Camera in the network with an alternative IP Scanner The IP Camera Tool(Windows), IP Camera Tool (MacOSX) or IP Camera Tool (Linux) is for sure the most comfortable way to find your IP camera inside your network. Instructions on how to set up your INSTAR IP camera with the Camera Tool can be found here. If, for some reason, the IP Camera Tool does not work on your computer, here are a few other options to discover the IP address. The camera will try to receive an IP address automatically (DHCP) during the first installation. Most routers will give you a log file of fresh DHCP requests, in which you should be able to find the camera´s IP address. You should reach the cameras login portal by typing this address into the web browser´s address bar. If you do not have access to your router or if your router does not have any log files please refer to alternative IP scanners - an examples is Fing Mobile(Android/iOS) Fing for Android The newest version of the freeware Android App Fing can be found on Google Play. After installation you will see the following interface. Let the Fing scan your network for a new active host. Make sure the camera is disconnected from your network - then start a scan. Now connect the camera and re-run the scan. The camera should show up as a new network device. Press the cameras IP address to open the advanced details. If you are using more then one camera in your network we recommend, you only connect one camera at a time in order to differentiate them. Let the Fing scan the host for active services. Please choose Scan services to discover the cameras http port - the default http port is 80. Choose the cameras web port 80.... Press the http port and choose to open the camera´s Web User Interface. ...and choose to open the address inside your default web browser. You will now be greeted by the camera´s login page - the default credentials are username admin and the password can be left blank(or type in instar in case of a HD camera model). Congratulations! You now entered the cameras WebUI. Login with the default username and password. Fing Mobile (Android/iOS) Fing for iOS The newest version of the freeware iOS App Fing can be found on the App Store. After installation you will see the following interface. Let the Fing scan your network for a new active host. Make sure the camera is disconnected from your network - then start a scan. Now connect the camera and re-run the scan. The camera should show up as a new network device. Press the cameras IP address to open the advanced details. If you are using more then one camera in your network we recommend, you only connect one camera at a time in order to differentiate them. Let the Fing scan the host for active services. Please choose Scan services to discover the cameras http port - the default http port is 80. Choose the cameras web port 80.... Press the http port and choose to open the camera´s Web User Interface. ...and choose to open the address inside your default web browser. You will now be greeted by the camera´s login page - the default credentials are username admin and the password can be left blank (or type in instar in case of a HD camera model). Congratulations! You now entered the cameras WebUI.",
+    "link": "/Quick_Installation/Alternative_IP_Scanner/Fing_Mobile",
+    "title2": "Wie Sie Ihrer IP Kamera mit einem alternativen IP Scanner finden",
+    "chapter": "Quick Installation",
+    "tags": ["Introduction", "Quickinstallation", "Network"],
+    "image": "/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg",
+    "abstract": "Use the Fing Mobile App to Find your Camera"
+}
+POST /wiki2_en/article
+{
+    "title": "Language Selection",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Language Selection How to set the Language in the Web User Interface? The new INSTAR web interface for your ip camera detects automatically what default language your web browser is using. By default the web interface will be loaded in the language which is used by your web browser. You can also click Software/Language on the left side navigation in order to select the language you would like to use. Web User Interface Language Selection::Go to Software / Language. Web User Interface Language Selection::And choose the language you want to load the user interface in.",
+    "link": "/Quick_Installation/Language_Selection",
+    "title2": "Sprachauswahl in der IP Kamera",
+    "chapter": "Quick Installation",
+    "tags": ["Introduction", "Quickinstallation", "Web User Interface", "WebUI"],
+    "image": "/images/Search/QI_SearchThumb_LanguageSettings.jpg",
+    "abstract": "Select the Language of the User Interface"
+}
+POST /wiki2_en/article
+{
+    "title": "User Account Management",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "User Account Management The three different user levels allow you to share access to your camera without the need of granting access to all camera features. Logging in with a limited user right level removes options from the web user interface you don´t want people to have access to. Please be aware that publishing your IP cam as a web cam on your website allow people to get access to your username and password. When making your camera available online always use a account with restricted user rights to keep your camera safe. Secure the Access to your IP Camera Your camera offers you three different access levels Admin This user has all rights and can change all settings. User A user can change settings concerning the cameras image but cannot change relevant system settings. Guest accounts are used for visitors and can simply display the video stream of the camera. You should use a guest login if you plan to embed the camera´s video stream inside a public website. In order to access the user menu please click System in the web interface of your IP camera and then choose the sub menu Users as shown below. We always recommend that you to set a personal password after setting up your camera. This way you make sure no one can access the video stream besides the people you grand access to. The password should consist of BIG and small letters and numbers. Please make sure the password is not longer then 12 characters in case of the VGA cameras or 30 characters in case of a HD camera. Special characters are possible but please check the characters which are not supported. After submitting the set password will be sent to the camera. After that you can sign back in with your newly created password. User Management Overlay for the HD Line Cameras. User Management Menu for the VGA Line Cameras. Default Logins HD Camera Series Admin Default Username: admin Default Password: instar User Default Username: user Default Password: instar Guest Default Username: guest Default Password: instar VGA Camera Series Admin Default Username: admin Default Password: none",
+    "link": "/Quick_Installation/Creating_User_Accounts",
+    "title2": "Benutzer Erstellen und Verwalten",
+    "chapter": "Quick Installation",
+    "tags": ["introduction", "quickinstallation", "web user interface", "webui", "installation", "default", "password", "login"],
+    "image": "/images/Search/QI_SearchThumb_CreatingUserAccounts.jpg",
+    "abstract": "User Account Management"
+}
+POST /wiki2_en/article
+{
+    "title": "Software Update",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Software Update Install the newest Firmware and Web User Interface on your IP Camera Please download the newest version of the WebUI or Firmware from our website. Go to the Download section on our website. Please select your camera model and scroll to the end of the page for the corresponding download links. Please read the instructions carefully to make an informed decision on which Software you have to download. Both updates - web user interface and firmware - can either be done through the INSTAR camera tool or the camera´s webUI and the update procedure is the same for Windows, MacOSX and LINUX respectively. Always update the Firmware first before updating the web user interface. Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software, but it still shows you the old version ? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers. VERY IMPORTANT!For VGA Cameras! Please make sure that you are selecting the correct firmware version. You can confirm your firmware version via the web user interface(system/info) or with the INSTAR camera tool. If you are currently using the firmware version starting with xx.25 or xx.22 please make sure you are only downloading updated versions that also start with xx.25 or xx.22. Never install the versions xx.35. or xx.37.! If your firmware is currently starting with xx.35 or xx.37 please make sure that you are using the firmware updates starting with xx.35 or xx.37. HD Series Firmware/WebUI Update Download the newest Firmware/WebUI from the INSTAR download page. Open the cameras web user interface and navigate to Software/Update. Click on Choose File and select the downloaded pkg file from step 1 and submit. Wait for the camera to apply the update and reload - do not unplug the camera until the update is installed!VGA Series Firmware Update Download the newest Firmware from the INSTAR download page. Open the cameras web user interface and navigate to Software/Update. Click on Choose File next to Upgrade Firmware and select the downloaded bin file from step 1 and submit. Wait for the camera to apply the update and reload - do not unplug the camera until the update is installed!WebUI Update Download the newest WebUI from the INSTAR download page. Open the cameras web user interface and navigate to Software/Update. Click on Choose File next to Upgrade WebUI and select the downloaded bin file from step 1 and submit. Wait for the camera to apply the update and reload - do not unplug the camera until the update is installed!",
+    "link": "/Quick_Installation/WebUI_And_Firmware_Upgrade",
+    "title2": "WebUI / Firmware Upgrade",
+    "chapter": "Quick Installation",
+    "tags": ["update", "installation", "web user interface", "webui", "software", "interface", "firmware"],
+    "image": "/images/Search/QI_SearchThumb_WebUIFirmwareUpgrade.jpg",
+    "abstract": "Update your Cameras Web User Interface and Firmware"
+}
+POST /wiki2_en/article
+{
+    "title": "Clear your Borwser History",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Clear your Borwser History Flush old parts of the web user interface after a WebUI update Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software, but it still shows you the old version? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers:Clear Browsing History in Internet Explorer Clear Browsing History in Mozilla Firefox Clear Browsing History in Google Chromium Clear Browsing History in Opera Clear Browsing History in Edge Clear Browsing History in Vivaldi",
+    "link": "/Quick_Installation/How_To_Clear_Your_Browsing_History",
+    "title2": "Wie leert man den Cache (Historie/Verlauf) des Browsers nach dem Update",
+    "chapter": "Quick Installation",
+    "tags": ["browser", "web user interface", "webui", "update", "history"],
+    "image": "/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg",
+    "abstract": "Clear your History after a Software Update"
+}
+POST /wiki2_en/article
+{
+    "title": "Erase your Browsing History in Internet Explorer",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Erase your Browsing History in Internet Explorer Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software, but it still shows you the old version? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers:Click on the cog wheel icon in the top right corner and choose Internet Options. In the General Tab go to Browsing History and check Clear Browsing History on Exit. Then click on Delete to open the Deletion Dialogue. Adjust the elements you want to delete(see above) and click on Delete. Wait for the Confirmation, restart your Browser and reload your camera's user interface.",
+    "link": "/Quick_Installation/How_To_Clear_Your_Browsing_History/Internet_Explorer",
+    "title2": "Wie leert man den Cache (Historie/Verlauf) des Browsers nach dem Update",
+    "chapter": "Quick Installation",
+    "tags": ["browser", "web user interface", "webui", "update", "history", "internet explorer"],
+    "image": "/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg",
+    "abstract": "Clear your Borwser History in Internet Explorer"
+}
+POST /wiki2_en/article
+{
+    "title": "Erase your Browsing History in Mozilla Firfox",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Erase your Browsing History in Mozilla Firefox Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software, but it still shows you the old version? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers:Open the Settings menu and choose Options. Go to the Privacy Tab and choose to never remember history. Then click on clear all current History. Check all options and click on Clear Now.",
+    "link": "/Quick_Installation/How_To_Clear_Your_Browsing_History/Mozilla_Firefox",
+    "title2": "Wie leert man den Cache (Historie/Verlauf) des Browsers nach dem Update",
+    "chapter": "Quick Installation",
+    "tags": ["browser", "web user interface", "webui", "update", "history", "mozilla", "firefox"],
+    "image": "/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg",
+    "abstract": "Clear your Borwser History in Mozilla Firefox"
+}
+POST /wiki2_en/article
+{
+    "title": "Erase your Browsing History in Chromium",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Erase your Browsing History in Google Chromium Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software,but it still shows you the old version? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers:Open the Options menu and choose Settings. Click on Advanced Settings and scroll down to the Privacy section. Click on Clear Browsing Data. Click on Clear Browsing Data.",
+    "link": "/Quick_Installation/How_To_Clear_Your_Browsing_History/Google_Chromium",
+    "title2": "Wie leert man den Cache (Historie/Verlauf) des Browsers nach dem Update",
+    "chapter": "Quick Installation",
+    "tags": ["browser", "web user interface", "webui", "update", "history"],
+    "image": "/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg",
+    "abstract": "Clear your Borwser History in Google Chrome"
+}
+POST /wiki2_en/article
+{
+    "title": "Erase your Browsing History in Opera",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Erase your Browsing History in Opera Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software,but it still shows you the old version? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers:Open the Options menu and choose Settings - Delete Private Data. Check the options above and click Delete.",
+    "link": "/Quick_Installation/How_To_Clear_Your_Browsing_History/Opera",
+    "title2": "Wie leert man den Cache (Historie/Verlauf) des Browsers nach dem Update",
+    "chapter": "Quick Installation",
+    "tags": ["browser", "web user interface", "webui", "update", "history", "opera"],
+    "image": "/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg",
+    "abstract": "Clear your Borwser History in Opera after a Software Update"
+}
+POST /wiki2_en/article
+{
+    "title": "Erase your Browsing History in Microsoft Edge",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Erase your Browsing History in Internet Explorer Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software, but it still shows you the old version? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers:Open the Options menu and choose Settings. Scroll down to the Privacy section and click on Clear Browsing Data. Check the options above and click on Delete.",
+    "link": "/Quick_Installation/How_To_Clear_Your_Browsing_History/Microsoft_Edge",
+    "title2": "Wie leert man den Cache (Historie/Verlauf) des Browsers nach dem Update",
+    "chapter": "Quick Installation",
+    "tags": ["browser", "web user interface", "webui", "update", "history", "microsoft", "edge"],
+    "image": "/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg",
+    "abstract": "Clear your Borwser History in Microsoft Edge after a Software Update"
+}
+POST /wiki2_en/article
+{
+    "title": "Erase your Browsing History in Vivaldi",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Erase your Browsing History in Vivaldi Sometimes your camera´s WebUI might not behave the way you want. You updated your camera´s software,but it still shows you the old version? An update should bring new functions to the user interface - but they are nowhere to be seen? Or you simply cannot change a setting? Your Browser might have cached old parts of the user interface and refuses to reload the new or updated files. Here is how you can get rid of your browsers browsing history in several common browsers:Open a new Browser Tab,click on History and Clear Browsing Data. Check the options above and click Clear Browsing Data.",
+    "link": "/Quick_Installation/How_To_Clear_Your_Browsing_History/Vivaldi",
+    "title2": "Wie leert man den Cache (Historie/Verlauf) des Browsers nach dem Update",
+    "chapter": "Quick Installation",
+    "tags": ["browser", "web user interface", "webui", "update", "history", "vivaldi"],
+    "image": "/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg",
+    "abstract": "Clear your Borwser History in Vivaldi after a Software Update"
+}
+POST /wiki2_en/article
+{
+    "title": "Wireless Connection",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Wireless First steps to set up a Wifi connection Please be aware that the camera has to be installed via LAN cable first before it can be used in your wireless network - see First Steps. Please use the included Ethernet cable to connect the camera with your router. After the camera is connected, please open the web interface of your IP camera in your default web browser. Connect the WiFi antenna to the SMA/RP-SMA on camera (only for models with removable antenna), align it vertically to your router and place the camera close to your Wifi router for the rest of the installation process. Connect the antenna to your indoor camera. Connect the antenna to your outdoor camera. HD Cameras ATTENTION: Please make sure the password does not include any special characters such as ... Please make sure that the MAC Filter function is not activated in your router. The cameras LAN module has a different MAC address then the Wifi board. If you are using the Wifi access control of your router, please deactivate it, let the camera connect and add the new MAC address to the list of trusted devices before reactivating the filter. If you have trouble connecting to the network try setting the router´s Wifi channel to channel 6 or a channel which is not being used by routers nearby. If you have the camera set to use the DHCP service be aware that it will receive a new IP address because the MAC address for the Wifi board is different from the LAN MAC address. Simply open the INSTAR camera tool to reconnect to the camera. We recommend using a static IP address if you are having difficulties connecting to the wireless network. You can set a static IP in the web user interface in Network/IP configuration. If you are using a WEP 128 Bit encryption and you encounter any problems, we recommend you to switch your encryption to WPA (AES) or WPA2 (AES or CCMP). Also avoid mixed modes like WPA/WPA2 (TKIP). Step 1: Please open the menu Network/Wifi as shown below. Open the Wifi menu in the web user interface. Step 2: Click on the Search button to activate the Wifi module and let the camera search for active 2.4GHz networks in it´s environment. Use the camera´s search function to discover available 2.4GHz Wifi networks. Step 3: Choose your Wifi network from the list and press the Join button to copy the network´s details into the cameras Wifi settings. Select your network from the list and press Join. Step 4: Now simply add your Wifi password and confirm your input. Pressing the Submit button will save the information and allow you to Test the connection. To connect the camera to your wireless network, unplug the Ethernet cable and restart it. The camera will automatically connect to your wireless network and receive a new IP address from your router by DHCP (if activated). Please add your Wifi password and click Submit to save the information. VGA Cameras ATTENTION: Please make sure that the MAC Filter function is not activated in your router. The cameras LAN module has a different MAC address then the Wifi board. If you are using the Wifi access control of your router, please deactivate it, let the camera connect and add the new MAC address to the list of trusted devices before reactivating the filter. If you have trouble connecting to the network try setting the router´s Wifi channel to channel 6 or a channel which is not being used by routers nearby. If you have the camera set to use the DHCP service be aware that it will receive a new IP address because the MAC address for the Wifi board is different from the LAN MAC address. Simply open the INSTAR camera tool to reconnect to the camera. We recommend using a static IP address if you are having difficulties connecting to the wireless network. You can set a static IP in the web user interface in Network/IP configuration. If you are using a WEP 128 Bit encryption and you encounter any problems, we recommend you to switch your encryption to WPA (AES) or WPA2 (AES or CCMP). Also avoid mixed modes like WPA/WPA2 (TKIP). Step 1: Please open the menu Network/Wifi as shown below. Open the Wifi menu in the web user interface. Step 2: Click on the Scan button twice to activate the Wifi module and let the camera search for active 2.4GHz networks in it´s environment. Use the camera´s search function to discover available 2.4GHz Wifi networks. Step 3: Choose your Wifi network from the list to automatically copy the network´s details into the cameras Wifi settings. Select your network from the list. Step 4: Now simply add your Wifi password (shared key) and press the Submit button to save the information. To connect the camera to your wireless network and unplug the Ethernet cable. The camera will automatically connect to your wireless network and receive a new IP address from your router by DHCP (if activated). Please add your Wifi password and click Submit to save the information.",
+    "link": "/Quick_Installation/Set_Up_A_Wireless_Connection",
+    "title2": "Wie stelle ich eine WLAN Verbindung her?",
+    "chapter": "Quick Installation",
+    "tags": ["wireless", "wlan", "network", "connection", "router", "wps"],
+    "image": "/images/Search/QI_SearchThumb_WLAN.jpg",
+    "abstract": "Connect your Camera to your WiFi Router"
+}
+POST /wiki/article
+{
+    "title": "The Live Video",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "Display your Cameras Video inside your Browser. Video Plugins: All INSTAR HD cameras can display their video stream inside a modern web browser (like Firefox, Chrome or Edge) without the need for a video plugin. Just activate the MJPEG mode for this - e.g. in the Multimedia/Video Menu of your 720p camera. But you will loose the h.264 video compression and might start to suffer from bandwidth bottlenecks inside your network. We hightly recommend, that you should install the Flash Video Plugin and use the h.264 videostream instead. This plugin is already installed on most systems and your camera is configured to use it by default - you should be able to see the video stream at once, after loading your cameras web user interface. Other Options: If for some reason you cannot use the Flash Video Plugin, there are three more options to display the video stream inside a web browser. You can use the Quick Time Plugin, an ActiveX Plugin (only works with Internet Explorer and Firefox) that comes with a couple of perks or use the above mentioned MJPEG mode to avoid using plugins all together. ActiveX Plugin -  Windows video plugin (IE and FF). QuickTime Plugin - Plugin for Windows and macOS. MJPEG Mode - Use this mode in Microsoft Edge. Troubleshooting The video plugin might be blocked by your Firewall or Virus scanner. The following articles will explain how to set up your security software to unblock it. Avast Internet Security, Kaspersky 2013, Kaspersky 2014, AVG Internet Security, AVIRA Antivirus Pro, F-Secure Security.",
+    "link": "/Quick_Installation/Live_Video",
+    "title2": "Das Live Video",
+    "chapter": "Quick Installation",
+    "tags": ["Live Video", "web user interface", "QuickTime", "Flash", "ActiveX", "video Plugin"],
+    "image": "/images/Search/QI_SearchThumb_LiveVideo.jpg",
+    "abstract": "Access your Camera´s Live Video"
+}
