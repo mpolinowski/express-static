@@ -6,13 +6,14 @@
         <header><% include _partials/template/_header.ejs %></header>
         <!-- Navbar-->
 
-        <!-- #############################################  Search Results Header ############################################# -->
+        <!-- #########################  Search Results Header ######################### -->
 
         <section class="slanding">
           <div class="container"
             <div class="row">
                 <% if (response.hits.total > 0) { %>
-                    <h1 class="headline">Search Results</h1>
+                    <h1 class="headline hidden-xs-down">Search Results</h1>
+                    <h2 class="headline hidden-sm-up">Results<h2>
                     <hr>
                     <br/>
                     <h2 class="subheader">Run took <%= response.took %> milliseconds</h2>
@@ -39,7 +40,9 @@
                       <div class="card-columns mb">
                           <% for(var i=0; i<response.hits.hits.length;i++){ if (i === 8) { break; } %>
                               <div class="card card-inverse shadow mt" style="background-color: #333; border-color: #333;">
-                                  <img class="card-img-top img-fluid" src="<%= response.hits.hits[i]._source.image %>" alt="Card image cap">
+                                   <a href="<%= response.hits.hits[i]._source.link %>">
+                                     <img class="card-img-top img-fluid" src="<%= response.hits.hits[i]._source.image %>" alt="Card image cap">
+                                  </a>
                                   <div class="card-block" style="height: 215px;">
                                       <h4 class="card-title"><%= response.hits.hits[i]._source.title %></h4>
                                       <p class="card-text"><%= response.hits.hits[i]._source.abstract %></p>
@@ -52,7 +55,7 @@
                     <div class="card-deck-wrapper mb">
                         <div class="card-deck">
                           <div class="card shadow">
-                            <img class="card-img-top img-fluid" src="/images/Search/P_SearchThumb_Products.jpg" alt="INSTAR Product Portfolio">
+                            <img class="card-img-top img-fluid" src="/images/banner_search_products_en.png" alt="INSTAR Product Portfolio">
                             <div class="card-block">
                               <h4 class="card-title">Products</h4>
                               <p class="card-text">Get all Information about INSTAR Products. Downloads, Technical Specifications and more.</p>
@@ -60,7 +63,7 @@
                             </div>
                           </div>
                           <div class="card shadow">
-                            <img class="card-img-top img-fluid" src="/images/Search/QI_SearchThumb_QuickInstallation.jpg" alt="INSTAR Quick Installation Guides">
+                            <img class="card-img-top img-fluid" src="/images/banner_search_quick-install_en.png" alt="INSTAR Quick Installation Guides">
                             <div class="card-block">
                               <h4 class="card-title">Quick Installation</h4>
                               <p class="card-text">Install your INSTAR camera with ease - read this guide for more information on the process.</p>
@@ -68,7 +71,7 @@
                             </div>
                           </div>
                           <div class="card shadow">
-                            <img class="card-img-top img-fluid" src="/images/Search/IA_SearchThumb_InternetAccess.jpg" alt="Access your INSTAR Camera over the Internet">
+                            <img class="card-img-top img-fluid" src="/images/banner_search_internet_access_en.png" alt="Access your INSTAR Camera over the Internet">
                             <div class="card-block">
                               <h4 class="card-title">Internet Access</h4>
                               <p class="card-text">All INSTAR cameras can be accessed from the internet - click here to learn more about DDNS, P2P &amp; Co.</p>
@@ -80,7 +83,7 @@
                       <div class="card-deck-wrapper mt">
                           <div class="card-deck">
                             <div class="card shadow">
-                              <img class="card-img-top img-fluid" src="/images/Search/MD_SearchThumb_MDSetup.jpg" alt="Motion Detection">
+                              <img class="card-img-top img-fluid" src="/images/banner_search_motion_detection_en.png" alt="Motion Detection">
                               <div class="card-block">
                                 <h4 class="card-title">Motion Detection</h4>
                                 <p class="card-text">Use your INSTAR camera to notify you, whenever someone enters the surveillance areas!</p>
@@ -88,7 +91,7 @@
                               </div>
                             </div>
                             <div class="card shadow">
-                              <img class="card-img-top img-fluid" src="/images/Search/AU_SearchThumb_ForDeveloper.jpg" alt="Advanced Users">
+                              <img class="card-img-top img-fluid" src="/images/banner_search_advanced_user_en.png" alt="Advanced Users">
                               <div class="card-block">
                                 <h4 class="card-title">Advanced User</h4>
                                 <p class="card-text">IP cameras are small computers that can be tinkered with. Advanced users, programmers... read on!</p>
@@ -96,7 +99,7 @@
                               </div>
                             </div>
                             <div class="card shadow">
-                              <img class="card-img-top img-fluid" src="/images/Search/P_SearchThumb_WebShop.jpg" alt="INSTAR Webshop">
+                              <img class="card-img-top img-fluid" src="/images/Search/P_SearchThumb_Shop.jpg" alt="INSTAR Webshop">
                               <div class="card-block">
                                 <h4 class="card-title">INSTAR Shop</h4>
                                 <p class="card-text">Interested in getting a new IP camera? Or looking for some accessories for your existing one?</p>
@@ -112,22 +115,20 @@
         </section>
         <!-- /Container -->
 
-        <!-- ############################################# Footer ############################################# -->
+      <!-- #############################################  Products ############################################# -->
 
-        <section class="footer">
+      <section class="products"><% include _partials/content/_products.ejs %></section>
+      <!-- /products -->
 
-            <div class="container">
-                <div class="row">
-                    <div class="pull-xs-right">
-                        <p class="text-muted"><small><i class="fa fa-copyright"></i> 2016 INSTAR Deutschland GmbH</small></p>
-                    </div>
-                </div> <!-- /row -->
-            </div> <!-- /container -->
+      <section class="social"><% include _partials/content/_social.ejs %></section>
+      <!-- /social -->
 
-            <% include _partials/template/_jsdefaults_NO_WRAP.ejs %>
+      <!-- ############################################# Footer ############################################# -->
 
-      </section>
-       <!-- /footer -->
+      <footer><% include _partials/template/_footer.ejs %></footer>
+
+      <% include _partials/template/_jsdefaults_NO_WRAP.ejs %>
+
 </body>
 
 </html>
