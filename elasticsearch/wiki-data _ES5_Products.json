@@ -297,29 +297,3 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_SMA-RPSMA.jpg",
     "abstract": "Antenna Connector"
 }
-POST /wiki2_en/article
-{
-    "title": "Camera Video Streaming",
-    "series": ["HD", "Indoor", "Outdoor"],
-    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
-    "description": "INSTAR HD Camera Video Streaming RTSP Streaming e.g. VLC Player To use third party software you need the direct path for the live video in order to grap the video from your camera. You can find step-by-step instructions on how to use your cameras live stream in third-party apps here. Access over your local network Please use the following path to use your camera with third party software: RTSP Stream 1: rtsp: user:password@192.168.x.x: 11 RTSP Stream 2: rtsp: user:password@192.168.x.x: 12 RTSP Stream 3: rtsp: user:password@192.168.x.x: 13 Please use your camera login for the user and password values: E.g. rtsp: admin:instar@192.168.1.25:554 11 Just substitute the “x“ according to the IP address of your camera (in case of a Netgear router the first x = 1 and and the second x = the end octet of your cameras IP). If you changed your RTSP port (standard = 554) please change the value after the IP address accordingly. Attention: To access the cameras RTSP stream through the internet you will have to forward the RTSP port (standard = 554) to your cameras IP address. See the forwarding procedure for the LAN (HTTP) Port (standard 80) for reference. Access via internet: Please use your DDNS address to remote access your cameras RTSP stream: RTSP Stream 1: rtsp: Benutzer:Kennwort@xxx.ddns-instar.de: 11 xxx = please check your personal DDNS address in the DDNS Menu. Tip: Your camera offers you 3 RTSP streams with different bitrates. Please choose stream 2 or 3 if your available bandwidth is limited or you are using a computer with limited processing power (e.g. tablet). You might encounter this problem especially when accessing your camera via the internet, since normal DSL connections have a relatively low upload rates. MJPEG JPG Streaming To use third party software you need the direct path for the live video in order to grap the video from your camera. You can find step-by-step instructions on how to use your cameras live stream in third-party apps here. Access over your local network: Please use the following path to use your camera with third party software: RTSP Stream 2: http: IP-Address:Port cgi-bin hi3510 mjpegstream.cgi?-chn=11&-usr=Benutzer&-pwd=Kennwort JPG Pfad 1: http: Benutzer:Kennwort@192.168.x.x tmpfs snap.jpg JPG Pfad 2: http: Benutzer:Kennwort@192.168.x.x tmpfs auto.jpg JPG Pfad 3: http: Benutzer:Kennwort@192.168.x.x tmpfs auto2.jpg",
-    "link": "/Products/Indoor_Cameras/IN-6014_HD/Video_Streaming",
-    "title2": "Kamera Videostreaming",
-    "chapter": "INSTAR Products",
-    "tags": ["IP Camera", "Usermanual"],
-    "image": "/images/Search/QI_SearchThumb_LiveVideo.jpg",
-    "abstract": "HD Cameras Usermanual"
-}
-POST /wiki2_en/article
-{
-    "title": "Camera Hardware Reset",
-    "series": ["HD", "Indoor", "Outdoor"],
-    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
-    "description": "INSTAR HD Camera Hardware Reset Restore your Camera´s Factory Settings In order to reset your camera (if you have lost your password), please hold the small reset button in bottom part of the cameras casing - for outdoor cameras, the reset is located on the end of the camera cable - for min. 15 seconds. Please make sure the camera is connected to the power supply and disconnected from the LAN cable. In case the reset was incomplete the camera might become unresponsive. Please repeat the reset for min. 15 s and unplug it over night from the power supply before trying to restart it again.",
-    "link": "/Products/Indoor_Cameras/IN-6014_HD/Camera_Reset",
-    "title2": "Kamera Hardware Reset",
-    "chapter": "INSTAR Products",
-    "tags": ["IP Camera", "Usermanual"],
-    "image": "/images/Search/AU_SearchThumb_ForDeveloper.jpg",
-    "abstract": "HD Cameras Usermanual"
-}

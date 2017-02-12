@@ -499,12 +499,14 @@ Download and install the public signing key:
 
 Add the following in your /etc/yum.repos.d/ directory in a file with a .repo suffix, for example elasticsearch.repo
 ```
-[elasticsearch-2.x]
-name=Elasticsearch repository for 2.x packages
-baseurl=https://packages.elastic.co/elasticsearch/2.x/centos
+[elasticsearch-5.x]
+name=Elasticsearch repository for 5.x packages
+baseurl=https://artifacts.elastic.co/packages/5.x/yum
 gpgcheck=1
-gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=1
+autorefresh=1
+type=rpm-md
 ```
 
 * **Step Two**  - Install Elasticsearch with this command:
@@ -519,14 +521,16 @@ sudo vi /etc/elasticsearch/elasticsearch.yml
 -> network.host: localhost
 ```
 
-* **Step Four** - Now start Elasticsearch:
+* **Step Four** - To configure Elasticsearch to start automatically when the system boots up, run the following commands::
 ```
-sudo systemctl start elasticsearch
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable elasticsearch.service
 ```
 
-Run the following command to start Elasticsearch automatically on boot up:
+Elasticsearch can be started and stopped as follows:
 ```
-sudo systemctl enable elasticsearch
+sudo systemctl start elasticsearch.service
+sudo systemctl stop elasticsearch.service
 ```
 
 
@@ -555,36 +559,47 @@ ___
 
 Add the following repository configuration:
 ```
-[kibana-4.5]
-name=Kibana repository for 4.5.x packages
-baseurl=http://packages.elastic.co/kibana/4.5/centos
+[kibana-5.x]
+name=Kibana repository for 5.x packages
+baseurl=https://artifacts.elastic.co/packages/5.x/yum
 gpgcheck=1
-gpgkey=http://packages.elastic.co/GPG-KEY-elasticsearch
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
 enabled=1
+autorefresh=1
+type=rpm-md
 ```
 
-* **Step Two** - Restrict outside access to Kibana:
+* **Step Two**  - Install Kibana with this command:
+```
+sudo yum install kibana
+```
+
+* **Step Three** - Set Elasticsearch Connection URL:
 ```
 sudo vi /opt/kibana/config/kibana.yml
 
--> server.host: "localhost"
+-> elasticsearch.url: "http://localhost:9200"
 ```
 
-* **Step Three** - Now start the Kibana service, and enable it:
+* **Step Four** - To configure Kibana to start automatically when the system boots up, run the following commands:
 ```
-sudo systemctl start kibana
-sudo chkconfig kibana on
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable kibana.service
 ```
-Type sudo systemctl stop kibana to stop the service.
+Kibana can be started and stopped as follows:
+```
+sudo systemctl start kibana.service
+sudo systemctl stop kibana.service
+```
 
-* **Step Four** - Use NGINX to securely access Kibana and use htpasswd to create an admin user:
+* **Step Five** - Use NGINX to securely access Kibana and use htpasswd to create an admin user:
 ```
 sudo yum -y install httpd-tools
 sudo htpasswd -c /etc/nginx/htpasswd.users admin
 ```
 Add your password.
 
-* **Step Five** - Securing Kibana in a Nginx server block:
+* **Step Six** - Securing Kibana in a Nginx server block:
 ```
 sudo vi /etc/nginx/nginx.conf
 ```
@@ -627,7 +642,7 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
 
-* **Step Six** - Once Kibana is installed, you can install Sense running the following command from your /opt/kibana folder:
+* **Step Seven** - Once Kibana is installed, you can install Sense running the following command from your /opt/kibana folder:
 ```
 ./bin/kibana plugin --install elastic/sense
 ```

@@ -201,9 +201,18 @@ POST /wiki2_en/article
 
 ################################################################ Update Field
 
-POST /wiki/article/AVXzjlPh7CL0F31EvU-m/_update
+POST /wiki2_en/article/AVXzjlPh7CL0F31EvU-m/_update
 {
   "doc": {
     "image": "/images/Search/InstarWiki_SearchThumb_HowDoesAnIPCameraWork.jpg"
   }
 }
+
+
+
+
+################################################################ DELETE
+
+DELETE /wiki2_en/article/AVXzjlPh7CL0F31EvU-m
+
+DELETE /wiki2_en

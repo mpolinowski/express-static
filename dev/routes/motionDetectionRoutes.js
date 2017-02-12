@@ -249,27 +249,27 @@ motionDetectionRouter.get('/INSTAR_Cloud/', function(req, res) {
         uplink: '/Motion_Detection/',
         ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
         headline: 'INSTAR Cloud',
-        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li>',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Motion_Detection/">Motion Detection</a></li><li class="breadcrumb-item"><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li>',
       });
   });
 
 motionDetectionRouter.get('/INSTAR_Cloud/Create_User_Account', function(req, res) {
-    res.render('./Motion_Detection/Cloud_Account', {
+    res.render('./Motion_Detection/Cloud_Create_User_Account', {
         title: 'INSTAR Cloud Account',
         uplink: '/Motion_Detection/INSTAR_Cloud/',
         ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
         headline: 'INSTAR Cloud Account',
-        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Create_User_Account/">Create User Account</a></li>',
+        breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Create_User_Account/">Create User Account</a></li>',
       });
   });
 
 motionDetectionRouter.get('/INSTAR_Cloud/Storage', function(req, res) {
-    res.render('./Motion_Detection/Cloud_Storage', {
+    res.render('./Motion_Detection/Cloud_Get_More_Cloudstorage', {
         title: 'INSTAR Cloud Storage',
         uplink: '/Motion_Detection/INSTAR_Cloud/',
         ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
         headline: 'INSTAR Cloud Storage',
-        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Storage/">Storage</a></li>',
+        breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Storage/">Storage</a></li>',
       });
   });
 
@@ -279,17 +279,17 @@ motionDetectionRouter.get('/INSTAR_Cloud/User', function(req, res) {
         uplink: '/Motion_Detection/INSTAR_Cloud/',
         ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
         headline: 'INSTAR Cloud User',
-        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/User/">User</a></li>',
+        breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/User/">User</a></li>',
       });
   });
 
 motionDetectionRouter.get('/INSTAR_Cloud/Administration', function(req, res) {
-    res.render('./Motion_Detection/Cloud_Admin', {
+    res.render('./Motion_Detection/Cloud_Administration', {
         title: 'INSTAR Cloud Admin',
         uplink: '/Motion_Detection/INSTAR_Cloud/',
         ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
         headline: 'INSTAR Cloud Admin',
-        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Administration/">Administration</a></li>',
+        breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Administration/">Administration</a></li>',
       });
   });
 
@@ -299,7 +299,7 @@ motionDetectionRouter.get('/INSTAR_Cloud/Alarm_Recordings', function(req, res) {
         uplink: '/Motion_Detection/INSTAR_Cloud/',
         ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
         headline: 'INSTAR Cloud Recordings',
-        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Alarm_Recordings/">Alarm Recordings</a></li>',
+        breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Alarm_Recordings/">Alarm Recordings</a></li>',
       });
   });
 
@@ -309,7 +309,7 @@ motionDetectionRouter.get('/INSTAR_Cloud/Camera_Sets', function(req, res) {
         uplink: '/Motion_Detection/INSTAR_Cloud/',
         ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
         headline: 'INSTAR Cloud Sets',
-        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Camera_Sets/">Camera Sets</a></li>',
+        breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Camera_Sets/">Camera Sets</a></li>',
       });
   });
 
