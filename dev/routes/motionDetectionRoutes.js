@@ -35,11 +35,41 @@ motionDetectionRouter.get('/Setup/', function(req, res) {
 
 motionDetectionRouter.get('/Alarm_Notification/', function(req, res) {
     res.render('./Motion_Detection/Alarm_Notification', {
-        title: 'Alarm Notification',
+        title: 'Alarm Notification 1080p Series',
         uplink: '/Motion_Detection/',
         ampimg: '/images/Search/MD_SearchThumb_AlarmNotification.jpg',
-        headline: 'Alarm Notification',
+        headline: 'Alarm Notification 1080p Series',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_Notification/">Alarm Notification</a></li>',
+      });
+  });
+
+motionDetectionRouter.get('/Alarm_Notification/720p_Series/', function(req, res) {
+    res.render('./Motion_Detection/Alarm_Notification_720p', {
+        title: 'Alarm Notification 720p Series',
+        uplink: '/Motion_Detection/Alarm_Notification/',
+        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification.jpg',
+        headline: 'Alarm Notification 720p Series',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_Notification/">Alarm Notification</a></li><li><a href="/Motion_Detection/Alarm_Notification/720p_Series/">720p Series</a></li>',
+      });
+  });
+
+motionDetectionRouter.get('/Alarm_Notification/VGA_Series/', function(req, res) {
+    res.render('./Motion_Detection/Alarm_Notification_VGA', {
+        title: 'Alarm Notification VGA Series',
+        uplink: '/Motion_Detection/Alarm_Notification/',
+        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification.jpg',
+        headline: 'Alarm Notification VGA Series',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_Notification/">Alarm Notification</a></li><li><a href="/Motion_Detection/Alarm_Notification/VGA_Series/">VGA Series</a></li>',
+      });
+  });
+
+motionDetectionRouter.get('/Alarm_Notification/Troubleshooting/', function(req, res) {
+    res.render('./Motion_Detection/Alarm_Notification_Troubles', {
+        title: 'Alarm Notification Troubleshooting',
+        uplink: '/Motion_Detection/Alarm_Notification/',
+        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification.jpg',
+        headline: 'Alarm Notification Troubleshooting',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_Notification/">Alarm Notification</a></li><li><a href="/Motion_Detection/Alarm_Notification/1080p_Series/">Troubleshooting</a></li>',
       });
   });
 
@@ -145,11 +175,31 @@ motionDetectionRouter.get('/SD_Card_Access/SimpleWget', function(req, res) {
 
 motionDetectionRouter.get('/Alarm_FTP_Upload/', function(req, res) {
     res.render('./Motion_Detection/Alarm_FTP_Upload', {
-        title: 'Alarm FTP Upload',
+        title: 'Alarm FTP Upload 1080p',
         uplink: '/Motion_Detection/',
         ampimg: '/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload.jpg',
-        headline: 'Alarm FTP Upload',
+        headline: 'Alarm FTP Upload 1080p',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_FTP_Upload/">Alarm FTP Upload</a></li>',
+      });
+  });
+
+motionDetectionRouter.get('/Alarm_FTP_Upload/720p_Series/', function(req, res) {
+    res.render('./Motion_Detection/Alarm_FTP_Upload_720p', {
+        title: 'Alarm FTP Upload 720p Series',
+        uplink: '/Motion_Detection/Alarm_FTP_Upload/',
+        ampimg: '/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload.jpg',
+        headline: 'Alarm FTP Upload 720p Series',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_FTP_Upload/">Alarm FTP Upload</a></li><li><a href="/Motion_Detection/Alarm_FTP_Upload/720p_Series/">720p Series</a></li>',
+      });
+  });
+
+motionDetectionRouter.get('/Alarm_FTP_Upload/VGA_Series/', function(req, res) {
+    res.render('./Motion_Detection/Alarm_FTP_Upload_VGA', {
+        title: 'Alarm FTP Upload VGA Series',
+        uplink: '/Motion_Detection/Alarm_FTP_Upload/',
+        ampimg: '/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload.jpg',
+        headline: 'Alarm FTP Upload VGA Series',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_FTP_Upload/">Alarm FTP Upload</a></li><li><a href="/Motion_Detection/Alarm_FTP_Upload/VGA_Series/">VGA Series</a></li>',
       });
   });
 
@@ -229,7 +279,7 @@ motionDetectionRouter.get('/FTP_Server_Setup/Install_FileZilla_Server/', functio
         uplink: '/Motion_Detection/FTP_Server_Setup/',
         ampimg: '/images/Search/MD_SearchThumb_FTPServerSetup.jpg',
         headline: 'FTP Filezilla Server Setup',
-        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/FTP_Server_Setup/">FTP Server Setup</a></li><li><a href="/Motion_Detection/FTP_Server_Setup/Install_FileZilla_Server/">Filezilla Installation</a></li>',
+        breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/FTP_Server_Setup/">FTP Server Setup</a></li><li><a href="/Motion_Detection/FTP_Server_Setup/Install_FileZilla_Server/">Filezilla Installation</a></li>',
       });
   });
 
