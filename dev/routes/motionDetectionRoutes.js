@@ -33,6 +33,26 @@ motionDetectionRouter.get('/Setup/', function(req, res) {
       });
   });
 
+motionDetectionRouter.get('/Setup/720p_Series/', function(req, res) {
+    res.render('./Motion_Detection/Motion_Detection_Setup_720p', {
+        title: 'Motion Detection Setup',
+        uplink: '/Motion_Detection/',
+        ampimg: '/images/Search/MD_SearchThumb_MDSetup.jpg',
+        headline: 'Motion Detection Setup',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Setup/">Setup</a></li><li><a href="/Motion_Detection/Setup/720p_Series/">720p Series</a></li>',
+      });
+  });
+
+motionDetectionRouter.get('/Setup/VGA_Series/', function(req, res) {
+    res.render('./Motion_Detection/Motion_Detection_Setup_VGA', {
+        title: 'Motion Detection Setup',
+        uplink: '/Motion_Detection/',
+        ampimg: '/images/Search/MD_SearchThumb_MDSetup.jpg',
+        headline: 'Motion Detection Setup',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Setup/">Setup</a></li><li><a href="/Motion_Detection/Setup/VGA_Series/">VGA Series</a></li>',
+      });
+  });
+
 motionDetectionRouter.get('/Alarm_Notification/', function(req, res) {
     res.render('./Motion_Detection/Alarm_Notification', {
         title: 'Alarm Notification 1080p Series',
