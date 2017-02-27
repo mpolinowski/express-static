@@ -295,7 +295,7 @@ quickInstallRouter.route('/WebUI_And_Firmware_Upgrade')
             uplink: '/Quick_Installation/',
             ampimg: '/images/Search/QI_SearchThumb_WebUIFirmwareUpgrade.jpg',
             headline: 'WebUI and Firmware Upgrade',
-            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/">WebUI and Firmware Upgrade</a></li>',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/">Software Upgrade</a></li>',
           });
       });
 
@@ -307,7 +307,7 @@ quickInstallRouter.route('/WebUI_And_Firmware_Upgrade/720p_Cameras')
             uplink: '/Quick_Installation/WebUI_And_Firmware_Upgrade/',
             ampimg: '/images/Search/QI_SearchThumb_WebUIFirmwareUpgrade.jpg',
             headline: 'VGA WebUI and Firmware Upgrade',
-            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/">WebUI and Firmware Upgrade</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/HD_Cameras/">HD Cameras</a></li>',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/">Software Upgrade</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/HD_Cameras/">HD Cameras</a></li>',
           });
       });
 
@@ -319,7 +319,7 @@ quickInstallRouter.route('/WebUI_And_Firmware_Upgrade/VGA_Cameras')
             uplink: '/Quick_Installation/WebUI_And_Firmware_Upgrade/',
             ampimg: '/images/Search/QI_SearchThumb_WebUIFirmwareUpgrade.jpg',
             headline: 'HD WebUI and Firmware Upgrade',
-            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/">WebUI and Firmware Upgrade</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/VGA_Cameras/">VGA Cameras</a></li>',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/">Software Upgrade</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/VGA_Cameras/">VGA Cameras</a></li>',
           });
       });
 
