@@ -9,10 +9,35 @@
 
       <% include ../../_partials/amp/_amp-header.ejs %>
 
-        <div class="wrap">
+          <div class="wrap mobile-down">
+              <div class="content">
+                  <section class="hero webUI">
+                      <div class="container">
+                          <div class="row">
+                              <div class="six columns">
+                                  <div class="intro-container">
+                                      <h1>The HD Web User Interface</h1>
+                                      <p class="intro">
+                                        Configure your 720p camera with your default web browser. To open your camera´s web user interface inside your local network, first install our INSTAR Camera Tool for <a href="https://www.instar.de/media/wysiwyg/Products/Software/Camera_Tool_Win/INSTAR_Camera_Tool_2.0.7.msi.zip">Windows</a>, <a href="https://itunes.apple.com/de/app/instar-camera-tool/id584435076?mt=12#">MacOS</a> or <a href="https://www.instar.de/media/wysiwyg/Products/Software/Camera_Tool_Linux/INSTAR_Camera_Tool_LINUX.zip">Linux</a>, click <strong>Search</strong> and double-click your camera.
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+                  <!-- /Hero -->
+              </div>
+              <!-- /Content -->
+          </div>
+          <!-- /Wrap -->
 
-            <article class="blade five">
-                <div class="container">
+        <div class="wrap">
+            <div class="container main">
+
+              <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
+
+                <article>
+                    <!-- article -->
 
                     <div class="row margin">
                         <h1>The HD Web User Interface</h1>
@@ -20,11 +45,16 @@
                         <amp-youtube data-videoid="doJoOxckKKs" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
                     </div>
 
+                    <div class="row margin">
+                        <h2>Plug &amp; Play</h2>
+                        <amp-youtube data-videoid="TSZZqnevU_k" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
+                    </div>
+
                     <div class="row quote-row margin">
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/Software/">
                                 <div class="two columns">
-                                    <amp-img src="/images/QL-Box_WebUI_Software.png" width="125" height="125" noloading alt="" class="quote-image shadow"></amp-img>
+                                    <amp-img src="/images/QL-Box_WebUI_Software.png" width="100" height="100" noloading class="quote-image shadow"></amp-img>
                                 </div>
                                 <div class="four columns">
                                     <p class="quote-copy">Change the language of the web user interface, reboot or reset or upload a firmware and web UI update to your camera.</p>
@@ -42,7 +72,7 @@
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/Network/">
                                 <div class="two columns">
-                                    <amp-img src="/images/QL-Box_WebUI_Network.png" width="125" height="125" noloading alt="" class="quote-image shadow"></amp-img>
+                                    <amp-img src="/images/QL-Box_WebUI_Network.png" width="100" height="100" noloading class="quote-image shadow"></amp-img>
                                 </div>
                                 <div class="four columns">
                                     <p class="quote-copy">Change your camera´s IP configuration or WiFi settings or connect it to your smartphone by scanning the DDNS, P2P or Push Service QR code with our smartphone app.</p>
@@ -65,7 +95,7 @@
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/System/">
                                 <div class="two columns">
-                                    <amp-img src="/images/QL-Box_WebUI_System.png" width="125" height="125" noloading alt="" class="quote-image shadow"></amp-img>
+                                    <amp-img src="/images/QL-Box_WebUI_System.png" width="100" height="100" noloading class="quote-image shadow"></amp-img>
                                 </div>
                                 <div class="four columns">
                                     <p class="quote-copy">Change your camera´s System settings, adjust the status and IR LEDs or the Pan, Tilt and Zoom behaviour of your camera.</p>
@@ -89,7 +119,7 @@
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/Multimedia/">
                                 <div class="two columns">
-                                    <amp-img src="/images/QL-Box_WebUI_Multimedia.png" width="125" height="125" noloading alt="" class="quote-image shadow"></amp-img>
+                                    <amp-img src="/images/QL-Box_WebUI_Multimedia.png" width="100" height="100" noloading class="quote-image shadow"></amp-img>
                                 </div>
                                 <div class="four columns">
                                     <p class="quote-copy">Adjust your video quality and the audio volume of your camera. The image settings allow you to adjust contrast, saturation and brightness of your camera.</p>
@@ -110,7 +140,7 @@
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/Alarm/">
                                 <div class="two columns">
-                                    <amp-img src="/images/QL-Box_WebUI_Alarm.png" width="125" height="125" noloading alt="" class="quote-image shadow"></amp-img>
+                                    <amp-img src="/images/QL-Box_WebUI_Alarm.png" width="100" height="100" noloading class="quote-image shadow"></amp-img>
                                 </div>
                                 <div class="four columns">
                                     <p class="quote-copy">Activate your camera´s motion or audio detection and actions to be taken in case of an alarm - like video recordings, email alerts or FTP uploads.</p>
@@ -134,7 +164,7 @@
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/Recording/">
                                 <div class="two columns">
-                                    <amp-img src="/images/QL-Box_WebUI_Recording.png" width="125" height="125" noloading alt="" class="quote-image shadow"></amp-img>
+                                    <amp-img src="/images/QL-Box_WebUI_Recording.png" width="100" height="100" noloading class="quote-image shadow"></amp-img>
                                 </div>
                                 <div class="four columns">
                                     <p class="quote-copy">All HD cameras are equipped with expandable SD card storage (up to 32 GB) that can be used to store photo series or video recordings.</p>
@@ -154,7 +184,7 @@
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/Menu_Bar/">
                                 <div class="two columns">
-                                    <amp-img src="/images/QL-Box_WebUI_Menu-Bar.png" width="125" height="125" noloading alt="" class="quote-image shadow"></amp-img>
+                                    <amp-img src="/images/QL-Box_WebUI_Menu-Bar.png" width="100" height="100" noloading class="quote-image shadow"></amp-img>
                                 </div>
                                 <div class="four columns">
                                     <p class="quote-copy">The Menu Bar is located above the live video and allows you to quickly access the SD card, take snapshots or start recordings or activate the motion detection of your camera.</p>
@@ -169,7 +199,7 @@
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/Video_Menu_Bar/">
                                 <div class="two columns">
-                                    <amp-img src="/images/QL-Box_WebUI_Video-Menu-Bar.png" width="125" height="125" noloading alt="" class="quote-image shadow"></amp-img>
+                                    <amp-img src="/images/QL-Box_WebUI_Video-Menu-Bar.png" width="100" height="100" noloading class="quote-image shadow"></amp-img>
                                 </div>
                                 <div class="four columns">
                                     <p class="quote-copy">The Video Menu Bar is a part of the ActiveX video plugin. To make use of the plugin, you have to activate it inside the Video Menu.</p>
@@ -186,7 +216,7 @@
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/PTZ_Control/">
                                 <div class="two columns">
-                                    <amp-img src="/images/QL-Box_WebUI_PTZ.png" width="125" height="125" noloading alt="" class="quote-image shadow"></amp-img>
+                                    <amp-img src="/images/QL-Box_WebUI_PTZ.png" width="100" height="100" noloading class="quote-image shadow"></amp-img>
                                 </div>
                                 <div class="four columns">
                                     <p class="quote-copy">Every camera that can be panned, tilted or have a lense with a variable focal length can be controlled directly from the user interface.</p>
@@ -200,11 +230,6 @@
                         </div>
                     </div>
                     <div class="row quote-row"></div>
-
-                    <div class="row margin">
-                        <h2>Plug &amp; Play</h2>
-                        <amp-youtube data-videoid="TSZZqnevU_k" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
-                    </div>
 
                 </div>
                 <!-- /Container -->

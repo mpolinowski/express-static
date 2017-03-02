@@ -1,7 +1,7 @@
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Language Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Language Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Language Overlay - param.cgi?cmd=set_instar_admin. Function Set the Language of the Web User Interface. Authority admin. Parameter admin_value[10] index=11; value 1 = german, 2 = english, 3 = french, 4 = chinese. Return Success, Error. Remarks See get_instar_admin and set_instar_admin. Example http admin instar@192.168.178.88 cgi bin hi3510 param.cgi cmd set_instar_admin index 11 value 2.",
     "link": "/720p_Series_CGI_List/Software_Menu/Language",
@@ -13,8 +13,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Reboot&Reset Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Reboot&Reset Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Reboot Reset Overlay. param.cgi?cmd=sysreboot. Function Reboot your camera system. Authority admin. Return Success, Error. Remarks See Sysreboot.cgi. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=sysreboot. The Reboot Reset Overlay. sysreset.cgi. Function Reset your camera system. Authority admin. Return Success, Error. Remarks See Sysreset.cgi. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 sysreset.cgi. The Reboot Reset Overlay. param.cgi?cmd=getserverinfo. Function Get Server Info. Authority admin. Return var model: Device ID;. var hardVersion: Hardware Version; var softVersion: Firmware Version; var webVersion: Web User Interface Version; var name: Device Name; var startdate: System Start Time; var upnpstatus: Upnp Status ok, off, failed; var facddnsstatus: Factory DDNS Status ok, off, failed; var th3ddnsstatus: 3rd party DDNS Status ok, off, failed; var sdstatus: SD Card Status out, ready, read-only; var sdfreespace: SD free space，KB; var sdtotalspace: SD total space，KB; Remarks See Param.cgi?cmd=getserverinfo. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getserverinfo",
     "link": "/720p_Series_CGI_List/Software_Menu/Reboot-Reset",
@@ -26,8 +26,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Backup&Restore Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Backup&Restore Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Backup Restore Overlay. backup.cgi. Function Backup your camera settings. Authority admin. Return File: config_backup.bin. Remarks See Backup.cgi (Restore.cgi). Example http: admin:instar@192.168.178.88 cgi-bin hi3510 backup.cgi",
     "link": "/720p_Series_CGI_List/Software_Menu/Backup-Restore",
@@ -39,8 +39,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Update Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Update Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Update Overlay - upgrade.cgi. Function Upgrade your camera´s Firmware and WebUI. Authority admin. Return Success, Error. Remark See Upgrade.cgi.",
     "link": "/720p_Series_CGI_List/Software_Menu/Update",
@@ -52,8 +52,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: IP Config Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "IP Config Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The IP Configuration Overlay. param.cgi?cmd=setnetattr. Function Set your Camera´s Network Configuration. Authority admin. Parameter dhcp: on (DHCP enabled), off: (DHCP disabled). ipaddr: LAN IP Address. netmask: LAN Subnet Mask. gateway: LAN Gateway. dnsstat: DNS Status: 0 (manually), 1 (from DHCP Server). fdnsip: Primary DNS. sdnsip: Secondary DNS. sethttpport: HTTP Port. setrtspport: RTSP Port. setrtspauth&-rtsp_aenable: RTSP Authentication. Return Success, Error. Remark See Param.cgi?cmd=getnetattr and Param.cgi?cmd=setnetattr. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getnetattr. http: admin:instar@192.168.178.88 param.cgi?cmd=setnetattr&-dhcp=off&-ipaddr=192.168.1.115&-netmask=255.255.255.0&-gateway=192.168.1.1&-fdnsip=8.8.8.8&cmd=sethttpport&-httpport=80&cmd=setrtspport&-rtspport=554&cmd=setrtspauth&-rtsp_aenable=1. The IP Configuration Overlay. param.cgi?cmd=getnetattr. Function Set your Camera´s Network Configuration (Without Ports changing a ports needs a camera restart). Authority admin. Parameter dhcp: on (DHCP enabled), off: (DHCP disabled). ipaddr: LAN IP Address. netmask: LAN Subnet Mask. gateway: LAN Gateway. dnsstat: DNS Status: 0 (manually), 1 (from DHCP Server). fdnsip: Primary DNS. sdnsip: Secondary DNS. Return Success, Error. Remark See Param.cgi?cmd=getnetattr and Param.cgi?cmd=setnetattr. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getnetattr. http: admin:instar@192.168.178.88 cgi-bi  hi3510 param.cgi?cmd=setnetattr&-dhcp=off&-ipaddr=192.168.1.88&-netmask=255.255.255.0&-gateway=192.168.1.1&-dnsstat=0&-fdnsip=192.168.1.1&-sdnsip=. The IP Configuration Overlay. param.cgi?cmd=gethttpport. Function Set your Camera´s HTTP Port. Authority admin. Remark See Param.cgi?cmd=gethttpport and Param.cgi?cmd=sethttpport. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=gethttpport. http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=sethttpport&-httpport=80",
     "link": "/720p_Series_CGI_List/Network_Menu/IP_Config",
@@ -65,8 +65,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: DDNS Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "DDNS Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The DDNS Overlay - param.cgi?cmd=setourddnsattr. Function Configure your Camera´s DDNS Address. Authority admin. Parameter setourddnsattr: INSTAR DDNS. set3thddnsattr: Thirdparty DDNS. enable: [1, 0]. Return Success, Error. Remark See Param.cgi?cmd=get3thddnsattr and Param.cgi?cmd=set3thddnsattr. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=get3thddnsattr. http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi. cmd=getourddnsattr. http: admin:instar@192.168.178.88 param.cgi?cmd=setourddnsattr&-our_enable=1&-our_server=ddns3-instar.de&-our_port=80&-our_uname=abcd12&-our_passwd=password&-our_domain=abcd12.ddns3-instar.de&cmd=set3thddnsattr&-d3th_enable=0. http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=set3thddnsattr&-d3th_enable=1&-d3th_service=1&-d3th_uname=sample&-d3th_passwd=1234&-d3th_domain=sample.dyndns.org",
     "link": "/720p_Series_CGI_List/Network_Menu/DDNS",
@@ -78,8 +78,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: WiFi Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "WiFi Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The WiFi Overlay - param.cgi?cmd=setwirelessattr. Function Configure your Camera´s WiFi. Authority admin. Parameter wf_enable: 1 (WiFi enabled), 0 (WiFi disabled). wf_ssid: SSID (max. 32 Characters). wf_auth: 0 (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK). wf_key: Key max. 63 Characters (Allowed special characters:  ). wf_enc: Key type 0 (TKIP), 1 (AES). wf_mode: 0 (infra), 1 (ad-hoc). Return Success, Error. Remark See Param.cgi?cmd=getwirelessattr, Param.cgi?cmd=setwirelessattr, Param.cgi?cmd=searchwireless, Param.cgi?cmd=chkwirelessattr, Param.cgi?cmd=getchkwireless. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getwirelessattr. http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setwirelessattr&-wf_ssid=linksys&-wf_enable=1&-wf_auth=2&-wf_key=1234567890&-wf_enc=0&-wf_mode=0",
     "link": "/720p_Series_CGI_List/Network_Menu/WiFi",
@@ -91,8 +91,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: P2P Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "P2P Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The P2P Overlay - param.cgi?cmd=setp2pattr. Function Configure your Camera´s P2P Service. Authority admin. Parameter p2p_enable: [1, 0]. Return Success, Error. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setp2pattr&-p2p_enable=1",
     "link": "/720p_Series_CGI_List/Network_Menu/P2P",
@@ -104,8 +104,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: UPnP Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "UPnP Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The UPnP Overlay - param.cgi?cmd=setupnpattr. Function Activate Deactivate your Camera´s UPnP Service. Authority admin. Parameter upm_enable: 0 (UPnP disabled), 1 (UPnP enabled). Return Success, Error. Remark See Param.cgi?cmd=getupnpattr, Param.cgi?cmd=setupnpattr. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getupnpattr. http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setupnpattr&-upm_enable=1",
     "link": "/720p_Series_CGI_List/Network_Menu/UPnP",
@@ -117,8 +117,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Push Service Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Push Service Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Push Service Overlay - param.cgi?cmd=setmdalarm. Function Activate Deactivate your Camera´s Push Service. Authority admin. Parameter aname=server: switch [on, off]. Return Success, Error. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setmdalarm&-aname=server&-switch=on",
     "link": "/720p_Series_CGI_List/Network_Menu/Push_Service",
@@ -130,8 +130,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Info Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Info Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Info Overlay - param.cgi?cmd=getserverinfo. Function Get Server Info. Authority admin. Return var model: Device ID; var hardVersion: Hardware Version; var softVersion: Firmware Version; var webVersion: Web User Interface Version; var name: Device Name; var startdate: System Start Time; var upnpstatus: Upnp Status ok, off, failed; var facddnsstatus: Factory DDNS Status ok, off, failed; var th3ddnsstatus: 3rd party DDNS Status ok, off, failed; var sdstatus: SD Card Status out, ready, read-only; var sdfreespace: SD free space，KB; var sdtotalspace: SD total space，KB; Remarks See Param.cgi?cmd=getserverinfo. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getserverinfo. http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getserverinfo&cmd=getsysinfo&cmd=getnetinfo&cmd=getinfrared. The Info Overlay. param.cgi?cmd=getsysinfo. Function Get INSTAR Camera Model Authority admin. Return var devid: INSTAR Camera Model. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getsysinfo. http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getserverinfo&cmd=getsysinfo&cmd=getnetinfo&cmd=getinfrared. The Info Overlay. param.cgi?cmd=getnetinfo. Function Get Network Configuration. Authority admin. Return var dhcpflag: DHCP [on, off]; var ip: LAN IP Address; var netmask: LAN Network Mask; var gateway: LAN Gateway; var dnsstat: DNS Status: 0 (manually), 1 (auto); var fdnsip: Primary DNS Server; var sdnsip: Secondary DNS Server; var macaddress: MAC (LAN or WLAN); var networktype: [LAN, WLAN]; Remarks: See also Param.cgi?cmd=getnetattr and Param.cgi?cmd=setnetattr. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getnetinfo. http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getserverinfo&cmd=getsysinfo&cmd=getnetinfo&cmd=getinfrared. The Info Overlay. param.cgi?cmd=getinfrared. Function Get IR Light Parameter. Authority admin. Return infraredstat: IR Status - auto, open or close; Remarks: See also Param.cgi?cmd=getinfrared and Param.cgi?cmd=setinfrared. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getnetinfo. http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getserverinfo&cmd=getsysinfo&cmd=getnetinfo&cmd=getinfrared",
     "link": "/720p_Series_CGI_List/System_Menu/Info",
@@ -143,8 +143,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Date&Time Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Date&Time Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Date-Time Overlay - param.cgi?cmd=getntpattr. Function Get Server Info. Authority admin. Return ntpenable: Enable (1), disable (0) NTP sync.; ntpserver: 0.de.pool.ntp.org, 1.de.pool.ntp.org, time.nist.gov, time.kriss.re.kr, time.windows.com, time.nuri.net. ntpinterval: Sync interval (1-24 hrs); Remarks See Param.cgi?cmd=getntpattr and Param.cgi?cmd=setntpattr. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setntpattr&-ntpenable=1&-ntpserver=0.de.pool.ntp.org&-ntpinterval=1&cmd=setservertime&-timezone=Europe Amsterdam&cmd=set_instar_admin&-index=50&-value=off. The Date-Time Overlay - param.cgi?cmd=get_instar_admin&-index=50. Function Get Admin Variable for Daylight Saving Time. Authority admin. Return value: [on, off]. Remarks See Param.cgi?cmd=get_instar_admin and Param.cgi?cmd=set_instar_admin. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setntpattr&-ntpenable=1&-ntpserver=0.de.pool.ntp.org&-ntpinterval=1&cmd=setservertime&-timezone=Europe Amsterdam&cmd=set_instar_admin&-index=50&-value=off",
     "link": "/720p_Series_CGI_List/System_Menu/Date-Time",
@@ -156,8 +156,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: User Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "User Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The User Overlay - param.cgi?cmd=setuserattr. Function Set Usernames and Passwords. Authority admin. Parameter at_name: User Name [admin, user, guest]. at_password: Password (max 16 bit - forbidden:). Remarks See Param.cgi?cmd=getuserattr, Param.cgi?cmd=setuserattr and Param.cgi?cmd=getuserinfo. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setuserattr&-at_username=admin&-at_newname=admin&-at_password=instar&cmd=setuserattr&-at_username=user&-at_newname=user&-at_password=instar&cmd=setuserattr&-at_username=guest&-at_newname=guest&-at_password=instar",
     "link": "/720p_Series_CGI_List/System_Menu/User",
@@ -169,8 +169,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Status LED Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Status LED Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Status LED Overlay - param.cgi?cmd=setlightattr. Function Activate Deactivate Network Status LED. Authority admin. Parameter light_enable: [on, off]. Remarks See Param.cgi?cmd=getlightattr and Param.cgi?cmd=setlightattr. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setlightattr&-light_enable=on",
     "link": "/720p_Series_CGI_List/System_Menu/Status_LED",
@@ -182,8 +182,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: IR LEDs Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "IR LEDs Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The IR LEDs Overlay - param.cgi?cmd=setinfrared. Function Set IR Light Parameter. Authority admin. Parameter infraredstat: IR Status - auto, open and close. Remarks See Param.cgi?cmd=getinfrared and Param.cgi?cmd=setinfrared. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setinfrared&-infraredstat=auto. The IR LEDs Overlay. param.cgi?cmd=setplancgi. Function Define a Time Window to Switch IR LEDs from close to auto. Authority admin. Parameter plancgi_enable_0, plancgi_enable_1: [0,1]. plancgi_time_0, plancgi_time_1: [0 - 86399] in seconds = 0:00:00 - 23:59:59 o´clock. Remarks See Param.cgi?cmd=setplancgi. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setplancgi&-plancgi_enable_0=0&-plancgi_enable_1=0. http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setplancgi&-plancgi_enable_0=1&-plancgi_enable_1=1&-plancgi_time_0=21600&-plancgi_time_1=64800",
     "link": "/720p_Series_CGI_List/System_Menu/IR_LEDs",
@@ -195,8 +195,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: ONVIF Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "ONVIF Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The ONVIF Overlay - param.cgi?cmd=setonvifattr. Function Set ONVIF Parameter. Authority admin. Parameter ov_enable: 1 (ONVIF enabled), 0 (ONVIF disabled). ov_port: ONVIF Port (8080-65536). ov_authflag: Authentification 1 (on), 0 (off). Remarks See Param.cgi?cmd=getonvifattr and Param.cgi?cmd=setonvifattr. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setonvifattr&-ov_enable=1&-ov_port=8080&-ov_authflag=1. The ONVIF Overlay - param.cgi?cmd=getserverinfo. Function Get Server Info. Authority admin. Return var model: Device ID; var hardVersion: Hardware Version; var softVersion: Firmware Version; var webVersion: Web User Interface Version; var name: Device Name; var startdate: System Start Time; var upnpstatus: Upnp Status ok, off, failed; var facddnsstatus: Factory DDNS Status ok, off, failed; var th3ddnsstatus: 3rd party DDNS Status ok, off, failed; var sdstatus: SD Card Status out, ready, read-only; var sdfreespace: SD free space，KB; var sdtotalspace: SD total space，KB; Remarks See Param.cgi?cmd=getserverinfo Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getserverinfo",
     "link": "/720p_Series_CGI_List/System_Menu/ONVIF",
@@ -208,8 +208,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: PTZ Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "PTZ Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The PTZ Overlay - param.cgi?cmd=setmotorattr. Function Set Pan&Tilt Settings. Authority admin. Parameter var panspeed: [fast (0) - slow (2)]; var tiltspeed: [fast (0) - slow (2)]; var panscan: [1-50] - Number of hscans; var tiltscan: [1-50] - Number of vscans; var movehome: [on, off] - Go to Center or Postion [initpresetindex] after Restart; var ptzalarmmask: [on, off] - Deactivate Motion Detection during Pan&Tilt; var selfdet: [on, off] - De Activate Calibration (Required for Preset Postions and PTZ Tour); var alarmpresetindex: [1-8]; - Alarmposition var initpresetindex: [1-8]; - Position after Restart. Remarks See Param.cgi?cmd=getmotorattr and Param.cgi?cmd=setmotorattr. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setmotorattr&-selfdet=on&-movehome=off&-ptzalarmmask=on&-tiltspeed=0&-panspeed=0&-tiltscan=50&-panscan=50&-value=0&-alarmpresetindex=3. The PTZ Overlay - param.cgi?cmd=settimerpreset. Function Set Pan&Tilt Settings. Authority admin. Parameter var timerpreset_enable [1, 0]; Enable Disable Parking Position. var timerpreset_interval [15 - 900]s Wait before going back to Parking Position. var timerpreset_index [1undefined - 8undefined] Assign Parking Position from saved Positions. Remarks See Param.cgi?cmd=gettimerpreset and Param.cgi?cmd=settimerpreset. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=settimerpreset&-timerpreset_enable=1&-timerpreset_interval=600&-timerpreset_index=1undefined. The PTZ Overlay. param.cgi?cmd=setmdalarm&-aname=preset. Function Activate/Deactivate Alarmpostion. Authority admin. Parameter switch: [on, off]. Remarks The alarmposition is set by the variable alarmpresetindex (see above). When activated, the PTZ Tour has to be deactivated! Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setmdalarm&-aname=preset&-switch=on. The PTZ Overlay - param.cgi?cmd=set_instar_admin&-index=46. Function Switch One-Step and Continuous Pan&Tilt. Authority admin. Parameter value: [0, 1]. Remarks See Param.cgi?cmd=get_instar_admin and Param.cgi?cmd=set_instar_admin. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=set_instar_admin&-index=46&-value=0",
     "link": "/720p_Series_CGI_List/System_Menu/PTZ",
@@ -221,8 +221,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: PTZ Tour Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "PTZ Tour Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The PTZ Tour Overlay - param.cgi?cmd=setptztour. Function Set a Pan&Tilt Tour. Authority admin. Parameter var tour_enable[0, 1] - If Active the Alarmpreset Function has to be Deactivated!; var tour_times: [1-50] Tour Repetitions; var tour_index: Positions 0-7 divided by Semicolons; var tour_interval: Resting Time on Position in Seconds [5-43200] divided by Semicolons; Remarks See Param.cgi?cmd=getptztour and Param.cgi?cmd=setptztour. If Active, the Alarmpreset Function has to be deactivated! Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setptztour&-tour_enable=1&-tour_index=0;1;2;3;4;5;6;7&-tour_interval=5;5;5;5;5;5;5;5&-tour_times=50&cmd=setmdalarm&-aname=preset&-switch=off",
     "link": "/720p_Series_CGI_List/System_Menu/PTZ_Tour",
@@ -234,8 +234,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Log Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Log Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The System Log Overlay - param.cgi?cmd=logsync. Function Get Login Data. Authority admin. Syntax cgi-bin hi3510 param.cgi[?cmd=logsync]. Remarks The CGI refreshes the log information after implementation, through the access log accesslog.txt. Note: When device restarts login will be cleared. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=logsync. http: admin:instar@192.168.178.88 log syslog.txt. The System Log Overlay. param.cgi?cmd=cleanlog. Function Clear Login Data. Authority admin. Syntax cgi-bin hi3510 param.cgi[?cmd=cleanlog&-name=]. Parameter name: clean log in info command name access. Return Success, Error. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=cleanlog&-name=sys",
     "link": "/720p_Series_CGI_List/System_Menu/Log",
@@ -247,8 +247,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Audio Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Audio Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Audio Overlay - param.cgi?cmd=setaudioinvolume. Function Set the Volume the Audio Input. Authority admin. Parameter volume: [1-100]. Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaudioinvolume. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaudioinvolume&cmd=getaudiooutvolume&cmd=getmdalarm&-aname=sound. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaudioinvolume&-volume=70. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaudioinvolume&-volume=70&cmd=setaudiooutvolume&-volume=70&cmd=setmdalarm&-aname=sound&-switch=off. The Audio Overlay - param.cgi?cmd=setaudiooutvolume. Function Set the Volume the Audio Output. Authority admin. Parameter volume: [1-100]. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaudiooutvolume. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaudioinvolume&cmd=getaudiooutvolume&cmd=getmdalarm&-aname=sound. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaudiooutvolume&-volume=70. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaudioinvolume&-volume=70&cmd=setaudiooutvolume&-volume=70&cmd=setmdalarm&-aname=sound&-switch=off. The Audio Overlay. param.cgi?cmd=setmdalarm&-aname=sound. Function De Activate Audioalarm (Noise Detection). Authority admin. Parameter switch: [on, off]. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getmdalarm&-aname=sound. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaudioinvolume&cmd=getaudiooutvolume&cmd=getmdalarm&-aname=sound. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setmdalarm&-aname=sound&-switch=on. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaudioinvolume&-volume=70&cmd=setaudiooutvolume&-volume=70&cmd=setmdalarm&-aname=sound&-switch=on. The Audio Overlay - param.cgi?cmd=setaencattr. Function Set the Audio Encoder for each Channel. Authority admin. Parameter chn: [11, 12, 13] (first, second or third video channel). aeformat: [g711a, g726] (Be aware: the g726 audio format is not widely supported. It is recommend to leave everything at g711a.). Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaencattr&-chn=11. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaudioinvolume&cmd=getaudiooutvolume&cmd=getmdalarm&-aname=sound&cmd=getaencattr&-chn=11&cmd=getaencattr&-chn=12&cmd=getaencattr&-chn=13. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaencattr&-chn=11&-aeformat=g711a. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaudioinvolume&-volume=70&cmd=setaudiooutvolume&-volume=70&cmd=setmdalarm&-aname=sound&-switch=on&cmd=setaencattr&cmd=setaencattr&-chn=11&-aeformat=g711a&cmd=setaencattr&-chn=12&-aeformat=g711a&-chn=13&-aeformat=g726",
     "link": "/720p_Series_CGI_List/Multimedia_Menu/Audio",
@@ -260,8 +260,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Video Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Video Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Video Overlay - param.cgi?cmd=setvencattr. Function Set the Video Encoder Attributes. Authority admin. Parameter Stream: chn=11 1st Stream, chn=12 2nd Stream, chn=13 3rd Stream. Bitrate: 720P：Range [32 ~ 4096 kbps], D1：Range [32 ~ 2048 kbps], CIF：Range [32 ~ 512 kbps], QCIF：Range [32 ~ 256 kbps], VGA：Range [32 ~ 2048 kbps], QVGA：Range [32 ~ 512 kbps], QQVGA：Range [32 ~ 256 kbps]. Framerate: PAL：Range [1 ~ 25], NTSC：Range [1 ~ 30]. Keyframe Interval: gop Range [2 ~ 150]. Video Encode Control: 0: fixed bit rate 1: variable bit rate. Video Encode Quality: imagegrade Range [1 ~ 6]. The smaller the value, the better the image quality. Remarks See Param.cgi?cmd=getvencattr and Param.cgi?cmd=setvencattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setvencattr&-chn=11&-bps=1536&-fps=25&-brmode=1&-imagegrade=1&-gop=50. http:  admin:instar@192.168.178.88 cgi-bin hi3510  param.cgi?cmd=getvideoattr&cmd=getvencattr&-chn=11&cmd=getvencattr&-chn=12&cmd=getvencattr&-chn=13. The Video Overlay - param.cgi?cmd=setvideoattr. Function Set the Video Attributes. Authority admin. Parameter vinorm: P: 50Hz(PAL) | N: 60Hz(NTSC). videomode: 11 HD720P Resolution: 1280x720, 12 HDQ720P Resolution: 640x352, 13 HDQQ720P Resolution: 320x176. Remarks See Param.cgi?cmd=getvideoattr and Param.cgi?cmd=setvideoattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getvideoattr, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setvideoattr&-vinorm=N, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setvideoattr&-videomode=11. The Video Overlay - param.cgi?cmd=set_instar_admin. Function Set Video Plugin and Video Resolution. Authority admin. Parameter index=33&-value=11:11:0:3 (see Param.cgi?cmd=set_instar_admin). index=43&-value=[flash, activeX,quicktime]. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=get_instar_admin, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=set_instar_admin&-index=43&-value=flash, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=set_instar_admin&-index=33&-value=11:11:0:3, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setvideoattr&-videomode=11&cmd=setvencattr&-chn=11&-bps=2048&-fps=15&-brmode=1&-imagegrade=3&-gop=20&cmd=set_instar_admin&-index=36&-value=false, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getvideoattr&cmd=getvencattr&-chn=11&cmd=getvencattr&-chn=12&cmd=getvencattr&-chn=13&cmd=get_instar_admin&-index=36&cmd=get_instar_admin&-index=43",
     "link": "/720p_Series_CGI_List/Multimedia_Menu/Video",
@@ -273,8 +273,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Image Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Image Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Image Overlay - param.cgi?cmd=setimageattr. Function Set Image Attributes. Authority admin. Parameter brightness: [0-255], saturation: [0-255]. sharpness: contrast: [0-7]. hue: [0-255]. night: Night Mode [on, off]. shutter: flip: Flip the Image [on, off]. mirror: Mirror the Image [on, off]. gc: Night illumination, value Range [0 (auto) -255]. noise: Noise Reduction [on, off]. wdr: Wide Dynamic Range [on - off]. Remarks See Param.cgi?cmd=getimageattr and Param.cgi?cmd=setimageattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510  param.cgi?cmd=getimageattr. http:  admin:instar@192.168.178.88 cgi-bin hi3510  param.cgi?cmd=setimageattr&-brightness=4&-saturation=3&-contrast=4&-flip=off&-mirror=off&-shutter=0&-sharpness=4. The Image Overlay. param.cgi?cmd=setoverlayattr. Function Set the Video Attributes. Authority admin. Parameter region: 0 (OSD Timestamp), 1 (Camera Name). show: 1 (show), 0 (hide). name: OSD Name Only English, Max. 16 Characters. Remarks See Param.cgi?cmd=getoverlayattr and Param.cgi?cmd=setoverlayattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getimageattr&cmd=getoverlayattr&-region=0&cmd=getoverlayattr&-region=1. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setoverlayattr&-region=1&-show=1&-name=MyCamera&cmd=setoverlayattr&-region=0&-show=1",
     "link": "/720p_Series_CGI_List/Multimedia_Menu/Image",
@@ -286,8 +286,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Areas Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Areas Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Areas Overlay - param.cgi?cmd=setmdattr. Function Set the Motion Detection Areas. Authority admin. Parameter name: Alarm Area [1-4], enable: [0, 1] De Activate Area, s: Sensitivity [0-100]%, x: X-Coordinate Origin [0-(1280-w)], y: Y-Coordinate Origin [0-(720-h)], w: Area Width [1-1280] Pixel, h: Area Height [1-720] Pixel, Return Success, Error, Remark See Param.cgi?cmd=getmdattr and Param.cgi?cmd=setmdattr, Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getmdattr, http:  admin:instar@192.168.178.88 param.cgi?cmd=setmdattr&-name=1&-enable=1&-s=100&-x=0&-y=0&-w=1280&-h=720&cmd=setmdattr&-name=2&-enable=0&-s=0&-x=1120&-y=0&-w=160&-h=160&cmd=setmdattr&-name=3&-enable=0&-s=0&-x=0&-y=560&-w=160&-h=160&cmd=setmdattr&-name=4&-enable=0&-s=0&-x=1120&-y=560&-w=160&-h=160",
     "link": "/720p_Series_CGI_List/Alarm_Menu/Areas",
@@ -299,8 +299,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Privacy Mask Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Privacy Mask Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Privacy Mask Overlay - param.cgi?cmd=setcover. Function Set Privacy Masks. Authority admin. Parameter region: Privacy Mask [1-4], show: [0, 1] De Activate Mask, x: X-Coordinate Origin [0-(1280-w)], y: Y-Coordinate Origin [0-(720-h)], w: Mask Width [1-1280] Pixel, h: Mask Height [1-720] Pixel. Return Success, Error. Remark See Param.cgi?cmd=getcover and Param.cgi?cmd=setcover. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getcover, http:  admin:instar@192.168.178.88 param.cgi?cmd=setcover&-region=1&-show=1&-x=379&-y=231&-w=588&-h=275&cmd=setcover&-region=2&-show=0&-x=1120&-y=0&-w=160&-h=160&cmd=setcover&-region=3&-show=0&-x=0&-y=560&-w=160&-h=160&cmd=setcover&-region=4&-show=0&-x=1120&-y=560&-w=160&-h=160",
     "link": "/720p_Series_CGI_List/Alarm_Menu/Privacy_Mask",
@@ -312,8 +312,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Actions Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Actions Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Actions Overlay. param.cgi?cmd=setmdalarm - Function Set Alarm Action Parameter. Authority admin. Parameter aname: type：Link Alarm Areas and Alarm-Input [on, off], email E-mail Alarm  Send Snapshot [on, off], snap： Save Snapshot to SD [on, off], ftpsnap：Send Snapshot to FTP Server [on, off], record：Save Video to SD [on, off], ftprec：Send Video to FTP Server [on, off], relay：Alarm Out Relay [on, off]. Return Success, Error. Remark See Param.cgi?cmd=getmdalarm and Param.cgi?cmd=setmdalarm. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getmdalarm&-aname=email&cmd=getmdalarm&-aname=emailsnap&cmd=getmdalarm&-aname=ftpsnap&cmd=getmdalarm&-aname=snap&cmd=getmdalarm&-aname=emailrec&cmd=getmdalarm&-aname=record&cmd=getmdalarm&-aname=ftprec&cmd=getmdalarm&-aname=relay&-aname=server. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setmdalarm&-aname=type&-switch=on&cmd=setmdalarm&-aname=email&-switch=on&cmd=setmdalarm&-aname=snap&-switch=on&cmd=setmdalarm&-aname=record&-switch=on&cmd=setmdalarm&-aname=ftprec&-switch=on&cmd=setmdalarm&-aname=relay&-switch=on&cmd=setmdalarm&-aname=ftpsnap&-switch=on. The Actions Overlay - param.cgi?cmd=setmdalarm. Function Set Alarm Action Parameter. Authority admin. Parameter aname: type：Link Alarm Areas and Alarm-Input [on, off], email E-mail Alarm   Send Snapshot [on, off], snap： Save Snapshot to SD [on, off], ftpsnap：Send Snapshot to FTP Server [on, off], record：Save Video to SD [on, off], ftprec：Send Video to FTP Server [on, off], relay：Alarm Out Relay [on, off]. Return Success, Error. Remark See Param.cgi?cmd=getmdalarm and Param.cgi?cmd=setmdalarm. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getmdalarm&-aname=email&cmd=getmdalarm&-aname=emailsnap&cmd=getmdalarm&-aname=ftpsnap&cmd=getmdalarm&-aname=snap&cmd=getmdalarm&-aname=emailrec&cmd=getmdalarm&-aname=record&cmd=getmdalarm&-aname=ftprec&cmd=getmdalarm&-aname=relay&-aname=server, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setmdalarm&-aname=type&-switch=on&cmd=setmdalarm&-aname=email&-switch=on&cmd=setmdalarm&-aname=snap&-switch=on&cmd=setmdalarm&-aname=record&-switch=on&cmd=setmdalarm&-aname=ftprec&-switch=on&cmd=setmdalarm&-aname=relay&-switch=on&cmd=setmdalarm&-aname=ftpsnap&-switch=on. The Actions Overlay - param.cgi?cmd=setioattr. Function Set Input Alarm Parameter. Authority admin. Parameter io_enable: Enable or Disable Alarm-Input [0,1]. io_flag: Alarm-Input Relais 0 (N.C.) or 1 (N.O.). Return Success, Error. Remark See Param.cgi?cmd=getioattr and Param.cgi?cmd=setioattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getioattr. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setioattr&-io_enable=1&-io_flag=0. The Actions Overlay - param.cgi?cmd=setrelayattr. Function Set Alarm-Out Relay Time-out. Authority admin. Parameter time: [5,10,20,30] Seconds. Return Success, Error. Remark See Param.cgi?cmd=getrelayattr and Param.cgi?cmd=setrelayattr. Use Param.cgi?cmd=setmdalarm&-aname=relay&-switch=[on,off] to De Activate the Alarm-Out Relay. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getrelayattr. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setrelayattr&-time=5. The Actions Overlay - param.cgi?cmd=setalarmsnapattr. Function Set Alarm Snapshot Quantity. Authority admin. Parameter email_snap_count: Alarm Snapshot Quantity by Email [1-8], snap_count: Alarm Snapshot Quantity to SD Card [1-8], ftp_snap_count: Alarm Snapshot Quantity to FTP Server [1-8], snap_chn: Take Snapshot from Channel [11, 12, 13]. Return Success, Error. Remark See Param.cgi?cmd=getalarmsnapattr and Param.cgi?cmd=setalarmsnapattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getalarmsnapattr. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setalarmsnapattr&-email_snap_count=8&-snap_count=8&-ftp_snap_count=8&-snap_chn=11",
     "link": "/720p_Series_CGI_List/Alarm_Menu/Actions",
@@ -325,8 +325,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Alarm Schedule Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Alarm Schedule Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Schedule Overlay - param.cgi?cmd=setscheduleex. Function Set Alarm Action Parameter. Authority admin. Parameter ename: md (alarm armed), plan (planned video recording), snap (planned photoseries). week0：Sun, week1：Mon, week2：Tue, week3：Wed, week4：Thu, week5：Fri, week6：Sat Each day is divided in 48 30min intervals. Each interval can be P (armed) or N (disabled). Return Success, Error. Remark See Param.cgi?cmd=getscheduleex and Param.cgi?cmd=setscheduleex. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getscheduleex&-ename=md. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setscheduleex&-ename=md&-week0=NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&-week1=NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&-week2=NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&-week3=NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&-week4=NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&-week5=NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&-week6=NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
     "link": "/720p_Series_CGI_List/Alarm_Menu/Schedule",
@@ -338,8 +338,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: SMTP Server Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "SMTP Server Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The SMTP Server Overlay - param.cgi?cmd=setsmtpattr. Function Set SMTP Server Parameters for the Email Notification. Authority admin. Parameter ma_server: SMTP Server Address e.g. smtp.strato.de, ma_port：SMTP Server Port e.g. 25, 587 or 465, ma_ssl: SSL Encryption 0 (Disabled), 1 (SSL), 2 (TLS) or 3 (STARTTLS), ma_logintype：Enable (1) or Disable (3) Authentication, ma_username：SMTP Server Username, ma_username：SMTP Server Password, Return Success, Error, Remark See Param.cgi?cmd=getsmtpattr and Param.cgi?cmd=setsmtpattr, Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getsmtpattr. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setsmtpattr&-ma_server=my.smtpserver.com&-ma_port=587&-ma_ssl=3&-ma_logintype=1&-ma_username=my@email.com&-ma_password=mypassword",
     "link": "/720p_Series_CGI_List/Alarm_Menu/SMTP_Server",
@@ -351,8 +351,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Email Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Email Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Email Overlay - param.cgi?cmd=setsmtpattr. Function Set the Receiver for the Email Notification. Authority admin. Parameter ma_server: SMTP Server. Address e.g. smtp.strato.de. ma_port：SMTP Server Port e.g. 25, 587 or 465. ma_ssl: SSL Encryption 0 (Disabled), 1 (SSL), 2 (TLS) or 3 (STARTTLS), ma_logintype：Enable (1) or Disable (3) Authentication, ma_username：SMTP Server Username, ma_username：SMTP Server Password, var ma_from: Sender Email Address, var ma_to: Receiver Email Address, var ma_subject: Mail Subject Line, var ma_text: Mail Content, Return Success, Error. Remark See Param.cgi?cmd=getsmtpattr and Param.cgi?cmd=setsmtpattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getsmtpattr, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setsmtpattr&-ma_from=my@email.com&-ma_to=my2nd@email.com;&-ma_subject=Alarm&-ma_text=Alarm. The Email Overlay - param.cgi?cmd=testsmtp. Function Test SMTP Parameter. Authority admin. Return 0 (successful), -1 (unknown error), -2 (no connection to server), -3 (username or password error), -4 (path error), Remark See Param.cgi?cmd=testsmtp, Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=testsmtp",
     "link": "/720p_Series_CGI_List/Alarm_Menu/Email",
@@ -364,8 +364,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: FTP Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "FTP Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The FTP Overlay - param.cgi?cmd=setftpattr. Function Set FTP Server Parameter. Authority admin. Parameter ft_server: FTP Server Address, ft_port：FTP Server Port, ft_username: FTP Username, ft_password：FTP Password, ft_mode：FTP Mode Port (0) or Passive (1), ft_dirname：FTP Directory, ft_dirmode: 0 (Create a new Folder every Day), 1 (All Files in One Directory). Return Success, Error. Remark See Param.cgi?cmd=getftpattr and Param.cgi?cmd=setftpattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getftpattr. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setftpattr&-ft_server=192.168.178.1&-ft_port=21&-ft_username=ftpuser&-ft_password=password&-ft_mode=1&-ft_dirname=. camera&-ft_autocreatedir=1&-ft_dirmode=0. The FTP Overlay - param.cgi?cmd=testftp. Function Test FTP Parameter. Authority admin. Return 0 (successful), -1 (unknown error), -2 (no connection to server), -3 (username or password error), -4 (path error). Remark See Param.cgi?cmd=testftp. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=testsmtp",
     "link": "/720p_Series_CGI_List/Alarm_Menu/FTP",
@@ -377,8 +377,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Alarm Server Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Alarm Server Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Alarm Server Overlay - cmd=setmdalarm-aname=server2. Function Activate the 3rd Alarmserver to send HTTP GET Requests. Authority admin. Parameter switch [on, off]. Return Success, Error. Remark See Param.cgi?cmd=getalarmserverattr and Param.cgi?cmd=setalarmserverattr. Only the 3rd Alarmserver is availble - Others might be used for other purposes and should not be reconfigured! You can check the other Alarmserver with the GET command above. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setmdalarm&-aname=server2&-switch=on. HD Manual WebUI Alarm Server - cmd=setalarmserverattr. Function Configure the 3rd Alarmserver. Authority admin. Parameter as_server [IP or Domain] Adress of your server, as_port [1-65536] Serverport, as_path [String], as_query1 and as_query2 Add a attributes & value to your URL, as_queryattr1 and as_queryattr2 Attribute of your variable, as_queryval1 and as_queryval2 Value of your variable, as_auth [0, 1] Activate Deactivate Authentification, as_username and as_password User login, Remark See Param.cgi?cmd=getalarmserverattr and Param.cgi?cmd=setalarmserverattr, Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setalarmserverattr&-as_index=3&-as_server=192.168.1.114&-as_port=8999&-as_path=%2FPath%2FTo%2FScripts-as_query1=1&-as_queryattr1=ir&-as_queryval1=on&-as_query2=1&-as_queryattr2=ptz&-as_queryval2=2&-as_auth=1&-as_username=admin&-as_password=admin",
     "link": "/720p_Series_CGI_List/Alarm_Menu/Alarm_Server",
@@ -390,8 +390,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Audio Alarm Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Audio Alarm Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Audio Alarm Overlay - param.cgi?cmd=setaudioalarmattr. Function Set Audio Alarm Parameter. Authority admin. Parameter aa_enable: 0 (disabled), 1 (enabled), aa_value：Detection Sensitivity [0-100], aa_time: Required Sound Duration [0-10]s. Return Success, Error. Remark See Param.cgi?cmd=getaudioalarmattr and Param.cgi?cmd=setaudioalarmattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getaudioalarmattr, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setaudioalarmattr&-aa_enable=1&-aa_value=50&-aa_time=0",
     "link": "/720p_Series_CGI_List/Alarm_Menu/Audio_Alarm",
@@ -403,8 +403,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: SD Card Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "SD Card Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The SD Card Overlay - sdfrmt.cgi. Function Format the internal SD Card. Authority admin. Return Success, Error. Remark See sdfrmt. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 sdfrmt.cgi. The SD Card Overlay - sdstop.cgi. Function Unmount the internal SD Card. Authority admin. Return Success, Error. Remark See sdstop.cgi. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 sdstop.cgi",
     "link": "/720p_Series_CGI_List/Alarm_Menu/SD_Card",
@@ -416,8 +416,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Recording Schedule Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Recording Schedule Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Schedule Overlay - param.cgi?cmd=setscheduleex. Function Set a Recording Schedule. Authority admin. Parameter ename: plan (Video Recording Plan), snap (Photoseries Recording Plan), week0：Sun, week1：Mon, week2：Tue, week3：Wed, week4：Thu, week5：Fri, week6：Sat, Each interval can be P (armed) or N (disabled), Remarks See Param.cgi?cmd=getscheduleex and Param.cgi?cmd=setscheduleex, Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getscheduleex&-ename=plan, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getscheduleex&-ename=snap, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setscheduleex&-ename=plan&-week0=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week1=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week2=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week3=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week4=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week5=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week6=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
     "link": "/720p_Series_CGI_List/Recording_Menu/Schedule",
@@ -429,8 +429,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Video Recording Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Video Recording Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Video Overlay - param.cgi?cmd=setplanrecattr. Function Set Planned Video Recording Attribute. Authority admin. Parameter planrec_enable: 1 (enable plan recording), 0 (disable plan recording). planrec_time: Recoding File Length (15-900seconds). planrec_chn: [11, 12, 13] first - third Channel. Remarks See Param.cgi?cmd=getplanrecattr and Param.cgi?cmd=setplanrecattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getplanrecattr, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getscheduleex&-ename=snap, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setplanrecattr&-planrec_enable=1&-planrec_time=600&-planrec_chn=11. Vhe Video Overlay - param.cgi?cmd=set_instar_admin&-index=44. Function Set File Length for Manual SD Recordings. Authority admin. Parameter index: 44, value: none (unlimited) - 60 (in minutes), Remarks See Param.cgi?cmd=get_instar_admin and Param.cgi?cmd=set_instar_admin. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=get_instar_admin&-index=44. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=set_instar_admin&-index=44&-value=60",
     "link": "/720p_Series_CGI_List/Recording_Menu/Video",
@@ -442,8 +442,8 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "720p CGI Commands :: Photoseries Menu",
-    "series": ["HD", "Indoor", "Outdoor"],
+    "title": "Photoseries Menu",
+    "series": ["720p", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "The Photoseries Overlay - param.cgi?cmd=setsnaptimerattrex. Function Setup a Interval Snapshot Series. Authority admin. Parameter as_enable: 1 (enable photoseries), 0 (disable photoseries). as_interval: Time Interval between Snapshots (1-86400 seconds). as_type: snap (Snapshot to SD), email (Snapshot by Email), ftp (Snapshot to FTP Server). Remarks See Param.cgi?cmd=getsnaptimerattrex and Param.cgi?cmd=setsnaptimerattrex. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getsnaptimerattrex, http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setsnaptimerattrex&-as_enable=1&-as_interval=60&-as_type=snap&cmd=setsnaptimerattrex&-as_enable=1&-as_interval=60&-as_type=email&cmd=setsnaptimerattrex&-as_enable=1&-as_interval=60&-as_type=ftp. The Photoseries Overlay - param.cgi?cmd=setalarmsnapattr. Function Create Snapshots with a fixed Name or Generate it from a Timestamp. Authority admin. Parameter snap_timer_name: Snapshot Name for Photoseries - leave Empty for Timestamp. Remarks See Param.cgi?cmd=getalarmsnapattr and Param.cgi?cmd=setalarmsnapattr. Example http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=getalarmsnapattr. http:  admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setalarmsnapattr&-snap_timer_name=snapshot",
     "link": "/720p_Series_CGI_List/Recording_Menu/Photoseries",
