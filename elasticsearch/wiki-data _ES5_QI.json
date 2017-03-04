@@ -414,3 +414,16 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WLAN.jpg",
     "abstract": "Connect your Camera to your WiFi Router"
 }
+POST /wiki2_en/article
+{
+    "title": "ONVIF",
+    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "All current INSTAR 720p IP cameras are compliant with the ONVIF Provile S Version 2.0.1 The ONVIF Service The surveillance industry has created an open standard protocol called ONVIF that allows cameras to communicate with each other and with network recording devices. ONVIF has different versions of compatibility that dictate which features can be integrated into the system. In some cases a camera can have basic video compatibility but lack the ability to do more advanced features, such as motion detection. All our IP product are 100% ONVIF compatible with version 2.0.1 of Profile S for IP security cameras. ONVIF does no policing of its standards. Sometimes companies say that a device is ONVIF compliant when it is not. How to check your ONVIF version? If you want to use your INSTAR camera with an ONVIF recording device (NVR, NAS, etc.), you will need to contact the manufacturer or retailer of the device and ask them what version of ONVIF they support. If they do not give you a version number and instead just say Profile S or ONVIF compliance with no version number, they have dodged your question. You can check the ONVIF Version of your IP camera with a Windows tool called ONVIF Device Manager. You can download it from HERE The ONVIF Device Manager Start the ONVIF Device Manager and type in your camera login. Select your camera from the list of discovered ONVIF devices inside your local network. Click on Identification and check your camera´s ONVIF Version. Make sure that all your ONVIF devices support the same standard. All current INSTAR HD IP cameras are compliant with the ONVIF Provile S version 2.0.1 The supported ONVIF version dictates the available functions. Be aware that, due to this restriction, the amount of functions can be reduced if your INSTAR camera is not suported natively by your recording device.",
+    "link": "/Quick_Installation/ONVIF/",
+    "title2": "ONVIF",
+    "chapter": "Quick Installation",
+    "tags": ["ONVIF", "network", "connection"],
+    "image": "/images/Search/QI_SearchThumb_WLAN.jpg",
+    "abstract": "Connect your Camera over the ONVIF Protocol"
+}
