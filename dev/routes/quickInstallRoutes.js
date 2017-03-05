@@ -31,7 +31,7 @@ quickInstallRouter.route('/How_Does_An_IP_Camera_Work')
             uplink: '/Quick_Installation/',
             ampimg: '/images/Search/QI_SearchThumb_HowDoesAnIPCameraWork.jpg',
             headline: 'How Does An IP Camera Work?',
-            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/How_Does_An_IP_Camera_Work/">How Does An IP Camera Work?</a></li>',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/How_Does_An_IP_Camera_Work/">How Does it Work?</a></li>',
           });
       });
 
@@ -43,7 +43,7 @@ quickInstallRouter.route('/First_Steps')
             uplink: '/Quick_Installation/',
             ampimg: '/images/Search/QI_SearchThumb_FirstStepsWithYourIPCamera.jpg',
             headline: 'First Steps to get your IP camera working',
-            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/First_Steps/">First Steps to get your IP camera working</a></li>',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/First_Steps/">First Steps</a></li>',
           });
       });
 
@@ -55,7 +55,7 @@ quickInstallRouter.route('/After_Unpacking')
             uplink: '/Quick_Installation/',
             ampimg: '/images/Search/QI_SearchThumb_AfterUnpackingYourIPCamera.jpg',
             headline: 'After unpacking your INSTAR IP Camera',
-            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/After_Unpacking/">After unpacking your INSTAR IP Camera</a></li>',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/After_Unpacking/">After Unpacking</a></li>',
           });
       });
 
@@ -67,7 +67,7 @@ quickInstallRouter.route('/Direct_LAN_Connection')
             uplink: '/Quick_Installation/',
             ampimg: '/images/Search/QI_SearchThumb_DirectConnectionWithYourPC.jpg',
             headline: 'Direct connection with a PC or Notebook',
-            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Direct_LAN_Connection/">Direct connection with a PC or Notebook</a></li>',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Direct_LAN_Connection/">Direct Connection with your PC</a></li>',
           });
       });
 
