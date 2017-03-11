@@ -19,7 +19,8 @@ var cgi720pRouter = require('./build/routes/cgi720pRoutes');
 var cgi1080pRouter = require('./build/routes/cgi1080pRoutes');
 var webUI720pRouter = require('./build/routes/webUI720pRoutes');
 var webUI1080pRouter = require('./build/routes/webUI1080pRoutes');
-var indexPHPRouter = require('./build/routes/indexPHPRouter');
+var indexPHPRouter = require('./build/routes/indexPHPRoutes');
+var testRouter = require('./build/routes/testRoutes');
 
 var app = express();
 
@@ -52,6 +53,7 @@ app.use('/1080p_Series_CGI_List/', cgi1080pRouter);
 app.use('/Web_User_Interface/720p_Series/', webUI720pRouter);
 app.use('/Web_User_Interface/1080p_Series/', webUI1080pRouter);
 app.use('/index.php/', indexPHPRouter);
+app.use('/Test/', testRouter);
 
 // Catch 404 and forward to error handler
 /* App.use(function(req, res, next) {

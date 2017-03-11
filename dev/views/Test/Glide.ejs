@@ -38,10 +38,79 @@
     </head>
 
     <body>
-        <% include _partials/template/_outdated.ejs %>
 
-        <header><% include _partials/template/_header.ejs %></header>
+    <!-- ################################# HEADER ###################################### -->
+
+      <header>
+        <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse shadow">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+              <img src="/images/INSTAR-Logo.png" class="img-fluid" style="max-height: 40px;" alt="INSTAR Deutschland GmbH"/>
+          </a>
+
+          <div class="collapse navbar-collapse" id="navContent">
+            <ul class="navbar-nav mr-auto impact hidden-md-down">
+              <li class="nav-item active">
+                  <a class="nav-link" href="/"><h4 class="logo-text" style="margin-top: -4px;">INSTAR</h4></a>
+              </li>
+              <li class="nav-item hidden-lg-down" style="padding-left: 15px;">
+                  <a class="nav-link" href="/Products"><h6><i class="fa fa-shield" aria-hidden="true"></i>&nbsp; Products</h6></a>
+              </li>
+              <li class="nav-item" style="padding-left: 10px;">
+                  <a class="nav-link" href="/Quick_Installation"><h6><i class="fa fa-bolt" aria-hidden="true"></i>&nbsp; Installation</h6></a>
+              </li>
+              <li class="nav-item" style="padding-left: 10px;">
+                  <a class="nav-link" href="/Internet_Access"><h6><i class="fa fa-cloud" aria-hidden="true"></i>&nbsp; Internet Access</h6></a>
+              </li>
+              <li class="nav-item" style="padding-left: 10px;">
+                  <a class="nav-link" href="/Motion_Detection"><h6><i class="fa fa-user-secret" aria-hidden="true"></i>&nbsp; Motion Detection</h6></a>
+              </li>
+              <li class="nav-item hidden-lg-down" style="padding-left: 10px;">
+                  <a class="nav-link" href="/Advanced_User"><h6><i class="fa fa-code" aria-hidden="true"></i>&nbsp; Advanced</h6></a>
+              </li>
+            </ul>
+            <!-- Button Navigation for Mobile -->
+            <div class="container hidden-lg-up mt">
+                <a href="/">
+                    <button class="btn btn-primary btn-lg btn-block" type="button">Home</button>
+                </a>
+                <br/>
+                <a href="/Search">
+                    <button class="btn btn-primary btn-lg btn-block" type="button">Search</button>
+                </a>
+                <br/>
+                <a href="/Products">
+                    <button class="btn btn-primary btn-lg btn-block" type="button">Products</button>
+                </a>
+                <br/>
+                <a href="/Quick_Installation">
+                    <button class="btn btn-primary btn-lg btn-block" type="button">Quick-Installation</button>
+                </a>
+                <br/>
+                <a href="/Internet_Access">
+                    <button class="btn btn-primary btn-lg btn-block" type="button">Internet Access</button>
+                </a>
+                <br/>
+                <a href="/Motion_Detection">
+                    <button class="btn btn-primary btn-lg btn-block" type="button">Motion Detection</button>
+                </a>
+                <br/>
+                <a href="/Advanced_User">
+                    <button class="btn btn-primary btn-lg btn-block" type="button">Advanced User</button>
+                </a>
+                <br/>
+            </div>
+            <form method="get" action="/Search/Results" class="form-inline my-2 my-lg-0 hidden-md-down">
+              <input type="text" name="q" autocomplete="off" class="form-control mr-sm-2" placeholder="Search Query">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
         <!-- Navbar-->
+
+    </header>
 
         <!-- #############################################  Landing ############################################# -->
 
@@ -128,7 +197,11 @@
 </div>
 <!-- /wrapper -->
 
-<% include _partials/template/_jsdefaults.ejs %>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="/javascripts/script.js"></script>
+
 <script src="/javascripts/glide.min.js"></script>
 <script>
 
