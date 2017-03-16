@@ -1,0 +1,54 @@
+<% include ../_partials/template/_head.ejs %>
+
+    <body>
+      <% include ../_partials/template/_outdated.ejs %>
+
+      <div id="wrapper">
+
+        <header><% include ../_partials/template/_header.ejs %></header>
+        <!-- Navbar-->
+
+        <!-- ############################################# Landing ############################################# -->
+
+        <section class="slanding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 offset-sm-2 text-xs-center">
+                        <h1 class="headline hidden-sm-down">For Developers</h1>
+                        <h2 class="mobile-headline hidden-md-up">Advanced User</h2>
+                        <hr>
+                        <h2 class="subheader hidden-sm-down">INSTAR IP Camera Knowledgebase</h2>
+                        <h3 class="subheader hidden-md-up">INSTAR Wiki 2.0</h3>
+                        <br/>
+                        <br/>
+                        <h2 class="subheader"><i class="fa fa-angle-double-down" aria-hidden="true"></i></h2>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /slanding -->
+
+        <!-- #############################################  Gallery ############################################# -->
+
+        <section class="container mb"><% include ../_partials/content/_gallery_advancedusers.ejs %></section>
+        <!-- /quickinstallation -->
+
+        <section class="instarvision"><% include ../_partials/content/_instarvision.ejs %></section>
+        <!-- /webui -->
+
+        <section class="social"><% include ../_partials/content/_social.ejs %></section>
+        <!-- /social -->
+
+        <!-- ############################################# Footer ############################################# -->
+
+        <footer><% include ../_partials/template/_footer.ejs %></footer>
+
+        <% include ../_partials/template/_jsdefaults.ejs %>
+
+        </div>
+
+    </body>
+
+</html>

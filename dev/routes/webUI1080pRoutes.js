@@ -6,7 +6,8 @@ webUI1080pRouter.route('/Overview')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface', {
             title: 'INSTAR Web User Interface',
-            breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li>',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface',
           });
       });
 

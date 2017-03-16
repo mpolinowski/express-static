@@ -3,22 +3,12 @@ var quickInstallRouter = express.Router();
 var appdata = require('../views/_partials/data/quickInstall.json');
 
 /* GET quickInstall page. */
-quickInstallRouter.get('/', function(req, res) {
-
-    var qiPicture = []; /* Get all Pictures from gallery.json for the gallery */
-    var qiPictureAlt = [];
-    var qiHref = [];
-    appdata.articles.forEach(function(item) {
-        qiPicture = qiPicture.concat(item.qiPic);
-        qiPictureAlt = qiPictureAlt.concat(item.qiPicAlt);
-        qiHref = qiHref.concat(item.qiUrl);
-      });
-
+quickInstallRouter.route('/')
+    .get(function(req, res) {
     res.render('./Quick_Installation/Quick_Installation', {
         title: 'Quick Installation',
-        qiPic: qiPicture,
-        qiPicAlt: qiPictureAlt,
-        qiUrl: qiHref,
+        ampimg: '/images/Search/QI_SearchThumb_HowDoesAnIPCameraWork.jpg',
+        headline: 'Quick Installation',
         breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Quick_Installation/">Quick Installation</a></li>',
       });
   });

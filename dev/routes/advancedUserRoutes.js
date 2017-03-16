@@ -4,22 +4,10 @@ var appdata = require('../views/_partials/data/advancedUser.json');
 
 /* GET Internet_Access page. */
 advancedUserRouter.get('/', function(req, res) {
-
-    var mdPicture = []; /* Get all Pictures from gallery.json for the gallery */
-    var mdPictureAlt = [];
-    var mdHref = [];
-    appdata.articles.forEach(function(item) {
-        mdPicture = mdPicture.concat(item.mdPic);
-        mdPictureAlt = mdPictureAlt.concat(item.mdPicAlt);
-        mdHref = mdHref.concat(item.mdUrl);
-      });
-
     res.render('./Advanced_User/Advanced_User', {
         title: 'Advanced User',
-        mdPic: mdPicture,
-        mdPicAlt: mdPictureAlt,
-        mdUrl: mdHref,
-        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li>',
+        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+        headline: 'For Developers',
       });
   });
 
@@ -66,7 +54,8 @@ advancedUserRouter.get('/Website_Integration/HD_Camera_Integration', function(re
 advancedUserRouter.get('/CGI_Commands/', function(req, res) {
     res.render('./Advanced_User/CGI_Commands', {
         title: 'CGI Commands',
-        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>',
+        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+        headline: 'CGI Commands',
       });
   });
 

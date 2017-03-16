@@ -6,17 +6,9 @@ indexRouter.route('/')
     .get(function(req, res) {
         res.render('Index', {
             title: 'INSTAR Wiki',
-            breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li>',
+            ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+            headline: 'INSTAR IP Camera and Network Technology Knowledgebase',
           });
       });
-
-
-      /* GET home page. */
-      indexRouter.route('/Glide')
-          .get(function(req, res) {
-              res.render('Glide', {
-                  title: 'Glide.js Demo',
-                });
-            });
 
 module.exports = indexRouter;

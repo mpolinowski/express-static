@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="/teststatic/amp_favicon.png">
     <link rel="canonical" href="/Test/ampHome/">
 
-    <link rel="manifest" href="/teststatic/manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="apple-touch-icon" sizes="120x120" href="/teststatic/icons/120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/teststatic/icons/152.png">
@@ -34,44 +33,14 @@
     </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 
-<body class="home">
+<body>
 
     <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
         <% include ./_ampSidebar.ejs %>
     </amp-sidebar>
 
     <header class="header fixed">
-
-        <div class="container">
-            <div class="nav-container">
-                <div class="left-nav alt">
-                    <a href="/" class="tab header-title"><span></span></a>
-                    <% include ./_ampNavTabs.ejs %>
-                </div>
-                <div class="right alt">
-                    <form action="https://46.4.116.112/Search/Results" method="get" class="searchbar" target="_blank">
-                        <input class="query" name="q" type="text">
-                        <button type="submit"></button>
-                    </form>
-                    <div class="language desktop">
-                        <amp-accordion>
-                            <section>
-                                <h6 class="current">
-                                  <a class="flag-en"><span>English&nbsp;</span></a>
-                                </h6>
-                                <div class="others">
-                                    <div class="others-inner">
-                                        <div><a href="#" class="flag-de"><span>Deutsch</span></a></div>
-                                        <div><a href="#" class="flag-fr"><span>Français</span></a></div>
-                                        <div><a href="#" class="flag-zh_CN"><span>中文</span></a></div>
-                                    </div>
-                                </div>
-                            </section>
-                        </amp-accordion>
-                    </div> <button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button>
-                </div>
-            </div>
-        </div>
+        <% include ./_ampHeader.ejs %>
     </header>
 
     <div class="wrap">
@@ -111,7 +80,8 @@
                             <p class="intro">
                               This Database is maintained by INSTAR Germany GmbH and aims to guide you through the process of installing IP cameras and network surveillance Hardware and Software. Use the Wiki Search function to find answers to your questions. Or visit our customer Forum to exchange your experiences with like-minded INSTAR customers.
                             </p>
-                            <a class="button" href="https://forum.instar.de" target="_blank">Customer Forum</a>
+                            <a class="btn" href="https://forum.instar.de" target="_blank">Customer Forum</a>
+                            <br class="tablet-down">
                             <br class="tablet-down">
                             <span class="cta_connector light">or</span>
                             <a class="underlined cta" href="https://instar.de" target="_blank">Visit our Shop</a>
@@ -138,7 +108,7 @@
                             </amp-img>
                         </div>
                         <div class="introduction-content">
-                            <h3 class="title">Product Documentation</h3>
+                            <h3 class="title">Documentation</h3>
                             <div class="desc">The product section of this database contains detailed product descriptions, technical specifications, usermanuals, quick installation guides as well as software downloads.</div>
                         </div>
                     </div>
@@ -154,17 +124,6 @@
                         </div>
                     </div>
 
-                    <div class="introduction">
-                        <div class="introduction-image">
-                            <amp-img noloading height=92 width=77 layout=responsive src="/teststatic/home_icon_flexibility.svg">
-                            </amp-img>
-                        </div>
-                        <div class="introduction-content">
-                            <h3 class="title">For Developers</h3>
-                            <div class="desc">Do you want to take your IP camera to the next step? Embedd your camera image into your website or programm your home automation to control your camera.</div>
-                        </div>
-                    </div>
-
                 </div>
             </section>
 
@@ -173,10 +132,10 @@
             <section class="large-cta">
                 <h1>InstarVision Surveillance Solution</h1>
                 <p>INSTAR offers a solution for every sureveillance task and supports a variety of third-party solutions.</p>
-                <a href="/Software/Windows/" class="button light"><span>Windows</span></a>
-                <a href="/Software/macOS/" class="button light"><span>macOS</span></a>
-                <a href="/Software/Android/" class="button light"><span>Android</span></a>
-                <a href="/Software/iOS/" class="button light"><span>iOS</span></a>
+                <a href="/Software/Windows/" class="btn btnWhite"><span>Windows</span></a>
+                <a href="/Software/macOS/" class="btn btnWhite"><span>macOS</span></a>
+                <a href="/Software/Android/" class="btn btnWhite"><span>Android</span></a>
+                <a href="/Software/iOS/" class="btn btnWhite"><span>iOS</span></a>
             </section>
 
             <!-- ########################## Quick Installation I ############################### -->
@@ -298,10 +257,11 @@
             <!-- ########################## WebUI ############################### -->
 
             <section class="large-cta orange">
-                <h1>The Web User Interface</h1>
-                <a href="/Web_User_Interface/1080p_Series/" class="button"><span>1080p Series</span></a>
-                <a href="/Web_User_Interface/720p_Series/" class="button"><span>720p Series</span></a>
-                <a href="/Web_User_Interface/1080p_Series/Overview/" class="button"><span>VGA Series</span></a>
+                <h1>Web User Interface</h1>
+                <p>Control your INSTAR IP camera from your default web browser - from your home network or over the internet.</p>
+                <a href="/Web_User_Interface/1080p_Series/" class="btn"><span>1080p Series</span></a>
+                <a href="/Web_User_Interface/720p_Series/" class="btn"><span>720p Series</span></a>
+                <a href="/Web_User_Interface/1080p_Series/Overview/" class="btn"><span>VGA Series</span></a>
             </section>
 
             <!-- ########################## Motion Detection ############################### -->
@@ -537,12 +497,13 @@
 
             <!-- ########################## Products ############################### -->
 
-            <section class="social margin">
-                <h1>Social Links</h1>
-                <a href="https://www.youtube.com/user/INSTARTV/videos" class="button light"><span>Youtube</span></a>
-                <a href="https://www.facebook.com/instar.deutschland" class="button light"><span>Facebook</span></a>
-                <a href="https://plus.google.com/107644944363434934689" class="button light"><span>Google Plus</span></a>
-                <a href="http://www.instar.de/contact_us/" class="button light"><span>Email Support</span></a>
+            <section class="social">
+                <h1>Contact Us</h1>
+                <a href="https://twitter.com/INSTAR_DE/with_replies" class="btn btnWhite"><span>Twitter</span></a>
+                <a href="https://www.facebook.com/instar.deutschland" class="btn btnWhite"><span>Facebook</span></a>
+                <a href="https://plus.google.com/107644944363434934689" class="btn btnWhite"><span>Google+</span></a>
+                <a href="https://www.youtube.com/user/INSTARTV/videos" class="btn btnWhite"><span>Youtube</span></a>
+                <a href="http://www.instar.de/contact_us/" class="btn btnWhite"><span>Email</span></a>
             </section>
 
             <!-- ########################## Footer ############################### -->

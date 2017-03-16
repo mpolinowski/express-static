@@ -4,22 +4,10 @@ var appdata = require('../views/_partials/data/internetAccess.json');
 
 /* GET Internet_Access page. */
 internetAccessRouter.get('/', function(req, res) {
-
-    var iaPicture = []; /* Get all Pictures from gallery.json for the gallery */
-    var iaPictureAlt = [];
-    var iaHref = [];
-    appdata.articles.forEach(function(item) {
-        iaPicture = iaPicture.concat(item.iaPic);
-        iaPictureAlt = iaPictureAlt.concat(item.iaPicAlt);
-        iaHref = iaHref.concat(item.iaUrl);
-      });
-
     res.render('./Internet_Access/Internet_Access', {
         title: 'Internet Access',
-        iaPic: iaPicture,
-        iaPicAlt: iaPictureAlt,
-        iaUrl: iaHref,
-        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Internet_Access/">Access your Camera over the Internet</a></li>',
+        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+        headline: 'Access your IP Camera over the Internet',
       });
   });
 
