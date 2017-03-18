@@ -507,7 +507,7 @@ amp-youtube, amp-vimeo {
 }
 
 .header .alt.right {
-    font-size: 15px
+    font-size: 15px;
 }
 
 .header .tabs {
@@ -959,7 +959,7 @@ amp-sidebar .language .others .others-inner div {
 .large-cta {
     background: -webkit-linear-gradient(54deg, #0dd3ff, #0389ff, #0275d8);
     background: linear-gradient(36deg, #0dd3ff, #0389ff, #0275d8);
-    padding: 100px 0;
+    padding: 100px 0px;
     position: relative;
     text-align: center
 }
@@ -969,6 +969,13 @@ amp-sidebar .language .others .others-inner div {
     margin: 0 auto 50px;
     max-width: 600px;
     margin-top: -30px
+}
+
+@media only screen and (max-width: 555px) {
+    .large-cta .btn, .large-cta .btnWhite, .social .btnWhite {
+      display: block;
+      margin: 10px 10px;
+    }
 }
 
 .large-cta.orange {
@@ -1484,6 +1491,12 @@ amp-sidebar .return-button::before {
     max-width: 1440px;
 }
 
+@media only screen and (max-width: 956px) {
+    .hero {
+      margin-bottom: 70px;
+    }
+}
+
 .hero .container {
     position: relative;
     display: -webkit-box;
@@ -1656,10 +1669,6 @@ amp-sidebar .return-button::before {
     margin: 0 auto 30px
 }
 
-.large-cta {
-    padding: 130px 0 100px 0
-}
-
 .wrap section {
     padding: 100px 0 60px 0
 }
@@ -1811,7 +1820,7 @@ amp-img.placeholder {
 
 footer {
     padding: 0px 0 0px 0px;
-    background-color: #fff
+    background-color: #fff;
 }
 
 footer p {
@@ -1831,12 +1840,19 @@ footer .footer-text {
     font-size: 10px;
 }
 
+.flex-box {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .footer-card {
     background: #fff;
     margin-bottom: 0px;
     padding-left: 6px;
     padding-right: 12px;
     padding-top: 20px;
+    flex-grow: 1;
 }
 
 .footer-card-content {
@@ -1870,7 +1886,7 @@ footer .footer-text {
     overflow: hidden;
     position: relative;
     vertical-align: top;
-    width: 230px;
+    width: 300px;
     height: 210px;
     padding-top: 10px;
     text-align: right;
