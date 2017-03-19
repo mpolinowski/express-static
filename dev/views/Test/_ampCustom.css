@@ -1900,3 +1900,23 @@ footer .footer-text {
     display: inline;
     margin: 0;
 }
+
+.articleListItem {
+  display: flex;
+}
+
+.articleImage {
+  flex-grow: 1;
+  min-width: 150px;
+  min-height: 150px;
+  margin: 20px 20px 0 0;
+}
+
+.articlePreview {
+  flex-grow: 3;
+  text-decoration: none;
+  text-transform: none;
+  color: #000;
+  text-align: justify;
+  line-height: 150%;
+}
