@@ -5,27 +5,14 @@ var appdata = require('../views/_partials/data/cameras.json');
 
 
 /* ****************************************** GET /Indoor_Cameras ****************************************** */
-indoorCamsRouter.get('/', function(req, res) {
-
-    /* Get all Pictures from cameras.json for the gallery */
-
-    var indoorPicture = [];
-    var indoorPictureAlt = [];
-    var indoorHref = [];
-    appdata.articles.forEach(function(item) {
-        indoorPicture = indoorPicture.concat(item.indoorPic);
-        indoorPictureAlt = indoorPictureAlt.concat(item.indoorPicAlt);
-        indoorHref = indoorHref.concat(item.indoorUrl);
-      });
-
-    res.render('./Indoor_Cams/Indoor_Cameras', {
-        title: 'INSTAR Indoor IP Cameras',
-        indoorPic: indoorPicture,
-        indoorPicAlt: indoorPictureAlt,
-        indoorUrl: indoorHref,
-        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Indoor_Cameras/">Indoor Cameras</a></li>',
-      });
-  });
+indoorCamsRouter.route('/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/Indoor_Cameras', {
+          title: 'INSTAR Indoor IP Cameras',
+          ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
+          headline: 'INSTAR Products Indoor IP Cameras',
+        });
+    });
 
 
 /* ###################################################### IN-8015 HD ###################################################### */

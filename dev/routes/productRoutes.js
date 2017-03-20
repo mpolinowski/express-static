@@ -6,15 +6,17 @@ productRouter.route('/')
   .get(function(req, res) {
       res.render('./Products/Products', {
           title: 'INSTAR Products',
-          breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li>',
+          ampimg: '/images/Search/P_SearchThumb_Products.jpg',
+          headline: 'INSTAR Products',
         });
     });
-	
+
 productRouter.route('/Usermanuals')
   .get(function(req, res) {
       res.render('./Products/Usermanuals', {
           title: 'INSTAR Products Usermanuals',
-          breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Products/Usermanuals/">Usermanuals</a></li>',
+          ampimg: '/images/Search/P_SearchThumb_Products.jpg',
+          headline: 'INSTAR Products',
         });
     });
 
@@ -31,7 +33,7 @@ productRouter.route('/Lenses')
 .get(function(req, res) {
   res.render('./Products/Lenses', {
       title: 'Camera Lenses',
-	  uplink: '/Products/',
+	    uplink: '/Products/',
       ampimg: '/images/Search/P_SearchThumb_Products.jpg',
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Products/">Products</a></li><li><a href="/Products/Lenses/">Lenses</a></li>',
