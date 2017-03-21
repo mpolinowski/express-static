@@ -1,3 +1,4 @@
+<style amp-custom>
 a.underlined, .card-container.grid .card-link p {
     -webkit-hyphens: manual;
     -ms-hyphens: manual;
@@ -371,28 +372,66 @@ a.underlined.cta:hover::before, .card-container.grid .card-link p.cta:hover::bef
 }
 
 .btnTwitter {
-  background:url(../images/Social-Buttons-twitter.png);
+  background:url(/images/Social-Buttons-twitter.png);
   background-repeat: no-repeat;
 }
 
 .btnFacebook {
-  background:url(../images/Social-Buttons-facebook.png);
+  background:url(/images/Social-Buttons-facebook.png);
   background-repeat: no-repeat;
 }
 
 .btnGoogle {
-  background:url(../images/Social-Buttons-google.png);
+  background:url(/images/Social-Buttons-google.png);
   background-repeat: no-repeat;
 }
 
 .btnYoutube {
-  background:url(../images/Social-Buttons-youtube.png);
+  background:url(/images/Social-Buttons-youtube.png);
   background-repeat: no-repeat;
 }
 
 .btnEmail {
-  background:url(../images/Social-Buttons-email.png);
+  background:url(/images/Social-Buttons-email.png);
   background-repeat: no-repeat;
+}
+
+.btnChapter {
+  padding: 0 5px;
+  border: 0;
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+}
+
+.btnDev {
+  background:url(/images/Chapter-Buttons-developers.png);
+  background-repeat: no-repeat;
+  min-height: 100px;
+}
+
+.btnInstall {
+  background:url(/images/Chapter-Buttons-installation.png);
+  background-repeat: no-repeat;
+  min-height: 100px;
+}
+
+.btnProduct {
+  background:url(/images/Chapter-Buttons-products.png);
+  background-repeat: no-repeat;
+  min-height: 100px;
+}
+
+.btnMotion {
+  background:url(/images/Chapter-Buttons-alarm.png);
+  background-repeat: no-repeat;
+  min-height: 100px;
+}
+
+.btnRemote {
+  background:url(/images/Chapter-Buttons-remote.png);
+  background-repeat: no-repeat;
+  min-height: 100px;
 }
 
 .btn:hover, .btn:active, .btn:focus {
@@ -1361,6 +1400,10 @@ amp-carousel .card-container {
     }
 }
 
+.card-youtube {
+  margin: 50px 40px;
+}
+
 .searchbar {
     position: absolute;
     right: 175px;
@@ -1990,3 +2033,4 @@ footer .footer-text {
   text-align: justify;
   line-height: 150%;
 }
+</style>

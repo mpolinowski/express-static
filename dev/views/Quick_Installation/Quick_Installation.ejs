@@ -28,22 +28,19 @@
         "image": [ "http://wiki.instar.com<%= ampimg %>" ] }
   </script>
 
-  <% include ./_partials/amp/_amp-boilerplate.css %>
-
-  <style amp-custom>
-      <% include ./_partials/amp/_ampLandingCustom.css %>
-  </style>
+  <% include ../_partials/amp/_amp-boilerplate.css %>
+  <% include ../_partials/amp/_ampLandingCustom.css %>
 
 </head>
 
 <body>
 
     <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
-        <% include ./_partials/amp/_ampLandingSidebar.ejs %>
+        <% include ../_partials/amp/_ampLandingSidebar.ejs %>
     </amp-sidebar>
 
     <header class="header fixed">
-        <% include ./_partials/amp/_ampLandingHeader.ejs %>
+        <% include ../_partials/amp/_ampLandingHeader.ejs %>
     </header>
 
     <div class="wrap">
@@ -358,12 +355,14 @@
 
             <!-- ########################## Related ############################### -->
 
-            <section class="social mobile-down margin">
+            <section class="social mobile-down">
                 <h1>Related Chapters</h1>
-                <a href="/Products/" class="btn btnWhite">Products</a>
-                <a href="/Motion_Detection/" class="btn btnWhite">Alarm</a>
-                <a href="/Internet_Access/" class="btn btnWhite">Remote Access</a>
-                <a href="/Advanced_User/" class="btn btnWhite">Developers</a>
+                <div class="socialBox">
+                  <a href="/Products/" class="btn btnWhite btnChapter btnProduct"></a>
+                  <a href="/Motion_Detection/" class="btn btnWhite btnChapter btnMotion"></a>
+                  <a href="/Internet_Access/" class="btn btnWhite btnChapter btnRemote"></a>
+                  <a href="/Advanced_User/" class="btn btnWhite btnChapter btnDev"></a>
+                </div>
             </section>
 
             <!-- ########################## Footer ############################### -->

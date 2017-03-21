@@ -1,96 +1,210 @@
-<% include ../_partials/template/_head.ejs %>
+<!DOCTYPE html>
+<html ⚡ lang="en">
 
-    <body>
-      <% include ../_partials/template/_outdated.ejs %>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="INSTAR Wiki - IP Camera Knowledge Base">
+  <meta name="author" content="Mike Polinowski">
+  <title>
+      <%= title %>
+  </title>
+  <link rel="canonical" href="/Software/Android/">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
-      <div id="wrapper">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
-        <header><% include ../_partials/template/_header.ejs %></header>
-        <!-- Navbar-->
+  <!-- http://schema.org/TechArticle -->
+  <script type="application/ld+json">
+      { "@context": "http://schema.org",
+        "@type": "TechArticle",
+        "headline": "<%= headline %>",
+        "image": [ "http://wiki.instar.com<%= ampimg %>" ] }
+  </script>
 
-        <!-- ############################################# Landing ############################################# -->
+  <% include ../_partials/amp/_amp-boilerplate.css %>
+  <% include ../_partials/amp/_ampLandingCustom.css %>
 
-        <section class="landing">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-8 offset-sm-2 text-xs-center">
-                        <h1 class="headline hidden-sm-down">INSTAR Cloud</h1>
-                        <h1 class="mobile-headline hidden-md-up">INSTAR Wiki 2.0</h1>
-                        <hr>
-                        <h2 class="subheader hidden-sm-down">Nutzen Sie die INSTAR Cloud als Speicherort Ihrer Alarmaufnahmen</h2>
-                        <h3 class="subheader hidden-md-up">Cloud</h3>
-                    </div>
-                </div>
-                <!-- /row -->
-            </div>
-            <!-- /container -->
-        </section>
-        <!-- /landing -->
+</head>
 
-        <section class="container mb">
-          <div class="row justify-content-around">
+<body>
 
-            <div class="col">
-              <div class="card shadow">
-                <div class="card-img-top embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/AaPJ4Y8c9r0?rel=0" allowfullscreen></iframe>
-                </div>
-                  <div class="card-block">
-                      <p class="card-text">Ein Überblick über die neue Online Aufnahmeplattform für IP Kameras von INSTAR</p>
-                  </div>
+    <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+        <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+    </amp-sidebar>
+
+    <header class="header fixed">
+        <% include ../_partials/amp/_ampLandingHeader.ejs %>
+    </header>
+
+    <div class="wrap">
+        <div class="content">
+
+            <section class="large-cta">
+              <div class="cta-container">
+                <h1>INSTAR Wiki 2.0</h1>
+                <h2>INSTAR Cloud Storage for Motion Detection Recordings</h2>
               </div>
-            </div>
+            </section>
 
-          </div>
-        </section>
+            <!-- ########################## Quick Installation ############################### -->
 
+            <section class="tile-wall">
+                <h1>INSTAR Cloud</h1>
 
-        <section class="container mb">
+                <div class="container">
 
-         <div class="row centered grid">
+                  <!-- ################################ desktop-up ###################### -->
 
-          <div class="col-6 col-lg-4 mb">
-              <a href="/Motion_Detection/INSTAR_Cloud/Create_User_Account"><img src="/images/Wiki_Tiles_MD-Cloud_New_User.png" alt="Benutzerkonto erstellen" class="img-fluid"></a>
-          </div>
+                    <div class="card-youtube">
+                      <amp-youtube data-videoid="AaPJ4Y8c9r0" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
+                      <p>An overview over our online recording platform for your INSTAR IP camera.</p>
+                    </div>
 
-          <div class="col-6 col-lg-4 mb">
-              <a href="/Motion_Detection/INSTAR_Cloud/Storage"><img src="/images/Wiki_Tiles_MD-Cloud_Cloudstorage.png" alt="Mehr Speicherplatz erhalten" class="img-fluid"></a>
-          </div>
+                    <div class="row desktop-up">
 
-          <div class="col-6 col-lg-4 mb">
-              <a href="/Motion_Detection/INSTAR_Cloud/User"><img src="/images/Wiki_Tiles_MD-Cloud_User.png" alt="Benutzerkonto" class="img-fluid"></a>
-          </div>
+                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
+                          <div class="card-container">
+                              <a class="card centered tile" href="/Motion_Detection/INSTAR_Cloud/Create_User_Account/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_MD-INSTAR-Cloud-Account_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                              <a class="card centered tile" href="/Motion_Detection/INSTAR_Cloud/Storage/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_MD-INSTAR-Cloud-Storage_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                              <a class="card centered tile" href="/Motion_Detection/INSTAR_Cloud/User/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_MD-INSTAR-Cloud-User_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                          </div>
+                      </amp-carousel>
 
-          <div class="col-6 col-lg-4 mb">
-              <a href="/Motion_Detection/INSTAR_Cloud/Administration"><img src="/images/Wiki_Tiles_MD-Cloud_Administration.png" alt="Verwaltung Ihrer Cloud" class="img-fluid"></a>
-          </div>
+                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
+                          <div class="card-container">
+                              <a class="card centered tile" href="/Motion_Detection/INSTAR_Cloud/Administration/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_MD-INSTAR-Cloud-Admin_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                              <a class="card centered tile" href="/Motion_Detection/INSTAR_Cloud/Alarm_Recordings/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_MD-INSTAR-Cloud-Alarm.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                              <a class="card centered tile" href="/Motion_Detection/INSTAR_Cloud/Camera_Sets/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_MD-INSTAR-Cloud-Sets_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                          </div>
+                      </amp-carousel>
 
-          <div class="col-6 col-lg-4 mb">
-              <a href="/Motion_Detection/INSTAR_Cloud/Alarm_Recordings"><img src="/images/Wiki_Tiles_MD-Cloud_Alarm.png" alt="Alarm Benachrichtigungen in der Cloud" class="img-fluid"></a>
-          </div>
+                    </div>
+                    <!-- /row desktop-up -->
 
-          <div class="col-6 col-lg-4 mb">
-              <a href="/Motion_Detection/INSTAR_Cloud/Camera_Sets"><img src="/images/Wiki_Tiles_MD-Cloud_Settings.png" alt="Cloud Einstellungen" class="img-fluid"></a>
-          </div>
+                    <!-- ################################ mobile-down ###################### -->
 
-         </div>
+                    <div class="mobile-down">
 
-        </section>
+                      <a href="/Software/Android/InstarVision/">
+                        <div class="articleListItem margin">
+                          <div class="articleImage">
+                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Android-InstarVision_white.png">
+                            </amp-img>
+                          </div>
+                          <!-- /articleImage -->
+                          <div class="articlePreview">
+                            <p>#</p>
+                          </div>
+                          <!-- /articleImage -->
+                        </div>
+                        <!-- /articleListItem -->
+                      </a>
 
-        <section class="instarvision"><% include ../_partials/content/_instarvision.ejs %></section>
-        <!-- /webui -->
+                      <hr>
 
-        <section class="social"><% include ../_partials/content/_social.ejs %></section>
-        <!-- /social -->
+                      <a href="/Software/Android/TinyCam_Monitor/">
+                        <div class="articleListItem margin">
+                          <div class="articleImage">
+                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Android_TinyCam_white.png">
+                            </amp-img>
+                          </div>
+                          <!-- /articleImage -->
+                          <div class="articlePreview">
+                            <p>#</p>
+                          </div>
+                          <!-- /articleImage -->
+                        </div>
+                        <!-- /articleListItem -->
+                      </a>
 
-        <!-- ############################################# Footer ############################################# -->
+                      <hr>
 
-        <footer><% include ../_partials/template/_footer.ejs %></footer>
+                      <a href="/Software/Android/IP_Cam_Viewer/">
+                        <div class="articleListItem margin">
+                          <div class="articleImage">
+                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Android_IPCamViewer_white.png">
+                            </amp-img>
+                          </div>
+                          <!-- /articleImage -->
+                          <div class="articlePreview">
+                            <p>#</p>
+                          </div>
+                          <!-- /articleImage -->
+                        </div>
+                        <!-- /articleListItem -->
+                      </a>
 
-        <% include ../_partials/template/_jsdefaults.ejs %>
+                    </div>
+                    <!-- /row mobile-down -->
+
+                </div>
+                <!-- /container -->
+            </section>
+            <!-- /Quick Installation I -->
+
+            <!-- ########################## WebUI ############################### -->
+
+            <% include ../_partials/amp/_ampWebUI.ejs %>
+
+            <!-- ########################## Related ############################### -->
+
+            <section class="social mobile-down">
+                <h1>Related Chapters</h1>
+                <div class="socialBox">
+                  <a href="/Products/" class="btn btnWhite btnChapter btnProduct"></a>
+                  <a href="/Motion_Detection/" class="btn btnWhite btnChapter btnMotion"></a>
+                  <a href="/Internet_Access/" class="btn btnWhite btnChapter btnRemote"></a>
+                  <a href="/Advanced_User/" class="btn btnWhite btnChapter btnDev"></a>
+                </div>
+            </section>
+
+            <!-- ########################## Footer ############################### -->
+
+            <footer class="desktop-up">
+              <% include ../_partials/amp/_amp-footer2.ejs %>
+            </footer>
 
         </div>
+    </div>
 
-    </body>
+</body>
 
 </html>

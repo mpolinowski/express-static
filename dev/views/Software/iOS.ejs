@@ -1,54 +1,254 @@
-<% include ../_partials/template/_head.ejs %>
+<!DOCTYPE html>
+<html ⚡ lang="en">
 
-    <body>
-      <% include ../_partials/template/_outdated.ejs %>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="INSTAR Wiki - IP Camera Knowledge Base">
+  <meta name="author" content="Mike Polinowski">
+  <title>
+      <%= title %>
+  </title>
+  <link rel="canonical" href="/Software/iOS/">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
-      <div id="wrapper">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
-        <header><% include ../_partials/template/_header.ejs %></header>
-        <!-- Navbar-->
+  <!-- http://schema.org/TechArticle -->
+  <script type="application/ld+json">
+      { "@context": "http://schema.org",
+        "@type": "TechArticle",
+        "headline": "<%= headline %>",
+        "image": [ "http://wiki.instar.com<%= ampimg %>" ] }
+  </script>
 
-        <!-- ############################################# Landing ############################################# -->
+  <% include ../_partials/amp/_amp-boilerplate.css %>
+  <% include ../_partials/amp/_ampLandingCustom.css %>
 
-        <section class="slanding mb">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-8 offset-sm-2 text-xs-center">
-                        <h1 class="headline hidden-sm-down">Software for iOS</h1>
-                        <h2 class="mobile-headline hidden-md-up">Software for iOS</h2>
-                        <hr>
-                        <h2 class="subheader hidden-sm-down">INSTAR IP Camera Knowledgebase</h2>
-                        <h3 class="subheader hidden-md-up">INSTAR Wiki 2.0</h3>
-                        <br/>
-                        <br/>
-                        <h2 class="subheader"><i class="fa fa-angle-double-down" aria-hidden="true"></i></h2>
+</head>
+
+<body>
+
+    <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+        <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+    </amp-sidebar>
+
+    <header class="header fixed">
+        <% include ../_partials/amp/_ampLandingHeader.ejs %>
+    </header>
+
+    <div class="wrap">
+        <div class="content">
+
+            <section class="large-cta">
+              <div class="cta-container">
+                <h1>INSTAR Wiki 2.0</h1>
+                <h2>Software for iOS</h2>
+              </div>
+            </section>
+
+            <!-- ########################## Quick Installation ############################### -->
+
+            <section class="tile-wall">
+                <h1>iOS</h1>
+                <div class="container">
+
+                  <!-- ################################ desktop-up ###################### -->
+
+                    <div class="row desktop-up">
+
+                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
+                          <div class="card-container">
+                              <a class="card centered tile" href="/Software/iOS/InstarVision/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS-InstarVision_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                              <a class="card centered tile" href="/Software/iOS/LiveCams/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS_LiveCams_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                              <a class="card centered tile" href="/Software/iOS/IP_Vision_Pro/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS_IP-Vision-Pro_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                          </div>
+                      </amp-carousel>
+
+                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
+                          <div class="card-container">
+                              <a class="card centered tile" href="/Software/iOS/ICCAM/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS_ICCAM_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                              <a class="card centered tile" href="/Software/iOS/IP_Cam_Viewer/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Android_IPCamViewer_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                              <a class="card centered tile" href="/Software/iOS/P2P_Cam_Live/">
+                                  <div class="card-inner">
+                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS_P2PCamLive_white.png">
+                                      </amp-img>
+                                  </div>
+                              </a>
+                          </div>
+                      </amp-carousel>
+
                     </div>
+                    <!-- /row desktop-up -->
+
+                    <!-- ################################ mobile-down ###################### -->
+
+                    <div class="mobile-down">
+
+                      <a href="/Software/iOS/InstarVision/">
+                        <div class="articleListItem margin">
+                          <div class="articleImage">
+                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS-InstarVision_white.png">
+                            </amp-img>
+                          </div>
+                          <!-- /articleImage -->
+                          <div class="articlePreview">
+                            <p>#</p>
+                          </div>
+                          <!-- /articleImage -->
+                        </div>
+                        <!-- /articleListItem -->
+                      </a>
+
+                      <hr>
+
+                      <a href="/Software/iOS/LiveCams/">
+                        <div class="articleListItem margin">
+                          <div class="articleImage">
+                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS_LiveCams_white.png">
+                            </amp-img>
+                          </div>
+                          <!-- /articleImage -->
+                          <div class="articlePreview">
+                            <p>#</p>
+                          </div>
+                          <!-- /articleImage -->
+                        </div>
+                        <!-- /articleListItem -->
+                      </a>
+
+                      <hr>
+
+                      <a href="/Software/iOS/IP_Vision_Pro/">
+                        <div class="articleListItem margin">
+                          <div class="articleImage">
+                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS_IP-Vision-Pro_white.png">
+                            </amp-img>
+                          </div>
+                          <!-- /articleImage -->
+                          <div class="articlePreview">
+                            <p>#</p>
+                          </div>
+                          <!-- /articleImage -->
+                        </div>
+                        <!-- /articleListItem -->
+                      </a>
+
+                      <hr>
+
+                      <a href="/Software/iOS/ICCAM/">
+                        <div class="articleListItem margin">
+                          <div class="articleImage">
+                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS_ICCAM_white.png">
+                            </amp-img>
+                          </div>
+                          <!-- /articleImage -->
+                          <div class="articlePreview">
+                            <p>#</p>
+                          </div>
+                          <!-- /articleImage -->
+                        </div>
+                        <!-- /articleListItem -->
+                      </a>
+
+                      <hr>
+
+                      <a href="/Software/iOS/IP_Cam_Viewer/">
+                        <div class="articleListItem margin">
+                          <div class="articleImage">
+                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Android_IPCamViewer_white.png">
+                            </amp-img>
+                          </div>
+                          <!-- /articleImage -->
+                          <div class="articlePreview">
+                            <p>#</p>
+                          </div>
+                          <!-- /articleImage -->
+                        </div>
+                        <!-- /articleListItem -->
+                      </a>
+
+                      <hr>
+
+                      <a href="/Software/iOS/P2P_Cam_Live/">
+                        <div class="articleListItem margin">
+                          <div class="articleImage">
+                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS_P2PCamLive_white.png">
+                            </amp-img>
+                          </div>
+                          <!-- /articleImage -->
+                          <div class="articlePreview">
+                            <p>#</p>
+                          </div>
+                          <!-- /articleImage -->
+                        </div>
+                        <!-- /articleListItem -->
+                      </a>
+
+                    </div>
+                    <!-- /row mobile-down -->
+
                 </div>
-                <!-- /row -->
-            </div>
-            <!-- /container -->
-        </section>
-        <!-- /slanding -->
+                <!-- /container -->
+            </section>
+            <!-- /Quick Installation I -->
 
-        <!-- #############################################  Gallery ############################################# -->
+            <!-- ########################## WebUI ############################### -->
 
-        <section class="container mb"><% include ../_partials/content/_gallery_softwareIOS.ejs %></section>
-        <!-- /quickinstallation -->
+            <% include ../_partials/amp/_ampWebUI.ejs %>
 
-        <section class="webui mb"><% include ../_partials/content/_webui.ejs %></section>
-        <!-- /webui -->
+            <!-- ########################## Related ############################### -->
 
-        <section class="social"><% include ../_partials/content/_social.ejs %></section>
-        <!-- /social -->
+            <section class="social mobile-down">
+                <h1>Related Chapters</h1>
+                <div class="socialBox">
+                  <a href="/Products/" class="btn btnWhite btnChapter btnProduct"></a>
+                  <a href="/Motion_Detection/" class="btn btnWhite btnChapter btnMotion"></a>
+                  <a href="/Internet_Access/" class="btn btnWhite btnChapter btnRemote"></a>
+                  <a href="/Advanced_User/" class="btn btnWhite btnChapter btnDev"></a>
+                </div>
+            </section>
 
-        <!-- ############################################# Footer ############################################# -->
+            <!-- ########################## Footer ############################### -->
 
-        <footer><% include ../_partials/template/_footer.ejs %></footer>
-
-        <% include ../_partials/template/_jsdefaults.ejs %>
+            <footer class="desktop-up">
+              <% include ../_partials/amp/_amp-footer2.ejs %>
+            </footer>
 
         </div>
+    </div>
 
-    </body>
+</body>
 
 </html>

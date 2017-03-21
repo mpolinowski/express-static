@@ -8,7 +8,8 @@ softwareRouter.route('/')
 .get(function(req, res) {
   res.render('./Software/Software', {
       title: 'INSTAR Software',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li>'
+      ampimg: '/images/Search/P_SearchThumb_Products.jpg',
+      headline: 'INSTAR Products',
     });
 });
 
@@ -17,7 +18,8 @@ softwareRouter.route('/Windows')
 .get(function(req, res) {
   res.render('./Software/Windows', {
       title: 'Software for Windows',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li>'
+      ampimg: '/images/Search/P_SearchThumb_Products.jpg',
+      headline: 'INSTAR Products',
     });
 });
 
@@ -297,7 +299,7 @@ softwareRouter.route('/Windows/iSpy')
 .get(function(req, res) {
   res.render('./Software/Windows_iSpy', {
       title: 'iSpy Connect',
-	  uplink: '/Software/Windows/',
+	    uplink: '/Software/Windows/',
       ampimg: '/images/Search/P_SearchThumb_Products.jpg',
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/iSpy/">iSpy</a></li>',
@@ -430,7 +432,8 @@ softwareRouter.route('/macOS')
 .get(function(req, res) {
   res.render('./Software/MacOS', {
       title: 'Software for macOS',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/macOS/">macOS</a></li>'
+      ampimg: '/images/Search/P_SearchThumb_Products.jpg',
+      headline: 'INSTAR Products',
     });
 });
 
@@ -483,7 +486,8 @@ softwareRouter.route('/Android')
 .get(function(req, res) {
   res.render('./Software/Android', {
       title: 'Software for Android',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li>'
+      ampimg: '/images/Search/P_SearchThumb_Products.jpg',
+      headline: 'INSTAR Products',
     });
 });
 
@@ -562,7 +566,8 @@ softwareRouter.route('/iOS')
 .get(function(req, res) {
   res.render('./Software/iOS', {
       title: 'Software for iOS',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li>'
+      ampimg: '/images/Search/P_SearchThumb_Products.jpg',
+      headline: 'INSTAR Products',
     });
 });
 
@@ -730,7 +735,8 @@ softwareRouter.route('/Other_Platforms')
 .get(function(req, res) {
   res.render('./Software/Other_Platforms', {
       title: 'Other Platforms',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Other_Platforms/">Other Platforms</a></li>'
+      ampimg: '/images/Search/P_SearchThumb_Products.jpg',
+      headline: 'INSTAR Products',
     });
 });
 

@@ -28,31 +28,28 @@
         "image": [ "http://wiki.instar.com<%= ampimg %>" ] }
   </script>
 
-    <style amp-custom>
-        <% include ../Test/_ampCustom.css %>
-    </style>
+  <% include ../_partials/amp/_amp-boilerplate.css %>
+  <% include ../_partials/amp/_ampLandingCustom.css %>
 
-    <style amp-boilerplate>
-        <% include ../Test/_amp-boilerplate.css %>
-    </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
-
 <body>
 
-    <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
-        <% include ../Test/_ampSidebar.ejs %>
-    </amp-sidebar>
+  <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+      <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+  </amp-sidebar>
 
-    <header class="header fixed">
-        <% include ../Test/_ampHeader.ejs %>
-    </header>
+  <header class="header fixed">
+      <% include ../_partials/amp/_ampLandingHeader.ejs %>
+  </header>
 
     <div class="wrap">
         <div class="content">
 
-            <section class="large-cta tablet-up">
+            <section class="large-cta">
+              <div class="cta-container">
                 <h1>INSTAR Wiki 2.0</h1>
                 <h2>Let your camera be your eyes when you are not at home</h2>
+              </div>
             </section>
 
             <!-- ########################## Motion Detection ############################### -->
@@ -302,22 +299,18 @@
 
             <!-- ########################## WebUI ############################### -->
 
-            <section class="large-cta orange">
-                <h1>Web User Interface</h1>
-                <p>Control your INSTAR IP camera from your default web browser - from your home network or over the internet.</p>
-                <a href="/Web_User_Interface/1080p_Series/" class="btn"><span>1080p Series</span></a>
-                <a href="/Web_User_Interface/720p_Series/" class="btn"><span>720p Series</span></a>
-                <a href="/Web_User_Interface/1080p_Series/Overview/" class="btn"><span>VGA Series</span></a>
-            </section>
+            <% include ../_partials/amp/_ampWebUI.ejs %>
 
             <!-- ########################## Related ############################### -->
 
-            <section class="social mobile-down margin">
+            <section class="social mobile-down">
                 <h1>Related Chapters</h1>
-                <a href="/Products/" class="btn btnWhite">Products</a>
-                <a href="/Quick_Installation/" class="btn btnWhite">Installation</a>
-                <a href="/Internet_Access/" class="btn btnWhite">Remote Access</a>
-                <a href="/Advanced_User/" class="btn btnWhite">Developers</a>
+                <div class="socialBox">
+                  <a href="/Products/" class="btn btnWhite btnChapter btnProduct"></a>
+                  <a href="/Quick_Installation/" class="btn btnWhite btnChapter btnInstall"></a>
+                  <a href="/Internet_Access/" class="btn btnWhite btnChapter btnRemote"></a>
+                  <a href="/Advanced_User/" class="btn btnWhite btnChapter btnDev"></a>
+                </div>
             </section>
 
             <!-- ########################## Footer ############################### -->
