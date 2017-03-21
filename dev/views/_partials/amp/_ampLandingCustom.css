@@ -1037,6 +1037,12 @@ amp-sidebar .language .others .others-inner div {
     }
 }
 
+.large-cta .cta-camera {
+    flex-grow: 2;
+    min-width: 350px;
+    margin: 20px 50px -20px 20px;
+}
+
 .large-cta .cta-macBook {
     flex-grow: 2;
     min-width: 350px;
@@ -1046,6 +1052,7 @@ amp-sidebar .language .others .others-inner div {
 
 .large-cta .cta-container {
     flex-grow: 3;
+    padding: 0 20px;
 }
 
 @media only screen and (max-width: 555px) {
@@ -1522,7 +1529,7 @@ amp-sidebar .return-button {
 }
 
 amp-sidebar .return-button::before {
-    background: url(/images/return.svg) no-repeat center/contain transparent;
+    background: url(/teststatic/return.svg) no-repeat center/contain transparent;
     border: 0;
     content: '';
     display: inline-block;

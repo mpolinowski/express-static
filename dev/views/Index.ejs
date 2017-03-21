@@ -28,23 +28,22 @@
         "image": [ "http://wiki.instar.com<%= ampimg %>" ] }
   </script>
 
+    <% include ./_partials/amp/_amp-boilerplate.css %>
+
     <style amp-custom>
-        <% include ./Test/_ampCustom.css %>
+        <% include ./_partials/amp/_ampLandingCustom.css %>
     </style>
 
-    <style amp-boilerplate>
-        <% include ./Test/_amp-boilerplate.css %>
-    </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 
 <body>
 
     <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
-        <% include ./Test/_ampSidebar.ejs %>
+        <% include ./_partials/amp/_ampLandingSidebar.ejs %>
     </amp-sidebar>
 
     <header class="header fixed">
-        <% include ./Test/_ampHeader.ejs %>
+        <% include ./_partials/amp/_ampLandingHeader.ejs %>
     </header>
 
     <div class="wrap">
@@ -58,7 +57,7 @@
 
                         <div class="lines tablet-up">
                             <div class="blueTriangle">
-                                <amp-img height=900 src="/teststatic/blueTriangle.png">
+                                <amp-img height=900 src="/images/blueTriangle.png">
                                 </amp-img>
                             </div>
                         </div>
@@ -131,22 +130,9 @@
                 </div>
             </section>
 
-            <!-- ########################## InstarVision ############################### -->
+            <!-- ########################## Products ############################### -->
 
-            <section class="large-cta">
-              <div class="cta-iPhone desktop-up">
-                <amp-img width=208 height=295 layout=responsive src="/images/iphone.png">
-                </amp-img>
-              </div>
-              <div class="cta-container">
-                <h1>InstarVision Surveillance Solution</h1>
-                <p>INSTAR offers a solution for every sureveillance task and supports a variety of third-party solutions.</p>
-                <a href="/Software/Windows/" class="btn btnWhite"><span>Windows</span></a>
-                <a href="/Software/macOS/" class="btn btnWhite"><span>macOS</span></a>
-                <a href="/Software/Android/" class="btn btnWhite"><span>Android</span></a>
-                <a href="/Software/iOS/" class="btn btnWhite"><span>iOS</span></a>
-              </div>
-            </section>
+            <% include ./_partials/amp/_ampProducts.ejs %>
 
             <!-- ########################## Quick Installation I ############################### -->
 
@@ -267,19 +253,7 @@
 
             <!-- ########################## WebUI ############################### -->
 
-            <section class="large-cta orange">
-              <div class="cta-macBook desktop-up">
-                <amp-img width=512 height=304 layout=responsive src="/images/macbook.png">
-                </amp-img>
-              </div>
-              <div class="cta-container">
-                <h1>Web User Interface</h1>
-                <p>Control your INSTAR IP camera from your default web browser - from your home network or over the internet.</p>
-                <a href="/Web_User_Interface/1080p_Series/" class="btn"><span>1080p Series</span></a>
-                <a href="/Web_User_Interface/720p_Series/" class="btn"><span>720p Series</span></a>
-                <a href="/Web_User_Interface/1080p_Series/Overview/" class="btn"><span>VGA Series</span></a>
-              </div>
-            </section>
+            <% include ./_partials/amp/_ampWebUI.ejs %>
 
             <!-- ########################## Motion Detection ############################### -->
 
@@ -514,16 +488,7 @@
 
             <!-- ########################## Social ############################### -->
 
-            <section class="social">
-                <h1>Contact Us</h1>
-                <div class="socialBox">
-                  <a href="https://twitter.com/INSTAR_DE/with_replies" class="btn btnWhite btnSocial btnTwitter" target="_blank"></a>
-                  <a href="https://www.facebook.com/instar.deutschland" class="btn btnWhite btnSocial btnFacebook" target="_blank"></a>
-                  <a href="https://plus.google.com/107644944363434934689" class="btn btnWhite btnSocial btnGoogle" target="_blank"></a>
-                  <a href="https://www.youtube.com/user/INSTARTV/videos" class="btn btnWhite btnSocial btnYoutube" target="_blank">
-                  <a href="http://www.instar.de/contact_us/" class="btn btnWhite btnSocial btnEmail" target="_blank"></a>
-                </div>
-            </section>
+            <% include ./_partials/amp/_ampSocial.ejs %>
 
             <!-- ########################## Footer ############################### -->
 
