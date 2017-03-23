@@ -2030,7 +2030,7 @@ footer .footer-text {
   text-decoration: none;
   text-transform: none;
   color: #000;
-  text-align: justify;
+  margin-top: 15px;
   line-height: 150%;
 }
 </style>
