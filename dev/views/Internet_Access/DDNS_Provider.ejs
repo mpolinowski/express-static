@@ -40,7 +40,9 @@
         <div class="wrap">
             <div class="container main">
 
-                <article>
+                <% include ../_partials/content/_bluenav-ia.ejs %>
+
+                <article class="blade wrapper content">
                     <!-- article -->
 
                     <div class="margin">
@@ -113,44 +115,41 @@
                     <!-- /margin -->
 
                     <div class="card-container margin">
-                        <div class="card">
+                        <div class="twocard">
                             <div class="image">
                                 <a href="/Internet_Access/DDNS_Provider/NoIP/">
                                   <amp-img noloading height=150 width=200 layout=responsive src="/images/DDNS_No-IP.png"></amp-img>
                                 </a>
                             </div>
-                            <div class="content">
+                            <div class="action">
                                 <h4>No-IP (English)</h4>
                             </div>
-                            <div class="action">
-                                <a href="/Internet_Access/DDNS_Provider/NoIP/">Read the Introduction</a>
-                            </div>
                         </div>
-                        <div class="card">
+                        <div class="twocard">
                             <div class="image">
                                 <a href="/Internet_Access/DDNS_Provider/Selfhost/">
                                   <amp-img noloading height=150 width=200 layout=responsive src="/images/DDNS_Selfhost.png"></amp-img>
                                 </a>
                             </div>
-                            <div class="content">
+                            <div class="action">
                                 <h4>Selfhost (German)</h4>
                             </div>
-                            <div class="action">
-                                <a href="/Internet_Access/DDNS_Provider/Selfhost/">Read the Introduction</a>
-                            </div>
                         </div>
-                        <div class="card">
+                    </div>
+                    <!-- /Card-Container -->
+
+                    <div class="card-container margin">
+                        <div class="twocard">
                             <div class="image">
                                 <a href="/Internet_Access/DDNS_Provider/DDNSS/">
                                   <amp-img noloading height=150 width=200 layout=responsive src="/images/DDNS_DDNSS.png"></amp-img>
                                 </a>
                             </div>
-                            <div class="content">
+                            <div class="action">
                                 <h4>DDNSS (German)</h4>
                             </div>
-                            <div class="action">
-                                <a href="/Internet_Access/DDNS_Provider/DDNSS/">Read the Introduction</a>
-                            </div>
+                        </div>
+                        <div class="twocard invisible">
                         </div>
                     </div>
                     <!-- /Card-Container -->

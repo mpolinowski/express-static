@@ -18,7 +18,9 @@
       <div class="wrap">
           <div class="container main">
 
-                <article>
+          <% include ../_partials/content/_bluenav-md.ejs %>
+
+              <article class="blade wrapper content">
                     <!-- article -->
 
                     <div class="margin">
@@ -182,77 +184,68 @@
                     </div>
                     <!-- /margin -->
 
+
+                    <div class="twelve columns margin">
+                        <h1>Configure your Camera</h1>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="twocard">
+                            <div class="image">
+                                <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/FTP-Fritzbox-7490de_06.png"></amp-img>
+                            </div>
+                            <div class="content">
+                                <p>Open your camera's web user interface and go to Alarm/FTP to input your FTP server information you set up earlier.</p>
+                            </div>
+                            <div class="action">
+                                <h3>WebUI</h3>
+                            </div>
+                        </div>
+                        <div class="twocard">
+                            <div class="image">
+                                <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/FTP-Fritzbox-7490de_07.png"></amp-img>
+                            </div>
+                            <div class="content">
+                                <p>Type in your FTP login credentials and server information like described above. Submit before testing the upload.</p>
+                            </div>
+                            <div class="action">
+                                <h3>FTP Settings</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="twocard">
+                            <div class="image">
+                                <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/FTP-Fritzbox-7490de_08.png"></amp-img>
+                            </div>
+                            <div class="content">
+                                <p>You will find a single snapshot in your upload directory, after successfully testing the FTP connection.</p>
+                            </div>
+                            <div class="action">
+                                <h3>Testing</h3>
+                            </div>
+                        </div>
+                        <div class="twocard">
+                            <div class="image">
+                                <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/FTP-Fritzbox-7490de_09.png"></amp-img>
+                            </div>
+                            <div class="content">
+                                <p>Now you can activate the FTP upload functions for alarm trigger events.</p>
+                            </div>
+                            <div class="action">
+                                <h3>Alarm Upload</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </article>
                 <!-- /article -->
             </div>
             <!-- /container -->
         </div>
         <!-- /wrap -->
-
-        <section class="blade get-started">
-            <div class="container">
-                <div class="row">
-                    <div class="twelve columns">
-                        <h1>Configure your Camera</h1>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <div class="card">
-                        <div class="image">
-                            <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/FTP-Fritzbox-7490de_06.png"></amp-img>
-                        </div>
-                        <div class="content">
-                            <p>Open your camera's web user interface and go to Alarm/FTP to input your FTP server information you set up earlier.</p>
-                        </div>
-                        <div class="action">
-                            <h3>WebUI</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                            <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/FTP-Fritzbox-7490de_07.png"></amp-img>
-                        </div>
-                        <div class="content">
-                            <p>Type in your FTP login credentials and server information like described above. Submit before testing the upload.</p>
-                        </div>
-                        <div class="action">
-                            <h3>FTP Settings</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                            <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/FTP-Fritzbox-7490de_08.png"></amp-img>
-                        </div>
-                        <div class="content">
-                            <p>You will find a single snapshot in your upload directory, after successfully testing the FTP connection.</p>
-                        </div>
-                        <div class="action">
-                            <h3>Testing</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <div class="card">
-                        <div class="image">
-                            <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/FTP-Fritzbox-7490de_09.png"></amp-img>
-                        </div>
-                        <div class="content">
-                            <p>Now you can activate the FTP upload functions for alarm trigger events.</p>
-                        </div>
-                        <div class="action">
-                            <h3>Alarm Upload</h3>
-                        </div>
-                    </div>
-                    <div class="card invisible">
-                    </div>
-                    <div class="card invisible">
-                    </div>
-                </div>
-
-            </div>
-        </section>
 
         <% include ../_partials/content/_bluenav-md-mobile.ejs %>
 

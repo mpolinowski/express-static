@@ -15,10 +15,11 @@
         <% include ../_partials/amp/_amp-header.ejs %>
       </header>
 
-        <div class="wrap">
-            <div class="content">
+      <div class="wrap">
+          <div class="container main">
+              <% include ../_partials/content/_bluenav-au.ejs %>
 
-                <section class="blade get-started">
+                <section class="blade wrapper content">
                     <div class="container">
                         <div class="row">
                             <div class="twelve columns">
@@ -27,43 +28,49 @@
                         </div>
 
                         <div class="card-container">
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
+                                  <a href="/Advanced_User/Website_Integration/HD_Camera_Integration">
                                     <amp-img noloading height=200 width=300 layout=responsive src="/images/Website_Integration_HTML.png"></amp-img>
+                                  </a>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <p>HD Camera Integration</p>
                                 </div>
-                                <div class="action">
-                                    <a href="/Advanced_User/Website_Integration/HD_Camera_Integration">Read More</a>
-                                </div>
                             </div>
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
+                                  <a href="/Advanced_User/Website_Integration/Cambozola">
                                     <amp-img noloading height=200 width=300 layout=responsive src="/images/Website_Integration_Java.png"></amp-img>
+                                  </a>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <p>Cambozola JAVA Plugin</p>
                                 </div>
-                                <div class="action">
-                                    <a href="/Advanced_User/Website_Integration/Cambozola">Read More</a>
-                                </div>
                             </div>
-                            <div class="card">
+
+                        </div>
+
+                        <div class="card-container">
+                            <div class="twocard">
                                 <div class="image">
+                                  <a href="/Advanced_User/Website_Integration/Open_IP_Camera_Manager">
                                     <amp-img noloading height=200 width=300 layout=responsive src="/images/Website_Integration_PHP.png"></amp-img>
+                                  </a>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <p>Open IP Camera Manager</p>
                                 </div>
-                                <div class="action">
-                                    <a href="/Advanced_User/Website_Integration/Open_IP_Camera_Manager">Read More</a>
-                                </div>
+                            </div>
+                            <div class="twocard invisible">
                             </div>
                         </div>
 
                     </div>
                 </section>
+
+              </div>
+            </div>
 
                 <% include ../_partials/content/_bluenav-au-mobile.ejs %>
 

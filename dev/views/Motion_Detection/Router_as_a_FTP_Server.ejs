@@ -15,8 +15,12 @@
         <% include ../_partials/amp/_amp-header.ejs %>
       </header>
 
-                <section class="blade get-started">
-                    <div class="container">
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../_partials/content/_bluenav-md.ejs %>
+
+                <section class="blade wrapper content">
 
                       <div class="margin">
                           <h1>Use your Router / NAS as a FTP Server</h1>
@@ -28,75 +32,78 @@
                       <!-- /margin -->
 
                         <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
+                                <a href="/Motion_Detection/Router_as_a_FTP_Server/AVM_Fritzbox_as_FTP_Server">
                                   <amp-img noloading height=200 width=300 layout=responsive src="/images/Fritzbox7490.png"></amp-img>
+                                </a>
                               </div>
-                              <div class="content">
+                              <div class="action">
                                   <h3>AVM Fritzbox</h3>
                                   <p>Use your AVM Fritzbox as a local FTP Server for your INSTAR IP camera.</p>
                               </div>
-                              <div class="action">
-                                  <a href="/Motion_Detection/Router_as_a_FTP_Server/AVM_Fritzbox_as_FTP_Server">Read More</a>
-                              </div>
                           </div>
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
+                                <a href="/Motion_Detection/Router_as_a_FTP_Server/Telekom_Speedport_as_FTP_Server">
                                   <amp-img noloading height=200 width=300 layout=responsive src="/images/Speedport-W724V.png"></amp-img>
+                                </a>
                               </div>
-                              <div class="content">
+                              <div class="action">
                                   <h3>Speedport</h3>
                                   <p>Use your Telekom Speedport as a local FTP Server for your INSTAR IP camera.</p>
-                              </div>
-                              <div class="action">
-                                  <a href="/Motion_Detection/Router_as_a_FTP_Server/Telekom_Speedport_as_FTP_Server">Read More</a>
-                              </div>
-                          </div>
-                          <div class="card">
-                              <div class="image">
-                                  <amp-img noloading height=200 width=300 layout=responsive src="/images/QNAP_TurboNAS_TS-259_Pro.png"></amp-img>
-                              </div>
-                              <div class="content">
-                                  <h3>QNAP TS-259</h3>
-                                  <p>Use your QNAP TS-259 Pro as a local FTP Server for your INSTAR IP camera.</p>
-                              </div>
-                              <div class="action">
-                                  <a href="/Motion_Detection/Router_as_a_FTP_Server/QNAP_as_FTP_Server">Read More</a>
                               </div>
                           </div>
                         </div>
 
+                          <div class="card-container">
+                            <div class="twocard">
+                                <div class="image">
+                                  <a href="/Motion_Detection/Router_as_a_FTP_Server/QNAP_as_FTP_Server">
+                                    <amp-img noloading height=200 width=300 layout=responsive src="/images/QNAP_TurboNAS_TS-259_Pro.png"></amp-img>
+                                  </a>
+                                </div>
+                                <div class="action">
+                                    <h3>QNAP TS-259</h3>
+                                    <p>Use your QNAP TS-259 Pro as a local FTP Server for your INSTAR IP camera.</p>
+                                </div>
+                            </div>
+                            <div class="twocard">
+                                <div class="image">
+                                  <a href="/Motion_Detection/Router_as_a_FTP_Server/WD_MyCloud_as_FTP_Server">
+                                    <amp-img noloading height=200 width=300 layout=responsive src="/images/WD_MyCloud.png"></amp-img>
+                                  </a>
+                                </div>
+                                <div class="action">
+                                    <h3>WD MyCloud</h3>
+                                    <p>Use your WD MyCloud as a local FTP Server for your INSTAR IP camera.</p>
+                                </div>
+                            </div>
+                          </div>
+
                         <div class="card-container">
-                          <div class="card">
+                          <div class="twocard">
                               <div class="image">
-                                  <amp-img noloading height=200 width=300 layout=responsive src="/images/WD_MyCloud.png"></amp-img>
-                              </div>
-                              <div class="content">
-                                  <h3>WD MyCloud</h3>
-                                  <p>Use your WD MyCloud as a local FTP Server for your INSTAR IP camera.</p>
+                                <a href="/Motion_Detection/Router_as_a_FTP_Server/Synology_as_FTP_Server">
+                                  <amp-img noloading height=200 width=300 layout=responsive src="/images/Synology_NAS.png"></amp-img>
+                                </a>
                               </div>
                               <div class="action">
-                                  <a href="/Motion_Detection/Router_as_a_FTP_Server/WD_MyCloud_as_FTP_Server">Read More</a>
-                              </div>
-                          </div>
-                          <div class="card">
-                              <div class="image">
-                                  <amp-img noloading height=200 width=300 layout=responsive src="/images/Synology_NAS.png"></amp-img>
-                              </div>
-                              <div class="content">
                                   <h3>Synology</h3>
                                   <p>Use your Synology Station NAS as a local FTP Server for your INSTAR IP camera.</p>
-                              </div>
-                              <div class="action">
-                                  <a href="/Motion_Detection/Router_as_a_FTP_Server/Synology_as_FTP_Server">Read More</a>
                               </div>
                           </div>
                           <div class="card invisible">
                           </div>
                         </div>
 
+                      </section>
+                      <!-- /wrapper -->
+
                     </div>
-                </section>
+                    <!-- /container -->
+                  </div>
+                  <!-- /wrap -->
 
                 <% include ../_partials/content/_bluenav-md-mobile.ejs %>
 

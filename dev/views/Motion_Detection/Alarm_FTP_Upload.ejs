@@ -20,7 +20,7 @@
 
             <% include ../_partials/content/_bluenav-md.ejs %>
 
-                <article>
+                <article class="blade wrapper content">
                     <!-- article -->
 
                     <div class="margin">
@@ -70,27 +70,27 @@
                     <div class="margin">
                       <table>
                         <tr>
-                           <th><strong>FTP Server</strong></th>
+                           <th width="20%"><strong>FTP Server</strong></th>
                              <td>Please enter the address of your FTP server. In the example above we have used a AVM Fritzbox (Router) as a FTP server. This router has a USB Stick connected which provides the storage for the pictures. In our case we have to type in the IP address of the router. If you want to set up your own FTP server on your local computer you will find a step by step manual here. You can also use a web address as the FTP Server. This can either be a online host service or a DynDns address which connects to a FTP server at another location.</td>
                           </tr>
                           <tr>
-                             <th><strong>FTP Port</strong></th>
+                             <th width="20%"><strong>FTP Port</strong></th>
                              <td>Please type in the FTP Servers port which is usually 21.</td>
                           </tr>
                           <tr>
-                             <th><strong>FTP Folder</strong></th>
+                             <th width="20%"><strong>FTP Folder</strong></th>
                              <td>Fill in the folder you want to upload the pictures inside. By default the folder will be "./" which means that the camera will save the uploads in the root folder of the server. In our above sample the pictures will be saved in the root folder.</td>
                           </tr>
                           <tr>
-                             <th><strong>FTP Username</strong></th>
+                             <th width="20%"><strong>FTP Username</strong></th>
                              <td>Please fill in the username of your FTP account. The default username for the AVM Fritzbox is "ftpuser".</td>
                           </tr>
                           <tr>
-                             <th><strong>FTP Password</strong></th>
+                             <th width="20%"><strong>FTP Password</strong></th>
                              <td>Please fill in the password of your FTP account.</td>
                           </tr>
                           <tr>
-                             <th><strong>FTP Mode</strong></th>
+                             <th width="20%"><strong>FTP Mode</strong></th>
                              <td>Here you can choose between (PASV) and active Mode (PORT). The default setting is the mode PORT with which the camera will tell the server its IP and Port. Therefor this mode will also work with passive FTP servers. If the client is behind a router which will use NAT or if a firewall is blocking the clients network from accessing the network then you should choose the PASV mode.</td>
                           </tr>
                         </table>

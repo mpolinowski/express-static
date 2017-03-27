@@ -15,10 +15,12 @@
         <% include ../_partials/amp/_amp-header.ejs %>
       </header>
 
-        <div class="wrap">
-            <div class="content">
+    <div class="wrap">
+        <div class="container main">
 
-                <section class="blade get-started">
+            <% include ../_partials/content/_bluenav-qi.ejs %>
+
+                <section class="blade wrapper content">
                     <div class="container">
                         <div class="row">
                             <div class="twelve columns">
@@ -55,50 +57,47 @@
                       <!-- /margin -->
 
                         <div class="card-container mb">
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
                                   <a href="/Quick_Installation/Live_Video/ActiveX">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_ActiveX.png"></amp-img>
                                   </a>
                                 </div>
-                                <div class="content">
-                                    <h3>ActiveX Plugin</h3>
-                                    <p>Windows video plugin (IE and FF).</p>
-                                </div>
                                 <div class="action">
-                                    <a href="/Quick_Installation/Live_Video/ActiveX">Read More</a>
+                                    <h3>ActiveX Plugin</h3>
+                                    <p>Windows video plugin (IE and FF)</p>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
                                   <a href="/Quick_Installation/Live_Video/QuickTime">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_Quicktime.png"></amp-img>
                                   </a>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>QuickTime Plugin</h3>
-                                    <p>Plugin for Windows and macOS.</p>
-                                </div>
-                                <div class="action">
-                                    <a href="/Quick_Installation/Live_Video/QuickTime">Read More</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="image">
-                                  <a href="/Quick_Installation/Live_Video/MJPEG">
-                                    <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_MJPEG.png"></amp-img>
-                                  </a>
-                                </div>
-                                <div class="content">
-                                    <h3>MJPEG Mode</h3>
-                                    <p>Use this mode in Microsoft Edge.</p>
-                                </div>
-                                <div class="action">
-                                    <a href="/Quick_Installation/Live_Video/MJPEG">Read More</a>
+                                    <p>Plugin for Windows and macOS</p>
                                 </div>
                             </div>
                         </div>
                         <!-- /Card Container -->
+
+                          <div class="card-container mb">
+                              <div class="twocard">
+                                  <div class="image">
+                                    <a href="/Quick_Installation/Live_Video/MJPEG">
+                                      <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_MJPEG.png"></amp-img>
+                                    </a>
+                                  </div>
+                                  <div class="action">
+                                      <h3>MJPEG Mode</h3>
+                                      <p>Use this mode in Microsoft Edge</p>
+                                  </div>
+                              </div>
+                              <div class="twocard invisible">
+                              </div>
+                          </div>
+                          <!-- /Card Container -->
 
                         <div class="margin">
                           <div>
@@ -110,120 +109,98 @@
                       </div>
                       <!-- /margin -->
 
-                        <div class="card-container mb">
-                            <div class="card">
+                        <div class="twocard-container mb">
+                            <div class="twocard">
                                 <div class="image">
                                   <a href="/Quick_Installation/Live_Video/Troubleshooting/Avast">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_AVAST.png"></amp-img>
                                   </a>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>Avast Security</h3>
                                 </div>
-                                <div class="action">
-                                    <a href="/Quick_Installation/Live_Video/Troubleshooting/Avast">Read More</a>
-                                </div>
                             </div>
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
                                   <a href="/Quick_Installation/Live_Video/Troubleshooting/Kaspersky_2013">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_Kaspersky2013.png"></amp-img>
                                   </a>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>Kaspersky 2013</h3>
-                                </div>
-                                <div class="action">
-                                    <a href="/Quick_Installation/Live_Video/Troubleshooting/Kaspersky_2013">Read More</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="image">
-                                  <a href="/Quick_Installation/Live_Video/Troubleshooting/Kaspersky_2014">
-                                    <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_Kaspersky2014.png"></amp-img>
-                                  </a>
-                                </div>
-                                <div class="content">
-                                    <h3>Kaspersky 2014</h3>
-                                </div>
-                                <div class="action">
-                                    <a href="/Quick_Installation/Live_Video/Troubleshooting/Kaspersky_2014">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <!-- /Card Container -->
 
-                          <div class="card-container mb">
-                              <div class="card">
+                          <div class="twocard-container mb">
+                              <div class="twocard">
+                                  <div class="image">
+                                    <a href="/Quick_Installation/Live_Video/Troubleshooting/Kaspersky_2014">
+                                      <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_Kaspersky2014.png"></amp-img>
+                                    </a>
+                                  </div>
+                                  <div class="action">
+                                      <h3>Kaspersky 2014</h3>
+                                  </div>
+                              </div>
+                              <div class="twocard">
                                   <div class="image">
                                     <a href="/Quick_Installation/Live_Video/Troubleshooting/AVG">
                                       <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_AVG.png"></amp-img>
                                     </a>
                                   </div>
-                                  <div class="content">
+                                  <div class="action">
                                       <h3>AVG Internet Security</h3>
                                   </div>
-                                  <div class="action">
-                                      <a href="/Quick_Installation/Live_Video/Troubleshooting/AVG">Read More</a>
-                                  </div>
                               </div>
-                              <div class="card">
+                          </div>
+                          <!-- /Card Container -->
+
+                          <div class="card-container mb">
+                              <div class="twocard">
                                   <div class="image">
                                     <a href="/Quick_Installation/Live_Video/Troubleshooting/AVIRA">
                                       <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_AVIRA.png"></amp-img>
                                     </a>
                                   </div>
-                                  <div class="content">
+                                  <div class="action">
                                       <h3>AVIRA Antivirus Pro</h3>
                                   </div>
-                                  <div class="action">
-                                      <a href="/Quick_Installation/Live_Video/Troubleshooting/AVIRA">Read More</a>
-                                  </div>
                               </div>
-                              <div class="card">
+                              <div class="twocard">
                                   <div class="image">
                                     <a href="/Quick_Installation/Live_Video/Troubleshooting/F-Secure">
                                       <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_F-Secure.png"></amp-img>
                                     </a>
                                   </div>
-                                  <div class="content">
-                                      <h3>F-Secure Security</h3>
-                                  </div>
                                   <div class="action">
-                                      <a href="/Quick_Installation/Live_Video/Troubleshooting/F-Secure">Read More</a>
+                                      <h3>F-Secure Security</h3>
                                   </div>
                               </div>
                           </div>
                           <!-- /Card Container -->
 
                             <div class="card-container mb">
-                                <div class="card">
+                                <div class="twocard">
                                   <div class="image">
                                     <a href="/Quick_Installation/Live_Video/Troubleshooting/Kaspersky_2017">
                                       <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_Kaspersky2017.png"></amp-img>
                                     </a>
                                   </div>
-                                  <div class="content">
+                                  <div class="action">
                                       <h3>Kaspersky 2017</h3>
                                   </div>
-                                  <div class="action">
-                                      <a href="/Quick_Installation/Live_Video/Troubleshooting/Kaspersky_2017">Read More</a>
-                                  </div>
                                 </div>
-                                <div class="card">
+                                <div class="twocard">
                                     <div class="image">
                                       <a href="/Quick_Installation/Live_Video/Troubleshooting/GDATA">
                                         <amp-img noloading height=480 width=640 layout=responsive src="/images/Live-Video_AVG.png"></amp-img>
                                       </a>
                                     </div>
-                                    <div class="content">
+                                    <div class="action">
                                         <h3>GDATA Security</h3>
                                     </div>
-                                    <div class="action">
-                                        <a href="/Quick_Installation/Live_Video/Troubleshooting/GDATA">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="card invisible">
                                 </div>
                             </div>
                             <!-- /Card Container -->

@@ -272,7 +272,12 @@ h3 {
 }
 
 .wrap {
-    margin: 0 auto
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .centered {
@@ -365,7 +370,12 @@ section.hero {
     text-align: center;
     min-height: 350px;
     padding: 65px 0 0;
-    position: relative
+    position: relative;
+}
+
+section.hero a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 section.hero .twelve.columns {
