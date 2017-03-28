@@ -15,23 +15,23 @@
         <% include ../_partials/amp/_amp-header.ejs %>
       </header>
 
-        <div class="wrap">
-            <div class="content">
+      <div class="wrap">
+          <div class="container main">
 
-                <section class="blade get-started">
-                    <div class="container">
-                        <div class="row">
-                            <div class="twelve columns">
-                                <h1>S-Mount Lenses</h1>
-                                <h2>IN-0220 Wideangle</h2>
-                                <h4>Compatible Camera Models</h4>
-                                <ul>
-                                  <li>IN-3001 Indoor Camera</li>
-                                  <li><a href="/Indoor_Cameras/IN-3011">IN-3010/1 Indoor Camera</a></li>
-                                  <li>IN-2904 Outdoor Camera</li>
-                                  <li><a href="/Outdoor_Cameras/IN-2905_V2">IN-2905 V2 Outdoor Camera</a></li>
-                                </ul>
-                            </div>
+              <% include ../_partials/content/_bluenav-p.ejs %>%>
+
+                  <section class="blade wrapper content">
+
+                        <div class="twelve columns">
+                            <h1>S-Mount Lenses</h1>
+                            <h2>IN-0220 Wideangle</h2>
+                            <h4>Compatible Camera Models</h4>
+                            <ul>
+                              <li>IN-3001 Indoor Camera</li>
+                              <li><a href="/Indoor_Cameras/IN-3011">IN-3010/1 Indoor Camera</a></li>
+                              <li>IN-2904 Outdoor Camera</li>
+                              <li><a href="/Outdoor_Cameras/IN-2905_V2">IN-2905 V2 Outdoor Camera</a></li>
+                            </ul>
                         </div>
 
                         <div class="card-container">
@@ -39,7 +39,7 @@
                                 <div class="image">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/Wideangle_Lense_2.2mm_-_Angle_of_View.png"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-0220 Wideangle</h3>
                                     <p>The angle of view of the 2.2mm wideangle lense. Field Angle (D x H x V): 98.2° x 78.7° x 60.7°.</p>
                                 </div>
@@ -48,7 +48,7 @@
                                 <div class="image">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/Wideangle_2.2mm_IRcut.jpg"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-0220 Wideangle</h3>
                                     <p>Test image of the 2.2mm wideangle lense on a 1/5" CMOS sensor with IRcut filter.</p>
                                 </div>
@@ -57,7 +57,7 @@
                                 <div class="image">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/Tagsicht_2,2mm_with_IRfilter_(940nm).jpg"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-0220 Wideangle</h3>
                                     <p>Test shot of the 2.2mm wideangle lense on a 1/4" CMOS sensor during the day.</p>
                                 </div>
@@ -68,7 +68,7 @@
                         <div class="margin">
                             <h2>Compare All Lenses</h2>
                             <p>
-                              <a href="/Products/Lenses/S-Mount/Lense_Comparison"><button class="button shadow" style="vertical-align:middle"><span>Lense Comparison</span></button></a>
+                              <a href="/Products/Lenses/S-Mount/Lense_Comparison"><button class="button shadow"><span>Lense Comparison</span></button></a>
                             </p>
                         </div>
                         <!-- /margin -->
@@ -78,7 +78,7 @@
                                 <div class="image">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/Nachtsicht_2,2mm_without_IR_Cut.jpg"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-0220 Wideangle</h3>
                                     <p>Test shot of the 2.2mm wideangle lense on a 1/4" CMOS sensor during the night.</p>
                                 </div>
@@ -87,7 +87,7 @@
                                 <div class="image">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/2,2mm_-_nightvision.jpg"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-0220 Wideangle</h3>
                                     <p>Test shot of the 2.2mm wideangle lense on a 1/4" CMOS sensor during the night.</p>
                                 </div>
@@ -96,28 +96,13 @@
                                 <div class="image">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/IN-2904_155_IRcut.png"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-0220 Wideangle</h3>
                                     <p>Test shot of the 2.2mm wideangle lense on a 1/5" CMOS sensor with IR filter.</p>
                                 </div>
                             </div>
                         </div>
                         <!-- /Card Container -->
-
-                    </div>
-                    <!-- /Container -->
-                  </section>
-                  <!-- /blade -->
-                </div>
-                <!-- /Content -->
-              </div>
-              <!-- /WRAP -->
-
-
-                <div class="container main">
-
-                    <article>
-                        <!-- article -->
 
                         <div class="margin">
                             <h2 class="post-title">IN-0220 Wideangle Lense Chart</h2>
@@ -133,7 +118,7 @@
                           </div>
 
                             <amp-lightbox id="lightbox1" layout="nodisplay">
-                                <div class="lightbox" on="tap:lightbox1.close" tabindex="0" class="centered">
+                                <div class="lightbox" on="tap:lightbox1.close" tabindex="0" class="centered" role="button">
                                     <amp-img on="tap:lightbox1.close" role="button" tabindex="0" src="/images/Lens_Chart_-_2.2mm.png" width="492" height="324" layout="responsive" class="shadow"></amp-img>
                                 </div>
                             </amp-lightbox>
@@ -182,7 +167,7 @@
                                     <td width="20%">
                                         <strong>Optical Distortion: </strong>
                                     </td>
-                                    <td>< -40.3%</td>
+                                    <td>< &nbsp;&nbsp; -40.3%</td>
                                 </tr>
                                 <tr>
                                     <td width="20%">
@@ -218,10 +203,12 @@
                         </div>
                         <!-- /margin -->
 
-                    </article>
-                    <!-- /article -->
+                  </section>
+                  <!-- /blade -->
                 </div>
-                <!-- /Container -->
+                <!-- /Content -->
+              </div>
+              <!-- /WRAP -->
 
                 <% include ../_partials/content/_bluenav-p-mobile.ejs %>
 

@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html ⚡>
-    <head>
-        <% include ../_partials/amp/_amp-head.ejs %>
+
+<head>
+    <% include ../_partials/amp/_amp-head.ejs %>
         <link rel="canonical" href="/Products/Lenses/S-Mount/IN-0180">
-    </head>
+</head>
 
-    <body class="home">
+<body class="home">
 
-      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
-          <% include ../_partials/amp/_ampLandingSidebar.ejs %>
-      </amp-sidebar>
+    <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+        <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+    </amp-sidebar>
 
-      <header class="header fixed">
+    <header class="header fixed">
         <% include ../_partials/amp/_amp-header.ejs %>
-      </header>
+    </header>
 
-        <div class="wrap">
-            <div class="content">
+    <div class="wrap">
+        <div class="container main">
 
-                <section class="blade get-started">
-                    <div class="container">
+            <% include ../_partials/content/_bluenav-p.ejs %>%>
+
+                <section class="blade wrapper content">
+
                         <div class="row">
                             <div class="twelve columns">
                                 <h1>S-Mount Lenses</h1>
                                 <h2>IN-0180 Wideangle</h2>
                                 <h4>Compatible Camera Models</h4>
                                 <ul>
-                                  <li>IN-3003 Indoor Camera</li>
-                                  <li>IN-4009 Outdoor PTZ Dome Camera</li>
+                                    <li>IN-3003 Indoor Camera</li>
+                                    <li>IN-4009 Outdoor PTZ Dome Camera</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="card-container">
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/Wideangle_Lense_1.8mm_-_Angle_of_View.png"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-0180 Wideangle</h3>
                                     <p>The angle of view of the 1.8mm wideangle lense. Field Angle (D x H x V): 109.4° x 87.7° x 67.6°.</p>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="image">
-                                    <amp-img noloading height=480 width=640 layout=responsive src="/images/Wideangle_1.8mm_with_IRcut.jpg"></amp-img>
-                                </div>
-                                <div class="content">
-                                    <h3>IN-0180 Wideangle</h3>
-                                    <p>Test image of the 1.8mm wideangle lense on a 1/5" CMOS sensor with IRcut filter.</p>
-                                </div>
-                            </div>
-                            <div class="card">
+                            <div class="twocard">
                                 <div class="image">
                                     <amp-img noloading height=480 width=640 layout=responsive src="/images/1,8mm_with_IRfilter_(940nm).jpg"></amp-img>
                                 </div>
-                                <div class="content">
+                                <div class="action">
                                     <h3>IN-0180 Wideangle</h3>
                                     <p>Test shot of the 1.8mm wideangle lense with 940nm IR filter on a 1/4" CMOS sensor.</p>
                                 </div>
@@ -63,44 +57,44 @@
                         </div>
                         <!-- /Card Container -->
 
+                        <div class="card-container">
+                          <div class="twocard">
+                              <div class="image">
+                                  <amp-img noloading height=480 width=640 layout=responsive src="/images/Wideangle_1.8mm_with_IRcut.jpg"></amp-img>
+                              </div>
+                              <div class="action">
+                                  <h3>IN-0180 Wideangle</h3>
+                                  <p>Test image of the 1.8mm wideangle lense on a 1/5" CMOS sensor with IRcut filter.</p>
+                              </div>
+                          </div>
+                            <div class="twocard invisible">
+                            </div>
+                        </div>
+                        <!-- /Card Container -->
+
                         <div class="margin">
                             <h2>Compare All Lenses</h2>
                             <p>
-                              <a href="/Products/Lenses/S-Mount/Lense_Comparison"><button class="button shadow" style="vertical-align:middle"><span>Lense Comparison</span></button></a>
+                                <a href="/Products/Lenses/S-Mount/Lense_Comparison"><button class="button shadow"><span>Lense Comparison</span></button></a>
                             </p>
                         </div>
                         <!-- /margin -->
-
-                    </div>
-                    <!-- /Container -->
-                  </section>
-                  <!-- /blade -->
-                </div>
-                <!-- /Content -->
-              </div>
-              <!-- /WRAP -->
-
-
-                <div class="container main">
-
-                    <article>
-                        <!-- article -->
 
                         <div class="margin">
                             <h2 class="post-title">IN-0180 Wideangle Lense Chart</h2>
                             <p>
-                              Lense chart for the 1.8mm wideangle for the 1/4" CMOS Sensor (Width/Hight vs. Distance from the Object). <a href="http://wiki.instar.com/images/f/f9/IN-0180_Lense_Sheet.pdf" target="_blank">PDF Lense Sheet</a>
+                                Lense chart for the 1.8mm wideangle for the 1/4" CMOS Sensor (Width/Hight vs. Distance from the Object). <a href="http://wiki.instar.com/images/f/f9/IN-0180_Lense_Sheet.pdf" target="_blank">PDF Lense Sheet</a>
                             </p>
                         </div>
                         <!-- /margin -->
 
                         <div class="margin">
-                          <div>
-                              <amp-img on="tap:lightbox1" role="button" tabindex="0" src="/images/Lens_Chart_-_1,8mm.png" width="725" height="474" layout="responsive" class="shadow"></amp-img>
-                          </div>
+                            <div>
+                                <amp-img on="tap:lightbox1" role="button" tabindex="0" src="/images/Lens_Chart_-_1,8mm.png" width="725" height="474" layout="responsive" class="shadow"></amp-img>
+                            </div>
 
                             <amp-lightbox id="lightbox1" layout="nodisplay">
-                                <div class="lightbox" on="tap:lightbox1.close" tabindex="0" class="centered">
+                                <div class="lightbox" on="tap:lightbox1.close" tabindex="0" class="centered" role="button">
                                     <amp-img on="tap:lightbox1.close" role="button" tabindex="0" src="/images/Lens_Chart_-_1,8mm.png" width="725" height="474" layout="responsive" class="shadow"></amp-img>
                                 </div>
                             </amp-lightbox>
@@ -149,7 +143,8 @@
                                     <td width="20%">
                                         <strong>Optical Distortion: </strong>
                                     </td>
-                                    <td>< -89%</td>
+                                    <td>
+                                        < &nbsp;&nbsp;-89%</td>
                                 </tr>
                                 <tr>
                                     <td width="20%">
@@ -185,15 +180,18 @@
                         </div>
                         <!-- /margin -->
 
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /Container -->
+                </section>
+                <!-- /blade -->
+        </div>
+        <!-- /Content -->
+    </div>
+    <!-- /WRAP -->
 
-                <% include ../_partials/content/_bluenav-p-mobile.ejs %>
+    <% include ../_partials/content/_bluenav-p-mobile.ejs %>
 
-                <footer>
-                    <% include ../_partials/amp/_amp-footer.ejs %>
-                </footer>
-                </body>
-            </html>
+        <footer>
+            <% include ../_partials/amp/_amp-footer.ejs %>
+        </footer>
+</body>
+
+</html>
