@@ -7,14 +7,21 @@
 
     <body class="home">
 
-      <% include ../../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
 
-      <div class="wrap">
-          <div class="container main">
+        <header class="header fixed">
+            <% include ../../_partials/amp/_amp-header.ejs %>
+        </header>
 
-              <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+            <div class="wrap">
+                <div class="container main">
 
-            <section class="blade get-started">
+                    <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+
+                        <section class="blade wrapper content">
+
                 <div class="container">
                     <div class="row">
                         <div class="twelve columns">
@@ -31,12 +38,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Network_IP_Configuration.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>Change your cameras IP address, gateway and DNS server - all these settings are usually set up by the <a href=http://install.instar.de>installation wizard</a> and don´t need to be changed. The camera´s http port might have to be changed to access your cameras webUI <a href=http://wiki.instar.com/index.php/HD_Manual_WebUI_Network_DDNS>over the internet</a>. The RTSP port is the camera´s <a href=http://wiki.instar.com/index.php/RTSP_Streaming>RTSP streaming port</a>.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Network/IP_Configuration/">IP Configuration Menu</a>
+                                <p>Change your cameras IP address, gateway and DNS server - all these settings are usually set up by the <a href=http://install.instar.de>installation wizard</a> and don´t need to be changed. The camera´s http port might have to be changed to access your cameras webUI <a href=http://wiki.instar.com/index.php/HD_Manual_WebUI_Network_DDNS>over the internet</a>. The RTSP port is the camera´s <a href=http://wiki.instar.com/index.php/RTSP_Streaming>RTSP streaming port</a>.</p>
                             </div>
                         </div>
                         <!-- /Card -->
@@ -49,12 +52,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Network_WiFi.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>Your WiFi connection should already be set up by WPS or by the <a href=http://install.instar.de/>installation wizard</a>. Use the WiFi scanner to connect your camera to a different WiFi network. Or use the scan results to check the signal strenght at the camera´s installation spot.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Network/WiFi/">WiFi Menu</a>
+                                <p>Your WiFi connection should already be set up by WPS or by the <a href=http://install.instar.de/>installation wizard</a>. Use the WiFi scanner to connect your camera to a different WiFi network. Or use the scan results to check the signal strenght at the camera´s installation spot.<br><br><br></p>
                             </div>
                         </div>
                         <!-- /Card -->
@@ -70,12 +69,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Network_Remote_Access.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>You have two ways to access your camera over the internet - the easy way is called. The only way to get complete access to all your camera´s functions is called DDNS. The DDNS or Internet Address gives you access to your cameras web user interface.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">Remote Access</a>
+                                <p>You have two ways to access your camera over the internet - the easy way is called. The only way to get complete access to all your camera´s functions is called DDNS. The DDNS or Internet Address gives you access to your cameras web user interface.<br><br></p>
                             </div>
                         </div>
                         <!-- /Card -->
@@ -88,12 +83,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Network_FTP.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>To use the video FTP Upload you first have to set your ftp server address and login credentials. E.g. you can use your routers FTP service as FTP Server - in this case simply put in your routers IP as the FTP Server address. If you set up a FTP server on a local PC (for example with Filezilla Server), use the PC’s local IP address. Of course you can use webservers URL’s as well. The standard FTP port is 21.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Network/FTP/">FTP Menu</a>
+                                <p>To use the video FTP Upload you first have to set your ftp server address and login credentials. E.g. you can use your routers FTP service as FTP Server - in this case simply put in your routers IP as the FTP Server address. If you set up a FTP server on a local PC (for example with Filezilla Server), use the PC’s local IP address.</p>
                             </div>
                         </div>
                         <!-- /Card -->
@@ -109,12 +100,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Network_UPnP.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>The UPnP standard is supposed to make your life easy. Every port that is needed publicly by a device on your network will automatically be forwarded. This would make the <a href=/Web_User_Interface/1080p_Series/Network/DDNS/>DDNS access</a> to your camera very easy...unfortunately it often does not work and might be considered a security hazard by your network administrator. Please deactivate UPnP if you are working with a manually forwarded port for your camera.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Network/UPnP/">UPnP Menu</a>
+                                <p>The UPnP standard is supposed to make your life easy. Every port that is needed publicly by a device on your network will automatically be forwarded. This would make the <a href=/Web_User_Interface/1080p_Series/Network/DDNS/>DDNS access</a> to your camera very easy...unfortunately it often does not work and might be considered a security hazard by your network administrator.</p>
                             </div>
                         </div>
                         <!-- /Card -->
@@ -127,12 +114,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Network_ONVIF.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>The surveillance industry has created an open standard protocol called ONVIF that allows cameras to communicate with each other and with network recording devices. You can activate or deactivate this service and change the port that it is using - as needed by your receiving ONVIF device.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Network/ONVIF/">ONVIF Menu</a>
+                                <p>The surveillance industry has created an open standard protocol called ONVIF that allows cameras to communicate with each other and with network recording devices. You can activate or deactivate this service and change the port that it is using - as needed by your receiving ONVIF device.</p>
                             </div>
                         </div>
                         <!-- /Card -->

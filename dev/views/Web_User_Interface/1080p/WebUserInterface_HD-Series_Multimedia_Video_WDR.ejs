@@ -7,15 +7,24 @@
 
     <body class="home">
 
-      <% include ../../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
 
-      <div class="container">
+        <header class="header fixed">
+            <% include ../../_partials/amp/_amp-header.ejs %>
+        </header>
 
-          <article>
-              <!-- article -->
+          <div class="wrap">
+              <div class="container main">
 
-              <div class="margin">
-                  <h1 class="post-title">The Wide Dynamic Range Mode</h1>
+                  <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+
+                      <section class="blade wrapper content">
+                      <!-- article -->
+
+              <div class="post-title">
+                  <h1>The Wide Dynamic Range Mode</h1>
                   <p>This is a test of the camera´s Wide Dynamic Range settings. The following image settings have been used for the following test runs:</p>
               </div>
               <!-- /margin -->

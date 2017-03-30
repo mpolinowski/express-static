@@ -7,7 +7,13 @@
 
     <body class="home">
 
-      <% include ../../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
+
+        <header class="header fixed">
+            <% include ../../_partials/amp/_amp-header.ejs %>
+        </header>
 
         <div class="wrap mobile-down">
             <div class="content">
@@ -31,16 +37,16 @@
         </div>
         <!-- /Wrap -->
 
-      <div class="wrap">
-          <div class="container main">
+            <div class="wrap">
+                <div class="container main">
 
-              <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
+                    <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
 
-                <article>
-                    <!-- article -->
+                        <section class="blade wrapper content">
+                        <!-- article -->
 
-                    <div class="margin">
-                        <h2 class="post-title">Open, format or unmount your SD Card</h2>
+                    <div class="post-title">
+                        <h2>Open, format or unmount your SD Card</h2>
                     </div>
                     <!-- /margin -->
 

@@ -7,14 +7,22 @@
 
     <body class="home">
 
-      <% include ../../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
 
-    <div class="wrap">
-        <div class="container main">
+        <header class="header fixed">
+            <% include ../../_partials/amp/_amp-header.ejs %>
+        </header>
 
-            <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
+            <div class="wrap">
+                <div class="container main">
 
-            <section class="blade get-started">
+                    <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
+
+                        <section class="blade wrapper content">
+                        <!-- article -->
+
                 <div class="container">
                     <div class="row">
                         <div class="twelve columns">
@@ -25,180 +33,64 @@
                     <!-- ##################################### Language ############################################ -->
 
                     <div class="card-container margin">
+
                         <div class="twocard">
-                            <div class="image" on="tap:language-lightbox" role="button" tabindex="0">
+                            <a href="/Web_User_Interface/720p_Series/Software/Language/">
+                            <div class="image">
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Software_Language_mouseOver.png"></amp-img>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p class="language"></p> <!-- innerHTML Added by script below -->
-                            </div>
+                            </a>
                             <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/Software/Language/">Language Menu</a>
+                                <p>Change the language of the web user interface to German, English, French or Chinese. The user interface automatically sets the language according to the language of your operating system. You can manually change it, if the auto-detection fails or you want the UI to be displayed in different languages on different computers. Your selection will be saved locally as a cookie and not globally on your camera.</p>
                             </div>
                         </div>
-                        <!-- /Card -->
-                        <!-- lightbox -->
-                          <amp-lightbox id="language-lightbox" layout="nodisplay">
-                            <div class="lightbox" on="tap:language-lightbox.close" tabindex="0">
-                              <div class="twocard cardbox">
-                                  <a href="/Web_User_Interface/720p_Series/Software/Language/">
-                                  <div class="image">
-                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Software_Language_mouseOver.png"></amp-img>
-                                  </div>
-                                  </a>
-                                  <div class="content" on="tap:language-lightbox.close" tabindex="0">
-                                      <hr>
-                                      <p class="language2"></p> <!-- innerHTML Added by script below -->
-                                  </div>
-                                  <div class="action">
-                                      <a href="/Web_User_Interface/720p_Series/Software/Language/">Click of more Information</a>
-                                  </div>
-                              </div>
-                            </div>
-                          </amp-lightbox>
-                        <!-- /lightbox -->
-                        <!-- Add Pragraph Text -->
-                        <script>
-                            var language = document.querySelectorAll('.language, .language2');
-                            for(var i = 0; i < language.length; i++) {
-                              language[i].innerHTML="Change the language of the web user interface to German, English, French or Chinese. The user interface automatically sets the language according to the language of your operating system. You can manually change it, if the auto-detection fails or you want the UI to be displayed in different languages on different computers. Your selection will be saved locally as a cookie and not globally on your camera.";
-                            }
-                        </script>
 
                         <!-- ##################################### Backup ############################################ -->
 
                         <div class="twocard">
-                            <div class="image" on="tap:backup-lightbox" role="button" tabindex="0">
+                            <a href="/Web_User_Interface/720p_Series/Software/Backup/">
+                            <div class="image">
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Software_Backup_mouseOver.png"></amp-img>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p class="backup"></p> <!-- innerHTML Added by script below -->
-                            </div>
+                            </a>
                             <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/Software/Backup/">BackUp Menu</a>
+                                <p>You can backup your camera configuration after setting everything up. Download the file and name it appropriately for a later restore. Please be aware that software updates sometimes add new variables / functions to the camera and you won´t be able to use your old backup files anymore. Always create a new backup after an software update to be sure.<br><br></p>
                             </div>
                         </div>
-                        <!-- /Card -->
-                      </div>
-                      <!-- Card Container -->
-                      <!-- lightbox -->
-                        <amp-lightbox id="backup-lightbox" layout="nodisplay">
-                          <div class="lightbox" on="tap:backup-lightbox.close" tabindex="0">
-                            <div class="twocard cardbox">
-                                <a href="/Web_User_Interface/720p_Series/Software/Language/">
-                                <div class="image">
-                                    <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Software_Backup_mouseOver.png"></amp-img>
-                                </div>
-                                </a>
-                                <div class="content" on="tap:backup-lightbox.close" tabindex="0">
-                                    <hr>
-                                    <p class="backup2"></p> <!-- innerHTML Added by script below -->
-                                </div>
-                                <div class="action">
-                                    <a href="/Web_User_Interface/720p_Series/Software/Language/">Click of more Information</a>
-                                </div>
-                            </div>
-                          </div>
-                        </amp-lightbox>
-                      <!-- /lightbox -->
-                      <!-- Add Pragraph Text -->
-                      <script>
-                          var backup = document.querySelectorAll('.backup, .backup2');
-                          for(var i = 0; i < backup.length; i++) {
-                            backup[i].innerHTML="You can backup your camera configuration after setting everything up. Download the file and name it appropriately for a later restore. Please be aware that software updates sometimes add new variables / functions to the camera and you won´t be able to use your old backup files anymore. Always create a new backup after an software update to be sure.";
-                          }
-                      </script>
+
+                    </div>
+                    <!-- Card Container -->
 
                       <!-- ##################################### Update ############################################ -->
 
                       <div class="card-container margin">
+
                         <div class="twocard">
-                            <div class="image" on="tap:update-lightbox" role="button" tabindex="0">
+                            <a href="/Web_User_Interface/720p_Series/Software/Update/">
+                            <div class="image">
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Software_Update_mouseOver.png"></amp-img>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p class="update"></p> <!-- innerHTML Added by script below -->
-                            </div>
+                            </a>
                             <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/Software/Update/">Update Menu</a>
+                                <p>The INSTAR software department is constantly working to improve your experience with our product. You can check the update section from time to time to make sure your system is still up-to-date. You can also check our <a href="https://download.instar.com">download area</a> to find our newest software and corresponding changelogs.<br><br></p>
                             </div>
-                        </div>
-                        <!-- /Card -->
-                        <!-- lightbox -->
-                          <amp-lightbox id="update-lightbox" layout="nodisplay">
-                            <div class="lightbox" on="tap:update-lightbox.close" tabindex="0">
-                              <div class="twocard cardbox">
-                                  <a href="/Web_User_Interface/720p_Series/Software/Update/">
-                                  <div class="image">
-                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Software_Update_mouseOver.png"></amp-img>
-                                  </div>
-                                  </a>
-                                  <div class="content" on="tap:update-lightbox.close" tabindex="0">
-                                      <hr>
-                                      <p class="update2"></p> <!-- innerHTML Added by script below -->
-                                  </div>
-                                  <div class="action">
-                                      <a href="/Web_User_Interface/720p_Series/Software/Update/">Click of more Information</a>
-                                  </div>
-                              </div>
-                            </div>
-                          </amp-lightbox>
-                        <!-- /lightbox -->
-                        <!-- Add Pragraph Text -->
-                        <script>
-                            var update = document.querySelectorAll('.update, .update2');
-                            for(var i = 0; i < update.length; i++) {
-                              update[i].innerHTML="The INSTAR software department is constantly working to improve your experience with our product. You can check the update section from time to time to make sure your system is still up-to-date. You can also check our <a href=&quot;http://download.instar.com&quot;>download area</a> to find our newest software and corresponding changelogs.";
-                            }
-                        </script>
+                          </div>
 
                         <!-- ##################################### Reboot ############################################ -->
 
                         <div class="twocard">
-                            <div class="image" on="tap:reboot-lightbox" role="button" tabindex="0">
-                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Software_Reboot_mouseOver.png"></amp-img>
-                            </div>
-                            <div class="content">
-                                <hr>
-                                <p class="reboot"></p> <!-- innerHTML Added by script below -->
-                            </div>
-                            <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/Software/Reboot_Reset/">Reboot &amp; Reset Menu</a>
-                            </div>
-                        </div>
-                        <!-- /Card -->
-                    </div>
-                    <!-- /Card Container -->
-                    <!-- lightbox -->
-                      <amp-lightbox id="reboot-lightbox" layout="nodisplay">
-                        <div class="lightbox" on="tap:reboot-lightbox.close" tabindex="0">
-                          <div class="twocard cardbox">
                               <a href="/Web_User_Interface/720p_Series/Software/Reboot_Reset/">
                               <div class="image">
                                   <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Software_Reboot_mouseOver.png"></amp-img>
                               </div>
                               </a>
-                              <div class="content" on="tap:reboot-lightbox.close" tabindex="0">
-                                  <hr>
-                                  <p class="reboot2"></p> <!-- innerHTML Added by script below -->
-                              </div>
                               <div class="action">
-                                  <a href="/Web_User_Interface/720p_Series/Software/Reboot_Reset/">Click of more Information</a>
+                                  <p>Use this function to reboot or reset your camera safely. It is not recommended to simply unplug/replug your camera or use the hardware reset unnecessarily (those actions can be harmful to running operations as well as causing hardware defects on the internal SD card). Please always use the soft- restart and reset via the web user interface.</p>
                               </div>
                           </div>
-                        </div>
-                      </amp-lightbox>
-                    <!-- /lightbox -->
-                    <!-- Add Pragraph Text -->
-                    <script>
-                        var reboot = document.querySelectorAll('.reboot, .reboot2');
-                        for(var i = 0; i < reboot.length; i++) {
-                          reboot[i].innerHTML="Use this function to reboot or reset your camera safely. It is not recommended to simply unplug/replug your camera or use the hardware reset unnecessarily (those actions can be harmful to running operations as well as causing hardware defects on the internal SD card). Please always use the soft- restart and reset via the web user interface. Use the hardware reset in case that you have lost access to the interface.";
-                        }
-                    </script>
+
+                    </div>
+                    <!-- /Card-Container -->
                 </div>
                 <!-- /Container -->
             </section>

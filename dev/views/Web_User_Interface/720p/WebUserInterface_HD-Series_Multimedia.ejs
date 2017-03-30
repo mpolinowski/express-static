@@ -7,14 +7,22 @@
 
     <body class="home">
 
-      <% include ../../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
 
-    <div class="wrap">
-        <div class="container main">
+        <header class="header fixed">
+            <% include ../../_partials/amp/_amp-header.ejs %>
+        </header>
 
-            <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
+            <div class="wrap">
+                <div class="container main">
 
-            <section class="blade get-started">
+                    <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
+
+                        <section class="blade wrapper content">
+                        <!-- article -->
+
                 <div class="container">
                     <div class="row">
                         <div class="twelve columns">
@@ -25,140 +33,54 @@
                     <!-- ##################################### Audio ############################################ -->
 
                     <div class="card-container margin">
-                        <div class="twocard">
-                            <div class="image" on="tap:audio-lightbox" role="button" tabindex="0">
-                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Multimedia_Audio_mouseOver.png"></amp-img>
-                            </div>
-                            <div class="content">
-                                <hr>
-                                <p class="maudio"></p> <!-- innerHTML Added by script below -->
-                            </div>
-                            <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/Multimedia/Audio/">Audio Menu</a>
-                            </div>
-                        </div>
-                        <!-- /Card -->
-                        <!-- lightbox -->
-                          <amp-lightbox id="audio-lightbox" layout="nodisplay">
-                            <div class="lightbox" on="tap:audio-lightbox.close" tabindex="0">
-                              <div class="twocard cardbox">
-                                  <a href="/Web_User_Interface/720p_Series/Multimedia/Audio/">
-                                  <div class="image">
-                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Multimedia_Audio_mouseOver.png"></amp-img>
-                                  </div>
-                                  </a>
-                                  <div class="content" on="tap:audio-lightbox.close" tabindex="0">
-                                      <hr>
-                                      <p class="maudio2"></p> <!-- innerHTML Added by script below -->
-                                  </div>
-                                  <div class="action">
-                                      <a href="/Web_User_Interface/720p_Series/Multimedia/Audio/">Click of more Information</a>
-                                  </div>
-                              </div>
-                            </div>
-                          </amp-lightbox>
-                        <!-- /lightbox -->
-                        <!-- Add Pragraph Text -->
-                        <script>
-                            var audio = document.querySelectorAll('.maudio, .maudio2');
-                            for(var i = 0; i < audio.length; i++) {
-                              audio[i].innerHTML="Here you can adjust the amplification of the cameras microphones/audio-in as well as the volume of the audio-out signal.";
-                            }
-                        </script>
+
+                      <div class="twocard">
+                          <a href="/Web_User_Interface/720p_Series/Multimedia/Image/">
+                          <div class="image">
+                              <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Multimedia_Image_mouseOver.png"></amp-img>
+                          </div>
+                          </a>
+                          <div class="action">
+                              <p>Here you can adjust the image parameters brightness, saturation, contrast, exposure (shutter) and sharpness. You can flip and mirror the video image, can display a timestamp and set a camera name and display it as well. The displayed parameters are burnt into the camera image. Please make sure to restart the camera after changing the name.</p>
+                          </div>
+                      </div>
 
                         <!-- ##################################### Video ############################################ -->
 
                         <div class="twocard">
-                            <div class="image" on="tap:video-lightbox" role="button" tabindex="0">
+                            <a href="/Web_User_Interface/720p_Series/Multimedia/Video/">
+                            <div class="image">
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Multimedia_Video_mouseOver.png"></amp-img>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p class="mvideo"></p> <!-- innerHTML Added by script below -->
-                            </div>
+                            </a>
                             <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/Multimedia/Video/">Video Menu</a>
+                                <p>The video settings allow you to adjust the quality of all 3 videostreams of your camera. Please be adviced that high quality settings come with high requirements for your computer hardware and network bandwidth. Adjust the video quality to obtain a fluent video accordingly. Please refer to RTSP Streaming for accessing the cameras streams 2 and 3.</p>
                             </div>
                         </div>
-                        <!-- /Card -->
+
                       </div>
-                      <!-- Card Container -->
-                      <!-- lightbox -->
-                        <amp-lightbox id="video-lightbox" layout="nodisplay">
-                          <div class="lightbox" on="tap:video-lightbox.close" tabindex="0">
-                            <div class="twocard cardbox">
-                                <a href="/Web_User_Interface/720p_Series/Multimedia/Video/">
-                                <div class="image">
-                                    <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Multimedia_Video_mouseOver.png"></amp-img>
-                                </div>
-                                </a>
-                                <div class="content" on="tap:video-lightbox.close" tabindex="0">
-                                    <hr>
-                                    <p class="mvideo2"></p> <!-- innerHTML Added by script below -->
-                                </div>
-                                <div class="action">
-                                    <a href="/Web_User_Interface/720p_Series/Multimedia/Video/">Click of more Information</a>
-                                </div>
-                            </div>
-                          </div>
-                        </amp-lightbox>
-                      <!-- /lightbox -->
-                      <!-- Add Pragraph Text -->
-                      <script>
-                          var mvideo = document.querySelectorAll('.mvideo, .mvideo2');
-                          for(var i = 0; i < mvideo.length; i++) {
-                            mvideo[i].innerHTML="The video settings allow you to adjust the quality of all 3 videostreams of your camera. Please be adviced that high quality settings come with high requirements for your computer hardware and network bandwidth. Adjust the video quality to obtain a fluent video accordingly. Please refer to RTSP Streaming for accessing the cameras streams 2 and 3.";
-                          }
-                      </script>
+                      <!-- /card container -->
 
                       <!-- ##################################### Image ############################################ -->
 
                       <div class="card-container margin">
-                          <div class="twocard">
-                            <div class="image" on="tap:image-lightbox" role="button" tabindex="0">
-                              <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Multimedia_Image_mouseOver.png"></amp-img>
+
+                        <div class="twocard">
+                            <a href="/Web_User_Interface/720p_Series/Multimedia/Audio/">
+                            <div class="image">
+                                <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Multimedia_Audio_mouseOver.png"></amp-img>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p class="mimage"></p> <!-- innerHTML Added by script below -->
-                            </div>
+                            </a>
                             <div class="action">
-                                <a href="/Web_User_Interface/720p_Series/Multimedia/Image/">Image Menu</a>
+                                <p>Here you can adjust the amplification of the cameras microphones/audio-in as well as the volume of the audio-out signal.</p>
                             </div>
                         </div>
-                        <!-- /Card -->
-                        <!-- lightbox -->
-                          <amp-lightbox id="image-lightbox" layout="nodisplay">
-                            <div class="lightbox" on="tap:image-lightbox.close" tabindex="0">
-                              <div class="twocard cardbox">
-                                  <a href="/Web_User_Interface/720p_Series/Multimedia/Image/">
-                                  <div class="image">
-                                      <amp-img noloading height=400 width=400 layout=responsive src="/images/QL-Box_WebUI_Multimedia_Video_mouseOver.png"></amp-img>
-                                  </div>
-                                  </a>
-                                  <div class="content" on="tap:image-lightbox.close" tabindex="0">
-                                      <hr>
-                                      <p class="mimage2"></p> <!-- innerHTML Added by script below -->
-                                  </div>
-                                  <div class="action">
-                                      <a href="/Web_User_Interface/720p_Series/Multimedia/Image/">Click of more Information</a>
-                                  </div>
-                              </div>
-                            </div>
-                          </amp-lightbox>
-                        <!-- /lightbox -->
-                        <!-- Add Pragraph Text -->
-                        <script>
-                            var mimage = document.querySelectorAll('.mimage, .mimage2');
-                            for(var i = 0; i < mimage.length; i++) {
-                              mimage[i].innerHTML="Here you can adjust the image parameters brightness, saturation, contrast, exposure (shutter) and sharpness. You can flip and mirror the video image, can display a timestamp and set a camera name and display it as well. The displayed parameters are burnt into the camera image. Please make sure to restart the camera after changing the name.";
-                            }
-                        </script>
 
-                        <div class="twocard invisible"></div>
+                          <div class="twocard invisible"></div>
                         <!-- /Card -->
                     </div>
                     <!-- /Card Container -->
+
                 </div>
                 <!-- /Container -->
             </section>

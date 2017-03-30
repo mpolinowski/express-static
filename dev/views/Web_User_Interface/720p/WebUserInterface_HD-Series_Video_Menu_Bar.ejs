@@ -7,10 +7,16 @@
 
     <body class="home">
 
-      <% include ../../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
+
+        <header class="header fixed">
+            <% include ../../_partials/amp/_amp-header.ejs %>
+        </header>
 
         <div class="wrap mobile-down">
-            <div class="content">
+            <div class="action">
                 <section class="hero webUI">
                     <div class="container">
                         <div class="row">
@@ -31,10 +37,13 @@
         </div>
         <!-- /Wrap -->
 
-      <div class="wrap">
-          <div class="container main">
+            <div class="wrap">
+                <div class="container main">
 
-              <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
+                    <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
+
+                        <section class="blade wrapper content">
+                        <!-- article -->
 
               <section class="blade get-started">
                   <div class="container">
@@ -52,7 +61,7 @@
                               <div class="image">
                                   <amp-img noloading height=90 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_Audio.png"></amp-img>
                               </div>
-                              <div class="content">
+                              <div class="action">
                                   <h4>Camera Microfone</h4>
                                   <p>Click here to activate the cameras audiostream. Adjust the volume in the <a href="/Web_User_Interface/720p_Series/Multimedia/Audio/">Audio Menu</a>.</p>
                               </div>
@@ -61,7 +70,7 @@
                               <div class="image">
                                   <amp-img noloading height=90 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_Microphone.png"></amp-img>
                               </div>
-                              <div class="content">
+                              <div class="action">
                                   <h4>Camera Loudspeaker</h4>
                                   <p>In case your PC is equipped with a microphone click here to activate the audio-out of your camera.</p>
                               </div>
@@ -73,17 +82,25 @@
                               <div class="image">
                                   <amp-img noloading height=90 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_Zoom.png"></amp-img>
                               </div>
-                              <div class="content">
+                              <div class="action">
                                   <h4>Digital Zoom</h4>
                                   <p>Click here to adjust the cameras 3 x digital zoom - use the 3rd button to bring it back to normal.</p>
                               </div>
                           </div>
-                          <div class="twocard">
+                          <div class="twocard invisible">
+                          </div>
+                      </div>
+
+                      <div class="margin">
+                        <h2>Record Path</h2>
+                      </div>
+
+                      <div class="card-container">
+                          <div class="onecard">
                               <div class="image">
                                   <amp-img noloading height=224 width=200 layout=responsive src="/images/WebUI-MenuVideoBar_RecPath.png"></amp-img>
                               </div>
-                              <div class="content">
-                                  <h4>Record Path</h4>
+                              <div class="action">
                                   <p>Here you can set the record path for your <a href="/Web_User_Interface/720p_Series/Video_Menu_Bar/">manually recorded</a> videos and snapshots. The set path is used by all your INSTAR HD Cameras! Your camera will automatically create subdirectories with the current date and its IP address when you start recording or take a snapshot. All snapshots will be saved in the subdirectory Snap and all videos in the subdirectory Record.</p>
                               </div>
                           </div>

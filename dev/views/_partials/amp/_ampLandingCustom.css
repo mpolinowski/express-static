@@ -353,7 +353,7 @@ a.underlined.cta:hover::before, .card-container.grid .card-link p.cta:hover::bef
 .socialBox {
   display: flex;
   padding: 0 20px;
-  margin: 100px 0 200px 0;
+  margin: 100px 0 100px 0;
 }
 
 .btnSocial {
@@ -498,7 +498,17 @@ amp-youtube, amp-vimeo {
 }
 
 .wrap {
-    margin: 0 auto
+    margin: 0 auto;
+}
+
+.flex-wrap {
+  display: inline-flex;
+  justify-content: space-around;
+  max-width: 1200px;
+}
+
+.flex-card {
+  flex-grow: 1;
 }
 
 :target::before {

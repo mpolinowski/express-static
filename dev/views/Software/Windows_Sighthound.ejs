@@ -7,14 +7,20 @@
 
     <body class="home">
 
-      <% include ../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
 
-      <div class="wrap">
-          <div class="container main">
+        <header class="header fixed">
+            <% include ../_partials/amp/_amp-header.ejs %>
+        </header>
 
-            <% include ../_partials/content/_bluenav-p.ejs %>
+        <div class="wrap">
+            <div class="container main">
 
-                <article>
+                <% include ../_partials/content/_bluenav-p.ejs %>%>
+
+                    <section class="blade wrapper content">
                     <!-- article -->
 
                     <div class="margin">

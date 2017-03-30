@@ -7,14 +7,21 @@
 
     <body class="home">
 
-      <% include ../../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
 
-      <div class="wrap">
-          <div class="container main">
+        <header class="header fixed">
+            <% include ../../_partials/amp/_amp-header.ejs %>
+        </header>
 
-              <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+            <div class="wrap">
+                <div class="container main">
 
-            <section class="blade get-started">
+                    <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+
+                        <section class="blade wrapper content">
+
                 <div class="container">
                     <div class="row">
                         <div class="twelve columns">
@@ -31,12 +38,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Features_IR_LEDs.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>Your camera´s IR LEDs are switched on and off automatically by the internal light sensor. If you want to use your camera behind a highly reflective window or you are using your camera as a weather webcam and don´t need the IR light, simply deactivate the LEDs here. Be aware that the automatic IRcut filter will be moved in front of the lense permanently in this mode. That means you cannot use an external IR spotlight with your camera, if the internal IR lights are turned off.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Features/IR_LEDs/">IR LEDs</a>
+                                <p>Your camera´s IR LEDs are switched on and off automatically by the internal light sensor. If you want to use your camera behind a highly reflective window or you are using your camera as a weather webcam and don´t need the IR light, simply deactivate the LEDs here.</p>
                             </div>
                         </div>
                         <!-- /Card -->
@@ -49,12 +52,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Features_PTZ.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>Deactivate your camera´s calibration run at startup (will also deactivate the saved positions). Let your camera go to a saved position after a restart or limit the range of the pan &amp; tilt motion for privacy concerns.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Features/PTZ/">PTZ Menu</a>
+                                <p>Deactivate your camera´s calibration run at startup (will also deactivate the saved positions). Let your camera go to a saved position after a restart or limit the range of the pan &amp; tilt motion for privacy concerns.<br><br><br></p>
                             </div>
                         </div>
                         <!-- /Card -->
@@ -70,12 +69,8 @@
                                   <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Features_PTZ_Tour.png"></amp-img>
                                 </a>
                               </div>
-                              <div class="content">
-                                  <hr>
-                                  <p>Deactivate your camera´s calibration run at startup (will also deactivate the saved positions). Let your camera go to a saved position after a restart or limit the range of the pan &amp; tilt motion for privacy concerns.</p>
-                              </div>
                               <div class="action">
-                                  <a href="/Web_User_Interface/1080p_Series/Features/PTZ_Tour/">PTZ Tour Menu</a>
+                                  <p>Deactivate your camera´s calibration run at startup (will also deactivate the saved positions). Let your camera go to a saved position after a restart or limit the range of the pan &amp; tilt motion for privacy concerns.<br><br></p>
                               </div>
                           </div>
                           <!-- /Card -->
@@ -88,12 +83,8 @@
                                   <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Features_SD_Card.png"></amp-img>
                                 </a>
                               </div>
-                              <div class="content">
-                                  <hr>
-                                  <p>Please check the corresponding box and click submit to either format or unmount your SD card. It is recommended to always unmount your SD card before removing it from your camera! Your SD card might be unavailable after an unexpected restart. Please wait for the operating system to check the file system for errors. The SD card will show up again once it was successfuly mounted by the system.</p>
-                              </div>
                               <div class="action">
-                                  <a href="/Web_User_Interface/1080p_Series/Features/SD_Card/">SD Card Menu</a>
+                                  <p>Please check the corresponding box and click submit to either format or unmount your SD card. Your SD card might be unavailable after an unexpected restart. Please wait for the operating system to check the file system for errors.</p>
                               </div>
                           </div>
                           <!-- /Card -->
@@ -109,12 +100,8 @@
                                     <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Features_Status_LED.png"></amp-img>
                                   </a>
                                 </div>
-                                <div class="content">
-                                    <hr>
-                                    <p>Did you notice the blue and blinking LED on the camera? It can be very annoying in a dark room. But it can be used to troubleshoot your network connection or to make people aware that they are being recorded. For all other purposes come here to deactivate it.</p>
-                                </div>
                                 <div class="action">
-                                    <a href="/Web_User_Interface/1080p_Series/Features/Status_LED/">Status LED Menu</a>
+                                    <p>Did you notice the blue and blinking LED on the camera? It can be very annoying in a dark room. But it can be used to troubleshoot your network connection or to make people aware that they are being recorded. For all other purposes come here to deactivate it.</p>
                                 </div>
                             </div>
                             <!-- /Card -->

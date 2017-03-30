@@ -7,7 +7,13 @@
 
     <body class="home">
 
-      <% include ../../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
+
+        <header class="header fixed">
+            <% include ../../_partials/amp/_amp-header.ejs %>
+        </header>
 
           <div class="wrap mobile-down">
               <div class="content">
@@ -31,33 +37,31 @@
           </div>
           <!-- /Wrap -->
 
-        <div class="wrap">
-            <div class="container main">
+              <div class="wrap">
+                  <div class="container main">
 
-              <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
+                    <% include ../../_partials/content/_bluenav-720p-webUI.ejs %>
 
-                <article>
+                    <section class="blade wrapper content">
                     <!-- article -->
 
-                    <div class="row margin">
-                        <h1>The HD Web User Interface</h1>
-                        <h4>only for 720p Camera Models - <a href="/Web_User_Interface/1080p_Series/">Click here for 1080p Series</a></h4>
-                        <amp-youtube data-videoid="doJoOxckKKs" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
+                    <div class="post-title">
+                      <h1>The HD Web User Interface</h1>
+                      <h4>only for 720p Camera Models - <a href="/Web_User_Interface/1080p_Series/">Click here for 1080p Series</a></h4>
                     </div>
 
-                    <div class="row margin">
-                        <h2>Plug &amp; Play</h2>
-                        <amp-youtube data-videoid="TSZZqnevU_k" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
+                    <div class="twelve columns">
+                      <amp-youtube data-videoid="doJoOxckKKs" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
                     </div>
 
-                    <div class="row quote-row margin">
+                    <div class="twelve columns row quote-row margin">
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/Software/">
                                 <div class="two columns">
                                     <amp-img src="/images/QL-Box_WebUI_Software.png" width="100" height="100" noloading class="quote-image shadow"></amp-img>
                                 </div>
                                 <div class="four columns">
-                                    <p class="quote-copy">Change the language of the web user interface, reboot or reset or upload a firmware and web UI update to your camera.</p>
+                                    <p>Change the language of the web user interface, reboot or reset or upload a firmware and web UI update to your camera.</p>
                                     <p class="quote-source">
                                         <strong>Software Menu</strong><br/>
                                         <a href="/Web_User_Interface/720p_Series/Software/Language/">Language</a>,
@@ -91,6 +95,11 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="twelve columns margin">
+                      <amp-youtube data-videoid="TSZZqnevU_k" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
+                    </div>
+
                     <div class="row quote-row">
                         <div class="cards">
                             <a href="/Web_User_Interface/720p_Series/System/">

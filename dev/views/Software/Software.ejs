@@ -64,42 +64,59 @@
                     <div class="row desktop-up">
 
                       <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container">
-                              <a class="card centered tile" href="/Software/Windows/">
-                                  <div class="card-inner">
-                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Windows_white.png">
-                                      </amp-img>
-                                  </div>
-                              </a>
-                              <a class="card centered tile" href="/Software/macOS/">
-                                  <div class="card-inner">
-                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-macOS_white.png">
-                                      </amp-img>
-                                  </div>
-                              </a>
-                              <a class="card centered tile" href="/Software/Android/">
-                                  <div class="card-inner">
-                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Android_white.png">
-                                      </amp-img>
-                                  </div>
-                              </a>
+                          <div class="card-container flex-wrap">
+                              <div class="card centered tile flex-card">
+                                <a href="/Software/Windows/">
+                                    <div class="card-inner">
+                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Windows_white.png">
+                                        </amp-img>
+                                    </div>
+                                </a>
+                              </div>
+                              <div class="card centered tile flex-card">
+                                <a href="/Software/macOS/">
+                                    <div class="card-inner">
+                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-macOS_white.png">
+                                        </amp-img>
+                                    </div>
+                                </a>
+                              </div>
+                              <div class="card centered tile flex-card">
+                                <a href="/Software/Android/">
+                                    <div class="card-inner">
+                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Android_white.png">
+                                        </amp-img>
+                                    </div>
+                                </a>
+                              </div>
+                          </div>
+                      </amp-carousel>
+
+                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
+                          <div class="card-container flex-wrap">
+                              <div class="card centered tile flex-card">
+                                <a href="/Software/iOS/">
+                                    <div class="card-inner">
+                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS_white.png">
+                                        </amp-img>
+                                    </div>
+                                </a>
+                              </div>
+                              <div class="card centered tile flex-card">
+                                <a href="/Software/Other_Platforms/">
+                                    <div class="card-inner">
+                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Other_white.png">
+                                        </amp-img>
+                                    </div>
+                                </a>
+                              </div>
                           </div>
                       </amp-carousel>
 
                       <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
                           <div class="card-container">
-                              <a class="card centered tile" href="/Software/iOS/">
-                                  <div class="card-inner">
-                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS_white.png">
-                                      </amp-img>
-                                  </div>
-                              </a>
-                              <a class="card centered tile" href="/Software/Other_Platforms/">
-                                  <div class="card-inner">
-                                      <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Other_white.png">
-                                      </amp-img>
-                                  </div>
-                              </a>
+
+
                           </div>
                       </amp-carousel>
 
@@ -225,7 +242,7 @@
             <!-- ########################## Footer ############################### -->
 
             <footer class="desktop-up">
-              <% include ../_partials/amp/_amp-footer2.ejs %>
+              <% include ../_partials/amp/_amp-footer.ejs %>
             </footer>
 
         </div>

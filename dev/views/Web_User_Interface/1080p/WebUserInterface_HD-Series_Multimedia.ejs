@@ -7,14 +7,21 @@
 
     <body class="home">
 
-      <% include ../../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
 
-      <div class="wrap">
-          <div class="container main">
+        <header class="header fixed">
+            <% include ../../_partials/amp/_amp-header.ejs %>
+        </header>
 
-              <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+            <div class="wrap">
+                <div class="container main">
 
-            <section class="blade get-started">
+                    <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+
+                        <section class="blade wrapper content">
+
                 <div class="container">
                     <div class="row">
                         <div class="twelve columns">
@@ -31,12 +38,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Multimedia_Audio.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>Here you can adjust the amplification of the cameras microphones/audio-in as well as the volume of the audio-out signal.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Multimedia/Audio/">Audio Menu</a>
+                                <p>Here you can adjust the amplification of the cameras microphones/audio-in as well as the volume of the audio-out signal.<br><br><br><br></p>
                             </div>
                         </div>
                         <!-- /Card -->
@@ -49,12 +52,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Multimedia_Video.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>The video settings allow you to adjust the quality of all 3 videostreams of your camera. Please be adviced that high quality settings come with high requirements for your computer hardware and network bandwidth..</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Multimedia/Video/">Video Menu</a>
+                                <p>The video settings allow you to adjust the quality of all 3 videostreams of your camera. Please be adviced that high quality settings come with high requirements for your computer hardware and network bandwidth..</p>
                             </div>
                         </div>
                         <!-- /Card -->
@@ -70,12 +69,8 @@
                                   <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Multimedia_Image.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>Here you can adjust the image parameters brightness, saturation, contrast, exposure (shutter) and sharpness. You can flip and mirror the video image, can display a timestamp and set a camera name and display it as well. The displayed parameters are burnt into the camera image. Please make sure to restart the camera after changing the name.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Multimedia/Image/">Image Menu</a>
+                                <p>Here you can adjust the image parameters brightness, saturation, contrast, exposure (shutter) and sharpness. You can flip and mirror the video image, can display a timestamp and set a camera name and display it as well. The displayed parameters are burnt into the camera image. Please make sure to restart the camera after changing the name.</p>
                             </div>
                         </div>
                         <!-- /Card -->
@@ -86,12 +81,8 @@
                                 <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Multimedia_Privacy.png"></amp-img>
                               </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>The Privacy Mask Menu allows you to black out areas from your surveillance. E.g. you can still see a part of the public street in front of your house on your surveillance videos. But you can not adjust the camera angle any more. Now you can setup up to 4 masks to prevent the street from showing up in your surveillance footage.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Multimedia/Privacy_Mask/">Privacy Mask Menu</a>
+                                <p>The Privacy Mask Menu allows you to black out areas from your surveillance. E.g. you can still see a part of the public street in front of your house on your surveillance videos. But you can not adjust the camera angle any more. Now you can setup up to 4 masks to prevent the street from showing up in your surveillance footage.</p>
                             </div>
                         </div>
                         <!-- /Card -->

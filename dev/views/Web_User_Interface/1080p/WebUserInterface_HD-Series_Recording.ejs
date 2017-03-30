@@ -7,14 +7,21 @@
 
     <body class="home">
 
-      <% include ../../_partials/amp/_amp-header.ejs %>
+        <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+            <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+        </amp-sidebar>
 
-        <div class="wrap">
-            <div class="container main">
+        <header class="header fixed">
+            <% include ../../_partials/amp/_amp-header.ejs %>
+        </header>
 
-                <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+            <div class="wrap">
+                <div class="container main">
 
-            <section class="blade get-started">
+                    <% include ../../_partials/content/_bluenav-1080p-webUI.ejs %>
+
+                        <section class="blade wrapper content">
+
                 <div class="container">
                     <div class="row">
                         <div class="twelve columns">
@@ -32,12 +39,8 @@
                                   src="/images/1080p_webUI/QL-Box_WebUI_1080p_Recording_Video.png"></amp-img>
                               </a>
                           </div>
-                          <div class="content">
-                              <hr>
-                              <p>Here you can activate the planned video recording. This function will record a video to the cameras internal SD card inside the time window defined by the Recording Schedule. You can set the resolution and length of each recorded video file.</p>
-                          </div>
                           <div class="action">
-                              <a href="/Web_User_Interface/1080p_Series/Recording/Video/">Video Menu</a>
+                              <p>Here you can activate the planned video recording. This function will record a video to the cameras internal SD card inside the time window defined by the Recording Schedule. You can set the resolution and length of each recorded video file.<br><br><br></p>
                           </div>
                       </div>
                       <!-- /Card -->
@@ -50,12 +53,8 @@
                                   <amp-img noloading height=400 width=400 layout=responsive src="/images/1080p_webUI/QL-Box_WebUI_1080p_Recording_Photoseries.png"></amp-img>
                                 </a>
                             </div>
-                            <div class="content">
-                                <hr>
-                                <p>Record snapshots in an adjustable time interval and stitch them together inside a Third-party Software to create a timelapse video. You can also choose to upload the snapshot with a fixed file name. This will always overwrite the last file and allows you to easily embedd a Live Image of your IP camera inside your homepage.</p>
-                            </div>
                             <div class="action">
-                                <a href="/Web_User_Interface/1080p_Series/Recording/Photoseries/">Photoseries Menu</a>
+                                <p>Record snapshots in an adjustable time interval and stitch them together inside a Third-party Software to create a timelapse video. You can also choose to upload the snapshot with a fixed file name. This will always overwrite the last file and allows you to easily embedd a Live Image of your IP camera inside your homepage.</p>
                             </div>
                         </div>
                         <!-- /Card -->
