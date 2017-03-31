@@ -580,10 +580,10 @@ amp-lightbox .lightbox .close-button {
     background: url("/images/instar_245x77.png") no-repeat center left/100%;
     color: #0379c4;
     margin: 0;
-    padding: 40px 40px 40px 60px;
+    padding: 35px 55px 40px 60px;
     text-transform: none;
     white-space: nowrap;
-    width: auto
+    width: auto;
 }
 
 .header .left-nav .header-title::after, .header .left-nav .header-title::before {
@@ -832,7 +832,6 @@ amp-lightbox .lightbox .close-button {
     height: 33px;
     left: 100px;
     position: relative;
-    top: -4px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -842,10 +841,6 @@ amp-lightbox .lightbox .close-button {
 .language section {
     border: 0;
     padding: 0
-}
-
-.language section[expanded] .current, .language section[expanded] .others-inner {
-    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1)
 }
 
 .language section[expanded] .current {
@@ -884,7 +879,7 @@ amp-lightbox .lightbox .close-button {
 
 .language .others-inner {
     background: #fff;
-    margin: 0
+    margin: 0;
 }
 
 .language .others-inner div {
@@ -993,7 +988,8 @@ amp-sidebar .language .others .others-inner div {
 }
 
 .arrows {
-    white-space: nowrap
+    white-space: nowrap;
+    margin-left:50px;
 }
 
 .arrows li {
@@ -1083,7 +1079,7 @@ amp-sidebar .language .others .others-inner div {
 
 .searchbar {
     position: absolute;
-    right: 175px;
+    right: 90px;
     top: 23px;
     z-index: 2
 }
