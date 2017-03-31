@@ -353,7 +353,7 @@ a.underlined.cta:hover::before, .card-container.grid .card-link p.cta:hover::bef
 .socialBox {
   display: flex;
   padding: 0 20px;
-  margin: 100px 0 100px 0;
+  margin: 100px 0 5px 0;
 }
 
 .btnSocial {
