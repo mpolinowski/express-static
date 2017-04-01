@@ -3276,5 +3276,5 @@ section[expanded] .accordion-title::after {
 }
 
 .accordion-content li:last-child {
-    margin-bottom: 2px
+    margin-bottom: 15px
 }

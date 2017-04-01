@@ -3,7 +3,7 @@
 
 <head>
     <% include ../_partials/amp/_amp-head.ejs %>
-        <link rel="canonical" href="/Indoor_Cameras/<%= model %>/Video_Streaming">
+        <link rel="canonical" href="/Indoor_Cameras/IN-<%= model %>_HD/Video_Streaming">
 </head>
 
 <body class="home">
@@ -16,78 +16,14 @@
     <% include ../_partials/amp/_amp-header.ejs %>
   </header>
 
-        <div class="wrap">
-            <div class="container main">
-                <nav class="desktop-up">
-                    <ul class="margin">
-                        <li>
-                            <h2>Advanced User</h2>
-                        </li>
-                        <hr>
-                        <li>
-                            <a href="/Advanced_User/Website_Integration">Website Integration</a>
-                        </li>
-                        <li>
-                            <a href="/Advanced_User/CGI_Commands">CGI Commands</a>
-                        </li>
-                        <li>
-                            <a href="/Advanced_User/Restore_WebUI">Restore WebUI</a>
-                        </li>
-                        <li>
-                            <a href="/Advanced_User/Restore_Firmware">Restore Firmware</a>
-                        </li>
-                        <li>
-                            <a href="/Quick_Installation/WebUI_And_Firmware_Upgrade">Software Update</a>
-                        </li>
-                        <li>
-                            <a href="/Advanced_User/CCTV_vs_IP">CCTV vs IP</a>
-                        </li>
-                    </ul>
-                    <ul class="margin">
-                        <li>
-                            <h2>InstarVision Surveillance Solution</h2>
-                        </li>
-                        <hr>
-                        <li>
-                            <a href="/Software/Windows/InstarVision">Windows</a>
-                        </li>
-                        <li>
-                            <a href="/Software/Windows/InstarVision_Metro">Metro Tile App</a>
-                        </li>
-                        <li>
-                            <a href="/Software/Windows/InstarVision_Windows-Phone">Windows Phone</a>
-                        </li>
-                        <li>
-                            <a href="/Software/Android/InstarVision">Android App</a>
-                        </li>
-                        <li>
-                            <a href="/Software/iOS/InstarVision">iOS App</a>
-                        </li>
-                    </ul>
-                    <ul class="margin">
-                        <li>
-                            <h2>Thirdparty Software</h2>
-                        </li>
-                        <hr>
-                        <li>
-                            <a href="/Software/Windows/InstarVision">Windows</a>
-                        </li>
-                        <li>
-                            <a href="/Software/Windows/InstarVision_Metro">macOS</a>
-                        </li>
-                        <li>
-                            <a href="/Software/Android/InstarVision">Android App</a>
-                        </li>
-                        <li>
-                            <a href="/Software/iOS/InstarVision">iOS App</a>
-                        </li>
-                        <li>
-                            <a href="/Software/Windows/InstarVision_Windows-Phone">Other</a>
-                        </li>
-                    </ul>
-                </nav>
+  <div class="wrap">
+      <div class="container main">
+
+        <% include ../_partials/content/_bluenav-usermanual.ejs %>
+
 
                 <section class="blade wrapper content">
+
                     <div class="container">
 
                         <h1 class="post-title">INSTAR HD Camera Video Streaming</h1>
@@ -179,7 +115,7 @@
         </div>
         <!-- /wrap-->
 
-        <% include ../_partials/content/_bluenav-p-mobile.ejs %>
+        <% include ../_partials/content/_bluenav-usermanual-mobile.ejs %>
 
         <footer>
             <% include ../_partials/amp/_amp-footer.ejs %>

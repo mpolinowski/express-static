@@ -20,7 +20,7 @@ outdoorCamsRouter.route('/IN-9008_HD/Safety_Warnings')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Safety_Warnings', {
           title: 'IN-9008 HD Safety Warnings',
-          model: 'IN-9008_HD',
+          model: '9008',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-9008_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -33,7 +33,7 @@ outdoorCamsRouter.route('/IN-9008_HD/Warranty')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Warranty', {
           title: 'IN-9008 HD Warranty & Disposal',
-          model: 'IN-9008_HD',
+          model: '9008',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-9008_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -46,7 +46,7 @@ outdoorCamsRouter.route('/IN-9008_HD/Video_Streaming')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-9008 HD Video Streaming',
-          model: 'IN-9008_HD',
+          model: '9008',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-9008_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -59,7 +59,7 @@ outdoorCamsRouter.route('/IN-9008_HD/Camera_Reset')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-9008 HD Hardware Reset',
-          model: 'IN-9008_HD',
+          model: '9008',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-9008_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -80,6 +80,8 @@ outdoorCamsRouter.route('/IN-9008_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-9008_Usermanual', {
       title: 'IN-9008 HD Usermanual',
+      model: '9008',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-9008_HD/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -91,6 +93,8 @@ outdoorCamsRouter.route('/IN-9008_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-9008_Product_Features', {
       title: 'IN-9008 HD Product Features',
+      model: '9008',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-9008_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -102,6 +106,8 @@ outdoorCamsRouter.route('/IN-9008_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-9008_Quick_Installation', {
       title: 'IN-9008 HD Quick Installation',
+      model: '9008',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-9008_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -113,6 +119,8 @@ outdoorCamsRouter.route('/IN-9008_HD/Quick_Installation/PoE_or_WiFi')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-9008_Quick_Installation_1hole', {
       title: 'IN-9008 HD Quick Installation - PoE or WiFi',
+      model: '9008',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-9008_HD/Quick_Installation/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -124,6 +132,8 @@ outdoorCamsRouter.route('/IN-9008_HD/Quick_Installation/PoE_or_WiFi/Ethernet')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-9008_Quick_Installation_1hole_lan', {
       title: 'IN-9008 HD Quick Installation - PoE or WiFi',
+      model: '9008',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -135,6 +145,8 @@ outdoorCamsRouter.route('/IN-9008_HD/Quick_Installation/PoE_or_WiFi/WPS')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-9008_Quick_Installation_1hole_wps', {
       title: 'IN-9008 HD Quick Installation - PoE or WiFi',
+      model: '9008',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-9008_HD/Quick_Installation/PoE_or_WiFi/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -146,6 +158,8 @@ outdoorCamsRouter.route('/IN-9008_HD/Quick_Installation/Ethernet')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-9008_Quick_Installation_2hole', {
       title: 'IN-9008 HD Quick Installation - Ethernet',
+      model: '9008',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-9008_HD/Quick_Installation/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -157,6 +171,8 @@ outdoorCamsRouter.route('/IN-9008_HD/Quick_Installation/Ethernet_and_Audio-Out')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-9008_Quick_Installation_3hole', {
       title: 'IN-9008 HD Quick Installation - Ethernet & Audio-Out',
+      model: '9008',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-9008_HD/Quick_Installation/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -168,6 +184,8 @@ outdoorCamsRouter.route('/IN-9008_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-9008_Lense_Adjustment', {
       title: 'IN-9008 HD Lense Adjustment',
+      model: '9008',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-9008_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -191,7 +209,7 @@ outdoorCamsRouter.route('/IN-7011_HD/Safety_Warnings')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Safety_Warnings', {
           title: 'IN-7011 HD Safety Warnings',
-          model: 'IN-7011_HD',
+          model: '7011',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-7011_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -204,7 +222,7 @@ outdoorCamsRouter.route('/IN-7011_HD/Warranty')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Warranty', {
           title: 'IN-7011 HD Warranty & Disposal',
-          model: 'IN-7011_HD',
+          model: '7011',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-7011_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -217,7 +235,7 @@ outdoorCamsRouter.route('/IN-7011_HD/Video_Streaming')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-7011 HD Video Streaming',
-          model: 'IN-7011_HD',
+          model: '7011',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-7011_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -230,7 +248,7 @@ outdoorCamsRouter.route('/IN-7011_HD/Camera_Reset')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-7011 HD Hardware Reset',
-          model: 'IN-7011_HD',
+          model: '7011',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-7011_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -251,6 +269,8 @@ outdoorCamsRouter.route('/IN-7011_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-7011_Usermanual', {
       title: 'IN-7011 HD Usermanual',
+      model: '7011',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-7011_HD/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -262,6 +282,8 @@ outdoorCamsRouter.route('/IN-7011_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-7011_Product_Features', {
       title: 'IN-7011 HD Product Features',
+      model: '7011',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-7011_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -273,6 +295,8 @@ outdoorCamsRouter.route('/IN-7011_HD/Point2Point')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-7011_Point2Point', {
       title: 'IN-7011 HD Point 2 Point',
+      model: '7011',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-7011_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -284,6 +308,8 @@ outdoorCamsRouter.route('/IN-7011_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-7011_Quick_Installation', {
       title: 'IN-7011 HD Quick Installation',
+      model: '7011',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-7011_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -295,6 +321,8 @@ outdoorCamsRouter.route('/IN-7011_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-7011_Lense_Adjustment', {
       title: 'IN-7011 HD Lense Adjustment',
+      model: '7011',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-7011_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -318,7 +346,7 @@ outdoorCamsRouter.route('/IN-5907_HD/Safety_Warnings')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Safety_Warnings', {
           title: 'IN-5907 HD Safety Warnings',
-          model: 'IN-5907_HD',
+          model: '5907',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-5907_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -331,7 +359,7 @@ outdoorCamsRouter.route('/IN-5907_HD/Warranty')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Warranty', {
           title: 'IN-5907 HD Warranty & Disposal',
-          model: 'IN-5907_HD',
+          model: '5907',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-5907_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -344,7 +372,7 @@ outdoorCamsRouter.route('/IN-5907_HD/Video_Streaming')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-5907 HD Video Streaming',
-          model: 'IN-5907_HD',
+          model: '5907',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-5907_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -357,7 +385,7 @@ outdoorCamsRouter.route('/IN-5907_HD/Camera_Reset')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-5907 HD Hardware Reset',
-          model: 'IN-5907_HD',
+          model: '5907',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-5907_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -378,6 +406,8 @@ outdoorCamsRouter.route('/IN-5907_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5907_Usermanual', {
       title: 'IN-5907 HD Usermanual',
+      model: '5907',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-5907_HD/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -389,6 +419,8 @@ outdoorCamsRouter.route('/IN-5907_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5907_Product_Features', {
       title: 'IN-5907 HD Product Features',
+      model: '5907',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-5907_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -400,6 +432,8 @@ outdoorCamsRouter.route('/IN-5907_HD/Point2Point')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5907_Point2Point', {
       title: 'IN-5907 HD Point 2 Point',
+      model: '5907',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-5907_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -411,6 +445,8 @@ outdoorCamsRouter.route('/IN-5907_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5907_Quick_Installation', {
       title: 'IN-5907 HD Quick Installation',
+      model: '5907',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-5907_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -422,6 +458,8 @@ outdoorCamsRouter.route('/IN-5907_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5907_Lense_Adjustment', {
       title: 'IN-5907 HD Lense Adjustment',
+      model: '5907',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-5907_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -445,7 +483,7 @@ outdoorCamsRouter.route('/IN-5905_HD/Safety_Warnings')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Safety_Warnings', {
           title: 'IN-5905 HD Safety Warnings',
-          model: 'IN-5905_HD',
+          model: '5905',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-5905_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -458,7 +496,7 @@ outdoorCamsRouter.route('/IN-5905_HD/Warranty')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Warranty', {
           title: 'IN-5905 HD Warranty & Disposal',
-          model: 'IN-5905_HD',
+          model: '5905',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-5905_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -471,7 +509,7 @@ outdoorCamsRouter.route('/IN-5905_HD/Video_Streaming')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Video_Streaming', {
           title: 'IN-5905 HD Video Streaming',
-          model: 'IN-5905_HD',
+          model: '5905',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-5905_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -484,7 +522,7 @@ outdoorCamsRouter.route('/IN-5905_HD/Camera_Reset')
   .get(function(req, res) {
       res.render('./Products/Usermanuals_Camera_Reset', {
           title: 'IN-5905 HD Hardware Reset',
-          model: 'IN-5905_HD',
+          model: '5905',
 		  type: 'Outdoor',
 		  uplink: '/Outdoor_Cameras/IN-5905_HD/Usermanual/',
           ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
@@ -505,6 +543,8 @@ outdoorCamsRouter.route('/IN-5905_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5905_Usermanual', {
       title: 'IN-5905 HD Usermanual',
+      model: '5905',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-5905_HD/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -516,6 +556,8 @@ outdoorCamsRouter.route('/IN-5905_HD/Product_Features')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5905_Product_Features', {
       title: 'IN-5905 HD Product Features',
+      model: '5905',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-5905_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -527,6 +569,8 @@ outdoorCamsRouter.route('/IN-5905_HD/Point2Point')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5905_Point2Point', {
       title: 'IN-5905 HD Point 2 Point',
+      model: '5905',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-5905_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -538,6 +582,8 @@ outdoorCamsRouter.route('/IN-5905_HD/Quick_Installation')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5905_Quick_Installation', {
       title: 'IN-5905 HD Quick Installation',
+      model: '5905',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-5905_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
@@ -549,6 +595,8 @@ outdoorCamsRouter.route('/IN-5905_HD/Lense_Adjustment')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5905_Lense_Adjustment', {
       title: 'IN-5905 HD Lense Adjustment',
+      model: '5905',
+	  type: 'Outdoor',
 	  uplink: '/Outdoor_Cameras/IN-5905_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
