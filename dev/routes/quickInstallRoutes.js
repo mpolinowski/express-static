@@ -22,6 +22,11 @@ quickInstallRouter.route('/How_Does_An_IP_Camera_Work')
             ampimg: '/images/Search/QI_SearchThumb_HowDoesAnIPCameraWork.jpg',
             headline: 'How Does An IP Camera Work?',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/How_Does_An_IP_Camera_Work/">How Does it Work?</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -34,6 +39,11 @@ quickInstallRouter.route('/First_Steps')
             ampimg: '/images/Search/QI_SearchThumb_FirstStepsWithYourIPCamera.jpg',
             headline: 'First Steps to get your IP camera working',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/First_Steps/">First Steps</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -46,6 +56,11 @@ quickInstallRouter.route('/After_Unpacking')
             ampimg: '/images/Search/QI_SearchThumb_AfterUnpackingYourIPCamera.jpg',
             headline: 'After unpacking your INSTAR IP Camera',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/After_Unpacking/">After Unpacking</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -58,6 +73,11 @@ quickInstallRouter.route('/Direct_LAN_Connection')
             ampimg: '/images/Search/QI_SearchThumb_DirectConnectionWithYourPC.jpg',
             headline: 'Direct connection with a PC or Notebook',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Direct_LAN_Connection/">Direct Connection with your PC</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -70,6 +90,11 @@ quickInstallRouter.route('/Alternative_IP_Scanner')
             ampimg: '/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg',
             headline: 'How to find your IP Camera with an alternative IP Scanner',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Alternative_IP_Scanner/">Alternative IP Scanner</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -82,6 +107,11 @@ quickInstallRouter.route('/Alternative_IP_Scanner/Angry_IP_Scanner')
             ampimg: '/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg',
             headline: 'Angry IP Scanner',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Alternative_IP_Scanner/">Alternative IP Scanner</a></li><li><a href="/Quick_Installation/Alternative_IP_Scanner/Angry_IP_Scanner/">Angry IP Scanner</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -94,6 +124,11 @@ quickInstallRouter.route('/Alternative_IP_Scanner/Fing_CLI')
             ampimg: '/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg',
             headline: 'Fing CLI',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Alternative_IP_Scanner/">Alternative IP Scanner</a></li><li><a href="/Quick_Installation/Alternative_IP_Scanner/Fing_CLI/">Fing CLI</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -106,6 +141,11 @@ quickInstallRouter.route('/Alternative_IP_Scanner/Fing_Mobile')
             ampimg: '/images/Search/QI_SearchThumb_AlternativeIPScanner_eng.jpg',
             headline: 'Fing Mobile',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Alternative_IP_Scanner/">Alternative IP Scanner</a></li><li><a href="/Quick_Installation/Alternative_IP_Scanner/Fing_Mobile/">Fing Mobile</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -118,6 +158,11 @@ quickInstallRouter.route('/Language_Selection')
             ampimg: '/images/Search/QI_SearchThumb_LanguageSettings.jpg',
             headline: 'Language Selection',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Language_Selection/">Language Selection</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -130,6 +175,11 @@ quickInstallRouter.route('/Live_Video')
             ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
             headline: 'Live Video',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -142,6 +192,11 @@ quickInstallRouter.route('/Live_Video/ActiveX')
             ampimg: '/images/Search/QI_SearchThumb_ActiveXPluginSetup.jpg',
             headline: 'Live Video ActiveX',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/ActiveX/">ActiveX</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -154,6 +209,11 @@ quickInstallRouter.route('/Live_Video/QuickTime')
             ampimg: '/images/Search/QI_SearchThumb_QuickTimePluginSetup.jpg',
             headline: 'Live Video Quicktime',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/QuickTime/">QuickTime</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -166,6 +226,11 @@ quickInstallRouter.route('/Live_Video/MJPEG')
             ampimg: '/images/Search/QI_SearchThumb_LiveVideoInMicrosoftEdge.jpg',
             headline: 'Live Video MJPEG',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/MJPEG/">MJPEG</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -178,6 +243,11 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/Avast')
             ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
             headline: 'Live Video Troubleshooting Avast',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/Troubleshooting/Avast/">AVAST</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -190,6 +260,11 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/Kaspersky_2013')
             ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
             headline: 'Live Video Troubleshooting Kaspersky 2013',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/Troubleshooting/Kaspersky_2013/">Kaspersky 2013</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -202,6 +277,11 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/Kaspersky_2014')
             ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
             headline: 'Live Video TroubleshootingKaspersky 2014',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/Troubleshooting/Kaspersky_2014/">Kaspersky 2014</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -214,6 +294,11 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/Kaspersky_2017')
             ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
             headline: 'Live Video Troubleshooting Kaspersky 2017',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/Troubleshooting/Kaspersky_2017/">Kaspersky 2017</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -226,6 +311,11 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/AVG')
             ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
             headline: 'Live Video Troubleshooting AVG',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/Troubleshooting/AVG/">AVG</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -238,6 +328,11 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/GDATA')
             ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
             headline: 'Live Video Troubleshooting GDATA',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/Troubleshooting/GDATA/">GDATA</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -250,6 +345,11 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/AVIRA')
             ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
             headline: 'Live Video Troubleshooting AVIRA',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/Troubleshooting/Avira/">Avira</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -262,6 +362,11 @@ quickInstallRouter.route('/Live_Video/Troubleshooting/F-Secure')
             ampimg: '/images/Search/QI_SearchThumb_LiveVideo.jpg',
             headline: 'Live Video Troubleshooting F-Secure',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Live_Video/">Live Video</a></li><li><a href="/Quick_Installation/Live_Video/Troubleshooting/F-Secure/">F-Secure</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -274,6 +379,11 @@ quickInstallRouter.route('/Creating_User_Accounts')
             ampimg: '/images/Search/QI_SearchThumb_CreatingUserAccounts.jpg',
             headline: 'Creating user accounts on your camera',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Creating_User_Accounts/">Creating user accounts on your camera</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -286,6 +396,11 @@ quickInstallRouter.route('/WebUI_And_Firmware_Upgrade')
             ampimg: '/images/Search/QI_SearchThumb_WebUIFirmwareUpgrade.jpg',
             headline: 'WebUI and Firmware Upgrade',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/">Software Upgrade</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -298,6 +413,11 @@ quickInstallRouter.route('/WebUI_And_Firmware_Upgrade/720p_Cameras')
             ampimg: '/images/Search/QI_SearchThumb_WebUIFirmwareUpgrade.jpg',
             headline: 'VGA WebUI and Firmware Upgrade',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/">Software Upgrade</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/HD_Cameras/">HD Cameras</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -310,6 +430,11 @@ quickInstallRouter.route('/WebUI_And_Firmware_Upgrade/VGA_Cameras')
             ampimg: '/images/Search/QI_SearchThumb_WebUIFirmwareUpgrade.jpg',
             headline: 'HD WebUI and Firmware Upgrade',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/">Software Upgrade</a></li><li><a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/VGA_Cameras/">VGA Cameras</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -322,6 +447,11 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History')
             ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
             headline: 'How to clear your Browsing History',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/">How to clear your Browsing History</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -334,6 +464,11 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Internet_Explorer'
             ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
             headline: 'How to clear your Browsing History Internet Explorer',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/">Browsing History</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/Internet_Explorer/">Internet Explorer</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -346,6 +481,11 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Mozilla_Firefox')
             ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
             headline: 'How to clear your Browsing History Mozilla Firefox',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/">Browsing History</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/Mozilla_Firefox/">Mozilla Firefox</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -358,6 +498,11 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Google_Chromium')
             ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
             headline: 'How to clear your Browsing History Google Chromium',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/">Browsing History</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/Google_Chromium/">Google Chromium</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -370,6 +515,11 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Opera')
             ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
             headline: 'How to clear your Browsing History Opera',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/">Browsing History</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/Opera/">Opera</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -382,6 +532,11 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Microsoft_Edge')
             ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
             headline: 'How to clear your Browsing History Microsoft Edge',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/">Browsing History</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/Microsoft_Edge/">Microsoft Edge</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -394,6 +549,11 @@ quickInstallRouter.route('/How_To_Clear_Your_Browsing_History/Vivaldi')
             ampimg: '/images/Search/QI_SearchThumb_ClearBrowsingHistory.jpg',
             headline: 'How to clear your Browsing History Vivaldi',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/">Browsing History</a></li><li><a href="/Quick_Installation/How_To_Clear_Your_Browsing_History/Vivaldi/">Vivaldi</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -406,6 +566,11 @@ quickInstallRouter.route('/Set_Up_A_Wireless_Connection')
             ampimg: '/images/Search/QI_SearchThumb_WLAN.jpg',
             headline: 'How to set up a Wireless Connection',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Set_Up_A_Wireless_Connection/">How to set up a Wireless Connection</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 
@@ -418,6 +583,11 @@ quickInstallRouter.route('/ONVIF')
             ampimg: '/images/Search/QI_SearchThumb_QuickInstallation.jpg',
             headline: 'ONVIF',
             breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/ONVIF/">ONVIF</a></li>',
+			pacc: '',
+			qiacc: 'expanded',
+			mdacc: '',
+			iaacc: '',
+			auacc: '',
           });
       });
 

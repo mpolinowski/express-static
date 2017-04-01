@@ -29,24 +29,20 @@
         "image": [ "http://wiki.instar.com<%= ampimg %>" ] }
   </script>
 
-    <style amp-custom>
-        <% include ../Test/_ampCustom.css %>
-    </style>
+  <% include ../_partials/amp/_amp-boilerplate.css %>
+  <% include ../_partials/amp/_ampLandingCustom.css %>
 
-    <style amp-boilerplate>
-        <% include ../Test/_amp-boilerplate.css %>
-    </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 
 <body>
 
-  <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
-      <% include ../_partials/amp/_ampLandingSidebar.ejs %>
-  </amp-sidebar>
+    <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+        <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+    </amp-sidebar>
 
-  <header class="header fixed">
-    <% include ../_partials/amp/_amp-header.ejs %>
-  </header>
+    <header class="header fixed">
+        <% include ../_partials/amp/_ampLandingHeader.ejs %>
+    </header>
 
     <div class="wrap">
         <div class="content">
@@ -54,8 +50,10 @@
             <!-- ########################## InstarVision ############################### -->
 
             <section class="large-cta tablet-up">
+              <div class="cta-container">
                 <h1>INSTAR Wiki 2.0</h1>
                 <h2>Control your INSTAR IP camera from your default web browser</h2>
+              </div>
             </section>
 
             <!-- ########################## Quick Installation ############################### -->
@@ -125,21 +123,14 @@
             </section>
             <!-- /Quick Installation I -->
 
-            <!-- ########################## InstarVision ############################### -->
+            <!-- ########################## Social ############################### -->
 
-            <section class="large-cta">
-                <h1>InstarVision Surveillance Solution</h1>
-                <p>INSTAR offers a solution for every sureveillance task and supports a variety of third-party solutions.</p>
-                <a href="/Software/Windows/" class="btn btnWhite"><span>Windows</span></a>
-                <a href="/Software/macOS/" class="btn btnWhite"><span>macOS</span></a>
-                <a href="/Software/Android/" class="btn btnWhite"><span>Android</span></a>
-                <a href="/Software/iOS/" class="btn btnWhite"><span>iOS</span></a>
-            </section>
+            <% include ../_partials/amp/_ampInstarVision.ejs %>
 
             <!-- ########################## Footer ############################### -->
 
             <footer>
-              <% include ../_partials/amp/_amp-footer2.ejs %>
+              <% include ../_partials/amp/_amp-footer.ejs %>
             </footer>
 
         </div>
