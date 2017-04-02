@@ -321,7 +321,11 @@ section.no-padding-bottom {
 }
 
 .align-right {
-    text-align: right
+    text-align: right;
+}
+
+.float-right {
+  float: right;
 }
 
 @media only screen and (max-width:870px) {
@@ -1924,13 +1928,19 @@ tr:hover {
 }
 
 section.blade.blog {
-    background: #0275d8;
+    background: -webkit-linear-gradient(36deg, #0dd3ff, #0389ff, #0275d8);
+    background: linear-gradient(54deg, #0dd3ff, #0389ff, #0275d8);
     padding-top: 60px
 }
 
 section.blade.blog h1 {
     color: #fff;
     margin-bottom: 30px
+}
+
+section.blade.blog a {
+    text-decoration: none;
+    text-transform: none;
 }
 
 section.blade.blog .tab-container {

@@ -1412,6 +1412,12 @@ amp-carousel .card-container {
 
 .card-youtube {
   margin: 50px 40px;
+  max-width: 1050px;
+  display: flex;
+}
+
+.card-youtube .player {
+  flex-grow: 1;
 }
 
 .searchbar {
