@@ -300,10 +300,6 @@ section {
     padding: 100px 0 60px 100px
 }
 
-section.get-started {
-    padding: 50px 0 60px 50px
-}
-
 @media only screen and (max-width:870px) {
     section {
         padding: 50px 0 40px
@@ -1075,6 +1071,11 @@ amp-sidebar .language .others .others-inner div {
     margin: -15px 0 0 15px
 }
 
+.navGoBig {
+    width: 100px;
+    height: 80px;
+}
+
 .btnPrimary {
     width: 150px;
     background-color: #0275d8;
@@ -1829,7 +1830,7 @@ tr:hover {
     font-size: 14px;
     line-height: 22px;
     margin-top: 0;
-    width: 95%
+    width: 95%;
 }
 
 .home .blade.five .quote-source {
@@ -1993,399 +1994,8 @@ section.blade.blog .tab-container .tab .subtitle {
     }
 }
 
-.faq {
-    background-color: white;
-    padding-top: 100px
-}
-
-@media only screen and (max-width:870px) {
-    .faq {
-        padding-top: 150px
-    }
-}
-
-.faq h1 {
-    margin-bottom: 1em
-}
-
-.faq .section-title {
-    color: #1b1464;
-    margin-top: 2em
-}
-
-.faq .question {
-    font-size: 22px
-}
-
-.faq .answer {
-    font-size: 16px;
-    padding-right: 35px
-}
-
-.faq ul {
-    padding: 0
-}
-
-.faq li {
-    padding: 18px 0
-}
-
-.who {
-    background-color: white;
-    padding-top: 100px
-}
-
-@media only screen and (max-width:870px) {
-    .who {
-        padding-top: 150px
-    }
-}
-
-.who h1 {
-    margin-bottom: 1em
-}
-
-.who .section-title {
-    color: #1b1464;
-    margin-top: 2em
-}
-
-.who .question {
-    font-size: 22px
-}
-
-.who .answer {
-    font-size: 16px;
-    padding-right: 35px
-}
-
-.who ul {
-    padding: 0
-}
-
-.who li {
-    padding: 18px 0
-}
-
-body.roadmap h2 {
-    margin-bottom: 1em;
-    padding-left: 12px
-}
-
-body.roadmap h2 small {
-    display: block;
-    color: #949494;
-    font-size: 24px;
-    padding-top: 6px
-}
-
-body.roadmap h3 {
-    background: #2196f3;
-    padding: .5em 16px;
-    color: #fff
-}
-
-body.roadmap h3 small {
-    display: block;
-    font-size: 16px;
-    margin-top: 8px;
-    font-style: italic;
-    color: #bbdefb
-}
-
-body.roadmap h4 {
-    font-weight: normal;
-    font-size: 1.2em;
-    margin-top: 6px;
-    margin-bottom: 1em
-}
-
-body.roadmap strong {
-    font-weight: 500
-}
-
-body.roadmap p {
-    margin: 0
-}
-
-body.roadmap section {
-    padding-left: 0
-}
-
-body.roadmap .about {
-    margin: 2em 12px
-}
-
-body.roadmap .about ul {
-    margin: 0;
-    list-style-type: square
-}
-
-body.roadmap .about div {
-    margin-bottom: 1em
-}
-
-body.roadmap .workstream {
-    margin-bottom: 1em;
-    background: #fff;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1)
-}
-
-body.roadmap .workstream-flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex
-}
-
-body.roadmap .description {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 50%;
-    -ms-flex: 1 1 50%;
-    flex: 1 1 50%;
-    padding: 1em 2em 1em 1em
-}
-
-body.roadmap .plan {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 50%;
-    -ms-flex: 1 1 50%;
-    flex: 1 1 50%;
-    min-width: 300px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 1em 1em 0;
-    border-left: 3px solid #e8e8e8
-}
-
-body.roadmap .plan h4 {
-    display: none
-}
-
-body.roadmap .workstream-headings .description {
-    padding-bottom: 0
-}
-
-body.roadmap .workstream-headings .plan h4 {
-    display: block
-}
-
-body.roadmap .workstream-headings h4 {
-    margin-bottom: 0
-}
-
-body.roadmap .forecast ul, body.roadmap .themes ul {
-    list-style-type: square;
-    margin-top: 0;
-    margin-bottom: 0
-}
-
-body.roadmap .forecast {
-    padding: 1em;
-    border-top: 3px solid #e8e8e8
-}
-
-body.roadmap .stages {
-    margin: -4px 0 0 -19px;
-    padding: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-right: 1em
-}
-
-body.roadmap .stages>li {
-    padding-left: 12px;
-    padding-top: 28px;
-    position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 100%;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%
-}
-
-body.roadmap .stages>li:last-child {
-    padding-bottom: 1em
-}
-
-body.roadmap .stages>li::before {
-    content: attr(data-description);
-    position: absolute;
-    top: 3px;
-    left: 24px;
-    font-style: italic;
-    color: #777;
-    font-size: 12px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    right: 0;
-    white-space: nowrap
-}
-
-body.roadmap .stages>li::after {
-    position: absolute;
-    top: 0;
-    left: -16px;
-    background: #fff;
-    border-radius: 20px;
-    width: 24px;
-    height: 24px;
-    display: block;
-    text-align: center;
-    font-weight: 800;
-    line-height: 26px
-}
-
-body.roadmap .stages>li li {
-    position: relative
-}
-
-body.roadmap .stages>li li::before {
-    content: "";
-    width: 10px;
-    height: 4px;
-    display: block;
-    position: absolute;
-    border-radius: 10px;
-    top: 10px;
-    left: -27px
-}
-
-body.roadmap .stages .stage-0 {
-    border-left: 3px solid #dcedc8
-}
-
-body.roadmap .stages .stage-0::after {
-    content: "0";
-    border: 3px solid #dcedc8
-}
-
-body.roadmap .stages .stage-0 li::before {
-    background: #dcedc8
-}
-
-body.roadmap .stages .stage-1 {
-    border-left: 3px solid #c5e1a5
-}
-
-body.roadmap .stages .stage-1::after {
-    content: "1";
-    border: 3px solid #c5e1a5
-}
-
-body.roadmap .stages .stage-1 li::before {
-    background: #c5e1a5
-}
-
-body.roadmap .stages .stage-2 {
-    border-left: 3px solid #aed581
-}
-
-body.roadmap .stages .stage-2::after {
-    content: "2";
-    border: 3px solid #aed581
-}
-
-body.roadmap .stages .stage-2 li::before {
-    background: #aed581
-}
-
-body.roadmap .stages .stage-3 {
-    border-left: 3px solid #9ccc65
-}
-
-body.roadmap .stages .stage-3::after {
-    content: "3";
-    border: 3px solid #9ccc65
-}
-
-body.roadmap .stages .stage-3 li::before {
-    background: #9ccc65
-}
-
-body.roadmap .stages .stage-4 {
-    border-left: 3px solid #8bc34a
-}
-
-body.roadmap .stages .stage-4::after {
-    content: "4";
-    border: 3px solid #8bc34a
-}
-
-body.roadmap .stages .stage-4 li::before {
-    background: #8bc34a
-}
-
-body.roadmap .stages .stage-5 {
-    border-left: 3px solid #7cb342
-}
-
-body.roadmap .stages .stage-5::after {
-    content: "5";
-    border: 3px solid #7cb342
-}
-
-body.roadmap .stages .stage-5 li::before {
-    background: #7cb342
-}
-
-body.roadmap .stages .stage-6 {
-    border-left: 3px solid #689f38
-}
-
-body.roadmap .stages .stage-6::after {
-    content: "6";
-    border: 3px solid #689f38
-}
-
-body.roadmap .stages .stage-6 li::before {
-    background: #689f38
-}
-
-body.roadmap .stages ul {
-    margin: 0;
-    padding: 0;
-    margin-left: 12px;
-    padding-top: 3px
-}
-
 @media only screen and (max-width:1024px) {
-    body.roadmap .container {
-        padding: 0
-    }
-}
-
-@media only screen and (max-width:500px) {
-    body.roadmap .workstream-flex {
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap
-    }
-    body.roadmap .plan {
-        border-left: 0
-    }
-    body.roadmap .stages {
-        margin-left: 24px
-    }
-    body.roadmap .workstream-flex .plan h4 {
-        display: block
-    }
-    body.roadmap .workstream-headings .plan {
-        display: none
-    }
-}
-
-@media only screen and (max-width:1024px) {
-    .blade.get-started .card-container {
+    .blade .card-container {
         text-align: center
     }
 }
@@ -3287,4 +2897,10 @@ section[expanded] .accordion-title::after {
 
 .accordion-content li:last-child {
     margin-bottom: 15px
+}
+
+.text-reset {
+  text-transform:none;
+  text-decoration: none;
+  text-align: inherit;
 }
