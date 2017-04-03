@@ -14,7 +14,6 @@ advancedUserRouter.get('/', function(req, res) {
 advancedUserRouter.get('/Website_Integration/', function(req, res) {
     res.render('./Advanced_User/Website_Integration', {
         title: 'Website Integration',
-        uplink: '/Advanced_User/',
         ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
         headline: 'IP Camera Website Integration',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/Website_Integration/">Website Integration</a></li>',
@@ -32,6 +31,7 @@ advancedUserRouter.get('/Website_Integration/', function(req, res) {
 		hdtab: 'hidden',
 		fhdacc: 'hidden',
 		fhdtab: 'hidden',
+		sacc: 'hidden',
 		dlacc: 'hidden',
 		dltab: 'hidden',
       });
@@ -40,7 +40,6 @@ advancedUserRouter.get('/Website_Integration/', function(req, res) {
 advancedUserRouter.get('/Website_Integration/Cambozola', function(req, res) {
     res.render('./Advanced_User/Cambozola', {
         title: 'Cambozola (JAVA Plugin)',
-        uplink: '/Advanced_User/Website_Integration/',
         ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
         headline: 'IP Camera Website Integration with Cambozola',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/Website_Integration/">Website Integration</a></li><li><a href="/Advanced_User/Website_Integration/Cambozola/">Cambozola</a></li>',
@@ -58,6 +57,7 @@ advancedUserRouter.get('/Website_Integration/Cambozola', function(req, res) {
 		hdtab: 'hidden',
 		fhdacc: 'hidden',
 		fhdtab: 'hidden',
+		sacc: 'hidden',
 		dlacc: 'hidden',
 		dltab: 'hidden',
       });
@@ -66,7 +66,6 @@ advancedUserRouter.get('/Website_Integration/Cambozola', function(req, res) {
 advancedUserRouter.get('/Website_Integration/Open_IP_Camera_Manager', function(req, res) {
     res.render('./Advanced_User/Open_IP_Camera_Manager', {
         title: 'Open IP Camera Manager (PHP)',
-        uplink: '/Advanced_User/Website_Integration/',
         ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
         headline: 'IP Camera Website Integration with OICM',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/Website_Integration/">Website Integration</a></li><li><a href="/Advanced_User/Website_Integration/Open_IP_Camera_Manager/">OIPCM</a></li>',
@@ -84,6 +83,7 @@ advancedUserRouter.get('/Website_Integration/Open_IP_Camera_Manager', function(r
 		hdtab: 'hidden',
 		fhdacc: 'hidden',
 		fhdtab: 'hidden',
+		sacc: 'hidden',
 		dlacc: 'hidden',
 		dltab: 'hidden',
       });
@@ -92,7 +92,6 @@ advancedUserRouter.get('/Website_Integration/Open_IP_Camera_Manager', function(r
 advancedUserRouter.get('/Website_Integration/HD_Camera_Integration', function(req, res) {
     res.render('./Advanced_User/HD_Camera_Integration', {
         title: 'HD Camera Website Integration',
-        uplink: '/Advanced_User/Website_Integration/',
         ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
         headline: 'H.264 IP Camera Website Integration',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/Website_Integration/">Website Integration</a></li><li><a href="/Advanced_User/Website_Integration/HD_Camera_Integration/">HD Cameras</a></li>',
@@ -110,6 +109,7 @@ advancedUserRouter.get('/Website_Integration/HD_Camera_Integration', function(re
 		hdtab: 'hidden',
 		fhdacc: 'hidden',
 		fhdtab: 'hidden',
+		sacc: 'hidden',
 		dlacc: 'hidden',
 		dltab: 'hidden',
       });
@@ -118,7 +118,6 @@ advancedUserRouter.get('/Website_Integration/HD_Camera_Integration', function(re
 advancedUserRouter.get('/CGI_Commands/', function(req, res) {
     res.render('./Advanced_User/CGI_Commands', {
         title: 'CGI Commands',
-        uplink: '/Advanced_User/',
         ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
         headline: 'CGI Commands',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>',
@@ -136,6 +135,7 @@ advancedUserRouter.get('/CGI_Commands/', function(req, res) {
 		hdtab: 'hidden',
 		fhdacc: 'hidden',
 		fhdtab: 'hidden',
+		sacc: 'hidden',
 		dlacc: 'hidden',
 		dltab: 'hidden',
       });
@@ -159,6 +159,7 @@ advancedUserRouter.get('/CGI_Commands/VGA_Series_CGI_List', function(req, res) {
 		hdtab: 'hidden',
 		fhdacc: 'hidden',
 		fhdtab: 'hidden',
+		sacc: 'hidden',
 		dlacc: 'hidden',
 		dltab: 'hidden',
       });
@@ -167,7 +168,6 @@ advancedUserRouter.get('/CGI_Commands/VGA_Series_CGI_List', function(req, res) {
 advancedUserRouter.get('/Restore_WebUI/', function(req, res) {
     res.render('./Advanced_User/Restore_WebUI', {
         title: 'Restore your Camera after a faulty WebUI Upgrade',
-        uplink: '/Advanced_User/',
         ampimg: '/images/Search/AU_SearchThumb_ResetAfterWebUIError.jpg',
         headline: 'Restore your Camera after a faulty WebUI Upgrade',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/Restore_WebUI/">Restore WebUI</a></li>',
@@ -185,6 +185,7 @@ advancedUserRouter.get('/Restore_WebUI/', function(req, res) {
 		hdtab: 'hidden',
 		fhdacc: 'hidden',
 		fhdtab: 'hidden',
+		sacc: 'hidden',
 		dlacc: 'hidden',
 		dltab: 'hidden',
       });
@@ -193,7 +194,6 @@ advancedUserRouter.get('/Restore_WebUI/', function(req, res) {
 advancedUserRouter.get('/Restore_Firmware/', function(req, res) {
     res.render('./Advanced_User/Restore_Firmware', {
         title: 'Restore your Camera after a faulty Firmware Upgrade',
-        uplink: '/Advanced_User/',
         ampimg: '/images/Search/AU_SearchThumb_ResetAfterFirmwareError.jpg',
         headline: 'Restore your Camera after a faulty Firmware Upgrade',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/Restore_Firmware/">Restore Firmware</a></li>',
@@ -211,6 +211,7 @@ advancedUserRouter.get('/Restore_Firmware/', function(req, res) {
 		hdtab: 'hidden',
 		fhdacc: 'hidden',
 		fhdtab: 'hidden',
+		sacc: 'hidden',
 		dlacc: 'hidden',
 		dltab: 'hidden',
       });
@@ -219,7 +220,6 @@ advancedUserRouter.get('/Restore_Firmware/', function(req, res) {
 advancedUserRouter.get('/CCTV_vs_IP/', function(req, res) {
     res.render('./Advanced_User/CCTV_vs_IP', {
         title: 'Difference Between Analog And IP Cameras',
-        uplink: '/Advanced_User/',
         ampimg: '/images/Search/AU_SearchThumb_IPvsCCTV.jpg',
         headline: 'Difference Between Analog And IP Cameras',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CCTV_vs_IP/">CCTV vs IP</a></li>',
@@ -237,6 +237,7 @@ advancedUserRouter.get('/CCTV_vs_IP/', function(req, res) {
 		hdtab: 'hidden',
 		fhdacc: 'hidden',
 		fhdtab: 'hidden',
+		sacc: 'hidden',
 		dlacc: 'hidden',
 		dltab: 'hidden',
       });
@@ -245,7 +246,6 @@ advancedUserRouter.get('/CCTV_vs_IP/', function(req, res) {
 advancedUserRouter.get('/VPN_AVM_Fritzbox/', function(req, res) {
     res.render('./Advanced_User/VPN_AVM_Fritzbox_Windows', {
         title: 'VPN in AVM Fritzbox',
-        uplink: '/Advanced_User/',
         ampimg: '/images/Search/AU_SearchThumb_VPN.jpg',
         headline: 'IP Camera Website Integration',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/VPN_AVM_Fritzbox/">VPN AVM Fritzbox</a></li>',
@@ -263,6 +263,7 @@ advancedUserRouter.get('/VPN_AVM_Fritzbox/', function(req, res) {
 		hdtab: 'hidden',
 		fhdacc: 'hidden',
 		fhdtab: 'hidden',
+		sacc: 'hidden',
 		dlacc: 'hidden',
 		dltab: 'hidden',
       });
