@@ -8,15 +8,14 @@ This App was created in several steps:
 
 1. [Install Node.js and Express.js to develop our Web Application](#1-install-nodejs-and-expressjs-to-serve-our-web-application)
 2. [Preparing the Site Structure](#2-preparing-the-site-structure)
-3. [Import JSON Elements](#3-import-json-elements)
-4. [Install and Configure Gulp.js](#4-install-and-configure-gulpjs)
-5. [Install NGINX on CentOS](#5-install-nginx-on-a-centos-7-web-server)
-6. [Install Node.js on CentOS](#6-install-nodejs-on-a-centos-7-web-server)
-7. [Clone Repo from Git](#7-clone-repo-from-git)
-8. [Run the app as a service (PM2)](#8-run-the-app-as-a-service-pm2)
-9. [Install Java](#9-install-java)
-10. [Install Elasticsearch](#10-install-elasticsearch)
-11. [Install Kibana](#11-install-kibana)
+3. [Install and Configure Gulp.js](#3-install-and-configure-gulpjs)
+4. [Install NGINX on CentOS](#4-install-nginx-on-a-centos-7-web-server)
+5. [Install Node.js on CentOS](#5-install-nodejs-on-a-centos-7-web-server)
+6. [Clone Repo from Git](#6-clone-repo-from-git)
+7. [Run the app as a service (PM2)](#7-run-the-app-as-a-service-pm2)
+8. [Install Java](#8-install-java)
+9. [Install Elasticsearch](#9-install-elasticsearch)
+10. [Install Kibana](#10-install-kibana)
 
 
 ### 1 Install Node.js and Express.js to develop our Web Application
@@ -45,75 +44,7 @@ The following folders and files will be created in the **dev** folder. Later [Gu
 * Repeat with other partials that you might want to reuse on other pages!
 * Copy all your websites (EJS files) pages into the content folder
 
-
-### 3 Import JSON Elements
-___
-
-**index.js**
-
-Let´s add data from the *gallery.json* file to our index.ejs page. First we have to reference the JSON document in the *index.js* route. We also specify which elemts we want to extract from the file, so we can later create a for-loop over it inside the gallery-xxx.ejs partials.
-
-```javascript
-var express = require('express');
-var router = express.Router();
-var appdata = require('../views/partials/data/gallery.json'); /* Reference the JSON file (can later be subtitued by a database) */
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-
-    var qiPicture = []; /* Create arrays  */
-    var qiPictureAlt = [];
-    var qiHref = [];
-    var iaPicture = [];
-    var iaPictureAlt = [];
-    var iaHref = [];
-    var mdPicture = [];
-    var mdPictureAlt = [];
-    var mdHref = [];
-    appdata.articles.forEach(function(item) { /* Add all elements from gallery.json for the gallery */
-        qiPicture = qiPicture.concat(item.qiPic);
-        qiPictureAlt = qiPictureAlt.concat(item.qiPicAlt);
-        qiHref = qiHref.concat(item.qiUrl);
-        iaPicture = iaPicture.concat(item.iaPic);
-        iaPictureAlt = iaPictureAlt.concat(item.iaPicAlt);
-        iaHref = iaHref.concat(item.iaUrl);
-        mdPicture = mdPicture.concat(item.mdPic);
-        mdPictureAlt = mdPictureAlt.concat(item.mdPicAlt);
-        mdHref = mdHref.concat(item.mdUrl);
-      });
-
-    res.render('index', {  /* Make arrays available in index.ejs */
-        title: 'INSTAR Wiki',
-        qiPic: qiPicture,
-        qiPicAlt: qiPictureAlt,
-        qiUrl: qiHref,
-        iaPic: iaPicture,
-        iaPicAlt: iaPictureAlt,
-        iaUrl: iaHref,
-        mdPic: mdPicture,
-        mdPicAlt: mdPictureAlt,
-        mdUrl: mdHref,
-      });
-  });
-
-module.exports = router;
-```
-
-**gallery-xxx.ejs**
-
-Now we can for-loop over all required elements in our gallery partials:
-
-```javascript
-<% if (mdPic.length > 0) { %>
-    <% for (i=1; i<mdPic.length; i++) { %>
-        <div class="col-xs-6 col-lg-4 mb">
-            <a href="http://loxalhost:3000/<%= mdUrl[i] %>"><img src="<%= mdPic[i] %>" alt="<%= mdPicAlt[i] %>" class="img-fluid"></a>
-        </div>
-    <% } %>
-<% } %>
-```
-
-### 4 Install and Configure Gulp.js
+### 3 Install and Configure Gulp.js
 ___
 
 * **Step One** — Install [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) globally:
@@ -286,7 +217,7 @@ This task will grab all files from the dev folder, minify/compress them and save
 
 
 
-### 5 Install NGINX on a CentOS 7 web server
+### 4 Install NGINX on a CentOS 7 web server
 ___
 
 * **Step One** — Add Nginx Repository
@@ -328,7 +259,7 @@ To restart the Nginx service, enter the following command:
 ```
 
 
-### 6 Install Node.js on a CentOS 7 web server
+### 5 Install Node.js on a CentOS 7 web server
 ___
 
 * **Step One** — Download the Node.js Source
@@ -349,7 +280,7 @@ Then install, as root:
 ```
 
 
-### 7 Clone Repo from Git
+### 6 Clone Repo from Git
 ___
 
 * **Step One** — Install Git
@@ -375,7 +306,7 @@ Update an existing repo by cd into directory and:
 ```
 
 
-### 8 Run the app as a service (PM2)
+### 7 Run the app as a service (PM2)
 ___
 
 * **Step One** — Demonization
@@ -464,7 +395,7 @@ The PM2 process monitor can be pulled up with the monit subcommand. This display
 ```
 
 
-### 9 Install Java
+### 8 Install Java
 ___
 
 * **Step One** — Public Signing Key
@@ -487,7 +418,7 @@ rm ~/jdk-8u*-linux-x64.rpm
 
 
 
-### 10 Install Elasticsearch
+### 9 Install Elasticsearch
 ___
 
 * **Step One** — Public Signing Key
@@ -549,7 +480,7 @@ sudo systemctl stop elasticsearch.service
 
 
 
-### 11 Install Kibana
+### 10 Install Kibana
 ___
 
 * **Step One** — Create and edit a new yum repository file for Kibana:
