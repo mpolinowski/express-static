@@ -1,287 +1,295 @@
-<% include ../_partials/template/_head.ejs %>
+<!DOCTYPE html>
+<html ⚡>
 
-    <body>
-      <% include ../_partials/template/_outdated.ejs %>
+<head>
+    <% include ../_partials/amp/_amp-head.ejs %>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+        <link rel="canonical" href="/Indoor_Cameras/IN-6001_HD/Technical_Specifications/">
+</head>
 
-      <div id="wrapper">
+<body class="home">
 
-        <header><% include ../_partials/template/_header.ejs %></header>
-        <!-- Navbar-->
+  <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+      <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+  </amp-sidebar>
 
-    <!-- #############################################  Body ############################################# -->
+  <header class="header fixed">
+    <% include ../_partials/amp/_amp-header.ejs %>
+  </header>
 
-        <section class="container mb">
-            <div class="row mt">
+  <div class="wrap">
+      <div class="container main">
 
-              <!-- ###################################### Table ######################################## -->
+        <% include ../_partials/content/_bluenav-usermanual.ejs %>
 
+                <section class="blade wrapper content">
 
-        <div class="mb offset-md-1">
-          <h2 style="margin-bottom: 30px;">IN-6001 HD Technical Specifications</h2>
+                    <div class="container">
 
-              <table class="table table-responsive table-hover">
-                <thead>
-                    <tr>
-                      <th><strong>Camera Model</strong></th>
-                      <th><strong>INSTAR IN-6001 HD Indoor - Colour / IR</strong></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">Casing</th>
-                      <td>ABS (White, Black)</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Image Sensor</th>
-                      <td><a href="http://www.ovt.com/products/sensor.php?id=110%20OV10633">OV10633</a> 720p 1/3" CMOS <em>Wide Dynamic Range</em></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Supported Resolutions</th>
-                      <td>1280 x 720, 640 x 352, 320 x 176</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Video Compression</th>
-                      <td>h.264, MJPEG, JPG</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">h.264 Bitrate</th>
-                      <td>90 kbps - 6.144 kbps</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Framerate</th>
-                      <td>up to 25fps</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Sensor Sensitivity</th>
-                      <td>3650 mV/lux*s</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Dynamic Range</th>
-                      <td>115 dB</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Signal/Noise</th>
-                      <td>39 dB</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Image Area</th>
-                        <td>5510.4 x 3418.8 µm</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Day / Night Switch</th>
-                      <td>Yes</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Min. Illumination (Colour)</th>
-                      <td>0.05 Lux @ f/2.0</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Min. Illumination (IR)</th>
-                      <td>0 Lux @ f/2.0</td>
-                    </tr>
-                    <tr>
-                      <th scope="row"># of Parallel Streams</th>
-                      <td>3</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Whitebalance</th>
-                      <td>Automatic</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Electronic Shutter</th>
-                      <td>Automatic</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Flip / Mirror Video</th>
-                      <td>Yes / Yes</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Video Overlay</th>
-                      <td>Date, Time, Camera Name</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Video Parameter</th>
-                      <td>Brightness, Contrast, Saturation</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Lense</th>
-                      <td>4.2 ±5% mm (Manual Focus) f/2.1
-                          &nbsp;&nbsp;&nbsp;&nbsp;
-                          <!-- Button trigger modal -->
-                          <button class="btn btn-xs btn-primary" data-toggle="modal" data-target="#Lense">
-                            Specifications
-                          </button>
+                        <h2 class="post-title">Technical Specifications</h2>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="Lense" tabindex="-1" role="dialog" aria-labelledby="Lense" aria-hidden="true">
-                              <div class="modal-dialog">
-                                  <div class="modal-content">
-                                      <div class="modal-header">
-                                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                          <h4 class="modal-title" id="Lense">4.2 mm HD Wideangle Lense</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                          <img src="/images/4-2_Lense_Specifications.png" class="img-fluid"></img>
-                                      </div>
-                                      <div class="modal-footer">
-                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- /modal -->
-                        </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Field of View</th>
-                      <td>75.3° dia.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Infrared LEDs</th>
-                      <td>4 high-power @ 850 nm</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Effective Range (IR)</th>
-                      <td>5-7 m</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">intgr. IRcut Filter</th>
-                      <td>Yes</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Alarm I/O</th>
-                      <td>No</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Optical Zoom</th>
-                      <td>No</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Digital Zoom</th>
-                      <td>3 x (only ActiveX)</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">SD Card</th>
-                      <td>Removable microSDHC card up to 32GB (4GB included)</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Audio</th>
-                      <td>Integrated Loudspeaker</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Microphone</th>
-                      <td>Integrated Microphone</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Alert Notification</th>
-                      <td>Email/FTP/HTTP/Alarm-out</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Supported Browser</th>
-                      <td>Chrome, Safari, Firefox, Internet Explorer</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Supported Windows Software</th>
-                      <td>InstarVision, Sighthound, WebcamXP, iSpy, VLC Player, etc.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Supported MacOSX Software</th>
-                      <td>Sighthound, SecuritySpy, VLC Player, etc.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Supported Android Apps</th>
-                      <td>InstarVision, IP Cam Viewer, Tiny Cam Monitor etc.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Supported iOS Apps</th>
-                      <td>InstarVision, LiveCams</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Supported Windows Phone Apps</th>
-                      <td>InstarVision</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Network Interface</th>
-                      <td>10Base-T/100Base-TX Ethernet Port / WLAN IEEE 802.11b/g/n</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Network Protocols</th>
-                      <td>TCP/IP, DHCP, PPPoE, ARP, FTP, SMTP, DNS, NTP, UPnP, HTTP, TCP, UDP</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Encryption</th>
-                      <td>WEP (64/128bit), WPA/WPA2-PSK (TKIP, AES, CCMP)</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Wifi Frequency Band</th>
-                      <td>2.4GHz 802.11b/g/n</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Wifi Antenna</th>
-                      <td>integrated</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Access Protection</th>
-                      <td>Username/Password - 3 Level Authorisation</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Power Supply</th>
-                      <td>110-240V ac @ 50-60Hz to 5V dc and 1500mA</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Power Plug</th>
-                      <td>1.35mm In / 3.5mm Out</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Power Consumption</th>
-                      <td>Max. 7.0 W</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Integr. DDNS Service</th>
-                      <td>Yes</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Pan &amp; Tilt</th>
-                      <td>No</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Measurements in [cm]</th>
-                      <td>9.5 / 5.9 / 3.8</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Weight</th>
-                      <td>136g</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Operating Temperature</th>
-                      <td>-5°C - 55°C</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Certification</th>
-                      <td>CE, FCC, RoHS</td>
-                    </tr>
-                  </tbody>
-              </table>
-              </div>
+                        <table class="margin">
+                          <thead>
+                              <tr>
+                                <td width="30%"><h3>Camera Model</h3></td>
+                                <td><h3>INSTAR IN-6001 HD</h3></td>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><strong>Casing</strong></td>
+                                <td>ABS (White, Black)</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Image Sensor</strong></td>
+                                <td><a href="http://www.ovt.com/products/sensor.php?id=110%20OV10633" target="_blank">OV10633</a> 720p 1/3" CMOS <em>Wide Dynamic Range</em></td>
+                              </tr>
+                              <tr>
+                                <td><strong>Supported Resolutions</strong></td>
+                                <td>1280 x 720, 640 x 352, 320 x 176</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Video Compression</strong></td>
+                                <td>h.264, MJPEG, JPG</td>
+                              </tr>
+                              <tr>
+                                <td><strong>h.264 Bitrate</strong></td>
+                                <td>90 kbps - 6.144 kbps</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Framerate</strong></td>
+                                <td>up to 25fps</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Sensor Sensitivity</strong></td>
+                                <td>3650 mV/lux*s</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Dynamic Range</strong></td>
+                                <td>115 dB</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Signal/Noise</strong></td>
+                                <td>39 dB</td>
+                              </tr>
+                              <tr>
+                                  <td><strong>Image Area</strong></td>
+                                  <td>5510.4 x 3418.8 µm</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Day / Night Switch</strong></td>
+                                <td>Yes</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Min. Illumination (Colour)</strong></td>
+                                <td>0.05 Lux @ f/2.0</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Min. Illumination (IR)</strong></td>
+                                <td>0 Lux @ f/2.0</td>
+                              </tr>
+                              <tr>
+                                <td><strong># of Parallel Streams</strong></td>
+                                <td>3</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Whitebalance</strong></td>
+                                <td>Automatic</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Electronic Shutter</strong></td>
+                                <td>Automatic</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Flip / Mirror Video</strong></td>
+                                <td>Yes / Yes</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Video Overlay</strong></td>
+                                <td>Date, Time, Camera Name</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Video Parameter</strong></td>
+                                <td>Brightness, Contrast, Saturation</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Lense</strong></td>
+                                <td>4.2 ±5% mm (Manual Focus) f/2.1
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <button on="tap:lense-specifications" class="btn">Specifications</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><strong>Field of View</strong></td>
+                                <td>75.3° dia.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Infrared LEDs</strong></td>
+                                <td>4 high-power @ 850 nm</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Effective Range (IR)</strong></td>
+                                <td>5-7 m</td>
+                              </tr>
+                              <tr>
+                                <td><strong>intgr. IRcut Filter</strong></td>
+                                <td>Yes</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Alarm I/O</strong></td>
+                                <td>No</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Optical Zoom</strong></td>
+                                <td>No</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Digital Zoom</strong></td>
+                                <td>3 x (only ActiveX)</td>
+                              </tr>
+                              <tr>
+                                <td><strong>SD Card</strong></td>
+                                <td>Removable microSDHC card up to 32GB (4GB included)</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Audio</strong></td>
+                                <td>Integrated Loudspeaker</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Microphone</strong></td>
+                                <td>Integrated Microphone</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Alert Notification</strong></td>
+                                <td>Email/FTP/HTTP/Alarm-out</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Supported Browser</strong></td>
+                                <td>Chrome, Safari, Firefox, Internet Explorer</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Supported Windows Software</strong></td>
+                                <td>InstarVision, Sighthound, WebcamXP, iSpy, VLC Player, etc.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Supported MacOSX Software</strong></td>
+                                <td>Sighthound, SecuritySpy, VLC Player, etc.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Supported Android Apps</strong></td>
+                                <td>InstarVision, IP Cam Viewer, Tiny Cam Monitor etc.</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Supported iOS Apps</strong></td>
+                                <td>InstarVision, LiveCams</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Supported Windows Phone Apps</strong></td>
+                                <td>InstarVision</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Network Interface</strong></td>
+                                <td>10Base-T/100Base-TX Ethernet Port / WLAN IEEE 802.11b/g/n</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Network Protocols</strong></td>
+                                <td>TCP/IP, DHCP, PPPoE, ARP, FTP, SMTP, DNS, NTP, UPnP, HTTP, TCP, UDP</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Encryption</strong>/td>
+                                <td>WEP (64/128bit), WPA/WPA2-PSK (TKIP, AES, CCMP)</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Wifi Frequency Band</strong></td>
+                                <td>2.4GHz 802.11b/g/n</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Wifi Antenna</strong></td>
+                                <td>integrated</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Access Protection</strong></td>
+                                <td>Username/Password - 3 Level Authorisation</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Power Supply</strong></td>
+                                <td>110-240V ac @ 50-60Hz to 5V dc and 1500mA</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Power Plug</strong></td>
+                                <td>1.35mm In / 3.5mm Out</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Power Consumption</strong></td>
+                                <td>Max. 7.0 W</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Integr. DDNS Service</strong></td>
+                                <td>Yes</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Pan &amp; Tilt</strong></td>
+                                <td>No</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Measurements in [cm]</strong></td>
+                                <td>9.5 / 5.9 / 3.8</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Weight</strong></td>
+                                <td>136g</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Operating Temperature</strong></td>
+                                <td>-5°C - 55°C</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Certification</strong></td>
+                                <td>CE, FCC, RoHS</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        </div>
 
+                </section>
+                <!-- /blade -->
+
+                <!-- ################### Lightboxes ###################### -->
+
+                <amp-lightbox id="lense-specifications" layout="nodisplay">
+                  <div class="lightbox">
+                    <div class="card-container">
+                      <div class="onecard">
+                        <div class="image centered">
+                            <amp-img noloading height=420 width=1000 layout=fixed src="/images/4-2_Lense_Specifications.png"></amp-img>
+                        </div>
+                        <div class="action">
+                          <table class="twelve columns">
+                            <tr>
+                              <td>
+                                <h3 class="inlineHeader">4.2 mm HD Wideangle Lense&nbsp;&nbsp;&nbsp;</h3>
+                              </td>
+                              <td class="align-right">
+                                <button class="navGo navGoRed" on="tap:lense-specifications.close">Close</button>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </amp-lightbox>
 
             </div>
-            <!-- /row -->
+            <!-- /container main -->
+        </div>
+        <!-- /wrap-->
 
-        </section>
-        <!-- /container -->
+        <% include ../_partials/content/_bluenav-usermanual-mobile.ejs %>
 
-        <section class="instarvision"><% include ../_partials/content/_instarvision.ejs %></section>
-        <!-- /webui -->
-
-        <section class="social"><% include ../_partials/content/_social.ejs %></section>
-        <!-- /social -->
-
-        <!-- ############################################# Footer ############################################# -->
-
-        <footer><% include ../_partials/template/_footer.ejs %></footer>
-
-        <% include ../_partials/template/_jsdefaults.ejs %>
+        <footer>
+            <% include ../_partials/amp/_amp-footer.ejs %>
+        </footer>
 
     </body>
 
