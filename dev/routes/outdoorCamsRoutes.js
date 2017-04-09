@@ -519,7 +519,7 @@ outdoorCamsRouter.route('/IN-7011_HD/Technical_Specifications')
 	    uplink: '/Outdoor_Cameras/IN-7011_HD/Usermanual/',
       ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
-      breadcrumbs: '<li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Outdoor_Cameras/IN-7011_HD/">IN-7011 HD</a></li><li><a href="/Outdoor_Cameras/IN-7011_HD/Usermanual/">Usermanual</a></li><li><a href="/Outdoor_Cameras/IN-7011_HD/Technical Specifications/">Technical_Specifications</a></li>',
+      breadcrumbs: '<li><a href="/Products/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Outdoor_Cameras/IN-7011_HD/">IN-7011 HD</a></li><li><a href="/Outdoor_Cameras/IN-7011_HD/Usermanual/">Usermanual</a></li><li><a href="/Outdoor_Cameras/IN-7011_HD/Technical Specifications/">Technical Specifications</a></li>',
 		  pacc: '',
 		  qiacc: '',
 		  mdacc: '',
