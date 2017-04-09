@@ -131,7 +131,7 @@ downloadsRouter.get('/Accessories/IN-90x', function(req, res) {
       });
   });
 
-downloadsRouter.get('/Accessories/IN-Mikro380', function(req, res) {
+downloadsRouter.get('/Accessories/IN-Mikro_380', function(req, res) {
     res.render('./Downloads/Accessories_IN-Mikro380', {
         title: 'Download Area IN-Mikro 380',
         ampimg: '/images/P_SearchThumb_Products.jpg',
@@ -157,7 +157,7 @@ downloadsRouter.get('/Accessories/IN-Mikro380', function(req, res) {
       });
   });
 
-downloadsRouter.get('/Accessories/IN-Motion300', function(req, res) {
+downloadsRouter.get('/Accessories/IN-Motion_300', function(req, res) {
     res.render('./Downloads/Accessories_IN-Motion300', {
         title: 'Download Area IN-Motion 300',
         ampimg: '/images/P_SearchThumb_Products.jpg',
@@ -183,7 +183,7 @@ downloadsRouter.get('/Accessories/IN-Motion300', function(req, res) {
       });
   });
 
-downloadsRouter.get('/Accessories/IN-Motion500', function(req, res) {
+downloadsRouter.get('/Accessories/IN-Motion_500', function(req, res) {
     res.render('./Downloads/Accessories_IN-Motion500', {
         title: 'Download Area IN-Motion 500',
         ampimg: '/images/P_SearchThumb_Products.jpg',
@@ -215,7 +215,7 @@ downloadsRouter.get('/Network_Accessories/', function(req, res) {
         title: 'Download Area  Network Accessories',
         ampimg: '/images/P_SearchThumb_Products.jpg',
         headline: 'Download Area',
-        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Network_Accessories/"> Network Accessories</a></li>',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Downloads/Network_Accessories/"> Network Accessories</a></li>',
 		pacc: '',
 		ptab: 'hidden',
 		qiacc: '',
@@ -262,7 +262,7 @@ downloadsRouter.get('/Network_Accessories/IN-LAN500', function(req, res) {
       });
   });
 
-downloadsRouter.get('/Network_Accessories/IN-PoE1000', function(req, res) {
+downloadsRouter.get('/Network_Accessories/IN-PoE_1000', function(req, res) {
     res.render('./Downloads/Network_Accessories_IN-PoE1000', {
         title: 'Download Area IN-PoE1000',
         ampimg: '/images/P_SearchThumb_Products.jpg',
@@ -342,6 +342,58 @@ downloadsRouter.get('/Mobile_Apps/Android_BlackBerry/', function(req, res) {
       });
   });
 
+downloadsRouter.get('/Mobile_Apps/iOS/', function(req, res) {
+    res.render('./Downloads/Mobile_Apps_iOS', {
+        title: 'InstarVision iOS',
+        ampimg: '/images/P_SearchThumb_Products.jpg',
+        headline: 'Download Area',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Mobile_Apps/">Mobile Apps</a></li><li class="breadcrumb-item"><a href="/Mobile_Apps/iOS">iOS</a></li>',
+		pacc: '',
+		ptab: 'hidden',
+		qiacc: '',
+		qitab: 'hidden',
+		mdacc: '',
+		mdtab: 'hidden',
+		iaacc: '',
+		iatab: 'hidden',
+		auacc: '',
+		autab: 'hidden',
+		hdacc: 'hidden',
+		hdtab: 'hidden',
+		fhdacc: 'hidden',
+		fhdtab: 'hidden',
+		sacc: 'hidden',
+		dlacc: '',
+		dltab: '',
+      });
+  });
+
+downloadsRouter.get('/Mobile_Apps/Windows_Phone/', function(req, res) {
+    res.render('./Downloads/Desktop_Software_InstarVision_Metro', {
+        title: 'InstarVision Windows Phone',
+        ampimg: '/images/P_SearchThumb_Products.jpg',
+        headline: 'Download Area',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Mobile_Apps/">Mobile Apps</a></li><li class="breadcrumb-item"><a href="/Mobile_Apps/Windows_Phone/">Windows Phone</a></li>',
+		pacc: '',
+		ptab: 'hidden',
+		qiacc: '',
+		qitab: 'hidden',
+		mdacc: '',
+		mdtab: 'hidden',
+		iaacc: '',
+		iatab: 'hidden',
+		auacc: '',
+		autab: 'hidden',
+		hdacc: 'hidden',
+		hdtab: 'hidden',
+		fhdacc: 'hidden',
+		fhdtab: 'hidden',
+		sacc: 'hidden',
+		dlacc: '',
+		dltab: '',
+      });
+  });
+
 /* ###################################################### Desktop Software###################################################### */
 
 downloadsRouter.get('/Desktop_Software/', function(req, res) {
@@ -396,7 +448,33 @@ downloadsRouter.get('/Desktop_Software/InstarVision', function(req, res) {
       });
   });
 
-downloadsRouter.get('/Desktop_Software/InstarCameraTool', function(req, res) {
+downloadsRouter.get('/Desktop_Software/InstarVision_Metro/', function(req, res) {
+    res.render('./Downloads/Desktop_Software_InstarVision_Metro', {
+        title: 'Download Area InstarVision Desktop Software',
+        ampimg: '/images/P_SearchThumb_Products.jpg',
+        headline: 'Download Area',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Desktop_Software/">Desktop Software</a></li><li class="breadcrumb-item"><a href="/Desktop_Software/InstarVision_Metro">InstarVision Metro</a></li>',
+		pacc: '',
+		ptab: 'hidden',
+		qiacc: '',
+		qitab: 'hidden',
+		mdacc: '',
+		mdtab: 'hidden',
+		iaacc: '',
+		iatab: 'hidden',
+		auacc: '',
+		autab: 'hidden',
+		hdacc: 'hidden',
+		hdtab: 'hidden',
+		fhdacc: 'hidden',
+		fhdtab: 'hidden',
+		sacc: 'hidden',
+		dlacc: '',
+		dltab: '',
+      });
+  });
+
+downloadsRouter.get('/Desktop_Software/Instar_Camera_Tool', function(req, res) {
     res.render('./Downloads/Desktop_Software_InstarCameraTool', {
         title: 'Download Area INSTAR Camera Tools',
         ampimg: '/images/P_SearchThumb_Products.jpg',
