@@ -2815,6 +2815,10 @@ footer .footer-text {
     color: black;
 }
 
+.no-highlight tr:hover {
+  background-color: inherit;
+}
+
 .inlineHeader {
     display: inline;
     margin: 0;

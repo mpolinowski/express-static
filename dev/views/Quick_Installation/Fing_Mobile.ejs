@@ -45,6 +45,7 @@
                   <% include ../_partials/content/_bluenav-general.ejs %>
 
                   <article class="content blade wrapper">
+
                       <div>
                           <h1>Alternative IP Scanner</h1>
                           <h4>How to find your IP Camera in the network with an alternative IP Scanner</h4>
@@ -54,84 +55,192 @@
                               give you a log file of fresh DHCP requests, in which you should be able to find the camera´s IP address. You should reach the cameras login portal by typing this address into the web browser´s address bar.</p>
                           <p class="justify"> If you do not have access to your router or if your router does not have any log files please refer to alternative IP scanners - an examples is:</p>
                       </div>
+
                       <div class="margin">
                           <h2 class="post-title">Fing Mobile (Android/iOS)</h2>
                           <h4>Fing for Android</h4>
                           <p class="justify"> The newest version of the freeware Android App "Fing" can be found on <a href="https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en" target="_blank">Google Play</a>. After installation you will see the following interface:</p>
                       </div>
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img
+                                   on="tap:IPScanner_Android_01"
+                                   role="button"
+                                   tabindex="0"
+                                   src="/images/Quick_Installation/IPScanner_Android_01.jpg" width=450 height=750 layout="responsive" class="shadow">
+                               </amp-img>
+                             </div>
+                             <div class="action">
+                                 <p>Let the Fing scan your network for a new active host.</p>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img
+                                   on="tap:IPScanner_Android_02"
+                                   role="button"
+                                   tabindex="0"
+                                   src="/images/Quick_Installation/IPScanner_Android_02.jpg" width=450 height=750 layout="responsive" class="shadow">
+                               </amp-img>
+                             <div class="action">
+                                 <p>Let the Fing scan the host for active services.<br><br></p>
+                             </div>
+                         </div>
+                       </div>
+                     </div>
+
                       <div class="margin">
-                          <amp-img src="/images/IPScanner_Android_01.jpg" width=450 height=750 layout="responsive" class="shadow"></amp-img>
-                          <p>Let the Fing scan your network for a new active host.</p>
-                      </div>
-                      <div class="margin">
-                          <p class="justify"> Make sure the camera is disconnected from your network - then start a scan. Now connect the camera and re-run the scan. The camera should show up as a new network device. Press the cameras IP address to open the advanced details. If you are using
-                              more then one camera in your network we recommend, you only connect one camera at a time in order to differentiate them.</p>
-                      </div>
-                      <div class="margin">
-                          <amp-img src="/images/IPScanner_Android_02.jpg" width=450 height=750 layout="responsive" class="shadow"></amp-img>
-                          <p>Let the Fing scan the host for active services.</p>
-                      </div>
-                      <div class="margin">
+                          <p class="justify"> Make sure the camera is disconnected from your network - then start a scan. Now connect the camera and re-run the scan. The camera should show up as a new network device. Press the cameras IP address to open the advanced details. If you are using more then one camera in your network we recommend, you only connect one camera at a time in order to differentiate them.</p>
                           <p class="justify"> Please choose "Scan services" to discover the cameras http port - the default http port is 80.</p>
                       </div>
-                      <div class="margin">
-                          <amp-img src="/images/IPScanner_Android_03.jpg" width=450 height=750 layout="responsive" class="shadow"></amp-img>
-                          <p>Choose the cameras web port 80....</p>
-                      </div>
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img
+                                   on="tap:IPScanner_Android_03"
+                                   role="button"
+                                   tabindex="0"
+                                   src="/images/Quick_Installation/IPScanner_Android_03.jpg" width=450 height=750 layout="responsive" class="shadow">
+                               </amp-img>
+                             </div>
+                             <div class="action">
+                                 <p>Choose the cameras web port 80....<br><br></p>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img
+                                   on="tap:IPScanner_Android_04"
+                                   role="button"
+                                   tabindex="0"
+                                   src="/images/Quick_Installation/IPScanner_Android_04.jpg" width=450 height=750 layout="responsive" class="shadow">
+                               </amp-img>
+                             <div class="action">
+                                 <p>...and choose to open the address inside your default web browser.</p>
+                             </div>
+                         </div>
+                       </div>
+                     </div>
+
                       <div class="margin">
                           <p class="justify"> Press the http port and choose to open the camera´s <a href="/Web_User_Interface/">Web User Interface</a>.</p>
+                          <p class="justify"> You will now be greeted by the camera´s login page - the default credentials are username <strong>admin</strong> and the password can be left <strong>blank</strong> (or type in <strong>instar</strong> in case of a HD camera model). Congratulations! You now entered the cameras <a href="/Web_User_Interface/">WebUI</a>.</p>
                       </div>
-                      <div class="margin">
-                          <amp-img src="/images/IPScanner_Android_04.jpg" width=450 height=750 layout="responsive" class="shadow"></amp-img>
-                          <p>...and choose to open the address inside your default web browser.</p>
-                      </div>
-                      <div class="margin">
-                          <p class="justify"> You will now be greeted by the camera´s login page - the default credentials are username <strong>admin</strong> and the password can be left <strong>blank</strong> (or type in <strong>instar</strong> in case of a HD camera model). Congratulations!
-                              You now entered the cameras <a href="/Web_User_Interface/">WebUI</a>.</p>
-                      </div>
-                      <div class="margin">
-                          <amp-img src="/images/IPScanner_Android_05.jpg" width=450 height=750 layout="responsive" class="shadow"></amp-img>
-                          <p>Login with the default username and password.</p>
-                      </div>
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img
+                                   on="tap:IPScanner_Android_05"
+                                   role="button"
+                                   tabindex="0"
+                                   src="/images/Quick_Installation/IPScanner_Android_05.jpg" width=450 height=750 layout="responsive" class="shadow">
+                               </amp-img>
+                             </div>
+                             <div class="action">
+                                 <p>Login with the default username and password.</p>
+                             </div>
+                         </div>
+                         <div class="twocard invisible">
+                       </div>
+                     </div>
+
                       <div class="margin">
                           <h2 class="post-title">Fing Mobile (Android/iOS)</h2>
                           <h4>Fing for iOS</h4>
                           <p class="justify"> The newest version of the freeware iOS App "Fing" can be found on the <a href="https://itunes.apple.com/app/id430921107" target="_blank">App Store</a>. After installation you will see the following interface:</p>
                       </div>
+
                       <div class="margin">
-                          <amp-img src="/images/IPScanner_iOS_01.jpg" width=450 height=675 layout="responsive" class="shadow"></amp-img>
-                          <p>Let the Fing scan your network for a new active host.</p>
+                          <p class="justify"> Make sure the camera is disconnected from your network - then start a scan. Now connect the camera and re-run the scan. The camera should show up as a new network device. Press the cameras IP address to open the advanced details. If you are using more then one camera in your network we recommend, you only connect one camera at a time in order to differentiate them.</p>
                       </div>
-                      <div class="margin">
-                          <p class="justify"> Make sure the camera is disconnected from your network - then start a scan. Now connect the camera and re-run the scan. The camera should show up as a new network device. Press the cameras IP address to open the advanced details. If you are using
-                              more then one camera in your network we recommend, you only connect one camera at a time in order to differentiate them.</p>
-                      </div>
-                      <div class="margin">
-                          <amp-img src="/images/IPScanner_iOS_02.jpg" width=450 height=675 layout="responsive" class="shadow"></amp-img>
-                          <p>Let the Fing scan the host for active services.</p>
-                      </div>
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img
+                                   on="tap:IPScanner_iOS_01"
+                                   role="button"
+                                   tabindex="0"
+                                   src="/images/Quick_Installation/IPScanner_iOS_01.jpg" width=450 height=675 layout="responsive" class="shadow">
+                               </amp-img>
+                             <div class="action">
+                                 <p>Let the Fing scan your network for a new active host.</p>
+                             </div>
+                         </div>
+                       </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img
+                                   on="tap:IPScanner_iOS_02"
+                                   role="button"
+                                   tabindex="0"
+                                   src="/images/Quick_Installation/IPScanner_iOS_01.jpg" width=450 height=675 layout="responsive" class="shadow">
+                               </amp-img>
+                             <div class="action">
+                                 <p>Let the Fing scan the host for active services.<br><br></p>
+                             </div>
+                         </div>
+                       </div>
+                     </div>
+
                       <div class="margin">
                           <p class="justify"> Please choose "Scan services" to discover the cameras http port - the default http port is 80.</p>
                       </div>
-                      <div class="margin">
-                          <amp-img src="/images/IPScanner_iOS_03.jpg" width=450 height=675 layout="responsive" class="shadow"></amp-img>
-                          <p>Choose the cameras web port 80....</p>
-                      </div>
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img
+                                   on="tap:IPScanner_iOS_01"
+                                   role="button"
+                                   tabindex="0"
+                                   src="/images/Quick_Installation/IPScanner_iOS_03.jpg" width=450 height=675 layout="responsive" class="shadow">
+                               </amp-img>
+                             <div class="action">
+                                 <p>Choose the cameras web port 80....<br><br></p>
+                             </div>
+                         </div>
+                       </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img
+                                   on="tap:IPScanner_iOS_02"
+                                   role="button"
+                                   tabindex="0"
+                                   src="/images/Quick_Installation/IPScanner_iOS_04.jpg" width=450 height=675 layout="responsive" class="shadow">
+                               </amp-img>
+                             <div class="action">
+                                 <p>...and choose to open the address inside your default web browser.</p>
+                             </div>
+                         </div>
+                       </div>
+                     </div>
+
                       <div class="margin">
                           <p class="justify"> Press the http port and choose to open the camera´s <a href="/Web_User_Interface/">Web User Interface</a>.</p>
+                          <p class="justify"> You will now be greeted by the camera´s login page - the default credentials are username <strong>admin</strong> and the password can be left <strong>blank</strong> (or type in <strong>instar</strong> in case of a HD camera model). Congratulations! You now entered the cameras <a href="/Web_User_Interface/">WebUI</a>.</p>
                       </div>
-                      <div class="margin">
-                          <amp-img src="/images/IPScanner_iOS_04.jpg" width=450 height=675 layout="responsive" class="shadow"></amp-img>
-                          <p>...and choose to open the address inside your default web browser.</p>
-                      </div>
-                      <div class="margin">
-                          <p class="justify"> You will now be greeted by the camera´s login page - the default credentials are username <strong>admin</strong> and the password can be left <strong>blank</strong> (or type in <strong>instar</strong> in case of a HD camera model). Congratulations!
-                              You now entered the cameras <a href="/Web_User_Interface/">WebUI</a>.</p>
-                      </div>
+
                   </article>
-                  
-                    </div>
-                    <!-- /container -->
+
+                  <!-- ###################### Lightboxes ######################## -->
+
+                  <amp-image-lightbox id="IPScanner_Android_01" layout="nodisplay"></amp-image-lightbox>
+                  <amp-image-lightbox id="IPScanner_Android_02" layout="nodisplay"></amp-image-lightbox>
+                  <amp-image-lightbox id="IPScanner_Android_03" layout="nodisplay"></amp-image-lightbox>
+                  <amp-image-lightbox id="IPScanner_Android_04" layout="nodisplay"></amp-image-lightbox>
+                  <amp-image-lightbox id="IPScanner_Android_05" layout="nodisplay"></amp-image-lightbox>
+                  <amp-image-lightbox id="IPScanner_iOS_01" layout="nodisplay"></amp-image-lightbox>
+                  <amp-image-lightbox id="IPScanner_iOS_02" layout="nodisplay"></amp-image-lightbox>
+                  <amp-image-lightbox id="IPScanner_iOS_03" layout="nodisplay"></amp-image-lightbox>
+                  <amp-image-lightbox id="IPScanner_iOS_04" layout="nodisplay"></amp-image-lightbox>
+
+                  </div>
+                  <!-- /container -->
                 </div>
                 <!-- /wrap -->
 

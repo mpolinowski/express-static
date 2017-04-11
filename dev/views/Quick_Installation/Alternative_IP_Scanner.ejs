@@ -58,7 +58,12 @@
                               <div class="card-container margin">
                                   <div class="onecard">
                                       <div class="image">
-                                          <amp-img class="shadow" noloading height=375 width=622 layout=responsive src="/images/INSTAR_Camera_Tool-SD_Card.png"></amp-img>
+                                        <amp-img
+                                            on="tap:INSTAR_Camera_Tool-SD_Card"
+                                            role="button"
+                                            tabindex="0"
+                                            src="/images/INSTAR_Camera_Tool-SD_Card.png" width=622 height=375 layout="responsive" class="shadow">
+                                        </amp-img>
                                       </div>
                                   </div>
                                  <!-- /card -->
@@ -92,8 +97,10 @@
                               <div class="card-container margin">
                                   <div class="twocard">
                                       <div class="image">
+                                        <a href="/Quick_Installation/Alternative_IP_Scanner/Angry_IP_Scanner">
                                           <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/angryIP.jpg"></amp-img>
-                                          <span class="title">Angry IP Scanner</span>
+                                        </a>
+                                        <span class="title">Angry IP Scanner</span>
                                       </div>
                                       <div class="content">
                                           <p>Angry IP scanner is a very fast open-source IP address and port scanner. It is available for Windows, MacOSX as well as Linux.</p>
@@ -104,8 +111,10 @@
                                   </div>
                                   <div class="twocard">
                                       <div class="image">
+                                        <a href="/Quick_Installation/Alternative_IP_Scanner/Fing_CLI">
                                           <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/fingCLI.jpg"></amp-img>
-                                          <span class="title">Fing CLI</span>
+                                        </a>
+                                        <span class="title">Fing CLI</span>
                                       </div>
                                       <div class="content">
                                           <p>Fing is an easy-to-use command line tool to keep an eye on your local IP network. The software is available for Windows, macOS and LINUX.</p>
@@ -119,8 +128,10 @@
                               <div class="card-container">
                                   <div class="twocard">
                                       <div class="image">
+                                        <a href="/Quick_Installation/Alternative_IP_Scanner/Fing_Mobile">
                                           <amp-img class="shadow" noloading height=190 width=297 layout=responsive src="/images/fingAndroid.jpg"></amp-img>
-                                          <span class="title">Fing Mobile</span>
+                                        </a>
+                                        <span class="title">Fing Mobile</span>
                                       </div>
                                       <div class="content">
                                           <p>Easily discover all the devices on your personal and professional networks from your mobile phone. Available for Android and iOS.</p>
@@ -155,6 +166,10 @@
                             <!-- /Container-->
 
                       </section>
+
+                      <!-- ###################### Lightboxes ######################## -->
+
+                      <amp-image-lightbox id="INSTAR_Camera_Tool-SD_Card" layout="nodisplay"></amp-image-lightbox>
 
                   </div>
                   <!-- /Container -->
