@@ -45,5 +45,42 @@ testRouter.route('/AMP_Gallery')
         });
     });
 
+testRouter.route('/QnA')
+  .get(function(req, res) {
+      res.render('./Test/QnA', {
+          title: 'Questions & Answers',
+          uplink: '/Test/',
+          ampimg: '/images/Search/P_SearchThumb_Indoor_Cameras.jpg',
+          headline: 'Customer Questions and Answers',
+          breadcrumbs: '<li><a href="/Products/Indoor_Cameras">Indoor Cams</a></li><li><a href="/Indoor_Cameras/IN-8015_HD/">IN-8015 HD</a></li><li><a href="/Indoor_Cameras/IN-8015_HD/Usermanual/">Usermanual</a></li><li><a href="/Indoor_Cameras/IN-8015_HD/Safety_Warnings/">Safety Warnings</a></li>',
+        });
+    });
+
+    testRouter.route('/QnA_iFrame')
+        .get(function(req, res) {
+            res.render('./Test/QnA_iFrame', {
+                title: 'Questions & Answers',
+                ampimg: '/images/Search/QI_SearchThumb_HowDoesAnIPCameraWork.jpg',
+                headline: 'Customer Questions and Answers',
+                breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Test/">Test</a></li><li><a href="/Test/QnA/">QnA</a></li><li><a href="/Test/QnA_iFrame/">QnA iFrame</a></li>',
+    			pacc: '',
+    			ptab: 'hidden',
+    			qiacc: 'expanded',
+    			qitab: '',
+    			mdacc: '',
+    			mdtab: 'hidden',
+    			iaacc: '',
+    			iatab: 'hidden',
+    			auacc: '',
+    			autab: 'hidden',
+    			hdacc: 'hidden',
+    			hdtab: 'hidden',
+    			fhdacc: 'hidden',
+    			fhdtab: 'hidden',
+    			sacc: 'hidden',
+    			dlacc: 'hidden',
+    			dltab: 'hidden',
+              });
+          });
 
 module.exports = testRouter;
