@@ -131,6 +131,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
+<li>$:/config/TextEditor/EnableToolbar</li>
+
 <li>$:/config/Toolbar/ButtonClass</li>
 
 <li>$:/config/Toolbar/Text</li>
@@ -155,13 +157,19 @@ Error message and password prompt
 
 <li>$:/isEncrypted</li>
 
+<li>$:/language</li>
+
 <li>$:/languages/de-DE</li>
 
 <li>$:/palette</li>
 
+<li>$:/palettes/Blanca</li>
+
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
+
+<li>$:/state/ShowPaletteEditor</li>
 
 <li>$:/state/sidebar</li>
 
@@ -380,6 +388,9 @@ Error message and password prompt
 </div>
 <div created="20170414082102880" modified="20170414102732408" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
 <pre>hide</pre>
+</div>
+<div created="20170414114203571" modified="20170414114206299" title="$:/config/TextEditor/EnableToolbar">
+<pre>yes</pre>
 </div>
 <div created="20170414082616447" modified="20170414082639303" title="$:/config/Toolbar/ButtonClass">
 <pre>tc-btn-invisible</pre>
@@ -8102,6 +8113,9 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
+<div created="20170414113730688" modified="20170414113730689" title="$:/language">
+<pre>$:/languages/de-DE</pre>
+</div>
 <div author="MarioPietsch aka pmario" core-version="&gt;=5.0.0" dependents="" description="Deutsch (Deutschland)" name="de-DE" plugin-priority="100" plugin-type="language" title="$:/languages/de-DE" type="application/json" version="5.1.13">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -11400,32 +11414,140 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20170414082334659" modified="20170414102757052" title="$:/palette">
 <pre>$:/palettes/Blanca</pre>
 </div>
+<div created="20170414113944115" description="A clean white palette to let you focus" modified="20170414114710601" name="Blanca" tags="$:/tags/Palette" title="$:/palettes/Blanca" type="application/x-tiddler-dictionary">
+<pre>alert-background: #ffe476
+alert-border: #b99e2f
+alert-highlight: #881122
+alert-muted-foreground: #b99e2f
+background: #fcfcfc
+blockquote-bar: &lt;&lt;colour muted-foreground&gt;&gt;
+button-background: 
+button-foreground: 
+button-border: 
+code-background: #f7f7f9
+code-border: #e1e1e8
+code-foreground: #dd1144
+dirty-indicator: #ff0000
+download-background: #66cccc
+download-foreground: &lt;&lt;colour background&gt;&gt;
+dragger-background: &lt;&lt;colour foreground&gt;&gt;
+dragger-foreground: &lt;&lt;colour background&gt;&gt;
+dropdown-background: &lt;&lt;colour background&gt;&gt;
+dropdown-border: &lt;&lt;colour muted-foreground&gt;&gt;
+dropdown-tab-background-selected: #fff
+dropdown-tab-background: #ececec
+dropzone-background: rgba(0,200,0,0.7)
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #0000aa
+external-link-foreground: #0000ee
+foreground: #333333
+message-background: #ecf2ff
+message-border: #cfd6e6
+message-foreground: #547599
+modal-backdrop: &lt;&lt;colour foreground&gt;&gt;
+modal-background: &lt;&lt;colour background&gt;&gt;
+modal-border: #999999
+modal-footer-background: #f5f5f5
+modal-footer-border: #dddddd
+modal-header-border: #eeeeee
+muted-foreground: #999999
+notification-background: #ffffdd
+notification-border: #999999
+page-background: #ffffff
+pre-background: #f5f5f5
+pre-border: #cccccc
+primary: #7897f3
+sidebar-button-foreground: &lt;&lt;colour foreground&gt;&gt;
+sidebar-controls-foreground-hover: #000000
+sidebar-controls-foreground: #ccc
+sidebar-foreground-shadow: rgba(255,255,255, 0.8)
+sidebar-foreground: #acacac
+sidebar-muted-foreground-hover: #444444
+sidebar-muted-foreground: #c0c0c0
+sidebar-tab-background-selected: #ffffff
+sidebar-tab-background: &lt;&lt;colour tab-background&gt;&gt;
+sidebar-tab-border-selected: &lt;&lt;colour tab-border-selected&gt;&gt;
+sidebar-tab-border: &lt;&lt;colour tab-border&gt;&gt;
+sidebar-tab-divider: &lt;&lt;colour tab-divider&gt;&gt;
+sidebar-tab-foreground-selected: 
+sidebar-tab-foreground: &lt;&lt;colour tab-foreground&gt;&gt;
+sidebar-tiddler-link-foreground-hover: #444444
+sidebar-tiddler-link-foreground: #7897f3
+site-title-foreground: &lt;&lt;colour tiddler-title-foreground&gt;&gt;
+static-alert-foreground: #aaaaaa
+tab-background-selected: #ffffff
+tab-background: #eeeeee
+tab-border-selected: #cccccc
+tab-border: #cccccc
+tab-divider: #d8d8d8
+tab-foreground-selected: &lt;&lt;colour tab-foreground&gt;&gt;
+tab-foreground: #666666
+table-border: #dddddd
+table-footer-background: #a8a8a8
+table-header-background: #f0f0f0
+tag-background: #7897f3
+tag-foreground: #000
+tiddler-background: &lt;&lt;colour background&gt;&gt;
+tiddler-border: #eee
+tiddler-controls-foreground-hover: #888888
+tiddler-controls-foreground-selected: #444444
+tiddler-controls-foreground: #cccccc
+tiddler-editor-background: #f8f8f8
+tiddler-editor-border-image: #ffffff
+tiddler-editor-border: #cccccc
+tiddler-editor-fields-even: #e0e8e0
+tiddler-editor-fields-odd: #f0f4f0
+tiddler-info-background: #f8f8f8
+tiddler-info-border: #dddddd
+tiddler-info-tab-background: #f8f8f8
+tiddler-link-background: &lt;&lt;colour background&gt;&gt;
+tiddler-link-foreground: &lt;&lt;colour primary&gt;&gt;
+tiddler-subtitle-foreground: #c0c0c0
+tiddler-title-foreground: #0275d8
+toolbar-new-button: 
+toolbar-options-button: 
+toolbar-save-button: 
+toolbar-info-button: 
+toolbar-edit-button: 
+toolbar-close-button: 
+toolbar-delete-button: 
+toolbar-cancel-button: 
+toolbar-done-button: 
+untagged-background: #999999
+very-muted-foreground: #888888</pre>
+</div>
 <div created="20170414081808171" modified="20170414082010089" title="$:/SiteSubtitle">
 <pre>Häufig gestellte Kundenanfragen und Support Antworten</pre>
 </div>
 <div created="20170414081803178" modified="20170414081954219" title="$:/SiteTitle">
 <pre>Fragen &amp; Antworten</pre>
 </div>
+<div created="20170414113833574" modified="20170414113833574" title="$:/state/ShowPaletteEditor">
+<pre>yes</pre>
+</div>
 <div created="20170414082026355" modified="20170414102144359" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20170414082259889" modified="20170414102759488" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Theme</pre>
+<div created="20170414082259889" modified="20170414114634070" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
-<div created="20170414082151986" modified="20170414082152124" title="$:/state/tab--2112689675">
+<div created="20170414082151986" modified="20170414113800604" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
-<div created="20170414082704054" modified="20170414082707926" title="$:/state/tab--86143343">
-<pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
+<div created="20170414082704054" modified="20170414114230785" title="$:/state/tab--86143343">
+<pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
 </div>
-<div created="20170414082217729" modified="20170414082226122" title="$:/state/tab--959111941">
-<pre>$:/core/ui/ControlPanel/Parsing</pre>
+<div created="20170414082217729" modified="20170414113805819" title="$:/state/tab--959111941">
+<pre>$:/core/ui/ControlPanel/EditorTypes</pre>
 </div>
 <div created="20170414082716387" modified="20170414082804133" title="$:/state/tab-1342078386">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Plugins</pre>
 </div>
-<div created="20170414082148767" modified="20170414102842981" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/KeyboardShortcuts</pre>
+<div created="20170414082148767" modified="20170414114622198" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20170414082031228" modified="20170414102428909" title="$:/state/tab/sidebar--1835078512">
 <pre>Kameramodelle</pre>
@@ -11445,7 +11567,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20170414095302675" modified="20170414095302675" title="$:/state/toc/Q&amp;A-IN-9008HD-845459193">
 <pre>open</pre>
 </div>
-<div list="$:/ControlPanel" title="$:/StoryList">
+<div list="$:/ControlPanel Kameramodelle" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20170414082736766" modified="20170414082736766" title="$:/temp/HidePluginWarning">
