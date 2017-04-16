@@ -56,31 +56,41 @@ testRouter.route('/QnA')
         });
     });
 
-    testRouter.route('/QnA_iFrame')
-        .get(function(req, res) {
-            res.render('./Test/QnA_iFrame', {
-                title: 'Questions & Answers',
-                ampimg: '/images/Search/QI_SearchThumb_HowDoesAnIPCameraWork.jpg',
-                headline: 'Customer Questions and Answers',
-                breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Test/">Test</a></li><li><a href="/Test/QnA/">QnA</a></li><li><a href="/Test/QnA_iFrame/">QnA iFrame</a></li>',
-    			pacc: '',
-    			ptab: 'hidden',
-    			qiacc: 'expanded',
-    			qitab: '',
-    			mdacc: '',
-    			mdtab: 'hidden',
-    			iaacc: '',
-    			iatab: 'hidden',
-    			auacc: '',
-    			autab: 'hidden',
-    			hdacc: 'hidden',
-    			hdtab: 'hidden',
-    			fhdacc: 'hidden',
-    			fhdtab: 'hidden',
-    			sacc: 'hidden',
-    			dlacc: 'hidden',
-    			dltab: 'hidden',
-              });
-          });
+testRouter.route('/QnA_iFrame')
+.get(function(req, res) {
+  res.render('./Test/QnA_iFrame', {
+      title: 'Questions & Answers',
+      ampimg: '/images/Search/QI_SearchThumb_HowDoesAnIPCameraWork.jpg',
+      headline: 'Customer Questions and Answers',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Test/">Test</a></li><li><a href="/Test/QnA/">QnA</a></li><li><a href="/Test/QnA_iFrame/">QnA iFrame</a></li>',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: 'expanded',
+      qitab: '',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+testRouter.route('/qna_test')
+    .get(function(req, res) {
+        res.render('./Test/QnA_Tiddler', {
+            title: 'Questions & Answers',
+            ampimg: '/images/Search/QI_SearchThumb_HowDoesAnIPCameraWork.jpg',
+            headline: 'Customer Questions and Answers',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Test/">Test</a></li><li><a href="/Test/QnA/">QnA</a></li><li><a href="/Test/QnA_Tiddler/">QnA Test</a></li>',
+    });
+});
 
 module.exports = testRouter;
