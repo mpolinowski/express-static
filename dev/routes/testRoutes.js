@@ -93,4 +93,32 @@ testRouter.route('/qna_test')
     });
 });
 
+/* GET Direct connection with a PC or Notebook /Direct_LAN_Connection */
+testRouter.route('/Direct_LAN_Connection')
+.get(function(req, res) {
+  res.render('./Test/Direct_LAN_Connection', {
+      title: 'Direct connection with a PC or Notebook',
+      ampimg: '/images/Search/QI_SearchThumb_DirectConnectionWithYourPC.jpg',
+      headline: 'Direct connection with a PC or Notebook',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Quick_Installation/">Quick Installation</a></li><li><a href="/Quick_Installation/Direct_LAN_Connection/">Direct Connection with your PC</a></li>',
+pacc: '',
+ptab: 'hidden',
+qiacc: 'expanded',
+qitab: '',
+mdacc: '',
+mdtab: 'hidden',
+iaacc: '',
+iatab: 'hidden',
+auacc: '',
+autab: 'hidden',
+hdacc: 'hidden',
+hdtab: 'hidden',
+fhdacc: 'hidden',
+fhdtab: 'hidden',
+sacc: 'hidden',
+dlacc: 'hidden',
+dltab: 'hidden',
+    });
+});
+
 module.exports = testRouter;

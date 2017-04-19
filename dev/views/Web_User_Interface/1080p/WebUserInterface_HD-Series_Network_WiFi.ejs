@@ -56,11 +56,6 @@
                       </div>
                     </div>
                     <!-- /margin -->
-                    <amp-lightbox id="netWiFi" layout="nodisplay">
-                      <div class="lightbox">
-                        <amp-img src="/images/1080p_webUI/1080p_Settings_Network_WLAN.jpg" width="800" height="550" on="tap:netWiFi.close" role="button" tabindex="1">
-                      </div>
-                    </amp-lightbox>
 
                       <div class="dangercard">
                           <p><strong>Password Guidelines</strong><br/><br/>The WiFi password is limited, by the WPA standard, to max. 63 characters and can contain the following characters: <span class=code>-/: &amp; = \ @ ( ) ! ? ' . , $ < > ~ | % # { } [ ] + _ ^</span> - but <strong><u>may not</u></strong> contain the following special characters: <span class=code>* ; “</span></p>
@@ -128,6 +123,13 @@
 
                 </article>
                 <!-- /article -->
+
+                <!-- #################### Lightboxes ######################## -->
+                <amp-lightbox id="netWiFi" layout="nodisplay">
+                  <div class="lightbox">
+                    <amp-img src="/images/1080p_webUI/1080p_Settings_Network_WLAN.jpg" width="800" height="550" on="tap:netWiFi.close" role="button" tabindex="1">
+                  </div>
+                </amp-lightbox>
 
               </div>
               <!-- /container main -->

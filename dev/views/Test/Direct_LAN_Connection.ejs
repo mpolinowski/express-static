@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html ⚡>
+    <head>
+        <% include ../_partials/amp/_amp-head.ejs %>
+        <link rel="canonical" href="/Quick-Installation/Direct_LAN_Connection">
+    </head>
+
+    <body class="home">
+
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
+
+      <header class="header fixed">
+        <% include ../_partials/amp/_amp-header.ejs %>
+      </header>
+
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../_partials/content/_bluenav-general.ejs %>
+
+                <article class="content blade wrapper">
+                    <!-- article -->
+
+                    <div>
+                        <h1>Connexion LAN directe</h1>
+                        <h4>Comment connecter votre caméra directement avec votre ordinateur via un câble Ethernet</h4>
+                        <p class="justify">
+                            Les instructions suivantes expliqueront étape par étape comment créer une connexion LAN directe entre votre ordinateur et une caméra IP INSTAR. Utilisez cette approche si vous souhaitez utiliser la caméra dans une zone, qui ne fournit pas d'infrastructure réseau ou si vous souhaitez configurer la caméra pour vous connecter à un réseau WiFi lorsque vous ne disposez pas d'une connexion Ethernet LAN pour créer la configuration initiale WiFi.
+                        </p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Connecter la Caméra</h2>
+                        <p class="justify">
+                            Branchez la caméra via un câble LAN à votre PC ou ordinateur portable, pour les anciens PCs, un câble RJ45 -
+                            <a href="http://en.wikipedia.org/wiki/Ethernet_crossover_cable" target="_blank">Crossover</a>
+                            - est nécessaire pour établir la connexion réseau.
+                        </p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Localiser la Caméra</h2>
+                        <p class="justify">
+                            Installez/Lancez l'Outil de Caméra INSTAR, cliquez sur le bouton ''Recherche'' et vous obtenez l'écran suivant: Vous pourriez avoir à sélectionner une interface réseau correcte(à côté du bouton Recherche) auquel votre caméra IP est connectée. Par exemple, si vous avez une carte de réseau filaire/sans fil ou un module Bluetooth, alors vous devez sélectionner un approprié pour localiser votre caméra IP.
+                        </p>
+                        <amp-img
+                            on="tap:Direktverbindung_01en"
+                            role="button"
+                            tabindex="0"
+                            src="/images/Quick_Installation/Direktverbindung_01en.jpg" width=600 height=389 layout="responsive" class="shadow">
+                        </amp-img>
+
+                        <p>Lancez l'Outil de Caméra INSTAR puis cliquez sur <em>Recherche</em>.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Attribuer une adresse IP fixe à votre PC Windows</h2>
+                        <p class="justify">
+                            Ouvrez le
+                            <em>Centre Réseau et Partage</em>
+                            (<em>Panneau de contrôle</em>
+                            ->
+                            <em>Réseau et Sécurité</em>). L'interface vous montrera une nouvelle connexion LAN non identifiée. Ouvrez les paramètres en cliquant sur "Réseau local". Allez à
+                            <em>Propriétés </em>, sélectionnez le
+                            <em>Internet Protocol Version 4 (TCP/IPv4)</em>
+                            puis sélectionnez
+                            <em>Propriétés </em>
+                            comme ci-dessous.
+                        </p>
+                        <amp-img
+                            on="tap:Direktverbindung_02en"
+                            role="button"
+                            tabindex="0"
+                            src="/images/Quick_Installation/Direktverbindung_02en.jpg" width=700 height=629 layout="responsive" class="shadow">
+                        </amp-img>
+
+                        <p>Ouvrez le
+                            <em>Centre Réseau et Partage</em>
+                            et allez aux propriétés de la connexion réseau local.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p class="justify">
+                            Vous obtenez la boîte de dialogue suivant, dans laquelle vous pouvez attribuer une adresse IP fixe à votre PC/ordinateur portable. Soumettez les paramètres en cliquant sur "OK" et revenez à l'Outil de Caméra INSTAR.
+                        </p>
+                        <amp-img
+                            on="tap:Direktverbindung_03en"
+                            role="button"
+                            tabindex="0"
+                            src="/images/Quick_Installation/Direktverbindung_03en.jpg" width=400 height=450 layout="responsive" class="shadow">
+                        </amp-img>
+
+                        <p>Ouvrez Propriétés IPv4.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p class="justify">
+                            Entrez une adresse IP valide pour votre ordinateur et l'utilisez comme un serveur passerelle par défaut / DNS (voir ci-dessous)::
+                        </p>
+                        <amp-img
+                            on="tap:Direktverbindung_04en"
+                            role="button"
+                            tabindex="0"
+                            src="/images/Quick_Installation/Direktverbindung_04en.jpg" width=400 height=444 layout="responsive" class="shadow">
+                        </amp-img>
+
+                        <p>Attribuer une adresse IP statique à votre PC.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Attribuer une adresse IP statique à votre Mac</h2>
+                        <p class="justify">
+                            Ouvez le menu
+                            <em>Préférences Système</em>
+                            et allez à
+                            <em>Réseau</em>
+                            puis cliquez sur
+                            <em>Ethernet</em>. Sélectionnez dans
+                            <em>Configure IPv4: Manuellement</em>
+                            et entrez une adresse IP statique valide pour votre ordinateur et utilisez la même pour votre routeur. Soumettez vos modifications en cliquant sur
+                            <em>Appliquer</em>
+                            et revenez à l'Outil de Caméra INSTAR.
+                        </p>
+                        <amp-img
+                            on="tap:Direktverbindung_MAC_en"
+                            role="button"
+                            tabindex="0"
+                            src="/images/Quick_Installation/Direktverbindung_MAC_en.jpg" width=600 height=524 layout="responsive" class="shadow">
+                        </amp-img>
+
+                        <p>Allez à
+                            <em>Préférences Système</em>
+                            puis la configuration
+                            <em>Ethernet</em>
+                            .</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2 class="post-title">Attribuer une adresse IP statique à votre Caméra</h2>
+                        <p class="justify">
+                            Cliquez sur ''Config IP'' et sélectionnez votre caméra sur le côté gauche, puis entrez l'adresse IP. Cette adresse iP doît être identique à celle de votre PC. Cependant, l'adresse IP dans l'étape 3 est différente que celle de votre ordinateur. Par example, il suffit d'ajouter '''1''' au dernier octet (voir ci-dessous)! Pour la passerelle et le serveur DNS, vous devez entrer l'adresse IP de votre ordinateur.<br/><br/>Si vous utilisez un réseau du classe C, le masque de sous-réseau par défaut est de: 255.255.255.0.
+                        </p>
+                        <amp-img
+                            on="tap:Direktverbindung_05en"
+                            role="button"
+                            tabindex="0"
+                            src="/images/Quick_Installation/Direktverbindung_05en.jpg" width=600 height=398 layout="responsive" class="shadow">
+                        </amp-img>
+
+                        <p>Aller à la Configuration IP de l'Outil de Caméra INSTAR et configurer une adresse IP valide.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p class="justify">
+                            Après avoir soumis vos modifications, la caméra redémarrera. Cela prend environ 30 secondes. Puis cliquez sur
+                            <em>Recherche</em>
+                            pour trouver votre caméra IP et double-cliquez pour lancer la WebUI dans votre navigateur web par défaut. Si vous souhaitez utiliser un autre navigateur Web, il suffit d'entrer l'adresse IP de la caméra dans la barre d'adresse du navigateur Web puis confirmer. Vous êtes désormais capable de modifier les paramètres de la caméra IP et d'accéder au flux vidéo live.
+                        </p>
+                        <amp-img
+                            on="tap:Direktverbindung_06en"
+                            role="button"
+                            tabindex="0"
+                            src="/images/Quick_Installation/Direktverbindung_06en.jpg" width=600 height=398 layout="responsive" class="shadow">
+                        </amp-img>
+
+                        <p>Accéder à la caméra IP via votre navigateur web par défaut.</p>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <p class="justify">
+                            Pour définir les paramètres WiFi, allez à
+                            <a href="http://wiki.instar.de/index.php/HD_Manual_WebUI_Network_WiFi">Réseau/WIFi</a>
+                            et y entrez les données correspondantes de votre réseau sans fil. Modifiez l'adresse IP de la caméra à une adresse libre dans le IP sous-réseau qui est utilisé pour le réseau sans fil. La caméra sera alors redémarrée. Vous pouvez maintenant débrancher le câble LAN et la caméra se connectera au réseau WiFi.
+                        </p>
+                    </div>
+                    <!-- /margin -->
+
+                    </article>
+                    <!-- article -->
+
+                    <!-- ###################### Lightboxes ######################## -->
+
+                    <amp-image-lightbox id="Direktverbindung_01en" layout="nodisplay"></amp-image-lightbox>
+                    <amp-image-lightbox id="Direktverbindung_02en" layout="nodisplay"></amp-image-lightbox>
+                    <amp-image-lightbox id="Direktverbindung_03en" layout="nodisplay"></amp-image-lightbox>
+                    <amp-image-lightbox id="Direktverbindung_04en" layout="nodisplay"></amp-image-lightbox>
+                    <amp-image-lightbox id="Direktverbindung_MAC_en" layout="nodisplay"></amp-image-lightbox>
+                    <amp-image-lightbox id="Direktverbindung_05en" layout="nodisplay"></amp-image-lightbox>
+                    <amp-image-lightbox id="Direktverbindung_06en" layout="nodisplay"></amp-image-lightbox>
+
+                  </div>
+                  <!-- wrap -->
+                </div>
+                <!-- container -->
+
+                <% include ../_partials/content/_bluenav-general-mobile.ejs %>
+
+                <footer>
+                    <% include ../_partials/amp/_amp-footer.ejs %>
+                </footer>
+            </body>
+        </html>
