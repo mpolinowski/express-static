@@ -2844,11 +2844,6 @@ footer .footer-text {
   line-height: 150%;
 }
 
-.inlineHeader {
-    display: inline;
-    margin: 0
-}
-
 .accordion-header, .accordion-content {
     margin: 20px 0;
     padding: 0 25px -25px 0

@@ -348,12 +348,12 @@ Applications that are running under PM2 will be restarted automatically if the a
 
 Once you started all apps, type the following to make sure that they restart after a server restart:
 ```
- pm2 startup
+ pm2 startup [ubuntu | ubuntu14 | ubuntu12 | centos | centos6 | arch | oracle | amazon | macos | darwin | freesd | systemd | systemv | upstart | launchd | rcd]
 ```
 
-The startup subcommand generates and configures a startup script to launch PM2 and its managed processes on server boots. You must also specify the init system you are running on, which is systemd, in our case:
+The startup subcommand generates and configures a startup script to launch PM2 and its managed processes on server boots. You must also specify the init system you are running on, which is centos, in our case:
 ```
- sudo pm2 startup systemd
+ sudo pm2 startup centos
 ```
 
 
