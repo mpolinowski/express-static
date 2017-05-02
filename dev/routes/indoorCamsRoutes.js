@@ -131,6 +131,34 @@ indoorCamsRouter.route('/IN-8015_HD')
     });
 });
 
+indoorCamsRouter.route('/IN-8015_HD/Nightvision_Graph/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-8015_Overview_Nightvision_Graph', {
+          title: 'IN-8015 HD Nightvision Comparison',
+        });
+    });
+
+indoorCamsRouter.route('/IN-8015_HD/Angle_Graph/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-8015_Overview_Angle_Graph', {
+          title: 'IN-8015 HD Angle of View Comparison',
+        });
+    });
+
+indoorCamsRouter.route('/IN-8015_HD/8015v6012/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-8015_Overview_8015v6012_Graph', {
+          title: 'IN-8015 HD vs IN-6012 HD',
+        });
+    });
+
+indoorCamsRouter.route('/IN-8015_HD/8015v3011/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-8015_Overview_8015v3011_Graph', {
+          title: 'IN-8015 HD vs IN-3011',
+        });
+    });
+
 indoorCamsRouter.route('/IN-8015_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Indoor_Cams/IN-8015_Usermanual', {
@@ -257,6 +285,27 @@ indoorCamsRouter.route('/IN-8015_HD/Technical_Specifications')
     });
 });
 
+indoorCamsRouter.route('/IN-8015_HD/Technical_Specifications/Power_Graph')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-8015_Tech_Specs_Power_Graph', {
+          title: 'IN-8015 HD Power Consumption',
+        });
+    });
+
+indoorCamsRouter.route('/IN-8015_HD/Technical_Specifications/4-2mm_Lense_Graph')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-8015_Tech_Specs_4-2mm_Lense_Graph', {
+          title: 'IN-8015 HD 4.2mm Wideangle Lense',
+        });
+    });
+
+indoorCamsRouter.route('/IN-8015_HD/Technical_Specifications/Image_Width_Graph')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-8015_Tech_Specs_Image_Width_Graph', {
+          title: 'IN-8015 HD Image Width Comparison',
+        });
+    });
+
 
 /* ###################################################### IN-6014 HD ###################################################### */
 
@@ -360,6 +409,34 @@ indoorCamsRouter.route('/IN-6014_HD')
 		  hdacc: '',
     });
 });
+
+indoorCamsRouter.route('/IN-6014_HD/Nightvision_Graph/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6014_Overview_Nightvision_Graph', {
+          title: 'IN-6014 HD Nightvision Comparison',
+        });
+    });
+
+indoorCamsRouter.route('/IN-6014_HD/Angle_Graph/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6014_Overview_Angle_Graph', {
+          title: 'IN-6014 HD Angle of View Comparison',
+        });
+    });
+
+indoorCamsRouter.route('/IN-6014_HD/6014v8015/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6014_Overview_6014v8015_Graph', {
+          title: 'IN-6014 HD vs IN-8015 HD',
+        });
+    });
+
+indoorCamsRouter.route('/IN-6014_HD/6014v3011/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6014_Overview_6014v3011_Graph', {
+          title: 'IN-6014 HD vs IN-3011',
+        });
+    });
 
 indoorCamsRouter.route('/IN-6014_HD/Usermanual')
 .get(function(req, res) {
@@ -591,6 +668,34 @@ indoorCamsRouter.route('/IN-6012_HD')
     });
 });
 
+indoorCamsRouter.route('/IN-6012_HD/Nightvision_Graph/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6012_Overview_Nightvision_Graph', {
+          title: 'IN-6012 HD Nightvision Comparison',
+        });
+    });
+
+indoorCamsRouter.route('/IN-6012_HD/Angle_Graph/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6012_Overview_Angle_Graph', {
+          title: 'IN-6012 HD Angle of View Comparison',
+        });
+    });
+
+indoorCamsRouter.route('/IN-6012_HD/6012v8015/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6012_Overview_6012v8015_Graph', {
+          title: 'IN-6012 HD vs IN-8015 HD',
+        });
+    });
+
+indoorCamsRouter.route('/IN-6012_HD/6012v3011/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6012_Overview_6012v3011_Graph', {
+          title: 'IN-6012 HD vs IN-3011',
+        });
+    });
+
 indoorCamsRouter.route('/IN-6012_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Indoor_Cams/IN-6012_Usermanual', {
@@ -820,6 +925,34 @@ indoorCamsRouter.route('/IN-6001_HD')
 		  hdacc: '',
     });
 });
+
+indoorCamsRouter.route('/IN-6001_HD/Nightvision_Graph/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6001_Overview_Nightvision_Graph', {
+          title: 'IN-6001 HD Nightvision Comparison',
+        });
+    });
+
+indoorCamsRouter.route('/IN-6001_HD/Angle_Graph/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6001_Overview_Angle_Graph', {
+          title: 'IN-6001 HD Angle of View Comparison',
+        });
+    });
+
+indoorCamsRouter.route('/IN-6001_HD/6001v8015/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6001_Overview_6001v8015_Graph', {
+          title: 'IN-6001 HD vs IN-8015 HD',
+        });
+    });
+
+indoorCamsRouter.route('/IN-6001_HD/6001v3011/')
+  .get(function(req, res) {
+      res.render('./Indoor_Cams/IN-6001_Overview_6001v3011_Graph', {
+          title: 'IN-6001 HD vs IN-3011',
+        });
+    });
 
 indoorCamsRouter.route('/IN-6001_HD/Usermanual')
 .get(function(req, res) {

@@ -128,6 +128,34 @@ outdoorCamsRouter.route('/IN-9008_HD')
     });
 });
 
+outdoorCamsRouter.route('/IN-9008_HD/Nightvision_Graph/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-9008_Overview_Nightvision_Graph', {
+          title: 'IN-9008 HD Nightvision Comparison',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-9008_HD/Angle_Graph/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-9008_Overview_Angle_Graph', {
+          title: 'IN-9008 HD Angle of View Comparison',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-9008_HD/9008v5907/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-9008_Overview_9008v5907_Graph', {
+          title: 'IN-9008 HD vs IN-5907 HD',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-9008_HD/9008v2905/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-9008_Overview_9008v2905_Graph', {
+          title: 'IN-9008 HD vs IN-2905',
+        });
+    });
+
 outdoorCamsRouter.route('/IN-9008_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-9008_Usermanual', {
@@ -338,6 +366,27 @@ outdoorCamsRouter.route('/IN-9008_HD/Technical_Specifications')
     });
 });
 
+outdoorCamsRouter.route('/IN-9008_HD/Technical_Specifications/Power_Graph')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-9008_Tech_Specs_Power_Graph', {
+          title: 'IN-9008 HD Power Consumption',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-9008_HD/Technical_Specifications/4-2mm_Lense_Graph')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-9008_Tech_Specs_4-2mm_Lense_Graph', {
+          title: 'IN-9008 HD 4.2mm Wideangle Lense',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-9008_HD/Technical_Specifications/Image_Width_Graph')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-9008_Tech_Specs_Image_Width_Graph', {
+          title: 'IN-9008 HD Image Width Comparison',
+        });
+    });
+
 
 /* ###################################################### IN-7011 HD ###################################################### */
 
@@ -441,6 +490,34 @@ outdoorCamsRouter.route('/IN-7011_HD')
 		  hdacc: '',
     });
 });
+
+outdoorCamsRouter.route('/IN-7011_HD/Nightvision_Graph/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-7011_Overview_Nightvision_Graph', {
+          title: 'IN-7011 HD Nightvision Comparison',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-7011_HD/Angle_Graph/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-7011_Overview_Angle_Graph', {
+          title: 'IN-7011 HD Angle of View Comparison',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-7011_HD/7011v9008/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-7011_Overview_7011v9008_Graph', {
+          title: 'IN-7011 HD vs IN-9008 HD',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-7011_HD/7011v2905/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-7011_Overview_7011v2905_Graph', {
+          title: 'IN-7011 HD vs IN-2905',
+        });
+    });
 
 outdoorCamsRouter.route('/IN-7011_HD/Usermanual')
 .get(function(req, res) {
@@ -672,6 +749,34 @@ outdoorCamsRouter.route('/IN-5907_HD')
     });
 });
 
+outdoorCamsRouter.route('/IN-5907_HD/Nightvision_Graph/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-5907_Overview_Nightvision_Graph', {
+          title: 'IN-5907 HD Nightvision Comparison',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-5907_HD/Angle_Graph/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-5907_Overview_Angle_Graph', {
+          title: 'IN-5907 HD Angle of View Comparison',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-5907_HD/5907v9008/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-5907_Overview_5907v9008_Graph', {
+          title: 'IN-5907 HD vs IN-9008 HD',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-5907_HD/5907v2905/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-5907_Overview_5907v2905_Graph', {
+          title: 'IN-5907 HD vs IN-2905',
+        });
+    });
+
 outdoorCamsRouter.route('/IN-5907_HD/Usermanual')
 .get(function(req, res) {
   res.render('./Outdoor_Cams/IN-5907_Usermanual', {
@@ -899,6 +1004,34 @@ outdoorCamsRouter.route('/IN-5905_HD')
 		  hdacc: '',
     });
 });
+
+outdoorCamsRouter.route('/IN-5905_HD/Nightvision_Graph/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-5905_Overview_Nightvision_Graph', {
+          title: 'IN-5905 HD Nightvision Comparison',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-5905_HD/Angle_Graph/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-5905_Overview_Angle_Graph', {
+          title: 'IN-5905 HD Angle of View Comparison',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-5905_HD/5905v9008/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-5905_Overview_5905v9008_Graph', {
+          title: 'IN-5905 HD vs IN-9008 HD',
+        });
+    });
+
+outdoorCamsRouter.route('/IN-5905_HD/5905v2905/')
+  .get(function(req, res) {
+      res.render('./Outdoor_Cams/IN-5905_Overview_5905v2905_Graph', {
+          title: 'IN-5905 HD vs IN-2905',
+        });
+    });
 
 outdoorCamsRouter.route('/IN-5905_HD/Usermanual')
 .get(function(req, res) {
