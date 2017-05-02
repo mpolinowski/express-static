@@ -45,8 +45,8 @@ var data = {
 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
 // as you saw in the previous example
 var options = {
-  width: 900,
-  height: 500,
+  width: 725,
+  height: 432,
   showArea: true,
   showLine: true,
   showPoint: true,
