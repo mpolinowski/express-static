@@ -468,6 +468,14 @@ section.hero:before {
     text-transform: uppercase
 }
 
+.btnSmall {
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.4);
+    font-size: 10px;
+    font-weight: 200;
+    padding: 7px 10px;
+    text-transform: none;
+}
+
 .btnRed {
     background-color: #d9534f
 }

@@ -44,7 +44,6 @@ var options = {
   lineSmooth: Chartist.Interpolation.simple({
     divisor: 2,
   }),
-  fullWidth: true,
   chartPadding: {
     right: 20,
   },

@@ -60,7 +60,6 @@ var options = {
   lineSmooth: Chartist.Interpolation.simple({
     divisor: 2,
   }),
-  fullWidth: true,
   chartPadding: {
     right: 20,
   },
@@ -70,15 +69,4 @@ var options = {
   ],
 };
 
-var responsiveOptions = [
-  ['screen and (min-width: 746px) and (max-width: 1050px)', {
-    width: 568,
-    height: 315,
-  },],
-  ['screen and (max-width: 745px)', {
-    width: 510,
-    height: 283,
-  },],
-];
-
-new Chartist.Line('#chart1', data, options, responsiveOptions);
+new Chartist.Line('#chart1', data, options);
