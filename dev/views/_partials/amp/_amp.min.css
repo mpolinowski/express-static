@@ -1314,7 +1314,8 @@ amp-sidebar .return-button::before {
 
 th, td {
     border-bottom: 1px solid #ddd;
-    padding: 15px
+    padding: 15px;
+    text-align: inherit;
 }
 
 tr:hover {
