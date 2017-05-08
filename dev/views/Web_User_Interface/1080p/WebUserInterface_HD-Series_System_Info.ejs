@@ -55,7 +55,7 @@
 
                     <div class="margin">
                       <div>
-                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Info.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Info.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:sysInfo" role="button" tabindex="0"></amp-img>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Info-Overview.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Info-Overview.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:sysInfo" role="button" tabindex="0"></amp-img>
                       </div>
                     </div>
                     <!-- /margin -->
@@ -131,13 +131,38 @@
                         </table>
                     </div>
                     <!-- /margin -->
+
+                    <div class="margin">
+                      <div>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Info-Network.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Info-Network.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:sysInfoNetwork" role="button" tabindex="0"></amp-img>
+                      </div>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                      <div>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Info-Downloads.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Info-Downloads.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:sysInfoDownload" role="button" tabindex="0"></amp-img>
+                      </div>
+                    </div>
+                    <!-- /margin -->
+
                 </article>
                 <!-- /article -->
 
                 <!-- #################### Lightboxes ######################## -->
                 <amp-lightbox id="sysInfo" layout="nodisplay">
                   <div class="lightbox">
-                    <amp-img src="/images/1080p_webUI/1080p_Settings_System_Info.jpg" width="800" height="550" on="tap:sysInfo.close" role="button" tabindex="1">
+                    <amp-img src="/images/1080p_webUI/1080p_Settings_System_Info-Overview.jpg" width="800" height="550" on="tap:sysInfo.close" role="button" tabindex="1">
+                  </div>
+                </amp-lightbox>
+                <amp-lightbox id="sysInfoNetwork" layout="nodisplay">
+                  <div class="lightbox">
+                    <amp-img src="/images/1080p_webUI/1080p_Settings_System_Info-Network.jpg" width="800" height="550" on="tap:sysInfoNetwork.close" role="button" tabindex="1">
+                  </div>
+                </amp-lightbox>
+                <amp-lightbox id="sysInfoDownload" layout="nodisplay">
+                  <div class="lightbox">
+                    <amp-img src="/images/1080p_webUI/1080p_Settings_System_Info-Downloads.jpg" width="800" height="550" on="tap:sysInfoDownload.close" role="button" tabindex="1">
                   </div>
                 </amp-lightbox>
 

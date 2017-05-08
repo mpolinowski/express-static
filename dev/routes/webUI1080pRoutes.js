@@ -121,42 +121,13 @@ webUI1080pRouter.route('/System/Date_Time/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/System/Email/')
-    .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Email', {
-            title: 'System Menu :: Email',
-            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: System :: Email',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Email/">Email</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/System/Email/',
-			pacc: '',
-			ptab: 'hidden',
-			qiacc: '',
-			qitab: 'hidden',
-			mdacc: '',
-			mdtab: 'hidden',
-			iaacc: '',
-			iatab: 'hidden',
-			auacc: '',
-			autab: 'hidden',
-			hdacc: 'hidden',
-			hdtab: 'hidden',
-			fhdacc: '',
-			fhdtab: '',
-			sacc: 'hidden',
-			dlacc: 'hidden',
-			dltab: 'hidden',
-          });
-      });
-
-/* GET HD WebUI page. */
 webUI1080pRouter.route('/System/Info/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_System_Info', {
             title: 'System Menu :: Info',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: System :: Info',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Info/">Info</a></li>',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/System/">System</a></li><li><a href="/Web_User_Interface/1080p_Series/System/Info/">Overview</a></li>',
             canonical: '/Web_User_Interface/1080p_Series/System/Info/',
 			pacc: '',
 			ptab: 'hidden',
@@ -471,35 +442,6 @@ webUI1080pRouter.route('/Network/Remote_Access/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Network/ONVIF/')
-    .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_ONVIF', {
-            title: 'Network Menu :: ONVIF',
-            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Network :: ONVIF',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/ONVIF/">ONVIF</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Network/ONVIF/',
-			pacc: '',
-			ptab: 'hidden',
-			qiacc: '',
-			qitab: 'hidden',
-			mdacc: '',
-			mdtab: 'hidden',
-			iaacc: '',
-			iatab: 'hidden',
-			auacc: '',
-			autab: 'hidden',
-			hdacc: 'hidden',
-			hdtab: 'hidden',
-			fhdacc: '',
-			fhdtab: '',
-			sacc: 'hidden',
-			dlacc: 'hidden',
-			dltab: 'hidden',
-          });
-      });
-
-/* GET HD WebUI page. */
 webUI1080pRouter.route('/Network/UPnP/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_UPnP', {
@@ -529,14 +471,14 @@ webUI1080pRouter.route('/Network/UPnP/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Network/FTP/')
+webUI1080pRouter.route('/Network/ONVIF/')
     .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_FTP', {
-            title: 'Network Menu :: FTP',
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network_ONVIF', {
+            title: 'Network Menu :: ONVIF',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Network :: FTP',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/FTP/">FTP</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Network/FTP/',
+            headline: 'INSTAR Web User Interface fullHD Series :: Network :: ONVIF',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/">Network</a></li><li><a href="/Web_User_Interface/1080p_Series/Network/ONVIF/">ONVIF</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Network/ONVIF/',
 			pacc: '',
 			ptab: 'hidden',
 			qiacc: '',
@@ -589,14 +531,43 @@ webUI1080pRouter.route('/Features/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Features/Status_LED/')
+webUI1080pRouter.route('/Features/Email/')
     .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_Status_LED', {
-            title: 'Features Menu :: Status LED',
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_Email', {
+            title: 'Features Menu :: Email',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Features :: Status LED',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/Status_LED">Status LED</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Features/Status_LED/',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features :: Email',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/Email/">Email</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Features/Email/',
+			pacc: '',
+			ptab: 'hidden',
+			qiacc: '',
+			qitab: 'hidden',
+			mdacc: '',
+			mdtab: 'hidden',
+			iaacc: '',
+			iatab: 'hidden',
+			auacc: '',
+			autab: 'hidden',
+			hdacc: 'hidden',
+			hdtab: 'hidden',
+			fhdacc: '',
+			fhdtab: '',
+			sacc: 'hidden',
+			dlacc: 'hidden',
+			dltab: 'hidden',
+          });
+      });
+
+/* GET HD WebUI page. */
+webUI1080pRouter.route('/Features/FTP/')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_FTP', {
+            title: 'Features Menu :: FTP',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features :: FTP',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/FTP/">FTP</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Features/FTP/',
 			pacc: '',
 			ptab: 'hidden',
 			qiacc: '',
@@ -676,35 +647,6 @@ webUI1080pRouter.route('/Features/PTZ/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Features/SD_Card/')
-    .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_SD_Card', {
-            title: 'Features Menu :: SD Card',
-            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Features :: SD Card',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/SD_Card">SD Card</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Features/SD_Card/',
-			pacc: '',
-			ptab: 'hidden',
-			qiacc: '',
-			qitab: 'hidden',
-			mdacc: '',
-			mdtab: 'hidden',
-			iaacc: '',
-			iatab: 'hidden',
-			auacc: '',
-			autab: 'hidden',
-			hdacc: 'hidden',
-			hdtab: 'hidden',
-			fhdacc: '',
-			fhdtab: '',
-			sacc: 'hidden',
-			dlacc: 'hidden',
-			dltab: 'hidden',
-          });
-      });
-
-/* GET HD WebUI page. */
 webUI1080pRouter.route('/Features/PTZ_Tour/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_PTZ_Tour', {
@@ -742,6 +684,64 @@ webUI1080pRouter.route('/Features/Manual_Recording/')
             headline: 'INSTAR Web User Interface fullHD Series :: Features :: Manual Recording',
             breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/Manual_Recording">Manual Recording</a></li>',
             canonical: '/Web_User_Interface/1080p_Series/Features/Manual_Recording/',
+			pacc: '',
+			ptab: 'hidden',
+			qiacc: '',
+			qitab: 'hidden',
+			mdacc: '',
+			mdtab: 'hidden',
+			iaacc: '',
+			iatab: 'hidden',
+			auacc: '',
+			autab: 'hidden',
+			hdacc: 'hidden',
+			hdtab: 'hidden',
+			fhdacc: '',
+			fhdtab: '',
+			sacc: 'hidden',
+			dlacc: 'hidden',
+			dltab: 'hidden',
+          });
+      });
+
+/* GET HD WebUI page. */
+webUI1080pRouter.route('/Features/SD_Card/')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_SD_Card', {
+            title: 'Features Menu :: SD Card',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features :: SD Card',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/SD_Card">SD Card</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Features/SD_Card/',
+			pacc: '',
+			ptab: 'hidden',
+			qiacc: '',
+			qitab: 'hidden',
+			mdacc: '',
+			mdtab: 'hidden',
+			iaacc: '',
+			iatab: 'hidden',
+			auacc: '',
+			autab: 'hidden',
+			hdacc: 'hidden',
+			hdtab: 'hidden',
+			fhdacc: '',
+			fhdtab: '',
+			sacc: 'hidden',
+			dlacc: 'hidden',
+			dltab: 'hidden',
+          });
+      });
+
+/* GET HD WebUI page. */
+webUI1080pRouter.route('/Features/Status_LED/')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Features_Status_LED', {
+            title: 'Features Menu :: Status LED',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Features :: Status LED',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/">Features</a></li><li><a href="/Web_User_Interface/1080p_Series/Features/Status_LED">Status LED</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Features/Status_LED/',
 			pacc: '',
 			ptab: 'hidden',
 			qiacc: '',
@@ -852,14 +852,14 @@ webUI1080pRouter.route('/Multimedia/Video/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Multimedia/Video/Wide_Dynamic_Range')
+webUI1080pRouter.route('/Multimedia/Image/')
     .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Video_WDR', {
-            title: 'Multimedia Menu :: Video WDR',
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Image', {
+            title: 'Multimedia Menu :: Image',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: WDR Video',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Wide_Dynamic_Range">WDR</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Multimedia/Video/Wide_Dynamic_Range/',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Image',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image">Image</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Multimedia/Image/',
 			pacc: '',
 			ptab: 'hidden',
 			qiacc: '',
@@ -881,14 +881,43 @@ webUI1080pRouter.route('/Multimedia/Video/Wide_Dynamic_Range')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Multimedia/Image/')
+webUI1080pRouter.route('/Multimedia/Video_Overlays/')
     .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Image', {
-            title: 'Multimedia Menu :: Image',
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Overlays', {
+            title: 'Multimedia Menu :: Video Overlays',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Image',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image">Image</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Multimedia/Image/',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Video Overlays',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Video_Overlays">Video Overlays</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Multimedia/Video_Overlays/',
+			pacc: '',
+			ptab: 'hidden',
+			qiacc: '',
+			qitab: 'hidden',
+			mdacc: '',
+			mdtab: 'hidden',
+			iaacc: '',
+			iatab: 'hidden',
+			auacc: '',
+			autab: 'hidden',
+			hdacc: 'hidden',
+			hdtab: 'hidden',
+			fhdacc: '',
+			fhdtab: '',
+			sacc: 'hidden',
+			dlacc: 'hidden',
+			dltab: 'hidden',
+          });
+      });
+
+/* GET HD WebUI page. */
+webUI1080pRouter.route('/Multimedia/Image/Wide_Dynamic_Range')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Image_WDR', {
+            title: 'Multimedia Menu :: Video WDR',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: WDR Video',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image">Image</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image/Wide_Dynamic_Range">WDR</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Multimedia/Image/Wide_Dynamic_Range/',
 			pacc: '',
 			ptab: 'hidden',
 			qiacc: '',
@@ -970,14 +999,14 @@ webUI1080pRouter.route('/Alarm/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Alarm/Areas/')
+webUI1080pRouter.route('/Alarm/Actions/')
     .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Areas', {
-            title: 'Alarm Menu :: Areas',
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Actions', {
+            title: 'Alarm Menu :: Actions',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Areas',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">Areas</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Alarm/Areas/',
+            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Actions',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Actions/">Actions</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Alarm/Actions/',
 			pacc: '',
 			ptab: 'hidden',
 			qiacc: '',
@@ -999,14 +1028,14 @@ webUI1080pRouter.route('/Alarm/Areas/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Alarm/Actions/')
+webUI1080pRouter.route('/Alarm/Areas/')
     .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Actions', {
-            title: 'Alarm Menu :: Actions',
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Areas', {
+            title: 'Alarm Menu :: Areas',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Actions',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Actions/">Actions</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Alarm/Actions/',
+            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Areas',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Areas/">Areas</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Alarm/Areas/',
 			pacc: '',
 			ptab: 'hidden',
 			qiacc: '',
@@ -1057,64 +1086,6 @@ webUI1080pRouter.route('/Alarm/Schedule/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Alarm/Alarm_Server/')
-    .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Alarm_Server', {
-            title: 'Alarm Menu :: Alarm Server',
-            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Alarm Server',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Alarm_Server/">Alarm Server</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Alarm/Alarm_Server/',
-			pacc: '',
-			ptab: 'hidden',
-			qiacc: '',
-			qitab: 'hidden',
-			mdacc: '',
-			mdtab: 'hidden',
-			iaacc: '',
-			iatab: 'hidden',
-			auacc: '',
-			autab: 'hidden',
-			hdacc: 'hidden',
-			hdtab: 'hidden',
-			fhdacc: '',
-			fhdtab: '',
-			sacc: 'hidden',
-			dlacc: 'hidden',
-			dltab: 'hidden',
-          });
-      });
-
-/* GET HD WebUI page. */
-webUI1080pRouter.route('/Alarm/Email/')
-    .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Email', {
-            title: 'Alarm Menu :: Email',
-            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Email',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Email/">Email</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Alarm/Email/',
-			pacc: '',
-			ptab: 'hidden',
-			qiacc: '',
-			qitab: 'hidden',
-			mdacc: '',
-			mdtab: 'hidden',
-			iaacc: '',
-			iatab: 'hidden',
-			auacc: '',
-			autab: 'hidden',
-			hdacc: 'hidden',
-			hdtab: 'hidden',
-			fhdacc: '',
-			fhdtab: '',
-			sacc: 'hidden',
-			dlacc: 'hidden',
-			dltab: 'hidden',
-          });
-      });
-
-/* GET HD WebUI page. */
 webUI1080pRouter.route('/Alarm/Push_Service/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Push_Service', {
@@ -1123,6 +1094,35 @@ webUI1080pRouter.route('/Alarm/Push_Service/')
             headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Push Service',
             breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Push_Service/">Push Service</a></li>',
             canonical: '/Web_User_Interface/1080p_Series/Alarm/Push_Service/',
+			pacc: '',
+			ptab: 'hidden',
+			qiacc: '',
+			qitab: 'hidden',
+			mdacc: '',
+			mdtab: 'hidden',
+			iaacc: '',
+			iatab: 'hidden',
+			auacc: '',
+			autab: 'hidden',
+			hdacc: 'hidden',
+			hdtab: 'hidden',
+			fhdacc: '',
+			fhdtab: '',
+			sacc: 'hidden',
+			dlacc: 'hidden',
+			dltab: 'hidden',
+          });
+      });
+
+/* GET HD WebUI page. */
+webUI1080pRouter.route('/Alarm/Alarm_Server/')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Alarm_Alarm_Server', {
+            title: 'Alarm Menu :: Alarm Server',
+            ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series :: Alarm :: Alarm Server',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/">Alarm</a></li><li><a href="/Web_User_Interface/1080p_Series/Alarm/Alarm_Server/">Alarm Server</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Alarm/Alarm_Server/',
 			pacc: '',
 			ptab: 'hidden',
 			qiacc: '',
@@ -1181,7 +1181,7 @@ webUI1080pRouter.route('/Recording/Video/')
             title: 'Recording Menu :: Video',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface fullHD Series :: Recording :: Video',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Recording/">Recording</a></li><li><a href="/Web_User_Interface/1080p_Series/Recording/Video">Video</a></li>',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Recording/">Recording</a></li><li><a href="/Web_User_Interface/1080p_Series/Recording/Video">Recordings</a></li>',
             canonical: '/Web_User_Interface/1080p_Series/Recording/Video/',
 			pacc: '',
 			ptab: 'hidden',

@@ -55,7 +55,7 @@
 
                     <div class="margin">
                       <div>
-                          <amp-img srcset=" http://placehold.it/1371x940 100w, http://placehold.it/1371x940 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:featuresTour" role="button" tabindex="0"></amp-img>
+                          <amp-img srcset="/images/1080p_webUI/1080p_Settings_Features_PTZ_Tour.jpg 100w, /images/1080p_webUI/1080p_Settings_Features_PTZ_Tour.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:featuresPTZTour" role="button" tabindex="0"></amp-img>
                       </div>
                     </div>
                     <!-- /margin -->
@@ -97,6 +97,13 @@
               <!-- /container main -->
           </div>
           <!-- /wrap-->
+
+          <!-- #################### Lightboxes ######################## -->
+          <amp-lightbox id="featuresPTZTour" layout="nodisplay">
+            <div class="lightbox">
+              <amp-img src="/images/1080p_webUI/1080p_Settings_Features_PTZ_Tour.jpg" width="800" height="550" on="tap:featuresPTZTour.close" role="button" tabindex="1">
+            </div>
+          </amp-lightbox>
 
           <% include ../../_partials/content/_bluenav-general-mobile.ejs %>
 
