@@ -881,14 +881,14 @@ webUI1080pRouter.route('/Multimedia/Image/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Multimedia/Video_Overlays/')
+webUI1080pRouter.route('/Multimedia/Image/Wide_Dynamic_Range')
     .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Overlays', {
-            title: 'Multimedia Menu :: Video Overlays',
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Image_WDR', {
+            title: 'Multimedia Menu :: Video WDR',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Video Overlays',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Video_Overlays">Video Overlays</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Multimedia/Video_Overlays/',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: WDR Video',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image">Image</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image/Wide_Dynamic_Range">WDR</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Multimedia/Image/Wide_Dynamic_Range/',
 			pacc: '',
 			ptab: 'hidden',
 			qiacc: '',
@@ -910,14 +910,14 @@ webUI1080pRouter.route('/Multimedia/Video_Overlays/')
       });
 
 /* GET HD WebUI page. */
-webUI1080pRouter.route('/Multimedia/Image/Wide_Dynamic_Range')
+webUI1080pRouter.route('/Multimedia/Video_Overlays/')
     .get(function(req, res) {
-        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Image_WDR', {
-            title: 'Multimedia Menu :: Video WDR',
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Overlays', {
+            title: 'Multimedia Menu :: Video Overlays',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
-            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: WDR Video',
-            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image">Image</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image/Wide_Dynamic_Range">WDR</a></li>',
-            canonical: '/Web_User_Interface/1080p_Series/Multimedia/Image/Wide_Dynamic_Range/',
+            headline: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Video Overlays',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li><li><a href="/Web_User_Interface/1080p_Series/">1080p Series</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Video_Overlays">Video Overlays</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Multimedia/Video_Overlays/',
 			pacc: '',
 			ptab: 'hidden',
 			qiacc: '',
