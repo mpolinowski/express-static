@@ -1607,14 +1607,12 @@ tr:hover {
 
 .home .hero .intro {
     color: #fff;
-    font-size: 16px;
-    line-height: 24px;
-    max-width: 510px;
     padding-bottom: 45px
 }
 
 .home .hero .intro p {
-    margin-top: 0
+    margin-top: 0;
+    font-size: 120%;
 }
 
 @media only screen and (max-width:870px) {
