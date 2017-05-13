@@ -18,11 +18,11 @@
                     <h2 class="subheader">Run took <%= response.took %> milliseconds</h2>
                     <h5 class="text-muted">Max search score: "<%= response.hits.max_score %>"</h5>
                     <% } else { %>
-                        <h1 class="headline hidden-xs-down">No results found!</h1>
-                        <h2 class="headline hidden-sm-up">No Results<h2>
+                        <h1 class="headline hidden-sm-down">No results found!</h1>
+                        <h2 class="headline hidden-md-up">No Results<h2>
                         <br/>
-                        <h2 class="subheader hidden-xs-down">¯\_(ツ)_/¯ Your keyword produced no hits ¯\_(ツ)_/¯</h2>
-                        <h3 class="subheader hidden-sm-up">¯\_(ツ)_/¯</h3>
+                        <h2 class="subheader hidden-sm-down">¯\_(ツ)_/¯ Your keyword produced no hits ¯\_(ツ)_/¯</h2>
+                        <h3 class="subheader hidden-md-up">¯\_(ツ)_/¯</h3>
                   <% } %>
                   <h2 class="subheader"><i class="fa fa-angle-double-down" aria-hidden="true"></i></h2><br/>
            </div>
@@ -35,19 +35,36 @@
        <section class="container" style="margin-bottom: 200px;">
            <div class="row">
 
-                  <% if (response.hits.total > 0) { %>
-                      <div class="card-columns mb">
-                          <% for(var i=0; i<response.hits.hits.length;i++){ if (i === 8) { break; } %>
-                              <div class="card card-inverse shadow mt" style="background-color: #333; border-color: #333;">
-                                  <img class="card-img-top img-fluid" src="<%= response.hits.hits[i]._source.image %>" alt="Card image cap">
-                                  <div class="card-block" style="height: 215px;">
-                                      <h4 class="card-title"><%= response.hits.hits[i]._source.title %></h4>
-                                      <p class="card-text"><%= response.hits.hits[i]._source.abstract %></p>
-                                      <a href="<%= response.hits.hits[i]._source.link %>" class="btn btn-primary">Read More</a>
-                                  </div>
+             <!-- /desktop up -->
+             <% if (response.hits.total > 0) { %>
+               <div class="card-columns hidden-sm-down">
+                     <% for(var i=0; i<response.hits.hits.length;i++){ if (i === 8) { break; } %>
+                         <div class="card card-inverse shadow mt" style="background-color: #333; border-color: #333;">
+                             <a href="<%= response.hits.hits[i]._source.link %>">
+                               <img class="card-img-top img-fluid" src="<%= response.hits.hits[i]._source.image %>" alt="<%= response.hits.hits[i]._source.title %>">
+                            </a>
+                              <div class="card-block" style="height: 215px;">
+                                  <h4 class="card-title"><%= response.hits.hits[i]._source.title %></h4>
+                                  <p class="card-text"><%= response.hits.hits[i]._source.abstract %></p>
+                                  <a href="<%= response.hits.hits[i]._source.link %>" class="btn btn-primary hidden-md-down">Read more</a>
                               </div>
-                          <% } %>
+                         </div>
+                     <% } %>
+                 </div>
+
+                 <!-- /mobile down -->
+                 <% for(var i=0; i<response.hits.hits.length;i++){ if (i === 8) { break; } %>
+                   <div class="card card-inverse shadow mt hidden-md-up" style="background-color: #333; border-color: #333;">
+                    <a href="<%= response.hits.hits[i]._source.link %>">
+                      <img class="card-img-top img-fluid" src="<%= response.hits.hits[i]._source.image %>" alt="<%= response.hits.hits[i]._source.title %>">
+                    </a>
+                      <div class="card-block">
+                        <h4 class="card-title"><%= response.hits.hits[i]._source.title %></h4>
+                        <p class="card-text"><%= response.hits.hits[i]._source.abstract %></p>
                       </div>
+                    </div>
+                  <% } %>
+
                   <% } else { %>
                     <div class="card-deck-wrapper mb">
                         <div class="card-deck">
