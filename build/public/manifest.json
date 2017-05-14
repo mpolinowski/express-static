@@ -1,13 +1,13 @@
 {
-  "name": "wiki.instar.de",
+  "name": "wiki.instar.com",
   "short_name": "INSTAR Wiki",
-  "lang": "de",
+  "lang": "en",
   "dir": "ltr",
   "start_url": "/",
   "display": "fullscreen",
   "background_color": "#fff",
   "theme_color": "#0379C4",
-  "description": "INSTAR Wissensdatenbank für IP Überwachung Kameras und Netzwerk Technologien",
+  "description": "INSTAR Knowledgebase for IP Surveillance Cameras and Network Technologies",
   "icons": [
     {
       "src": "pwa/windows10/Square71x71Logo.scale-400.png",
