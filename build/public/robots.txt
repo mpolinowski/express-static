@@ -1,4 +1,4 @@
-# www.robotstxt.org/
+Sitemap: http://wiki.instar.de/sitemap.xml
 
 # Allow crawling of all content
 User-agent: *
@@ -7,3 +7,6 @@ Disallow: /Search
 # Disallow crawling of all content
 # User-agent: *
 # Disallow: /
+
+User-agent: ia_archiver
+Allow: /*&action=raw
