@@ -38,6 +38,11 @@ indexPHPRouter.route('/Finding_your_IP_camera_in_the_network_if_the_IP_Camera_To
     res.status(301).redirect('/Quick_Installation/Alternative_IP_Scanner');
 });
 
+indexPHPRouter.route('/Language_Selection/')
+  .get(function(req, res) {
+    res.status(301).redirect('/Quick_Installation/Language_Selection');
+});
+
 indexPHPRouter.route('/ONVIF')
   .get(function(req, res) {
     res.status(301).redirect('/Quick_Installation/ONVIF');
@@ -96,11 +101,6 @@ indexPHPRouter.route('/Exception_for_your_IP_camera_in_F-Secure_Internet_Securit
 indexPHPRouter.route('/Live_Video_in_Microsoft_Edge')
   .get(function(req, res) {
     res.status(301).redirect('/Quick_Installation/Live_Video');
-});
-
-indexPHPRouter.route('/Language_Selection')
-  .get(function(req, res) {
-    res.status(301).redirect('/Quick_Installation/Language_Selection');
 });
 
 indexPHPRouter.route('/Creating_User_Accounts')
@@ -876,20 +876,6 @@ indexPHPRouter.route('/HD_Manual_WebUI_PTZ_Control')
   .get(function(req, res) {
     res.status(301).redirect('/Web_User_Interface/720p_Series/PTZ_Control/');
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
