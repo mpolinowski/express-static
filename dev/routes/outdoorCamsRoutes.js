@@ -1118,6 +1118,7 @@ outdoorCamsRouter.route('/IN-5905_HD/Technical_Specifications')
       title: 'IN-5905 HD Technical Specifications',
       model: '5905',
 	    type: 'Outdoor',
+      ampimg: '/images/Search/P_SearchThumb_Outdoor_Cameras.jpg',
       headline: 'INSTAR Products Outdoor IP Cameras',
       breadcrumbs: '<li><a href="/Outdoor_Cameras">Outdoor Cams</a></li><li><a href="/Outdoor_Cameras/IN-5905_HD/">IN-5905 HD</a></li><li><a href="/Outdoor_Cameras/IN-5905_HD/Usermanual/">Usermanual</a></li><li><a href="/Outdoor_Cameras/IN-5905_HD/Technical_Specifications/">Technical Specifications</a></li>',
       canonical: '/Outdoor_Cameras/IN-5905_HD/Technical_Specifications/',
