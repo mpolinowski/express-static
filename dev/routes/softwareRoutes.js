@@ -1276,7 +1276,7 @@ softwareRouter.route('/Other_Platforms')
       title: 'Other Platforms',
       ampimg: '/images/Search/P_SearchThumb_Products.jpg',
       headline: 'INSTAR Products',
-      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Other_Platforms/">Other_Platforms</a></li>',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Other_Platforms/">Other Platforms</a></li>',
       canonical: '/Software/Other_Platforms/',
       pacc: '',
       ptab: 'hidden',

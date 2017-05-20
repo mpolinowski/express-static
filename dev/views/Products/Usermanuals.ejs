@@ -1,827 +1,214 @@
 <!DOCTYPE html>
-<html ⚡ lang="en">
+<html ⚡>
+    <head>
+        <% include ../_partials/amp/_amp-head.ejs %>%>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="INSTAR Wiki - IP Camera Knowledge Base">
-  <meta name="author" content="Mike Polinowski">
-  <title>
-      <%= title %>
-  </title>
-  <link rel="canonical" href="<%- canonical %>">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <body class="home">
 
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
 
-  <!-- http://schema.org/TechArticle -->
-  <script type="application/ld+json">
-      { "@context": "http://schema.org",
-        "@type": "TechArticle",
-        "headline": "<%= headline %>",
-        "image": [ "http://wiki.instar.com<%= ampimg %>" ] }
-  </script>
+      <header class="header fixed">
+        <% include ../_partials/amp/_amp-header.ejs %>
+      </header>
 
-  <% include ../_partials/amp/_amp-boilerplate.css %>
-  <% include ../_partials/amp/_ampLandingCustom.css %>
-</head>
+      <div class="wrap">
+          <div class="container main">
 
-<body>
+            <% include ../_partials/content/_bluenav-general.ejs %>
 
-  <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
-      <% include ../_partials/amp/_ampLandingSidebar.ejs %>
-  </amp-sidebar>
+                <section class="blade wrapper content">
+                    <!-- section -->
 
-  <header class="header fixed">
-      <% include ../_partials/amp/_ampLandingHeader.ejs %>
-  </header>
-
-    <div class="wrap">
-        <div class="content">
-
-            <section class="large-cta">
-              <div class="cta-container">
-                <h1 class="mobile-down">INSTAR Wiki 2.0</h1>
-                <h2>The INSTAR Product Usermanual</h2>
-              </div>
-            </section>
-
-            <!-- ########################## Usermanuals ############################### -->
-
-            <section class="tile-wall">
-                <h1>INSTAR Usermanual</h1>
-                <div class="container">
-
-                  <!-- ################################ Products desktop-up ###################### -->
-
-                    <div class="row desktop-up">
-
-                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container flex-wrap">
-                              <div class="card centered tile flex-card">
-                                <a href="/Outdoor_Cameras/IN-9008_HD/Usermanual/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-9008HD_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Indoor_Cameras/IN-8015_HD/Usermanual/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-8015HD_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Outdoor_Cameras/IN-7011_HD/Usermanual/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-7011HD_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                          </div>
-                      </amp-carousel>
-
-                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container flex-wrap">
-                              <div class="card centered tile flex-card">
-                                <a href="/Indoor_Cameras/IN-6014_HD/Usermanual/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-6014HD_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Indoor_Cameras/IN-6012_HD/Usermanual/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-6012HD_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Indoor_Cameras/IN-6001_HD/Usermanual/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-6001HD_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                          </div>
-                      </amp-carousel>
-
-                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container flex-wrap">
-                              <div class="card centered tile flex-card">
-                                <a href="/Outdoor_Cameras/IN-5907_HD/Usermanual/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-5907HD_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Outdoor_Cameras/IN-5905_HD/Usermanual/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-5905HD_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Downloads/Outdoor_Cameras/IN-4011/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-4011_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                          </div>
-                      </amp-carousel>
-
-                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container flex-wrap">
-                              <div class="card centered tile flex-card">
-                                <a href="/Downloads/Outdoor_Cameras/IN-4010/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-4010_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Downloads/Indoor_Cameras/IN-3011/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-3011_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Downloads/Outdoor_Cameras/IN-2908/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-2908_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                          </div>
-                      </amp-carousel>
-
-                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container flex-wrap">
-                              <div class="card centered tile flex-card">
-                                <a href="/Downloads/Outdoor_Cameras/IN-2905/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-2905_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                          </div>
-                      </amp-carousel>
-
-                    </div>
-                    <!-- /row desktop-up -->
-
-                    <!-- ################################ Products mobile-down ###################### -->
-
-                    <div class="mobile-down">
-
-                      <a href="/Outdoor_Cameras/IN-9008_HD/Usermanual/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-9008HD_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-9008 HD Manual</h4>
-                            <p>This 1080p Camera is by far the best outdoor camera available at the moment. Thanks to its fullHD WDR image sensor it deliveres a crystal clear picture during day and night ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Indoor_Cameras/IN-8015_HD/Usermanual/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-8015HD_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-8015 HD Manual</h4>
-                            <p>HD IP camera with Pan &amp; Tilt rotation, 1080p WDR image sensor, software-based  motion detection and integrated PIR motion detector, infrared night vision ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Outdoor_Cameras/IN-7011_HD/Usermanual/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-7011HD_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-7011 HD Manual</h4>
-                            <p>This weather proof dome camera can either be used in in- or outdoor environments. Internal motors allow you to pan &amp; tilt it´s lense from your tablet or a smartphone...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Indoor_Cameras/IN-6014_HD/Usermanual/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-6014HD_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-6014 HD Manual</h4>
-                            <p>The IN-6014HD is an allround solution for Pan &amp; Tilt indoor surveillance. The integrated PIR Motion Detector ensures a fault proof detection of ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Indoor_Cameras/IN-6012_HD/Usermanual/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-6012HD_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-6012 HD Manual</h4>
-                            <p>The IN-6012HD is a Pan &amp; Tilt indoor surveillance solution. The camera head is remotely controlable and equipped with infrared diodes to utilize night vision in pitch dark environments ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Indoor_Cameras/IN-6001_HD/Usermanual/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-6001HD_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-6001 HD Manual</h4>
-                            <p>The successor of the IN-3001 and comparable in size with a pack of cigarettes. With the IN-6001HD you will not need much else to realize your surveillance system ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Outdoor_Cameras/IN-5907_HD/Usermanual/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-5907HD_white.jpg">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-5907 HD Manual</h4>
-                            <p>The IN-5907 HD is weather proof and wireless outdoor camera. It´s built-in high-powered infrared diodes  allow you to see deep into the dark ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Outdoor_Cameras/IN-5905_HD/Usermanual/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-5905HD_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-5905 HD Manual</h4>
-                            <p>It's not just a smaller version of our IN-5907HD, it also sports a 4mm wide-angle lens for a huge viewing-angle of about 90º ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Downloads/Outdoor_Cameras/IN-4011/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-4011_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-4011 Manual</h4>
-                            <p>The IN-4011 is the successor of the IN-4010 dome camera and offers advanced Pan &amp; Tilt features and 66 integrated IR LEDs for night vision ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Downloads/Indoor_Cameras/IN-4010/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-4010_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-4010 Manual</h4>
-                            <p>For surveillance purposes, the IN-4010 v2 is ready for implementation to your existing Home Automation Systems as well as NAS Systems like Synology or Qnap ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Downloads/Indoor_Cameras/IN-3011/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-3011_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-3011 Manual</h4>
-                            <p>The IN-3011 features integrated speakers and a microphone which makes the perfect camera for monitoring your baby or toddler ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Downloads/Outdoor_Cameras/IN-2908/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-2908_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-2908 Manual</h4>
-                            <p>The IN-2908 is the first in the 290X-series to feature a remotely controllable focal length. Many more Upgrades makes this camera a worthy successor of the IN-2907 ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Downloads/Outdoor_Cameras/IN-2905/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-2905_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>IN-2905 Manual</h4>
-                            <p>The IN-2905 v2 is the successor of the popular IN-2905. Dozens of Upgrades makes this camera on par with the more high-end line of INSTAR cameras ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                    </div>
-                    <!-- /row mobile-down -->
+                <div>
+                  <h1>Usermanuals</h1>
+                  <h4>Online Usermanuals for your INSTAR IP Cameras and Accessories</h4>
                 </div>
-                <!-- /container -->
-            </section>
-            <!-- /Products -->
 
-            <!-- ########################## WebUI ############################### -->
+                <div class="row">
 
-            <% include ../_partials/amp/_ampWebUI.ejs %>
-
-            <!-- ########################## Software ############################### -->
-
-            <section class="tile-wall">
-                <h1>Software</h1>
-                <div class="container">
-
-                  <!-- ################################ Software desktop-up ###################### -->
-
-                    <div class="row desktop-up">
-
-                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container flex-wrap">
-                              <div class="card centered tile flex-card">
-                                <a href="/Software/Windows/InstarVision/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Windows-InstarVision_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Software/Windows/InstarVision/Windows_Phone/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Windows_Phone_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Software/Windows/InstarVision/Metro/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Metro_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                          </div>
-                      </amp-carousel>
-
-                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container flex-wrap">
-                              <div class="card centered tile flex-card">
-                                <a href="/Software/Android/InstarVision/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Android-InstarVision_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Software/iOS/InstarVision/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS-InstarVision_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Software/Other_Platforms/InstarVision_Blackberry/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Blackberry-InstarVision_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                          </div>
-                      </amp-carousel>
-
+                  <a href="/Outdoor_Cameras/IN-9008_HD/Usermanual/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-9008HD_white.png"></amp-img>
+                      <div>
+                        <h3>IN-9008 HD</h3>
+                        <p>The IN-2904 is an compact solution for outdoor surveillance. The camera head is equipped with IR diodes for infrared nightvision.</p>
+                      </div>
                     </div>
-                    <!-- /row desktop-up -->
+                  </a>
 
-                    <!-- ################################ Software mobile-down ###################### -->
-
-                    <div class="mobile-down">
-
-                      <a href="/Software/Windows/InstarVision/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Windows-InstarVision_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Software/Windows/InstarVision/Windows_Phone/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Windows_Phone_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Software/Windows/InstarVision/Metro/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Metro_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Software/Android/InstarVision/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Android-InstarVision_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Software/iOS/InstarVision/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-iOS-InstarVision_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Software/Other_Platforms/InstarVision_Blackberry/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-Blackberry-InstarVision_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
+                  <a href="/Indoor_Cameras/IN-8015_HD/Usermanual/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-8015HD_white.png"></amp-img>
+                      <div>
+                        <h3>IN-8015 HD</h3>
+                        <p>The IN-2905 v2 is the successor of the popular IN-2905. Dozens of Upgrades makes this camera on par with the more high-end line of INSTAR cameras.</p>
+                      </div>
                     </div>
-                    <!-- /row mobile-down -->
+                  </a>
+
                 </div>
-                <!-- /container -->
-            </section>
-            <!-- /Software -->
+                <!-- /row -->
 
-            <!-- ########################## InstarVision ############################### -->
+                <div class="row">
 
-            <% include ../_partials/amp/_ampProducts.ejs %>
-
-            <!-- ########################## Accessories ############################### -->
-
-            <section class="tile-wall">
-                <h1>Accessories</h1>
-                <div class="container">
-
-                  <!-- ################################ Accessories desktop-up ###################### -->
-
-                    <div class="row desktop-up">
-
-                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container flex-wrap">
-                              <div class="card centered tile flex-card">
-                                <a href="/Products/IN-LAN/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-LAN_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Products/Power_over_Ethernet/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-PoE_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Products/IN-Route/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-Route_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                          </div>
-                      </amp-carousel>
-
-                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container flex-wrap">
-                              <div class="card centered tile flex-card">
-                                <a href="/Products/IN-Motion/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-Motion_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Products/IR_Lighting/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-Frared_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Products/IN-Mikro/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-Mikro_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                          </div>
-                      </amp-carousel>
-
+                  <a href="/Outdoor_Cameras/IN-7011_HD/Usermanual/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-7011HD_white.png"></amp-img>
+                      <div>
+                        <h3>IN-7011 HD</h3>
+                        <p>The IN-2904 is an compact solution for outdoor surveillance. The camera head is equipped with IR diodes for infrared nightvision.</p>
+                      </div>
                     </div>
-                    <!-- /row desktop-up -->
+                  </a>
 
-                    <!-- ################################ Accessories mobile-down ###################### -->
-
-                    <div class="mobile-down">
-
-                      <a href="/Products/IN-LAN/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-LAN_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Products/Power_over_Ethernet/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-PoE_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Products/IN-Route/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-Route_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Products/IN-Motion/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-Motion_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Products/IR_Lighting/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-Frared_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                      <hr>
-
-                      <a href="/Products/IN-Mikro/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_P-IN-Mikro_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <p>#</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
+                  <a href="/Indoor_Cameras/IN-6014_HD/Usermanual/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-6014HD_white.png"></amp-img>
+                      <div>
+                        <h3>IN-6014 HD</h3>
+                        <p>The IN-2905 v2 is the successor of the popular IN-2905. Dozens of Upgrades makes this camera on par with the more high-end line of INSTAR cameras.</p>
+                      </div>
                     </div>
-                    <!-- /row mobile-down -->
+                  </a>
+
                 </div>
-                <!-- /container -->
-            </section>
-            <!-- /Accessories -->
+                <!-- /row -->
 
-            <!-- ########################## Social ############################### -->
+                <div class="row">
 
-            <% include ../_partials/amp/_ampSocial.ejs %>
+                  <a href="/Indoor_Cameras/IN-6012_HD/Usermanual/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-6012HD_white.png"></amp-img>
+                      <div>
+                        <h3>IN-6012 HD</h3>
+                        <p>The IN-2904 is an compact solution for outdoor surveillance. The camera head is equipped with IR diodes for infrared nightvision.</p>
+                      </div>
+                    </div>
+                  </a>
 
-            <!-- ########################## Footer ############################### -->
+                  <a href="/Indoor_Cameras/IN-6001_HD/Usermanual/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-6001HD_white.png"></amp-img>
+                      <div>
+                        <h3>IN-6001 HD</h3>
+                        <p>The IN-2905 v2 is the successor of the popular IN-2905. Dozens of Upgrades makes this camera on par with the more high-end line of INSTAR cameras.</p>
+                      </div>
+                    </div>
+                  </a>
 
-            <footer class="desktop-up">
-              <% include ../_partials/amp/_amp-footer.ejs %>
-            </footer>
+                </div>
+                <!-- /row -->
 
+                <div class="row">
+
+                  <a href="/Outdoor_Cameras/IN-5907_HD/Usermanual/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-5907HD_white.png"></amp-img>
+                      <div>
+                        <h3>IN-5907 HD</h3>
+                        <p>The IN-2904 is an compact solution for outdoor surveillance. The camera head is equipped with IR diodes for infrared nightvision.</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="/Outdoor_Cameras/IN-5905_HD/Usermanual/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-5905HD_white.png"></amp-img>
+                      <div>
+                        <h3>IN-5905 HD</h3>
+                        <p>The IN-2905 v2 is the successor of the popular IN-2905. Dozens of Upgrades makes this camera on par with the more high-end line of INSTAR cameras.</p>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+                <!-- /row -->
+
+                <div class="row">
+
+                  <a href="/Downloads/Outdoor_Cameras/IN-4011/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-4011_white.png"></amp-img>
+                      <div>
+                        <h3>IN-4011</h3>
+                        <p>The IN-2904 is an compact solution for outdoor surveillance. The camera head is equipped with IR diodes for infrared nightvision.</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="/Downloads/Outdoor_Cameras/IN-4010/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-4010_white.png"></amp-img>
+                      <div>
+                        <h3>IN-4010</h3>
+                        <p>The IN-2905 v2 is the successor of the popular IN-2905. Dozens of Upgrades makes this camera on par with the more high-end line of INSTAR cameras.</p>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+                <!-- /row -->
+
+                <div class="row">
+
+                  <a href="/Downloads/Outdoor_Cameras/IN-3011/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-3011_white.png"></amp-img>
+                      <div>
+                        <h3>IN-3011</h3>
+                        <p>The IN-2904 is an compact solution for outdoor surveillance. The camera head is equipped with IR diodes for infrared nightvision.</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="/Downloads/Outdoor_Cameras/IN-2908/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-2908_white.png"></amp-img>
+                      <div>
+                        <h3>IN-2908</h3>
+                        <p>The IN-2904 is an compact solution for outdoor surveillance. The camera head is equipped with IR diodes for infrared nightvision.</p>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+                <!-- /row -->
+
+                <div class="row">
+
+                  <a href="/Downloads/Outdoor_Cameras/IN-2905/">
+                    <div class="mediaObject six columns shadow">
+                        <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_P-IN-2905_white.png"></amp-img>
+                      <div>
+                        <h3>IN-2905v2</h3>
+                        <p>The IN-2905 v2 is the successor of the popular IN-2905. Dozens of Upgrades makes this camera on par with the more high-end line of INSTAR cameras.</p>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+                <!-- /row -->
+
+              </section>
+              <!-- /blade -->
+
+            </div>
+            <!-- /container main -->
         </div>
-    </div>
+        <!-- /wrap-->
 
-</body>
+        <% include ../_partials/content/_bluenav-general-mobile.ejs %>
+
+        <footer>
+            <% include ../_partials/amp/_amp-footer.ejs %>
+        </footer>
+
+    </body>
 
 </html>

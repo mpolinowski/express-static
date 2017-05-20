@@ -1,180 +1,84 @@
 <!DOCTYPE html>
-<html ⚡ lang="en">
+<html ⚡>
+    <head>
+        <% include ../../_partials/amp/_amp-head.ejs %>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="INSTAR Wiki - IP Camera Knowledge Base">
-  <meta name="author" content="Mike Polinowski">
-  <title>
-      <%= title %>
-  </title>
-  <link rel="canonical" href="<%- canonical %>">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <body class="home">
 
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
 
-  <!-- http://schema.org/TechArticle -->
-  <script type="application/ld+json">
-      { "@context": "http://schema.org",
-        "@type": "TechArticle",
-        "headline": "<%= headline %>",
-        "image": [ "http://wiki.instar.com<%= ampimg %>" ] }
-  </script>
+      <header class="header fixed">
+        <% include ../../_partials/amp/_amp-header.ejs %>
+      </header>
 
-  <% include ../../_partials/amp/_amp-boilerplate.css %>
-  <% include ../../_partials/amp/_ampLandingCustom.css %>
+          <div class="wrap">
+              <div class="container main">
 
-</head>
+                  <% include ../../_partials/content/_bluenav-general.ejs %>
 
-<body>
+                      <section class="blade wrapper content">
+                          <!-- section -->
 
-    <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
-        <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
-    </amp-sidebar>
+                      <div>
+                        <h1>Web User Interface</h1>
+                        <h4>Control your INSTAR IP camera from your default web browser</h4>
+                      </div>
 
-    <header class="header fixed">
-        <% include ../../_partials/amp/_ampLandingHeader.ejs %>
-    </header>
+                      <div class="row">
 
-    <div class="wrap">
-        <div class="content">
-
-            <section class="large-cta">
-              <div class="cta-container">
-                <h1 class="mobile-down">INSTAR Wiki 2.0</h1>
-                <h2>Control your INSTAR IP camera from your default web browser</h2>
-              </div>
-            </section>
-
-            <!-- ########################## WebUI ############################### -->
-
-            <section class="tile-wall">
-                <h1>Web User Interface</h1>
-                <div class="container">
-
-                  <!-- ################################ desktop-up ###################### -->
-
-                    <div class="desktop-up">
-
-                      <amp-carousel class="success-carousel" height="400" layout="flex-item" type="slides">
-                          <div class="card-container flex-wrap">
-                              <div class="card centered tile flex-card">
-                                <a href="/Web_User_Interface/1080p_Series/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_WebUI_fullHD_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Web_User_Interface/720p_Series/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_WebUI_HD_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
-                              <div class="card centered tile flex-card">
-                                <a href="/Web_User_Interface/1080p_Series/Overview/">
-                                    <div class="card-inner">
-                                        <amp-img class="card-icon" noloading height=300 width=300 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_WebUI_VGA_white.png">
-                                        </amp-img>
-                                    </div>
-                                </a>
-                              </div>
+                        <a href="/Web_User_Interface/1080p_Series/">
+                          <div class="mediaObject six columns shadow">
+                              <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_WebUI_fullHD_white.png"></amp-img>
+                            <div>
+                              <h3>1080p Series</h3>
+                              <p>The IN-2904 is an compact solution for outdoor surveillance. The camera head is equipped with IR diodes for infrared nightvision.</p>
+                            </div>
                           </div>
-                      </amp-carousel>
+                        </a>
 
-                    </div>
-                    <!-- /row desktop-up -->
-
-                    <!-- ################################ mobile-down ###################### -->
-
-                    <div class="mobile-down">
-
-                      <a href="/Web_User_Interface/1080p_Series/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_WebUI_fullHD_white.png">
-                            </amp-img>
+                        <a href="/Web_User_Interface/720p_Series/">
+                          <div class="mediaObject six columns shadow">
+                              <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_WebUI_HD_white.png"></amp-img>
+                            <div>
+                              <h3>720p Series</h3>
+                              <p>The IN-2905 v2 is the successor of the popular IN-2905. Dozens of Upgrades makes this camera on par with the more high-end line of INSTAR cameras.</p>
+                            </div>
                           </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>1080p WebUI</h4>
-                            <p>The Web User Interface allows you to control your IP Camera (e.g. IN-9008 HD, IN-8015 HD, ...) from your default web browser ...</p>
+                        </a>
+
+                      </div>
+                      <!-- /row -->
+
+                      <div class="row">
+
+                        <a href="/Web_User_Interface/1080p_Series/Overview/">
+                          <div class="mediaObject six columns shadow">
+                              <amp-img noloading width=75 height=75 layout=fixed src="/images/Landing_Tiles/Wiki_Tiles_WebUI_VGA_white.png"></amp-img>
+                            <div>
+                              <h3>VGA Series</h3>
+                              <p>The IN-2904 is an compact solution for outdoor surveillance. The camera head is equipped with IR diodes for infrared nightvision.</p>
+                            </div>
                           </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
+                        </a>
 
-                      <hr>
+                      </div>
+                      <!-- /row -->
 
-                      <a href="/Web_User_Interface/720p_Series/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_WebUI_HD_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>720p WebUI</h4>
-                            <p>The Web User Interface allows you to control your IP Camera (e.g. IN-7011 HD, IN-5907 HD, IN-6014 HD ...) from your default web browser ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
+                </section>
+                <!-- /Five -->
+            </div>
+            <!-- /Wrapper -->
 
-                      <hr>
+        <% include ../../_partials/content/_bluenav-general-mobile.ejs %>
 
-                      <a href="/Web_User_Interface/1080p_Series/Overview/">
-                        <div class="articleListItem margin">
-                          <div class="articleImage">
-                            <amp-img height=100 width=100 layout=responsive src="/images/Landing_Tiles/Wiki_Tiles_WebUI_VGA_white.png">
-                            </amp-img>
-                          </div>
-                          <!-- /articleImage -->
-                          <div class="articlePreview">
-                            <h4>VGA WebUI</h4>
-                            <p>The Web User Interface allows you to control your IP Camera (e.g. IN-4010, IN-3011, IN-2905 ...) from your default web browser ...</p>
-                          </div>
-                          <!-- /articleImage -->
-                        </div>
-                        <!-- /articleListItem -->
-                      </a>
-
-                    </div>
-                    <!-- /row mobile-down -->
-                </div>
-                <!-- /container -->
-            </section>
-            <!-- /Quick Installation I -->
-
-            <!-- ########################## InstarVision ############################### -->
-
-            <% include ../../_partials/amp/_ampInstarVision.ejs %>
-
-            <!-- ########################## Social ############################### -->
-
-            <% include ../../_partials/amp/_ampSocial.ejs %>
-
-            <!-- ########################## Footer ############################### -->
-
-            <footer class="desktop-up">
-              <% include ../../_partials/amp/_amp-footer.ejs %>
-            </footer>
-
-        </div>
-    </div>
-
-</body>
-
+        <footer>
+            <% include ../../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
 </html>

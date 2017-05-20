@@ -8,6 +8,7 @@ webUI1080pRouter.route('/Overview')
             title: 'INSTAR Web User Interface',
             ampimg: '/images/Search/QI_SearchThumb_WebUI.jpg',
             headline: 'INSTAR Web User Interface',
+            breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Web_User_Interface/1080p_Series/Overview/">Web User Interface</a></li>',
             canonical: '/Web_User_Interface/1080p_Series/Overview/',
       			pacc: '',
       			ptab: 'hidden',
@@ -28,7 +29,7 @@ webUI1080pRouter.route('/Overview')
       			dltab: 'hidden',
           });
       });
-
+      
 /* ###################################### fullHD Series ###################################### */
 
 /* GET fullHD WebUI page. */
