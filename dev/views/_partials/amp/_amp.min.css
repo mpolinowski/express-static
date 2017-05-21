@@ -2916,7 +2916,7 @@ section[expanded] .accordion-title::after {
   align-items: flex-start;
   background: #fff;
   padding: 1rem;
-  max-width: 23rem;
+  max-width: 365px;
   margin: 0 20px 20px 20px;
 }
 
@@ -2924,13 +2924,15 @@ section[expanded] .accordion-title::after {
   flex: 1;
 }
 
-.mediaObject p {
+.mediaObject amp-fit-text {
   text-transform: none;
+  color: #757575;
+  font-weight: lighter;
 }
 
-@media only screen and (max-width:956px) {
+@media only screen and (max-width:1065px) {
     .mediaObject {
-        max-width: 60rem;
+        max-width: 900px;
         margin: 20px 5px;
     }
 }
