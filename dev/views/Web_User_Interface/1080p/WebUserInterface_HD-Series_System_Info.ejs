@@ -76,45 +76,39 @@
                             </tr>
                             <tr>
                                 <td width="20%">
-                                    <strong>Network Interface</strong>
-                                </td>
-                                <td>Displays whether your camera is connected by WiFi or Ethernet cable.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>MAC Address</strong>
-                                </td>
-                                <td>Hardware identification of the active (LAN or WLAN) network interface.</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>SD Status</strong>
-                                </td>
-                                <td>Displays if your camera´s SD card is ready for operation and it´s remaining capacity (the SD card is used as a ring buffer - the oldest folder is deleted once the capacity is reached).</td>
-                            </tr>
-                            <tr>
-                                <td width="20%">
-                                    <strong>IR LED Status</strong>
+                                    <strong>Nightvision</strong>
                                 </td>
                                 <td>Operating mode of your nightvision LEDs - either switched on automatically (when it is getting dark) or permanently deactivated.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
-                                    <strong>WAN IP Address</strong>
+                                    <strong>SD State</strong>
                                 </td>
-                                <td><strong>W</strong>ide <strong>A</strong>rea <strong>N</strong>etwork Address of your internet connection. This is the address that your <a href="/Internet_Access/The_DDNS_Service">DDNS Address</a> will be translated to, to make your camera availabe from the internet (needs a <a href="/Internet_Access/Port_Forwarding">Port Forwarding</a>!).</td>
+                                <td>Displays if your camera´s SD card is ready for operation.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
-                                    <strong>DDNS Status</strong>
+                                    <strong>SD Capacity</strong>
                                 </td>
-                                <td>This function checks if your <a href="/Web_User_Interface/720p_Series/Network/DDNS/">DDNS Address</a> was successfully updated with your actual WAN IP Address. This is a requirement to <a href="/Internet_Access/The_DDNS_Service">ccess your camera from the internet</a>.</td>
+                                <td>Full capacity of your camera´s SD card.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
-                                    <strong>UPnP Status</strong>
+                                    <strong>Free SD Storage</strong>
                                 </td>
-                                <td>The UPnP service automatically tries to set a <a href="/Internet_Access/Port_Forwarding">Port Forwarding</a> for the DDNS access to your camera. <strong>We recommend</strong> to <a href="/Web_User_Interface/720p_Series/Network/UPnP/">deactivate this service</a> and create a manual forwarding instead.</td>
+                                <td>The remaining capacity (the SD card is used as a ring buffer - the oldest folder is deleted once the capacity is reached).</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>MAC Address</strong>
+                                </td>
+                                <td>Hardware identification of the LAN network interface.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>WLAN Module</strong>
+                                </td>
+                                <td>Hardware identification of the WiFi network interface.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
@@ -134,9 +128,75 @@
                     <!-- /margin -->
 
                     <div class="margin">
+                        <table>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Camera ID</strong>
+                                </td>
+                                <td>Model number of your camera.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>WAN IP Address</strong>
+                                </td>
+                                <td><strong>W</strong>ide <strong>A</strong>rea <strong>N</strong>etwork Address of your internet connection. This is the address that your <a href="/Internet_Access/The_DDNS_Service">DDNS Address</a> will be translated to, to make your camera availabe from the internet (needs a <a href="/Internet_Access/Port_Forwarding">Port Forwarding</a>!).</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Internet</strong>
+                                </td>
+                                <td>Is your camera able to access the internet ? The Internet Access is not mandatory to operate your camera. But it is needed for a few functions, like <a href="/Web_User_Interface/1080p_Series/Features/Email/">Email</a> &amp; <a href="/Web_User_Interface/1080p_Series/Alarm/Push_Service/">Push</a> Notifications, <a href="/Web_User_Interface/1080p_Series/Features/FTP/">FTP Uploads</a>, automatic <a href="/Web_User_Interface/1080p_Series/System/Date_Time/">Date &amp; Time</a> Synchronisation, <a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">Remote access</a> over DDNS &amp; P2P, automatic <a href="/Web_User_Interface/1080p_Series/System/Update/">Update Notification</a>, etc.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>DDNS Address</strong>
+                                </td>
+                                <td>This function checks if your <a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">DDNS Address</a> was successfully updated with your actual WAN IP Address. This is a requirement to <a href="/Internet_Access/The_DDNS_Service">access your camera from the internet</a>.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>DDNS State</strong>
+                                </td>
+                                <td>This function checks if your <a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">DDNS Address</a> was successfully updated with your actual WAN IP Address. This is a requirement to <a href="/Internet_Access/The_DDNS_Service">access your camera from the internet</a>.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>P2P UID</strong>
+                                </td>
+                                <td>Your personal Point-to-Point user identification number. To be used with our <a href="/Software/Android/InstarVision/P2P">Android</a>, <a href="/Software/iOS/InstarVision/iPhone/P2P">iPhone</a>, <a href="/Software/iOS/InstarVision/iPad/P2P">iPad</a>, <a href="/Software/Windows/InstarVision/Windows_Phone/P2P">Windows Phone</a> or <a href="/Software/Windows/InstarVision/Metro/P2P">Windows Metro</a> app to add your camera.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>P2P State</strong>
+                                </td>
+                                <td>Activity status for the <a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">Point-to-Point</a> remote access service.</td>
+                            </tr>
+                            <tr>
+                                <td width="20%">
+                                    <strong>UPnP State</strong>
+                                </td>
+                                <td>The UPnP service automatically tries to set a <a href="/Internet_Access/Port_Forwarding">Port Forwarding</a> for the DDNS access to your camera. <strong>We recommend</strong> to <a href="/Web_User_Interface/720p_Series/Network/UPnP/">deactivate this service</a> and create a manual forwarding instead.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
                       <div>
                           <amp-img srcset="/images/1080p_webUI/1080p_Settings_System_Info-Downloads.jpg 100w, /images/1080p_webUI/1080p_Settings_System_Info-Downloads.png 1500w" width="1371" height="949" layout="responsive" class="shadow" on="tap:sysInfoDownload" role="button" tabindex="0"></amp-img>
                       </div>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <table>
+                            <tr>
+                                <td width="20%">
+                                    <strong>Usermanual</strong>
+                                </td>
+                                <td>Download our PDF user manual for your camera. Please be aware that the print manual might be out of date and not contain descriptions for the newest features of your camera. It is preferable to use our <a href="/Products/Usermanuals/">online documentation</a>.</td>
+                            </tr>
+                        </table>
                     </div>
                     <!-- /margin -->
 
