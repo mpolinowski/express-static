@@ -34,7 +34,7 @@ POST /wiki2_en/article
     "title2": "No-IP DDNS Adresse",
     "chapter": "Internet Access",
     "tags": ["internet", "access", "ddns", "port", "forwarding", "router", "internet access", "no-ip", "dyndns"],
-    "image": "/images/Search/IA_SearchThumb_ThirdPartyDDNS.jpg",
+    "image": "/images/Search/IA_SearchThumb_ThirdPartyDDNS_noIP.jpg",
     "abstract": "Use a No-IP Address to Access your Camera"
 }
 POST /wiki2_en/article
@@ -47,7 +47,7 @@ POST /wiki2_en/article
     "title2": "Selfhost DDNS Adresse",
     "chapter": "Internet Access",
     "tags": ["internet", "access", "ddns", "port", "forwarding", "router", "internet access", "selfhost", "dyndns"],
-    "image": "/images/Search/IA_SearchThumb_ThirdPartyDDNS.jpg",
+    "image": "/images/Search/IA_SearchThumb_ThirdPartyDDNS_selfhost.jpg",
     "abstract": "Use a Selfhost Address to Access your Camera"
 }
 POST /wiki2_en/article
@@ -60,7 +60,7 @@ POST /wiki2_en/article
     "title2": "DDDNSS Adresse",
     "chapter": "Internet Access",
     "tags": ["internet", "access", "ddns", "port", "forwarding", "router", "internet access", "ddnss", "dyndns"],
-    "image": "/images/Search/IA_SearchThumb_ThirdPartyDDNS.jpg",
+    "image": "/images/Search/IA_SearchThumb_ThirdPartyDDNS_ddnss.jpg",
     "abstract": "Use a DDNSS Address to Access your Camera"
 }
 POST /wiki2_en/article
@@ -86,7 +86,7 @@ POST /wiki2_en/article
     "title2": "Port Weiterleitung AVM Fritzbox",
     "chapter": "Internet Access",
     "tags": ["internet", "access", "ddns", "port", "forwarding", "router", "internet access", "dyndns", "AVM Fritzbox"],
-    "image": "/images/Search/IA_SearchThumb_Portforwarding.jpg",
+    "image": "/images/Search/IA_SearchThumb_Portforwarding_Fritzbox.jpg",
     "abstract": "Forward a Port in your AVM Fritzbox"
 }
 POST /wiki2_en/article
@@ -99,7 +99,7 @@ POST /wiki2_en/article
     "title2": "Port Weiterleitung Telekom Speedport",
     "chapter": "Internet Access",
     "tags": ["internet", "access", "ddns", "port", "forwarding", "router", "internet access", "dyndns", "Telekom Speedport"],
-    "image": "/images/Search/IA_SearchThumb_Portforwarding.jpg",
+    "image": "/images/Search/IA_SearchThumb_Portforwarding_Speedport.jpg",
     "abstract": "Forward a Port in your Telekom Speedport"
 }
 POST /wiki2_en/article
@@ -112,7 +112,7 @@ POST /wiki2_en/article
     "title2": "Port Weiterleitung D-Link",
     "chapter": "Internet Access",
     "tags": ["internet", "access", "ddns", "port", "forwarding", "router", "internet access", "dyndns", "D-Link"],
-    "image": "/images/Search/IA_SearchThumb_Portforwarding.jpg",
+    "image": "/images/Search/IA_SearchThumb_Portforwarding_DLink.jpg",
     "abstract": "Forward a Port in your D-Link"
 }
 POST /wiki2_en/article
@@ -125,7 +125,7 @@ POST /wiki2_en/article
     "title2": "Port Weiterleitung Netgear",
     "chapter": "Internet Access",
     "tags": ["internet", "access", "ddns", "port", "forwarding", "router", "internet access", "dyndns", "Netgear"],
-    "image": "/images/Search/IA_SearchThumb_Portforwarding.jpg",
+    "image": "/images/Search/IA_SearchThumb_Portforwarding_Netgear.jpg",
     "abstract": "Forward a Port in your Netgear"
 }
 POST /wiki2_en/article
@@ -138,7 +138,7 @@ POST /wiki2_en/article
     "title2": "Port Weiterleitung Vodafone Easybox",
     "chapter": "Internet Access",
     "tags": ["internet", "access", "ddns", "port", "forwarding", "router", "internet access", "dyndns", "Vodafone Easybox"],
-    "image": "/images/Search/IA_SearchThumb_Portforwarding.jpg",
+    "image": "/images/Search/IA_SearchThumb_Portforwarding_Easybox.jpg",
     "abstract": "Forward a Port in your Vodafone Easybox"
 }
 POST /wiki2_en/article
@@ -151,7 +151,7 @@ POST /wiki2_en/article
     "title2": "Port Weiterleitung Pirelli Router",
     "chapter": "Internet Access",
     "tags": ["internet", "access", "ddns", "port", "forwarding", "router", "internet access", "dyndns", "Pirelli Router"],
-    "image": "/images/Search/IA_SearchThumb_Portforwarding.jpg",
+    "image": "/images/Search/IA_SearchThumb_Portforwarding_Pirelli.jpg",
     "abstract": "Forward a Port in your Pirelli Router"
 }
 POST /wiki2_en/article
@@ -164,6 +164,6 @@ POST /wiki2_en/article
     "title2": "Port Weiterleitung TP-Link Router",
     "chapter": "Internet Access",
     "tags": ["internet", "access", "ddns", "port", "forwarding", "router", "internet access", "dyndns", "TP-Link Router"],
-    "image": "/images/Search/IA_SearchThumb_Portforwarding.jpg",
+    "image": "/images/Search/IA_SearchThumb_Portforwarding_TPLink.jpg",
     "abstract": "Forward a Port in your TP-Link Router"
 }

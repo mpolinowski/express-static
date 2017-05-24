@@ -1,79 +1,79 @@
 POST /wiki2_en/article
 {
-    "title": "Motion Detection Setup",
-    "series": ["HD", "VGA", "Indoor", "Outdoor"],
-    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
-    "description": "1080p Camera Series - To activate the motion detection, open the web interface of your INSTAR HD IP camera and click on the menu Alarm / Areas. Now that we set the motion detection areas, we can continue with adding actions, the camera has to take, in case of an detection event. Open the Alarm Actions menu to configure the alarm actions. To use the email notification, you first have to set your email login credentials inside the System Email. Please follow our Alarm Notification Guide. All video and snapshot recordings to SD card, can be accessed by our free app for Windows Phone, Windows Metro, Android, iPhone and iPad. Alternatively, you can download all files to your computer. To use the FTP server upload, you first have to set your server information inside the Network FTP menu. You can, for example, use your Router or NAS as FTP Server. Or run a FTP Server on your Windows PC. It is recommended to use the integrated Passive Infrared Sensor (PIR) in combination (Link with Areas) with your motion detection areas, to filter out false alerts caused by e.g. rain, snow or changes in the lighting condition. You can also deactivate the detection areas and use the PIR sensor by itself. Attention: If you have problems by receiving to many alarms you can solve that by changing your settings. Always set the sensitivity so that the motion you want to detect is detected by the camera - simply test it by walking in front of your camera. If this does not trigger an alert, you can either increase the sensitivity of the detection, or decrease the size of the detection area - the smaller the area, the higher, procentually, is the change of pixels inside the area by the event. On the other hand, if you have to increase the detection area, you also have to increase the sensitivity of the detection. To avoid unwanted motion detection please avoid covering areas like the sky with moving clouds, busy streets in the background or big reflecting areas. To find the right camera position you can change the viewing angle a little bit or mount the camera on a different area which suits better to protects you home. It is usually recommended to combine the software-based detection with the integrated PIR sensor of your camera.",
+    "title": "1080p Series Motion Detection Setup",
+    "series": ["FHD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 HD", "IN-9008 HD"],
+    "description": "1080p Camera Series - To activate the motion detection, open the web interface of your INSTAR HD IP camera and click on the menu Alarm Areas. Now that we set the motion detection areas, we can continue with adding actions, the camera has to take, in case of an detection event. Open the Alarm Actions menu to configure the alarm actions. To use the email notification, you first have to set your email login credentials inside the System Email. Please follow our Alarm Notification Guide. All video and snapshot recordings to SD card, can be accessed by our free app for Windows Phone, Windows Metro, Android, iPhone and iPad. Alternatively, you can download all files to your computer. To use the FTP server upload, you first have to set your server information inside the Network FTP menu. You can, for example, use your Router or NAS as FTP Server. Or run a FTP Server on your Windows PC. It is recommended to use the integrated Passive Infrared Sensor PIR in combination Link with Areas with your motion detection areas, to filter out false alerts caused by e.g. rain, snow or changes in the lighting condition. You can also deactivate the detection areas and use the PIR sensor by itself. Attention: If you have problems by receiving to many alarms you can solve that by changing your settings. Always set the sensitivity so that the motion you want to detect is detected by the camera - simply test it by walking in front of your camera. If this does not trigger an alert, you can either increase the sensitivity of the detection, or decrease the size of the detection area - the smaller the area, the higher, procentually, is the change of pixels inside the area by the event. On the other hand, if you have to increase the detection area, you also have to increase the sensitivity of the detection. To avoid unwanted motion detection please avoid covering areas like the sky with moving clouds, busy streets in the background or big reflecting areas. To find the right camera position you can change the viewing angle a little bit or mount the camera on a different area which suits better to protects you home. It is usually recommended to combine the software-based detection with the integrated PIR sensor of your camera.",
     "link": "/Motion_Detection/Setup/",
     "title2": "Aktivieren Sie die Bewegungserkennung Ihrer Kamera",
     "chapter": "Motion Detection",
     "tags": ["motion detection", "alarm", "notification", "email", "detection areas", "FTP"],
-    "image": "/images/Search/MD_SearchThumb_MDSetup.jpg",
+    "image": "/images/Search/MD_SearchThumb_MDSetup_1080p.jpg",
     "abstract": "Set up the Motion Detection 1080p"
 }
 POST /wiki2_en/article
 {
-    "title": "Motion Detection Setup",
-    "series": ["HD", "VGA", "Indoor", "Outdoor"],
-    "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
-    "description": "720p Camera Series To activate the motion detection, open the web interface of your INSTAR HD IP camera and click on the menu Alarm Areas. You can select which area of the video the motion detection should be armed in the Areas Overlay. Therefore please select the Area on the right side for which you want to do the settings. Next please click Active. You will see that the area which you have set to Active is now showing a colour. Also on top the number for the area activated will light up in red to symbolize that this area is active. By simply clicking into the picture and dragging your mouse you can choose the area for motion detection. The motion detection will be armed in the area you have selected. In case you want to select the whole area you can click Full Area on the right side in order to activate the motion detection over the whole picture. Now you can use the slide bar to set the sensitivity for the motion. 1 = Insensitive (almost no motion gets detected) 100 = Very Sensitive (almost every motion will be recorded) We recommend you so leave the motion sensitivity at 50 and slowly test which setting will deliver the best result. Repeat the above steps in case you want to set more then one area. Each area will be given a different colour: Area 1 = red Area 2 = blue Area 3 = green Area 4 = yellow Submit the settings in order to save all settings in the camera. You will need to select an Action so that the camera knows what it should do in case of an alarm. Please open the menu Alarm Actions. Here you can now set if the camera should sent you an email with snapshots in the attachment or if the pictures should be saved to an SD card or an FTP server. In order to save pictures or videos to an SD card please make sure an SD card in inserted in your camera. Finally please Submit the settings. Attention: If you have problems by receiving to many alarms you can solve that by changing your settings. Always set the sensitivity so that the motion you want to detect is detected by the camera - simply test it by walking in front of your camera. If this does not trigger an alert, you can either increase the sensitivity of the detection, or decrease the size of the detection area - the smaller the area, the higher, procentually, is the change of pixels inside the area by the event. On the other hand, if you have to increase the detection area, you also have to increase the sensitivity of the detection. To avoid unwanted motion detection please avoid covering areas like the sky with moving clouds, busy streets in the background or big reflecting areas. To find the right camera position you can change the viewing angle a little bit or mount the camera on a different area which suits better to protects you home.",
+    "title": "720p Series Motion Detection Setup",
+    "series": ["HD", "Indoor", "Outdoor"],
+    "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
+    "description": "720p Camera Series To activate the motion detection, open the web interface of your INSTAR HD IP camera and click on the menu Alarm Areas. You can select which area of the video the motion detection should be armed in the Areas Overlay. Therefore please select the Area on the right side for which you want to do the settings. Next please click Active. You will see that the area which you have set to Active is now showing a colour. Also on top the number for the area activated will light up in red to symbolize that this area is active. By simply clicking into the picture and dragging your mouse you can choose the area for motion detection. The motion detection will be armed in the area you have selected. In case you want to select the whole area you can click Full Area on the right side in order to activate the motion detection over the whole picture. Now you can use the slide bar to set the sensitivity for the motion. 1  Insensitive almost no motion gets detected 100 Very Sensitive almost every motion will be recorded We recommend you so leave the motion sensitivity at 50 and slowly test which setting will deliver the best result. Repeat the above steps in case you want to set more then one area. Each area will be given a different colour Area 1 red Area 2 blue Area 3 green Area 4 yellow Submit the settings in order to save all settings in the camera. You will need to select an Action so that the camera knows what it should do in case of an alarm. Please open the menu Alarm Actions. Here you can now set if the camera should sent you an email with snapshots in the attachment or if the pictures should be saved to an SD card or an FTP server. In order to save pictures or videos to an SD card please make sure an SD card in inserted in your camera. Finally please Submit the settings. Attention: If you have problems by receiving to many alarms you can solve that by changing your settings. Always set the sensitivity so that the motion you want to detect is detected by the camera - simply test it by walking in front of your camera. If this does not trigger an alert, you can either increase the sensitivity of the detection, or decrease the size of the detection area - the smaller the area, the higher, procentually, is the change of pixels inside the area by the event. On the other hand, if you have to increase the detection area, you also have to increase the sensitivity of the detection. To avoid unwanted motion detection please avoid covering areas like the sky with moving clouds, busy streets in the background or big reflecting areas. To find the right camera position you can change the viewing angle a little bit or mount the camera on a different area which suits better to protects you home.",
     "link": "/Motion_Detection/Setup/720p_Series/",
     "title2": "Aktivieren Sie die Bewegungserkennung Ihrer Kamera",
     "chapter": "Motion Detection",
     "tags": ["motion detection", "alarm", "notification", "email", "detection areas", "FTP"],
-    "image": "/images/Search/MD_SearchThumb_MDSetup.jpg",
+    "image": "/images/Search/MD_SearchThumb_MDSetup_720p.jpg",
     "abstract": "Set up the Motion Detection 720p"
 }
 POST /wiki2_en/article
 {
-    "title": "Motion Detection Setup",
-    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "title": "VGA Series Motion Detection Setup",
+    "series": ["VGA", "Indoor", "Outdoor"],
     "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "VGA Camera Series - To activate the motion detection, open the web interface of your INSTAR VGA IP camera and click on the menu Alarm Alarm. 1 = nonsensitive (almost no motion gets detected) 10 = very sensitive (almost every motion will be recorded) We recommend you so set the motion sensitivity to 6. The cameras integrated motion detection only works over the whole picture. With our additional software InstarVision for Windows computers you can define different areas in the picture for which you want to use motion detection. That means not the whole picture will be included in the motion detection but only the areas you have selected. For other operating system we currently have to use third party developers such as the software Motion, EvoCam, ZoneMinder, VitaminD and many others. The use of third party software is no problem with our cameras since they are integrated in most software versions. If you find that our cameras are not integrated you can contact us anytime so we can arrange the integration. Please note that the software of third party developers are only working with the livestream of the camera. So in order to use the functions offered by the third party software you need to have your computer running and the software opened. Attention: If you have problems by receiving to many alarms you can solve that by changing your settings. Always set the sensitivity so that the motion you want to detect is detected by the camera - simply test it by walking in front of your camera. If this does not trigger an alert, you can either increase the sensitivity of the detection, or decrease the size of the detection area - the smaller the area, the higher, procentually, is the change of pixels inside the area by the event. On the other hand, if you have to increase the detection area, you also have to increase the sensitivity of the detection. To avoid unwanted motion detection please avoid covering areas like the sky with moving clouds, busy streets in the background or big reflecting areas. To find the right camera position you can change the viewing angle a little bit or mount the camera on a different area which suits better to protects you home. As soon as you camera is detection a motion you have 3 options in order to get a notification or to record the motion: 1. Email: The IP camera will automatically sent you an email with 6 pictures in the attachment. The computer does not need to run for this function since the camera has a direct connection to the router. 2. FTP Upload: The IP camera will sent pictures to your FTP Server. With this function there will be pictures saved for a time period of 1 minute in case of an alarm. The computer does not need to run for this function. Alternative: The FTP Upload gives you the additional function to upload pictures in a fixed time interval. With this function you can for example have one picture saved every 10 seconds for an unlimited time. The picture can either be saved with the same name or the name can be created by the camera automatically by using date and time as the picture name. 3. Video: A 1 minute video can be automatically recorded. This function is only working if you are using the Internet Explorer as a webbrowser since a ActiveX Plugin is necessary to record the video to your computer. So in order to save the video the computer needs to be running and the IP address of the camera has to be opened in Internet Explorer showing the livestream. If you use our addtional software InstarVision you can also record videos. Also you can record them with a high compression and in different video formats in order to save space on your harddrive. Alternative: You can also make a continues recording with the Internet Explorer. Therefor just activate the recording manually by pressing the record button on the upper left side.",
     "link": "/Motion_Detection/Setup/VGA_Series/",
     "title2": "Aktivieren Sie die Bewegungserkennung Ihrer Kamera",
     "chapter": "Motion Detection",
     "tags": ["motion detection", "alarm", "notification", "email", "detection areas", "FTP"],
-    "image": "/images/Search/MD_SearchThumb_MDSetup.jpg",
+    "image": "/images/Search/MD_SearchThumb_MDSetup_VGA.jpg",
     "abstract": "Set up the Motion Detection Function"
 }
 POST /wiki2_en/article
 {
     "title": "Alarm Notification 1080p",
-    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "series": ["FHD", "Indoor", "Outdoor"],
     "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "1080p Camera Series. Setting up and activating the email alarm. Step 1 First, open the Email Settings. INSTAR offers you a forwarding Email Server, that allows your camera to send email notifications - TLS encrypted - to your personal email address. We recommend that you select INSTAR from the SMTP preset menu and apply those settings. Then switch to the recipient tab and type in your personal email address, subject and email text - DONE. You can, of course, also use your personal providers SMTP Server information instead. We collected a few here. Please verify them on your providers web site and check out our Troubleshooting Guide, if you run into problems. All those information will be filled automatically, if you choose the INSTAR SMTP Preset - otherwise: SMTP Server: Here you have to fill in the SMTP Server from your email provider. Mostly you can find this data on the website of your email provider by searching for SMTP. Otherwise you find a list HERE. SMTP Port: Fill in the Port which your email provider is using. Normally this will be either Port 25, 465 or 587. SSL: Here you can activate if your account is using SSL encryption. SMTP Login Type: For almost all email servers this has to be set to Authentication so that you can identify yourself with your username and password. SMTP Username: Please fill in the username of your email account. SMTP Password: Please fill in the password of your email account. Please enter your email accounts SMTP data and your personal login and save all settings by clicking Apply. Step 2 Now switch to the Recipient Tab and add your personal Email Address, an Email Subject and Bodytext and Apply. You can click on the Test button to verify your settings. Step 3 Now follow our Motion Detection Setup Guide to activate the Motion Detection and Alarm Notification.",
     "link": "/Motion_Detection/Alarm_Notification/",
     "title2": "Lassen Sie sich von Ihrer Kamera alarmieren",
     "chapter": "Motion Detection",
     "tags": ["motion detection", "alarm", "notification", "email", "detection areas", "FTP"],
-    "image": "/images/Search/MD_SearchThumb_AlarmNotification.jpg",
+    "image": "/images/Search/MD_SearchThumb_AlarmNotification_1080p.jpg",
     "abstract": "Set up the Alarm Notification"
 }
 POST /wiki2_en/article
 {
     "title": "Alarm Notification 720p",
-    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "series": ["HD", "Indoor", "Outdoor"],
     "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "720p Camera Series Setting up and activating the email alarm. Step 1 In order that the camera can sent you pictures by email you have to save your email providers data inside the camera. This can be done if you open the web interface of your IP camera and then click on Alarm in order to open the SMTP Server. On the upcoming overlay you now have to fill in the following data: SMTP Server: Here you have to fill in the SMTP Server from your email provider. Mostly you can find this data on the website of your email provider by searching for SMTP. Otherwise you find a list HERE. SMTP Port: Fill in the Port which your email provider is using. Normally this will be either Port 25, 465 or 587. SSL: Here you can activate if your account is using SSL encryption. SMTP Login Type: For almost all email servers this has to be set to Authentication so that you can identify yourself with your username and password. SMTP Username: Please fill in the username of your email account. SMTP Password: Please fill in the password of your email account. Please enter your email accounts SMTP data and your personal login and save all settings by clicking Submit. Step 2 Next please open the Alarm Email Overlay to set the receiver and the sender of the alarm emails. Please fill in all necessary data: Sender: Please fill in your email address. This can be the same email address as the receiver. Receiver: Please fill in the email address that should receive the alarm message. Email Subject: The subject will be shown in every email you receive. Email Text: Will be shown together with the alarm pictures in each email. To save all settings please press Submit. You will now be able to test the settings. Step 3 To receive emails in case of an alarm you will need to activate the motion detection in your camera and select what the camera should do in case of an alarm. All necessary settings are explained HERE. If you need help with any kind of settings please feel free to contact us any time.",
     "link": "/Motion_Detection/Alarm_Notification/720p_Series/",
     "title2": "Lassen Sie sich von Ihrer Kamera alarmieren",
     "chapter": "Motion Detection",
     "tags": ["motion detection", "alarm", "notification", "email", "detection areas", "FTP"],
-    "image": "/images/Search/MD_SearchThumb_AlarmNotification.jpg",
+    "image": "/images/Search/MD_SearchThumb_AlarmNotification_720p.jpg",
     "abstract": "Set up the Alarm Notification"
 }
 POST /wiki2_en/article
 {
     "title": "Alarm Notification VGA",
-    "series": ["HD", "VGA", "Indoor", "Outdoor"],
+    "series": ["VGA", "Indoor", "Outdoor"],
     "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "VGA Camera Series Setting up and activating the email alarm. Step 1 In order that the camera can sent you pictures by email you have to save your email providers data inside the camera. This can be done if you open the web interface of your IP camera and then click on Alarm in order to open the Email Menu. On the right side you now have to fill in the following data: Sender: Please fill in your email address. This can be the same email address as the receiver. Receiver 1: Please fill in the email address that should receive the alarm message. SMTP Server: Here you have to fill in the SMTP Server from your email provider. Mostly you can find this data on the website of your email provider by searching for SMTP. Otherwise you find a list HERE. SMTP Port: Fill in the Port which your email provider is using. Normally this will be either Port 25, 465 or 587. Transport Layer Security Protocol: You only need this if you are using Gmail as your email provider. Please choose either TLS or STARTTLS depending on which one you are using. Need Authentication: For almost all email servers this has to be activated so that you can identify yourself with your username and password. SMTP User: Please fill in the username of your email account. SMTP Password: Please fill in the password of your email account. Report Internet IP by Mail: This function can normally be deactivated. If you activate this service the camera will sent you always the newest internet IP address. Every 24 hours your ISP changes your IP address so the camera will always sent you the newest one. Since the camera has a integrated DDNS address this function is normally not needed. Now please save all settings by clicking Submit. After submitting the data to the camera we recommend you to click Test in order to see if the data you typed in was right. Step 2 After you have now saved all email settings in your camera you still have to activate the email alarm in order to receive an alarm email when a motion is detected. Therefor please click Alarm and choose Alarm in the sub menu. In the next window please set Motion Detect Armed and activate Send E-Mail on Alarm as show in the screenshot below. After that please choose Submit to save the settings. If your camera detects a motion you will now be informed with a email and 6 pictures in the attachment. Notes: Please note that the camera can not detect weather it is a human motion or a motion caused by heavy rain or fast light changes. Depending how many false alarms you will receive you might change the sensibility a little. (1= insensitive and 10= very sensitive) .",
     "link": "/Motion_Detection/Alarm_Notification/VGA_Series/",
     "title2": "Lassen Sie sich von Ihrer Kamera alarmieren",
     "chapter": "Motion Detection",
     "tags": ["motion detection", "alarm", "notification", "email", "detection areas", "FTP"],
-    "image": "/images/Search/MD_SearchThumb_AlarmNotification.jpg",
+    "image": "/images/Search/MD_SearchThumb_AlarmNotification_VGA.jpg",
     "abstract": "Set up the Alarm Notification"
 }
 POST /wiki2_en/article
@@ -86,7 +86,7 @@ POST /wiki2_en/article
     "title2": "Lassen Sie sich von Ihrer Kamera alarmieren",
     "chapter": "Motion Detection",
     "tags": ["motion detection", "alarm", "notification", "email", "detection areas", "FTP"],
-    "image": "/images/Search/MD_SearchThumb_AlarmNotification.jpg",
+    "image": "/images/Search/MD_SearchThumb_AlarmNotification_Troubleshooting.jpg",
     "abstract": "Set up the Alarm Notification"
 }
 POST /wiki2_en/article
@@ -105,7 +105,7 @@ POST /wiki2_en/article
 POST /wiki2_en/article
 {
     "title": "SD Card Access",
-    "series": ["VGA", "Indoor", "Outdoor"],
+    "series": ["HD", "Indoor", "Outdoor"],
     "models": ["IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "How to access the SD Card: The HD camera models allow you to record videos and snapshots to the internal SD card. To quickly access your recordings, click on the SD Card link inside your cameras web user interface. Or use a third-party Software to download the video. SD Card Access: The HD camera models use an internal (removable) SD card to record videos, alarm snapshots and whole photo series that can be used for later time lapse conversions. You can access the recorded files directly via the cameras web user interface or with an FTP client. The webUI is the quickest way to download files and screen them on your computer, tablet or smartphone from your default web browser. But FTP clients offer a few features that will be more convenient if you have to go through a large number of files from your SD card. Please be aware that the FTP client has to support the hyper text transfer protocol (HTTP) to access the SD card. Please be aware that you will only be able to download files - the FTP clients will not offer your WRITE rights on the SD storage! Below you can find a short selection of clients that will work with your INSTAR camera. For indoor models you can always remove the SD card and use it with a card reader on your computer or mobile device for easy access. Web User Interface. The HD camera models allow you to record videos and snapshots to the internal SD card. To quickly access your recordings, click on the SD Card link inside your cameras web user interface. Click on the SD Card link above your cameras live video. Web User Interface. The SD cards file directory will open in a new tab. Please type in your camera login to access your recorded files. If the link is not displayed the SD is no longer mounted by the cameras operating system - please remove the SD card and push it back into the SD card slot. You are able to screen and download your recordings after confirming your camera login. SD Card Index. Your camera generates a new directory for each new day and a new recordXXX directory for every 200 recordings of that day. Every alarm event creates an *.avi file that starts with the capital letter A - planned recordings with the letter P and so on - followed by a timecode for the alarm trigger. File System. The default behavior of most internet browsers is to download the video after you clicked on it. Browsers like the Mozilla Firefox off you support for the VLC plugin to display the video directly inside the browser window. Please make sure that you activate the Firefox plugin during the installation process of the VLC player and restart your browser after the installation. The VLC Web Plugin should now be listed inside the Addons window under Plugins. Video Player Plugin. Windows Software to Access your SD Card, Bitkinex, CuteFTP, DownThemAll! (Firefox Addon). macOS Software to Access your SD Card: Interachy, DeepVacuum, SiteSucker, DownThemAll! (Firefox Addon)",
     "link": "/Motion_Detection/SD_Card_Access/",
@@ -125,7 +125,7 @@ POST /wiki2_en/article
     "title2": "Der SD Karten Zugriff mit Bitkinex",
     "chapter": "Motion Detection",
     "tags": ["sd card", "motion detection", "alarm", "recording", "detection areas", "bitkinex"],
-    "image": "/images/Search/MD_SearchThumb_SDCardAccess.jpg",
+    "image": "/images/Search/MD_SearchThumb_SDCardAccess_Bitkinex.jpg",
     "abstract": "How to access the SD Card with Bitkinex"
 }
 POST /wiki2_en/article
@@ -138,7 +138,7 @@ POST /wiki2_en/article
     "title2": "Der SD Karten Zugriff mit Bitkinex",
     "chapter": "Motion Detection",
     "tags": ["sd card", "motion detection", "alarm", "recording", "detection areas", "CuteFTP"],
-    "image": "/images/Search/MD_SearchThumb_SDCardAccess.jpg",
+    "image": "/images/Search/MD_SearchThumb_SDCardAccess_CuteFTP.jpg",
     "abstract": "How to access the SD Card with CuteFTP"
 }
 POST /wiki2_en/article
@@ -151,7 +151,7 @@ POST /wiki2_en/article
     "title2": "Der SD Karten Zugriff mit DownThemAll!",
     "chapter": "Motion Detection",
     "tags": ["sd card", "motion detection", "alarm", "recording", "detection areas", "DownThemAll"],
-    "image": "/images/Search/MD_SearchThumb_SDCardAccess.jpg",
+    "image": "/images/Search/MD_SearchThumb_SDCardAccess_DTA.jpg",
     "abstract": "How to access the SD Card with DownThemAll!"
 }
 POST /wiki2_en/article
@@ -164,7 +164,7 @@ POST /wiki2_en/article
     "title2": "Der SD Karten Zugriff mit Interarchy",
     "chapter": "Motion Detection",
     "tags": ["sd card", "motion detection", "alarm", "recording", "detection areas", "Interarchy"],
-    "image": "/images/Search/MD_SearchThumb_SDCardAccess.jpg",
+    "image": "/images/Search/MD_SearchThumb_SDCardAccess_Interachy.jpg",
     "abstract": "How to access the SD Card with Interarchy"
 }
 POST /wiki2_en/article
@@ -177,7 +177,7 @@ POST /wiki2_en/article
     "title2": "Der SD Karten Zugriff mit DeepVacuum",
     "chapter": "Motion Detection",
     "tags": ["sd card", "motion detection", "alarm", "recording", "detection areas", "DeepVacuum"],
-    "image": "/images/Search/MD_SearchThumb_SDCardAccess.jpg",
+    "image": "/images/Search/MD_SearchThumb_SDCardAccess_DeepVacuum.jpg",
     "abstract": "How to access the SD Card with DeepVacuum"
 }
 POST /wiki2_en/article
@@ -190,7 +190,7 @@ POST /wiki2_en/article
     "title2": "Der SD Karten Zugriff mit SiteSucker",
     "chapter": "Motion Detection",
     "tags": ["sd card", "motion detection", "alarm", "recording", "detection areas", "SiteSucker"],
-    "image": "/images/Search/MD_SearchThumb_SDCardAccess.jpg",
+    "image": "/images/Search/MD_SearchThumb_SDCardAccess_SiteSucker.jpg",
     "abstract": "How to access the SD Card with SiteSucker"
 }
 POST /wiki2_en/article
@@ -203,7 +203,7 @@ POST /wiki2_en/article
     "title2": "Der SD Karten Zugriff mit SimpleWget",
     "chapter": "Motion Detection",
     "tags": ["sd card", "motion detection", "alarm", "recording", "detection areas", "SimpleWget"],
-    "image": "/images/Search/MD_SearchThumb_SDCardAccess.jpg",
+    "image": "/images/Search/MD_SearchThumb_SDCardAccess_SimpleWget.jpg",
     "abstract": "How to access the SD Card with SimpleWget"
 }
 POST /wiki2_en/article
@@ -211,12 +211,12 @@ POST /wiki2_en/article
     "title": "Alarm Upload 1080p",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
     "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
-    "description": "Alarm Upload FTP Settings 1080p Camera Series Set the FTP upload during alarm and photo series Your ip camera can upload pictures and videos either during an motion alarm or in an time interval. The configuration can be set in the web interface of your camera inside the FTP Settings menu. After setting your FTP configuration, continue with out Motion Detection Setup Guide to activate the FTP upload in case of an alarm event. FTP Server Please enter the address of your FTP server. In the example above we have used a AVM Fritzbox (Router) as a FTP server. This router has a USB Stick connected which provides the storage for the pictures. In our case we have to type in the IP address of the router. If you want to set up your own FTP server on your local computer you will find a step by step manual here. You can also use a web address as the FTP Server. This can either be a online host service or a DynDns address which connects to a FTP server at another location. FTP Port Please type in the FTP Servers port which is usually 21. FTP Folder	Fill in the folder you want to upload the pictures inside. By default the folder will be which means that the camera will save the uploads in the root folder of the server. In our above sample the pictures will be saved in the root folder. FTP Username Please fill in the username of your FTP account. The default username for the AVM Fritzbox is ftpuser. FTP Password Please fill in the password of your FTP account. FTP Mode Here you can choose between (PASV) and active Mode (PORT). The default setting is the mode PORT with which the camera will tell the server its IP and Port. Therefor this mode will also work with passive FTP servers. If the client is behind a router which will use NAT or if a firewall is blocking the clients network from accessing the network then you should choose the PASV mode. Next please apply all settings and test them afterwards to make sure the settings are correct.",
+    "description": "Alarm Upload FTP Settings 1080p Camera Series Set the FTP upload during alarm and photo series Your ip camera can upload pictures and videos either during an motion alarm or in an time interval. The configuration can be set in the web interface of your camera inside the FTP Settings menu. After setting your FTP configuration, continue with out Motion Detection Setup Guide to activate the FTP upload in case of an alarm event. FTP Server Please enter the address of your FTP server. In the example above we have used a AVM Fritzbox (Router) as a FTP server. This router has a USB Stick connected which provides the storage for the pictures. In our case we have to type in the IP address of the router. If you want to set up your own FTP server on your local computer you will find a step by step manual here. You can also use a web address as the FTP Server. This can either be a online host service or a DynDns address which connects to a FTP server at another location. FTP Port Please type in the FTP Servers port which is usually 21. FTP Folder Fill in the folder you want to upload the pictures inside. By default the folder will be which means that the camera will save the uploads in the root folder of the server. In our above sample the pictures will be saved in the root folder. FTP Username Please fill in the username of your FTP account. The default username for the AVM Fritzbox is ftpuser. FTP Password Please fill in the password of your FTP account. FTP Mode Here you can choose between (PASV) and active Mode (PORT). The default setting is the mode PORT with which the camera will tell the server its IP and Port. Therefor this mode will also work with passive FTP servers. If the client is behind a router which will use NAT or if a firewall is blocking the clients network from accessing the network then you should choose the PASV mode. Next please apply all settings and test them afterwards to make sure the settings are correct.",
     "link": "/Motion_Detection/Alarm_FTP_Upload",
     "title2": "Alarm Upload & FTP Einstellungen",
     "chapter": "Motion Detection",
     "tags": ["FTP", "motion detection", "alarm", "photoseries", "upload"],
-    "image": "/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload.jpg",
+    "image": "/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload_1080p.jpg",
     "abstract": "Upload Snapshots or Videos to an FTP Server"
 }
 POST /wiki2_en/article
@@ -229,7 +229,7 @@ POST /wiki2_en/article
     "title2": "Alarm Upload & FTP Einstellungen",
     "chapter": "Motion Detection",
     "tags": ["FTP", "motion detection", "alarm", "photoseries", "upload"],
-    "image": "/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload.jpg",
+    "image": "/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload_720p.jpg",
     "abstract": "Upload Snapshots or Videos to an FTP Server"
 }
 POST /wiki2_en/article
@@ -242,7 +242,7 @@ POST /wiki2_en/article
     "title2": "Alarm Upload & FTP Einstellungen",
     "chapter": "Motion Detection",
     "tags": ["FTP", "motion detection", "alarm", "photoseries", "upload"],
-    "image": "/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload.jpg",
+    "image": "/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload_VGA.jpg",
     "abstract": "Upload Snapshots or Videos to an FTP Server"
 }
 POST /wiki2_en/article
@@ -268,7 +268,7 @@ POST /wiki2_en/article
     "title2": "Nutzen Sie Ihre AVM Fritzbox als FTP Server",
     "chapter": "Motion Detection",
     "tags": ["NAS", "Router", "local server", "upload", "FTP", "AVM", "Fritzbox"],
-    "image": "/images/Search/MD_SearchThumb_RouterAsFTPServer.jpg",
+    "image": "/images/Search/MD_SearchThumb_RouterAsFTPServer_Fritzbox.jpg",
     "abstract": "AVM Fritzbox as FTP Server"
 }
 POST /wiki2_en/article
@@ -281,7 +281,7 @@ POST /wiki2_en/article
     "title2": "Nutzen Sie Ihren Telekom Speedport als FTP Server",
     "chapter": "Motion Detection",
     "tags": ["NAS", "Router", "local server", "upload", "FTP", "Telekom", "Speedport"],
-    "image": "/images/Search/MD_SearchThumb_RouterAsFTPServer.jpg",
+    "image": "/images/Search/MD_SearchThumb_RouterAsFTPServer_Speedport.jpg",
     "abstract": "Configure your Telekom Speedport as a FTP Server"
 }
 POST /wiki2_en/article
@@ -294,7 +294,7 @@ POST /wiki2_en/article
     "title2": "Nutzen Sie Ihre QNAP NAS als FTP Server",
     "chapter": "Motion Detection",
     "tags": ["NAS", "Router", "local server", "upload", "QNAP"],
-    "image": "/images/Search/MD_SearchThumb_RouterAsFTPServer.jpg",
+    "image": "/images/Search/MD_SearchThumb_RouterAsFTPServer_QNAP.jpg",
     "abstract": "Configure your QNAP as a FTP Server"
 }
 POST /wiki2_en/article
@@ -307,7 +307,7 @@ POST /wiki2_en/article
     "title2": "Nutzen Sie Ihre Synology NAS als FTP Server",
     "chapter": "Motion Detection",
     "tags": ["NAS", "Router", "local server", "upload", "Synology"],
-    "image": "/images/Search/MD_SearchThumb_RouterAsFTPServer.jpg",
+    "image": "/images/Search/MD_SearchThumb_RouterAsFTPServer_Synology.jpg",
     "abstract": "Configure your Synology as a FTP Server"
 }
 POST /wiki2_en/article
@@ -320,7 +320,7 @@ POST /wiki2_en/article
     "title2": "Nutzen Sie Ihre WD MyCloud als FTP Server",
     "chapter": "Motion Detection",
     "tags": ["NAS", "Router", "local server", "upload", "Western Digital", "MyCloud"],
-    "image": "/images/Search/MD_SearchThumb_RouterAsFTPServer.jpg",
+    "image": "/images/Search/MD_SearchThumb_RouterAsFTPServer_WD.jpg",
     "abstract": "Configure your WD MyCloud as a FTP Server"
 }
 POST /wiki2_en/article
@@ -372,7 +372,7 @@ POST /wiki2_en/article
     "title2": "Cloud Benutzer erstellen",
     "chapter": "Motion Detection",
     "tags": ["cloud storage", "motion detection", "FTP Upload", "Alarm Recording"],
-    "image": "/images/Search/MD_SearchThumb_Cloud.jpg",
+    "image": "/images/Search/MD_SearchThumb_Cloud_Create.jpg",
     "abstract": "INSTAR Cloud User Management"
 }
 POST /wiki2_en/article
@@ -380,11 +380,11 @@ POST /wiki2_en/article
     "title": "Add Storage",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
     "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
-    "description": "Cloud - Speicherplatz hinzubuchen Jeder neu angelegte Cloud Account erhält standardmäßig einen 1GB Speicher für 14 Tage um die Cloud ausgiebig testen zu können. Sofern Ihnen die INSTAR Cloud gefällt, würden wir uns natürlich freuen, wenn Sie Ihren Speicherplatz entsprechend erweitern. Dies können Sie ganz einfach durch Gutscheincodes tun, welche Sie direkt auf der INSTAR Webseite erwerben können. Siehe: INSTAR Webseite Mehr Speicherplatz buchen Schritt 1 Melden Sie sich mit Ihrem Cloud Account an und gehen Sie dort auf „Administration – Speicherplan“. Hier sehen Sie Ihren aktuellen Speicherplatz sowie die Laufzeit für welche dieser gültig ist. Schritt 2 Um jetzt Ihren Speicherplatz zu verlängern bzw. zu vergrößern, kaufen Sie zuerst entsprechenden Speicherplatz über die INSTAR Webseite. Der Speicherplatz ist immer in Einheiten von 10GB. Sollten Sie z.B. 20GB kaufen, dann können Sie im ersten Schritt 10GB Ihrem Account hinzufügen und im zweiten Schritt können Sie die zweiten 10GB entweder zur Verlängerung Ihrer Laufzeit verwenden oder um den Speicherplatz zu vergrößern auf 20GB. Dies können Sie frei wählen. Kopieren Sie den Gutscheincode für Ihre Speichereinheit den Sie von uns nach dem Kauf per Email erhalten und fügen Sie den Gutscheincode in Ihrem Cloud Account ein und wählen Sie dann „Gutschein prüfen“. Schritt 3 Sofern der Gutscheincode gültig ist, wird Ihr Account jetzt auf 10GB erweitert. Eine 10GB Einheit hat immer eine Laufzeit von 365 Tagen welches Sie in Ihrem Account dann auch entsprechend angezeigt bekommen. Schritt 4 Sollten Sie sich dazu entscheiden eine zweite 10GB Einheit Ihrem Account hinzuzufügen, dann können Sie wie zuvor erwähnt wählen, ob Sie den Speicherplatz erweitern oder die Laufzeit verlängern möchten. In unserem Beispiel erweitern wir einmal den Speicherplatz. Schritt 5 Unter dem Punkt „Warnen bei benutztem Speicherplatz von:“ können Sie einstellen ab welchem Zeitpunkt Sie eine Warnung erhalten möchten. Wenn Sie z.B. mehrere Kameras in der Cloud hinzugefügt haben und der Speicherplatz fast voll ist, dann können Sie einstellen ab welchem Zeitpunkt Sie eine Email erhalten möchten mit dem Hinweis das entweder Videos gelöscht werden müssen oder der Speicherplatz erweitert werden muss. Sie haben zudem die Möglichkeit unter „Administration – Alarme“ das automatische löschen zu aktivieren. Dies erklären wir Ihnen im Punkt 4. Administration und Übersicht der möglichen Einstellmöglichkeiten. Allgemeine Info Sie müssen in der INSTAR Cloud lediglich schauen, das Sie genügend Speicherplatz zur Verfügung haben. Wie viele Kameras Sie in Ihrem Cloud Account hinzufügen, ist und egal. So können Sie eine 10GB Einheit z.B. auch problemlos mit 4 Kameras verwenden. Dies ist natürlich davon abhängig wie viele Alarme stattfinden und wie lange Sie die Aufnahmen speichern möchten. Die Größe Ihrer Alarmvideos ist von einigen Faktoren abhängig. Um die Größe jedoch gering zu halten ohne größere Qualitätsverluste, empfehlen wir Ihnen in Ihrer Kamera direkt (über die Weboberfläche Ihrer Kamera) folgende Werte unter Multimedia – Video einzustellen: Kanal: 1 Bitrate: 1024 Frames: 25 Variable Bitrate: Qualität: 5 (keine Sorge, Sie werden den Unterschied an sich nicht sehen) Keyframe: 40", 
+    "description": "Cloud - Speicherplatz hinzubuchen Jeder neu angelegte Cloud Account erhält standardmäßig einen 1GB Speicher für 14 Tage um die Cloud ausgiebig testen zu können. Sofern Ihnen die INSTAR Cloud gefällt, würden wir uns natürlich freuen, wenn Sie Ihren Speicherplatz entsprechend erweitern. Dies können Sie ganz einfach durch Gutscheincodes tun, welche Sie direkt auf der INSTAR Webseite erwerben können. Siehe: INSTAR Webseite Mehr Speicherplatz buchen Schritt 1 Melden Sie sich mit Ihrem Cloud Account an und gehen Sie dort auf „Administration – Speicherplan“. Hier sehen Sie Ihren aktuellen Speicherplatz sowie die Laufzeit für welche dieser gültig ist. Schritt 2 Um jetzt Ihren Speicherplatz zu verlängern bzw. zu vergrößern, kaufen Sie zuerst entsprechenden Speicherplatz über die INSTAR Webseite. Der Speicherplatz ist immer in Einheiten von 10GB. Sollten Sie z.B. 20GB kaufen, dann können Sie im ersten Schritt 10GB Ihrem Account hinzufügen und im zweiten Schritt können Sie die zweiten 10GB entweder zur Verlängerung Ihrer Laufzeit verwenden oder um den Speicherplatz zu vergrößern auf 20GB. Dies können Sie frei wählen. Kopieren Sie den Gutscheincode für Ihre Speichereinheit den Sie von uns nach dem Kauf per Email erhalten und fügen Sie den Gutscheincode in Ihrem Cloud Account ein und wählen Sie dann „Gutschein prüfen“. Schritt 3 Sofern der Gutscheincode gültig ist, wird Ihr Account jetzt auf 10GB erweitert. Eine 10GB Einheit hat immer eine Laufzeit von 365 Tagen welches Sie in Ihrem Account dann auch entsprechend angezeigt bekommen. Schritt 4 Sollten Sie sich dazu entscheiden eine zweite 10GB Einheit Ihrem Account hinzuzufügen, dann können Sie wie zuvor erwähnt wählen, ob Sie den Speicherplatz erweitern oder die Laufzeit verlängern möchten. In unserem Beispiel erweitern wir einmal den Speicherplatz. Schritt 5 Unter dem Punkt „Warnen bei benutztem Speicherplatz von:“ können Sie einstellen ab welchem Zeitpunkt Sie eine Warnung erhalten möchten. Wenn Sie z.B. mehrere Kameras in der Cloud hinzugefügt haben und der Speicherplatz fast voll ist, dann können Sie einstellen ab welchem Zeitpunkt Sie eine Email erhalten möchten mit dem Hinweis das entweder Videos gelöscht werden müssen oder der Speicherplatz erweitert werden muss. Sie haben zudem die Möglichkeit unter „Administration – Alarme“ das automatische löschen zu aktivieren. Dies erklären wir Ihnen im Punkt 4. Administration und Übersicht der möglichen Einstellmöglichkeiten. Allgemeine Info Sie müssen in der INSTAR Cloud lediglich schauen, das Sie genügend Speicherplatz zur Verfügung haben. Wie viele Kameras Sie in Ihrem Cloud Account hinzufügen, ist und egal. So können Sie eine 10GB Einheit z.B. auch problemlos mit 4 Kameras verwenden. Dies ist natürlich davon abhängig wie viele Alarme stattfinden und wie lange Sie die Aufnahmen speichern möchten. Die Größe Ihrer Alarmvideos ist von einigen Faktoren abhängig. Um die Größe jedoch gering zu halten ohne größere Qualitätsverluste, empfehlen wir Ihnen in Ihrer Kamera direkt (über die Weboberfläche Ihrer Kamera) folgende Werte unter Multimedia – Video einzustellen: Kanal: 1 Bitrate: 1024 Frames: 25 Variable Bitrate: Qualität: 5 (keine Sorge, Sie werden den Unterschied an sich nicht sehen) Keyframe: 40",
     "link": "/Motion_Detection/INSTAR_Cloud/Storage",
     "title2": "Cloud Speicherplatz hinzubuchen",
     "chapter": "Motion Detection",
     "tags": ["cloud storage", "motion detection", "FTP Upload", "Alarm Recording"],
-    "image": "/images/Search/MD_SearchThumb_Cloud.jpg",
+    "image": "/images/Search/MD_SearchThumb_Cloud_Storage.jpg",
     "abstract": "INSTAR Cloud User Management"
 }
