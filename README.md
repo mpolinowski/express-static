@@ -318,7 +318,7 @@ We will use Node Packaged Modules (NPM), which is basically a package manager fo
  sudo npm install pm2@latest -g
 ```
 
-To update PM2 in memory
+To update PM2 to the latest version and update version in memory
 ```
  sudo npm install pm2@latest -g
 
@@ -339,23 +339,32 @@ This also adds your application to PM2's process list, which is outputted every 
 | ------------- |:-------------:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| -----:|
 | app      | 0 | fork | 9495 | online | 0 | 0s | 36.4 MB | disabled |
 
-Type the following to save your app list:
-```
- pm2 save
-```
-
 Applications that are running under PM2 will be restarted automatically if the application crashes or is killed, but an additional step needs to be taken to get the application to launch on system startup (boot or reboot). Luckily, PM2 provides an easy way to do this, the startup subcommand.
 
-Once you started all apps, type the following to make sure that they restart after a server restart:
+Once you started all apps, type the following to make sure that they restart after a server restart. You must also specify the init system you are running on, which is centos, in our case:
 ```
  pm2 startup [ubuntu | ubuntu14 | ubuntu12 | centos | centos6 | arch | oracle | amazon | macos | darwin | freesd | systemd | systemv | upstart | launchd | rcd]
 ```
 
-The startup subcommand generates and configures a startup script to launch PM2 and its managed processes on server boots. You must also specify the init system you are running on, which is centos, in our case:
+The startup subcommand generates and configures a startup script to launch PM2 and its managed processes on server boots. We won´t specify our OS and let pm2 decide what to do:
 ```
- sudo pm2 startup centos
+ sudo pm2 startup
 ```
 
+Bring back previously saved processes (via pm2 save):
+```
+ pm2 save
+```
+
+Disabling startup system
+```
+pm2 resurrect
+```
+
+Disabling startup system
+```
+pm2 unstartup
+```
 
 * **Step Three** — Other PM2 Commands (Optional)
 
