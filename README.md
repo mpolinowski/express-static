@@ -339,6 +339,12 @@ This also adds your application to PM2's process list, which is outputted every 
 | ------------- |:-------------:| :-----:| :-----:| :-----:| :-----:| :-----:| :-----:| -----:|
 | app      | 0 | fork | 9495 | online | 0 | 0s | 36.4 MB | disabled |
 
+Repeat for all your node apps and save:
+
+```
+ pm2 save
+```
+
 Applications that are running under PM2 will be restarted automatically if the application crashes or is killed, but an additional step needs to be taken to get the application to launch on system startup (boot or reboot). Luckily, PM2 provides an easy way to do this, the startup subcommand.
 
 Once you started all apps, type the following to make sure that they restart after a server restart. You must also specify the init system you are running on, which is centos, in our case:
