@@ -35,7 +35,7 @@ POST /wiki2_en/article
     "chapter": "Advanced User",
     "tags": ["Website", "Web", "Webcam", "Weather", "Online"],
     "image": "/images/Search/AU_SearchThumb_WebsiteIntegration_Cambozola.jpg",
-    "abstract": "Integration into a Website (Cambozola)"
+    "abstract": "JAVA Plugin to add your VGA Camera to your Website"
 }
 POST /wiki2_en/article
 {
@@ -48,16 +48,16 @@ POST /wiki2_en/article
     "chapter": "Advanced User",
     "tags": ["Website", "Web", "Webcam", "Weather", "Online"],
     "image": "/images/Search/AU_SearchThumb_WebsiteIntegration_OIPCM.jpg",
-    "abstract": "Integration into a Website (PHP)"
+    "abstract": "PHP Plugin to add your VGA Camera to your Website"
 }
 POST /wiki2_en/article
 {
-    "title": "Restore your Cameras WebUI",
+    "title": "Restore WebUI",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
     "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "Restore your Camera after a faulty WebUI Upgrade - You updated your camera´s web user interface - but now you are unable to log into your camera with your web browser. You still see the camera inside your network and might even be able to access the video stream with our smartphone app. But your web browser simply refuses to open the interface. In this case the webUI was damaged during the installation process and all that needs to be done is updating it a second time. The easiest way to do this, is using the INSTAR Camera Tool, go to the Update tab and load the webUI file onto the camera. But what if this update also fails? Simple Update Tool HD You tried to update your HD camera´s software but everything you tried fails and you are no longer able to access the web user interface from your web browser? Use the Simple Updater as a mean of last resort, before grabbing your soldering iron. You can download the updater from HERE The update tool consists of some simple HTML files and some javascript and CSS. Unpack those files and open the update.html with your default browser. Download the desired update.pkg file for your camera from HERE. Now upload the file through the update.html to your camera. The update will take about 300 seconds. Simple Update Tool VGA You tried to update your VGA camera´s software but everything you tried fails and you are no longer able to access the web user interface from your web browser? Use the Simple Updater as a mean of last resort, before grabbing your soldering iron. You can download the updater from HERE The update tool consists of some simple HTML files and some CSS. Unpack those files and open the SimpleUpdateManager.html with your default browser. Download the desired update file for your camera from HERE. Now upload the file through the SimpleUpdateManager.html to your camera. The update will take about 150 seconds.",
     "link": "/Advanced_User/Restore_WebUI",
-    "title2": "Wiederherstellen der Weboberflaeche",
+    "title2": "Wiederherstellen der Weboberfläche",
     "chapter": "Advanced User",
     "tags": ["WebUI", "userinterface", "restore", "fault", "update"],
     "image": "/images/Search/AU_SearchThumb_ResetAfterWebUIError.jpg",
@@ -65,7 +65,7 @@ POST /wiki2_en/article
 }
 POST /wiki2_en/article
 {
-    "title": "Restore your Cameras Firmware",
+    "title": "Restore Firmware",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
     "models": ["IN-2905", "IN-2908", "IN-3011", "IN-4010", "IN-4011", "IN-5905 HD", "IN-5907 HD", "IN-6001 HD", "IN-6012 HD", "IN-6014 HD", "IN-7011 HD"],
     "description": "Restore your Camera after a faulty Firmware Upgrade ONLY FOR VGA CAMERAS What you need USB to serial UART Interface (3.3 logic needed) available online. 4x connection cable with female pins on both sided and 4 pin plugs. Software HyperTerminal (Windows XP) or Software TerraTerm (Vista 7 8): Hyperterminal Windows XP: Start → Programs → Accessories → Communication → HyperTerminal Tera Term Windows Vista 7 8: follow the link and download install the program - Click here to Download Download the newest firmware and web user interface from our download area. Click here to Download your FirmwareWebUI Download the linux-romfs.zip container and unpack it. File:Linux-romfs.zip How to prepare your Hardware Connect your USB to UART interface with the cable. Connect the plug to the GND, Rxd, Txd and 3.3u pins - you may want to solder them in place to make sure that the stay in place. Now connect the other side with the camera mainboard and solder them in place. Make the connection according to: Pin 1 Ground Ground Pin 2 Rxd Txd Pin 3 Txd Rxd Pin 4 3.3u 3.3u Make sure that the connection is solid and that you don´t have a loose contact somewhere. The UART Status LED should light up after plugging in the USB connector (depends on the model you are using). For Windows XP-User - HyperTerminal First you have to define a new connection after starting up the HyperTerminal. Type in any name and click on OK. Select the COM port of your UART interface and confirm with OK. You can check the COM port under Control Panel → Device Manager → Ports COM & LTP. Adjust the settings according to the following screenshot and click OK to confirm. Save your settings under File → Save As Now open the connection by double-clicking the shortcut on your desktop that was created in the previous step. The program should automatically launch the mainboards bootloader - then press ESC. You should now see the following screen. Now type in the following two commands: del 6 Enter THEN del 7 Enter (Don´t forget the SPACE!!!) Now type in the following: fx 6 romfs.img 0x7f0e0000 0x7f0e0000 -a Enter Waiting for download... will be displayed. Select the romfs.img file you downloaded earlier in Transfer → Send file → choose the romfs image file by browsing to the location you extracted it to earlier. Then set the protocol to Xmodem and click on Send. After the upload is completet repeat these steps for the Linux.zip file. Type in: fx 7 linux.zip 0x7f020000 0x8000 -acxz Enter Choose the file linux.zip from the earlier download and select the protocol Xmodem. Now type in boot and confirm with Enter. You can now reassemble your camera and check if you can connect it to your local cable network. For Windows Vista 7 8 User - TeraTerm After starting TeraTerm you first have to set up a new connection. Choose a serial connection (Seriell) and select the port the UART interface is connected to. Confirm these settings with OK. You can check the COM port under Control Panel → Device Manager → Ports COM & LTP. Now go to Einstellungen (Settings) and choose Serieller Port (Serial Port). Adjust the settings according to the following screenshot and click OK to confirm. The program should automatically launch the mainboards bootloader - then press ESC. You should now see the following screen. * Now type in the following two commands: del 6 Enter THEN del 7 Enter (Don´t forget the SPACE!!!) Now type: fx 6 romfs.img 0x7f0e0000 0x7f0e0000 -a Enter. The program now waits for the file to transfer. Now go to Datei → Transfer → XMODEM → Senden and browse for the romfs.img you downloaded in the beginning. Click on Open to start the file transfer. Now we have to repeat those steps for the Linux.zip file. Type: fx 7 linux.zip 0x7f020000 0x8000 -acxz Enter. and choose the file linux.zip. Afterwards, type boot and confirm with Enter. You can now reassemble your camera and check if you can connect it to your local cable network.",
@@ -126,7 +126,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Video Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Video Attribute"
+    "abstract": "720p CGIs - Get Video Attribute"
 }
 POST /wiki2_en/article
 {
@@ -139,7 +139,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Video Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Video Attribute"
+    "abstract": "720p CGIs - Set Video Attribute"
 }
 POST /wiki2_en/article
 {
@@ -152,7 +152,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Video Encoder Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Video Encoder Attribute"
+    "abstract": "720p CGIs - Get Video Encoder Attribute"
 }
 POST /wiki2_en/article
 {
@@ -165,7 +165,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Video Encoder Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Video Encoder Attribute"
+    "abstract": "720p CGIs - Set Video Encoder Attribute"
 }
 POST /wiki2_en/article
 {
@@ -178,7 +178,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Image Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Image Attribute"
+    "abstract": "720p CGIs - Get Image Attribute"
 }
 POST /wiki2_en/article
 {
@@ -191,7 +191,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Image Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Image Attribute"
+    "abstract": "720p CGIs - Set Image Attribute"
 }
 POST /wiki2_en/article
 {
@@ -204,7 +204,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Overlay Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Overlay Attribute"
+    "abstract": "720p CGIs - Get Overlay Attribute"
 }
 POST /wiki2_en/article
 {
@@ -217,7 +217,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Overlay Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Overlay Attribute"
+    "abstract": "720p CGIs - Set Overlay Attribute"
 }
 POST /wiki2_en/article
 {
@@ -230,7 +230,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Mobile Image Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Mobile Image Attribute"
+    "abstract": "720p CGIs - Get Mobile Image Attribute"
 }
 POST /wiki2_en/article
 {
@@ -243,7 +243,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Mobile Image Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Mobile Image Attribute"
+    "abstract": "720p CGIs - Set Mobile Image Attribute"
 }
 POST /wiki2_en/article
 {
@@ -256,7 +256,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Audio Encoder Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Audio Encoder Attribute"
+    "abstract": "720p CGIs - Get Audio Encoder Attribute"
 }
 POST /wiki2_en/article
 {
@@ -269,7 +269,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Audio Encoder Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Audio Encoder Attribute"
+    "abstract": "720p CGIs - Set Audio Encoder Attribute"
 }
 POST /wiki2_en/article
 {
@@ -282,7 +282,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Audio-In Volume Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Audio-In Volume Attribute"
+    "abstract": "720p CGIs - Get Audio-In Volume Attribute"
 }
 POST /wiki2_en/article
 {
@@ -295,7 +295,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Audio-In Volume Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Audio-In Volume Attribute"
+    "abstract": "720p CGIs - Set Audio-In Volume Attribute"
 }
 POST /wiki2_en/article
 {
@@ -308,7 +308,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Audio-Out Volume Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Audio-Out Volume Attribute"
+    "abstract": "720p CGIs - Get Audio-Out Volume Attribute"
 }
 POST /wiki2_en/article
 {
@@ -321,7 +321,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Audio-Out Volume Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Audio-Out Volume Attribute"
+    "abstract": "720p CGIs - Set Audio-Out Volume Attribute"
 }
 POST /wiki2_en/article
 {
@@ -334,7 +334,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Request Keyframe", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Request Keyframe"
+    "abstract": "720p CGIs - Request Keyframe"
 }
 POST /wiki2_en/article
 {
@@ -347,7 +347,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Audio Encoder Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Audio Encoder Attribute"
+    "abstract": "720p CGIs - Get Audio Encoder Attribute"
 }
 POST /wiki2_en/article
 {
@@ -360,7 +360,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Infrared Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Infrared Attribute"
+    "abstract": "720p CGIs - Set Infrared Attribute"
 }
 POST /wiki2_en/article
 {
@@ -373,7 +373,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Network Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Network Attribute"
+    "abstract": "720p CGIs - Get Network Attribute"
 }
 POST /wiki2_en/article
 {
@@ -386,7 +386,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Network Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Network Attribute"
+    "abstract": "720p CGIs - Set Network Attribute"
 }
 POST /wiki2_en/article
 {
@@ -399,7 +399,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get HTTP Port", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get HTTP Port"
+    "abstract": "720p CGIs - Get HTTP Port"
 }
 POST /wiki2_en/article
 {
@@ -412,7 +412,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set HTTP Port", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set HTTP Port"
+    "abstract": "720p CGIs - Set HTTP Port"
 }
 POST /wiki2_en/article
 {
@@ -425,7 +425,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get RTSP Port", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get RTSP Port"
+    "abstract": "720p CGIs - Get RTSP Port"
 }
 POST /wiki2_en/article
 {
@@ -438,7 +438,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set RTSP Port", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set RTSP Port"
+    "abstract": "720p CGIs - Set RTSP Port"
 }
 POST /wiki2_en/article
 {
@@ -451,7 +451,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Internet IP", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Internet IP"
+    "abstract": "720p CGIs - Get Internet IP"
 }
 POST /wiki2_en/article
 {
@@ -464,7 +464,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get UPnP Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get UPnP Attribute"
+    "abstract": "720p CGIs - Get UPnP Attribute"
 }
 POST /wiki2_en/article
 {
@@ -477,7 +477,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set UPnP Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set UPnP Attribute"
+    "abstract": "720p CGIs - Set UPnP Attribute"
 }
 POST /wiki2_en/article
 {
@@ -490,7 +490,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get ONVIF Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get ONVIF Attribute"
+    "abstract": "720p CGIs - Get ONVIF Attribute"
 }
 POST /wiki2_en/article
 {
@@ -503,7 +503,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set ONVIF Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set ONVIF Attribute"
+    "abstract": "720p CGIs - Set ONVIF Attribute"
 }
 POST /wiki2_en/article
 {
@@ -516,7 +516,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Wireless Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Wireless Attribute"
+    "abstract": "720p CGIs - Get Wireless Attribute"
 }
 POST /wiki2_en/article
 {
@@ -529,7 +529,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Wireless Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Wireless Attribute"
+    "abstract": "720p CGIs - Set Wireless Attribute"
 }
 POST /wiki2_en/article
 {
@@ -542,7 +542,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Search Wireless", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Search Wireless"
+    "abstract": "720p CGIs - Search Wireless"
 }
 POST /wiki2_en/article
 {
@@ -555,7 +555,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Check Wireless Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Check Wireless Attribute"
+    "abstract": "720p CGIs - Check Wireless Attribute"
 }
 POST /wiki2_en/article
 {
@@ -568,7 +568,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Check Wireless Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Check Wireless Attribute"
+    "abstract": "720p CGIs - Get Check Wireless Attribute"
 }
 POST /wiki2_en/article
 {
@@ -581,7 +581,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Thirdparty DDNS Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Thirdparty DDNS Attribute"
+    "abstract": "720p CGIs - Get Thirdparty DDNS Attribute"
 }
 POST /wiki2_en/article
 {
@@ -594,7 +594,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Thirdparty DDNS Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Thirdparty DDNS Attribute"
+    "abstract": "720p CGIs - Set Thirdparty DDNS Attribute"
 }
 POST /wiki2_en/article
 {
@@ -607,7 +607,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["PTZ Control", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: PTZ Control"
+    "abstract": "720p CGIs - PTZ Control"
 }
 POST /wiki2_en/article
 {
@@ -620,7 +620,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["PTZ Preset", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: PTZ Preset"
+    "abstract": "720p CGIs - PTZ Preset"
 }
 POST /wiki2_en/article
 {
@@ -633,7 +633,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["PTZ Move Up", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: PTZ Move Up"
+    "abstract": "720p CGIs - PTZ Move Up"
 }
 POST /wiki2_en/article
 {
@@ -646,7 +646,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["PTZ Move Down", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: PTZ Move Down"
+    "abstract": "720p CGIs - PTZ Move Down"
 }
 POST /wiki2_en/article
 {
@@ -659,7 +659,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["PTZ Move Left", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: PTZ Move Left"
+    "abstract": "720p CGIs - PTZ Move Left"
 }
 POST /wiki2_en/article
 {
@@ -672,7 +672,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["PTZ Move Right", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: PTZ Move Right"
+    "abstract": "720p CGIs - PTZ Move Right"
 }
 POST /wiki2_en/article
 {
@@ -685,7 +685,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["PTZ Zoom In", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: PTZ Zoom In"
+    "abstract": "720p CGIs - PTZ Zoom In"
 }
 POST /wiki2_en/article
 {
@@ -698,7 +698,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["PTZ Zoom Out", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: PTZ Zoom Out"
+    "abstract": "720p CGIs - PTZ Zoom Out"
 }
 POST /wiki2_en/article
 {
@@ -711,7 +711,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Motion Detection Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Motion Detection Attribute"
+    "abstract": "720p CGIs - Get Motion Detection Attribute"
 }
 POST /wiki2_en/article
 {
@@ -724,7 +724,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Motion Detection Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Motion Detection Attribute"
+    "abstract": "720p CGIs - Set Motion Detection Attribute"
 }
 POST /wiki2_en/article
 {
@@ -737,7 +737,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Alarm Input Output Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Alarm Input Output Attribute"
+    "abstract": "720p CGIs - Get Alarm Input Output Attribute"
 }
 POST /wiki2_en/article
 {
@@ -750,7 +750,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Alarm Input Output Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Alarm Input Output Attribute"
+    "abstract": "720p CGIs - Set Alarm Input Output Attribute"
 }
 POST /wiki2_en/article
 {
@@ -763,7 +763,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Motion Detection Alarm Status", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Motion Detection Alarm Status"
+    "abstract": "720p CGIs - Get Motion Detection Alarm Status"
 }
 POST /wiki2_en/article
 {
@@ -776,7 +776,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Alarm Relay Delay Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Alarm Relay Delay Attribute"
+    "abstract": "720p CGIs - Get Alarm Relay Delay Attribute"
 }
 POST /wiki2_en/article
 {
@@ -789,7 +789,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Alarm Relay Delay Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Alarm Relay Delay Attribute"
+    "abstract": "720p CGIs - Set Alarm Relay Delay Attribute"
 }
 POST /wiki2_en/article
 {
@@ -802,7 +802,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Alarm Snap Quantity Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Alarm Snap Quantity Attribute"
+    "abstract": "720p CGIs - Get Alarm Snap Quantity Attribute"
 }
 POST /wiki2_en/article
 {
@@ -815,7 +815,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Alarm Snap Quantity Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Alarm Snap Quantity Attribute"
+    "abstract": "720p CGIs - Set Alarm Snap Quantity Attribute"
 }
 POST /wiki2_en/article
 {
@@ -828,7 +828,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Alarm And Planned Recording Schedule", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Alarm/Planned Rec Schedule"
+    "abstract": "720p CGIs - Get Alarm/Planned Rec Schedule"
 }
 POST /wiki2_en/article
 {
@@ -841,7 +841,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Alarm And Planned Recording Schedule", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Alarm And Planned Recording Schedule"
+    "abstract": "720p CGIs - Set Alarm And Planned Recording Schedule"
 }
 POST /wiki2_en/article
 {
@@ -854,7 +854,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Planned Recording Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Planned Recording Attribute"
+    "abstract": "720p CGIs - Get Planned Recording Attribute"
 }
 POST /wiki2_en/article
 {
@@ -867,7 +867,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Planned Recording Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Planned Recording Attribute"
+    "abstract": "720p CGIs - Set Planned Recording Attribute"
 }
 POST /wiki2_en/article
 {
@@ -880,7 +880,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Alarm Server Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Alarm Server Attribute"
+    "abstract": "720p CGIs - Get Alarm Server Attribute"
 }
 POST /wiki2_en/article
 {
@@ -893,7 +893,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Alarm Server Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Alarm Server Attribute"
+    "abstract": "720p CGIs - Set Alarm Server Attribute"
 }
 POST /wiki2_en/article
 {
@@ -906,7 +906,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get User Attributes", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get User Attributes"
+    "abstract": "720p CGIs - Get User Attributes"
 }
 POST /wiki2_en/article
 {
@@ -919,7 +919,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set User Attributes", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set User Attributes"
+    "abstract": "720p CGIs - Set User Attributes"
 }
 POST /wiki2_en/article
 {
@@ -932,7 +932,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Active User Info", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Active User Info"
+    "abstract": "720p CGIs - Get Active User Info"
 }
 POST /wiki2_en/article
 {
@@ -945,7 +945,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Snapshot Attributes", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Snapshot Attributes"
+    "abstract": "720p CGIs - Get Snapshot Attributes"
 }
 POST /wiki2_en/article
 {
@@ -958,7 +958,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Snapshot Attributes", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Snapshot Attributes"
+    "abstract": "720p CGIs - Set Snapshot Attributes"
 }
 POST /wiki2_en/article
 {
@@ -971,7 +971,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get FTP Attributes", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get FTP Attributes"
+    "abstract": "720p CGIs - Get FTP Attributes"
 }
 POST /wiki2_en/article
 {
@@ -984,7 +984,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set FTP Attributes", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set FTP Attributes"
+    "abstract": "720p CGIs - Set FTP Attributes"
 }
 POST /wiki2_en/article
 {
@@ -997,7 +997,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Test FTP", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Test FTP"
+    "abstract": "720p CGIs - Test FTP"
 }
 POST /wiki2_en/article
 {
@@ -1010,7 +1010,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get SMTP Attributes", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get SMTP Attributes"
+    "abstract": "720p CGIs - Get SMTP Attributes"
 }
 POST /wiki2_en/article
 {
@@ -1023,7 +1023,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set SMTP Attributes", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set SMTP Attributes"
+    "abstract": "720p CGIs - Set SMTP Attributes"
 }
 POST /wiki2_en/article
 {
@@ -1036,7 +1036,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Test SMTP", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Test SMTP"
+    "abstract": "720p CGIs - Test SMTP"
 }
 POST /wiki2_en/article
 {
@@ -1049,7 +1049,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Format SD Card", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Format SD Card"
+    "abstract": "720p CGIs - Format SD Card"
 }
 POST /wiki2_en/article
 {
@@ -1062,7 +1062,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Unmount SD Card", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Unmount SD Card"
+    "abstract": "720p CGIs - Unmount SD Card"
 }
 POST /wiki2_en/article
 {
@@ -1075,7 +1075,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Device Info", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Device Info"
+    "abstract": "720p CGIs - Get Device Info"
 }
 POST /wiki2_en/article
 {
@@ -1088,7 +1088,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Device Type", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Device Type"
+    "abstract": "720p CGIs - Get Device Type"
 }
 POST /wiki2_en/article
 {
@@ -1101,7 +1101,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Streaming User Number", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Streaming User Number"
+    "abstract": "720p CGIs - Get Streaming User Number"
 }
 POST /wiki2_en/article
 {
@@ -1114,7 +1114,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Server Time", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Server Time"
+    "abstract": "720p CGIs - Get Server Time"
 }
 POST /wiki2_en/article
 {
@@ -1127,7 +1127,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Server Time", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Server Time"
+    "abstract": "720p CGIs - Set Server Time"
 }
 POST /wiki2_en/article
 {
@@ -1152,7 +1152,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set NTP Server Attribute", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set NTP Server Attribute"
+    "abstract": "720p CGIs - Set NTP Server Attribute"
 }
 POST /wiki2_en/article
 {
@@ -1165,7 +1165,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Multi-Device Parameter", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Multi-Device Parameter"
+    "abstract": "720p CGIs - Get Multi-Device Parameter"
 }
 POST /wiki2_en/article
 {
@@ -1178,7 +1178,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Multi-Device Parameter", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Multi-Device Parameter"
+    "abstract": "720p CGIs - Set Multi-Device Parameter"
 }
 POST /wiki2_en/article
 {
@@ -1191,7 +1191,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["MJPEG Videostream", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: MJPEG Videostream"
+    "abstract": "720p CGIs - MJPEG Videostream"
 }
 POST /wiki2_en/article
 {
@@ -1204,7 +1204,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Snapshot Size", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Snapshot Size"
+    "abstract": "720p CGIs - Set Snapshot Size"
 }
 POST /wiki2_en/article
 {
@@ -1217,7 +1217,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["System Reset", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: System Reset"
+    "abstract": "720p CGIs - System Reset"
 }
 POST /wiki2_en/article
 {
@@ -1230,7 +1230,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["System Reboot", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: System Reboot"
+    "abstract": "720p CGIs - System Reboot"
 }
 POST /wiki2_en/article
 {
@@ -1243,7 +1243,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["System Backup", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: System Backup"
+    "abstract": "720p CGIs - System Backup"
 }
 POST /wiki2_en/article
 {
@@ -1256,7 +1256,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["System Restore", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: System Restore"
+    "abstract": "720p CGIs - System Restore"
 }
 POST /wiki2_en/article
 {
@@ -1269,7 +1269,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["System Upgrade", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: System Upgrade"
+    "abstract": "720p CGIs - System Upgrade"
 }
 POST /wiki2_en/article
 {
@@ -1282,7 +1282,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Admin Variables", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Admin Variables"
+    "abstract": "720p CGIs - Get Admin Variables"
 }
 POST /wiki2_en/article
 {
@@ -1295,7 +1295,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Set Admin Variables", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Set Admin Variables"
+    "abstract": "720p CGIs - Set Admin Variables"
 }
 POST /wiki2_en/article
 {
@@ -1308,7 +1308,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Get Login Data", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Get Login Data"
+    "abstract": "720p CGIs - Get Login Data"
 }
 POST /wiki2_en/article
 {
@@ -1321,7 +1321,7 @@ POST /wiki2_en/article
     "chapter": "720p Series CGI List",
     "tags": ["Clear Login Data", "CGI", "720p series", "commands", "programming", "interface"],
     "image": "/images/Search/AU_SearchThumb_CGICommands_720p.jpg",
-    "abstract": "720p CGIs :: Clear Login Data"
+    "abstract": "720p CGIs - Clear Login Data"
 }
 POST /wiki2_en/article
 {
