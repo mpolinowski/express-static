@@ -38,7 +38,7 @@
     }
   }
 }
-    
+
 
 Out the box, elasticsearch uses the default standard analyzer. We extend the default analyzer to offer word delimiter, html strip and char mapping.
 
@@ -50,11 +50,11 @@ Often you will want a field to be both searchable and appear as filters. A field
   "article" : {
     "properties" : {
       "chapters" : {
-        "type" : "string",
-        "fields" : {          
+        "type" : "text",
+        "fields" : {
           "raw" : {
-            "type" : "string",
-            "index" : "not_analyzed"
+            "type" : "text",
+            "index" : "false"
           }
         }
       }
@@ -62,7 +62,7 @@ Often you will want a field to be both searchable and appear as filters. A field
   }
 }
 
-This mapping will mean the chapters field is indexed in 2 ways. The chapters path will be analyzed by elastic search meaning it will be tokenized and have the standard stop words removed which is ideal for a free text search. The chapters.raw path will be left untouched by Elasticsearch, Searchkit would use not_analyzed paths to power aggregated search components.
+This mapping will mean the chapters field is indexed in 2 ways. The chapters path will be analyzed by elastic search meaning it will be tokenized and have the standard stop words removed which is ideal for a free text search. The chapters.raw path will be left untouched by Elasticsearch, Searchkit would use false paths to power aggregated search components.
 
 Component examples:
 
@@ -119,53 +119,54 @@ PUT /wiki2_en
     "article": {
       "properties": {
         "title": {
-          "type": "string"
+          "type": "text"
         },
         "series": {
-          "type": "string",
-          "index" : "not_analyzed"
+          "type": "text",
+          "index" : "false"
         },
         "models": {
-          "type": "string",
-          "index" : "not_analyzed"
+          "type": "text",
+          "index" : "false"
         },
         "description": {
-          "type": "string",
-          "analyzer": "english"
+          "type": "text",
+          "analyzer": "english",
+          "index": "true"
         },
         "link": {
-          "type": "string",
-          "index" : "not_analyzed"
+          "type": "text",
+          "index" : "false"
         },
         "title2": {
-          "type": "string"
+          "type": "text"
         },
         "chapters" : {
-        "type" : "string",
-        "fields" : {          
+        "type" : "text",
+        "fields" : {
           "raw" : {
-            "type" : "string",
-            "index" : "not_analyzed"
+            "type" : "text",
+            "index" : "false"
             }
           }
         },
         "tags": {
-          "type": "string",
-          "analyzer": "keyword",
-          "fields" : {          
+          "type": "tags",
+          "fields" : {
           "raw" : {
-            "type" : "string",
-            "index" : "not_analyzed"
+            "type" : "text",
+            "index" : "false"
             }
           }
         },
         "image": {
-          "type": "string",
-          "index" : "not_analyzed"
+          "type": "text",
+          "index" : "false"
         },
         "abstract": {
-          "type": "string",
-          "analyzer": "english"
+          "type": "text",
+          "analyzer": "english",
+          "index": "true"
         }
       }
     }
