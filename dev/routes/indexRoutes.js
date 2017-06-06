@@ -6,7 +6,7 @@ indexRouter.route('/')
     .get(function(req, res) {
         res.render('Index', {
             title: 'INSTAR Wiki',
-            ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+            ampimg: '/images/Search/QI_SearchThumb_SetupWizard.jpg',
             headline: 'INSTAR IP Camera and Network Technology Knowledgebase',
             canonical: '/',
           });

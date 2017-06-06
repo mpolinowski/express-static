@@ -706,7 +706,7 @@ softwareRouter.route('/Windows/Zebra_Surveillance')
 /* *************************  GET InstarVision for macOS /macOS *********************************** */
 softwareRouter.route('/macOS')
 .get(function(req, res) {
-  res.render('./Software/MacOS', {
+  res.render('./Software/macOS', {
       title: 'Software for macOS',
       ampimg: '/images/Search/P_SearchThumb_Products.jpg',
       headline: 'INSTAR Products',
