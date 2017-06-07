@@ -1,12 +1,11 @@
 var express = require('express');
 var motionDetectionRouter = express.Router();
-var appdata = require('../views/_partials/data/motionDetection.json');
 
 /* GET Internet_Access page. */
 motionDetectionRouter.get('/', function(req, res) {
     res.render('./Motion_Detection/Motion_Detection', {
         title: 'Motion Detection',
-        ampimg: '/images/Search/MD_SearchThumb_MDSetup.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_MotionDetection.jpg',
         headline: 'Motion Detection',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li>',
         canonical: '/Motion_Detection/',
@@ -33,7 +32,7 @@ motionDetectionRouter.get('/', function(req, res) {
 motionDetectionRouter.get('/Setup/', function(req, res) {
     res.render('./Motion_Detection/Motion_Detection_Setup', {
         title: 'Motion Detection Setup',
-        ampimg: '/images/Search/MD_SearchThumb_MDSetup.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_MDSetup_1080p.jpg',
         headline: 'Motion Detection Setup',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Setup/">Setup</a></li>',
         canonical: '/Motion_Detection/Setup/',
@@ -60,7 +59,7 @@ motionDetectionRouter.get('/Setup/', function(req, res) {
 motionDetectionRouter.get('/Setup/720p_Series/', function(req, res) {
     res.render('./Motion_Detection/Motion_Detection_Setup_720p', {
         title: 'Motion Detection Setup',
-        ampimg: '/images/Search/MD_SearchThumb_MDSetup.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_MDSetup_720p.jpg',
         headline: 'Motion Detection Setup',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Setup/">Setup</a></li><li><a href="/Motion_Detection/Setup/720p_Series/">720p Series</a></li>',
         canonical: '/Motion_Detection/Setup/720p_Series/',
@@ -87,7 +86,7 @@ motionDetectionRouter.get('/Setup/720p_Series/', function(req, res) {
 motionDetectionRouter.get('/Setup/VGA_Series/', function(req, res) {
     res.render('./Motion_Detection/Motion_Detection_Setup_VGA', {
         title: 'Motion Detection Setup',
-        ampimg: '/images/Search/MD_SearchThumb_MDSetup.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_MDSetup_VGA.jpg',
         headline: 'Motion Detection Setup',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Setup/">Setup</a></li><li><a href="/Motion_Detection/Setup/VGA_Series/">VGA Series</a></li>',
         canonical: '/Motion_Detection/Setup/VGA_Series/',
@@ -114,7 +113,7 @@ motionDetectionRouter.get('/Setup/VGA_Series/', function(req, res) {
 motionDetectionRouter.get('/Alarm_Notification/', function(req, res) {
     res.render('./Motion_Detection/Alarm_Notification', {
         title: 'Alarm Notification 1080p Series',
-        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification_1080p.jpg',
         headline: 'Alarm Notification 1080p Series',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_Notification/">Alarm Notification</a></li>',
         canonical: '/Motion_Detection/Alarm_Notification/',
@@ -141,7 +140,7 @@ motionDetectionRouter.get('/Alarm_Notification/', function(req, res) {
 motionDetectionRouter.get('/Alarm_Notification/720p_Series/', function(req, res) {
     res.render('./Motion_Detection/Alarm_Notification_720p', {
         title: 'Alarm Notification 720p Series',
-        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification_720p.jpg',
         headline: 'Alarm Notification 720p Series',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_Notification/">Alarm Notification</a></li><li><a href="/Motion_Detection/Alarm_Notification/720p_Series/">720p Series</a></li>',
         canonical: '/Motion_Detection/Alarm_Notification/720p_Series/',
@@ -168,7 +167,7 @@ motionDetectionRouter.get('/Alarm_Notification/720p_Series/', function(req, res)
 motionDetectionRouter.get('/Alarm_Notification/VGA_Series/', function(req, res) {
     res.render('./Motion_Detection/Alarm_Notification_VGA', {
         title: 'Alarm Notification VGA Series',
-        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification_VGA.jpg',
         headline: 'Alarm Notification VGA Series',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_Notification/">Alarm Notification</a></li><li><a href="/Motion_Detection/Alarm_Notification/VGA_Series/">VGA Series</a></li>',
         canonical: '/Motion_Detection/Alarm_Notification/VGA_Series/',
@@ -195,7 +194,7 @@ motionDetectionRouter.get('/Alarm_Notification/VGA_Series/', function(req, res) 
 motionDetectionRouter.get('/Alarm_Notification/Troubleshooting/', function(req, res) {
     res.render('./Motion_Detection/Alarm_Notification_Troubles', {
         title: 'Alarm Notification Troubleshooting',
-        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_AlarmNotification_Troubleshooting.jpg',
         headline: 'Alarm Notification Troubleshooting',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_Notification/">Alarm Notification</a></li><li><a href="/Motion_Detection/Alarm_Notification/1080p_Series/">Troubleshooting</a></li>',
         canonical: '/Motion_Detection/Alarm_Notification/Troubleshooting/',
@@ -303,7 +302,7 @@ motionDetectionRouter.get('/SD_Card_Access/', function(req, res) {
 motionDetectionRouter.get('/SD_Card_Access/Bitkinex/', function(req, res) {
     res.render('./Motion_Detection/SD_Card_Access_Bitkinex', {
         title: 'SD Card Access - Bitkinex',
-        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess_Bitkinex.jpg',
         headline: 'SD Card Access - Bitkinex',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/SD_Card_Access/">SD Card Access</a></li><li><a href="/Motion_Detection/SD_Card_Access/Bitkinex/">Bitkinex</a></li>',
         canonical: '/Motion_Detection/SD_Card_Access/Bitkinex/',
@@ -330,7 +329,7 @@ motionDetectionRouter.get('/SD_Card_Access/Bitkinex/', function(req, res) {
 motionDetectionRouter.get('/SD_Card_Access/CuteFTP', function(req, res) {
     res.render('./Motion_Detection/SD_Card_Access_CuteFTP', {
         title: 'SD Card Access - CuteFTP',
-        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess_CuteFTP.jpg',
         headline: 'SD Card Access - CuteFTP',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/SD_Card_Access/">SD Card Access</a></li><li><a href="/Motion_Detection/SD_Card_Access/CuteFTP/">CuteFTP</a></li>',
         canonical: '/Motion_Detection/SD_Card_Access/CuteFTP/',
@@ -357,7 +356,7 @@ motionDetectionRouter.get('/SD_Card_Access/CuteFTP', function(req, res) {
 motionDetectionRouter.get('/SD_Card_Access/DownThemAll', function(req, res) {
     res.render('./Motion_Detection/SD_Card_Access_DownThemAll', {
         title: 'SD Card Access - DownThemAll',
-        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess_DTA.jpg',
         headline: 'SD Card Access - DownThemAll',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/SD_Card_Access/">SD Card Access</a></li><li><a href="/Motion_Detection/SD_Card_Access/DownThemAll/">DownThemAll</a></li>',
         canonical: '/Motion_Detection/SD_Card_Access/DownThemAll/',
@@ -384,7 +383,7 @@ motionDetectionRouter.get('/SD_Card_Access/DownThemAll', function(req, res) {
 motionDetectionRouter.get('/SD_Card_Access/Interachy', function(req, res) {
     res.render('./Motion_Detection/SD_Card_Access_Interarchy', {
         title: 'SD Card Access - Interachy',
-        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess_Interachy.jpg',
         headline: 'SD Card Access - Interachy',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/SD_Card_Access/">SD Card Access</a></li><li><a href="/Motion_Detection/SD_Card_Access/Interachy/">Interachy</a></li>',
         canonical: '/Motion_Detection/SD_Card_Access/Interachy/',
@@ -411,7 +410,7 @@ motionDetectionRouter.get('/SD_Card_Access/Interachy', function(req, res) {
 motionDetectionRouter.get('/SD_Card_Access/DeepVacuum', function(req, res) {
     res.render('./Motion_Detection/SD_Card_Access_DeepVacuum', {
         title: 'SD Card Access - DeepVacuum',
-        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess_DeepVacuum.jpg',
         headline: 'SD Card Access - DeepVacuum',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/SD_Card_Access/">SD Card Access</a></li><li><a href="/Motion_Detection/SD_Card_Access/DeepVacuum/">DeepVacuum</a></li>',
         canonical: '/Motion_Detection/SD_Card_Access/DeepVacuum/',
@@ -438,7 +437,7 @@ motionDetectionRouter.get('/SD_Card_Access/DeepVacuum', function(req, res) {
 motionDetectionRouter.get('/SD_Card_Access/SiteSucker', function(req, res) {
     res.render('./Motion_Detection/SD_Card_Access_SiteSucker', {
         title: 'SD Card Access - SiteSucker',
-        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess_SiteSucker.jpg',
         headline: 'SD Card Access - SiteSucker',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/SD_Card_Access/">SD Card Access</a></li><li><a href="/Motion_Detection/SD_Card_Access/SiteSucker/">SiteSucker</a></li>',
         canonical: '/Motion_Detection/SD_Card_Access/SiteSucker/',
@@ -465,7 +464,7 @@ motionDetectionRouter.get('/SD_Card_Access/SiteSucker', function(req, res) {
 motionDetectionRouter.get('/SD_Card_Access/SimpleWget', function(req, res) {
     res.render('./Motion_Detection/SD_Card_Access_SimpleWget', {
         title: 'SD Card Access - SimpleWget',
-        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_SDCardAccess_SimpleWget.jpg',
         headline: 'SD Card Access - SimpleWget',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/SD_Card_Access/">SD Card Access</a></li><li><a href="/Motion_Detection/SD_Card_Access/SimpleWget/">SimpleWget</a></li>',
         canonical: '/Motion_Detection/SD_Card_Access/SimpleWget/',
@@ -492,7 +491,7 @@ motionDetectionRouter.get('/SD_Card_Access/SimpleWget', function(req, res) {
 motionDetectionRouter.get('/Alarm_FTP_Upload/', function(req, res) {
     res.render('./Motion_Detection/Alarm_FTP_Upload', {
         title: 'Alarm FTP Upload 1080p',
-        ampimg: '/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload_1080p.jpg',
         headline: 'Alarm FTP Upload 1080p',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_FTP_Upload/">Alarm FTP Upload</a></li>',
         canonical: '/Motion_Detection/Alarm_FTP_Upload/',
@@ -519,7 +518,7 @@ motionDetectionRouter.get('/Alarm_FTP_Upload/', function(req, res) {
 motionDetectionRouter.get('/Alarm_FTP_Upload/720p_Series/', function(req, res) {
     res.render('./Motion_Detection/Alarm_FTP_Upload_720p', {
         title: 'Alarm FTP Upload 720p Series',
-        ampimg: '/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload_720p.jpg',
         headline: 'Alarm FTP Upload 720p Series',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_FTP_Upload/">Alarm FTP Upload</a></li><li><a href="/Motion_Detection/Alarm_FTP_Upload/720p_Series/">720p Series</a></li>',
         canonical: '/Motion_Detection/Alarm_FTP_Upload/720p_Series/',
@@ -546,7 +545,7 @@ motionDetectionRouter.get('/Alarm_FTP_Upload/720p_Series/', function(req, res) {
 motionDetectionRouter.get('/Alarm_FTP_Upload/VGA_Series/', function(req, res) {
     res.render('./Motion_Detection/Alarm_FTP_Upload_VGA', {
         title: 'Alarm FTP Upload VGA Series',
-        ampimg: '/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_FTPSettingsAlarmUpload_VGA.jpg',
         headline: 'Alarm FTP Upload VGA Series',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Alarm_FTP_Upload/">Alarm FTP Upload</a></li><li><a href="/Motion_Detection/Alarm_FTP_Upload/VGA_Series/">VGA Series</a></li>',
         canonical: '/Motion_Detection/Alarm_FTP_Upload/VGA_Series/',
@@ -600,7 +599,7 @@ motionDetectionRouter.get('/Router_as_a_FTP_Server/', function(req, res) {
 motionDetectionRouter.get('/Router_as_a_FTP_Server/AVM_Fritzbox_as_FTP_Server', function(req, res) {
     res.render('./Motion_Detection/AVM_Fritzbox_as_FTP_Server', {
         title: 'AVM Fritzbox as FTP Server',
-        ampimg: '/images/Search/MD_SearchThumb_RouterAsFTPServer.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_RouterAsFTPServer_Fritzbox.jpg',
         headline: 'Router or NAS as FTP Server',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Router_as_a_FTP_Server/">Router as a FTP Server</a></li><li><a href="/Motion_Detection/Router_as_a_FTP_Server/AVM_Fritzbox_as_FTP_Server/">AVM Fritzbox</a></li>',
         canonical: '/Motion_Detection/Router_as_a_FTP_Server/AVM_Fritzbox_as_FTP_Server/',
@@ -627,7 +626,7 @@ motionDetectionRouter.get('/Router_as_a_FTP_Server/AVM_Fritzbox_as_FTP_Server', 
 motionDetectionRouter.get('/Router_as_a_FTP_Server/Telekom_Speedport_as_FTP_Server', function(req, res) {
     res.render('./Motion_Detection/Telekom_Speedport_as_FTP_Server', {
         title: 'Telekom Speedport as FTP Server',
-        ampimg: '/images/Search/MD_SearchThumb_RouterAsFTPServer.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_RouterAsFTPServer_Speedport.jpg',
         headline: 'Router or NAS as FTP Server',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Router_as_a_FTP_Server/">Router as a FTP Server</a></li><li><a href="/Motion_Detection/Router_as_a_FTP_Server/Telekom_Speedport_as_FTP_Server/">Speedport</a></li>',
         canonical: '/Motion_Detection/Router_as_a_FTP_Server/Telekom_Speedport_as_FTP_Server/',
@@ -654,7 +653,7 @@ motionDetectionRouter.get('/Router_as_a_FTP_Server/Telekom_Speedport_as_FTP_Serv
 motionDetectionRouter.get('/Router_as_a_FTP_Server/QNAP_as_FTP_Server', function(req, res) {
     res.render('./Motion_Detection/QNAP_as_FTP_Server', {
         title: 'QNAP as FTP Server',
-        ampimg: '/images/Search/MD_SearchThumb_RouterAsFTPServer.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_RouterAsFTPServer_QNAP.jpg',
         headline: 'Router or NAS as FTP Server',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Router_as_a_FTP_Server/">Router as a FTP Server</a></li><li><a href="/Motion_Detection/Router_as_a_FTP_Server/QNAP_as_FTP_Server/">QNAP</a></li>',
         canonical: '/Motion_Detection/Router_as_a_FTP_Server/QNAP_as_FTP_Server/',
@@ -681,7 +680,7 @@ motionDetectionRouter.get('/Router_as_a_FTP_Server/QNAP_as_FTP_Server', function
 motionDetectionRouter.get('/Router_as_a_FTP_Server/Synology_as_FTP_Server', function(req, res) {
     res.render('./Motion_Detection/Synology_as_FTP_Server', {
         title: 'Synology as FTP Server',
-        ampimg: '/images/Search/MD_SearchThumb_RouterAsFTPServer.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_RouterAsFTPServer_Synology.jpg',
         headline: 'Router or NAS as FTP Server',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Router_as_a_FTP_Server/">Router as a FTP Server</a></li><li><a href="/Motion_Detection/Router_as_a_FTP_Server/Synology_as_FTP_Server/">Synology</a></li>',
         canonical: '/Motion_Detection/Router_as_a_FTP_Server/Synology_as_FTP_Server/',
@@ -708,7 +707,7 @@ motionDetectionRouter.get('/Router_as_a_FTP_Server/Synology_as_FTP_Server', func
 motionDetectionRouter.get('/Router_as_a_FTP_Server/WD_MyCloud_as_FTP_Server', function(req, res) {
     res.render('./Motion_Detection/WD_MyCloud_as_FTP_Server', {
         title: 'WD MyCloud as FTP Server',
-        ampimg: '/images/Search/MD_SearchThumb_RouterAsFTPServer.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_RouterAsFTPServer_WD.jpg',
         headline: 'Router or NAS as FTP Server',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/Router_as_a_FTP_Server/">Router as a FTP Server</a></li><li><a href="/Motion_Detection/Router_as_a_FTP_Server/WD_MyCloud_as_FTP_Server/">WD MyCloud</a></li>',
         canonical: '/Motion_Detection/Router_as_a_FTP_Server/WD_MyCloud_as_FTP_Server/',
@@ -843,7 +842,7 @@ motionDetectionRouter.get('/INSTAR_Cloud/', function(req, res) {
 motionDetectionRouter.get('/INSTAR_Cloud/Create_User_Account', function(req, res) {
     res.render('./Motion_Detection/Cloud_Create_User_Account', {
         title: 'INSTAR Cloud Account',
-        ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_Cloud_Create.jpg',
         headline: 'INSTAR Cloud Account',
         breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Create_User_Account/">Create User Account</a></li>',
         canonical: '/Motion_Detection/INSTAR_Cloud/Create_User_Account/',
@@ -870,7 +869,7 @@ motionDetectionRouter.get('/INSTAR_Cloud/Create_User_Account', function(req, res
 motionDetectionRouter.get('/INSTAR_Cloud/Storage', function(req, res) {
     res.render('./Motion_Detection/Cloud_Get_More_Cloudstorage', {
         title: 'INSTAR Cloud Storage',
-        ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_Cloud_Storage.jpg',
         headline: 'INSTAR Cloud Storage',
         breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Storage/">Storage</a></li>',
         canonical: '/Motion_Detection/INSTAR_Cloud/Storage/',
@@ -897,7 +896,7 @@ motionDetectionRouter.get('/INSTAR_Cloud/Storage', function(req, res) {
 motionDetectionRouter.get('/INSTAR_Cloud/User', function(req, res) {
     res.render('./Motion_Detection/Cloud_User', {
         title: 'INSTAR Cloud User',
-        ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_Cloud_Management.jpg',
         headline: 'INSTAR Cloud User',
         breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/User/">User</a></li>',
         canonical: '/Motion_Detection/INSTAR_Cloud/User/',
@@ -924,7 +923,7 @@ motionDetectionRouter.get('/INSTAR_Cloud/User', function(req, res) {
 motionDetectionRouter.get('/INSTAR_Cloud/Administration', function(req, res) {
     res.render('./Motion_Detection/Cloud_Administration', {
         title: 'INSTAR Cloud Admin',
-        ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_Cloud_Administration.jpg',
         headline: 'INSTAR Cloud Admin',
         breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Administration/">Administration</a></li>',
         canonical: '/Motion_Detection/INSTAR_Cloud/Administration/',
@@ -951,7 +950,7 @@ motionDetectionRouter.get('/INSTAR_Cloud/Administration', function(req, res) {
 motionDetectionRouter.get('/INSTAR_Cloud/Alarm_Recordings', function(req, res) {
     res.render('./Motion_Detection/Cloud_Alarm', {
         title: 'INSTAR Cloud Alarm Recordings',
-        ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_Cloud_Recordings.jpg',
         headline: 'INSTAR Cloud Recordings',
         breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Alarm_Recordings/">Alarm Recordings</a></li>',
         canonical: '/Motion_Detection/INSTAR_Cloud/Alarm_Recordings/',
@@ -978,7 +977,7 @@ motionDetectionRouter.get('/INSTAR_Cloud/Alarm_Recordings', function(req, res) {
 motionDetectionRouter.get('/INSTAR_Cloud/Camera_Sets', function(req, res) {
     res.render('./Motion_Detection/Cloud_Sets', {
         title: 'INSTAR Cloud Sets',
-        ampimg: '/images/Search/MD_SearchThumb_Cloud.jpg',
+        ampimg: '/images/Search/MD_SearchThumb_Cloud_Sets.jpg',
         headline: 'INSTAR Cloud Sets',
         breadcrumbs: '<li><a href="/Motion_Detection/">Motion Detection</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/">INSTAR Cloud</a></li><li><a href="/Motion_Detection/INSTAR_Cloud/Camera_Sets/">Camera Sets</a></li>',
         canonical: '/Motion_Detection/INSTAR_Cloud/Camera_Sets/',

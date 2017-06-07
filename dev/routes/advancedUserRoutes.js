@@ -1,12 +1,11 @@
 var express = require('express');
 var advancedUserRouter = express.Router();
-var appdata = require('../views/_partials/data/advancedUser.json');
 
 /* GET Internet_Access page. */
 advancedUserRouter.get('/', function(req, res) {
     res.render('./Advanced_User/Advanced_User', {
         title: 'Advanced User',
-        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+        ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
         headline: 'For Developers',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li>',
         canonical: '/Advanced_User/',
@@ -60,7 +59,7 @@ advancedUserRouter.get('/Website_Integration/', function(req, res) {
 advancedUserRouter.get('/Website_Integration/Cambozola', function(req, res) {
     res.render('./Advanced_User/Cambozola', {
         title: 'Cambozola (JAVA Plugin)',
-        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration_Cambozola.jpg',
         headline: 'IP Camera Website Integration with Cambozola',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/Website_Integration/">Website Integration</a></li><li><a href="/Advanced_User/Website_Integration/Cambozola/">Cambozola</a></li>',
         canonical: '/Advanced_User/Website_Integration/Cambozola/',
@@ -87,7 +86,7 @@ advancedUserRouter.get('/Website_Integration/Cambozola', function(req, res) {
 advancedUserRouter.get('/Website_Integration/Open_IP_Camera_Manager', function(req, res) {
     res.render('./Advanced_User/Open_IP_Camera_Manager', {
         title: 'Open IP Camera Manager (PHP)',
-        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration_OIPCM.jpg',
         headline: 'IP Camera Website Integration with OICM',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/Website_Integration/">Website Integration</a></li><li><a href="/Advanced_User/Website_Integration/Open_IP_Camera_Manager/">OIPCM</a></li>',
         canonical: '/Advanced_User/Website_Integration/Open_IP_Camera_Manager/',
@@ -114,7 +113,7 @@ advancedUserRouter.get('/Website_Integration/Open_IP_Camera_Manager', function(r
 advancedUserRouter.get('/Website_Integration/HD_Camera_Integration', function(req, res) {
     res.render('./Advanced_User/HD_Camera_Integration', {
         title: 'HD Camera Website Integration',
-        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration_HD_Cams.jpg',
         headline: 'H.264 IP Camera Website Integration',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/Website_Integration/">Website Integration</a></li><li><a href="/Advanced_User/Website_Integration/HD_Camera_Integration/">HD Cameras</a></li>',
         canonical: '/Advanced_User/Website_Integration/HD_Camera_Integration/',
@@ -141,7 +140,7 @@ advancedUserRouter.get('/Website_Integration/HD_Camera_Integration', function(re
 advancedUserRouter.get('/CGI_Commands/', function(req, res) {
     res.render('./Advanced_User/CGI_Commands', {
         title: 'CGI Commands',
-        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+        ampimg: '/images/Search/AU_SearchThumb_CGICommands.jpg',
         headline: 'CGI Commands',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li>',
         canonical: '/Advanced_User/CGI_Commands/',
@@ -168,6 +167,7 @@ advancedUserRouter.get('/CGI_Commands/', function(req, res) {
 advancedUserRouter.get('/CGI_Commands/VGA_Series_CGI_List', function(req, res) {
     res.render('./Advanced_User/VGA_Series_CGI_List', {
         title: 'VGA Series CGI List',
+        ampimg: '/images/Search/AU_SearchThumb_CGICommands_VGA.jpg',
         breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/VGA_Series_CGI_List/">VGA Series</a></li>',
         canonical: '/Advanced_User/CGI_Commands/VGA_Series_CGI_List/',
 		pacc: '',

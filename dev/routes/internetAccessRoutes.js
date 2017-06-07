@@ -6,7 +6,7 @@ var appdata = require('../views/_partials/data/internetAccess.json');
 internetAccessRouter.get('/', function(req, res) {
     res.render('./Internet_Access/Internet_Access', {
         title: 'Internet Access',
-        ampimg: '/images/Search/AU_SearchThumb_WebsiteIntegration.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_AccessOverTheInternet.jpg',
         headline: 'Access your IP Camera over the Internet',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li>',
         canonical: '/Internet_Access/',
@@ -87,7 +87,7 @@ internetAccessRouter.get('/Port_Forwarding/', function(req, res) {
 internetAccessRouter.get('/Port_Forwarding/AVM_Fritzbox/', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding_AVM_Fritzbox', {
         title: 'Port Forwarding AVM Fritzbox',
-        ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_Portforwarding_Fritzbox.jpg',
         headline: 'Port Forwarding AVM Fritzbox',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/AVM_Fritzbox/">AVM Fritzbox</a></li>',
         canonical: '/Internet_Access/Port_Forwarding/AVM_Fritzbox/',
@@ -114,7 +114,7 @@ internetAccessRouter.get('/Port_Forwarding/AVM_Fritzbox/', function(req, res) {
 internetAccessRouter.get('/Port_Forwarding/Telekom_Speedport/', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding_Telekom_Speedport', {
         title: 'Port Forwarding Telekom Speedport',
-        ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_Portforwarding_Speedport.jpg',
         headline: 'Port Forwarding Telekom Speedport',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/Telekom_Speedport/">Telekom Speedport</a></li>',
         canonical: '/Internet_Access/Port_Forwarding/Telekom_Speedport/',
@@ -141,7 +141,7 @@ internetAccessRouter.get('/Port_Forwarding/Telekom_Speedport/', function(req, re
 internetAccessRouter.get('/Port_Forwarding/D-Link/', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding_D-Link', {
         title: 'Port Forwarding D-Link',
-        ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_Portforwarding_DLink.jpg',
         headline: 'Port Forwarding D-Link',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/D-Link/">D-Link</a></li>',
         canonical: '/Internet_Access/Port_Forwarding/D-Link/',
@@ -168,7 +168,7 @@ internetAccessRouter.get('/Port_Forwarding/D-Link/', function(req, res) {
 internetAccessRouter.get('/Port_Forwarding/TP-Link/', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding_TP-Link', {
         title: 'Port Forwarding TP-Link',
-        ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_Portforwarding_TPLink.jpg',
         headline: 'Port Forwarding TP-Link',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/TP-Link/">TP-Link</a></li>',
         canonical: '/Internet_Access/Port_Forwarding/TP-Link/',
@@ -195,7 +195,7 @@ internetAccessRouter.get('/Port_Forwarding/TP-Link/', function(req, res) {
 internetAccessRouter.get('/Port_Forwarding/Netgear/', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding_Netgear', {
         title: 'Port Forwarding Netgear',
-        ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_Portforwarding_Netgear.jpg',
         headline: 'Port Forwarding Netgear',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/Netgear/">Netgear</a></li>',
         canonical: '/Internet_Access/Port_Forwarding/Netgear/',
@@ -222,7 +222,7 @@ internetAccessRouter.get('/Port_Forwarding/Netgear/', function(req, res) {
 internetAccessRouter.get('/Port_Forwarding/Vodafone_Easybox/', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding_Vodafone_Easybox', {
         title: 'Port Forwarding Vodafone Easybox',
-        ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_Portforwarding_Easybox.jpg',
         headline: 'Port Forwarding Vodafone Easybox',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/Vodafone_Easybox/">Vodafone Easybox</a></li>',
         canonical: '/Internet_Access/Port_Forwarding/Vodafone_Easybox/',
@@ -249,7 +249,7 @@ internetAccessRouter.get('/Port_Forwarding/Vodafone_Easybox/', function(req, res
 internetAccessRouter.get('/Port_Forwarding/Pirelli/', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding_Pirelli', {
         title: 'Port Forwarding Pirelli',
-        ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_Portforwarding_Pirelli.jpg',
         headline: 'Port Forwarding Pirelli',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/Pirelli/">Pirelli</a></li>',
         canonical: '/Internet_Access/Port_Forwarding/Pirelli/',
@@ -276,7 +276,7 @@ internetAccessRouter.get('/Port_Forwarding/Pirelli/', function(req, res) {
 internetAccessRouter.get('/DDNS_Provider/', function(req, res) {
     res.render('./Internet_Access/DDNS_Provider', {
         title: 'Third Party DDNS Provider',
-        ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_ThirdPartyDDNS.jpg',
         headline: 'Third Party DDNS Provider',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/DDNS_Provider/">DDNS Provider</a></li>',
         canonical: '/Internet_Access/DDNS_Provider/',
@@ -303,7 +303,7 @@ internetAccessRouter.get('/DDNS_Provider/', function(req, res) {
 internetAccessRouter.get('/DDNS_Provider/NoIP/', function(req, res) {
     res.render('./Internet_Access/DDNS_Provider_NoIP', {
         title: 'NoIP DDNS Provider',
-        ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_ThirdPartyDDNS_noIP.jpg',
         headline: 'Third Party DDNS Provider',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/DDNS_Provider/">DDNS Provider</a></li><li><a href="/Internet_Access/DDNS_Provider/NoIP/">NoIP</a></li>',
         canonical: '/Internet_Access/DDNS_Provider/NoIP/',
@@ -330,7 +330,7 @@ internetAccessRouter.get('/DDNS_Provider/NoIP/', function(req, res) {
 internetAccessRouter.get('/DDNS_Provider/Selfhost/', function(req, res) {
     res.render('./Internet_Access/DDNS_Provider_Selfhost', {
         title: 'Selfhost DDNS Provider',
-        ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_ThirdPartyDDNS_selfhost.jpg',
         headline: 'Third Party DDNS Provider',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/DDNS_Provider/">DDNS Provider</a></li><li><a href="/Internet_Access/DDNS_Provider/Selfhost/">Selfhost</a></li>',
         canonical: '/Internet_Access/DDNS_Provider/Selfhost/',
@@ -357,7 +357,7 @@ internetAccessRouter.get('/DDNS_Provider/Selfhost/', function(req, res) {
 internetAccessRouter.get('/DDNS_Provider/DDNSS/', function(req, res) {
     res.render('./Internet_Access/DDNS_Provider_DDNSS', {
         title: 'DDNSS DDNS Provider',
-        ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
+        ampimg: '/images/Search/IA_SearchThumb_ThirdPartyDDNS_ddnss.jpg',
         headline: 'Third Party DDNS Provider',
         breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/DDNS_Provider/">DDNS Provider</a></li><li><a href="/Internet_Access/DDNS_Provider/DDNSS/">DDNSS</a></li>',
         canonical: '/Internet_Access/DDNS_Provider/DDNSS/',
