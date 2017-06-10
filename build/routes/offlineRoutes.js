@@ -1,0 +1,1 @@
+var express=require("express"),indexRouter=express.Router();indexRouter.route("/").get(function(e,r){r.render("Ofline",{title:"INSTAR Wiki - Offline Page",ampimg:"/images/Search/QI_SearchThumb_SetupWizard.jpg",headline:"INSTAR IP Camera and Network Technology Knowledgebase",canonical:"/You_Are_Offline/"})}),module.exports=indexRouter;
