@@ -23,10 +23,34 @@
 
 <!-- http://schema.org/TechArticle -->
 <script type="application/ld+json">
-    { "@context": "http://schema.org",
-      "@type": "TechArticle",
-      "headline": "<%= headline %>",
-      "image": [ "http://wiki.instar.com<%= ampimg %>" ] }
+  {
+    "@context": "http://schema.org",
+    "@type": "TechArticle",
+    "headline": "<%= headline %>",
+    "datePublished": "2017-06-06",
+    "dateModified": "2017-06-06",
+    "description": "<%= abstract %>",
+    "author": {
+      "@type": "Person",
+      "name": "Mike Polinowski"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "INSTAR Deutschland GmbH",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wiki.instar.com/images/instar_245x77.png",
+        "width": 245,
+        "height": 77
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://wiki.instar.com<%= ampimg %>",
+      "height": 597,
+      "width": 382
+    }
+  }
 </script>
 
 <% include _amp-boilerplate.css %>
