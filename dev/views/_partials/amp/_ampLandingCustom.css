@@ -1586,7 +1586,7 @@ amp-sidebar .return-button {
 }
 
 amp-sidebar .return-button::before {
-  background: url(/teststatic/return.svg) no-repeat center/contain transparent;
+  background: url(/images/return.svg) no-repeat center/contain transparent;
   border: 0;
   content: '';
   display: inline-block;

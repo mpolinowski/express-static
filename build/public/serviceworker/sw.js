@@ -17,7 +17,7 @@
 importScripts('/serviceworker/sw-toolbox.js');
 
 const config = {
-  offlinePage: '/youre_offline/'
+  offlinePage: '/You_Are_Offline/'
 };
 
 const IGNORED_URLS = ['shopping_cart'];
@@ -28,14 +28,14 @@ config.filesToCache = [
   '/components/amp-install-serviceworker/',
   config.offlinePage,
   '/img/offline.png',
-  '/favicons/favicon.ico',
-  '/favicons/favicon-230x230.png',
-  '/favicons/favicon-96x96.png',
-  '/favicons/android-chrome-36x36.png',
-  '/favicons/android-chrome-72x72.png',
-  '/playground/img/playground-logo.svg',
-  '/playground/',
-  '/img/amp_logo_black.svg'
+  '/favicon.ico',
+  '/images/instar_245x77.png',
+  '/images/list-icon.svg',
+  '/images/return.svg',
+  '/images/search.svg',
+  '/images/sprite.svg',
+  '/images/hamburger.svg',
+  '/images/close.svg'
 ];
 
 /**
