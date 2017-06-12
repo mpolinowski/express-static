@@ -30,6 +30,33 @@ internetAccessRouter.get('/', function(req, res) {
       });
   });
 
+internetAccessRouter.get('/Point_to_Point/', function(req, res) {
+    res.render('./Internet_Access/Point_to_Point', {
+        title: 'P2P Service',
+        ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
+        headline: 'P2P Remote Access',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Remote Access</a></li><li><a href="/Internet_Access/The_DDNS_Service/">P2P Service</a></li>',
+        canonical: '/Internet_Access/Point_to_Point/',
+    		pacc: '',
+    		ptab: 'hidden',
+    		qiacc: '',
+    		qitab: 'hidden',
+    		mdacc: '',
+    		mdtab: 'hidden',
+    		iaacc: 'expanded',
+    		iatab: '',
+    		auacc: '',
+    		autab: 'hidden',
+    		hdacc: 'hidden',
+    		hdtab: 'hidden',
+    		fhdacc: 'hidden',
+    		fhdtab: 'hidden',
+    		sacc: 'hidden',
+    		dlacc: 'hidden',
+    		dltab: 'hidden',
+      });
+  });
+
 internetAccessRouter.get('/The_DDNS_Service/', function(req, res) {
     res.render('./Internet_Access/The_DDNS_Service', {
         title: 'The DDNS Service',
