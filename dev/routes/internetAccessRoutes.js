@@ -300,6 +300,33 @@ internetAccessRouter.get('/Port_Forwarding/Pirelli/', function(req, res) {
       });
   });
 
+internetAccessRouter.get('/Mobile_Access/', function(req, res) {
+    res.render('./Internet_Access/Mobile_Access', {
+        title: 'Mobil Zugriff',
+        ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
+        headline: 'Kontrollieren Sie Ihre Kamera von Ihrem Handy',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Remote Access</a></li><li><a href="/Internet_Access/Mobile_Access/">Mobile Access</a></li>',
+        canonical: '/Internet_Access/Mobile_Access/',
+		pacc: '',
+		ptab: 'hidden',
+		qiacc: '',
+		qitab: 'hidden',
+		mdacc: '',
+		mdtab: 'hidden',
+		iaacc: 'expanded',
+		iatab: '',
+		auacc: '',
+		autab: 'hidden',
+		hdacc: 'hidden',
+		hdtab: 'hidden',
+		fhdacc: 'hidden',
+		fhdtab: 'hidden',
+		sacc: 'hidden',
+		dlacc: 'hidden',
+		dltab: 'hidden',
+      });
+  });
+
 internetAccessRouter.get('/DDNS_Provider/', function(req, res) {
     res.render('./Internet_Access/DDNS_Provider', {
         title: 'Third Party DDNS Provider',
