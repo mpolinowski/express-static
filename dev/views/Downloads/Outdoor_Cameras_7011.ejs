@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ⚡ lang="en">
+<html ⚡ lang="de">
     <head>
         <% include ../_partials/amp/_amp-head.ejs %>
         <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -53,7 +53,7 @@
                         <p><strong>Schnellinstallations-Assistent: </strong>Der Assistent leitet Sie durch die wichtigsten Schritte um Ihr INSTAR Produkt in Betrieb zu nehmen.</p>
                         <p><strong>Software Installation: </strong>Sie finden Download Links sofern Ihr INSTAR Produkt zusätzliche Software benötigt. Sie werden durch alle Schritte geleitet nachdem Sie den Download und die Installation abgeschlossen haben.</p>
                         <p><strong>Firmware Updates: </strong>INSTAR bietet in regelmäßigen Abständen Firmware und WebUI Updates für seine Produkte an. Weiter unten finden Sie die aktuellen Versionen der Firmware und WebUI die Sie auf Ihre INSTAR Kamera aufspielen können.</p>
-                        <a href="http://install.instar.de" target="_blank"><button class="navGo navGoBig">Installation Starten</button></a>
+                        <a href="http://install.instar.de"><button class="navGo navGoBig">Installation Starten</button></a>
                     </div>
                     <!-- /margin -->
 
@@ -61,11 +61,7 @@
                         <h3 class="jumptarget" id="instructions"><strong>Anleitungen</strong></h3><br>
                         <h3 class="jumptarget" id="quickinstallation">Schnellinstallation</h3>
                         <p>Der Flyer enthält die wichtigsten Informationen um Ihre INSTAR Kamera in Betrieb zu nehmen.</p>
-                        <a href="/dl/IN-7011HD/flyer_7011HD.pdf" target="_blank"><button class="navGo navGoBig">Kurzanleitung</button></a>
-                        <a href="/dl/IN-7011HD/flyer_7011HD_wps_de.pdf" target="_blank"><button class="navGo navGoBig">Plug&amp;Play Anleitung</button>
-                        <a href="/dl/IN-7011HD/flyer_7011PoE.pdf" target="_blank"><button class="navGo navGoBig">Kurzanleitung (PoE)</button>
-                        <a href="/dl/IN-7011HD/Flyer_IN-7011_HD_PoE_web.pdf" target="_blank"><button class="navGo navGoBig">Plug&amp;Play (PoE)</button>
-                        <br><br>
+                        <a href="http://install.instar.de"><button class="navGo navGoBig">Flyer Download</button></a><br><br>
                         <h3 class="jumptarget" id="manual">Bedienungsanleitung</h3>
                         <p>Die Bedienungsanleitung beinhaltet ausführliche Informationen zu allen Funktionen der Kamera.</p>
                         <p><strong>Schnellinstallation: </strong>Der Bereich Schnellinstallation beinhaltet eine Übersicht über alle nötigen Schritte um Ihre Kamera per LAN Kabel, WLan und über das Internet zu installieren.</p>
@@ -75,8 +71,8 @@
                         <p><strong>Windows Software, Smartphone Apps und Video Streaming </strong></p>
                         <p><strong>Kamera Reset, Objektivjustage, Garantie und Entsorgung </strong></p>
                         <p><strong>FAQ Fragen und Antworten </strong></p>
-                        <a href="/dl/IN-7011HD/QuickInstallation_IN-7011HD_web_de.pdf" target="_blank"><button class="navGo navGoBig">Anleitung (Deutsch)</button></a>
-                        <a href="/dl/IN-7011HD/QuickInstallation-IN-7011-EN_web.pdf" target="_blank"><button class="navGo navGoBig">Anleitung (English)</button></a>
+                        <a href="http://install.instar.de"><button class="navGo navGoBig">Anleitung (Deutsch)</button></a>
+                        <a href="http://install.instar.de"><button class="navGo navGoBig">Anleitung (English)</button></a>
                     </div>
                     <!-- /margin -->
 
@@ -86,7 +82,8 @@
       <h3 class="jumptarget" id="updatesoftware"><strong>Updates Kamera-Software</strong></h3><br>
 
       <h3 class="jumptarget" id="firmware">Firmware und WebUI</h3>
-      <p>Sie finden hier immer die neueste Version und alle Vorgängerversionen der Firmware für Ihre IN-7011. Sofern Sie ein Update der WebUI planen, stellen Sie immer sicher das Sie die neueste Version der Firmware installiert haben. In den meisten Fällen erfordern die neuen Funktionen in der Weboberfläche (WebUI) auch die neueste Firmware. Für Informationen wie Sie die Firmware updaten schauen Sie bitte <a href="/Quick_Installation/WebUI_And_Firmware_Upgrade/">HIER</a>.</p>
+      <p>Sie finden hier immer die neueste Version und alle Vorgängerversionen der Firmware für Ihre IN-7011. Sofern Sie ein Update der WebUI planen, stellen Sie immer sicher das Sie die neueste Version der Firmware installiert haben. In den meisten Fällen erfordern die neuen Funktionen in der Weboberfläche (WebUI) auch die neueste Firmware. Für Informationen wie Sie die Firmware updaten schauen Sie bitte <a href="">HIER</a>.</p>
+      <p><strong>Wichtig:</strong> Welche Firmware Version benötigen Sie? Bitte prüfen Sie die zweite Zahlengruppe ind er Versionsnummer. Wenn Ihre aktuelle Firmware derzeit eine 37 oder 35 an zweiter Stelle hat, dann wählen Sie bitte die Firmware 3* an zweiter Stelle. Andernfalls sofern die Nummer 22, 25 oder eine andere Nummer ist, wählen Sie bitte die Firmware mit der 2* an zweiter Stelle.</p>
       <p><strong>Wichtig:</strong> Entpacken Sie nach dem Download bitte die *.ZIP Datei. Beachten Sie auch das Sie zuerst die neueste Firmware installieren und erst dann die WebUI.</p><br>
 
       <amp-carousel height="580" layout="flex-item" type="slides">
@@ -94,9 +91,43 @@
         <div class="box-one">
           <div class="box__inner">
             <div class="box__content">
-             <ul>
-               <li>Bugfixes</li>
-             </ul>
+              <ul>
+               <li>Problem bei automatischer Sommer-/Winterzeitumstellung behoben</li>
+               <li>Problem behoben wodurch der Alarmton bei der IN-6014HD nicht deaktivierbar war</li>
+               <li>Neue Validierung integriert bei Eingabefeldern</li>
+               <li>Sicherheitslücke geschlossen</li>
+               <li>Allgemeine Bugfixes und Verbesserungen</li>
+              </ul>
+            </div>
+            <div class="box__footer">
+              <div class="box__credit">
+                <div class="box__subtitle">Download</div>
+                <h5 class="box__title">Versionsnummer</h5>
+                <p>FW 3.1.2.66 <br>
+                   WebUI 1.17  </p>
+              </div>
+              <div class="box__image box-image-button">
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-one">
+          <div class="box__inner">
+            <div class="box__content">
+              <ul>
+               <li>Problem mit P2P Verbindung behoben</li>
+               <li>Verbesserung im Bezug auf die P2P Verbindungsgeschwindigkeit</li>
+               <li>Neue INSTAR Cloud Aufnahmeplattform ab sofort verfügbar</li>
+               <li>Benutzerdefinierter NTP Zeitserver ist jetzt möglich</li>
+               <li>Problem bei FTP Upload behoben</li>
+               <li>Problem mit Benutzername und Passwortauthentifizierung bei MJPEG Stream und snap.jpg behoben</li>
+               <li>Problem behoben das die Kamera bei einer Portänderung neu startet</li>
+               <li>Sonderzeichen Problem bei WLAN, DDNS, FTP und Cloud Kennwörtern behoben</li>
+               <li>Anpassungen der Strings / Bezeichnungen</li>
+               <li>Allgemeine Bugfixes und Verbesserungen</li>
+              </ul>
             </div>
             <div class="box__footer">
               <div class="box__credit">
@@ -106,8 +137,8 @@
                    WebUI 1.16  </p>
               </div>
               <div class="box__image box-image-button">
-                <a href="/dl/IN-7011HD/IN-7011_FW_3.1.2.64_WebUI_1.16.(620)_update.zip"><button class="navGo">WLAN</button></a>
-                <a href="/dl/IN-7011HD/IN-7011-PoE_FW_3.1.2.64_WebUI_1.16.(620)_update.zip"><button class="navGo">PoE *</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
               </div>
             </div>
           </div>
@@ -127,8 +158,8 @@
                    WebUI 1.15  </p>
               </div>
               <div class="box__image box-image-button">
-                <a href="/dl/IN-7011HD/IN-7011_FW_3.1.2.64_WebUI_1.15(617)_update.zip"><button class="navGo">WLAN</button></a>
-                <a href="/dl/IN-7011HD/IN-7011-PoE_FW_3.1.2.64_WebUI_1.15(617)_update.zip"><button class="navGo">PoE *</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
               </div>
             </div>
           </div>
@@ -151,8 +182,8 @@
                    WebUI 1.14  </p>
               </div>
               <div class="box__image box-image-button">
-                <a href="/dl/IN-7011HD/IN-7011_FW_3.1.2.64_WebUI_1.14(604)_update.zip"><button class="navGo">WLAN</button></a>
-                <a href="/dl/IN-7011HD/IN-7011-PoE_FW_3.1.2.64_WebUI_1.14(604)_update.zip"><button class="navGo">PoE *</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
               </div>
             </div>
           </div>
@@ -160,11 +191,14 @@
         <div class="box-one">
           <div class="box__inner">
             <div class="box__content">
-             <ul>
+              <ul>
                <li>Integration der neuen INSTAR Cloud Plattform</li>
+               <li>LAN und WLAN Mac Adresse werden jetzt beide unter "System - Info" angezeigt (sofern das Kameramodell WLAN hat)</li>
                <li>Änderung Vorauswahl für GMX</li>
                <li>Anzeige von LAN und WLAN MAC-Adresse</li>
-             </ul>
+               <li>Die Vorauswahl für GMX beim Emailversand wurde von mail.gmx.net auf mail.gmx.de geändert um Problemen mit dem Telekom Speedport zu vermeiden</li>
+               <li>Allgemeine Bugfixes und Verbesserungen</li>
+              </ul>
             </div>
             <div class="box__footer">
               <div class="box__credit">
@@ -174,8 +208,8 @@
                    WebUI 1.13  </p>
               </div>
               <div class="box__image box-image-button">
-                <a href="/dl/IN-7011HD/IN-7011_FW_3.1.2.63_WebUI_1.13(586)_update.zip"><button class="navGo">WLAN</button></a>
-                <a href="/dl/IN-7011HD/IN-7011-PoE_FW_3.1.2.63_WebUI_1.13(586)_update.zip"><button class="navGo">PoE *</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
               </div>
             </div>
           </div>
@@ -183,12 +217,20 @@
         <div class="box-one">
           <div class="box__inner">
             <div class="box__content">
-             <ul>
+              <ul>
+               <li>Alarm Server</li>
                <li>Täglicher zeitgesteuerter Kamera-Neustart</li>
                <li>Email SMTP Versand ohne Authentifizierung</li>
                <li>Neuer Installations Wizard</li>
+               <li>User &amp; Gast Accounts können deaktiviert werden</li>
                <li>Deutscher Syslog</li>
-             </ul>
+               <li>Problem mit 'leerem' Kameranamen behoben</li>
+               <li>H264 Video-Support für alle Ports im User- und Gastzugang</li>
+               <li>Problem mit bestimmen Email-Anbietern behoben (z.B. GMX, web.de, Gmail, AOL)</li>
+               <li>Problem behoben das der Alarm Eingang, Audio Alarm und die Bewegungserkennung nicht seperat nutzbar waren wenn aktiviert</li>
+               <li>Allgemeine Bugfixes und Verbesserungen</li>
+               <li>Kamera Park Position für alle PTZ Modelle</li>
+              </ul>
             </div>
             <div class="box__footer">
               <div class="box__credit">
@@ -198,8 +240,8 @@
                    WebUI 1.12  </p>
               </div>
               <div class="box__image box-image-button">
-                <a href="/dl/IN-7011HD/IN-7011_FW_3.1.2.56_WebUI_1.12(555)_update.zip"><button class="navGo">WLAN</button></a>
-                <a href="/dl/IN-7011HD/IN-7011-PoE_FW_3.1.2.56_WebUI_1.12(555)_update.zip"><button class="navGo">PoE *</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
               </div>
             </div>
           </div>
@@ -207,12 +249,18 @@
         <div class="box-one">
           <div class="box__inner">
             <div class="box__content">
-             <ul>
-               <li>neuer h.264 Videostream mittels RTMP</li>
-               <li>Festlegen von bis zu 4 Privatbereichen</li>
+              <ul>
+               <li>Neuer h.264 Videostream mittels RTMP Protokoll über den RTMP Port (sh. Netzwerk > IP Konfiguration) mit Flash Plugin Support</li>
+               <li>Zwei unterschiedliche MotionJPEG Stream Varianten</li>
+               <li>Privacy Mask - Festlegen von bis zu 4 Privatbereichen die im Videobild komplett ausgeblendet werden</li>
+               <li>Kameraeinstellungen werden mit dem Update nicht mehr gelöscht</li>
                <li>h.264 Video Support für Linux mittels Flash</li>
+               <li>Manuelle Aufnahmefunktion auf die integrierte Speicherkarte der Kamera</li>
                <li>Ordnerstruktur unter FTP</li>
-             </ul>
+               <li>Manuelles Öffnen (grau) und Schließen (rot) des Alarm Ausgangs-Relais über die Weboberfläche</li>
+               <li>Kameras können bei WLAN Verbindung mit einem anderen WLAN Verbunden werden</li>
+               <li>Allgemeine Bugfixes und Verbesserungen</li>
+              </ul>
             </div>
             <div class="box__footer">
               <div class="box__credit">
@@ -222,8 +270,8 @@
                    WebUI 1.11  </p>
               </div>
               <div class="box__image box-image-button">
-                <a href="/dl/IN-7011HD/IN-7011_FW_3.1.2.45_WebUI_1.11.(431)_update.zip"><button class="navGo">WLAN</button></a>
-                <a href="/dl/IN-7011HD/IN-7011-PoE_FW_3.1.2.45_WebUI_1.11.(431)_update.zip"><button class="navGo">PoE *</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
               </div>
             </div>
           </div>
@@ -231,13 +279,21 @@
         <div class="box-one">
           <div class="box__inner">
             <div class="box__content">
-             <ul>
-               <li>Push-Benachrichtigung via App</li>
-               <li>automatischer WiFi Test</li>
-               <li>neue NTP Server</li>
-               <li>zweiter E-Mail Empfänger</li>
-               <li>Zeitgesteuerte IR-LEDs</li>
-             </ul>
+              <ul>
+               <li>Push Benachrichtigungen sind absofort möglich mit der App InstarVision</li>
+               <li>ActiveX Plugin Support für Chrome und Firefox unter Windows</li>
+               <li>Neue NTP Server</li>
+               <li>Behebung von Problemen mit dem 1und1 Emailserver</li>
+               <li>Neuer INSTAR Emailserver steht zur Auswahl für den Emailversand</li>
+               <li>Ein zweiter Email Empfänger kann eingetragen werden</li>
+               <li>Zeitgesteuerte Aktivierung und Deaktivierung der IR LEDs</li>
+               <li>PTZ Begrenzung (für Kameras mit PTZ)</li>
+               <li>Alarmposition anfahren (für Kameras mit PTZ)</li>
+               <li>Akustisches Alarmsignal bei Bewegungserkennung über Kameralautsprecher bzw. Audio Ausgang</li>
+               <li>automatisierter Test bei WLAN</li>
+               <li>Automatische Prüfung der SD Karte</li>
+               <li>Verbesserungen, Bugfixes und TYPOS</li>
+              </ul>
             </div>
             <div class="box__footer">
               <div class="box__credit">
@@ -247,8 +303,8 @@
                    WebUI 1.9   </p>
               </div>
               <div class="box__image box-image-button">
-                <a href="/dl/IN-7011HD/IN-7011_FW_3.1.2.37_WebUI_1.9.(213)_update.zip"><button class="navGo">WLAN</button></a>
-                <a href="/dl/IN-7011HD/IN-7011-PoE_FW_3.1.2.37_WebUI_1.9.(213)_update.zip"><button class="navGo">PoE *</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
               </div>
             </div>
           </div>
@@ -269,8 +325,8 @@
                    WebUI 1.6   </p>
               </div>
               <div class="box__image box-image-button">
-                <a href="/dl/IN-7011HD/IN-7011_FW_3.1.2.31_WebUI_1.6.(126)_update.pkg.zip"><button class="navGo">WLAN</button></a>
-                <a href="/dl/IN-7011HD/IN-7011-PoE_FW_3.1.2.31_WebUI_1.6.(126)_update.pkg.zip"><button class="navGo">PoE *</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
               </div>
             </div>
           </div>
@@ -293,8 +349,8 @@
                    WebUI 1.5   </p>
               </div>
               <div class="box__image box-image-button">
-                <a href="/dl/IN-7011HD/IN-7011_FW_3.1.2.31_WebUI_1.5.(121)_update.zip"><button class="navGo">WLAN</button></a>
-                <a href="/dl/IN-7011HD/IN-7011-PoE_FW_3.1.2.31_WebUI_1.5.(121)_update.zip"><button class="navGo">PoE *</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
               </div>
             </div>
           </div>
@@ -318,8 +374,8 @@
                    WebUI 1.4   </p>
               </div>
               <div class="box__image box-image-button">
-                <a href="/dl/IN-7011HD/IN-7011_FW_3.1.2.30_WebUI_1.4.(104)_update.pkg.zip"><button class="navGo">WLAN</button></a>
-                <a href="/dl/IN-7011HD/IN-7011-PoE_FW_3.1.2.30_WebUI_1.4.(104)_update.pkg.zip"><button class="navGo">PoE *</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">WLAN</button></a>
+                <a href="/dl/IN-7011HD/"><button class="navGo">PoE *</button></a>
               </div>
             </div>
           </div>
