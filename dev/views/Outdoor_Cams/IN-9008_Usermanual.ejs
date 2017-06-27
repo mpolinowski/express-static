@@ -6,6 +6,7 @@
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
 </head>
 
 <body class="home">
@@ -38,20 +39,20 @@
                             </div>
                             <!-- /onecard -->
 
-                                <div class="card-container">
-                                    <div class="onecard">
-                                        <div class="image">
-                                          <a href="/Internet_Access/Port_Forwarding/">
-                                            <amp-img role="button" tabindex="0" src="/images/Usermanuals/Portforwarding_Box.png" width="900" height="650" layout="responsive"></amp-img>
-                                          </a>
-                                          <div class="action">
-                                              <p class="justify">In general we have to differentiate between two types of connections. One connection is the internal access which with we access the WebUI of the camera. This means that the computer as well as the camera are running in the same network and are most likely connected to the same router. You can then connect to the camera using the private IP address of the camera. The other connection is the external access to open the WebUI of the camera from outside your network. With this connection you can allow the access from anywhere in the world to your camera. No matter if you are sitting in the train using a smartphone or if you are on holidays using a laptop to access.</p>
-                                          </div>
-                                        </div>
+                        <div class="card-container">
+                            <div class="onecard">
+                                <div class="image">
+                                    <a href="/Outdoor_Cameras/IN-9008_HD/Point2Point">
+                                      <amp-img role="button" tabindex="0" src="/images/Usermanuals/P2P_Box_5905.psd.png" width="900" height="650" layout="responsive"></amp-img>
+                                    </a>
+                                    <div class="action">
+                                        <p>Connect your camera to your local WiFi network by just pressing the <button on="tap:reset-button" class="btn btnSmall">WPS Button</button> (WiFi Protected Setup). and access your camera over the internet by scanning the <a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">P2P QR Code</a> with our <a href="/Software/iOS/InstarVision/iPhone/P2P">iPhone</a>, <a href="/Software/iOS/InstarVision/iPad/P2P">iPad</a>, <a href="/Software/Android/InstarVision/P2P">Android</a>, <a href="/Software/Windows/InstarVision/Windows_Phone/P2P">Windows Phone</a> or <a href="/Software/Windows/InstarVision/Metro/P2P">Windows (Metro)</a> App.</p>
                                     </div>
-                                    <!-- /onecard -->
                                 </div>
-                                <!-- /card-container -->
+                            </div>
+                            <!-- /onecard -->
+                        </div>
+                        <!-- /card-container -->
 
                         <div class="card-container">
                             <div class="twocard">
@@ -109,6 +110,31 @@
                     <!-- /container -->
                 </section>
                 <!-- /blade -->
+
+                <amp-lightbox id="reset-button" layout="nodisplay">
+                  <div class="lightbox">
+                    <div class="card-container">
+                      <div class="onecard">
+                        <div class="image centered">
+                            <amp-img noloading height=596 width=632 layout=fixed src="/images/Usermanuals/IN-9008HD_Camera_Reset.png"></amp-img>
+                        </div>
+                        <div class="action">
+                          <table class="twelve columns no-highlight">
+                            <tr>
+                              <td>
+                                <h3 class="inlineHeader">Drücken Sie 3s für WPS oder 15s für Werksreset&nbsp;&nbsp;&nbsp;</h3>
+                              </td>
+                              <td class="align-right">
+                                <button class="navGo navGoRed" on="tap:reset-button.close">Schließen</button>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </amp-lightbox>
+
             </div>
             <!-- /container main -->
         </div>
