@@ -2592,8 +2592,13 @@ section.blade.blog .tab-container .tab .subtitle {
     width: 97%
 }
 
-.dangercard p {
+.dangercard p, .dangercard h4 {
     color: #fff
+}
+
+.dangercard a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .code {

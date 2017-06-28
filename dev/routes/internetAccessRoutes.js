@@ -84,6 +84,33 @@ internetAccessRouter.get('/The_DDNS_Service/', function(req, res) {
       });
   });
 
+internetAccessRouter.get('/The_DDNS_Service/Test_DDNS_Address/', function(req, res) {
+    res.render('./Internet_Access/Test_DDNS_Address', {
+        title: 'Test DDNS Address',
+        ampimg: '/images/Search/IA_SearchThumb_DDNSService.jpg',
+        headline: 'Test your cameras Internet Address',
+        breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/The_DDNS_Service/">The DDNS Service</a></li><li><a href="/Internet_Access/The_DDNS_Service/Test_DDNS_Address/">Test DDNS Address</a></li>',
+        canonical: '/Internet_Access/The_DDNS_Service/Test_DDNS_Address/',
+    		pacc: '',
+    		ptab: 'hidden',
+    		qiacc: '',
+    		qitab: 'hidden',
+    		mdacc: '',
+    		mdtab: 'hidden',
+    		iaacc: 'expanded',
+    		iatab: '',
+    		auacc: '',
+    		autab: 'hidden',
+    		hdacc: 'hidden',
+    		hdtab: 'hidden',
+    		fhdacc: 'hidden',
+    		fhdtab: 'hidden',
+    		sacc: 'hidden',
+    		dlacc: 'hidden',
+    		dltab: 'hidden',
+      });
+  });
+
 internetAccessRouter.get('/Port_Forwarding/', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding', {
         title: 'Port Forwarding',
