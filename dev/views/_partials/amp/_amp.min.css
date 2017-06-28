@@ -2881,6 +2881,11 @@ amp-accordion section {
     padding: 5px 5px 5px 5px
 }
 
+amp-accordion section header:first-child {
+  background-color: transparent;
+  border: none;
+}
+
 amp-accordion section:last-child {
     border-bottom: 0
 }
