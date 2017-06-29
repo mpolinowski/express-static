@@ -2508,6 +2508,11 @@ section.blade.blog .tab-container .tab .subtitle {
     flex: none
 }
 
+.carousel-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+
 .lightbox {
     text-align: center
 }
