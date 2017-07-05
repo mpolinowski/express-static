@@ -4,714 +4,3686 @@ var cgi1080pRouter = express.Router();
 cgi1080pRouter.get('/', function(req, res) {
   res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_List', {
       title: '1080p Series CGI List',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li>',
+      canonical: '/1080p_Series_CGI_List/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
-cgi1080pRouter.get('/Software_Menu', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_Series_CGI_Software', {
+// System Menu ####################################################################################
+
+cgi1080pRouter.get('/System_Menu/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System', {
       title: '1080p Software CGIs',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Software_Menu/">Software Menu</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li>',
+      canonical: '/1080p_Series_CGI_List/System_Menu/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
-cgi1080pRouter.get('/Network_Menu', function(req, res) {
-  res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Network.ejs', {
+cgi1080pRouter.get('/System_Menu/Date_Time/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Date', {
+      title: '1080p Software CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/Date_Time">Date and Time</a></li>',
+      canonical: '/1080p_Series_CGI_List/System_Menu/Date_Time/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/System_Menu/Language/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Language', {
+      title: '1080p Software CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/Language">Language</a></li>',
+      canonical: '/1080p_Series_CGI_List/System_Menu/Language/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/System_Menu/System_Log/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Log', {
+      title: '1080p Software CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/System_Log">System Log</a></li>',
+      canonical: '/1080p_Series_CGI_List/System_Menu/System_Log/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/System_Menu/Overview/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Overview', {
+      title: '1080p Software CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/Overview">Overview</a></li>',
+      canonical: '/1080p_Series_CGI_List/System_Menu/Overview/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/System_Menu/Reboot/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Reboot', {
+      title: '1080p Software CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/Reboot">Reboot</a></li>',
+      canonical: '/1080p_Series_CGI_List/System_Menu/Reboot/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/System_Menu/Reset/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Reset', {
+      title: '1080p Software CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/Reset">Reset</a></li>',
+      canonical: '/1080p_Series_CGI_List/System_Menu/Reset/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/System_Menu/PTZ-Tour/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Tour', {
+      title: '1080p Software CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/PTZ-Tour">PTZ Tour</a></li>',
+      canonical: '/1080p_Series_CGI_List/System_Menu/PTZ-Tour/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/System_Menu/Update/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Update', {
+      title: '1080p Software CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/Update">Update</a></li>',
+      canonical: '/1080p_Series_CGI_List/System_Menu/Update/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/System_Menu/User/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_User', {
+      title: '1080p Software CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/User">User</a></li>',
+      canonical: '/1080p_Series_CGI_List/System_Menu/User/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+// Network Menu ####################################################################################
+
+cgi1080pRouter.get('/Network_Menu/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Network', {
       title: '1080p Network CGIs',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Network_Menu/">Network Menu</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/">Network Menu</a></li>',
+      canonical: '/1080p_Series_CGI_List/Network_Menu/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
-cgi1080pRouter.get('/System_Menu', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_Series_CGI_System', {
+cgi1080pRouter.get('/Network_Menu/IP_Configuration/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Network_IP', {
+      title: '1080p Network CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/">Network Menu</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/IP_Configuration/">IP Configuration</a></li>',
+      canonical: '/1080p_Series_CGI_List/Network_Menu/IP_Configuration/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Network_Menu/ONVIF/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Network_ONVIF', {
+      title: '1080p Network CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/">Network Menu</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/ONVIF/">ONVIF</a></li>',
+      canonical: '/1080p_Series_CGI_List/Network_Menu/ONVIF/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Network_Menu/Remote_Access/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Network_Remote', {
+      title: '1080p Network CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/">Network Menu</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/Remote_Access/">Remote Access</a></li>',
+      canonical: '/1080p_Series_CGI_List/Network_Menu/Remote_Access/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Network_Menu/UPnP/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Network_UPnP', {
+      title: '1080p Network CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/">Network Menu</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/UPnP/">UPnP</a></li>',
+      canonical: '/1080p_Series_CGI_List/Network_Menu/UPnP/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Network_Menu/WiFi/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Network_WiFi', {
+      title: '1080p Network CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/">Network Menu</a></li><li><a href="/1080p_Series_CGI_List/Network_Menu/WiFi/">WiFi</a></li>',
+      canonical: '/1080p_Series_CGI_List/Network_Menu/WiFi/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+// Features Menu ####################################################################################
+
+cgi1080pRouter.get('/Features_Menu/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Features', {
       title: '1080p System CGIs',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li>',
+      canonical: '/1080p_Series_CGI_List/Features_Menu/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
-cgi1080pRouter.get('/Multimedia_Menu', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_Series_CGI_Multimedia', {
+cgi1080pRouter.get('/Features_Menu/Email/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Features_Email', {
+      title: '1080p System CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/Email/">Email</a></li>',
+      canonical: '/1080p_Series_CGI_List/Features_Menu/Email/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Features_Menu/FTP/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Features_FTP', {
+      title: '1080p System CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/FTP/">FTP</a></li>',
+      canonical: '/1080p_Series_CGI_List/Features_Menu/FTP/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Features_Menu/IR_Nightvision/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Features_IR', {
+      title: '1080p System CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/IR_Nightvision/">IR LEDs</a></li>',
+      canonical: '/1080p_Series_CGI_List/Features_Menu/IR_Nightvision/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Features_Menu/PTZ/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Features_PTZ', {
+      title: '1080p System CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/PTZ/">PTZ</a></li>',
+      canonical: '/1080p_Series_CGI_List/Features_Menu/PTZ/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Features_Menu/PTZ-Tour/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Features_PTZ-Tour', {
+      title: '1080p System CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/PTZ-Tour/">PTZ Tour</a></li>',
+      canonical: '/1080p_Series_CGI_List/Features_Menu/PTZ-Tour/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Features_Menu/Manual_Recording/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Features_Recording', {
+      title: '1080p System CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/Manual_Recording/">Manual_Recording</a></li>',
+      canonical: '/1080p_Series_CGI_List/Features_Menu/Manual_Recording/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Features_Menu/SD_Card/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Features_SD', {
+      title: '1080p System CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/SD_Card/">SD_Card</a></li>',
+      canonical: '/1080p_Series_CGI_List/Features_Menu/SD_Card/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Features_Menu/Status_LEDs/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Features_Status', {
+      title: '1080p System CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/Status_LEDs/">Status_LEDs</a></li>',
+      canonical: '/1080p_Series_CGI_List/Features_Menu/Status_LEDs/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+// Multimedia Menu ####################################################################################
+
+cgi1080pRouter.get('/Multimedia_Menu/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Multimedia', {
       title: '1080p Multimedia CGIs',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Multimedia_Menu/">Multimedia Menu</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/">Multimedia Menu</a></li>',
+      canonical: '/1080p_Series_CGI_List/Multimedia_Menu/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
-cgi1080pRouter.get('/Alarm_Menu', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_Series_CGI_Alarm', {
-      title: '1080p Alarm CGIs',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Alarm_Menu/">Alarm Menu</a></li>',
+cgi1080pRouter.get('/Multimedia_Menu/Audio/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Multimedia_Audio', {
+      title: '1080p Multimedia CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/">Multimedia Menu</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/Audio/">Audio</a></li>',
+      canonical: '/1080p_Series_CGI_List/Multimedia_Menu/Audio/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
+
+cgi1080pRouter.get('/Multimedia_Menu/Image/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Multimedia_Image', {
+      title: '1080p Multimedia CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/">Multimedia Menu</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/Image/">Image</a></li>',
+      canonical: '/1080p_Series_CGI_List/Multimedia_Menu/Image/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Multimedia_Menu/Overlays/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Multimedia_Overlays', {
+      title: '1080p Multimedia CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/">Multimedia Menu</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/Overlays/">Overlays</a></li>',
+      canonical: '/1080p_Series_CGI_List/Multimedia_Menu/Overlays/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Multimedia_Menu/Privacy_Mask/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Multimedia_Privacy', {
+      title: '1080p Multimedia CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/">Multimedia Menu</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/Privacy_Mask/">Privacy_Mask</a></li>',
+      canonical: '/1080p_Series_CGI_List/Multimedia_Menu/Privacy_Mask/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Multimedia_Menu/Video/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Multimedia_Video', {
+      title: '1080p Multimedia CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/">Multimedia Menu</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/Video/">Video</a></li>',
+      canonical: '/1080p_Series_CGI_List/Multimedia_Menu/Video/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+// Alarm Menu ####################################################################################
+
+cgi1080pRouter.get('/Alarm_Menu/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Alarm', {
+      title: '1080p Alarm CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/">Alarm Menu</a></li>',
+      canonical: '/1080p_Series_CGI_List/Alarm_Menu/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Alarm_Menu/Actions/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Alarm_Actions', {
+      title: '1080p Alarm CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/">Alarm Menu</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/Actions/">Actions</a></li>',
+      canonical: '/1080p_Series_CGI_List/Alarm_Menu/Actions/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Alarm_Menu/Areas/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Alarm_Areas', {
+      title: '1080p Alarm CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/">Alarm Menu</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/Areas/">Areas</a></li>',
+      canonical: '/1080p_Series_CGI_List/Alarm_Menu/Areas/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Alarm_Menu/Push_Service/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Alarm_Push', {
+      title: '1080p Alarm CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/">Alarm Menu</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/Push_Service/">Push Service</a></li>',
+      canonical: '/1080p_Series_CGI_List/Alarm_Menu/Push_Service/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Alarm_Menu/Schedule/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Alarm_Schedule', {
+      title: '1080p Alarm CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/">Alarm Menu</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/Schedule/">Schedule</a></li>',
+      canonical: '/1080p_Series_CGI_List/Alarm_Menu/Schedule/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Alarm_Menu/Alarm_Server/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Alarm_Server', {
+      title: '1080p Alarm CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/">Alarm Menu</a></li><li><a href="/1080p_Series_CGI_List/Alarm_Menu/Alarm_Server/">Alarm Server</a></li>',
+      canonical: '/1080p_Series_CGI_List/Alarm_Menu/Alarm_Server/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+// Recording Menu ####################################################################################
 
 cgi1080pRouter.get('/Recording_Menu', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_Series_CGI_Recording', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Recording', {
       title: '1080p Recording CGIs',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Recording_Menu/">Recording Menu</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Recording_Menu/">Recording Menu</a></li>',
+      canonical: '/1080p_Series_CGI_List/Recording_Menu/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
+cgi1080pRouter.get('/Recording_Menu/Photoseries/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Recording_Photoseries', {
+      title: '1080p Recording CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Recording_Menu/">Recording Menu</a></li><li><a href="/1080p_Series_CGI_List/Recording_Menu/Photoseries/">Photoseries</a></li>',
+      canonical: '/1080p_Series_CGI_List/Recording_Menu/Photoseries/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+cgi1080pRouter.get('/Recording_Menu/Video/', function(req, res) {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_Recording_Video', {
+      title: '1080p Recording CGIs',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Recording_Menu/">Recording Menu</a></li><li><a href="/1080p_Series_CGI_List/Recording_Menu/Video/">Video</a></li>',
+      canonical: '/1080p_Series_CGI_List/Recording_Menu/Video/',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+// Complete CGI List ####################################################################################
+
 cgi1080pRouter.get('/Complete_CGI_List', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_Complete_CGI_List', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Complete_CGI_List', {
       title: '1080p Series Complete CGI List',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Video_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getvideoattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getvideoattr', {
       title: '1080p cmd=getvideoattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Video_Attribute/">Get Video Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Video_Attribute/">Get Video Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Video_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Video_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setvideoattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setvideoattr', {
       title: '1080p cmd=setvideoattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Video_Attribute/">Set Video Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Video_Attribute/">Set Video Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Video_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Video_Encoder_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getvencattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getvencattr', {
       title: '1080p cmd=getvencattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Video_Encoder_Attribute/">Get Video Encoder Attributee</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Video_Encoder_Attribute/">Get Video Encoder Attributee</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Video_Encoder_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Video_Encoder_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setvencattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setvencattr', {
       title: '1080p cmd=setvencattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Video_Encoder_Attribute/">Set Video Encoder Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Video_Encoder_Attribute/">Set Video Encoder Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Video_Encoder_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Image_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getimageattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getimageattr', {
       title: '1080p cmd=getimageattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Image_Attribute/">Get Image Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Image_Attribute/">Get Image Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Image_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Image_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setimageattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setimageattr', {
       title: '1080p cmd=setimageattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Image_Attribute/">Set Image Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Image_Attribute/">Set Image Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Image_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Overlay_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getoverlayattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getoverlayattr', {
       title: '1080p cmd=getoverlayattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Overlay_Attribute/">Get Overlay Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Overlay_Attribute/">Get Overlay Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Overlay_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Overlay_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setoverlayattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setoverlayattr', {
       title: '1080p cmd=setoverlayattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Overlay_Attribute/">Set Overlay Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Overlay_Attribute/">Set Overlay Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Overlay_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Mobile_Image_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getmobilesnapattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getmobilesnapattr', {
       title: '1080p cmd=getmobilesnapattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Mobile_Image_Attribute/">Get Mobile Image Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Mobile_Image_Attribute/">Get Mobile Image Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Mobile_Image_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Mobile_Image_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setmobilesnapattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setmobilesnapattr', {
       title: '1080p cmd=setmobilesnapattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Mobile_Image_Attribute/">Set Mobile Image Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Mobile_Image_Attribute/">Set Mobile Image Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Mobile_Image_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Audio_Encoder_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getaencattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getaencattr', {
       title: '1080p cmd=getaencattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Audio_Encoder_Attribute/">Get Audio Encoder Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Audio_Encoder_Attribute/">Get Audio Encoder Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Audio_Encoder_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Audio_Encoder_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setaencattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setaencattr', {
       title: '1080p cmd=setaencattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Audio_Encoder_Attribute/">Set Audio Encoder Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Audio_Encoder_Attribute/">Set Audio Encoder Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Audio_Encoder_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Audio-In_Volume_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getaudioinvolume', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getaudioinvolume', {
       title: '1080p cmd=getaudioinvolume',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Audio-In_Volume_Attribute/">Get Audio-In Volume Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Audio-In_Volume_Attribute/">Get Audio-In Volume Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Audio-In_Volume_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Audio-In_Volume_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setaudioinvolume', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setaudioinvolume', {
       title: '1080p cmd=setaudioinvolume',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Audio-In_Volume_Attribute/">Set Audio-In Volume Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Audio-In_Volume_Attribute/">Set Audio-In Volume Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Audio-In_Volume_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Audio-Out_Volume_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getaudiooutvolume', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getaudiooutvolume', {
       title: '1080p cmd=getaudiooutvolume',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Audio-Out_Volume_Attribute/">Get Audio-Out Volume Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Audio-Out_Volume_Attribute/">Get Audio-Out Volume Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Audio-Out_Volume_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Audio-Out_Volume_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setaudiooutvolume', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setaudiooutvolume', {
       title: '1080p cmd=setaudiooutvolume',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Audio-Out_Volume_Attribute/">Set Audio-Out Volume Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Audio-Out_Volume_Attribute/">Set Audio-Out Volume Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Audio-Out_Volume_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Request_Keyframe', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=requestifrm', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=requestifrm', {
       title: '1080p cmd=requestifrm',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Request_Keyframe/">Request Keyframe</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Request_Keyframe/">Request Keyframe</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Request_Keyframe',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Infrared_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getinfrared', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getinfrared', {
       title: '1080p cmd=getinfrared',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Infrared_Attribute/">Get_Infrared_Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Infrared_Attribute/">Get_Infrared_Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Infrared_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Infrared_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setinfrared', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setinfrared', {
       title: '1080p cmd=setinfrared',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Infrared_Attribute/">Set Infrared Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Infrared_Attribute/">Set Infrared Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Infrared_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Network_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getnetattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getnetattr', {
       title: '1080p cmd=getnetattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Network_Attribute/">Get Network Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Network_Attribute/">Get Network Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Network_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Network_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setnetattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setnetattr', {
       title: '1080p cmd=setnetattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Network_Attribute/">Set Network Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Network_Attribute/">Set Network Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Network_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_HTTP_Port', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=gethttpport', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=gethttpport', {
       title: '1080p cmd=gethttpport',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_HTTP_Port/">Get HTTP Port</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_HTTP_Port/">Get HTTP Port</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_HTTP_Port',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_HTTP_Port', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=sethttpport', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=sethttpport', {
       title: '1080p cmd=sethttpport',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_HTTP_Port/">Set HTTP Port</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_HTTP_Port/">Set HTTP Port</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_HTTP_Port',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_RTSP_Port', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getrtspport', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getrtspport', {
       title: '1080p cmd=getrtspport',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_RTSP_Port/">Get RTSP Port</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_RTSP_Port/">Get RTSP Port</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_RTSP_Port',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_RTSP_Port', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setrtspport', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setrtspport', {
       title: '1080p cmd=setrtspport',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_RTSP_Port/">Set RTSP Port</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_RTSP_Port/">Set RTSP Port</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_RTSP_Port',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Internet_IP', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getinterip', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getinterip', {
       title: '1080p cmd=getinterip',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Internet_IP/">Get Internet IP</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Internet_IP/">Get Internet IP</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Internet_IP',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_UPnP_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getupnpattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getupnpattr', {
       title: '1080p cmd=getupnpattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_UPnP_Attribute/">Get UPnP Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_UPnP_Attribute/">Get UPnP Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_UPnP_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_UPnP_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setupnpattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setupnpattr', {
       title: '1080p cmd=setupnpattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_UPnP_Attribute/">Set UPnP Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_UPnP_Attribute/">Set UPnP Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_UPnP_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_ONVIF_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getonvifattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getonvifattr', {
       title: '1080p cmd=getonvifattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_ONVIF_Attribute/">Get ONVIF Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_ONVIF_Attribute/">Get ONVIF Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_ONVIF_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_ONVIF_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setonvifattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setonvifattr', {
       title: '1080p cmd=setonvifattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_ONVIF_Attribute/">Set ONVIF Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_ONVIF_Attribute/">Set ONVIF Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_ONVIF_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Wireless_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getwirelessattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getwirelessattr', {
       title: '1080p cmd=getwirelessattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Wireless_Attribute/">Get Wireless Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Wireless_Attribute/">Get Wireless Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Wireless_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Wireless_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setwirelessattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setwirelessattr', {
       title: '1080p cmd=setwirelessattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Wireless_Attribute/">Set Wireless Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Wireless_Attribute/">Set Wireless Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Wireless_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Search_Wireless', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=searchwireless', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=searchwireless', {
       title: '1080p cmd=searchwireless',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Search_Wireless/">Search Wireless</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Search_Wireless/">Search Wireless</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Search_Wireless',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Check_Wireless_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=chkwirelessattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=chkwirelessattr', {
       title: '1080p cmd=chkwirelessattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Check_Wireless_Attribute/">Check Wireless Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Check_Wireless_Attribute/">Check Wireless Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Check_Wireless_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Check_Wireless_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getchkwireless', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getchkwireless', {
       title: '1080p cmd=getchkwireless',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Check_Wireless_Attribute/">Get Check Wireless Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Check_Wireless_Attribute/">Get Check Wireless Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Check_Wireless_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Thirdparty_DDNS_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=get3thddnsattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=get3thddnsattr', {
       title: '1080p cmd=get3thddnsattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Thirdparty_DDNS_Attribute/">Get Thirdparty DDNS Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Thirdparty_DDNS_Attribute/">Get Thirdparty DDNS Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Thirdparty_DDNS_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Thirdparty_DDNS_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=set3thddnsattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=set3thddnsattr', {
       title: '1080p cmd=set3thddnsattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Thirdparty_DDNS_Attribute/">Set Thirdparty DDNS Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Thirdparty_DDNS_Attribute/">Set Thirdparty DDNS Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Thirdparty_DDNS_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/PTZ_Control', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=ptzctrl', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=ptzctrl', {
       title: '1080p cmd=ptzctrl',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Control/">PTZ Control</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Control/">PTZ Control</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Control',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/PTZ_Preset', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=preset', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=preset', {
       title: '1080p cmd=preset',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Preset/">PTZ Preset</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Preset/">PTZ Preset</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Preset',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/PTZ_Move_Up', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=ptzup', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=ptzup', {
       title: '1080p cmd=ptzup',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Up/">PTZ Move Up</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Up/">PTZ Move Up</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Up',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/PTZ_Move_Down', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=ptzdown', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=ptzdown', {
       title: '1080p cmd=ptzdown',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Down/">PTZ Move Down</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Down/">PTZ Move Down</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Down',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/PTZ_Move_Left', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=ptzleft', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=ptzleft', {
       title: '1080p cmd=ptzleft',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Left/">PTZ Move Left</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Left/">PTZ Move Left</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Left',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/PTZ_Move_Right', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=ptzright', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=ptzright', {
       title: '1080p cmd=ptzright',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Right/">PTZ Move Right</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Right/">PTZ Move Right</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Move_Right',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/PTZ_Zoom_In', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=ptzzoomin', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=ptzzoomin', {
       title: '1080p cmd=ptzzoomin',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Zoom_In/">PTZ Zoom In</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Zoom_In/">PTZ Zoom In</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Zoom_In',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/PTZ_Zoom_Out', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=ptzzoomout', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=ptzzoomout', {
       title: '1080p cmd=ptzzoomout',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Zoom_Out/">PTZ Zoom Out</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Zoom_Out/">PTZ Zoom Out</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/PTZ_Zoom_Out',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Motion_Detection_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getmdattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getmdattr', {
       title: '1080p cmd=getmdattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Motion_Detection_Attribute/">Get Motion Detection Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Motion_Detection_Attribute/">Get Motion Detection Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Motion_Detection_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Motion_Detection_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setmdattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setmdattr', {
       title: '1080p cmd=setmdattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Motion_Detection_Attribute/">Set Motion Detection Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Motion_Detection_Attribute/">Set Motion Detection Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Motion_Detection_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Alarm_Input_Output_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getioattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getioattr', {
       title: '1080p cmd=getioattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Input_Output_Attribute/">Get Alarm Input Output Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Input_Output_Attribute/">Get Alarm Input Output Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Input_Output_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Alarm_Input_Output_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setioattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setioattr', {
       title: '1080p cmd=setioattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Input_Output_Attribute/">Set Alarm Input Output Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Input_Output_Attribute/">Set Alarm Input Output Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Input_Output_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Motion_Detection_Alarm_Status', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getmdalarm', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getmdalarm', {
       title: '1080p cmd=getmdalarm',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Motion_Detection_Alarm_Status/">Get Motion Detection Alarm Status</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Motion_Detection_Alarm_Status/">Get Motion Detection Alarm Status</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Motion_Detection_Alarm_Status',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Motion_Detection_Alarm_Status', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setmdalarm', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setmdalarm', {
       title: '1080p cmd=setmdalarm',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Motion_Detection_Alarm_Status/">Set Motion Detection Alarm Status</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Motion_Detection_Alarm_Status/">Set Motion Detection Alarm Status</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Motion_Detection_Alarm_Status',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Alarm_Relay_Delay_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getrelayattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getrelayattr', {
       title: '1080p cmd=getrelayattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Relay_Delay_Attribute/">Get Alarm Relay Delay Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Relay_Delay_Attribute/">Get Alarm Relay Delay Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Relay_Delay_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Alarm_Relay_Delay_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setrelayattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setrelayattr', {
       title: '1080p cmd=setrelayattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Relay_Delay_Attribute/">Set Alarm Relay Delay Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Relay_Delay_Attribute/">Set Alarm Relay Delay Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Relay_Delay_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Alarm_Snap_Quantity_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getalarmsnapattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getalarmsnapattr', {
       title: '1080p cmd=getalarmsnapattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Snap_Quantity_Attribute/">Get Alarm Snap Quantity Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Snap_Quantity_Attribute/">Get Alarm Snap Quantity Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Snap_Quantity_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Alarm_Snap_Quantity_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setalarmsnapattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setalarmsnapattr', {
       title: '1080p cmd=setalarmsnapattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Snap_Quantity_Attribute/">Set Alarm Snap Quantity Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Snap_Quantity_Attribute/">Set Alarm Snap Quantity Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Snap_Quantity_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Alarm_And_Planned_Recording_Schedule', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getscheduleex', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getscheduleex', {
       title: '1080p cmd=getscheduleex',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_And_Planned_Recording_Schedule/">Get Alarm And Planned Recording Schedule</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_And_Planned_Recording_Schedule/">Get Alarm And Planned Recording Schedule</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_And_Planned_Recording_Schedule',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Alarm_And_Planned_Recording_Schedule', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setscheduleex', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setscheduleex', {
       title: '1080p cmd=setscheduleex',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_And_Planned_Recording_Schedule/">Set Alarm And Planned Recording Schedule</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_And_Planned_Recording_Schedule/">Set Alarm And Planned Recording Schedule</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_And_Planned_Recording_Schedule',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Planned_Recording_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getplanrecattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getplanrecattr', {
       title: '1080p cmd=getplanrecattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Planned_Recording_Attribute/">Get Planned Recording Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Planned_Recording_Attribute/">Get Planned Recording Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Planned_Recording_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Planned_Recording_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setplanrecattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setplanrecattr', {
       title: '1080p cmd=setplanrecattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Planned_Recording_Attribute/">Set Planned Recording Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Planned_Recording_Attribute/">Set Planned Recording Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Planned_Recording_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Alarm_Server_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getalarmserverattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getalarmserverattr', {
       title: '1080p cmd=getalarmserverattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Server_Attribute/">Get Alarm Server Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Server_Attribute/">Get Alarm Server Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Alarm_Server_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Alarm_Server_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setalarmserverattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setalarmserverattr', {
       title: '1080p cmd=setalarmserverattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Server_Attribute/">Set Alarm Server Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Server_Attribute/">Set Alarm Server Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Alarm_Server_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_User_Attributes', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getuserattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getuserattr', {
       title: '1080p cmd=getuserattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_User_Attributes/">Get User Attributes</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_User_Attributes/">Get User Attributes</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_User_Attributes',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_User_Attributes', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setuserattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setuserattr', {
       title: '1080p cmd=setuserattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_User_Attributes/">Set User Attributes</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_User_Attributes/">Set User Attributes</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_User_Attributes',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Active_User_Info', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getuserinfo', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getuserinfo', {
       title: '1080p cmd=getuserinfo',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Active_User_Info/">Get Active User Info</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Active_User_Info/">Get Active User Info</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Active_User_Info',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Snapshot_Attributes', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getsnaptimerattrex', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getsnaptimerattrex', {
       title: '1080p cmd=getsnaptimerattrex',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Snapshot_Attributes/">Get Snapshot Attributes</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Snapshot_Attributes/">Get Snapshot Attributes</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Snapshot_Attributes',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Snapshot_Attributes', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setsnaptimerattrex', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setsnaptimerattrex', {
       title: '1080p cmd=setsnaptimerattrex',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Snapshot_Attributes/">Set Snapshot Attributes</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Snapshot_Attributes/">Set Snapshot Attributes</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Snapshot_Attributes',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_FTP_Attributes', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getftpattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getftpattr', {
       title: '1080p cmd=getftpattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_FTP_Attributes/">Get FTP Attributes</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_FTP_Attributes/">Get FTP Attributes</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_FTP_Attributes',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_FTP_Attributes', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setftpattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setftpattr', {
       title: '1080p cmd=setftpattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_FTP_Attributes/">Set FTP Attributes</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_FTP_Attributes/">Set FTP Attributes</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_FTP_Attributes',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Test_FTP', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=testftp', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=testftp', {
       title: '1080p cmd=testftp',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Test_FTP/">Test FTP</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Test_FTP/">Test FTP</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Test_FTP',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_SMTP_Attributes', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getsmtpattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getsmtpattr', {
       title: '1080p cmd=getsmtpattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_SMTP_Attributes/">Get SMTP Attributes</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_SMTP_Attributes/">Get SMTP Attributes</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_SMTP_Attributes',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_SMTP_Attributes', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setsmtpattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setsmtpattr', {
       title: '1080p cmd=setsmtpattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_SMTP_Attributes/">Set SMTP Attributes</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_SMTP_Attributes/">Set SMTP Attributes</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_SMTP_Attributes',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Test_SMTP', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=testsmtp', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=testsmtp', {
       title: '1080p cmd=testsmtp',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Test_SMTP/">Test SMTP</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Test_SMTP/">Test SMTP</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Test_SMTP',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Format_SD_Card', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=sdfrmt', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=sdfrmt', {
       title: '1080p cmd=sdfrmt',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Format_SD_Card/">Format SD Card</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Format_SD_Card/">Format SD Card</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Format_SD_Card',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Unmount_SD_Card', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=sdstop', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=sdstop', {
       title: '1080p cmd=sdstop',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Unmount_SD_Card/">Unmount SD Card</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Unmount_SD_Card/">Unmount SD Card</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Unmount_SD_Card',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Device_Info', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getserverinfo', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getserverinfo', {
       title: '1080p cmd=getserverinfo',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Device_Info/">Get Device Info</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Device_Info/">Get Device Info</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Device_Info',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Device_Type', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getdevtype', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getdevtype', {
       title: '1080p cmd=getdevtype',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Device_Type/">Get Device Type</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Device_Type/">Get Device Type</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Device_Type',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Streaming_User_Number', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getstreamnum', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getstreamnum', {
       title: '1080p cmd=getstreamnum',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Streaming_User_Number/">Get Streaming User Number</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Streaming_User_Number/">Get Streaming User Number</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Streaming_User_Number',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Server_Time', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getservertime', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getservertime', {
       title: '1080p cmd=getservertime',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Server_Time/">Get Server Time</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Server_Time/">Get Server Time</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Server_Time',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Server_Time', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setservertime', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setservertime', {
       title: '1080p cmd=setservertime',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Server_Time/">Set Server Time</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Server_Time/">Set Server Time</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Server_Time',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_NTP_Server_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getntpattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getntpattr', {
       title: '1080p cmd=getntpattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_NTP_Server_Attribute/">Get NTP Server Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_NTP_Server_Attribute/">Get NTP Server Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_NTP_Server_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_NTP_Server_Attribute', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setntpattr', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setntpattr', {
       title: '1080p cmd=setntpattr',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_NTP_Server_Attribute/">Set NTP Server Attribute</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_NTP_Server_Attribute/">Set NTP Server Attribute</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_NTP_Server_Attribute',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Multi-Device_Parameter', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=getdevices', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=getdevices', {
       title: '1080p cmd=getdevices',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Multi-Device_Parameter/">Get Multi-Device Parameter</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Multi-Device_Parameter/">Get Multi-Device Parameter</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Multi-Device_Parameter',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Multi-Device_Parameter', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=setdevices', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=setdevices', {
       title: '1080p cmd=setdevices',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Multi-Device_Parameter/">Set Multi-Device Parameter</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Multi-Device_Parameter/">Set Multi-Device Parameter</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Multi-Device_Parameter',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/MJPEG_Videostream', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_mjpegstream', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_mjpegstream', {
       title: '1080p mjpegstream',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/MJPEG_Videostream/">MJPEG Videostream</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/MJPEG_Videostream/">MJPEG Videostream</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/MJPEG_Videostream',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Snapshot_Size', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=snapimage', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=snapimage', {
       title: '1080p cmd=snapimage',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Snapshot_Size/">Set Snapshot Size</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Snapshot_Size/">Set Snapshot Size</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Snapshot_Size',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/System_Reset', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_Sysreset', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Sysreset', {
       title: '1080p Sysreset',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/System_Reset/">System Reset</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/System_Reset/">System Reset</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/System_Reset',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/System_Reboot', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_Sysreboot', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_Sysreboot', {
       title: '1080p Sysreboot',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/System_Reboot/">System Reboot</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/System_Reboot/">System Reboot</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/System_Reboot',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/System_Backup', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_backup', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_backup', {
       title: '1080p backup',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/System_Backup/">System Backup</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/System_Backup/">System Backup</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/System_Backup',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/System_Restore', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_restore', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_restore', {
       title: '1080p restore',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/System_Restore/">System Restore</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/System_Restore/">System Restore</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/System_Restore',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/System_Upgrade', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_upgrade', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_upgrade', {
       title: '1080p upgrade',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/System_Upgrade/">System Upgrade</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/System_Upgrade/">System Upgrade</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/System_Upgrade',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Admin_Variables', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=get_instar_admin', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=get_instar_admin', {
       title: '1080p cmd=get_instar_admin',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Admin_Variables/">Get Admin Variables</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Admin_Variables/">Get Admin Variables</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Admin_Variables',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Set_Admin_Variables', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=set_instar_admin', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=set_instar_admin', {
       title: '1080p cmd=set_instar_admin',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Admin_Variables/">Set Admin Variables</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Set_Admin_Variables/">Set Admin Variables</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Set_Admin_Variables',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Get_Login_Data', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=logsync', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=logsync', {
       title: '1080p cmd=logsync',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Login_Data/">Get Login Data</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Get_Login_Data/">Get Login Data</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Get_Login_Data',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
 cgi1080pRouter.get('/Complete_CGI_List/Clear_Login_Data', function(req, res) {
-  res.render('./Web_User_Interface/1080p/1080p_cmd=cleanlog', {
+  res.render('./Advanced_User/1080p_CGIs/1080p_cmd=cleanlog', {
       title: '1080p cmd=cleanlog',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Advanced_User/">Advanced User</a></li><li class="breadcrumb-item"><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li class="breadcrumb-item"><a href="/1080p_Series_CGI_List/Complete_CGI_List/Clear_Login_Data/">Clear Login Data</a></li>',
+      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
+      headline: 'For Developer',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/">Complete CGI List</a></li><li><a href="/1080p_Series_CGI_List/Complete_CGI_List/Clear_Login_Data/">Clear Login Data</a></li>',
+      canonical: '/1080p_Series_CGI_List/Complete_CGI_List/Clear_Login_Data',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: 'expanded',
+      autab: '',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: 'hidden',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
