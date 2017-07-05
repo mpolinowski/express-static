@@ -219,33 +219,6 @@ cgi1080pRouter.get('/System_Menu/Reset/', function(req, res) {
     });
 });
 
-cgi1080pRouter.get('/System_Menu/PTZ-Tour/', function(req, res) {
-  res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Tour', {
-      title: '1080p Software CGIs',
-      ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
-      headline: 'For Developer',
-      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/">System Menu</a></li><li><a href="/1080p_Series_CGI_List/System_Menu/PTZ-Tour">PTZ Tour</a></li>',
-      canonical: '/1080p_Series_CGI_List/System_Menu/PTZ-Tour/',
-      pacc: '',
-      ptab: 'hidden',
-      qiacc: '',
-      qitab: 'hidden',
-      mdacc: '',
-      mdtab: 'hidden',
-      iaacc: '',
-      iatab: 'hidden',
-      auacc: 'expanded',
-      autab: '',
-      hdacc: 'hidden',
-      hdtab: 'hidden',
-      fhdacc: 'hidden',
-      fhdtab: 'hidden',
-      sacc: 'hidden',
-      dlacc: 'hidden',
-      dltab: 'hidden',
-    });
-});
-
 cgi1080pRouter.get('/System_Menu/Update/', function(req, res) {
   res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Update', {
       title: '1080p Software CGIs',
