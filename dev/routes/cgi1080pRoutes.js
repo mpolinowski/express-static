@@ -55,7 +55,7 @@ cgi1080pRouter.get('/System_Menu/', function(req, res) {
       dlacc: 'hidden',
       dltab: 'hidden',
     });
-});
+}); 
 
 cgi1080pRouter.get('/System_Menu/Date_Time/', function(req, res) {
   res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Date', {
