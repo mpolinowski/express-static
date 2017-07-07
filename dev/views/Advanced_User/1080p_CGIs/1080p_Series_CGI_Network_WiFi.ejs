@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+    <head>
+        <% include ../../_partials/amp/_amp-head.ejs %>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    </head>
+
+    <body class="home">
+
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
+
+      <header class="header fixed">
+        <% include ../../_partials/amp/_amp-header.ejs %>
+      </header>
+
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../../_partials/content/_bluenav-general.ejs %>
+
+                <section class="blade wrapper content">
+                    <!-- section -->
+
+                <div>
+                  <h1>1080p CGI Commands</h1>
+                  <h3>The Network Menu</h3>
+                  <h4>The WiFi Overlay</h4>
+                </div>
+                <!-- margin -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getwirelessattr</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get your Camera´s WLAN Configuration</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>wf_enable</strong>: 1 (WiFi enabled), 0 (WiFi disabled)</li>
+                                <li><strong>wf_ssid</strong>: SSID (max. 32 Characters)</li>
+                                <li><strong>wf_auth</strong>: 0 (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK)</li>
+                                <li><strong>wf_key</strong>: Key max. 63 Characters (Allowed special characters: &="`\)</li>
+                                <li><strong>wf_enc</strong>: Key type 0 (TKIP), 1 (AES)</li>
+                                <li><strong>wf_mode</strong>: 0 (infra), 1 (ad-hoc)</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getwirelessattr</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getwirelessattr&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setwirelessattr&-wf_ssid=linksys&-wf_enable=1&-wf_auth=3&-wf_key=1234567890&-wf_enc=1&-wf_mode=0</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <!-- ############################################################################# -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=searchwireless</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get your Camera´s Search for WiFi Access Points</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>waccess_points</strong>: Wireless Network Signals</li>
+                                <li><strong>wchannel</strong>: Channel</li>
+                                <li><strong>wrssi</strong>: Signal Strength</li>
+                                <li><strong>wessid</strong>: SSID</li>
+                                <li><strong>wenc</strong>: Encryption Mode</li>
+                                <li><strong>wauth</strong>: Authority Mode</li>
+                                <li><strong>wnet</strong>: Connection mode(router mode, point to point mode)</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Remark</strong>
+                            </td>
+                            <td>
+                              If waccess_points >1 the CGI will return more values for each variable - Example:
+                              <ul>
+                                <li>var waccess_points="2";</li>
+                                <li>var wchannel=new Array();</li>
+                                <li>var wrssi=new Array();</li>
+                                <li>var wessid=new Array();</li>
+                                <li>var wenc=new Array();</li>
+                                <li>var wauth=new Array();</li>
+                                <li>var wnet=new Array();</li>
+                                <li>wchannel[0]="6" ;</li>
+                                <li>wrssi[0]="-82" ;</li>
+                                <li>wessid[0]="My WiFi" ;</li>
+                                <li>wenc[0]="AES" ;</li>
+                                <li>wauth[0]="WPA(2)-PSK" ;</li>
+                                <li>wnet[0]="Infra" ;</li>
+                                <li>wchannel[1]="11" ;</li>
+                                <li>wrssi[1]="-62" ;</li>
+                                <li>wessid[1]="Linksys" ;</li>
+                                <li>wenc[1]="TKIP" ;</li>
+                                <li>wauth[1]="WPA(2)-PSK" ;</li>
+                                <li>wnet[1]="Infra" ;</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=searchwireless</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=searchwireless&-usr=admin&-pwd=instar</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <!-- ############################################################################# -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=chkwirelessattr</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get your Camera´s Search for WiFi Access Points</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>wf_ssid</strong>: SSID (max. 32 CHaracters)</li>
+                                <li><strong>wauth</strong>: Encryption mode - 0: (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK)</li>
+                                <li><strong>wf_key</strong>: WiFi Key</li>
+                                <li><strong>wf_enc</strong>: Encryption 0 (TKIP), 1 (AES)</li>
+                                <li><strong>wf_mode</strong>: Connection Mode 0 (Infra), 1 (Ad-hoc)</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Note</strong>
+                            </td>
+                            <td>
+                              To test WiFi login first set parameters with chkwirelessattr, then test login with getchkwireless:
+                              <ul>
+                                <li>Check result 0 (failure)</li>
+                                <li>Check result 1 (success)</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=chkwirelessattr&-wf_ssid=linksys&-wf_auth=3&-wf_key=1234567890&-wf_enc=0&-wf_mode=0</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getchkwireless</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+
+
+              </section>
+
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /wrap -->
+
+        <% include ../../_partials/content/_bluenav-general-mobile.ejs %>
+
+        <footer>
+            <% include ../../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>

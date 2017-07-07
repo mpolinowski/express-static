@@ -64,14 +64,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# npm package
+package.json
+package-lock.json
 
-### Bower ###
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
-
-
-### Sass ###
-.sass-cache/
-*.css.map

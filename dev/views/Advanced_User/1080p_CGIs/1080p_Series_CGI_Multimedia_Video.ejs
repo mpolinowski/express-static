@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+    <head>
+        <% include ../../_partials/amp/_amp-head.ejs %>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    </head>
+
+    <body class="home">
+
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
+
+      <header class="header fixed">
+        <% include ../../_partials/amp/_amp-header.ejs %>
+      </header>
+
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../../_partials/content/_bluenav-general.ejs %>
+
+                <section class="blade wrapper content">
+                    <!-- section -->
+
+                <div>
+                  <h1>1080p CGI Commands</h1>
+                  <h3>The Multimedia Menu</h3>
+                  <h4>The Video Overlay</h4>
+                </div>
+                <!-- margin -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getvideoattr</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get the Video Attributes</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>videomode</strong>: 41: Resolution CH11=1080p, CH12=320p, CH13=160p</li>
+                                <li><strong>vinorm</strong>: P: 50Hz(PAL) | N: 60Hz(NTSC)</li>
+                                <li><strong>wdrmode</strong>: Hardware Wide Dynamic Range: 0 (off), 1 (active)</li>
+                                <li><strong>profile</strong>: h.264 encoder 0: baseline, 1: mainprofile</li>
+                                <li><strong>maxchn</strong>: Maximum active video channels</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getvideoattr</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getvideoattr&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setvideoattr&-videomode=41&-vinorm=P&-wdrmode=1&-profile=1&-maxchn=3</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getvencattr&-chn=[11, 12. 13]</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get the Video Encoder Attributes for Video Streams 11, 12, 13</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>bps_[1, 2, 3]</strong>:
+                                  <ul>
+                                    <li>Bitrate CH11 1080p = 512kbps - 4096kbps</li>
+                                    <li>Bitrate CH11 320p = 512kbps - 2048kbps</li>
+                                    <li>Bitrate CH11 160p = 90kbps - 512kbps</li>
+                                  </ul>
+                                </li>
+                                <li><strong>fps_[1, 2, 3]</strong>: Framerate:
+                                  <ul>
+                                    <li>PAL：Range [1 ~ 25]</li>
+                                    <li>NTSC：Range [1 ~ 30]</li>
+                                  </ul>
+                                </li>
+                                <li><strong>gop_[1, 2, 3]</strong>: Keyframe Interval: gop Range [10 ~ 150]</li>
+                                <li><strong>brmode_[1, 2, 3]</strong>: Video encode control:
+                                  <ul>
+                                    <li>0: fixed bit rate</li>
+                                    <li>1: changeable bit rate</li>
+                                  </ul>
+                                </li>
+                                <li><strong>imagegrade_[1, 2, 3]</strong>: 1 (low compression) -6 (high compression)</li>
+                                <li><strong>width_[1, 2, 3]</strong>: Video width</li>
+                                <li><strong>height_[1, 2, 3]</strong>: Video height</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getvencattr&-chn=11</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getvencattr&-chn=11&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setvencattr&-chn=11&-bps_1=2048&-imagegrade_1=4&-brmode_1=1&-fps_1=20&-gop_1=40</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getimageattr</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get Image Parameter</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>display_mode</strong>: Current 0: black and white mode 1: color mode</li>
+                                <li><strong>brightness</strong>: brightness [0-100]</li>
+                                <li><strong>saturation</strong>: saturation [0-255]</li>
+                                <li><strong>sharpness</strong>: sharpness [0-100]</li>
+                                <li><strong>contrast</strong>: contrast [0-100]</li>
+                                <li><strong>hue</strong>: hue: [0-255]</li>
+                                <li><strong>wdr</strong>: Software Wide Dynamic Range Mode: [on, off]</li>
+                                <li><strong>night</strong>: Night mode 0 (inactive), 1 (active)</li>
+                                <li><strong>shutter</strong>: Shutter Speed [0 - 65535]</li>
+                                <li><strong>flip</strong>: flip: Flip the Image [on, off]</li>
+                                <li><strong>mirror</strong>: Mirror the Image [on, off]</li>
+                                <li><strong>gc</strong>: Night illumination, value Range 0=auto, [1-255]=maual</li>
+                                <li><strong>ae</strong>: Minimum exposure, range 0-65535</li>
+                                <li><strong>targety</strong>: Exposure [0-255]</li>
+                                <li><strong>noise</strong>: Low light denoising intensity (0-100)</li>
+                                <li><strong>gamma</strong>: Gamma 0-3</li>
+                                <li><strong>aemode</strong>: Auto-Exposure mode, the range [0-2]
+                                  <ul>
+                                    <li>0 Automatic</li>
+                                    <li>1 Indoor</li>
+                                    <li>2 Outdoor</li>
+                                  </ul>
+                                </li>
+                                <li><strong>imgmode</strong>: Image priority mode
+                                  <ul>
+                                    <li>0: Frame rate priority</li>
+                                    <li>1: Illumination priority</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getimageattr</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getimageattr&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setimageattr&-brightness=4&-saturation=3&-contrast=4&-flip=off&-mirror=off&-shutter=1120&-sharpness=4</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+              </section>
+
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /wrap -->
+
+        <% include ../../_partials/content/_bluenav-general-mobile.ejs %>
+
+        <footer>
+            <% include ../../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>

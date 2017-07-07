@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+    <head>
+        <% include ../../_partials/amp/_amp-head.ejs %>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    </head>
+
+    <body class="home">
+
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
+
+      <header class="header fixed">
+        <% include ../../_partials/amp/_amp-header.ejs %>
+      </header>
+
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../../_partials/content/_bluenav-general.ejs %>
+
+                <section class="blade wrapper content">
+                    <!-- section -->
+
+                <div>
+                  <h1>1080p CGI Commands</h1>
+                  <h3>The Network Menu</h3>
+                  <h4>The IP Configuration Overlay</h4>
+                </div>
+                <!-- margin -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getnetattr</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get your Camera´s Network Configuration</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>dhcpflag</strong>: on: (DHCP enabled), off: (DHCP disabled)</li>
+                                <li><strong>ip</strong>: LAN IPv4 Address</li>
+                                <li><strong>netmask</strong>: LAN Subnet Mask</li>
+                                <li><strong>gateway</strong>: LAN Gateway</li>
+                                <li><strong>dnsstat</strong>: DNS Status: 0 (manually), 1 (from DHCP Server)</li>
+                                <li><strong>fdnsip</strong>: Primary DNS</li>
+                                <li><strong>sdnsip</strong>: Secondary DNS</li>
+                                <li><strong>macaddress</strong>: LAN MAC Address</li>
+                                <li><strong>networktype</strong>: LAN or WLAN</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getnetattr</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getnetattr&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setnetattr&-dhcpflag=off&-ip=192.168.1.115&-netmask=255.255.255.0&-gateway=192.168.1.1&-fdnsip=8.8.8.8&-sdnsip=</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <!-- ############################################################################# -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=gethttpport</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get your Camera´s HTTP Port</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>httpport</strong>: Camera LAN Port</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Remark</strong>
+                            </td>
+                            <td>Camera needs to be <strong>manually rebooted</strong> after setting the port</ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=gethttpport</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=gethttpport&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=sethttpport&-httpport=80</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <!-- ############################################################################# -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=gethttspport</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get your Camera´s HTTPS Port</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>httpsport</strong>: Camera LAN Port</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Remark</strong>
+                            </td>
+                            <td>Camera needs to be <strong>manually rebooted</strong> after setting the port</ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=gethttpsport</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=gethttpsport&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=sethttpsport&-httpsport=443</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <!-- ############################################################################# -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getrtspport</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get your Camera´s RTSP Port</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>rtspport</strong>: Real Time Streaming Protocol Port</li>
+                              </ul>
+                              <ul>
+                                <li><strong>rtpport</strong>: Transport port for RTSP Media Stream</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Remark</strong>
+                            </td>
+                            <td>Camera needs to be <strong>manually rebooted</strong> after setting the port</ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getrtspport</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getrtspport&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setrtspport&rtspport=554</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <!-- ############################################################################# -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getrtspauth</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get RTSP Authentication State</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>rtsp_aenable</strong>: 1: RTSP Stream needs Authentication, 0: Authentication deactivated</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Remark</strong>
+                            </td>
+                            <td>Camera needs to be <strong>manually rebooted</strong> after changing state.</ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getrtspauth</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getrtspauth&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setrtspauth&-rtsp_aenable=1</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <!-- ############################################################################# -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getrtmpattr</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get your Camera's RTMP Port</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>rtmpport</strong>: RTMP Port used byu the Flash Plugin to access the Video Stream</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Remark</strong>
+                            </td>
+                            <td>Camera needs to be <strong>manually rebooted</strong> after changing state.</ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getrtmpattr</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getrtmpattr&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setrtmpattr&-rtmpport=1935</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+
+
+              </section>
+
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /wrap -->
+
+        <% include ../../_partials/content/_bluenav-general-mobile.ejs %>
+
+        <footer>
+            <% include ../../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>

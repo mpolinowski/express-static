@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+    <head>
+        <% include ../../_partials/amp/_amp-head.ejs %>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    </head>
+
+    <body class="home">
+
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
+
+      <header class="header fixed">
+        <% include ../../_partials/amp/_amp-header.ejs %>
+      </header>
+
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../../_partials/content/_bluenav-general.ejs %>
+
+                <section class="blade wrapper content">
+                    <!-- section -->
+
+                <div>
+                  <h1>1080p CGI Commands</h1>
+                  <h3>The Multimedia Menu</h3>
+                  <h4>The Image Overlay</h4>
+                </div>
+                <!-- margin -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getimageattr</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get Image Parameter</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>display_mode</strong>: Current 0: black and white mode 1: color mode</li>
+                                <li><strong>brightness</strong>: brightness [0-100]</li>
+                                <li><strong>saturation</strong>: saturation [0-255]</li>
+                                <li><strong>sharpness</strong>: sharpness [0-100]</li>
+                                <li><strong>contrast</strong>: contrast [0-100]</li>
+                                <li><strong>hue</strong>: hue: [0-255]</li>
+                                <li><strong>wdr</strong>: Software Wide Dynamic Range Mode: [on, off]</li>
+                                <li><strong>night</strong>: Night mode 0 (inactive), 1 (active)</li>
+                                <li><strong>shutter</strong>: Shutter Speed [0 - 65535]</li>
+                                <li><strong>flip</strong>: flip: Flip the Image [on, off]</li>
+                                <li><strong>mirror</strong>: Mirror the Image [on, off]</li>
+                                <li><strong>gc</strong>: Night illumination, value Range 0=auto, [1-255]=maual</li>
+                                <li><strong>ae</strong>: Minimum exposure, range 0-65535</li>
+                                <li><strong>targety</strong>: Exposure [0-255]</li>
+                                <li><strong>noise</strong>: Low light denoising intensity (0-100)</li>
+                                <li><strong>gamma</strong>: Gamma 0-3</li>
+                                <li><strong>aemode</strong>: Auto-Exposure mode, the range [0-2]
+                                  <ul>
+                                    <li>0 Automatic</li>
+                                    <li>1 Indoor</li>
+                                    <li>2 Outdoor</li>
+                                  </ul>
+                                </li>
+                                <li><strong>imgmode</strong>: Image priority mode
+                                  <ul>
+                                    <li>0: Frame rate priority</li>
+                                    <li>1: Illumination priority</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getimageattr</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getimageattr&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setimageattr&-brightness=4&-saturation=3&-contrast=4&-flip=off&-mirror=off&-shutter=1120&-sharpness=4</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getvideoattr</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get the Video Attributes</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>videomode</strong>: 41: Resolution CH11=1080p, CH12=320p, CH13=160p</li>
+                                <li><strong>vinorm</strong>: P: 50Hz(PAL) | N: 60Hz(NTSC)</li>
+                                <li><strong>wdrmode</strong>: Hardware Wide Dynamic Range: 0 (off), 1 (active)</li>
+                                <li><strong>profile</strong>: h.264 encoder 0: baseline, 1: mainprofile</li>
+                                <li><strong>maxchn</strong>: Maximum active video channels</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getvideoattr</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getvideoattr&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setvideoattr&-videomode=41&-vinorm=P&-wdrmode=1&-profile=1&-maxchn=3</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getimageattrex</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get Extended Image Attributes</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>display_mode</strong>: Current 0 (Black&amp;White), 1 (Colour Mode)</li>
+                                <li><strong>wdrauto</strong>: Hardware Wide Dynamic Range 0 (Auto), 1 (Manual)</li>
+                                <li><strong>wdrautval</strong>: Auto WDR Strength [0-2]</li>
+                                <li><strong>wdrmanval</strong>: Manual WDR Strength [0-255]</li>
+                                <li><strong>d3noauto</strong>: 3D Noise Reduction Mode: 0 (auto), 1 (manual)</li>
+                                <li><strong>d3noval</strong>: 3D Noise Reduction Strength: [0-255]</li>
+                                <li><strong>gcauto</strong>: Signal Gain: 0 (auto), 1 (manual)</li>
+                                <li><strong>gcval</strong>: Gain Multiplier: [0-255]</li>
+                                <li><strong>aemodeex</strong>: Exposure Mode
+                                  <ul>
+                                    <li>Highlight (Exposure) priority</li>
+                                    <li>Lowlight (Framerate) priority</li>
+                                  </ul>
+                                </li>
+                                <li><strong>aelowval</strong>: Lowlight Intensity [0-255]</li>
+                                <li><strong>aehighval</strong>: Highlight Intensity [0-255]</li>
+                                <li><strong>aeratio</strong>: Length Exposure Ratio [0-100]</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getimageattrex</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getimageattrex&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setimageattrex&-wdrauto=0&-wdrautval=2&-d3noauto=1&-d3noval=120</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+                <div class="margin">
+
+                  <h2>param.cgi?cmd=getldcattr</h2>
+
+                    <table>
+                        <tr>
+                            <td width="20%">
+                                <strong>Function</strong>
+                            </td>
+                            <td>Get Lens Distortion Correction</td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Authority</strong>
+                            </td>
+                            <td><strong>admin</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Parameter</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li><strong>ldc_enable</strong>: Image Distortion Correction: 0 (disabled), 1 (enabled)</li>
+                                <li><strong>ldc_xoffset</strong>: Horizontal Image Offset</li>
+                                <li><strong>ldc_yoffset</strong>: Vertical Image Offset</li>
+                                <li><strong>ldc_ratio</strong>: Distortion Correction [0-511]</li>
+                              </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20%">
+                                <strong>Example</strong>
+                            </td>
+                            <td>
+                              <ul>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getldcattr</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getldcattr&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setldcattr&-ldc_enable=1&-ldc_xoffset=0&-ldc_yoffset=0&-ldc_ratio=399</li>
+                              </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /margin -->
+
+              </section>
+
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /wrap -->
+
+        <% include ../../_partials/content/_bluenav-general-mobile.ejs %>
+
+        <footer>
+            <% include ../../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>
