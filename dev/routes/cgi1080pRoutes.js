@@ -55,7 +55,7 @@ cgi1080pRouter.get('/System_Menu/', function(req, res) {
       dlacc: 'hidden',
       dltab: 'hidden',
     });
-}); 
+});
 
 cgi1080pRouter.get('/System_Menu/Date_Time/', function(req, res) {
   res.render('./Advanced_User/1080p_CGIs/1080p_Series_CGI_System_Date', {
@@ -606,7 +606,7 @@ cgi1080pRouter.get('/Features_Menu/Manual_Recording/', function(req, res) {
       title: '1080p System CGIs',
       ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
       headline: 'For Developer',
-      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/Manual_Recording/">Manual_Recording</a></li>',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/Manual_Recording/">Manual Recording</a></li>',
       canonical: '/1080p_Series_CGI_List/Features_Menu/Manual_Recording/',
       pacc: '',
       ptab: 'hidden',
@@ -633,7 +633,7 @@ cgi1080pRouter.get('/Features_Menu/SD_Card/', function(req, res) {
       title: '1080p System CGIs',
       ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
       headline: 'For Developer',
-      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/SD_Card/">SD_Card</a></li>',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/SD_Card/">SD Card</a></li>',
       canonical: '/1080p_Series_CGI_List/Features_Menu/SD_Card/',
       pacc: '',
       ptab: 'hidden',
@@ -660,7 +660,7 @@ cgi1080pRouter.get('/Features_Menu/Status_LEDs/', function(req, res) {
       title: '1080p System CGIs',
       ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
       headline: 'For Developer',
-      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/Status_LEDs/">Status_LEDs</a></li>',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/">Features Menu</a></li><li><a href="/1080p_Series_CGI_List/Features_Menu/Status_LEDs/">Status LEDs</a></li>',
       canonical: '/1080p_Series_CGI_List/Features_Menu/Status_LEDs/',
       pacc: '',
       ptab: 'hidden',
@@ -797,7 +797,7 @@ cgi1080pRouter.get('/Multimedia_Menu/Privacy_Mask/', function(req, res) {
       title: '1080p Multimedia CGIs',
       ampimg: '/images/Search/AU_SearchThumb_ForDeveloper.jpg',
       headline: 'For Developer',
-      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/">Multimedia Menu</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/Privacy_Mask/">Privacy_Mask</a></li>',
+      breadcrumbs: '<li><a href="/Advanced_User/CGI_Commands/">CGI Commands</a></li><li><a href="/1080p_Series_CGI_List/">1080p Serie</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/">Multimedia Menu</a></li><li><a href="/1080p_Series_CGI_List/Multimedia_Menu/Privacy_Mask/">Privacy Mask</a></li>',
       canonical: '/1080p_Series_CGI_List/Multimedia_Menu/Privacy_Mask/',
       pacc: '',
       ptab: 'hidden',
