@@ -253,6 +253,16 @@ To enable Nginx to start when your system boots, enter the following command:
  sudo systemctl enable nginx
 ```
 
+Always test your config after changes:
+```
+nginx -t
+```
+
+And try to reload instead of restarting - reload will fail but old config keeps running in case of error
+```
+service nginx reload
+```
+
 To restart the Nginx service, enter the following command:
 ```
  service nginx restart
