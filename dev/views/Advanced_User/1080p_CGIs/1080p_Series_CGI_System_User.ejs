@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+    <head>
+        <% include ../../_partials/amp/_amp-head.ejs %>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    </head>
+
+    <body class="home">
+
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
+
+      <header class="header fixed">
+        <% include ../../_partials/amp/_amp-header.ejs %>
+      </header>
+
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../../_partials/content/_bluenav-general.ejs %>
+
+                <section class="blade wrapper content">
+                    <!-- section -->
+
+                <div>
+                  <h1>1080p CGI Commands</h1>
+                  <h3>The System Menu</h3>
+                  <h4>The User Overlay</h4>
+                </div>
+                <!-- margin -->
+
+              <div class="margin">
+
+                <h2>param.cgi?cmd=getuserattr</h2>
+
+                  <table>
+                      <tr>
+                          <td width="20%">
+                              <strong>Function</strong>
+                          </td>
+                          <td>Get your Camera´s Network Configuration</td>
+                      </tr>
+                      <tr>
+                          <td width="20%">
+                              <strong>Authority</strong>
+                          </td>
+                          <td><strong>admin</strong></td>
+                      </tr>
+                      <tr>
+                          <td width="20%">
+                              <strong>Parameter</strong>
+                          </td>
+                          <td>
+                            <ul>
+                              <li><strong>at_username0</strong>: Username for User 1</li>
+                              <li><strong>at_password0</strong>: Password for User 1</li>
+                              <li><strong>at_authlevel0</strong>: User Authorisation: admin/user/guest [15, 3, 1]</li>
+                              <li><strong>at_enable0</strong>: De/Activate [0, 1]</li>
+                              <li><strong>at_username1</strong>: Username for User 2</li>
+                              <li><strong>at_password1</strong>: Password for User 2</li>
+                              <li><strong>at_authlevel1</strong>: User Authorisation: admin/user/guest [15, 3, 1]</li>
+                              <li><strong>at_enable1</strong>: De/Activate [0, 1]</li>
+                              <li><strong>at_username2</strong>: Username for User 3</li>
+                              <li><strong>at_password2</strong>: Password for User 3</li>
+                              <li><strong>at_authlevel2</strong>: User Authorisation: admin/user/guest [15, 3, 1]</li>
+                              <li><strong>at_enable2</strong>: De/Activate [0, 1]</li>
+                            </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="20%">
+                              <strong>Example</strong>
+                          </td>
+                          <td>
+                            <ul>
+                              <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getuserattr</li>
+                              <li>GET: http://192.168.178.88/param.cgi?cmd=getuserattr&-usr=admin&-pwd=instar</li>
+                              <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setuserattr&-at_username=admin&-at_newname=admin&-at_enable=1&-at_password=instar&cmd=setuserattr&-at_username=user&-at_newname=user&-at_enable=0&-at_password=instar&cmd=setuserattr&-at_username=guest&-at_newname=guest&-at_enable=0&-at_password=instar</li>
+                            </ul>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <!-- /margin -->
+
+              </section>
+
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /wrap -->
+
+        <% include ../../_partials/content/_bluenav-general-mobile.ejs %>
+
+        <footer>
+            <% include ../../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>

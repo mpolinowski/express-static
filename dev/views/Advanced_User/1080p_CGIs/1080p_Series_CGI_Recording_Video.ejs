@@ -27,21 +27,21 @@
 
                 <div>
                   <h1>1080p CGI Commands</h1>
-                  <h3>The Features Menu</h3>
-                  <h4>The Email Overlay</h4>
+                  <h3>The Recording Tasks Menu</h3>
+                  <h4>The Video Overlay</h4>
                 </div>
                 <!-- margin -->
 
                 <div class="margin">
 
-                  <h2>param.cgi?cmd=getinfrared</h2>
+                  <h2>param.cgi?cmd=getplanrecattr</h2>
 
                     <table>
                         <tr>
                             <td width="20%">
                                 <strong>Function</strong>
                             </td>
-                            <td>Get IR LED Parameter</td>
+                            <td>Set Planned Video Recording Attribute</td>
                         </tr>
                         <tr>
                             <td width="20%">
@@ -55,7 +55,9 @@
                             </td>
                             <td>
                               <ul>
-                                <li><strong>infraredstat</strong>: IR LED Status - auto, close (deactivated)</li>
+                                <li><strong>planrec_enable</strong>: Dis/Enable Recording to SD card： [0, 1]</li>
+                                <li><strong>planrec_chn</strong>: Record Kamera Channel [11, 12, 13]</li>
+                                <li><strong>planrec_time</strong>: Recoding File Length (15-900seconds)</li>
                               </ul>
                             </td>
                         </tr>
@@ -65,9 +67,9 @@
                             </td>
                             <td>
                               <ul>
-                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getinfrared</li>
-                                <li>GET: http://192.168.178.88/param.cgi?cmd=getinfrared&-usr=admin&-pwd=instar</li>
-                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setinfrared&-infraredstat=auto</li>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getplanrecattr</li>
+                                <li>GET: http://192.168.178.88/param.cgi?cmd=getplanrecattr&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setplanrecattr&-planrec_enable=1&-planrec_chn=11&-planrec_time=900</li>
                               </ul>
                             </td>
                         </tr>
@@ -77,14 +79,14 @@
 
                 <div class="margin">
 
-                  <h2>param.cgi?cmd=getplancgi</h2>
+                  <h2>param.cgi?cmd=getserverinfo&cmd=getscheduleex&-ename=plan</h2>
 
                     <table>
                         <tr>
                             <td width="20%">
                                 <strong>Function</strong>
                             </td>
-                            <td>Define a Time Window to Switch IR LEDs from off to auto</td>
+                            <td>Schedule for Manual Recording Task</td>
                         </tr>
                         <tr>
                             <td width="20%">
@@ -97,9 +99,15 @@
                                 <strong>Parameter</strong>
                             </td>
                             <td>
+                              aname:
                               <ul>
-                                <li><strong>plancgi_enable_[0, 1]</strong>: De/Activate Switch Event at Time see below</li>
-                                <li><strong>plancgi_enable_[0, 1]</strong>: [0 - 86399] in seconds = 0:00:00 - 23:59:59 o´clock</li>
+                                <li><strong>week0</strong>: Sunday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - [P] means active , [N] means inactive</li>
+                                <li><strong>week1</strong>: Monday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - [P] means active , [N] means inactive</li>
+                                <li><strong>week2</strong>: Tuesday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - [P] means active , [N] means inactive</li>
+                                <li><strong>week3</strong>: Wednesday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - [P] means active , [N] means inactive</li>
+                                <li><strong>week4</strong>: Thursday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - [P] means active , [N] means inactive</li>
+                                <li><strong>week5</strong>: Friday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - [P] means active , [N] means inactive</li>
+                                <li><strong>week6</strong>: Saturday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - [P] means active , [N] means inactive</li>
                               </ul>
                             </td>
                         </tr>
@@ -109,9 +117,9 @@
                             </td>
                             <td>
                               <ul>
-                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?cmd=getplancgi</li>
-                                <li>GET: http://192.168.178.88/param.cgi?cmd=getplancgi&-usr=admin&-pwd=instar</li>
-                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setplancgi&-plancgi_enable_0=1&-plancgi_enable_1=1&-plancgi_time_0=21600&-plancgi_time_1=64800</li>
+                                <li>GET: http://admin:instar@192.168.178.88/param.cgi?param.cgi?cmd=getscheduleex&-ename=plan</li>
+                                <li>GET: http://192.168.178.88/param.cgi?param.cgi?cmd=getscheduleex&-ename=plan&-usr=admin&-pwd=instar</li>
+                                <li>SET: http://admin:instar@192.168.178.88/param.cgi?cmd=setscheduleex&-ename=plan&-week0=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week1=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week2=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week3=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week4=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week5=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week6=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP</li>
                               </ul>
                             </td>
                         </tr>
