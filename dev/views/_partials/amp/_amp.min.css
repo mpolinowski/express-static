@@ -78,6 +78,10 @@ amp-img, amp-youtube {
     margin: 40px 0 40px 0
 }
 
+.padding {
+    padding: 5px 5px;
+}
+
 amp-img.placeholder {
     background-color: #2a2b30
 }
@@ -2918,6 +2922,12 @@ section[expanded] .accordion-title::after {
 
 .accordion-content li:last-child {
     margin-bottom: 15px
+}
+
+.cgi-accordion-header {
+  padding: 5px 5px;
+  background-color: inherit;
+  border: none;
 }
 
 .text-reset {
