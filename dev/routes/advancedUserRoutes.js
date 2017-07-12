@@ -244,6 +244,33 @@ advancedUserRouter.get('/Restore_Firmware/', function(req, res) {
       });
   });
 
+advancedUserRouter.get('/Restore_Firmware/VGA_Models/', function(req, res) {
+    res.render('./Advanced_User/Restore_Firmware_VGA', {
+        title: 'Restore your Camera after a faulty Firmware Upgrade',
+        ampimg: '/images/Search/AU_SearchThumb_ResetAfterFirmwareError.jpg',
+        headline: 'Restore your Camera after a faulty Firmware Upgrade',
+        breadcrumbs: '<li><a href="/Advanced_User/">Advanced User</a></li><li><a href="/Advanced_User/Restore_Firmware/">Restore Firmware</a></li><li><a href="/Advanced_User/Restore_Firmware/VGA_Models/">VGA Models</a></li>',
+        canonical: '/Advanced_User/Restore_Firmware/VGA_Models/',
+		pacc: '',
+		ptab: 'hidden',
+		qiacc: '',
+		qitab: 'hidden',
+		mdacc: '',
+		mdtab: 'hidden',
+		iaacc: '',
+		iatab: 'hidden',
+		auacc: 'expanded',
+		autab: '',
+		hdacc: 'hidden',
+		hdtab: 'hidden',
+		fhdacc: 'hidden',
+		fhdtab: 'hidden',
+		sacc: 'hidden',
+		dlacc: 'hidden',
+		dltab: 'hidden',
+      });
+  });
+
 advancedUserRouter.get('/CCTV_vs_IP/', function(req, res) {
     res.render('./Advanced_User/CCTV_vs_IP', {
         title: 'Difference Between Analog And IP Cameras',

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html ⚡ lang="de">
+    <head>
+        <% include ../_partials/amp/_amp-head.ejs %>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    </head>
+
+    <body class="home">
+
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
+
+      <header class="header fixed">
+        <% include ../_partials/amp/_amp-header.ejs %>
+      </header>
+
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../_partials/content/_bluenav-general.ejs %>
+
+                <article class="blade wrapper content">
+                    <!-- article -->
+
+                    <div>
+                      <table class="no-highlight">
+                        <tr>
+                          <td>
+                            <h1 class="inlineHeader">Restore your Camera after a faulty Firmware Upgrade</h1>
+                          </td>
+                          <td>
+                            <a href="/Advanced_User/Restore_Firmware/"><button class="navGo navGoRed">720p Models</button></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="margin">
+                        <h2>VGA CAMERAS</h2>
+                        <h3>What you need</h3>
+                    </div>
+                    <!-- /margin -->
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_01_UART.jpg" width="300" height="123" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                             <div class="action">
+                               <p>USB to serial UART Interface (3.3 logic needed) available online.</p>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_02_Cable.jpg" width="500" height="142" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                             <div class="action">
+                               <p>4x connection cable with female pins on both sided and 4 pin plugs.</p>
+                             </div>
+                         </div>
+                     </div>
+
+                    <div class="margin">
+                        <ul>
+                          <li>Software HyperTerminal (Windows XP) or Software TerraTerm (Vista/7/8):</li>
+                            <ul>
+                              <li>Hyperterminal / Windows XP: Start → Programs → Accessories → Communication → HyperTerminal</li>
+                              <li>Tera Term / Windows Vista/7/8: follow the link and download / install the program - <a href="http://en.sourceforge.jp/frs/redir.php?m=jaist&f=%2Fttssh2%2F56762%2Fteraterm-4.75.exe">Click here to Download</a></li>
+                            </ul>
+                          <li>Download the newest firmware and web user interface from our download area. <a href="http://download.instar.de">Click here to Download your Firmware/WebUI</a></li>
+                          <li>Download the linux-romfs.zip container and unpack it. <a href="/dl/Developer/Linux-romfs.zip">File:Linux-romfs.zip</a></li>
+                        </ul>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                        <h2>How to prepare your Hardware</h2>
+                        <ul>
+                          <li>Connect your USB to UART interface with the cable. Connect the plug to the GND, Rxd, Txd and 3.3u pins - you may want to solder them in place to make sure that the stay in place.</li>
+                          <li>Now connect the other side with the camera mainboard and solder them in place. Make the connection according to:</li>
+                          <ul>
+                            <li>Pin #1 Ground → Ground</li>
+                            <li>Pin #2 Rxd → Txd</li>
+                            <li>Pin #3 Txd → Rxd</li>
+                            <li>Pin #4 3.3u → 3.3u</li>
+                          </ul>
+                        </ul>
+                        </amp-lightbox>
+                    </div>
+                    <!-- /margin -->
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_06_pin_platine.jpg" width="250" height="281" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_07_pin_UART.jpg" width="300" height="265" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                     </div>
+
+                      <div class="card-container margin">
+                          <div class="twocard">
+                              <div class="image">
+                                <amp-img src="/images/Advanced_User/FWrestore_08_Pin_UART2.jpg" width="300" height="181" layout="responsive" class="shadow"></amp-img>
+                              </div>
+                          </div>
+                          <div class="twocard">
+                              <div class="image">
+                                <amp-img src="/images/Advanced_User/FWrestore_09_UART_LED.jpg" width="300" height="175" layout="responsive" class="shadow"></amp-img>
+                              </div>
+                          </div>
+                      </div>
+
+                    <div class="margin">
+                        <ul>
+                          <li>Make sure that the connection is solid and that you don´t have a loose contact somewhere.</li>
+                          <li>The UART Status LED should light up after plugging in the USB connector (depends on the model you are using).</li>
+                        </ul>
+                        <div>
+
+                        </div>
+                    </div>
+                    <!-- /margin -->
+
+                    <div>
+                      <h3><strong>Operating System</strong></h3>
+                      <ul>
+                        <li><a href="#windowsxp">Windows XP</a></li>
+                        <li><a href="#windows8">Windows 7, 8</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="margin jumptarget" id="windowsxp">
+                        <h2>For Windows XP-User - HyperTerminal</h2>
+                        <p>
+                          First you have to define a new connection after starting up the HyperTerminal. Type in any name and click on OK.
+                        </p>
+                    </div>
+                    <!-- /margin -->
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_10_HT_1.jpg" width="300" height="272" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_11_HT_2.jpg" width="300" height="298" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                     </div>
+
+                 <div class="margin">
+                     <ul>
+                       <li>Select the COM port of your UART interface and confirm with OK. You can check the COM port under Control Panel → Device Manager → Ports COM &amp; LTP. Adjust the settings according to the following screenshot and click OK to confirm.</li>
+                     </ul>
+                 </div>
+                 <!-- /margin -->
+
+                  <div class="card-container margin">
+                      <div class="twocard">
+                          <div class="image">
+                            <amp-img src="/images/Advanced_User/FWrestore_12_HT_3.jpg" width="350" height="406" layout="responsive" class="shadow"></amp-img>
+                          </div>
+                      </div>
+                      <div class="twocard">
+                          <div class="image">
+                            <amp-img src="/images/Advanced_User/FWrestore_14_HT_5.jpg" width="500" height="302" layout="responsive" class="shadow"></amp-img>
+                          </div>
+                      </div>
+                  </div>
+
+                    <div class="margin">
+                        <ul>
+                          <li>Save your settings under File → Save As</li>
+                          <li>Now open the connection by double-clicking the shortcut on your desktop that was created in the previous step.</li>
+                          <li>The program should automatically launch the mainboards bootloader - then press ESC. You should now see the following screen.</li>
+                          <li>Now type in the following two commands: del 6 "Enter" THEN del 7 "Enter" (Don´t forget the SPACE!!!)</li>
+                        </ul>
+                    </div>
+                    <!-- /margin -->
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_15_HT_6.jpg" width="500" height="311" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_16_HT_7.jpg" width="400" height="60" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                     </div>
+
+                    <div class="margin">
+                        <ul>
+                          <li>Now type in the following: <span class="code">fx 6 romfs.img 0x7f0e0000 0x7f0e0000 -a "Enter" Waiting for download...</span> will be displayed.</li>
+                          <li>Select the romfs.img file you downloaded earlier in Transfer → Send file → choose the romfs image file by browsing to the location you extracted it to earlier. Then set the protocol to Xmodem and click on Send.</li>
+                        </ul>
+                    </div>
+                    <!-- /margin -->
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_17_HT_8.jpg" width="600" height="383" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_18_HT_9.jpg" width="450" height="289" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                     </div>
+
+                    <div class="margin">
+                        <ul>
+                          <li>After the upload is completet repeat these steps for the Linux.zip file. Type in: <span class="code">fx 7 linux.zip 0x7f020000 0x8000 -acxz "Enter"</span></li>
+                          <li>Choose the file linux.zip from the earlier download and select the protocol Xmodem.</li>
+                          <li>Now type in <span class="code">boot</span> and confirm with Enter.</li>
+                          <li>You can now reassemble your camera and check if you can connect it to your local cable network.</li>
+                        </ul>
+                    </div>
+                    <!-- /margin -->
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_19_TT_1.jpg" width="450" height="280" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_20_TT_2.jpg" width="600" height="313" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                     </div>
+
+                    <div class="margin jumptarget" id="windows8">
+                        <h2>For Windows Vista/7/8 User - TeraTerm</h2>
+                        <ul>
+                          <li>After starting TeraTerm you first have to set up a new connection. Choose a serial connection (Seriell) and select the port the UART interface is connected to. Confirm these settings with OK. You can check the COM port under Control Panel → Device Manager → Ports COM & LTP.</li>
+                          <li>Now go to Einstellungen (Settings) and choose Serieller Port (Serial Port).</li>
+                          <li>Adjust the settings according to the following screenshot and click OK to confirm.</li>
+                        </ul>
+                    </div>
+                    <!-- /margin -->
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_20_TT_3.jpg" width="400" height="332" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_21_TT_7.jpg" width="450" height="361" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                     </div>
+
+                    <div class="margin">
+                        <ul>
+                          <li>The program should automatically launch the mainboards bootloader - then press ESC. You should now see the following screen.</li>
+                          <li>* Now type in the following two commands: <span class="code">del 6 "Enter"</span> <strong>THEN</strong> <span class="code">del 7 "Enter"</span> (Don´t forget the SPACE!!!)</li>
+                        </ul>
+                    </div>
+                    <!-- /margin -->
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_22_TT_8.jpg" width="450" height="359" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_23_TT_9.jpg" width="450" height="139" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                     </div>
+
+                    <div class="margin">
+                        <ul>
+                          <li>Now type: <span class="code">fx 6 romfs.img 0x7f0e0000 0x7f0e0000 -a "Enter"</span> . The program now waits for the file to transfer.</li>
+                          <li>Now go to Datei → Transfer → XMODEM → Senden and browse for the romfs.img you downloaded in the beginning. Click on Open to start the file transfer.</li>
+                        </ul>
+                    </div>
+                    <!-- /margin -->
+
+                     <div class="card-container margin">
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_24_TT_10.jpg" width="450" height="67" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                         <div class="twocard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_25_TT_4.jpg" width="450" height="384" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                     </div>
+
+                      <div class="card-container margin">
+                          <div class="twocard">
+                              <div class="image">
+                                <amp-img src="/images/Advanced_User/FWrestore_26_TT_5.jpg" width="400" height="325" layout="responsive" class="shadow"></amp-img>
+                              </div>
+                          </div>
+                          <div class="twocard">
+                              <div class="image">
+                                <amp-img src="/images/Advanced_User/FWrestore_27_TT_6.jpg" width="300" height="230" layout="responsive" class="shadow"></amp-img>
+                              </div>
+                          </div>
+                      </div>
+
+                    <div class="margin">
+                        <ul>
+                          <li>Now we have to repeat those steps for the Linux.zip file. Type: <span class="code">fx 7 linux.zip 0x7f020000 0x8000 -acxz "Enter"</span> . and choose the file linux.zip.</li>
+                          <li>Afterwards, type <span class="code">boot</span> and confirm with "Enter".</li>
+                        </ul>
+                    </div>
+                    <!-- /margin -->
+
+                     <div class="card-container margin">
+                         <div class="onecard">
+                             <div class="image">
+                               <amp-img src="/images/Advanced_User/FWrestore_28_TT_11.jpg" width="450" height="289" layout="responsive" class="shadow"></amp-img>
+                             </div>
+                         </div>
+                     </div>
+
+                    <div class="margin">
+                        <ul>
+                          <li>You can now reassemble your camera and check if you can connect it to your local cable network.</li>
+                        </ul>
+                    </div>
+                    <!-- /margin -->
+
+                </article>
+                <!-- /article -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /wrap -->
+
+        <% include ../_partials/content/_bluenav-general-mobile.ejs %>
+
+        <footer>
+            <% include ../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>
