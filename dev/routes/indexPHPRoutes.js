@@ -516,6 +516,11 @@ indexPHPRouter.route('/InstarVision_for_Windows')
     res.status(301).redirect('/Software/Windows/InstarVision');
 });
 
+indexPHPRouter.route('/InstarVision_v2_for_Windows')
+  .get(function(req, res) {
+    res.status(301).redirect('/Software/Windows/InstarVision');
+});
+
 indexPHPRouter.route('/InstarVision_for_Windows_Phone')
   .get(function(req, res) {
     res.status(301).redirect('/Software/Windows/InstarVision/Windows_Phone');
