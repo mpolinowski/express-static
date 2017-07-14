@@ -138,6 +138,33 @@ internetAccessRouter.get('/Port_Forwarding/', function(req, res) {
       });
   });
 
+internetAccessRouter.get('/Port_Forwarding/Router_Access/', function(req, res) {
+    res.render('./Internet_Access/Access_Router', {
+        title: 'Port Forwarding',
+        ampimg: '/images/Search/IA_SearchThumb_Portforwarding.jpg',
+        headline: 'How to access your Router',
+        breadcrumbs: '<li><a href="/Internet_Access/">Internet Access</a></li><li><a href="/Internet_Access/Port_Forwarding/">Port Forwarding</a></li><li><a href="/Internet_Access/Port_Forwarding/Router_Access/">Router Access</a></li>',
+        canonical: '/Internet_Access/Port_Forwarding/Router_Access/',
+		pacc: '',
+		ptab: 'hidden',
+		qiacc: '',
+		qitab: 'hidden',
+		mdacc: '',
+		mdtab: 'hidden',
+		iaacc: 'expanded',
+		iatab: '',
+		auacc: '',
+		autab: 'hidden',
+		hdacc: 'hidden',
+		hdtab: 'hidden',
+		fhdacc: 'hidden',
+		fhdtab: 'hidden',
+		sacc: 'hidden',
+		dlacc: 'hidden',
+		dltab: 'hidden',
+      });
+  });
+
 internetAccessRouter.get('/Port_Forwarding/AVM_Fritzbox/', function(req, res) {
     res.render('./Internet_Access/Port_Forwarding_AVM_Fritzbox', {
         title: 'Port Forwarding AVM Fritzbox',
