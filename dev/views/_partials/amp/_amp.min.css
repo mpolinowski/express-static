@@ -2961,3 +2961,17 @@ section[expanded] .accordion-title::after {
         margin: 20px 5px;
     }
 }
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+@media (min-width:768px) {
+  .lead {
+    font-size: 21px
+  }
+}
