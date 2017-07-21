@@ -6,7 +6,7 @@
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 </head>
@@ -30,7 +30,39 @@
 
                   <div>
                     <h1 class="post-title">IN-8015 Full HD <a href="https://www.instar.de/ip-innenkameras/in-8015fullhd-series.html" target="_blank"><button type="button" name="button" class="btn float-right">Go to Shop</button></a></h1>
-                    <h4>Indoor surveillance in 1080p resolution</h4>
+                    <h3>Indoor surveillance in 1080p resolution</h3>
+
+                    <div class="margin">
+
+                      <table>
+                        <tr>
+                          <th width="25%">
+                              <strong>WiFi Variant</strong>
+                          </th>
+                          <th width="25%">
+                              <strong>PoE Variant</strong>
+                          </th>
+                          <th width="20%">
+                              <strong>Field of View</strong>
+                          </th>
+                          <th>
+                              <strong>Pan &amp; Tilt</strong>
+                          </th>
+                          <th>
+                              <strong>Zoom</strong>
+                          </th>
+                        </tr>
+                        <tr>
+                          <td><a href="https://www.instar.de/ip-innenkameras/in-8015fullhd-series/in-8015fullhd-white.html" target="_blank">white</a> / <a href="https://www.instar.de/ip-innenkameras/in-8015fullhd-series/in-8015fullhd-black.html" target="_blank">black</a></td>
+                          <td>not available</td>
+                          <td>approx. 90°</td>
+                          <td>available</td>
+                          <td>digital</td>
+                        </tr>
+                        </table>
+
+                    </div>
+                    <!-- /margin -->
 
                     <div class="card-container margin">
                         <div class="onecard">
@@ -207,10 +239,10 @@
                       <div class="card">
                           <div class="image">
                             <amp-img
-                                on="tap:IN-8015v6014_resTest"
-                                role="button"
-                                tabindex="0"
-                                src="/images/Usermanuals/IN-8015v6014_resTest.png" width="1237" height="695" layout="responsive" class="shadow">
+                              on="tap:IN-8015v6014_resTest"
+                              role="button"
+                              tabindex="0"
+                              src="/images/Usermanuals/IN-8015v6014_resTest.png" width="1237" height="695" layout="responsive" class="shadow">
                             </amp-img>
                           </div>
                           <div class="action">
@@ -233,10 +265,10 @@
                     <div class="card">
                         <div class="image">
                           <amp-img
-                              on="tap:IN-8015v6014_Night_resTest"
+                              on="tap:IN-8015v6014_Flower_resTest"
                               role="button"
                               tabindex="0"
-                              src="/images/Usermanuals/IN-8015v6014_Night_resTest.png" width="1237" height="695" layout="responsive" class="shadow">
+                              src="/images/Usermanuals/IN-8015v6014_resTest4.png" width="1237" height="695" layout="responsive" class="shadow">
                           </amp-img>
                         <div class="action">
                             <h4>IN-8015 HD / IN-6014 HD</h4>
@@ -326,11 +358,59 @@
                 </section>
                 <!-- /blade -->
 
-                <amp-image-lightbox id="IN-8015v6014_resTest" layout="nodisplay"></amp-image-lightbox>
-                <amp-image-lightbox id="IN-8015v6012_resTest" layout="nodisplay"></amp-image-lightbox>
-                <amp-image-lightbox id="IN-8015v6014_resTest_2" layout="nodisplay"></amp-image-lightbox>
-                <amp-image-lightbox id="IN-8015v6014_resTest_3" layout="nodisplay"></amp-image-lightbox>
-                <amp-image-lightbox id="IN-8015v6014_Night_resTest" layout="nodisplay"></amp-image-lightbox>
+                <amp-lightbox id="IN-8015v6014_resTest" layout="nodisplay">
+                  <div class="lightbox">
+                    <amp-img src="/images/Usermanuals/IN-8015v6014_resTestBig.png" width=720 height=832
+                    tabindex="0"
+                    on="tap:IN-8015v6014_resTest.close"
+                    role="button">
+                  </div>
+                </amp-lightbox>
+
+                <amp-lightbox id="IN-8015v6012_resTest" layout="nodisplay">
+                  <div class="lightbox">
+                    <amp-img src="/images/Usermanuals/IN-8015v6012_resTestBig.png" width=720 height=832
+                    tabindex="0"
+                    on="tap:IN-8015v6012_resTest.close"
+                    role="button">
+                  </div>
+                </amp-lightbox>
+
+                <amp-lightbox id="IN-8015v6014_Flower_resTest" layout="nodisplay">
+                  <div class="lightbox">
+                    <amp-img src="/images/Usermanuals/IN-8015v6014_resTestBig4.png" width=720 height=832
+                    tabindex="0"
+                    on="tap:IN-8015v6014_Flower_resTest.close"
+                    role="button">
+                  </div>
+                </amp-lightbox>
+
+                <amp-lightbox id="IN-8015v6014_resTest_2" layout="nodisplay">
+                  <div class="lightbox">
+                    <amp-img src="/images/Usermanuals/IN-8015v6014_resTestBig2.png" width=720 height=832
+                    tabindex="0"
+                    on="tap:IN-8015v6014_resTest_2.close"
+                    role="button">
+                  </div>
+                </amp-lightbox>
+
+                <amp-lightbox id="IN-8015v6014_resTest_3" layout="nodisplay">
+                  <div class="lightbox">
+                    <amp-img src="/images/Usermanuals/IN-8015v6014_resTestBig3.png" width=720 height=832
+                    tabindex="0"
+                    on="tap:IN-8015v6014_resTest_3.close"
+                    role="button">
+                  </div>
+                </amp-lightbox>
+
+                <amp-lightbox id="IN-8015v6014_Night_resTest" layout="nodisplay">
+                  <div class="lightbox">
+                    <amp-img src="/images/Usermanuals/IN-8015HD-vs-IN-6014HD_nightBig.png" width=720 height=832
+                    tabindex="0"
+                    on="tap:IN-8015v6014_Night_resTest.close"
+                    role="button">
+                  </div>
+                </amp-lightbox>
 
         </div>
         <!-- /container main -->
