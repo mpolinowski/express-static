@@ -49,8 +49,9 @@
                       <!-- article -->
 
                       <div>
-                          <h3>III.	Access your Camera over it´s DDNS Address</h3>
-                          <p>Please read <a href="/Internet_Access/The_DDNS_Service/">Step I</a> on how to configure your camera. And <a href="/Internet_Access/Port_Forwarding/">Step II</a> for the necessary router configuration. In the following we will use our web browser as well as our InstarVision smartphone app to access the INSTAR IP camera remotely.</p>
+                          <h3>III.	Access your Camera through it´s DDNS Address</h3>
+                          <p><i>Please read <a href="/Internet_Access/The_DDNS_Service/">Step I</a> on how to configure your camera and <a href="/Internet_Access/Port_Forwarding/">Step II</a> for the necessary router configuration first.</i>
+                            <br><br>In the following we will use the web browser as well as the InstarVision smartphone app to access the INSTAR IP camera remotely.</p>
                           <p>Please open your camera´s Web User Interface and navigate to <strong>Network > DDNS</strong> (<a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">1080p Series</a> / <a href="/Web_User_Interface/720p_Series/Network/DDNS/">720p Series</a>). Copy your personal DDNS address into your browser´s address bar amd add your camera´s external port- e.g test12.ddns3-instar.de:8081. This address will guide you to your camera´s user interface. <strong>Some routers don´t allow you to use your camera´s DDNS address from inside your local network! (e.g. Telekom Speeport)</strong></p>
                       </div>
                       <!-- /margin -->
@@ -85,7 +86,11 @@
                           <li><a href="/Software/Android/InstarVision/DDNS/">Android</a></li>
                         </ul>
                       </div>
-
+                      <div class="dangercard">
+                          <h4>Caution:</h4>
+                          <p>Whereas it is possible to test the DDNS access in a FritzBox of the same network, there are routers such as the <strong>Telekom Speedports</strong> which can deny the test. This means you would have to use a computer in another network, or alternatively test the DDNS-Access by using the mobile network on your smartphone.</p>
+                          <p>It is not possible to use the DDNS-Service if you don´t have an IPv4-address. If you only have an IPv6-address, you can ask your provider to give you an IPv4-address.</p>
+                      </div>
                 </article>
                 <!-- /article -->
 

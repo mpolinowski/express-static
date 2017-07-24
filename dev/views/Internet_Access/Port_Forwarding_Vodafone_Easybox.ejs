@@ -51,10 +51,12 @@
                     <!-- article -->
 
                     <div>
-                        <h3>Step 1</h3>
+                      <h1>Port Forwarding :: Vodafone EasyBox</h1>
+                      <p> <i>This is the 2nd step of the Port Forwarding, click <a href="/Fernzugriff/Der_DDNS_Dienst/">here</a> to get to the beginning of the manual.</i></p>
                         <br>
                         <amp-youtube data-videoid="CF8W5N4Q8Ws" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
                         <br>
+                        <h3>Step 1</h3>
                         <p>To access the user interface of your router open the following address with your internet browser <a href="http://192.168.2.1">192.168.2.1</a>. The <strong>default login</strong> is username = root or admin and password = 123456. Navigate to the <strong>Port Mapping</strong> in the <em>Data</em> tab and click on the <strong>Edit</strong> symbol under Configure.</p>
                     </div>
                     <!-- /margin -->
@@ -70,13 +72,8 @@
                     <!-- /margin -->
 
                     <div class="margin">
-                        <p>Go to Data/Portmapping to configure a new port forwarding rule for your camera.</p>
-                    </div>
-                    <!-- /margin -->
-
-                    <div class="margin">
                         <h3>Step 2</h3>
-                        <p>Type your cameras IP address into the field <em>LAN IP</em>. You can find your cameras IP address using our IP Camera Tool. Set both the <strong>LAN</strong> and <strong>Public Port</strong> to the port you want to operate your camera on. The cameras default port ist 80. Click on <strong>Enter</strong> Symbol under Configure to save the service.</p>
+                        <p>Type your camera´s IP address into the field <em>LAN IP</em>. Set both the <strong>LAN</strong> and <strong>Public Port</strong> to the port of your camera. For your first camera both ports are "8081", for your second camera "8082" etc. Click the <strong>Enter</strong>-Symbol under Configure to save the service.</p>
                     </div>
                     <!-- /margin -->
 
@@ -87,17 +84,7 @@
                           tabindex="0"
                           src="/images/Internet_Access/Easybox_02en.jpg" width="680" height="280" layout="responsive" class="shadow">
                       </amp-img>
-                    </div>
-                    <!-- /margin -->
-
-                    <div class="margin">
-                        <p>Add the camera's IP address and adjust the forwarded port to the LAN port of your camera.</p>
-                    </div>
-                    <!-- /margin -->
-
-                    <div class="margin">
-                        <h3>Step 3</h3>
-                        <p>The service is now active.</p>
+                      <p>The service is now active.</p>
                     </div>
                     <!-- /margin -->
 
@@ -112,45 +99,18 @@
                     <!-- /margin -->
 
                     <div class="margin">
-                        <p>Adjust the forwarding rule.</p>
-                    </div>
-                    <!-- /margin -->
-
-                    <div class="margin">
-                        <h3>Step 4</h3>
-                        <p>Your camera can now be reached via the ddns address that can be found under <a href="/Web_User_Interface/HD_Series/Network/DDNS/">Network/DDNS</a> in your cameras user interface. In case the port 80 is already taken in your network you will have to change the camera port under Network/Basic Network Settings and of course adjust the portforwarding service to the new port.</p>
-                    </div>
-                    <!-- /margin -->
-
-                    <div class="margin">
-                      <amp-img
-                          on="tap:Speedport_02en"
-                          role="button"
-                          tabindex="0"
-                          src="/images/Internet_Access/Speedport_02en.jpg" width="480" height="169" layout="responsive" class="shadow">
-                      </amp-img>
+                        <h3>Step 3</h3>
+                        <p>To be able to access the Flash-Video as well, there has to be set a second Port Forwarding. Therefore just follow the manual of this step, with the only difference to to set the Flash-Port instead. So for your first camera all ports are set to 1935, for your second camera it´s 1936, etc.</p>
+                        <p>Now all Port Forwarings for your camera are set in the router. You can now continue with the next step, therefore follow this Link:</a>.</p>
                     </div>
                     <!-- /margin -->
 
                       <div class="margin">
-                          <h3>Step III :	Get your cameras Internet Address and access your camera over the internet.</h3>
+                        <h3>Step III : The Camera´s DDNS-Address and the Remote-Access</h3>
                           <br>
                           <a href="/Internet_Access/Mobile_Access/"><button type="button" class="btn">Step III</button></a>
                       </div>
                       <!-- /margin -->
-
-                    <div class="margin">
-                        <h2>Adding More Cameras</h2>
-                        <p>If you are using more then one camera you have to also create another Port rule for each camera.Please make sure that the <strong>Öffentliche Port</strong> is always different for each port forwarding. For example if you are using Port 8081 for the first camera then the second camera should have the Port 8082 and the third camera Port 8083 and so on.</p>
-                        <p>To access each camera you would type in something like this:</p>
-                        <ul>
-                          <li><strong>Camera 1</strong>: ab1234.ddns-instar.com:8081</li>
-                          <li><strong>Camera 2</strong>: ab1234.ddns-instar.com:8082</li>
-                        </ul>
-                        <p>and so on...</p>
-                    </div>
-                    <!-- /margin -->
-
                 </article>
                 <!-- /article -->
 

@@ -40,18 +40,16 @@
         <article class="blade wrapper content">
           <div>
             <h1 class="post-title">The INSTAR DDNS Service</h1>
-            <h4>Three Easy Steps to access your Camera through the Internet</h4></div>
-          <div>
-            <h3>The basic concept of remote access</h3>
-            <p>Software-Ports are numbered connections, which are used by the computer to connect different types of network traffic. Services such as FTP on Port 21 or HTTP on Port 80 are already determined, many operating systems can even choose the right
-              ports for their respective services on their own. When a port in the router is being opened, a service will be assigned to that port, such as an IP-camera. For security reasons, all ports to the internet are closed in the router by default.
-              This is the reason, why you can not access your camera through the internet without port forwarding.</p>
-          </div>
-          <div class="margin desktop up">
-            <p class="intro"> There are two types of connections to your camera. The first type of connection is the internal access to get to the Web-UI of the camera. This requires, that the computer and the camera are in the same local network, connected by the same
-              router. The second type of connection is the remote access, which allows to access the Web-UI of the camera through the internet from all over the world. Thereby it doesn´t matter if you´re sitting in the train using your smartphone, or
-              if you are in your holiday resort using a laptop. To make this possible, there have to be applied some settings. In the following will be explained how to establish the remote access to your camera step-by-step.</p>
-          </div>
+            <h2>Three Easy Steps to access your Camera through the Internet</h2></div>
+            <div class="margin desktop up">
+              <h4>The basic concept of remote access</h4>
+              <p class="intro"> There are two types of connections to your camera. The first type of connection is the internal access to get to the Web-UI of the camera. This requires, that the computer and the camera are in the same local network, connected by the same
+                router. The second type of connection is the remote access, which allows to access the Web-UI of the camera through the internet from all over the world. Thereby it doesn´t matter if you´re sitting in the train using your smartphone, or
+                if you are in your holiday resort using a laptop. </p>
+                <p>Software-Ports are numbered connections, which are used by the computer to connect different types of network traffic. Services such as FTP on Port 21 or HTTP on Port 80 are already determined, many operating systems can even choose the right
+                  ports for their respective services on their own. When a port in the router is being opened, a service will be assigned to that port, such as an IP-camera. For security reasons, all ports to the internet are closed in the router by default.
+                  This is the reason, why you can not access your camera through the internet without port forwarding. To make this possible, there have to be applied some settings. In the following will be explained how to establish the remote access to your camera step-by-step.</p>
+            </div>
           <div class="card-container margin">
             <div class="onecard">
               <amp-youtube data-videoid="FjE95bL7_p4" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
@@ -109,8 +107,8 @@
           <div class="margin">
             <table>
               <tr>
-                <td width="20%"> <strong>IP-Adress</strong></td>
-                <td>Here you have to choose an IP-Address for your camera. But be aware, that the IP-Adress has to relate to your router! Taking the Fritzbox as an example, the beginning of the IP-Address is <strong>192.168.178.XXX</strong> by default, for
+                <td width="20%"> <strong>IP-Address</strong></td>
+                <td>Here you have to choose an IP-Address for your camera. But be aware, that the IP-Address has to relate to your router! Taking the Fritzbox as an example, the beginning of the IP-Address is <strong>192.168.178.XXX</strong> by default, for
                   a Telekom Speedport Router it is <strong>192.168.2.XXX</strong>. To avoid mistakes in your lcoal network, we recommend to choose a last number higher than 200. If you own a FritzBox, then you take the 192.168.178.201 for your first camera,
                   for your second camera you choose 192.168.178.202, and so on.</td>
               </tr>
@@ -124,15 +122,15 @@
               </tr>
               <tr>
                 <td width="20%"> <strong>DNS Server</strong></td>
-                <td>Here you have to enter the IP-Adress of your router as well.</td>
+                <td>Here you have to enter the IP-Address of your router as well.</td>
               </tr>
               <tr>
                 <td width="20%"> <strong>HTTP Port</strong></td>
-                <td>Here you have to enter a different port for each of your camera, starting at <strong>8081</strong> ascending. Meaning for camera 1 enter 8081, for camera 2 enter 8082, etc.</td>
+                <td>Here you have to enter a different port for each of your camera, starting at <strong>8081</strong> ascending. Meaning for camera 1 enter 8081, for camera 2 enter 8082, etc. (In case of a FullHD-Camera leave this Port on 80)</td>
               </tr>
               <tr>
                 <td width="20%"> <strong>HTTPS Port</strong></td>
-                <td>(This is only for the FHD-cameras) Here you have to enter a different port for each of your cameras, starting at <strong>9091</strong> ascending, meaning for camera 1 enter 9091, for camera 2 enter 9092, etc.</td>
+                <td>(This is only for the FullHD-Cameras) Here you have to enter a different port for each of your cameras, starting at <strong>8081</strong> ascending, meaning for camera 1 enter 8081, for camera 2 enter 8082, etc.</td>
               </tr>
               <tr>
                 <td width="20%"> <strong>RTMP Port</strong></td>

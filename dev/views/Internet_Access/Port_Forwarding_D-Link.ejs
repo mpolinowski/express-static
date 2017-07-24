@@ -50,6 +50,9 @@
                     <!-- article -->
 
                     <div>
+                      <h1>Port Forwarding :: D-Link</h1>
+                      <p> <i>This is the 2nd step of the Port Forwarding, click <a href="/Fernzugriff/Der_DDNS_Dienst/">here</a> to get to the beginning of the manual.</i></p>
+                      <br>
                         <h3>Step 1</h3>
                         <p>To access the user interface of your router open the following address with your internet browser <a href="http://192.168.0.1">192.168.0.1</a>. The default login is username = admin and password is left blank. Navigate to the <em>Portweiterleitung</em> in the <em>Erweitert</em> menu (s. below).</p>
                     </div>
@@ -72,7 +75,7 @@
 
                     <div class="margin">
                         <h3>Step 2</h3>
-                        <p>Check the box in front of the service you want to use and choose a name for it in the <em>Name</em> field. Type your cameras IP address into the field <em>IP Address</em> underneath. You can find your cameras IP address using our IP Camera Tool. Set both the <em>Öffentlicher Port</em> and <em>Privater Port</em> to the port you want to operate your camera on.The default port is 80. Lastly choose TCP as <em>Datenverkehrstyp</em> and click on <em>Einstellungen speichern</em> to save the service.</p>
+                        <p>Check the box in front of the service and give your camera a name in the <em>Name</em> field. Type your camera´s IP address into the field <em>IP Address</em> underneath. Set both the <em>Öffentlicher Port</em> and <em>Privater Port</em> to the port of your camera. For your first camera this is "8081", for your second camera it´s 8082 etc. Then choose TCP as <em>Datenverkehrstyp</em> and click on <em>Einstellungen speichern</em> to save the service.</p>
                     </div>
                     <!-- /margin -->
 
@@ -87,45 +90,19 @@
                     <!-- /margin -->
 
                     <div class="margin">
-                        <p>Go to Advanced/Type in a namefor the rule, the camera's local IP address, LAN port and choose the TCP protocol.</p>
-                    </div>
-                    <!-- /margin -->
-
-                    <div class="margin">
                         <h3>Step 3</h3>
-                        <p>Your camera can now be reached via the ddns address that can be found under System/Info in your cameras user interface (s. above). In case the port 80 is already taken in your network you will have to change the camera port under Network/Basic Network Settings and of course adjust the portforwarding service to the new port.</p>
-                    </div>
-                    <!-- /margin -->
+                        <p>To be able to access the Flash-Video as well, there has to be set a second Port Forwarding. Therefore just follow the manual of this step, with the only difference to to set the Flash-Port instead. So for your first camera all ports are set to 1935, for your second camera it´s 1936, etc.</p>
+                        <p>Now all Port Forwarings for your camera are set in the router. You can now continue with the next step, therefore follow this Link:</a>.</p>
 
-                    <div class="margin">
-                      <amp-img
-                          on="tap:Speedport_02en"
-                          role="button"
-                          tabindex="0"
-                          src="/images/Internet_Access/Speedport_02en.jpg" width="480" height="169" layout="responsive" class="shadow">
-                      </amp-img>
                     </div>
                     <!-- /margin -->
 
                       <div class="margin">
-                          <h3>Step III :	Get your cameras Internet Address and access your camera over the internet.</h3>
+                          <h3>Step III : The Camera´s DDNS-Address and the Remote-Access</h3>
                           <br>
                           <a href="/Internet_Access/Mobile_Access/"><button type="button" class="btn">Step III</button></a>
                       </div>
                       <!-- /margin -->
-
-                    <div class="margin">
-                        <h2>Adding More Cameras</h2>
-                        <p>If you are using more then one camera you have to also create another Port rule for each camera.Please make sure that the <strong>Öffentliche Port</strong> is always different for each port forwarding. For example if you are using Port 8081 for the first camera then the second camera should have the Port 8082 and the third camera Port 8083 and so on.</p>
-                        <p>To access each camera you would type in something like this:</p>
-                        <ul>
-                          <li><strong>Camera 1</strong>: ab1234.ddns-instar.com:8081</li>
-                          <li><strong>Camera 2</strong>: ab1234.ddns-instar.com:8082</li>
-                        </ul>
-                        <p>and so on...</p>
-                    </div>
-                    <!-- /margin -->
-
                 </article>
                 <!-- /article -->
 
