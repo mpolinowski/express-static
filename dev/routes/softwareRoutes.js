@@ -1473,4 +1473,32 @@ softwareRouter.route('/Other_Platforms/Domovea')
     });
 });
 
+softwareRouter.route('/Mobile_Access_Over_HTTPS')
+.get(function(req, res) {
+  res.render('./Software/Mobile_Access_Over_HTTPS', {
+      title: 'Mobile Access over HTTPS',
+      ampimg: '/images/Search/P_SearchThumb_Products.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Mobile_Access_Over_HTTPS/">HTTPS</a></li>',
+      canonical: '/Software/Mobile_Access_Over_HTTPS/',
+		pacc: '',
+		ptab: 'hidden',
+		qiacc: '',
+		qitab: 'hidden',
+		mdacc: '',
+		mdtab: 'hidden',
+		iaacc: '',
+		iatab: 'hidden',
+		auacc: '',
+		autab: 'hidden',
+		hdacc: 'hidden',
+		hdtab: 'hidden',
+		fhdacc: 'hidden',
+		fhdtab: 'hidden',
+		sacc: '',
+		dlacc: 'hidden',
+		dltab: 'hidden',
+    });
+});
+
 module.exports = softwareRouter;

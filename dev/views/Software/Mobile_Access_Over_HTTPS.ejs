@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html ⚡ lang="de">
+    <head>
+        <% include ../_partials/amp/_amp-head.ejs %>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+        <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    </head>
+
+    <body class="home">
+
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
+
+      <header class="header fixed">
+        <% include ../_partials/amp/_amp-header.ejs %>
+      </header>
+
+        <div class="wrap">
+            <div class="container main">
+
+              <% include ../_partials/content/_bluenav-general.ejs %>
+
+                  <article class="blade wrapper content">
+                      <!-- article -->
+
+                    <div>
+                        <h1 class="post-title">Audio über HTTPS</h1>
+                        <h4>3 Wege die Audiofunktion zu nutzen wenn Ihre Kamera über HTTPS eingebunden wurde</h4>
+                    </div>
+                    <!-- /margin -->
+
+                    <div class="margin">
+                      <p>
+                        Wenn Sie <a href="/Fernzugriff/Port_Weiterleitung/">unserer Anleitung</a> bei der Portweiterleitung für Ihre <strong>1080p Kamera</strong> gefolgt sind, haben Sie den HTTPS Port der Kamera auf den Wert 8081 gelegt und diesen - zusammen mit dem RTMP Port - danach in Ihrem Router durchgeleitet um den Zugriff über die <a href="/Internet_Access/The_DDNS_Service/">DDNS Adresse</a> zu ermöglichen.
+                      </p>
+                      <p>
+                        Wenn Sie von unterwegs die DDNS Adresse an Ihrem Laptop per Webbrowser aufrufen, werden Sie den Ton des Mikrofons der Kamera hören. Wenn Sie die Kamera in der Mobil App InstarVision über die DDNS Adresse hinzufügen wird jedoch weder der Ton wiedergegeben, noch ist es möglich die Gegensprechfunktion zu nutzen. Im folgenden beschreiben wir 3 Optionen, wie Sie die Audiofunktion Ihrer Full HD Kamera dennoch nutzen können.
+                      </p>
+                    </div>
+                    <!-- /margin -->
+
+                    <amp-accordion disable-session-states class="margin">
+
+                      <section>
+
+                        <h3 class="cgi-accordion-header">+  Nutzen Sie den Zugriff über P2P</h3>
+
+                        <div class="margin">
+                            <h4>Zugriff auf den Audiostream der Kamera <u>und</u> die Gegensprechfunktion</h4>
+                            <p>In den Anleitungen der Apps finden Sie einen Warnhinweis, dass der Zugriff über <a href="/Internet_Access/Point_to_Point/">P2P</a> generell langsamer sei, als der Zugriff über die DDNS Adresse. Dies betrifft hauptsächlich die 720p Kamera Modelle. Bei den Full HD (1080p) Modellen kommt ein P2P Dienst zum Einsatz, der wesentlich schneller ist und mehr Funktionen bereit stellt. Er ist somit durchaus eine Alternative zum Zugriff über DDNS.</p>
+                            <p>Anleitungen zum Einbinden der Kamera ueber den P2P Dienst, finden Sie in den Aleitungen der jeweiligen Apps:</p>
+                            <ul>
+                              <li><a href="/Software/Windows/InstarVision/Windows_Phone/P2P/">Windows Phone</a></li>
+                              <li><a href="/Software/Windows/InstarVision/Metro/P2P/">Windows 8/10 (Metro)</a></li>
+                              <li><a href="/Software/iOS/InstarVision/iPhone/P2P/">iPhone</a></li>
+                              <li><a href="/Software/iOS/InstarVision/iPad/P2P/">iPad</a></li>
+                              <li><a href="/Software/Android/InstarVision/P2P/">Android</a></li>
+                            </ul>
+                        </div>
+                        <!-- /margin -->
+
+                      </section>
+
+                      <section>
+                        <h3 class="cgi-accordion-header">+  Nutzen Sie RTSP Videostream</h3>
+                        <div class="margin">
+                            <h4>Zugriff auf den Audiostream der Kamera</h4>
+                            <p>In der <a href="/Fernzugriff/Port_Weiterleitung/">Anleitung zur Portweiterleitung</a>, wird die Durchleitung des HTTPS Ports auf dem <strong>8081</strong> und des RTMP Ports auf <strong>1935</strong> erklärt. Der RTMP Port wird dabei nur für das Flash Plugin in der Weboberfläche benötigt. Wenn Sie von unterwegs nur die App nutzen, muss der Port 1935 nicht durchgeleitet werden.</p>
+                            <p>Um den RTSP Stream Ihrer Kamera in der App zu nutzen, muessen Sie zuerst den RTSP Port durchleiten. Standardmässig liegt dieser auf dem Port 554:</p>
+                            <br><br><br>
+
+                            <amp-carousel id="carousel-with-preview"
+                              class="shadow"
+                              width="480"
+                              height="400"
+                              layout="responsive"
+                              type="slides">
+                              <amp-img src="/images/Internet_Access/IP-Konfiguration_FHD-min.png"
+                                width="596"
+                                height="549"
+                                layout="responsive"
+                                alt="1080p FHD Web User Interface"></amp-img>
+                              <amp-img src="/images/Internet_Access/Portforwarding-Fritzbox-7490de_new_05.png"
+                                width="472"
+                                height="650"
+                                layout="responsive"
+                                alt="Router Port Forwarding"></amp-img>
+                              <amp-img src="/images/Internet_Access/Mobile_Access_RTSP_01.png"
+                                width="480"
+                                height="400"
+                                layout="responsive"
+                                alt="Access RTSP Stream inside our InstarVision Mobile App"></amp-img>
+                              <amp-img src="/images/Internet_Access/Mobile_Access_RTSP_02.png"
+                                width="480"
+                                height="400"
+                                layout="responsive"
+                                alt="Access RTSP Stream inside our InstarVision Mobile App"></amp-img>
+                              <amp-img src="/images/Internet_Access/Mobile_Access_RTSP_03.png"
+                                width="480"
+                                height="400"
+                                layout="responsive"
+                                alt="Access RTSP Stream inside our InstarVision Mobile App"></amp-img>
+                            </amp-carousel>
+                            <div class="carousel-preview">
+                              <button on="tap:carousel-with-preview.goToSlide(index=0)">
+                                <amp-img src="/images/Internet_Access/IP-Konfiguration_FHD-thumb.jpg"
+                                  width="60"
+                                  height="40"
+                                  alt="1080p FHD Web User Interface"></amp-img>
+                              </button>
+                              <button on="tap:carousel-with-preview.goToSlide(index=1)">
+                                <amp-img src="/images/Internet_Access/Portforwarding-Fritzbox-7490de_new_05_thumb.png"
+                                  width="60"
+                                  height="40"
+                                  alt="Router Port Forwarding"></amp-img>
+                              </button>
+                              <button on="tap:carousel-with-preview.goToSlide(index=2)">
+                                <amp-img src="/images/Internet_Access/Mobile_Access_RTSP_01_Thumb.png"
+                                  width="60"
+                                  height="40"
+                                  alt="Access RTSP Stream inside our InstarVision Mobile App"></amp-img>
+                              </button>
+                              <button on="tap:carousel-with-preview.goToSlide(index=3)">
+                                <amp-img src="/images/Internet_Access/Mobile_Access_RTSP_02_Thumb.png"
+                                  width="60"
+                                  height="40"
+                                  alt="Access RTSP Stream inside our InstarVision Mobile App"></amp-img>
+                              </button>
+                              <button on="tap:carousel-with-preview.goToSlide(index=4)">
+                                <amp-img src="/images/Internet_Access/Mobile_Access_RTSP_03_Thumb.png"
+                                  width="60"
+                                  height="40"
+                                  alt="Access RTSP Stream inside our InstarVision Mobile App"></amp-img>
+                              </button>
+                            </div>
+
+                            <table>
+                                <tr>
+                                    <td width="20%">
+                                        <strong>IP Adresse</strong>
+                                    </td>
+                                    <td>Wählen Sie hier eine IP-Adresse für Ihre Kamera aus. Aber achten Sie darauf, dass die IP-Adresse Ihrem Router angepasst ist! Für eine Fritzbox, zum Beispiel, ist dies standardmäßig <strong>192.168.178.XXX</strong>, für einen Telekom Speedport Router die <strong>192.168.2.XXX</strong>. Damit es nicht zu Fehlern in Ihrem lokalen Netzwerk kommt, wählen Sie am besten eine freie Zuordnungszahl für Ihre Kamera ab dem Wert 200. Im Falle einer Fritzbox vergeben Sie also für Kamera 1 die 192.168.178.201, für Kamera 2 die 192.168.178.202, usw.</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%">
+                                        <strong>Subnetzmaske</strong>
+                                    </td>
+                                    <td>Hier geben Sie standardmäßig die <strong>255.255.255.0</strong> rein.</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%">
+                                        <strong>Gateway</strong>
+                                    </td>
+                                    <td>Hier geben Sie die IP-Adresse Ihres Routers ein, zB 192.168.178.1 falls Sie eine Fritzbox benutzen oder 192.168.2.1 für den Telekom Speedport Router.</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%">
+                                        <strong>DNS Server</strong>
+                                    </td>
+                                    <td>Hier geben Sie ebenfalls die IP-Adresse Ihres Routers ein.</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%">
+                                        <strong>HTTP Port</strong>
+                                    </td>
+                                    <td>Vergeben Sie hier für jede Ihrer Kamera einen Wert ab <strong>8081</strong> aufsteigend. Also für Kamera 1 den Wert 8081, für Kamera 2 den Wert 8082, usw.<br>
+                                    (Bei einer FullHD Kamera lassen Sie diesen Port auf 80)</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%">
+                                        <strong>HTTPS Port</strong>
+                                    </td>
+                                    <td>(Nur bei FullHD Kameras) Vergeben Sie hier für jede Ihrer Kamera einen Wert ab <strong>8081</strong> aufsteigend. Also für Kamera 1 den Wert 8081, für Kamera 2 den Wert 8082, usw.</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%">
+                                        <strong>RTMP Port</strong>
+                                    </td>
+                                    <td>Vergeben Sie hier für jede Ihrer Kamera einen Wert ab <strong>1935</strong> aufsteigend. Also für Kamera 1 den Wert 1935, für Kamera 2 den Wert 1936, usw.</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%">
+                                        <strong>RTSP Port</strong>
+                                    </td>
+                                    <td>Vergeben Sie hier für jede Ihrer Kamera einen Wert ab <strong>554</strong> aufsteigend. Also für Kamera 1 den Wert 554, für Kamera 2 den Wert 555, usw.</td>
+                                </tr>
+                            </table>
+
+                            <ul>
+                              <li>Legen Sie zuerst den RTSP Port in der Kamera fest - standardmässig liegt dieser auf dem Port 554, er kann aber auch auf einen höheren Port gelegt werden, z.B 9091.</li>
+                              <li>Leiten Sie danach den entsprechenden Port in Ihrem Router auf die Kamera durch - folgen Sie dabei der <a href="/Fernzugriff/Port_Weiterleitung/">Anleitung zur Portweiterleitung</a>, wie Sie es zuvor für den Port 8081 getan haben.</li>
+                              <li>Gehen Sie Anschliessend in die InstarVision Mobil App und wählen Sie eine neue IP Kamera hinzuzufügen, wählen Sie das entsprechende Kameramodell mit dem RTSP Zusatz und geben Sie die beiden durchgeleiteten Ports (HTTPS und RTSP) ein.</li>
+                              <li>Sie werden im Anschluss in der Lage sein den Audiostream Ihrer Kamera zu hören - aber nicht die Gegensprechfunktion zu nutzen.</li>
+                            </ul>
+                        </div>
+                        <!-- /margin -->
+
+                      </section>
+
+                      <section>
+
+                        <h3 class="cgi-accordion-header">+  Nutzen Sie HTTP Videostream</h3>
+                        <div class="margin">
+                            <h4>Zugriff auf den Audiostream der Kamera <u>und</u> die Gegensprechfunktion</h4>
+                            <p>In der <a href="/Fernzugriff/Port_Weiterleitung/">Anleitung zur Portweiterleitung</a>, wird die Durchleitung des HTTPS Ports auf dem <strong>8081</strong> und des RTMP Ports auf <strong>1935</strong> erklärt. Der RTMP Port wird dabei nur für das Flash Plugin in der Weboberfläche benötigt. Wenn Sie von unterwegs nur die App nutzen, muss der Port 1935 nicht durchgeleitet werden.</p>
+                            <p>Wenn Sie die den HTTPS Port der Kamera wieder zurück auf den Standardwert 443 setzen und statdessen den HTTP Port auf 8081 ändern, können Sie in der InstarVision App den HTTPS Port löschen und stattdessen den HTTP Port mit 8081 eingeben</p>
+
+                            <amp-carousel id="carousel-with-preview"
+                              class="shadow"
+                              width="480"
+                              height="400"
+                              layout="responsive"
+                              type="slides">
+                              <amp-img src="/images/Internet_Access/IP-Konfiguration_FHD-min_alt.png"
+                                width="596"
+                                height="549"
+                                layout="responsive"
+                                alt="1080p FHD Web User Interface"></amp-img>
+                              <amp-img src="/images/Internet_Access/Mobile_Access_RTSP_04.png"
+                                width="472"
+                                height="650"
+                                layout="responsive"
+                                alt="Router Port Forwarding"></amp-img>
+                            </amp-carousel>
+                            <div class="carousel-preview">
+                              <button on="tap:carousel-with-preview.goToSlide(index=0)">
+                                <amp-img src="/images/Internet_Access/IP-Konfiguration_FHD-thumb.jpg"
+                                  width="60"
+                                  height="40"
+                                  alt="1080p FHD Web User Interface"></amp-img>
+                              </button>
+                              <button on="tap:carousel-with-preview.goToSlide(index=1)">
+                                <amp-img src="/images/Internet_Access/Mobile_Access_RTSP_04_Thumb.png"
+                                  width="60"
+                                  height="40"
+                                  alt="Router Port Forwarding"></amp-img>
+                              </button>
+                            </div>
+
+                            <p>Da der Port 8081 <a href="/Fernzugriff/Port_Weiterleitung/">bereits durchgeleitet</a> wurde, wird der Zugriff über die App auf die Kamera sofort möglich sein.</p>
+
+                          </div>
+                          <!-- /margin -->
+
+                      </section>
+
+                  </amp-accordion>
+
+                </article>
+                <!-- /article -->
+
+                <!-- ###################### Lightboxes ######################## -->
+
+                <amp-image-lightbox id="Port_Forwarding_EN_01" layout="nodisplay"></amp-image-lightbox>
+
+            </div>
+            <!-- /container main äöü -->
+        </div>
+        <!-- /wrap-->
+
+        <% include ../_partials/content/_bluenav-general-mobile.ejs %>
+
+        <footer>
+            <% include ../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>
