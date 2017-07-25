@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ⚡ lang="de">
+    <head>
+        <% include ../_partials/amp/_amp-head.ejs %>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+        <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    </head>
+
+    <body class="home">
+
+      <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+          <% include ../_partials/amp/_ampLandingSidebar.ejs %>
+      </amp-sidebar>
+
+      <header class="header fixed">
+        <% include ../_partials/amp/_amp-header.ejs %>
+      </header>
+
+      <div class="wrap">
+          <div class="container main">
+
+            <% include ../_partials/content/_bluenav-general.ejs %>
+
+                <article class="blade wrapper content">
+                    <!-- article ü ä ö  -->
+
+                    <h1>Powerline <a href="/Products/IN-LAN/" target="_blank"><button type="button" name="button" class="btn float-right">Installation</button></a></h1>
+                    <h2>Netzwerk über die Steckdose</h2>
+                    <div class="margin">
+                      <amp-youtube data-videoid="q3yBixX9UmI" layout="responsive" width="480" height="270" class="shadow"></amp-youtube>
+                      <p class="justify"><strong>IN-LAN</strong> ist eine intelligente und sichere Technologie, die es Ihnen auf einfach Weise erlaubt eine Hochgeschwindigkeitsdatennetzwerk über Ihr Stromnetz aufzubauen - ohne die komplexe und kostenintensive Verkabelung die ein reguläres LAN benötigt. IN-LAN bietet Ihnen Datentransferraten bandbreitenintensiver Anwendungen wie Sie sie von einem regulären LAN gewöhnt sind. IN-LAN erlaubt Ihnen die Verbindung zwischen Ihrem Computer und Netzwerk-Geräten aufzubauen wo eine stabile WLAN Verbindung nicht mehr möglich ist. IN-LAN verwandelt jede Steckdose in einen Access Point mit einer state-of-the-art Technologie die Ihnen eine strikte Trennung zwischen Strom- und Datennetzwerk garantiert.</p>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="onecard">
+                            <div class="image">
+                                <amp-img noloading height=281 width=694 layout=responsive src="/images/Products/IN-LAN500-Installation.png"></amp-img>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Card Container -->
+
+                    <div class="margin">
+                      <h4>Was ist der Unterschied zwischen IN-LAN 500 &amp; IN-LAN 500p?</h4>
+                      <p class="justify">Das P in IN-LAN 500p steht für das Englische Pass-through - im Gegensatz zum Standard Modell blockiert der IN-LAN 500p nicht die Steckdose, sondern leitet diese durch. Sie können somit ein weiteres Gerät, z.B. Ihre INSTAR Kamera, dort mit Strom versorgen. Darüber hinaus bieten beide Modelle die gleichen Vorteile:</p>
+                      <ul>
+                        <li>Nutzen Sie mit IN-LAN Ihre existierenden Stromleitungen um Ihr Netzwerk an unzugängliche Orte zu bringen.</li>
+                        <li>Sehr einfache Plug&Play Installation - einfach in die Steckdose stecken und die Adapter bauen das Netzwerk für Sie auf.</li>
+                        <li>Sehr schnelle Transferraten bis zu 500Mbps.</li>
+                        <li>Erweitern Sie Ihr Netzwerk für weitere IP Kameras, ohne dafür Netzwerkkabel verlegen zu müssen.</li>
+                        <li>Die beiliegende Anleitung führt Sie sicher durch alle Schritte der Installation.</li>
+                      </ul>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="twocard">
+                            <div class="image">
+                                <amp-img noloading height=300 width=300 layout=responsive src="/images/Products/In-lan_500.jpg"></amp-img>
+                            </div>
+                            <div class="action">
+                              <h3>IN-LAN 500</h3>
+                              <br>
+                              <p>Erhältlich in <a href="https://www.instar.de/accessories/netzwerk-ueber-die-steckdose-powerline-dlan/in-lan-500.html">weiss</a>.</p>
+                            </div>
+                        </div>
+                        <div class="twocard">
+                            <div class="image">
+                                <amp-img noloading height=300 width=300 layout=responsive src="/images/Products/In-lan_500p_white.jpg"></amp-img>
+                            </div>
+                            <div class="action">
+                              <h3>IN-LAN 500p</h3>
+                              <br>
+                              <p>Erhältlich in <a href="https://www.instar.de/accessories/netzwerk-ueber-die-steckdose-powerline-dlan/in-lan-500p-black.html" target="_blank">schwarz</a> und <a href="https://www.instar.de/accessories/netzwerk-ueber-die-steckdose-powerline-dlan/in-lan-500p-white.html" target="_blank">weiss</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Card Container -->
+
+                </article>
+            </div>
+            <!-- /container main -->
+        </div>
+        <!-- /wrap-->
+
+        <% include ../_partials/content/_bluenav-general-mobile.ejs %>
+
+        <footer>
+            <% include ../_partials/amp/_amp-footer.ejs %>
+        </footer>
+    </body>
+</html>

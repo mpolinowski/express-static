@@ -2535,8 +2535,13 @@ section.blade.blog .tab-container .tab .subtitle {
     width: 97%
 }
 
-.primarycard p {
+.primarycard p, .primarycard h4 {
     color: #fff
+}
+
+.primarycard a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .secondarycard {
@@ -2559,8 +2564,13 @@ section.blade.blog .tab-container .tab .subtitle {
     width: 97%
 }
 
-.warningcard p {
+.warningcard p, .warningcard h4 {
     color: #fff
+}
+
+.warningcard a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .successcard {
@@ -2573,8 +2583,13 @@ section.blade.blog .tab-container .tab .subtitle {
     width: 97%
 }
 
-.successcard p {
+.successcard p, .successcard h4 {
     color: #fff
+}
+
+.successcard a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .infocard {
@@ -2587,8 +2602,13 @@ section.blade.blog .tab-container .tab .subtitle {
     width: 97%
 }
 
-.infocard p {
+.infocard p, .infocard h4 {
     color: #fff
+}
+
+.infocard a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .dangercard {
