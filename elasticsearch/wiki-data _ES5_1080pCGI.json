@@ -1,0 +1,463 @@
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: IP Config Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Network Menu The IP Configuration Overlay param.cgi?cmd=getnetattr Function Get your Cameras Network Configuration Authority admin Parameter dhcpflag: on: (DHCP enabled), off: (DHCP disabled) ip: LAN IPv4 Address netmask: LAN Subnet Mask gateway: LAN Gateway dnsstat: DNS Status: 0 (manually), 1 (from DHCP Server) fdnsip: Primary DNS sdnsip: Secondary DNS macaddress: LAN MAC Address networktype: LAN or WLAN Example GET: http admin:instar 192.168.178.88 param.cgi cmd=getnetattr GET: http 192.168.178.88 param.cgi cmd=getnetattr -usr=admin -pwd=instar SET: http admin:instar 192.168.178.88 param.cgi cmd=setnetattr -dhcpflag=off -ip=192.168.1.115 -netmask=255.255.255.0 -gateway=192.168.1.1 -fdnsip=8.8.8.8 -sdnsip= param.cgi cmd=gethttpport Function Get your Cameras HTTP Port Authority admin Parameter httpport: Camera LAN Port Remark Camera needs to be manually rebooted after setting the port Example GET: http admin instar 192.168.178.88 param.cgi cmd=gethttpport GET: http 192.168.178.88 param.cgi cmd=gethttpport usr=admin pwd=instar SET: http admin instar 192.168.178.88 param.cgi cmd=sethttpport -httpport=80 param.cgi cmd=gethttspport Function Get your Cameras HTTPS Port Authority admin Parameter httpsport: Camera LAN Port Remark Camera needs to be manually rebooted after setting the port Example GET: http admin:instar 192.168.178.88 param.cgi cmd=gethttpsport GET: http 192.168.178.88 param.cgi cmd=gethttpsport -usr=admin -pwd=instar SET: http admin:instar 192.168.178.88 param.cgi cmd=sethttpsport -httpsport=443 param.cgi cmd=getrtspport Function Get your Cameras RTSP Port Authority admin Parameter rtspport: Real Time Streaming Protocol Port rtpport: Transport port for RTSP Media Stream Remark Camera needs to be manually rebooted after setting the port Example GET: http admin:instar 192.168.178.88 param.cgi cmd=getrtspport GET: http 192.168.178.88 param.cgi cmd=getrtspport -usr=admin -pwd=instar SET: http admin:instar 192.168.178.88 param.cgi cmd=setrtspport rtspport=554 param.cgi cmd=getrtspauth Function Get RTSP Authentication State Authority admin Parameter rtsp_aenable: 1: RTSP Stream needs Authentication, 0: Authentication deactivated Remark Camera needs to be manually rebooted after changing state. Example GET: http admin:instar 192.168.178.88 param.cgi cmd=getrtspauth GET: http 192.168.178.88 param.cgi cmd=getrtspauth -usr=admin -pwd=instar SET: http admin:instar 192.168.178.88 param.cgi cmd=setrtspauth rtsp_aenable=1 param.cgi cmd=getrtmpattr Function Get your Cameras RTMP Port Authority admin Parameter rtmpport: RTMP Port used byu the Flash Plugin to access the Video Stream Remark Camera needs to be manually rebooted after changing state. Example GET: http admin:instar 192.168.178.88 param.cgi cmd=getrtmpattr GET: http 192.168.178.88 param.cgi cmd=getrtmpattr -usr=admin -pwd=instar SET: http: admin:instar 192.168.178.88 param.cgi cmd=setrtmpattr -rtmpport=1935",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Network_Menu/IP_Configuration/",
+    "title2": "The IP Config Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["IP Configuration", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des IP-Konfigurations-Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: WiFi Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Network Menu The WiFi Overlay param.cgi?cmd=getwirelessattr Function Get your Camera´s WLAN Configuration Authority admin Parameter wf_enable: 1 (WiFi enabled), 0 (WiFi disabled) wf_ssid: SSID (max. 32 Characters) wf_auth: 0 (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK) wf_key: Key max. 63 Characters (Allowed special characters: ) wf_enc: Key type 0 (TKIP), 1 (AES) wf_mode: 0 (infra), 1 (ad-hoc) Example GET: http admin:instar 192.168.178.88 param.cgi cmd=getwirelessattr GET: http 192.168.178.88 param.cgi cmd=getwirelessattr -usr=admin -pwd=instar SET: http: admin:instar 192.168.178.88 param.cgi cmd=setwirelessattr -wf_ssid=linksys -wf_enable=1 -wf_auth=3 -wf_key=1234567890 -wf_enc=1 -wf_mode=0 param.cgi?cmd=searchwireless Function Get your Camera´s Search for WiFi Access Points Authority admin Parameter waccess_points: Wireless Network Signals wchannel: Channel wrssi: Signal Strength wessid: SSID wenc: Encryption Mode wauth: Authority Mode wnet: Connection mode(router mode, point to point mode) Remark If waccess_points >1 the CGI will return more values for each variable - Example: var waccess_points= 2; var wchannel=new Array(); var wrssi=new Array(); var wessid=new Array() var wenc=new Array(); var wauth=new Array(); var wnet=new Array(); wchannel[0]=6 wrssi[0]=-82 wessid[0]=My WiFi wenc[0]=AES wauth[0]=WPA(2)-PSK wnet[0]= Infra wchannel[1]=11 wrssi[1]=-62 wessid[1]=Linksys wenc[1]=TKIP wauth[1]=WPA(2)-PSK wnet[1]=Infra Example GET: http admin:instar 192.168.178.88 param.cgi cmd=searchwireless GET: http 192.168.178.88 param.cgi cmd=searchwireless -usr=admin -pwd=instar param.cgi cmd=chkwirelessattr Function Get your Cameras Search for WiFi Access Points Authority admin Parameter wf_ssid: SSID (max. 32 CHaracters) wauth: Encryption mode - 0: (no encryption), 1 (WEP), 2 (WPA-PSK), 3 (WPA2-PSK) wf_key: WiFi Key wf_enc: Encryption 0 (TKIP), 1 (AES) wf_mode: Connection Mode 0 (Infra), 1 (Ad-hoc) Note To test WiFi login first set parameters with chkwirelessattr, then test login with getchkwireless: Check result 0 (failure) Check result 1 (success) Example SET: http admin:instar 192.168.178.88 param.cgi cmd=chkwirelessattr -wf_ssid=linksys -wf_auth=3 -wf_key=1234567890 -wf_enc=0 -wf_mode=0 GET: http 192.168.178.88 param.cgi cmd=getchkwireless",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Network_Menu/WiFi/",
+    "title2": "The WiFi Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["WiFi", "WLAN", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des WLAN-Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Remote Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Network Menu The Remote Access Overlay param.cgi?cmd=getourddnsattr Function Get your Camera´s INSTAR DDNS Configuration Authority admin Parameter our_enable: 1: INSTAR DDNS enabled, 0: INSTAR DDNS disabled our_server: INSTAR DDNS Server Domain our_port: INSTAR DDNS Server Port our_uname: Your INSTAR DDNS ID our_passwd: Your INSTAR DDNS Password our_domain: Your INSTAR DDNS Address our_interval: Update Intervall Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getourddnsattr GET: http 192.168.178.88 param.cgi cmd=getourddnsattr&-usr=admin&-pwd=instar param.cgi?cmd=get3thddnsattr Function Get your Cameras 3rd Party DDNS Configuration Authority admin Parameter d3th_enable: 1: 3rd Party DDNS activated INSTAR DDNS disabled, 0: 3rd Party DDNS deactivated INSTAR DDNS enabled d3th_service: 0: DynDNS, 1: NoIP d3th_uname: Your Username d3th_passwd: Your Password d3th_domain: Your 3rd Party DDNS Address Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=get3thddnsattr GET: http 192.168.178.88 param.cgi cmd=get3thddnsattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=set3thddnsattr&-d3th_enable=1&-d3th_service=0&-d3th_uname=myUsername&-d3th_passwd=myPassword&-d3th_domain=myDomain.dyndns.com param.cgi cmd=getserverinfo Function Get your Camera Server Variables Authority admin Parameter model Camera Model Identifier hardVersion: Hardware Version softVersion: Firmware Version webVersion: WebUI Version startdate: Camera Uptime upnpstatus: UPnP service ok, off, failed facddnsstatus: INSTAR DDNS Status ok, off, failed th3ddnsstatus: INSTAR 3rd Party DDNS Status ok, off, failed platformstatus: Platform Status 0, 1 sdstatus: SD Card Status out, Ready, Read only sdfreespace: SD free space，KB sdtotalspace: SD total space，KB Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getserverinfo GET: http 192.168.178.88 param.cgi cmd=getserverinfo&-usr=admin&-pwd=instar",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Network_Menu/Remote_Access/",
+    "title2": "The DDNS Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Remote Access", "DDNS", "P2P", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des DDNS Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: UPnP Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Network Menu The UPnP Overlay param.cgi?cmd=getupnpattr Function Check UPnP Service Status Authority admin Parameter upm_enable: 1: UPnP activated, 0: UPnP deactivated Example GET http admin:instar 192.168.178.88 param.cgi?cmd=getupnpattr GET: http 192.168.178.88 param.cgi cmd=getupnpattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setupnpattr&-upm_enable=0",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Network_Menu/UPnP/",
+    "title2": "The UPnP Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["UPnP", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des UPnP Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: ONVIF Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Network Menu The ONVIF Overlay param.cgi?cmd=getonvifattr Function Get ONVIF Service Status Authority admin Parameter ov_enable: 1: ONVIF activated, 0: ONVIF deactivated ov_port: ONVIF Port ov_authflag: 1: ONVIF Login Required, 0: ONVIF Authentication deactivated ov_forbitset: 0: When the time zone setting allows image parameter settings allow 1: When the time zone setting disabled, the image parameter settings allow 2: When the time zone setting allows image parameter settings prohibit 3: When the time zone setting is prohibited, prohibited image parameter settings ov_subchn: Use video channel 11, 12 or 13 ov_snapchn: Use video channel 11, 12 or 13 for snapshots
+    Example  GET: http admin:instar 192.168.178.88 param.cgi?cmd=getonvifattr GET: http 192.168.178.88 param.cgi?cmd=getonvifattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setonvifattr&-ov_enable=1&-ov_port=8080&-ov_authflag=1&-ov_forbitset=0&-ov_subchn=12&-ov_snapchn=13",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Network_Menu/ONVIF/",
+    "title2": "The ONVIF Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["ONVIF Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des ONVIF Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Audio Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Multimedia Menu The Audio Overlay param.cgi?cmd=getaudioinvolume Function Get the Volume the Audio Input Authority admin Parameter  volume: Audio input volume: 1 - 100 volin_type: 0: linear input, 1: microphone input aec: audio encoder: 0, 1 denoise: Noise surpression: 0, 1 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getaudioinvolume GET: http 192.168.178.88 param.cgi cmd=getaudioinvolume&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setaudioinvolume&-volume=80&-volin_type=1 param.cgi?cmd=getaudiooutvolume Function Get the Volume the Audio Output Authority admin Parameter volume: Audio input volume: 1 - 100 volin_type: 0: linear input, 1: microphone input aec: audio encoder: 0, 1 denoise: Noise surpression: 0, 1 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getaudiooutvolume GET: http 192.168.178.88 param.cgi?cmd=getaudiooutvolume&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setaudiooutvolume&-volume=94 param.cgi?cmd=getaencattr&-chn=1,2 or 3 Be aware: the g726 audio format is not widely supported. It is recommend to leave everything at g711a Function Get Audio Encoder Parameter Authority admin Parameter chn: 1st, 2nd or 3rd audio channel: 1, 2, 3 aeswitch_ 1,2 or 3: Audio encode switch on, off: 1, 0 aeformat: Audio encode format g711a: G711A 64Kbps, g726: G726 16Kbps Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getaencattr&-chn=2 GET: http 192.168.178.88 param.cgi?param.cgi?cmd=getaencattr&-chn=2&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setaencattr&-chn=2&-aeswitch_2=1&-aeformat_2=g711a",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Multimedia_Menu/Audio/",
+    "title2": "The Audio Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Audio Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Audio Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Video Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Multimedia Menu The Video Overlay param.cgi?cmd=getvideoattr Function Get the Video Attributes Authority admin Parameter videomode: 41: Resolution CH11=1080p, CH12=320p, CH13=160p vinorm: P: 50Hz(PAL) | N: 60Hz(NTSC) wdrmode: Hardware Wide Dynamic Range: 0 (off), 1 (active) profile: h.264 encoder 0: baseline, 1: mainprofilemaxchn: Maximum active video channels Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getvideoattr GET: http 192.168.178.88 param.cgi cmd=getvideoattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setvideoattr&-videomode=41&-vinorm=P&-wdrmode=1&-profile=1&-maxchn=3 param.cgi?cmd=getvencattr&-chn=11, 12. 13 Function Get the Video Encoder Attributes for Video Streams 11, 12, 13 Authority admin Parameter bps_1, 2, 3: Bitrate CH11 1080p = 512kbps - 4096kbps Bitrate CH11 320p = 512kbps - 2048kbps Bitrate CH11 160p = 90kbps - 512kbps fps_1, 2, 3: Framerate: PAL：Range 1 ~ 25NTSC：Range 1 ~ 30 gop_1, 2, 3: Keyframe Interval: gop Range 10 ~ 150 brmode_1, 2, 3: Video encode control: 0: fixed bit rate 1: changeable bit rate imagegrade_1, 2, 3: 1 (low compression) -6 (high compression) width_1, 2, 3: Video width height_1, 2, 3: Video height Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getvencattr&-chn=11 GET: http 192.168.178.88 param.cgi?cmd=getvencattr&-chn=11&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setvencattr&-chn=11&-bps_1=2048&-imagegrade_1=4&-brmode_1=1&-fps_1=20&-gop_1=40 param.cgi?cmd=getimageattr Function Get Image Parameter Authority admin Parameter display_mode: Current 0: black and white mode 1: color mode brightness: brightness 0-100 saturation: saturation 0-255 sharpness: sharpness 0-100 contrast: contrast 0-100 hue: hue: 0-255 wdr: Software Wide Dynamic Range Mode: on, off night: Night mode 0 (inactive), 1 (active) shutter: Shutter Speed 0 - 65535 flip: flip: Flip the Image on, off mirror: Mirror the Image on, off gc: Night illumination, value Range 0=auto, 1-255 =maual ae: Minimum exposure, range 0-65535 targety: Exposure 0-255 noise: Low light denoising intensity (0-100) gamma: Gamma 0-3 aemode: Auto-Exposure mode, the range 0-2 0 Automatic 1 Indoor 2 Outdoor imgmode: Image priority mode 0: Frame rate priority 1: Illumination priority Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getimageattr GET: http 192.168.178.88 param.cgi?cmd=getimageattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setimageattr&-brightness=4&-saturation=3&-contrast=4&-flip=off&-mirror=off&-shutter=1120&-sharpness=4",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Multimedia_Menu/Video/",
+    "title2": "The Video Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Video Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Video Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Image Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Multimedia Menu The Image Overlay param.cgi?cmd=getimageattr Function Get Image Parameter Authority admin Parameter display_mode: Current 0: black and white mode 1: color mode brightness: brightness 0-100 saturation: saturation 0-255 sharpness: sharpness 0-100 contrast: contrast 0-100 hue: hue: 0-255 wdr: Software Wide Dynamic Range Mode: on, off night: Night mode 0 (inactive), 1 (active) shutter: Shutter Speed 0 - 65535 flip: flip: Flip the Image on, off mirror: Mirror the Image on, off gc: Night illumination, value Range 0=auto, 1-255=maual ae: Minimum exposure, range 0-65535 targety: Exposure 0-255 noise: Low light denoising intensity (0-100) gamma: Gamma 0-3 aemode: Auto-Exposure mode, the range 0-2 0 Automatic 1 Indoor 2 Outdoor imgmode: Image priority mode 0: Frame rate priority 1: Illumination priority Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getimageattr GET: http 192.168.178.88 param.cgi?cmd=getimageattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setimageattr&-brightness=4&-saturation=3&-contrast=4&-flip=off&-mirror=off&-shutter=1120&-sharpness= param.cgi?cmd=getvideoattr Function Get the Video Attributes Authority admin Parameter videomode: 41: Resolution CH11=1080p, CH12=320p, CH13=160p vinorm: P: 50Hz(PAL) N: 60Hz(NTSC) wdrmode: Hardware Wide Dynamic Range: 0 (off), 1 (active) profile: h.264 encoder 0: baseline, 1: mainprofile maxchn: Maximum active video channels Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getvideoattr GET: http 192.168.178.88 param.cgi?cmd=getvideoattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setvideoattr&-videomode=41&-vinorm=P&-wdrmode=1&-profile=1&-maxchn=3 param.cgi?cmd=getimageattrex Function Get Extended Image Attributes Authority admin Parameter display_mode: Current 0 (Black&White), 1 (Colour Mode) wdrauto: Hardware Wide Dynamic Range 0 (Auto), 1 (Manual) wdrautval: Auto WDR Strength 0-2 wdrmanval: Manual WDR Strength 0-255 d3noauto: 3D Noise Reduction Mode: 0 (auto), 1 (manual) d3noval: 3D Noise Reduction Strength: 0-255 gcauto: Signal Gain: 0 (auto), 1 (manual) gcval: Gain Multiplier: 0-255 aemodeex: Exposure Mode Highlight (Exposure) priority Lowlight (Framerate) priority aelowval: Lowlight Intensity 0-255 aehighval: Highlight Intensity 0-255 aeratio: Length Exposure Ratio 0-100 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getimageattrex GET: http 192.168.178.88 param.cgi?cmd=getimageattrex&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setimageattrex&-wdrauto=0&-wdrautval=2&-d3noauto=1&-d3noval=120 param.cgi?cmd=getldcattr Function Get Lens Distortion Correction Authority admin Parameter ldc_enable: Image Distortion Correction: 0 (disabled), 1 (enabled) ldc_xoffset: Horizontal Image Offset ldc_yoffset: Vertical Image Offset ldc_ratio: Distortion Correction 0-511 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getldcattr GET: http 192.168.178.88 param.cgi?cmd=getldcattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setldcattr&-ldc_enable=1&-ldc_xoffset=0&-ldc_yoffset=0&-ldc_ratio=399",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Multimedia_Menu/Image/",
+    "title2": "The Image Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Image Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Bild-Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Privacy Mask Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Multimedia Menu The Privacy Mask Overlay param.cgi?cmd=getcover Function Get Privacy Mask Attributes Authority admin Parameter region: Privacy Mask 1-4 show_1-4: 0, 1 De/Activate Mask color_1-4: Brightness 0-100 x_1-4: X-Coordinate Origin 0-(1920-w) y_[1-4]: Y-Coordinate Origin 0-(1080-h) w_1-4: Mask Width 1-1920 Pixel h_1-4: Mask Height 1-1080 Pixel Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getcover GET: http 192.168.178.88 param.cgi?cmd=getcover&-usr=admin&-pwd=instar SET: http: admin:instar 192.168.178.88 param.cgi?cmd=setcover&-region=1&-show=0&-color=f42ee7&-x=0&-y=0&-w=240&-h=240&cmd=setcover&-region=2&-show=1&-color=f42ee7&-x=1173&-y=270&-w=408&-h=228&cmd=setcover&-region=3&-show=0&-color=f42ee7&-x=0&-y=840&-w=240&-h=240&cmd=setcover&-region=4&-show=0&-color=f42ee7&-x=1680&-y=840&-w=240&-h=240",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Multimedia_Menu/Privacy_Mask/",
+    "title2": "The Privacy Mask Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Privacy Mask Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Privatsphäre-Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Overlay Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Multimedia Menu The Overlays Overlay param.cgi?cmd=getoverlayattr&-region=0, 1 Function Get OSD Parameter Authority admin Parameter region0: OSD time zone, 1: OSD Name region show_region: 0 (hidden), 1 (displayed) place_region: 0: top, 1: bottom x_region: OSD region x coordinate y_region: OSD region y coordinate name_region: Region 0=YYYY-MM-DD hh:mm:ss, region=Camera Name Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getoverlayattr&-region=0 GET: http 192.168.178.88 param.cgi?cmd=getoverlayattr&-region=1&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setoverlayattr&-region=1&-show=1&-name=IN-8015FullHD&cmd=setoverlayattr&-region=0&-show=1",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Multimedia_Menu/Overlays/",
+    "title2": "The Overlay Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Overlay", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Overlay-Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Email Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Features Menu The Email Overlay param.cgi?cmd=getsmtpattr Function Get Email Notification Parameter Authority admin Parameter ma_server: SMTP Server Address e.g. smtp.strato.de ma_port: SMTP Server Port e.g. 25, 587 (TLS) or 465 (SSL) ma_ssl: SSL Encryption 0 (Disabled), 1 (SSL), 2 (TLS) or 3 (STARTTLS) ma_logintype: Enable (1) or Disable (3) Authentication ma_username: SMTP Server Username ma_password: SMTP Server Password ma_from: Sender Email Address ma_to: Receiver Email Address ma_subject: Mail Subject Line ma_text: Mail Content Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getsmtpattr GET: http 192.168.178.88 param.cgi?cmd=getsmtpattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setsmtpattr&-ma_ssl=3&-ma_from=cam%40instar.email&-ma_to=me@gmail.com%3B&-ma_subject=Alarm%20Email&-ma_text=ALARM&-ma_server=mx.instar.email&-ma_port=587&-ma_logintype=1&-ma_username=cam%40instar.email&-ma_password=kunde123",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Features_Menu/Email/",
+    "title2": "The Email Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Email Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Email Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: FTP Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Features Menu The FTP Overlay param.cgi?cmd=getftpattr Function Get INSTAR Cloud Server Parameter Authority admin Parameter ft_server: FTP Server Address ft_port: FTP Server Port ft_username: FTP Username ft_password: FTP Password ft_mode: FTP Mode Port (0) or Passive (1) ft_dirname: FTP Directory ft_autocreatedir: Automatically create the directory 0 (no), 1 (yes) ft_dirmode: 0 (Create a new Folder every Day), 1 (All Files in One Directory) ft_ssl: FTPS Encryption - 0：None, 1：SSL, 2: TLS Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getftpattr GET: http 192.168.178.88 param.cgi?cmd=getftpattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setftpattr&-ft_server=192.168.178.1&-ft_port=21&-ft_username=ftpuser&-ft_password=123456&-ft_mode=1&-ft_dirname=.%2F&-ft_autocreatedir=1&-ft_dirmode=1&-ft_ssl=0 param.cgi?cmd=get_instar_admin&-index=31 Function Get FTP Server Parameter Authority admin Parameter admin_value31: FTP Server FTP User Name FTP User Password FTP Mode FTP Directory Auto Create Directory FTP Directory Mode FTP SSL e.g 192.168.178.1:21 ftpuser:1234 1; Kamera 1;0;0 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=get_instar_admin&-index=31 GET: http 192.168.178.88 param.cgi?cmd=get_instar_admin&-index=31&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=set_instar_admin&-index=31&-value=192.168.178.1%3B21%3Bftpuser%3B1234%3B1%3B.%2F%3B1%3B0%3B0 param.cgi?cmd=testftp Function Get Test FTP Server Parameter Authority admin Parameter Result: -0：succeed -1: unknown error -2: no connection to server -3: username or password error -4: path error -5: no connection to server Example  GET: http admin:instar 192.168.178.88 param.cgi?cmd=testftp GET: http 192.168.178.88 param.cgi?cmd=testftp&-usr=admin&-pwd=instar",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Features_Menu/FTP/",
+    "title2": "The FTP Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["FTP Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des FTP Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Nightvision Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Features Menu The Email Overlay param.cgi?cmd=getinfrared Function Get IR LED Parameter Authority admin Parameter infraredstat: IR LED Status - auto, close (deactivated) Example  GET: http admin:instar 192.168.178.88 param.cgi?cmd=getinfrared GET: http 192.168.178.88 param.cgi?cmd=getinfrared&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setinfrared&-infraredstat=auto param.cgi?cmd=getplancgi Function Define a Time Window to Switch IR LEDs from off to auto Authority admin Parameter plancgi_enable_0, 1: De Activate Switch Event at Time see below plancgi_enable_0, 1 0 - 86399 in seconds = 0:00:00 - 23:59:59 oclock Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getplancgi GET: http 192.168.178.88 param.cgi cmd=getplancgi&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setplancgi&-plancgi_enable_0=1&-plancgi_enable_1=1&-plancgi_time_0=21600&-plancgi_time_1=64800",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Features_Menu/IR_Nightvision/",
+    "title2": "The IR LEDs Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["IR LEDs Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Nachtsicht IR LEDs Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: PTZ Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Features Menu The PTZ Overlay param.cgi?cmd=getmotorattr Function Get Pan&Tilt Settings Authority admin Parameter panspeed: fast (0) - slow (2) tiltspeed: fast (0) - slow (2) panscan: 1-50 - Number of hscans tiltscan: 1-50 - Number of vscans movehome: on, off - Go to Center or Postion initpresetindex after Restart ptzalarmmask: on, off - Deactivate Motion Detection during Pan&Tilt selfdet: De Activate Calibration (Required for Preset Postions and PTZ Tour) alarmpresetindex: 1-8; - Alarmposition initpresetindex: 1-8; - Position Camera goes to after Restart Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmotorattr GET: http 192.168.178.88 param.cgi?cmd=getmotorattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setmotorattr&-selfdet=on&-movehome=off&-ptzalarmmask=on&-tiltspeed=0&-panspeed=0&-tiltscan=50&-panscan=50-value=0&-alarmpresetindex=3 param.cgi?cmd=getmdalarm&-aname=preset Function Get State of Alarm Position Authority admin Parameter md_preset_switch: Go to alarmpresetindex (Alarm Position) at Alarm Event - on, off Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=preset GET: http 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=preset&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setmdalarm&-aname=preset&-switch=on param.cgi?cmd=gettimerpreset Function Get Park Position Parameter Authority admin Parameter timerpreset_enable: De/Activate Park Position - 0, 1 timerpreset_index: Select Park Position - 1 - 8 timerpreset_interval: Time before going back to Park Position in seconds - 30 - 900 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=gettimerpreset GET: http 192.168.178.88 param.cgi?cmd=gettimerpreset&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=settimerpreset&-timerpreset_enable=1&-timerpreset_index=1&-timerpreset_interval=600 param.cgi?cmd=get_instar_admin&-index=46 Function One-Step Pan&Tilt Control Authority admin Parameter admin_value46: De Activate One-Step Pan&Tilt Control - 0, 1 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=get_instar_admin&-index=46 GET: http 192.168.178.88 param.cgi?cmd=get_instar_admin&-index=46&-usr=admin&-pwd=instar SET: http admin:instar@192.168.178.88/param.cgi?cmd=set_instar_admin&-index=46&-value=0",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Features_Menu/PTZ/",
+    "title2": "The PTZ Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["PTZ Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des PTZ Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: PTZ Tour Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "The PTZ Tour Overlay - param.cgi?cmd=setptztour. Function Set a Pan&Tilt Tour. Authority admin. Parameter var tour_enable[0, 1] - If Active the Alarmpreset Function has to be Deactivated!; var tour_times: [1-50] Tour Repetitions; var tour_index: Positions 0-7 divided by Semicolons; var tour_interval: Resting Time on Position in Seconds [5-43200] divided by Semicolons; Remarks See Param.cgi?cmd=getptztour and Param.cgi?cmd=setptztour. If Active, the Alarmpreset Function has to be deactivated! Example http: admin:instar@192.168.178.88 cgi-bin hi3510 param.cgi?cmd=setptztour&-tour_enable=1&-tour_index=0;1;2;3;4;5;6;7&-tour_interval=5;5;5;5;5;5;5;5&-tour_times=50&cmd=setmdalarm&-aname=preset&-switch=off",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Features_Menu/PTZ-Tour/",
+    "title2": "The PTZ Tour Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["PTZ Tour Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des PTZ Tour Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: SD Card Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Features Menu The SD Card Overlay param.cgi?cmd=sdfrmt Function Format SD Card Authority admin Return sdcard: format succeeded. Example GET: http: admin:instar 192.168.178.88 param.cgi?cmd=sdfrmt GET: http 192.168.178.88 param.cgi?cmd=sdfrmt&-usr=admin&-pwd=instar param.cgi?cmd=sdstop Function Unmount SD Card Authority admin Return sdcard: stop succeeded. Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=sdstop GET: http 192.168.178.88 param.cgi?cmd=sdstop&-usr=admin&-pwd=instar",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Features_Menu/SD_Card/",
+    "title2": "The SD Card Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["SD Card Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des SD Karte Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: LED Indicator Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Features Menu The Status LED Overlay param.cgi?cmd=getlightattr Function Activate Deactivate Status LEDs Authority admin Parameter light1_enable: WiFi Status LED - on, off light2_enable: Power LED - on, off Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getlightattr GET: http 192.168.178.88 param.cgi?cmd=getlightattr&-usr=admin&-pwd=instar SET: http: admin:instar 192.168.178.88 param.cgi?cmd=setlightattr&-light_index=1&-light_enable=on&cmd=setlightattr&-light_index=2&-light_enable=on",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Features_Menu/Status_LEDs/",
+    "title2": "The Status LED Indicator Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Status LED Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Status LED Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Manual Rec Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Features Menu The Manual Recording Overlay param.cgi?cmd=get_instar_admin&-index=44 Function Set File Length of Manual Recordings Authority admin Parameter admin_value44: Recording Length in Seconds 60 - 3600 Set 0 to Deactivate File Splitting Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=get_instar_admin&-index=44 GET: http 192.168.178.88 param.cgi?cmd=get_instar_admin&-index=44&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=set_instar_admin&-index=44&-value=600",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Features_Menu/Manual_Recording/",
+    "title2": "The Manual Recording Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Manual Recording Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Manuelle Aufnahme Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Actions Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Alarm Menu The Actions Overlay param.cgi?cmd=getmdalarm Function Set Alarm Action Parameter Authority admin Parameter aname: emailsnap: md_emailsnap_switch on, off E-mail Alarm / Send Snapshot snap: md_snap_switch on, off Save Snapshot to SD record: md_record_switch on, off Save Video to SD ftprec: md_ftprec_switch on, off Send Video to FTP Server relay: md_relay_switch on, off Alarm Out Relay ftpsnap: md_ftpsnap_switch on, off Send Snapshot to FTP Server sound: md_sound_switch on, off Audio Alarm Signal type: md_alarm_type on, off Link Alarm Areas and Alarm-Input Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=emailsnap GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=snap GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=record GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=ftprec GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=relay GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=ftpsnap GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=sound GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=type SET: http admin:instar 192.168.178.88 param.cgi?cmd=setmdalarm&-aname=emailsnap&-switch=off&cmd=setmdalarm&-aname=snap&-switch=off&cmd=setmdalarm&-aname=ftpsnap&-switch=off&cmd=setmdalarm&-aname=record&-switch=off&cmd=setmdalarm&-aname=ftprec&-switch=on&cmd=setmdalarm&-aname=type&-switch=off&cmd=setmdalarm&-aname=relay&-switch=off&cmd=setmdalarm&-aname=sound&-switch=off param.cgi?cmd=getaudioalarmattr Function Set Audio Detection Parameter Authority admin Parameter aa_enable: De Activate Audio Detection 0, 1 aa_value: Sensitivity 10 - 100 aa_time: Minimum Audio Signal Length Threshold 0 - 10 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getaudioalarmattr GET: http 192.168.178.88 param.cgi?cmd=getaudioalarmattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setaudioalarmattr&-aa_enable=0 param.cgi?cmd=getioattr Function Set Alarm Input Parameter Authority admin Parameter io_enable: De/Activate Alarm Input 0, 1 io_flag: Circuit Nomally Closed N.C. 0 or Normally Open N.O. 1 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getioattr GET: http 192.168.178.88 param.cgi?cmd=getioattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setioattr&-io_enable=0 param.cgi?cmd=getpirattr Function Set Passive Infrared Motion Detection Sensor Parameter Authority admin Parameter pir_enable: De Activate PIR Sensor 0, 1 pir_flag: Circuit Nomally Closed N.C. 0 or Normally Open N.O. 1 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getpirattr GET: http 192.168.178.88 param.cgi?cmd=getpirattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setpirattr&-pir_enable=0 param.cgi?cmd=getalarmsnapattr Function Set Number of Alarm Snapshots Authority admin Parameter snap_chn: Set Snapshot Resolution to Video Channel 11, 12, 13 snap_name: Fixed File Name for All Alarm Snapshots (leave empty for auto-name by time stamp) snap_timer_name: Fixed File Name for All Photoseries Snapshots (leave empty for auto-name by time stamp) snap_name_mode: Set Filename to 0 time stamp, or 1 fixed file name set snap_name and snap_timer_name snap_count: Number of Snapshot saved to SD Card per Alarm Event 1-15 ftp_snap_count: Number of Snapshot send to FTP Server per Alarm Event 1-15 email_snap_count: Number of Snapshot send by Email per Alarm Event 1-15 Example GET: http admin:instar 192.168.178.88 param.cgi cmd=getalarmsnapattr GET: http 192.168.178.88 param.cgi?cmd=getalarmsnapattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setalarmsnapattr&-snap_chn=11&-snap_count=6&-email_snap_count=6&-ftp_snap_count=6 param.cgi?cmd=get_instar_admin&-index=17 Authority admin Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=get_instar_admin&-index=17 GET: http 192.168.178.88 param.cgi?cmd=get_instar_admin&-index=17 SET: http admin:instar 192.168.178.88 param.cgi?cmd=set_instar_admin&-index=17&-value=1%3B0%3B0%3B0%3B1%3B1",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Alarm_Menu/Actions/",
+    "title2": "The Actions Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Actions Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Alarm Aktionen Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Areas Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Alarm Menu The Areas Overlay param.cgi?cmd=getmdattr Function Set Alarm Areas Parameter Authority admin Parameter aname: m1, 2, 3, 4_enable: Dis Enable Alarm Detection Area 1 - 4: 0, 1 m1, 2, 3, 4_x: X-Axis Offset of Alarm Area Origin 0-(1920-w) m1, 2, 3, 4_y: Y-Axis Offset of Alarm Area Origin 0-(1080-h) m1, 2, 3, 4_w: Alarm Area Width 1-1920 Pixel m1, 2, 3, 4_h: Alarm Area Height 1-1080 Pixel m1, 2, 3, 4_sensitivity: Detection Sensitivity 1 - 100 m1, 2, 3, 4_threshold: Detection Threshold (not active) Example  GET: http: admin:instar 192.168.178.88 param.cgi?cmd=getmdattr SET: http: admin:instar 192.168.178.88 param.cgi?cmd=setmdattr&-name=1&-enable=0&-s=50&-x=0&-y=0&-w=1920&-h=1080&cmd=setmdattr&-name=2&-enable=0&-s=50&-x=1680&-y=0&-w=240&-h=240&cmd=setmdattr&-name=3&-enable=0&-s=50&-x=0&-y=840&-w=240&-h=240&cmd=setmdattr&-name=4&-enable=0&-s=50&-x=1680&-y=840&-w=240&-h=240 param.cgi?cmd=get_instar_admin&-index=17 Authority admin Example GET: http: admin:instar 192.168.178.88 param.cgi?cmd=get_instar_admin&-index=17 GET: http: 192.168.178.88 param.cgi cmd=get_instar_admin&-index=17 SET: http: admin:instar 192.168.178.88 param.cgi?cmd=set_instar_admin&-index=17&-value=1%3B0%3B0%3B0%3B1%3B1",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Alarm_Menu/Areas/",
+    "title2": "The Areas Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Areas Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Alarmbereiche-Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Alarm Schedule Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Alarm Menu The Schedule Overlay param.cgi?cmd=getscheduleex&-ename=md Function Set Motion Detection Time Schedule Parameter Authority admin Parameter aname: week0: Sunday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week1: Monday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week2: Tuesday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week3: Wednesday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week4: Thursday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week5: Friday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week6: Saturday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getscheduleex&-ename=md GET: http: 192.168.178.88 param.cgi?cmd=getscheduleex&-ename=md&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setscheduleex&-ename=md&-week0=NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN&-week1=NNNNNNNNNNNNNNNNPPPPPPPPPPPPPPPPPPPPPPNNNNNNNNNN&-week2=NNNNNNNNNNNNNNNNPPPPPPPPPPPPPPPPPPPPPPNNNNNNNNNN&-week3=NNNNNNNNNNNNNNNNPPPPPPPPPPPPPPPPPPPPPPNNNNNNNNNN&-week4=NNNNNNNNNNNNNNNNPPPPPPPPPPPPPPPPPPPPPPNNNNNNNNNN&-week5=NNNNNNNNNNNNNNNNPPPPPPPPPPPPPPPPPPPPPPNNNNNNNNNN&-week6=NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN param.cgi?cmd=getplancgi Function Set Timer Parameter Authority admin Parameter aname: plancgi_enable_0 - 19: De/Activate Switch Event at Time see below plancgi_time_0 -19: 0 - 86399 in seconds = 0:00:00 - 23:59:59 o´clock Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getplancgi GET: http 192.168.178.88 param.cgi?cmd=getplancgi&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setplancgi&-plancgi_enable_3=0&-plancgi_enable_4=0",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Alarm_Menu/Schedule/",
+    "title2": "The Schedule Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Schedule Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Alarm Zeitplan Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Push Service Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Alarm Menu The Push Service Overlay param.cgi?cmd=getalarmserverattr&-as_index=1 Function Get Alarmserver Configuration for the Push Service Authority admin Parameter aname: as_server : See ALARM SERVER for Details as_port : See ALARM SERVER for Details as_auth See ALARM SERVER for Details as_username : See ALARM SERVER for Details as_password : See ALARM SERVER for Details as_path : See ALARM SERVER for Details as_area : See ALARM SERVER for Details as_io : See ALARM SERVER for Details as_audio: See ALARM SERVER for Details as_areaio : See ALARM SERVER for Details as_activequery : See ALARM SERVER for Details as_query1: See ALARM SERVER for Details as_queryattr1 : See ALARM SERVER for Details as_queryval1: See ALARM SERVER for Details as_query2 : See ALARM SERVER for Details as_queryattr2: See ALARM SERVER for Details as_queryval2: See ALARM SERVER for Details as_query3: See ALARM SERVER for Details as_queryattr3: See ALARM SERVER for Details as_queryval3: See ALARM SERVER for Details Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getalarmserverattr&-as_index=1 GET: http 192.168.178.88 param.cgi?cmd=getalarmserverattr&-as_index=1&-ename=md&-usr=admin&-pwd=instar",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Alarm_Menu/Push_Service/",
+    "title2": "The Push Service Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Push Service Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Push Service Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Alarm Server Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Alarm Menu The Alarm Server Overlay param.cgi?cmd=getmdalarm&-aname=server2 Function Get Alarm Server 1 Parameter Authority admin Parameter md_server2_switch: De/Activate Alarm Server2 off, on Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=server2 GET: http 192.168.178.88 param.cgi?cmd=getmdalarm&-aname=server2&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setmdalarm&-aname=server2&-switch=on param.cgi?cmd=getalarmserverattr&-as_index=3 Function Get Alarmserver 2 Configuration Authority admin Parameter aname: as_server2: Address of the receiving Server (e.g. Home Automation Server) IPv4 Address as_port2: Port of the receiving Server 1-65536 as_auth 2: Authentication required 0, 1 as_username2: Alarmserver Username as_password2: Alarmserver Password as_path2: URL Path as_area2: Send Query when Motion is Detected as_io2: Send Query when Alarm Input is Triggered as_audio2: Send Query when Audio Alarm is Triggered as_areaio2: Send Query when Motion is Detected and Input is Triggered as_activequery2: Append Alarm Trigger to Query as_query1 2: Activate Sending optional Parameter 1 as_queryattr1 2: Command 1 Attribute as_queryval1 2: Command 1 Value as_query2 2: Activate Sending optional Parameter 2 as_queryattr1 2: Command 2 Attribute as_queryval2 2: Command 2 Value as_query3 2: Activate Sending optional Parameter 3 as_queryattr3 2: Command 3 Attribute as_queryval3 2: Command 3 Value Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getalarmserverattr&-as_index=3 GET: http 192.168.178.88 param.cgi?cmd=setalarmserverattr&-as_index=3&-as_server=192.168.1.114&-as_port=80&-as_path=&-as_queryattr1=command1&-as_queryval1=false&-as_queryattr2=command2&-as_queryval2=true&-as_activequery=0&-as_auth=0&-as_query1=1&-as_query2=1",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Alarm_Menu/Alarm_Server/",
+    "title2": "The Alarm Server Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Alarm Server Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Alarm Server Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Photoseries Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Recording Tasks Menu The Photoseries Overlay param.cgi?cmd=getplanrecattr Function Setup a Interval Snapshot Series Task Authority admin Parameter as_snap_enable: Dis/Enable snapshot to SD card： 0, 1 as_snap_interval: Time interval between shots in seconds 1-86400 as_email_enable: Dis/Enable snapshot to Email： 0, 1 as_email_interval: Time interval between shots in seconds 1-86400 as_ftp_enable: Dis/Enable snapshot to FTP Server：0, 1 as_ftp_interval: Time interval between shots in seconds 1-86400 as_cloud_enable: Dis/Enable snapshot to INSTAR Cloud Server：0, 1 as_cloud_interval: Time interval between shots in seconds 1-86400 Example  GET: http admin:instar 192.168.178.88 param.cgi?cmd=getsnaptimerattrex GET: http 192.168.178.88 param.cgi?cmd=getsnaptimerattrex&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setsnaptimerattrex&-as_type=snap&-as_enable=1&-as_interval=60&cmd=setsnaptimerattrex&-as_type=email&-as_enable=1&-as_interval=300&cmd=setsnaptimerattrex&-as_type=ftp&-as_enable=1&-as_interval=60 param.cgi?cmd=getscheduleex&-ename=snap Function Schedule for Interval Snapshot Series Authority admin Parameter aname: week0: Sunday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week1: Monday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week2: Tuesday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week3: Wednesday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week4: Thursday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week5: Friday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week6: Saturday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive Example GET: http admin:instar 192.168.178.88 param.cgi?param.cgi?cmd=getscheduleex&-ename=snap GET: http 192.168.178.88 param.cgi?param.cgi?cmd=getscheduleex&-ename=snap&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setsnaptimerattrex&-as_enable=1&-as_interval=60&-as_type=snap&cmd=setsnaptimerattrex&-as_enable=1&-as_interval=60&-as_type=email&cmd=setsnaptimerattrex&-as_enable=1&-as_interval=60&-as_type=ftp param.cgi?cmd=getalarmsnapattr Function Create Snapshots with a fixed Name or Generate it from a Timestamp Authority admin Parameter aname: snap_chn: Set Snapshot Resolution to Video Channel 11, 12, 13 snap_name: Fixed File Name for All Alarm Snapshots (leave empty for auto-name by time stamp) snap_timer_name: Fixed File Name for All Photoseries Snapshots (leave empty for auto-name by time stamp) snap_name_mode: Set Filename to 0 time stamp, or 1 fixed file name set snap_name and snap_timer_name snap_count: Number of Snapshot saved to SD Card per Alarm Event 1-15 ftp_snap_count: Number of Snapshot send to FTP Server per Alarm Event 1-15 email_snap_count: Number of Snapshot send by Email per Alarm Event 1-15 Example GET: http admin:instar 192.168.178.88 param.cgi?param.cgi?cmd=getalarmsnapattr GET: http 192.168.178.88 param.cgi?param.cgi?cmd=getalarmsnapattr&-usr=admin&-pwd=instar SET: http admin:instar@192.168.178.88 param.cgi?cmd=setalarmsnapattr&-snap_name_mode=0",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Recording_Menu/Photoseries/",
+    "title2": "The Photoseries Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Photoseries Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Manuelle Aufnahme Bildeinstellungen Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Video Recording Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The Recording Tasks Menu The Video Overlay param.cgi?cmd=getplanrecattr Function Set Planned Video Recording Attribute Authority admin Parameter planrec_enable: Dis Enable Recording to SD card： 0, 1 planrec_chn: Record Kamera Channel 11, 12, 13 planrec_time: Recoding File Length (15-900seconds) Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getplanrecattr GET: http 192.168.178.88 param.cgi?cmd=getplanrecattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setplanrecattr&-planrec_enable=1&-planrec_chn=11&-planrec_time=900 param.cgi?cmd=getserverinfo&cmd=getscheduleex&-ename=plan Function Schedule for Manual Recording Task Authority admin Parameter aname: week0: Sunday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week1: Monday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week2: Tuesday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week3: Wednesday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week4: Thursday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week5: Friday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive week6: Saturday：every 24 hrs divide to half hr is a segment , use P or N to indicate if the alarm is active - P means active , N means inactive Example GET: http admin:instar 192.168.178.88 param.cgi?param.cgi?cmd=getscheduleex&-ename=plan GET: http 192.168.178.88 param.cgi param.cgi?cmd=getscheduleex&-ename=plan&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setscheduleex&-ename=plan&-week0=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week1=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week2=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week3=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week4=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week5=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP&-week6=PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/Recording_Menu/Video/",
+    "title2": "The Video Recording Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Video Recording Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Manuelle Aufnahme Videoeinstellungen Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Info Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The System Menu The Overview Overlay param.cgi?cmd=getserverinfo Function Get your Camera Server Variables Authority admin Parameter model: Camera Model Identifier hardVersion: Hardware Version softVersion: Firmware Version webVersion: WebUI Version startdate: Camera Uptime upnpstatus: UPnP service ok, off, failed facddnsstatus: INSTAR DDNS Status ok, off, failed th3ddnsstatus: INSTAR 3rd Party DDNS Status ok, off, failed platformstatus: Platform Status 0, 1 sdstatus: SD Card Status out, Ready, Read only sdfreespace: SD free space，KB sdtotalspace: SD total space，KB Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getserverinfo GET: http 192.168.178.88 param.cgi?cmd=getserverinfo&-usr=admin&-pwd=instar param.cgi?cmd=getsysinfo Function Get Device ID Authority admin Parameter devid: Device Model Identifier Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getsysinfo GET: http 192.168.178.88 param.cgi?cmd=getsysinfo&-usr=admin&-pwd=instar param.cgi?cmd=getnetattr Function Get your Camera´s Network Configuration Authority admin Parameter dhcpflag: on: (DHCP enabled), off: (DHCP disabled) ip: LAN IPv4 Address netmask: LAN Subnet Mask gateway: LAN Gateway dnsstat: DNS Status: 0 (manually), 1 (from DHCP Server) fdnsip: Primary DNS sdnsip: Secondary DNS macaddress: LAN MAC Address networktype: LAN or WLAN Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getnetattr GET: http 192.168.178.88 param.cgi?cmd=getnetattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setnetattr&-dhcpflag=off&-ip=192.168.1.115&-netmask=255.255.255.0&-gateway=192.168.1.1&-fdnsip=8.8.8.8&-sdnsip= param.cgi?cmd=getlanmac Function Get your Camera´s LAN MAC Address Authority admin Parameter lanmac: MAC Address of the LAN Interface Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getlanmac GET: http 192.168.178.88 param.cgi?cmd=getlanmac&-usr=admin&-pwd=instar param.cgi?cmd=getwifimac Function Get your Camera´s WiFi MAC Address Authority admin Parameter lanmac: MAC Address of the WLAN Interface Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getwifimac GET: http 192.168.178.88 param.cgi?cmd=getwifimac&-usr=admin&-pwd=instar param.cgi?cmd=getinfrared Function Get IR LED Parameter Authority admin Parameter infraredstat: IR LED Status - auto, close (deactivated) Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getinfrared GET: http 192.168.178.88 aram.cgi?cmd=getinfrared&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setinfrared&-infraredstat=auto param.cgi?cmd=getourddnsattr Function Get your Camera´s INSTAR DDNS Configuration Authority admin Parameter our_enable: 1: INSTAR DDNS enabled, 0: INSTAR DDNS disabled our_server: INSTAR DDNS Server Domain our_port: INSTAR DDNS Server Port our_uname: Your INSTAR DDNS ID our_passwd: Your INSTAR DDNS Password our_domain: Your INSTAR DDNS Address our_interval: Update Intervall Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getourddnsattr GET: http 192.168.178.88 param.cgi?cmd=getourddnsattr&-usr=admin&-pwd=instar param.cgi?cmd=get3thddnsattr Function Get your Camera´s 3rd Party DDNS Configuration Authority admin Parameter d3th_enable: 1: 3rd Party DDNS activated INSTAR DDNS disabled, 0: 3rd Party DDNS deactivated INSTAR DDNS enabled d3th_service: 0: DynDNS, 1: NoIP d3th_uname: Your Username d3th_passwd: Your Password d3th_domain: Your 3rd Party DDNS Address Example  GET: http admin:instar 92.168.178.88 param.cgi?cmd=get3thddnsattr GET: http 192.168.178.88 param.cgi?cmd=get3thddnsattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=set3thddnsattr&-d3th_enable=1&-d3th_service=0&-d3th_uname=myUsername&-d3th_passwd=myPassword&-d3th_domain=myDomain.dyndns.com param.cgi?cmd=getinternetip Function Get your Camera´s WAN IP Address Authority admin Parameter  internetip: Get Wide Area Network Address Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getinternetip GET: http 192.168.178.88 param.cgi?cmd=getinternetip&-usr=admin&-pwd=instar",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/System_Menu/Overview/",
+    "title2": "The Info Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Info Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Info Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: User Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The System Menu The User Overlay param.cgi?cmd=getuserattr Function Get your Camera´s Network Configuration Authority admin Parameter at_username0: Username for User 1 at_password0: Password for User 1 at_authlevel0: User Authorisation: admin/user/guest 15, 3, 1 at_enable0: De/Activate 0, 1 at_username1: Username for User 2 at_password1: Password for User 2 at_authlevel1: User Authorisation: admin/user/guest 15, 3, 1 at_enable1: De/Activate 0, 1 at_username2: Username for User 3 at_password2: Password for User 3 at_authlevel2: User Authorisation: admin user guest 15, 3, 1 at_enable2: De/Activate 0, 1 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getuserattr GET: http 192.168.178.88 param.cgi?cmd=getuserattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setuserattr&-at_username=admin&-at_newname=admin&-at_enable=1&-at_password=instar&cmd=setuserattr&-at_username=user&-at_newname=user&-at_enable=0&-at_password=instar&cmd=setuserattr&-at_username=guest&-at_newname=guest&-at_enable=0&-at_password=instar",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/System_Menu/User/",
+    "title2": "The User Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["User Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Benutzer-Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Date&Time Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The System Menu The Date & Time Overlay param.cgi?cmd=getservertime Function Get your Camera´s Time Configuration Authority admin Parameter time: Camera Time timeZone: Cameras Time Zone e.g. Europe%2FAmsterdam dstmode: De Activate Daylight Saving Time off, on Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getservertime GET: http: 192.168.178.88 param.cgi?cmd=getservertime&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setservertime&-dstmode=on&-timezone=Europe%2FAmsterdam param.cgi?cmd=getntpattr Function Get your Camera´s Network Configuration Authority admin Parameter ntpenable: De/Activate NTP Time Adjustment 0, 1 ntpserver: NTP Server Address ntpinterval: NTP Sync Interval in Hours 1 - 12 Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getntpattr GET: http 192.168.178.88 param.cgi?cmd=getntpattr&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setntpattr&-ntpenable=1&-ntpserver=0.de.pool.ntp.org&-ntpinterval=1",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/System_Menu/Date_Time/",
+    "title2": "The Date&Time Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Date&Time Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Datum & Uhrzeit Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Language Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The System Menu The Language Overlay param.cgi?cmd=get_instar_guest&-index=11 Function Get your Camera´s Time Configuration Authority admin Parameter guest_value11: UI Language Selector de, en, fr, cn Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=param.cgi?cmd=get_instar_guest&-index=11 GET: http 192.168.178.88 param.cgi?cmd=get_instar_guest&-index=11&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=set_instar_guest&-index=11&-value=de",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/System_Menu/Language/",
+    "title2": "The Language Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Language Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Sprachmenüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Log Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The System Menu The Log Overlay tmpfs/syslog.txt Function Get your Camera´s System Log Authority admin Example GET: http admin:instar 192.168.178.88 tmpfs syslog.txt GET: http 192.168.178.88 tmpfs syslog.txt&-usr=admin&-pwd=instar",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/System_Menu/System_Log/",
+    "title2": "The Log Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Log Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des System Log Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Update Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The System Menu The Update Overlay upgrade.cgi -filename= Function Update your Cameras Software Authority admin Example Has to be implemented with POST Method",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/System_Menu/Update/",
+    "title2": "The Update Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Update Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Update Menü"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Reboot Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The System Menu The Reboot Overlay param.cgi?cmd=sysreboot Function Reboot your Camera Authority admin Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=sysreboot param.cgi?cmd=getplancgi Function Set your Camera to Reboot Automatically Authority admin Parameter plancgi_enable_2: De Activate Switch Event to restart Camera at Time see below plancgi_enable_2: 0 - 86399 in seconds = 0:00:00 - 23:59:59 o´clock Example GET: http admin:instar 192.168.178.88 param.cgi?cmd=getplancgi GET: http 192.168.178.88 param.cgi?cmd=getplancgi&-usr=admin&-pwd=instar SET: http admin:instar 192.168.178.88 param.cgi?cmd=setplancgi&-plancgi_enable_2=1&-plancgi_time_2=36000",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/System_Menu/Reboot/",
+    "title2": "The Reboot Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Reboot&Reset Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Neustart Menüs"
+}
+POST /wiki2/article
+{
+    "title": "1080p CGI Commands :: Reset Menu",
+    "series":  ["Full HD", "Indoor", "Outdoor"],
+    "models": ["IN-8015 Full HD", "IN-9008 Full HD"],
+    "description": "1080p CGI Commands The System Menu The Reset Overlay sysreset.cgi Function Reset your Camera Authority admin Example GET: http admin:instar 192.168.178.88 sysreset.cgi",
+    "description2": "CGI Befehle",
+    "link": "/1080p_Series_CGI_List/System_Menu/Reset/",
+    "title2": "The Reset Menu",
+    "chapter": "1080p Series CGI List",
+    "tags": ["Reboot&Reset Menu", "CGI",  "1800p series", "commands", "programming", "interface"],
+    "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
+    "abstract": "Übersicht über die CGI Befehle des Reset Menüs"
+}
