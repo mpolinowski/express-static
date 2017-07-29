@@ -99,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="card-container">
+                <div class="card-container margin">
                     <div class="onecard">
                         <div class="image">
                             <a href="/1080p_Series_CGI_List/Complete_CGI_List/">
@@ -108,6 +108,57 @@
                         </div>
                         <div class="action">
                             <p>Complete CGI List</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>List of the most needed CGI commands</h2>
+                <p>Both ways to authenticate are valid - e.g. for user = admin and password = instar:</p>
+                <ul>
+                  <li><code>http://admin:instar@IP ...</code></li>
+                  <li><code>... ?usr=admin&pwd=instar</code></li>
+                </ul>
+                <p>Both are used interchangeable in this documentation!</p>
+
+                <div class="card-container margin">
+                    <div class="onecard">
+                        <div class="title">
+                            <h3>Video &amp; Snapshot</h3>
+                        </div>
+                        <div class="action">
+                          <ul>
+                            <li><code>rtsp://admin:instar@IP-Address:RTSP-Port<strong>/11</strong></code><br>VLC Stream (High Resolution)<br><br></li>
+                            <li><code>rtsp://admin:instar@IP-Address:RTSP-Port<strong>/12</strong></code><br>VLC Stream (Medium Resolution)<br><br></li>
+                            <li><code>rtsp://admin:instar@IP-Address:RTSP-Port<strong>/13</strong></code><br>VLC Stream (Low Resolution)<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/tmpfs/snap.jpg</strong>?usr=admin&pwd=instar</code><br>Snapshot (1080p)<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/tmpfs/auto.jpg</strong>?usr=admin&pwd=instar</code><br>Snapshot (320p)<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/tmpfs/auto2.jpg</strong>?usr=admin&pwd=instar</code><br>Snapshot (160p)<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/mjpegstream.cgi?-chn=11</strong>&-usr=admin&-pwd=instar</code><br>MJPEG Stream 11<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/mjpegstream.cgi?-chn=12</strong>&-usr=admin&-pwd=instar</code><br>MJPEG Stream 12<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/mjpegstream.cgi?-chn=13</strong>&-usr=admin&-pwd=instar</code><br>MJPEG Stream 13</li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container margin">
+                    <div class="onecard">
+                        <div class="title">
+                            <h3>Pan &amp; Tilt</h3>
+                        </div>
+                        <div class="action">
+                          <ul>
+                            <li><code>http://IP-Address:Port<strong>/ptzctrl.cgi?-step=&-act=up</strong></code><br>Move Up<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/ptzctrl.cgi?-step=&-act=right</strong></code><br>Move Right<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/ptzctrl.cgi?-step=&-act=down</strong></code><br>Move Down<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/ptzctrl.cgi?-step=&-act=left</strong></code><br>Move Left<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/ptzctrl.cgi?-step=&-act=stop</strong></code><br>Stop<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/param.cgi?cmd=preset&-act=set&-status=1&-number=0</strong></code><br>Set current position to saved position 1<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/param.cgi?cmd=preset&-act=set&-status=1&-number=1</strong></code><br>Set current position to saved position 2<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/param.cgi?cmd=preset&-act=goto&-number=0</strong></code><br>Go to saved position 1<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/param.cgi?cmd=ptzctrl&-step=0&-act=hscan</strong></code><br>Start horizontal scan<br><br></li>
+                            <li><code>http://IP-Address:Port<strong>/param.cgi?cmd=ptzctrl&-step=0&-act=vscan</strong></code><br>Start vertical scan</li>
+                          </ul>
                         </div>
                     </div>
                 </div>
