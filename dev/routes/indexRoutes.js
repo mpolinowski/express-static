@@ -9,6 +9,7 @@ indexRouter.route('/')
             ampimg: '/images/Search/QI_SearchThumb_SetupWizard.jpg',
             headline: 'INSTAR IP Camera and Network Technology Knowledgebase',
             canonical: '/',
+            description: 'INSTAR Wiki - IP Camera Knowledge Base'
           });
       });
 

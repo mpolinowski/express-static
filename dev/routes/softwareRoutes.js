@@ -12,6 +12,7 @@ softwareRouter.route('/')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li>',
       canonical: '/Software/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
       qiacc: '',
@@ -41,6 +42,7 @@ softwareRouter.route('/Windows')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li>',
       canonical: '/Software/Windows/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
       qiacc: '',
@@ -68,6 +70,7 @@ softwareRouter.route('/Windows/InstarVision')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li>',
       canonical: '/Software/Windows/InstarVision/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -78,6 +81,7 @@ softwareRouter.route('/Windows/InstarVision/Camera_List')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Camera_List/">Camera List</a></li>',
       canonical: '/Software/Windows/InstarVision/Camera_List/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -88,6 +92,7 @@ softwareRouter.route('/Windows/InstarVision/Layout')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Layout/">Layout</a></li>',
       canonical: '/Software/Windows/InstarVision/Layout/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -98,6 +103,7 @@ softwareRouter.route('/Windows/InstarVision/PTZ')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Camera_List/">Pan, Tilt & Zoom</a></li>',
       canonical: '/Software/Windows/InstarVision/PTZ/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -108,6 +114,7 @@ softwareRouter.route('/Windows/InstarVision/Image_Adjust')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Image_Adjust/">Bildeinstellungen</a></li>',
       canonical: '/Software/Windows/InstarVision/Image_Adjust/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -118,6 +125,7 @@ softwareRouter.route('/Windows/InstarVision/Webserver')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Webserver/">Webserver</a></li>',
       canonical: '/Software/Windows/InstarVision/Webserver/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -128,6 +136,7 @@ softwareRouter.route('/Windows/InstarVision/Record')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -138,6 +147,7 @@ softwareRouter.route('/Windows/InstarVision/Record/General')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/General/">General</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/General/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -148,6 +158,7 @@ softwareRouter.route('/Windows/InstarVision/Record/Schedule')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/Schedule/">Schedule</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/Schedule/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -158,6 +169,7 @@ softwareRouter.route('/Windows/InstarVision/Record/Alarm')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/Alarm/">Alarm</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/Alarm/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -168,6 +180,7 @@ softwareRouter.route('/Windows/InstarVision/Record/Photoseries')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/Photoseries/">Photoseries</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/Photoseries/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -178,6 +191,7 @@ softwareRouter.route('/Windows/InstarVision/Record/Email')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/Email/">Email</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/Email/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -188,6 +202,7 @@ softwareRouter.route('/Windows/InstarVision/Record/FTP')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/FTP/">FTP</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/FTP/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -198,6 +213,7 @@ softwareRouter.route('/Windows/InstarVision/System')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/System/">System</a></li>',
       canonical: '/Software/Windows/InstarVision/System/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -208,6 +224,7 @@ softwareRouter.route('/Windows/InstarVision/Users')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Users/">User</a></li>',
       canonical: '/Software/Windows/InstarVision/Users/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -218,6 +235,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -228,6 +246,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced/License')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/License/">License</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/License/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -238,6 +257,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced/Log')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/Log/">Log</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/Log/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -248,6 +268,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced/Export')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/Export/">Export</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/Export/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -258,6 +279,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced/Player')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/Player/">Player</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/Player/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -268,6 +290,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced/Explorer')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/Explorer/">Explorer</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/Explorer/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -278,6 +301,7 @@ softwareRouter.route('/Windows/InstarVision/About')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/About/">About</a></li>',
       canonical: '/Software/Windows/InstarVision/About/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -288,6 +312,7 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -298,6 +323,7 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/DDNS')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/DDNS/">DDNS</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/DDNS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -308,6 +334,7 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/P2P')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/P2P/">P2P</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/P2P/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -318,6 +345,7 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/Multiview')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/Multiview/">Multiview</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/Multiview/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -328,6 +356,7 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/Recording')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/Recording/">Recording</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/Recording/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -338,6 +367,7 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/Settings')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/Settings/">Settings</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/Settings/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -348,6 +378,7 @@ softwareRouter.route('/Windows/InstarVision/Metro')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -358,6 +389,7 @@ softwareRouter.route('/Windows/InstarVision/Metro/DDNS')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/DDNS/">DDNS</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/DDNS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -368,6 +400,7 @@ softwareRouter.route('/Windows/InstarVision/Metro/P2P')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/P2P/">P2P</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/P2P/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -378,6 +411,7 @@ softwareRouter.route('/Windows/InstarVision/Metro/Multiview')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/Multiview/">Multiview</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/Multiview/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -388,6 +422,7 @@ softwareRouter.route('/Windows/InstarVision/Metro/Recording')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/Recording/">Recording</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/Recording/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -398,6 +433,7 @@ softwareRouter.route('/Windows/InstarVision/Metro/Settings')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/Settings/">Settings</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/Settings/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -409,6 +445,7 @@ softwareRouter.route('/Windows/iSpy')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/iSpy/">iSpy</a></li>',
       canonical: '/Software/Windows/iSpy/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
   		pacc: '',
   		ptab: 'hidden',
   		qiacc: '',
@@ -437,23 +474,24 @@ softwareRouter.route('/Windows/Sighthound')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/Sighthound/">Sighthound</a></li>',
       canonical: '/Software/Windows/Sighthound/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -465,23 +503,24 @@ softwareRouter.route('/Windows/P2P_Client')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/P2P_Client/">P2P Client</a></li>',
       canonical: '/Software/Windows/P2P_Client/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -493,23 +532,24 @@ softwareRouter.route('/Windows/go1984')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/go1984/">go1984</a></li>',
       canonical: '/Software/Windows/go1984/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -521,23 +561,24 @@ softwareRouter.route('/Windows/VLC_Player')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/VLC_Player/">VLC Player</a></li>',
       canonical: '/Software/Windows/VLC_Player/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -549,23 +590,24 @@ softwareRouter.route('/Windows/CCTV_Chrome_Plugin')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/CCTV_Chrome_Plugin/">CCTV Plugin</a></li>',
       canonical: '/Software/Windows/CCTV_Chrome_Plugin/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -577,23 +619,24 @@ softwareRouter.route('/Windows/Blue_Iris')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/Blue_Iris/">Blue Iris</a></li>',
       canonical: '/Software/Windows/Blue_Iris/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -605,23 +648,24 @@ softwareRouter.route('/Windows/YAW_Cam')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/YAW_Cam/">YAW Cam</a></li>',
       canonical: '/Software/Windows/YAW_Cam/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -633,23 +677,24 @@ softwareRouter.route('/Windows/Zone_Trigger')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/Zone_Trigger/">Zone Trigger</a></li>',
       canonical: '/Software/Windows/Zone_Trigger/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -661,23 +706,24 @@ softwareRouter.route('/Windows/Webcam_XP')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/Webcam_XP/">Webcam XP</a></li>',
       canonical: '/Software/Windows/Webcam_XP/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -689,23 +735,24 @@ softwareRouter.route('/Windows/Webcam_Motion_Detector')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/Webcam_Motion_Detector/">Webcam Motion Detector</a></li>',
       canonical: '/Software/Windows/Webcam_Motion_Detector/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -717,23 +764,24 @@ softwareRouter.route('/Windows/Zebra_Surveillance')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/Zebra_Surveillance/">Zebra Surveillance</a></li>',
       canonical: '/Software/Windows/Zebra_Surveillance/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -746,6 +794,7 @@ softwareRouter.route('/macOS')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/macOS/">macOS</a></li>',
       canonical: '/Software/macOS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
       qiacc: '',
@@ -774,23 +823,24 @@ softwareRouter.route('/macOS/Sighthound')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/macOS/">macOS</a></li><li><a href="/Software/macOS/Sighthound/">Sighthound</a></li>',
       canonical: '/Software/macOS/Sighthound/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -802,23 +852,24 @@ softwareRouter.route('/macOS/EvoCam')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/macOS/">macOS</a></li><li><a href="/Software/macOS/EvoCam/">EvoCam</a></li>',
       canonical: '/Software/macOS/EvoCam/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -830,23 +881,24 @@ softwareRouter.route('/macOS/VLC_Player')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/macOS/">macOS</a></li><li><a href="/Software/macOS/VLC_Player/">VLC Player</a></li>',
       canonical: '/Software/macOS/VLC_Player/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -858,23 +910,24 @@ softwareRouter.route('/macOS/SecuritySpy')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/macOS/">macOS</a></li><li><a href="/Software/macOS/SecuritySpy/">SecuritySpy</a></li>',
       canonical: '/Software/macOS/SecuritySpy/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -887,6 +940,7 @@ softwareRouter.route('/Android')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li>',
       canonical: '/Software/Android/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
       qiacc: '',
@@ -914,6 +968,7 @@ softwareRouter.route('/Android/InstarVision')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li>',
       canonical: '/Software/Android/InstarVision/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -924,6 +979,7 @@ softwareRouter.route('/Android/InstarVision/DDNS')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li>',
       canonical: '/Software/Android/InstarVision/DDNS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -934,6 +990,7 @@ softwareRouter.route('/Android/InstarVision/P2P')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/P2P/">P2P</a></li>',
       canonical: '/Software/Android/InstarVision/P2P/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -944,6 +1001,7 @@ softwareRouter.route('/Android/InstarVision/Multiview')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/Multiview/">Multiview</a></li>',
       canonical: '/Software/Android/InstarVision/Multiview/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -954,6 +1012,7 @@ softwareRouter.route('/Android/InstarVision/Recording')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/Recording/">Recording</a></li>',
       canonical: '/Software/Android/InstarVision/Recording/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -964,6 +1023,7 @@ softwareRouter.route('/Android/InstarVision/Settings')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/Settings/">Settings</a></li>',
       canonical: '/Software/Android/InstarVision/Settings/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -975,23 +1035,24 @@ softwareRouter.route('/Android/TinyCam_Monitor')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/TinyCam_Monitor/">TinyCam Monitor</a></li>',
       canonical: '/Software/Android/TinyCam_Monitor/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -1003,23 +1064,24 @@ softwareRouter.route('/Android/IP_Cam_Viewer')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/IP_Cam_Viewer/">IP Cam Viewer</a></li>',
       canonical: '/Software/Android/IP_Cam_Viewer/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -1032,6 +1094,7 @@ softwareRouter.route('/iOS')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/iOS/">iOS</a></li>',
       canonical: '/Software/iOS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
       qiacc: '',
@@ -1059,6 +1122,7 @@ softwareRouter.route('/iOS/InstarVision/iPhone')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1069,6 +1133,7 @@ softwareRouter.route('/iOS/InstarVision/iPhone/DDNS')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/DDNS/">DDNS</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/DDNS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1079,6 +1144,7 @@ softwareRouter.route('/iOS/InstarVision/iPhone/P2P')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/P2P/">P2P</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/P2P/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1089,6 +1155,7 @@ softwareRouter.route('/iOS/InstarVision/iPhone/Multiview')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/Multimedia/">Multimedia</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/Multiview/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1099,6 +1166,7 @@ softwareRouter.route('/iOS/InstarVision/iPhone/Recording')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/Recording/">Recording</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/Recording/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1109,6 +1177,7 @@ softwareRouter.route('/iOS/InstarVision/iPhone/Settings')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/Settings/">Settings</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/Settings/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1119,6 +1188,7 @@ softwareRouter.route('/iOS/InstarVision/iPad')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1129,6 +1199,7 @@ softwareRouter.route('/iOS/InstarVision/iPad/DDNS')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/DDNS/">DDNS</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/DDNS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1139,6 +1210,7 @@ softwareRouter.route('/iOS/InstarVision/iPad/P2P')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/P2P/">P2P</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/P2P/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1149,6 +1221,7 @@ softwareRouter.route('/iOS/InstarVision/iPad/Multiview')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/Multiview/">Multiview</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/Multiview/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1159,6 +1232,7 @@ softwareRouter.route('/iOS/InstarVision/iPad/Recording')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/Recording/">Recording</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/Recording/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1169,6 +1243,7 @@ softwareRouter.route('/iOS/InstarVision/iPad/Settings')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/Settings/">Settings</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/Settings/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1179,6 +1254,7 @@ softwareRouter.route('/iOS/InstarVision')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li>',
       canonical: '/Software/iOS/InstarVision/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1190,23 +1266,24 @@ softwareRouter.route('/iOS/LiveCams')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/LiveCams/">LiveCams</a></li>',
       canonical: '/Software/iOS/LiveCams/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -1218,23 +1295,24 @@ softwareRouter.route('/iOS/IP_Vision_Pro')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/IP_Vision_Pro/">IP Vision Pro</a></li>',
       canonical: '/Software/iOS/IP_Vision_Pro/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -1246,23 +1324,24 @@ softwareRouter.route('/iOS/ICCAM')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/ICCAM/">ICCAM</a></li>',
       canonical: '/Software/iOS/ICCAM/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -1274,23 +1353,24 @@ softwareRouter.route('/iOS/IP_Cam_Viewer')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/IP_Cam_Viewer/">IP Cam Viewer</a></li>',
       canonical: '/Software/iOS/IP_Cam_Viewer/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -1302,23 +1382,24 @@ softwareRouter.route('/iOS/P2P_Cam_Live')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/P2P_Cam_Live/">P2P Cam Live</a></li>',
       canonical: '/Software/iOS/P2P_Cam_Live/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -1331,6 +1412,7 @@ softwareRouter.route('/Other_Platforms')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Other_Platforms/">Other Platforms</a></li>',
       canonical: '/Software/Other_Platforms/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
       qiacc: '',
@@ -1358,6 +1440,7 @@ softwareRouter.route('/Other_Platforms/InstarVision_Blackberry')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Other_Platforms/">Andere Platform</a></li><li class="breadcrumb-item"><a href="/Software/Other_Platforms/InstarVision_Blackberry/">InstarVision for Blackberry</a></li>',
       canonical: '/Software/Other_Platforms/InstarVision_Blackberry/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
     });
 });
 
@@ -1369,6 +1452,7 @@ softwareRouter.route('/Other_Platforms/QNAP')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Other_Platforms/">Other</a></li><li><a href="/Software/Other_Platforms/QNAP/">QNAP</a></li>',
       canonical: '/Software/Other_Platforms/QNAP/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
 		pacc: '',
 		ptab: 'hidden',
 		qiacc: '',
@@ -1397,6 +1481,7 @@ softwareRouter.route('/Other_Platforms/Synology')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Other_Platforms/">Other</a></li><li><a href="/Software/Other_Platforms/Synology/">Synology</a></li>',
       canonical: '/Software/Other_Platforms/Synology/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
 		pacc: '',
 		ptab: 'hidden',
 		qiacc: '',
@@ -1425,23 +1510,24 @@ softwareRouter.route('/Other_Platforms/AVM_Fritzphone')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Other_Platforms/">Other</a></li><li><a href="/Software/Other_Platforms/AVM_Fritzphone/">AVM Fritzphone</a></li>',
       canonical: '/Software/Other_Platforms/AVM_Fritzphone/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -1453,23 +1539,24 @@ softwareRouter.route('/Other_Platforms/Domovea')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Other_Platforms/">Other</a></li><li><a href="/Software/Other_Platforms/Domovea/">Domovea</a></li>',
       canonical: '/Software/Other_Platforms/Domovea/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
@@ -1481,23 +1568,24 @@ softwareRouter.route('/Mobile_Access_Over_HTTPS')
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Mobile_Access_Over_HTTPS/">HTTPS</a></li>',
       canonical: '/Software/Mobile_Access_Over_HTTPS/',
-		pacc: '',
-		ptab: 'hidden',
-		qiacc: '',
-		qitab: 'hidden',
-		mdacc: '',
-		mdtab: 'hidden',
-		iaacc: '',
-		iatab: 'hidden',
-		auacc: '',
-		autab: 'hidden',
-		hdacc: 'hidden',
-		hdtab: 'hidden',
-		fhdacc: 'hidden',
-		fhdtab: 'hidden',
-		sacc: '',
-		dlacc: 'hidden',
-		dltab: 'hidden',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
     });
 });
 
