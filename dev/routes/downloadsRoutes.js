@@ -174,7 +174,7 @@ downloadsRouter.get('/Accessories/IN-Mikro_380', function(req, res) {
         title: 'Download Area IN-Mikro 380',
         ampimg: '/images/Search/D_SearchThumb_Accessories.jpg',
         headline: 'Download Area',
-        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Downloads/Accessories/">Accessories</a></li><li class="breadcrumb-item"><a href="/Downloads/Accessories/IN-90x">IN-Mikro 380</a></li>',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Downloads/Accessories/">Accessories</a></li><li class="breadcrumb-item"><a href="/Downloads/Accessories/IN-90x">IN-Mikro_380</a></li>',
         canonical: '/Downloads/Accessories/IN-Mikro_380/',
         description: 'INSTAR Wiki - IP Camera Knowledge Base',
     		pacc: '',
@@ -230,7 +230,7 @@ downloadsRouter.get('/Accessories/IN-Motion_500', function(req, res) {
         title: 'Download Area IN-Motion 500',
         ampimg: '/images/Search/D_SearchThumb_Accessories.jpg',
         headline: 'Download Area',
-        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Downloads/Accessories/">Accessories</a></li><li class="breadcrumb-item"><a href="/Downloads/Accessories/IN-90x">IN-Motion 500</a></li>',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Downloads/Accessories/">Accessories</a></li><li class="breadcrumb-item"><a href="/Downloads/Accessories/IN-Motion_500">IN-Motion 500</a></li>',
         canonical: '/Downloads/Accessories/IN-Motion_500/',
         description: 'INSTAR Wiki - IP Camera Knowledge Base',
     		pacc: '',
@@ -282,13 +282,13 @@ downloadsRouter.get('/Network_Accessories/', function(req, res) {
       });
   });
 
-downloadsRouter.get('/Network_Accessories/IN-LAN500', function(req, res) {
+downloadsRouter.get('/Network_Accessories/IN-LAN_500', function(req, res) {
     res.render('./Downloads/Network_Accessories_IN-LAN500', {
         title: 'Download Area IN-LAN 500',
         ampimg: '/images/Search/D_SearchThumb_NetworkAccessories.jpg',
         headline: 'Download Area',
-        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Downloads/Network_Accessories/"> Network Accessories</a></li><li class="breadcrumb-item"><a href="/Downloads/Network_Accessories/IN-LAN500">IN-LAN 500</a></li>',
-        canonical: '/Downloads/Network_Accessories/IN-LAN500/',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Downloads</a></li><li class="breadcrumb-item"><a href="/Downloads/Network_Accessories/"> Network Accessories</a></li><li class="breadcrumb-item"><a href="/Downloads/Network_Accessories/IN-LAN_500">IN-LAN 500</a></li>',
+        canonical: '/Downloads/Network_Accessories/IN-LAN_500/',
         description: 'INSTAR Wiki - IP Camera Knowledge Base',
     		pacc: '',
     		ptab: 'hidden',
