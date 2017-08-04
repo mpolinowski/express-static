@@ -308,8 +308,13 @@
                           </thead>
                           <tbody>
                               <tr>
-                                  <th scope="row">Alarm I/O</th>
-                                  <td>Yes (and integrated heat sensor <strong>PIR</strong> for motion detection)</td>
+                                <td><strong>Alarm I/O</strong></td>
+                                <td>Yes (potential-free alarm-in / alarm-out relais max. 30VDC/125VAC @ 1A)
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <button on="tap:relay-specifications" class="btn btnSmall">Specifications</button>
+                                    <br><br>
+                                    + integrated heat sensor (PIR) for motion detection
+                                </td>
                               </tr>
                               <tr>
                                   <th scope="row">Alarm Output Relay</th>
@@ -655,6 +660,32 @@
                       <!-- /lightbox -->
                 </amp-lightbox>
                 <!-- /sample-images -->
+
+                <!-- ################### Lightboxes ###################### -->
+
+                <amp-lightbox id="relay-specifications" layout="nodisplay">
+                  <div class="lightbox">
+                    <div class="card-container">
+                      <div class="onecard padding">
+                        <div class="image">
+                            <amp-img noloading height=469 width=530 layout=fixed src="/images/Usermanuals/HD_Camera_Alarm_Relay.png"></amp-img>
+                        </div>
+                        <div class="action">
+                          <table class="twelve columns no-highlight">
+                            <tr>
+                              <td>
+                                <h3 class="inlineHeader">Specification Sheet Alarm Relay (HD Cameras)&nbsp;&nbsp;&nbsp;</h3>
+                              </td>
+                              <td class="align-right">
+                                <button class="navGo navGoRed" on="tap:relay-specifications.close">Close</button>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </amp-lightbox>
 
                 <amp-lightbox id="lense-specifications" layout="nodisplay">
                   <div class="lightbox">
