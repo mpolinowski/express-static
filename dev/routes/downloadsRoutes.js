@@ -338,6 +338,34 @@ downloadsRouter.get('/Network_Accessories/IN-PoE_1000', function(req, res) {
       });
   });
 
+downloadsRouter.get('/Network_Accessories/IN-Route_P52', function(req, res) {
+    res.render('./Downloads/Network_Accessories_IN-Route_P52', {
+        title: 'Download Area IN-Route P52',
+        ampimg: '/images/Search/D_SearchThumb_NetworkAccessories.jpg',
+        headline: 'Download Area',
+        breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Downloads/">Download Area</a></li><li class="breadcrumb-item"><a href="/Downloads/Network_Accessories/">Network Accessories</a></li><li class="breadcrumb-item"><a href="/Downloads/Network_Accessories/IN-Route_P52">IN-Route P52</a></li>',
+        canonical: '/Downloads/Network_Accessories/IN-Route_P52/',
+        description: 'INSTAR Wiki - IP Camera Knowledge Base',
+    		pacc: '',
+    		ptab: 'hidden',
+    		qiacc: '',
+    		qitab: 'hidden',
+    		mdacc: '',
+    		mdtab: 'hidden',
+    		iaacc: '',
+    		iatab: 'hidden',
+    		auacc: '',
+    		autab: 'hidden',
+    		hdacc: 'hidden',
+    		hdtab: 'hidden',
+    		fhdacc: 'hidden',
+    		fhdtab: 'hidden',
+    		sacc: 'hidden',
+    		dlacc: '',
+    		dltab: '',
+      });
+  });
+
 /* ###################################################### Mobile Apps ###################################################### */
 
 downloadsRouter.get('/Mobile_Apps/', function(req, res) {
