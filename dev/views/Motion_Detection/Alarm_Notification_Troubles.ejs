@@ -68,8 +68,20 @@
                     <!-- /margin -->
 
                     <div class="margin">
-                        <h2>Troubleshooting</h2>
-                        <h3>Gmail</h3>
+                      <h2>Troubleshooting</h2>
+                      <br>
+                      <h3><strong>Table of Content</strong></h3>
+                      <ul>
+                        <li><a href="#gmail">GMail</a></li>
+                        <li><a href="#speedport">Telekom Speedport</a></li>
+                        <li><a href="#tonline">T-Online Mail</a></li>
+                        <li><a href="#gmx">GMX Mail</a></li>
+                      </ul>
+                    </div>
+                  <!-- /margin -->
+
+                    <div class="margin">
+                        <h3 class="jumptarget" id="gmail">Gmail</h3>
                         <p><strong>Problem</strong>: You set up a new GMail account just for your camera´s alarm notifications. But the Test-Email always fails because of a faulty authentication.</p>
                         <p><strong>Solution</strong>: Google monitors your behaviour to estimate if it is really you, who accesses the email account. When you use a new device - e.g. another smartphone or your IP camera - to login to your account, Google might block you and ask for a two stage authentication. This will cause your Test-Email to fail. Please log into your account via your web browser and and check if your GMail account was blocked or Google tells you they caught a suspicious activity. Just authenticate yourself and/or the device that caused the activity.</p>
                         <p><strong>Problem</strong>: GMail always worked fine, but now you stopped receiving alarm emails. But you are still receiving emails from other senders in your GMail account.</p>
@@ -95,7 +107,7 @@
                       <!-- /margin -->
 
                       <div class="margin">
-                          <h3>Telekom Speedport</h3>
+                          <h3 class="jumptarget" id="speedport">Telekom Speedport</h3>
                           <p><strong>Problem</strong>: You are using your camera behind a Telekom Speedport and typed in your SMTP server and login credentials but the Test-Email always fails.</p>
                           <p><strong>Solution</strong>: The Telekom Speedport introduced a list of allowed SMTP servers into it´s Firmware, which is activated by default. Even though this list contains most common SMTP servers - it might still interfere with your attempts to contact SMTP servers with your camera. You can deactivate the Email Abuse Detection for a moment (maybe restart your Speedport afterwards) and try again.</p>
                       </div>
@@ -117,7 +129,7 @@
                       <!-- /margin -->
 
                       <div class="margin">
-                          <h3>T-Online Mail</h3>
+                          <h3 class="jumptarget" id="tonline">T-Online Mail</h3>
                           <p><strong>Problem</strong>: You set up a new T-Online mail account just for your camera´s alarm notifications. But the Test-Email always fails because of a faulty authentication.</p>
                           <p><strong>Solution</strong>: You need to set a separate email password for external apps to connect to your T-Online mail account.</p>
                       </div>
@@ -154,7 +166,7 @@
                       <!-- /margin -->
 
                       <div class="margin">
-                          <h3>GMX Mail</h3>
+                          <h3 class="jumptarget" id="gmx">GMX Mail</h3>
                           <p><strong>Problem</strong>: The Test-Email always fails.</p>
                           <p><strong>Solution</strong>: You need to activate the SMTP service for external programs like Thunderbird or Outlook.</p>
                       </div>
