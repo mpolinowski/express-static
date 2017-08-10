@@ -8,10 +8,10 @@
   "dependencies": {
     "body-parser": "~1.17.0",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.6.0",
-    "ejs": "~2.5.1",
-    "elasticsearch": "^13.2.0",
-    "express": "^4.14.1",
+    "debug": "^3.0.0",
+    "ejs": "^2.5.7",
+    "elasticsearch": "^13.3.1",
+    "express": "^4.15.4",
     "morgan": "^1.8.2"
   },
   "devDependencies": {
@@ -19,7 +19,7 @@
     "babel-register": "^6.22.0",
     "del": "^3.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-babel": "^6.1.2",
+    "gulp-babel": "^7.0.0",
     "gulp-clean-css": "^3.4.2",
     "gulp-htmlclean": "^2.7.8",
     "gulp-imagemin": "~3.3.0",
