@@ -942,6 +942,36 @@ webUI1080pRouter.route('/Multimedia/Image/Wide_Dynamic_Range')
       });
 
 /* GET HD WebUI page. */
+webUI1080pRouter.route('/Multimedia/Image/9008vs5905')
+    .get(function(req, res) {
+        res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Image_9008vs5905', {
+            title: 'INSTAR Web User Interface fullHD Series :: Multimedia :: Image Comparison',
+            ampimg: '/images/Search/WebUI_1080p_SearchThumb_Multimedia_Image.jpg',
+            headline: 'INSTAR Web User Interface fullHD Series - Multimedia :: Image Comparison',
+            breadcrumbs: '<li><a href="/Web_User_Interface/1080p_Series/">1080p Serie</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/">Multimedia</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image">Image</a></li><li><a href="/Web_User_Interface/1080p_Series/Multimedia/Image/9008vs5905">Bildvergleich</a></li>',
+            canonical: '/Web_User_Interface/1080p_Series/Multimedia/Image/9008vs5905/',
+            description: '1080p Web User Interface - Image Comparison between IN-9008 Full HD and IN-5905 HD.',
+      			pacc: '',
+      			ptab: 'hidden',
+      			qiacc: '',
+      			qitab: 'hidden',
+      			mdacc: '',
+      			mdtab: 'hidden',
+      			iaacc: '',
+      			iatab: 'hidden',
+      			auacc: '',
+      			autab: 'hidden',
+      			hdacc: 'hidden',
+      			hdtab: 'hidden',
+      			fhdacc: '',
+      			fhdtab: '',
+      			sacc: 'hidden',
+      			dlacc: 'hidden',
+      			dltab: 'hidden',
+          });
+      });
+
+/* GET HD WebUI page. */
 webUI1080pRouter.route('/Multimedia/Video_Overlays/')
     .get(function(req, res) {
         res.render('./Web_User_Interface/1080p/WebUserInterface_HD-Series_Multimedia_Overlays', {
