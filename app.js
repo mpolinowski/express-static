@@ -1,3 +1,4 @@
+var compression = require('compression');
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
@@ -24,6 +25,8 @@ var offlineRouter = require('./build/routes/offlineRoutes');
 var testRouter = require('./build/routes/testRoutes');
 
 var app = express();
+// compress all responses
+app.use(compression());
 
 // View engine setup
 app.set('views', path.join(__dirname, 'build/views'));
