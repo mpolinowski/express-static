@@ -119,7 +119,9 @@ PUT /wiki2_en
     "article": {
       "properties": {
         "title": {
-          "type": "text"
+          "type": "text",
+          "analyzer": "english",
+          "index": "true"
         },
         "series": {
           "type": "text",
@@ -139,7 +141,9 @@ PUT /wiki2_en
           "index" : "false"
         },
         "title2": {
-          "type": "text"
+          "type": "text",
+          "analyzer": "german",
+          "index": "true"
         },
         "chapters" : {
         "type" : "text",
@@ -151,7 +155,7 @@ PUT /wiki2_en
           }
         },
         "tags": {
-          "type": "tags",
+          "type": "keyword",
           "fields" : {
           "raw" : {
             "type" : "text",
