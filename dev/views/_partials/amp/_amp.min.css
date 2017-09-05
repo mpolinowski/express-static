@@ -1189,13 +1189,13 @@ amp-sidebar .item-layer-2, amp-sidebar .item-layer-3 {
 }
 
 amp-sidebar .menu-layer::after {
-    background: #1c79c0;
+    background: #FFF;
     bottom: 0;
     content: '';
     position: absolute;
     right: 0;
     top: 0;
-    width: 13px
+    width: 5px
 }
 
 amp-sidebar .menu-layer .items {
