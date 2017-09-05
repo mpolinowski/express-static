@@ -963,12 +963,70 @@ softwareRouter.route('/Android')
 
 softwareRouter.route('/Android/InstarVision')
 .get(function(req, res) {
+  res.render('./Software/Android_InstarVision_amp', {
+      title: 'InstarVision for Android',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li>',
+      canonical: '/Software/Android/InstarVision/noamp',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Android/InstarVision/noamp')
+.get(function(req, res) {
   res.render('./Software/Android_InstarVision', {
       title: 'InstarVision for Android',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li>',
       canonical: '/Software/Android/InstarVision/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
+    });
+});
+
+softwareRouter.route('/Android/InstarVision/DDNS')
+.get(function(req, res) {
+  res.render('./Software/Android_InstarVision_DDNS_amp', {
+      title: 'InstarVision for Android - DDNS',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li><li><a href="/Software/Android/InstarVision/DDNS">DDNS</a></li>',
+      canonical: '/Software/Android/InstarVision/DDNS/noamp',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
@@ -985,6 +1043,35 @@ softwareRouter.route('/Android/InstarVision/DDNS')
 
 softwareRouter.route('/Android/InstarVision/P2P')
 .get(function(req, res) {
+  res.render('./Software/Android_InstarVision_P2P_amp', {
+      title: 'InstarVision for Android - P2P',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li><li><a href="/Software/Android/InstarVision/P2P/">P2P</a></li>',
+      canonical: '/Software/Android/InstarVision/P2P/noamp',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Android/InstarVision/P2P/noamp')
+.get(function(req, res) {
   res.render('./Software/Android_InstarVision_P2P', {
       title: 'InstarVision for Android - P2P',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
@@ -995,6 +1082,35 @@ softwareRouter.route('/Android/InstarVision/P2P')
 });
 
 softwareRouter.route('/Android/InstarVision/Multiview')
+.get(function(req, res) {
+  res.render('./Software/Android_InstarVision_Multiview_amp', {
+      title: 'InstarVision for Android - Multiview',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li><li><a href="/Software/Android/InstarVision/Multiview/">Multiview</a></li>',
+      canonical: '/Software/Android/InstarVision/Multiview/noamp',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Android/InstarVision/Multiview/noamp')
 .get(function(req, res) {
   res.render('./Software/Android_InstarVision_Multiview', {
       title: 'InstarVision for Android - Multiview',
@@ -1007,6 +1123,35 @@ softwareRouter.route('/Android/InstarVision/Multiview')
 
 softwareRouter.route('/Android/InstarVision/Recording')
 .get(function(req, res) {
+  res.render('./Software/Android_InstarVision_Recording_amp', {
+      title: 'InstarVision for Android - Recording',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li><li><a href="/Software/Android/InstarVision/Recording/">Recording</a></li>',
+      canonical: '/Software/Android/InstarVision/Recording/noamp',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Android/InstarVision/Recording/noamp')
+.get(function(req, res) {
   res.render('./Software/Android_InstarVision_Recording', {
       title: 'InstarVision for Android - Recording',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
@@ -1017,6 +1162,35 @@ softwareRouter.route('/Android/InstarVision/Recording')
 });
 
 softwareRouter.route('/Android/InstarVision/Settings')
+.get(function(req, res) {
+  res.render('./Software/Android_InstarVision_Settings_amp', {
+      title: 'InstarVision for Android - Settings',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li><li><a href="/Software/Android/InstarVision/Settings/">Settings</a></li>',
+      canonical: '/Software/Android/InstarVision/Settings/noamp/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Android/InstarVision/Settings/noamp')
 .get(function(req, res) {
   res.render('./Software/Android_InstarVision_Settings', {
       title: 'InstarVision for Android - Settings',
