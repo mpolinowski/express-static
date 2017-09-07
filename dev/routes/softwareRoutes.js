@@ -534,7 +534,7 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/Recording/noamp')
 
 softwareRouter.route('/Windows/InstarVision/Windows_Phone/Settings')
 .get(function(req, res) {
-  res.render('./Software/Windows_Phone_InstarVision_Settings', {
+  res.render('./Software/Windows_Phone_InstarVision_Settings_amp', {
       title: 'InstarVision for Windows Phone - Settings_amp',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
       headline: 'INSTAR Products',
@@ -657,8 +657,8 @@ softwareRouter.route('/Windows/InstarVision/Metro/DDNS/noamp')
 
 softwareRouter.route('/Windows/InstarVision/Metro/P2P')
 .get(function(req, res) {
-  res.render('./Software/Windows_Metro_InstarVision_P2P', {
-      title: 'InstarVision for Windows Metro - P2P_amp',
+  res.render('./Software/Windows_Metro_InstarVision_P2P_amp', {
+      title: 'InstarVision for Windows Metro - P2P',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li><a href="/Software/Windows/InstarVision/Metro/P2P/">P2P</a></li>',
