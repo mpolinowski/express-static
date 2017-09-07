@@ -68,6 +68,7 @@ softwareRouter.route('/Windows/InstarVision')
   res.render('./Software/Windows_InstarVision', {
       title: 'InstarVision for Windows',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li>',
       canonical: '/Software/Windows/InstarVision/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -79,6 +80,7 @@ softwareRouter.route('/Windows/InstarVision/Camera_List')
   res.render('./Software/Windows_InstarVision_Camera_List', {
       title: 'InstarVision v2 Camera List',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Camera_List/">Camera List</a></li>',
       canonical: '/Software/Windows/InstarVision/Camera_List/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -90,6 +92,7 @@ softwareRouter.route('/Windows/InstarVision/Layout')
   res.render('./Software/Windows_InstarVision_Layout', {
       title: 'InstarVision v2 Layout',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Layout/">Layout</a></li>',
       canonical: '/Software/Windows/InstarVision/Layout/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -101,6 +104,7 @@ softwareRouter.route('/Windows/InstarVision/PTZ')
   res.render('./Software/Windows_InstarVision_PTZ', {
       title: 'InstarVision v2 Pan, Tilt & Zoom',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Camera_List/">Pan, Tilt & Zoom</a></li>',
       canonical: '/Software/Windows/InstarVision/PTZ/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -112,6 +116,7 @@ softwareRouter.route('/Windows/InstarVision/Image_Adjust')
   res.render('./Software/Windows_InstarVision_Image_Adjust', {
       title: 'InstarVision v2 Image Adjust',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Image_Adjust/">Bildeinstellungen</a></li>',
       canonical: '/Software/Windows/InstarVision/Image_Adjust/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -123,6 +128,7 @@ softwareRouter.route('/Windows/InstarVision/Webserver')
   res.render('./Software/Windows_InstarVision_Webserver', {
       title: 'InstarVision v2 Webserver',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Webserver/">Webserver</a></li>',
       canonical: '/Software/Windows/InstarVision/Webserver/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -134,6 +140,7 @@ softwareRouter.route('/Windows/InstarVision/Record')
   res.render('./Software/Windows_InstarVision_Record', {
       title: 'InstarVision v2 Record',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -145,6 +152,7 @@ softwareRouter.route('/Windows/InstarVision/Record/General')
   res.render('./Software/Windows_InstarVision_Record_General', {
       title: 'InstarVision v2 Record General',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/General/">General</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/General/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -156,6 +164,7 @@ softwareRouter.route('/Windows/InstarVision/Record/Schedule')
   res.render('./Software/Windows_InstarVision_Record_Schedule', {
       title: 'InstarVision v2 Record Schedule',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/Schedule/">Schedule</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/Schedule/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -167,6 +176,7 @@ softwareRouter.route('/Windows/InstarVision/Record/Alarm')
   res.render('./Software/Windows_InstarVision_Record_Alarm', {
       title: 'InstarVision v2 Record Alarm',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/Alarm/">Alarm</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/Alarm/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -178,6 +188,7 @@ softwareRouter.route('/Windows/InstarVision/Record/Photoseries')
   res.render('./Software/Windows_InstarVision_Record_Photoseries', {
       title: 'InstarVision v2 Record Photoseries',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/Photoseries/">Photoseries</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/Photoseries/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -189,6 +200,7 @@ softwareRouter.route('/Windows/InstarVision/Record/Email')
   res.render('./Software/Windows_InstarVision_Record_Email', {
       title: 'InstarVision v2 Record Email',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/Email/">Email</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/Email/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -200,6 +212,7 @@ softwareRouter.route('/Windows/InstarVision/Record/FTP')
   res.render('./Software/Windows_InstarVision_Record_FTP', {
       title: 'InstarVision v2 Record FTP',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/">Recording</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Record/FTP/">FTP</a></li>',
       canonical: '/Software/Windows/InstarVision/Record/FTP/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -211,6 +224,7 @@ softwareRouter.route('/Windows/InstarVision/System')
   res.render('./Software/Windows_InstarVision_System', {
       title: 'InstarVision v2 System',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/System/">System</a></li>',
       canonical: '/Software/Windows/InstarVision/System/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -222,6 +236,7 @@ softwareRouter.route('/Windows/InstarVision/Users')
   res.render('./Software/Windows_InstarVision_Users', {
       title: 'InstarVision v2 Users',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Users/">User</a></li>',
       canonical: '/Software/Windows/InstarVision/Users/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -233,6 +248,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced')
   res.render('./Software/Windows_InstarVision_Advanced', {
       title: 'InstarVision v2 Advanced',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -244,6 +260,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced/License')
   res.render('./Software/Windows_InstarVision_Advanced_License', {
       title: 'InstarVision v2 Advanced License',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/License/">License</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/License/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -255,6 +272,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced/Log')
   res.render('./Software/Windows_InstarVision_Advanced_Log', {
       title: 'InstarVision v2 Advanced Log',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/Log/">Log</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/Log/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -266,6 +284,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced/Export')
   res.render('./Software/Windows_InstarVision_Advanced_Export', {
       title: 'InstarVision v2 Advanced Export',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/Export/">Export</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/Export/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -277,6 +296,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced/Player')
   res.render('./Software/Windows_InstarVision_Advanced_Player', {
       title: 'InstarVision v2 Advanced Player',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/Player/">Player</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/Player/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -288,6 +308,7 @@ softwareRouter.route('/Windows/InstarVision/Advanced/Explorer')
   res.render('./Software/Windows_InstarVision_Advanced_Explorer', {
       title: 'InstarVision v2 Advanced Explorer',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/">Advanced</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Advanced/Explorer/">Explorer</a></li>',
       canonical: '/Software/Windows/InstarVision/Advanced/Explorer/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -299,6 +320,7 @@ softwareRouter.route('/Windows/InstarVision/About')
   res.render('./Software/Windows_InstarVision_About', {
       title: 'InstarVision v2 About',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/About/">About</a></li>',
       canonical: '/Software/Windows/InstarVision/About/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -307,9 +329,39 @@ softwareRouter.route('/Windows/InstarVision/About')
 
 softwareRouter.route('/Windows/InstarVision/Windows_Phone')
 .get(function(req, res) {
+  res.render('./Software/Windows_Phone_InstarVision_amp', {
+      title: 'InstarVision for WindowsPhone',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li>',
+      canonical: '/Software/Windows/InstarVision/Windows_Phone/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Windows_Phone/noamp')
+.get(function(req, res) {
   res.render('./Software/Windows_Phone_InstarVision', {
       title: 'InstarVision for WindowsPhone',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -318,9 +370,39 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone')
 
 softwareRouter.route('/Windows/InstarVision/Windows_Phone/DDNS')
 .get(function(req, res) {
+  res.render('./Software/Windows_Phone_InstarVision_DDNS_amp', {
+      title: 'InstarVision for Windows Phone - DDNS',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li><a href="/Software/Windows/InstarVision/Windows_Phone/DDNS/">DDNS</a></li>',
+      canonical: '/Software/Windows/InstarVision/Windows_Phone/DDNS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Windows_Phone/DDNS/noamp')
+.get(function(req, res) {
   res.render('./Software/Windows_Phone_InstarVision_DDNS', {
       title: 'InstarVision for Windows Phone - DDNS',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/DDNS/">DDNS</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/DDNS/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -329,9 +411,39 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/DDNS')
 
 softwareRouter.route('/Windows/InstarVision/Windows_Phone/P2P')
 .get(function(req, res) {
+  res.render('./Software/Windows_Phone_InstarVision_P2P_amp', {
+      title: 'InstarVision for Windows Phone - P2P',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li><a href="/Software/Windows/InstarVision/Windows_Phone/P2P/">P2P</a></li>',
+      canonical: '/Software/Windows/InstarVision/Windows_Phone/P2P/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Windows_Phone/P2P/noamp')
+.get(function(req, res) {
   res.render('./Software/Windows_Phone_InstarVision_P2P', {
       title: 'InstarVision for Windows Phone - P2P',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/P2P/">P2P</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/P2P/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -340,9 +452,39 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/P2P')
 
 softwareRouter.route('/Windows/InstarVision/Windows_Phone/Multiview')
 .get(function(req, res) {
+  res.render('./Software/Windows_Phone_InstarVision_Multiview_amp', {
+      title: 'InstarVision for Windows Phone - Multiview',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/Multiview/">Multiview</a></li>',
+      canonical: '/Software/Windows/InstarVision/Windows_Phone/Multiview/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Windows_Phone/Multiview/noamp')
+.get(function(req, res) {
   res.render('./Software/Windows_Phone_InstarVision_Multiview', {
       title: 'InstarVision for Windows Phone - Multiview',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/Multiview/">Multiview</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/Multiview/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -351,9 +493,39 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/Multiview')
 
 softwareRouter.route('/Windows/InstarVision/Windows_Phone/Recording')
 .get(function(req, res) {
+  res.render('./Software/Windows_Phone_InstarVision_Recording_amp', {
+      title: 'InstarVision for Windows Phone - Recording',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li><a href="/Software/Windows/InstarVision/Windows_Phone/Recording/">Recording</a></li>',
+      canonical: '/Software/Windows/InstarVision/Windows_Phone/Recording/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Windows_Phone/Recording/noamp')
+.get(function(req, res) {
   res.render('./Software/Windows_Phone_InstarVision_Recording', {
       title: 'InstarVision for Windows Phone - Recording',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/Recording/">Recording</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/Recording/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -363,8 +535,38 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/Recording')
 softwareRouter.route('/Windows/InstarVision/Windows_Phone/Settings')
 .get(function(req, res) {
   res.render('./Software/Windows_Phone_InstarVision_Settings', {
+      title: 'InstarVision for Windows Phone - Settings_amp',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li><a href="/Software/Windows/InstarVision/Windows_Phone/Settings/">Settings</a></li>',
+      canonical: '/Software/Windows/InstarVision/Windows_Phone/Settings/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Windows_Phone/Settings/noamp')
+.get(function(req, res) {
+  res.render('./Software/Windows_Phone_InstarVision_Settings', {
       title: 'InstarVision for Windows Phone - Settings',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_WP.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/">Windows Phone App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Windows_Phone/Settings/">Settings</a></li>',
       canonical: '/Software/Windows/InstarVision/Windows_Phone/Settings/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -373,9 +575,39 @@ softwareRouter.route('/Windows/InstarVision/Windows_Phone/Settings')
 
 softwareRouter.route('/Windows/InstarVision/Metro')
 .get(function(req, res) {
+  res.render('./Software/Windows_Metro_InstarVision_amp', {
+      title: 'InstarVision for Windows Metro',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li>',
+      canonical: '/Software/Windows/InstarVision/Metro/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Metro/noamp')
+.get(function(req, res) {
   res.render('./Software/Windows_Metro_InstarVision', {
       title: 'InstarVision for Windows Metro',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -384,9 +616,39 @@ softwareRouter.route('/Windows/InstarVision/Metro')
 
 softwareRouter.route('/Windows/InstarVision/Metro/DDNS')
 .get(function(req, res) {
+  res.render('./Software/Windows_Metro_InstarVision_DDNS_amp', {
+      title: 'InstarVision for Windows Metro - DDNS',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li><a href="/Software/Windows/InstarVision/Metro/DDNS/">DDNS</a></li>',
+      canonical: '/Software/Windows/InstarVision/Metro/DDNS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Metro/DDNS/noamp')
+.get(function(req, res) {
   res.render('./Software/Windows_Metro_InstarVision_DDNS', {
       title: 'InstarVision for Windows Metro - DDNS',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/DDNS/">DDNS</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/DDNS/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -396,8 +658,38 @@ softwareRouter.route('/Windows/InstarVision/Metro/DDNS')
 softwareRouter.route('/Windows/InstarVision/Metro/P2P')
 .get(function(req, res) {
   res.render('./Software/Windows_Metro_InstarVision_P2P', {
+      title: 'InstarVision for Windows Metro - P2P_amp',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li><a href="/Software/Windows/InstarVision/Metro/P2P/">P2P</a></li>',
+      canonical: '/Software/Windows/InstarVision/Metro/P2P/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Metro/P2P/noamp')
+.get(function(req, res) {
+  res.render('./Software/Windows_Metro_InstarVision_P2P', {
       title: 'InstarVision for Windows Metro - P2P',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/P2P/">P2P</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/P2P/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -406,9 +698,39 @@ softwareRouter.route('/Windows/InstarVision/Metro/P2P')
 
 softwareRouter.route('/Windows/InstarVision/Metro/Multiview')
 .get(function(req, res) {
+  res.render('./Software/Windows_Metro_InstarVision_Multiview_amp', {
+      title: 'InstarVision for Windows Metro - Multiview',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li><a href="/Software/Windows/InstarVision/Metro/Multiview/">Multiview</a></li>',
+      canonical: '/Software/Windows/InstarVision/Metro/Multiview/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Metro/Multiview/noamp')
+.get(function(req, res) {
   res.render('./Software/Windows_Metro_InstarVision_Multiview', {
       title: 'InstarVision for Windows Metro - Multiview',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/Multiview/">Multiview</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/Multiview/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -417,9 +739,39 @@ softwareRouter.route('/Windows/InstarVision/Metro/Multiview')
 
 softwareRouter.route('/Windows/InstarVision/Metro/Recording')
 .get(function(req, res) {
+  res.render('./Software/Windows_Metro_InstarVision_Recording_amp', {
+      title: 'InstarVision for Windows Metro - Recording',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li><a href="/Software/Windows/InstarVision/Metro/Recording/">Recording</a></li>',
+      canonical: '/Software/Windows/InstarVision/Metro/Recording/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Metro/Recording/noamp')
+.get(function(req, res) {
   res.render('./Software/Windows_Metro_InstarVision_Recording', {
       title: 'InstarVision for Windows Metro - Recording',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/Recording/">Recording</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/Recording/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -428,9 +780,39 @@ softwareRouter.route('/Windows/InstarVision/Metro/Recording')
 
 softwareRouter.route('/Windows/InstarVision/Metro/Settings')
 .get(function(req, res) {
+  res.render('./Software/Windows_Metro_InstarVision_Settings_amp', {
+      title: 'InstarVision for Windows Metro - Settings',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Windows/">Windows</a></li><li><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li><a href="/Software/Windows/InstarVision/Metro/Settings/">Settings</a></li>',
+      canonical: '/Software/Windows/InstarVision/Metro/Settings/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+  		pacc: '',
+  		ptab: 'hidden',
+  		qiacc: '',
+  		qitab: 'hidden',
+  		mdacc: '',
+  		mdtab: 'hidden',
+  		iaacc: '',
+  		iatab: 'hidden',
+  		auacc: '',
+  		autab: 'hidden',
+  		hdacc: 'hidden',
+  		hdtab: 'hidden',
+  		fhdacc: 'hidden',
+  		fhdtab: 'hidden',
+  		sacc: '',
+  		dlacc: 'hidden',
+  		dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/Windows/InstarVision/Metro/Settings/noamp')
+.get(function(req, res) {
   res.render('./Software/Windows_Metro_InstarVision_Settings', {
       title: 'InstarVision for Windows Metro - Settings',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Metro.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Windows/">Windows</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/">Metro App</a></li><li class="breadcrumb-item"><a href="/Software/Windows/InstarVision/Metro/Settings/">Settings</a></li>',
       canonical: '/Software/Windows/InstarVision/Metro/Settings/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -968,7 +1350,7 @@ softwareRouter.route('/Android/InstarVision')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li>',
-      canonical: '/Software/Android/InstarVision/noamp',
+      canonical: '/Software/Android/InstarVision/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
@@ -995,6 +1377,7 @@ softwareRouter.route('/Android/InstarVision/noamp')
   res.render('./Software/Android_InstarVision', {
       title: 'InstarVision for Android',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li>',
       canonical: '/Software/Android/InstarVision/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1008,7 +1391,7 @@ softwareRouter.route('/Android/InstarVision/DDNS')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li><li><a href="/Software/Android/InstarVision/DDNS">DDNS</a></li>',
-      canonical: '/Software/Android/InstarVision/DDNS/noamp',
+      canonical: '/Software/Android/InstarVision/DDNS/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
@@ -1030,11 +1413,12 @@ softwareRouter.route('/Android/InstarVision/DDNS')
     });
 });
 
-softwareRouter.route('/Android/InstarVision/DDNS')
+softwareRouter.route('/Android/InstarVision/DDNS/noamp')
 .get(function(req, res) {
   res.render('./Software/Android_InstarVision_DDNS', {
       title: 'InstarVision for Android - DDNS',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li>',
       canonical: '/Software/Android/InstarVision/DDNS/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1048,7 +1432,7 @@ softwareRouter.route('/Android/InstarVision/P2P')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li><li><a href="/Software/Android/InstarVision/P2P/">P2P</a></li>',
-      canonical: '/Software/Android/InstarVision/P2P/noamp',
+      canonical: '/Software/Android/InstarVision/P2P/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
@@ -1075,6 +1459,7 @@ softwareRouter.route('/Android/InstarVision/P2P/noamp')
   res.render('./Software/Android_InstarVision_P2P', {
       title: 'InstarVision for Android - P2P',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/P2P/">P2P</a></li>',
       canonical: '/Software/Android/InstarVision/P2P/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1088,7 +1473,7 @@ softwareRouter.route('/Android/InstarVision/Multiview')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li><li><a href="/Software/Android/InstarVision/Multiview/">Multiview</a></li>',
-      canonical: '/Software/Android/InstarVision/Multiview/noamp',
+      canonical: '/Software/Android/InstarVision/Multiview/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
@@ -1115,6 +1500,7 @@ softwareRouter.route('/Android/InstarVision/Multiview/noamp')
   res.render('./Software/Android_InstarVision_Multiview', {
       title: 'InstarVision for Android - Multiview',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/Multiview/">Multiview</a></li>',
       canonical: '/Software/Android/InstarVision/Multiview/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1128,7 +1514,7 @@ softwareRouter.route('/Android/InstarVision/Recording')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li><li><a href="/Software/Android/InstarVision/Recording/">Recording</a></li>',
-      canonical: '/Software/Android/InstarVision/Recording/noamp',
+      canonical: '/Software/Android/InstarVision/Recording/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
@@ -1155,6 +1541,7 @@ softwareRouter.route('/Android/InstarVision/Recording/noamp')
   res.render('./Software/Android_InstarVision_Recording', {
       title: 'InstarVision for Android - Recording',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/Recording/">Recording</a></li>',
       canonical: '/Software/Android/InstarVision/Recording/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1168,7 +1555,7 @@ softwareRouter.route('/Android/InstarVision/Settings')
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
       headline: 'INSTAR Products',
       breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/Android/">Android</a></li><li><a href="/Software/Android/InstarVision/">InstarVision</a></li><li><a href="/Software/Android/InstarVision/Settings/">Settings</a></li>',
-      canonical: '/Software/Android/InstarVision/Settings/noamp/',
+      canonical: '/Software/Android/InstarVision/Settings/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
       pacc: '',
       ptab: 'hidden',
@@ -1195,6 +1582,7 @@ softwareRouter.route('/Android/InstarVision/Settings/noamp')
   res.render('./Software/Android_InstarVision_Settings', {
       title: 'InstarVision for Android - Settings',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Android/">Android</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/Android/InstarVision/Settings/">Settings</a></li>',
       canonical: '/Software/Android/InstarVision/Settings/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1291,9 +1679,39 @@ softwareRouter.route('/iOS')
 
 softwareRouter.route('/iOS/InstarVision/iPhone')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPhone_amp', {
+      title: 'InstarVision for iPhone',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPhone/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPhone/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPhone', {
       title: 'InstarVision for iPhone',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1302,9 +1720,39 @@ softwareRouter.route('/iOS/InstarVision/iPhone')
 
 softwareRouter.route('/iOS/InstarVision/iPhone/DDNS')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPhone_DDNS_amp', {
+      title: 'InstarVision for iOS - DDNS',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li><a href="/Software/iOS/InstarVision/iPhone/DDNS/">DDNS</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPhone/DDNS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPhone/DDNS/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPhone_DDNS', {
       title: 'InstarVision for iOS - DDNS',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/DDNS/">DDNS</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/DDNS/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1313,9 +1761,39 @@ softwareRouter.route('/iOS/InstarVision/iPhone/DDNS')
 
 softwareRouter.route('/iOS/InstarVision/iPhone/P2P')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPhone_P2P_amp', {
+      title: 'InstarVision for iOS - P2P',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li><a href="/Software/iOS/InstarVision/iPhone/P2P/">P2P</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPhone/P2P/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPhone/P2P/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPhone_P2P', {
       title: 'InstarVision for iOS - P2P',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/P2P/">P2P</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/P2P/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1324,9 +1802,39 @@ softwareRouter.route('/iOS/InstarVision/iPhone/P2P')
 
 softwareRouter.route('/iOS/InstarVision/iPhone/Multiview')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPhone_Multiview_amp', {
+      title: 'InstarVision for iOS - Multiview',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li><a href="/Software/iOS/InstarVision/iPhone/Multimedia/">Multimedia</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPhone/Multiview/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPhone/Multiview/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPhone_Multiview', {
       title: 'InstarVision for iOS - Multiview',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/Multimedia/">Multimedia</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/Multiview/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1335,9 +1843,39 @@ softwareRouter.route('/iOS/InstarVision/iPhone/Multiview')
 
 softwareRouter.route('/iOS/InstarVision/iPhone/Recording')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPhone_Recording_amp', {
+      title: 'InstarVision for iOS - Recording',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li><a href="/Software/iOS/InstarVision/iPhone/Recording/">Recording</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPhone/Recording/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPhone/Recording/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPhone_Recording', {
       title: 'InstarVision for iOS - Recording',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/Recording/">Recording</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/Recording/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1346,9 +1884,39 @@ softwareRouter.route('/iOS/InstarVision/iPhone/Recording')
 
 softwareRouter.route('/iOS/InstarVision/iPhone/Settings')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPhone_Settings_amp', {
+      title: 'InstarVision for iOS - Settings',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li><a href="/Software/iOS/InstarVision/iPhone/Settings/">Settings</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPhone/Settings/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPhone/Settings/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPhone_Settings', {
       title: 'InstarVision for iOS - Settings',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/">iPhone</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPhone/Settings/">Settings</a></li>',
       canonical: '/Software/iOS/InstarVision/iPhone/Settings/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1357,9 +1925,39 @@ softwareRouter.route('/iOS/InstarVision/iPhone/Settings')
 
 softwareRouter.route('/iOS/InstarVision/iPad')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPad_amp', {
+      title: 'InstarVision for iPad',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/">Software</a></li><li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPad/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPad/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPad', {
       title: 'InstarVision for iPad',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1368,9 +1966,39 @@ softwareRouter.route('/iOS/InstarVision/iPad')
 
 softwareRouter.route('/iOS/InstarVision/iPad/DDNS')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPad_DDNS_amp', {
+      title: 'InstarVision for iOS - DDNS',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li><a href="/Software/iOS/InstarVision/iPad/DDNS/">DDNS</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPad/DDNS/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPad/DDNS/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPad_DDNS', {
       title: 'InstarVision for iOS - DDNS',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/DDNS/">DDNS</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/DDNS/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1379,9 +2007,39 @@ softwareRouter.route('/iOS/InstarVision/iPad/DDNS')
 
 softwareRouter.route('/iOS/InstarVision/iPad/P2P')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPad_P2P_amp', {
+      title: 'InstarVision for iOS - P2P',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li><a href="/Software/iOS/InstarVision/iPad/P2P/">P2P</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPad/P2P/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPad/P2P/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPad_P2P', {
       title: 'InstarVision for iOS - P2P',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/P2P/">P2P</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/P2P/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1390,9 +2048,39 @@ softwareRouter.route('/iOS/InstarVision/iPad/P2P')
 
 softwareRouter.route('/iOS/InstarVision/iPad/Multiview')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPad_Multiview_amp', {
+      title: 'InstarVision for iOS - Multiview',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li><a href="/Software/iOS/InstarVision/iPad/Multiview/">Multiview</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPad/Multiview/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPad/Multiview/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPad_Multiview', {
       title: 'InstarVision for iOS - Multiview',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/Multiview/">Multiview</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/Multiview/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1401,9 +2089,39 @@ softwareRouter.route('/iOS/InstarVision/iPad/Multiview')
 
 softwareRouter.route('/iOS/InstarVision/iPad/Recording')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPad_Recording_amp', {
+      title: 'InstarVision for iOS - Recording',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li><a href="/Software/iOS/InstarVision/iPad/Recording/">Recording</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPad/Recording/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPad/Recording/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPad_Recording', {
       title: 'InstarVision for iOS - Recording',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/Recording/">Recording</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/Recording/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1412,9 +2130,39 @@ softwareRouter.route('/iOS/InstarVision/iPad/Recording')
 
 softwareRouter.route('/iOS/InstarVision/iPad/Settings')
 .get(function(req, res) {
+  res.render('./Software/iOS_InstarVision_iPad_Settings_amp', {
+      title: 'InstarVision for iOS - Settings',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li><a href="/Software/iOS/InstarVision/iPad/Settings/">Settings</a></li>',
+      canonical: '/Software/iOS/InstarVision/iPad/Settings/',
+      description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
+softwareRouter.route('/iOS/InstarVision/iPad/Settings/noamp')
+.get(function(req, res) {
   res.render('./Software/iOS_InstarVision_iPad_Settings', {
       title: 'InstarVision for iOS - Settings',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/">iPad</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/iPad/Settings/">Settings</a></li>',
       canonical: '/Software/iOS/InstarVision/iPad/Settings/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
@@ -1426,9 +2174,27 @@ softwareRouter.route('/iOS/InstarVision')
   res.render('./Software/iOS_InstarVision', {
       title: 'InstarVision for iOS',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_iOS.jpg',
-      breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/iOS/">iOS</a></li><li class="breadcrumb-item"><a href="/Software/iOS/InstarVision/">InstarVision</a></li>',
+      headline: 'INSTAR Products',
+      breadcrumbs: '<li><a href="/Products/">Products</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/iOS/">iOS</a></li><li><a href="/Software/iOS/InstarVision/">InstarVision</a></li>',
       canonical: '/Software/iOS/InstarVision/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
     });
 });
 
@@ -1612,6 +2378,7 @@ softwareRouter.route('/Other_Platforms/InstarVision_Blackberry')
   res.render('./Software/Android_InstarVision_Blackberry', {
       title: 'InstarVision Blackberry',
       ampimg: '/images/Search/P_SearchThumb_InstarVision_Android.jpg',
+      headline: 'INSTAR Products',
       breadcrumbs: '<li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/Products/">Products</a></li><li class="breadcrumb-item"><a href="/Software/">Software</a></li><li class="breadcrumb-item"><a href="/Software/Other_Platforms/">Andere Platform</a></li><li class="breadcrumb-item"><a href="/Software/Other_Platforms/InstarVision_Blackberry/">InstarVision for Blackberry</a></li>',
       canonical: '/Software/Other_Platforms/InstarVision_Blackberry/',
       description: 'INSTAR Wiki - IP Camera Knowledge Base',
