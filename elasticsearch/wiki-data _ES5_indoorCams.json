@@ -1,4 +1,4 @@
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IN-8015 HD",
     "series": ["1080p", "Indoor"],
@@ -11,7 +11,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-8015HD.jpg",
     "abstract": "IN-8015 HD - Product Overview"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IN-8015 HD Technical Specifications",
     "series": ["1080p", "Indoor"],
@@ -24,7 +24,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-8015HD_Technical_Specifications.jpg",
     "abstract": "IN-8015 Technical Specifications Table"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Product Features",
     "series": ["1080p", "Indoor"],
@@ -37,7 +37,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-8015HD_Features.jpg",
     "abstract": "IN-8015 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Quick Installation Guide",
     "series": ["1080p", "Indoor"],
@@ -49,7 +49,7 @@ POST /wiki2_en/article
     "tags": ["IN-8015 HD", "Indoor Cameras", "IP Camera", "Usermanual"],
     "image": "/images/Search/P_SearchThumb_IN-8015HD_Quick_Installation.jpg"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Point2Point Setup",
     "series": ["1080p", "Indoor"],
@@ -62,7 +62,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-8015HD_Quick_Installation.jpg",
     "abstract": "IN-8015 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IN-6014 HD",
     "series": ["720p", "Indoor"],
@@ -75,7 +75,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6014HD.jpg",
     "abstract": "IN-6014 HD - Product Overview"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IN-6014 HD Technical Specifications",
     "series": ["720p", "Indoor"],
@@ -88,7 +88,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6014HD_Technical_Specifications.jpg",
     "abstract": "IN-6014 Technical Specifications Table"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Product Features",
     "series": ["720p", "Indoor"],
@@ -101,7 +101,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6014HD_Features.jpg",
     "abstract": "IN-6014 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Quick Installation Guide",
     "series": ["720p", "Indoor"],
@@ -113,7 +113,7 @@ POST /wiki2_en/article
     "tags": ["Indoor Cameras", "IP Camera", "Usermanual"],
     "image": "/images/Search/P_SearchThumb_IN-6014HD_Quick_Installation.jpg"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Point2Point Setup",
     "series": ["720p", "Indoor"],
@@ -126,7 +126,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6014HD_Quick_Installation.jpg",
     "abstract": "IN-6014 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Camera Video Streaming",
     "series": ["HD", "Indoor", "Outdoor"],
@@ -139,7 +139,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6014HD_Video_Streaming.jpg",
     "abstract": "HD Cameras Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Camera Hardware Reset",
     "series": ["HD", "Indoor", "Outdoor"],
@@ -152,7 +152,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6014HD_Reset.jpg",
     "abstract": "HD Cameras Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Manual Lense Adjustment",
     "series": ["720p", "Indoor"],
@@ -165,7 +165,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6014HD_Lense_Adjust.jpg",
     "abstract": "HD Cameras Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IN-6012 HD",
     "series": ["720p", "Indoor"],
@@ -178,7 +178,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6012HD.jpg",
     "abstract": "IN-6012 HD - Product Overview"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IN-6012 HD Technical Specifications",
     "series": ["720p", "Indoor"],
@@ -191,7 +191,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6012HD_Technical_Specifications.jpg",
     "abstract": "IN-6012 Technical Specifications Table"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Product Features",
     "series": ["720p", "Indoor"],
@@ -204,7 +204,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6012HD_Features.jpg",
     "abstract": "IN-6012 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Quick Installation Guide",
     "series": ["720p", "Indoor"],
@@ -217,7 +217,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6012HD_Quick_Installation.jpg",
     "abstract": "IN-6012 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Point2Point Setup",
     "series": ["720p", "Indoor"],
@@ -230,7 +230,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6012HD_Quick_Installation.jpg",
     "abstract": "IN-6012 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Manual Lense Adjustment",
     "series": ["720p", "Indoor"],
@@ -243,7 +243,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6012HD_Lense_Adjust.jpg",
     "abstract": "IN-6012 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IN-6001 HD",
     "series": ["720p", "Indoor"],
@@ -256,7 +256,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6001HD.jpg",
     "abstract": "IN-6001 HD - Product Overview"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IN-6001 HD Technical Specifications",
     "series": ["720p", "Indoor"],
@@ -269,7 +269,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6001HD_Technical_Specifications.jpg",
     "abstract": "IN-6001 Technical Specifications Table"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Product Features",
     "series": ["720p", "Indoor"],
@@ -282,7 +282,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6001HD_Features.jpg",
     "abstract": "IN-6001 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Quick Installation Guide",
     "series": ["720p", "Indoor"],
@@ -295,7 +295,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6001HD_Quick_Installation.jpg",
     "abstract": "IN-6001 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Point2Point Setup",
     "series": ["720p", "Indoor"],
@@ -308,7 +308,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6001HD_Quick_Installation.jpg",
     "abstract": "IN-6001 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Manual Lense Adjustment",
     "series": ["720p", "Indoor"],
@@ -321,7 +321,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-6001HD_Lense_Adjust.jpg",
     "abstract": "IN-6001 HD Usermanual"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IN-3011",
     "series": ["VGA", "Indoor"],
@@ -334,7 +334,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IN-3011.jpg",
     "abstract": "IN-3011 - Product Overview"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IN-3011 Technical Specifications",
     "series": ["VGA", "Indoor"],

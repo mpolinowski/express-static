@@ -1,4 +1,4 @@
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: IP Config Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -12,7 +12,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des IP-Konfigurations-Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: WiFi Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -26,7 +26,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des WLAN-Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Remote Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -40,7 +40,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des DDNS Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: UPnP Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -54,7 +54,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des UPnP Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: ONVIF Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -68,7 +68,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des ONVIF Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Audio Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -82,7 +82,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Audio Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Video Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -96,7 +96,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Video Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Image Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -110,7 +110,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Bild-Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Privacy Mask Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -124,7 +124,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Privatsphäre-Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Overlay Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -138,7 +138,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Overlay-Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Email Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -152,7 +152,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Email Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: FTP Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -166,7 +166,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des FTP Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Nightvision Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -180,7 +180,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Nachtsicht IR LEDs Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: PTZ Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -194,7 +194,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des PTZ Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: PTZ Tour Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -208,7 +208,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des PTZ Tour Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: SD Card Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -222,7 +222,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des SD Karte Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: LED Indicator Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -236,7 +236,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Status LED Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Manual Rec Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -250,7 +250,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Manuelle Aufnahme Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Actions Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -264,7 +264,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Alarm Aktionen Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Areas Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -278,7 +278,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Alarmbereiche-Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Alarm Schedule Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -292,7 +292,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Alarm Zeitplan Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Push Service Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -306,7 +306,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Push Service Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Alarm Server Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -320,7 +320,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Alarm Server Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Photoseries Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -334,7 +334,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Manuelle Aufnahme Bildeinstellungen Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Video Recording Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -348,7 +348,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Manuelle Aufnahme Videoeinstellungen Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Info Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -362,7 +362,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Info Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: User Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -376,7 +376,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Benutzer-Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Date&Time Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -390,7 +390,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Datum & Uhrzeit Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Language Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -404,7 +404,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Sprachmenüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Log Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -418,7 +418,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des System Log Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Update Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -432,7 +432,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Update Menü"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Reboot Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],
@@ -446,7 +446,7 @@ POST /wiki2_en/article
     "image": "/images/Search/AU_SearchThumb_CGICommands_1080p.jpg",
     "abstract": "Übersicht über die CGI Befehle des Neustart Menüs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "1080p CGI Commands :: Reset Menu",
     "series":  ["Full HD", "Indoor", "Outdoor"],

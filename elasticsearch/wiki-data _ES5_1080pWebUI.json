@@ -1,4 +1,4 @@
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "The HD Web User Interface",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -11,7 +11,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_1080p.jpg",
     "abstract": "Configure your HD Camera over the Web User Interface"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "System Menu",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -24,7 +24,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_1080p.jpg",
     "abstract": "Configure your HD Camera over the Web User Interface"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Info",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -37,7 +37,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_System_Overview.jpg",
     "abstract": "Information about your Camera's Operations"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "User",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -50,7 +50,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_System_User.jpg",
     "abstract": "Multi-level User Management"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Date & Time",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -63,7 +63,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_System_Date_Time.jpg",
     "abstract": "Set your Camera's Time and Date"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Language",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -76,7 +76,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_System_Language.jpg",
     "abstract": "Set the Language used by the User Interface"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "System Log",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -89,7 +89,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_System_Log.jpg",
     "abstract": "System Log - Keep an eye on your Camera´s Operation"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Update",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -102,7 +102,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_System_Update.jpg",
     "abstract": "Update your Cameras User Interface and Firmware"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Reboot",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -115,7 +115,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_System_Reboot.jpg",
     "abstract": "Reboot your Camera"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Reset",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -128,7 +128,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_System_Reset.jpg",
     "abstract": "Reset your Camera"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Network Menu",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -141,7 +141,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_1080p.jpg",
     "abstract": "Adjust zour Camera's Network Configuration"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IP Configuration",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -154,7 +154,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Network_IP_Configuration.jpg",
     "abstract": "Configure your Camera's Network Settings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "WiFi",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -167,7 +167,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Network_WiFi.jpg",
     "abstract": "Connect your Camera to the WiFi Network"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Remote Access",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -180,7 +180,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Network_Remote_Access.jpg",
     "abstract": "Access your Camera over the Internet"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "UPnP",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -193,7 +193,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Network_UPnP.jpg",
     "abstract": "Universal Plug &amp; Play"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "ONVIF",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -206,7 +206,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Network_ONVIF.jpg",
     "abstract": "Connect your Camera over the ONVIF Protocol"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Features Menu",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -219,7 +219,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_1080p.jpg",
     "abstract": "Adjust your Camera in the Features Menu"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Email",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -232,7 +232,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Features_Email.jpg",
     "abstract": "Set an Email Receiver for the Alarm Notification"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "FTP",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -245,7 +245,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Features_FTP.jpg",
     "abstract": "Set a FTP Server for the Alarm Upload"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Status LED",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -258,7 +258,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Features_Status_LEDs.jpg",
     "abstract": "Activate or Deactivate the Network Status LED"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IR LEDs",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -271,7 +271,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Features_Nightvision.jpg",
     "abstract": "Adjust the Behaviour of the Infrared LEDs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "PTZ",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -284,7 +284,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Features_PTZ.jpg",
     "abstract": "Ajust your Cameras PTZ Function"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "PTZ Tour",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -297,7 +297,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Features_PTZ_Tour.jpg",
     "abstract": "Program a PTZ Tour for your Camera"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "SD Card",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -310,7 +310,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Features_SD_Card.jpg",
     "abstract": "Open, format or unmount your SD Card"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Manual Recording",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -323,7 +323,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Features_Manual_Recording.jpg",
     "abstract": "Set the file length of manual recordings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Multimedia Menu",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -336,7 +336,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_1080p.jpg",
     "abstract": "Adjust your Camera Video and Audio Settings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Audio",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -349,7 +349,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Multimedia_Audio.jpg",
     "abstract": "Adjust your Camera's Audio Volume"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Video",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -362,7 +362,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Multimedia_Video.jpg",
     "abstract": "Adjust your Camera's Video Quality"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Image",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -375,7 +375,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Multimedia_Image.jpg",
     "abstract": "Adjust your Camera's Image Quality"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Privacy Mask",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -388,7 +388,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Multimedia_Privat.jpg",
     "abstract": "Black out Parts of the Image Sensor"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Alarm Menu",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -401,7 +401,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_1080p.jpg",
     "abstract": "Set your Camera Alarm Actions"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Alarm Areas",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -414,7 +414,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Alarm_Alarm_Areas.jpg",
     "abstract": "Set the Detection Areas for Motion Detection"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Alarm Actions",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -427,7 +427,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Alarm_Alarm_Actions.jpg",
     "abstract": "Actions to be triggered in case of an Alarm"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Alarm Schedule",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -440,7 +440,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Alarm_Schedule.jpg",
     "abstract": "Configure a Time Schedule for the Alarm Function"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Push Service",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -453,7 +453,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Alarm_Push_Service.jpg",
     "abstract": "Get a Push Notification in Case of an Alert"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Alarm Server",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -466,7 +466,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Alarm_Alarmserver.jpg",
     "abstract": "Home automation integration"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Recording Task Menu",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -479,7 +479,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_1080p.jpg",
     "abstract": "Set your Camera to automatically Record"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Video Recording",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -492,7 +492,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Tasks_Video_Recording.jpg",
     "abstract": "Set Parameters for the automated Recording"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Photoseries",
     "series": ["1080p", "Indoor", "Outdoor"],
@@ -505,7 +505,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_1080p_SearchThumb_Tasks_Photoseries.jpg",
     "abstract": "Set Parameters for the automated Photoseries"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Cloud",
     "series": ["1080p", "Indoor", "Outdoor"],

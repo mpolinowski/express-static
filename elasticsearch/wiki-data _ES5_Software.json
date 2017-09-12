@@ -1,4 +1,4 @@
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 for Windows",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -11,7 +11,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "InstarVision v2 for Windows"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Camera List",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -24,7 +24,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Overview over all Connected Cameras"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Layout",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -37,7 +37,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Adjust the Channel Layout"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Camera PTZ",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -50,7 +50,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Camera Pan, Tilt & Zoom"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Image Adjust",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -63,7 +63,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Adjust your camera´s Image Settings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Webserver",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -76,7 +76,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Web User Interface"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Record",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -89,7 +89,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Alarm and Planned Recordings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Record: General",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -102,7 +102,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "General Video Recording Settings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Record: Schedule",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -115,7 +115,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Program Planned Recordings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Record: Alarm",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -128,7 +128,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Motion Detection and Alarm Recording"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Record: Photoseries",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -141,7 +141,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "FTP Photoseries and Timelapse"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Record: Email",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -154,7 +154,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Alarm Email Notification"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Record: FTP",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -167,7 +167,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Alarm Image Upload and FTP Photoseries"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - System",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -180,7 +180,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "System Settings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Users",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -193,7 +193,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Multi-level User Management"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - About",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -206,7 +206,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "About"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Advanced",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -219,7 +219,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Advanced Settings and Features"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Advanced: License",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -232,7 +232,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Activate your Version of InstarVision"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Advanced: System Log",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -245,7 +245,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "System Log"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Advanced: Import & Export",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -258,7 +258,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Import & Export System Settings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Advanced: Player",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -271,7 +271,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Instar Video Player"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision v2 - Advanced: Explorer",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -284,7 +284,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Windows.jpg",
     "abstract": "Open the Windows Explorer"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision for Windows Phone",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -297,7 +297,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_WP.jpg",
     "abstract": "Windows Phone 8/10 Camera Control"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Phone - DDNS Access",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -310,7 +310,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_WP.jpg",
     "abstract": "Access your Camera over DDNS"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Phone - P2P Access",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -323,7 +323,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_WP.jpg",
     "abstract": "Access your Camera over P2P"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Phone - Multiview",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -336,7 +336,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_WP.jpg",
     "abstract": "The Multiview Menu"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Phone - Recording",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -349,7 +349,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_WP.jpg",
     "abstract": "Screen your Cameras Video Recordings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Phone - Settings",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -362,7 +362,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_WP.jpg",
     "abstract": "The Settings Menu"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Metro App",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -375,7 +375,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Metro.jpg",
     "abstract": "Universal Desktop App for Windows 8/10"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Metro - DDNS",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -388,7 +388,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Metro.jpg",
     "abstract": "Access your Camera over DDNS"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Metro - P2P",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -401,7 +401,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Metro.jpg",
     "abstract": "Access your Camera over P2P"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Metro - Multiview",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -414,7 +414,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Metro.jpg",
     "abstract": "The Multiview Menu"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Metro - Recording",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -427,7 +427,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Metro.jpg",
     "abstract": "Screen your Camera´s Video Recordings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Windows Metro - Settings",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -440,7 +440,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Metro.jpg",
     "abstract": "General App Settings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "iSpy Connect",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -453,7 +453,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_iSpy_Connect.jpg",
     "abstract": "Windows Software iSpy Connect"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Sighthound",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -466,7 +466,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_Sighthound.jpg",
     "abstract": "Windows & macOS Software Sighthound"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "P2P Client",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -479,7 +479,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_P2P_Client.jpg",
     "abstract": "Windows Software P2P Client"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Logiware go1984",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -492,7 +492,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_go1984.jpg",
     "abstract": "Windows Software Logiware go1984"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "VLC Player",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -505,7 +505,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_VLC.jpg",
     "abstract": "Windows and macOS Software VLC Player"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "CCTV",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -518,7 +518,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_CCTV.jpg",
     "abstract": "CCTV Browser Plugin"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Blue Iris",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -531,7 +531,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_Blue_Iris.jpg",
     "abstract": "Windows Software Blue Iris"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Yet Another Webcam Viewer",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -544,7 +544,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_YAW_Cam.jpg",
     "abstract": "Windows Software YAW Cam"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "ZoneTrigger",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -557,7 +557,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_Zone_Trigger.jpg",
     "abstract": "Windows Software ZoneTrigger"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Webcam XP",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -570,7 +570,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_WebcamXP.jpg",
     "abstract": "Windows Software Webcam XP"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Webcam Motion Detector",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -583,7 +583,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_Webcam_MD.jpg",
     "abstract": "Windows Software Webcam Motion Detector"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Zebra Surveillance",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -596,7 +596,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_Zebra_Surveillance.jpg",
     "abstract": "Windows Software Zebra Surveillance"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "EvoCam",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -609,7 +609,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_Evocam.jpg",
     "abstract": "macOS Software EvoCam"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "SecuritySpy",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -622,7 +622,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_SecuritySpy.jpg",
     "abstract": "macOS Software SecuritySpy"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -635,7 +635,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Android.jpg",
     "abstract": "InstarVision for Android"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - DDNS Access",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -648,7 +648,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Android.jpg",
     "abstract": "InstarVision for Android"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - P2P Access",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -661,7 +661,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Android.jpg",
     "abstract": "InstarVision for Android"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - Multiview",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -674,7 +674,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Android.jpg",
     "abstract": "InstarVision for Android"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - Recording",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -687,7 +687,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Android.jpg",
     "abstract": "InstarVision for Android"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - Settings",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -700,7 +700,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Android.jpg",
     "abstract": "InstarVision for Android"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "TinyCam Monitor",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -713,7 +713,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_TinyCam.jpg",
     "abstract": "TinyCam Monitor for Android"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IP Cam Viewer",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -726,7 +726,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IP_Cam_Viewer.jpg",
     "abstract": "IP Cam Viewer for Android & iOS"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -739,7 +739,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPhone App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - DDNS Access",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -752,7 +752,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPhone App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - P2P Access",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -765,7 +765,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPhone App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - Multiview",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -778,7 +778,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPhone App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - Recording",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -791,7 +791,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPhone App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -804,7 +804,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPad App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - DDNS",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -817,7 +817,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPad App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - P2P",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -830,7 +830,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPad App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - Multiview",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -843,7 +843,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPad App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - Recording",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -856,7 +856,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPad App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision - Settings",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -869,7 +869,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_iOS.jpg",
     "abstract": "InstarVision iPad App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "LiveCams",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -882,7 +882,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_LiveCams.jpg",
     "abstract": "LiveCams iOS App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IP Vision Pro",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -895,7 +895,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_IP_VisionPro.jpg",
     "abstract": "IP Vision Pro iOS App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "ICCAM",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -908,7 +908,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_ICCAM.jpg",
     "abstract": "ICCAM iOS App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "P2P Cam Live",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -921,7 +921,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_P2P_CamLive.jpg",
     "abstract": "P2P Cam Live iOS App"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "InstarVision for Blackberry",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -934,7 +934,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_InstarVision_Android.jpg",
     "abstract": "InstarVision for Blackberry"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "QNAP",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -947,7 +947,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_QNAP.jpg",
     "abstract": "QNAP Surveillance Station"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Synology",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -960,7 +960,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_Synology.jpg",
     "abstract": "Synology Surveillance Station"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "AVM Fritzphone",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -973,7 +973,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_AVM.jpg",
     "abstract": "AVM Fritzphone"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Domovea Home Automation",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],
@@ -986,7 +986,7 @@ POST /wiki2_en/article
     "image": "/images/Search/P_SearchThumb_AVM.jpg",
     "abstract": "Domovea Home Automation"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Audio over HTTPS",
     "series": ["HD", "VGA", "Indoor", "Outdoor"],

@@ -1,4 +1,4 @@
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "The HD Web User Interface",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -11,7 +11,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_720p.jpg",
     "abstract": "Configure your HD Camera over the Web User Interface"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Software Menu",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -24,7 +24,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_720p.jpg",
     "abstract": "Configure your HD Camera over the Web User Interface"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Language Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -37,7 +37,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Software_Language.jpg",
     "abstract": "Set the Language used by the User Interface"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Backup Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -50,7 +50,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Software_Backup.jpg",
     "abstract": "Backup and Restore your Camera Settings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Update Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -63,7 +63,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Software_Update.jpg",
     "abstract": "Update your Cameras User Interface and Firmware"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Reboot & Reset Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -76,7 +76,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Software_Reboot_Reset.jpg",
     "abstract": "Reboot or Reset your Camera"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Network Menu",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -89,7 +89,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_720p.jpg",
     "abstract": "Adjust zour Camera's Network Configuration"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IP Configuration Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -102,7 +102,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Network_IP_Configuration.jpg",
     "abstract": "Configure your Camera's Network Settings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "WiFi Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -115,7 +115,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Network_WLAN.jpg",
     "abstract": "Connect your Camera to the WiFi Network"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "P2P Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -128,7 +128,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Network_P2P.jpg",
     "abstract": "Access your Camera over the Internet (P2P)"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "UPnP Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -141,7 +141,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Network_UPnP.jpg",
     "abstract": "Universal Plug &amp; Play"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Push Service Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -154,7 +154,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Network_Push.jpg",
     "abstract": "Get a Push Notification in Case of an Alert"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "System Menu",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -167,7 +167,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_720p.jpg",
     "abstract": "Adjust your Camera Settings in the System Menu"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Info Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -180,7 +180,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_System_Info.jpg",
     "abstract": "Information about your Camera's Operations"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Date & Time Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -193,7 +193,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_System_Date_Time.jpg",
     "abstract": "Set your Camera's Time and Date"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "User Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -206,7 +206,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_System_User.jpg",
     "abstract": "Multi-level User Management"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Status LED Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -219,7 +219,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_System_Status_LED.jpg",
     "abstract": "Activate or Deactivate the Network Status LED"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "IR LEDs Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -232,7 +232,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_System_IR_LEDs.jpg",
     "abstract": "Adjust the Behaviour of the Infrared LEDs"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "ONVIF Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -245,7 +245,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_System_ONVIF.jpg",
     "abstract": "Connect your Camera over the ONVIF Protocol"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "PTZ Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -258,7 +258,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_System_PTZ.jpg",
     "abstract": "Ajust your Cameras PTZ Function"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "PTZ Tour Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -271,7 +271,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_System_PTZ_Tour.jpg",
     "abstract": "Program a PTZ Tour for your Camera"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "System Log Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -284,7 +284,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_System_Log.jpg",
     "abstract": "System Log - Keep an eye on your Camera´s Operation"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Multimedia Menu",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -297,7 +297,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_720p.jpg",
     "abstract": "Adjust your Camera Video and Audio Settings"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Audio Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -310,7 +310,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Multimedia_Audio.jpg",
     "abstract": "Adjust your Camera's Audio Volume"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Video Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -323,7 +323,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Multimedia_Video.jpg",
     "abstract": "Adjust your Camera's Video Quality"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Image Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -336,7 +336,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Multimedia_Image.jpg",
     "abstract": "Adjust your Camera's Image Quality"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Alarm Menu",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -349,7 +349,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_720p.jpg",
     "abstract": "Set your Camera Alarm Actions"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Alarm Areas Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -362,7 +362,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Alarm_Areas.jpg",
     "abstract": "Set the Detection Areas for Motion Detection"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Privacy Mask Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -375,7 +375,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Multimedia_Privat.jpg",
     "abstract": "Black out Parts of the Image Sensor"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Alarm Actions Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -388,7 +388,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Alarm_Actions.jpg",
     "abstract": "Configure Actions shoulb be triggered by the Alarm Function"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Alarm Schedule Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -401,7 +401,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Alarm_Schedule.jpg",
     "abstract": "Configure a Time Schedule for the Alarm Function"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "SMTP Server Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -414,7 +414,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Alarm_SMTP_Server.jpg",
     "abstract": "Set a Server for Outgoing Alarm Emails"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Email Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -427,7 +427,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Alarm_Email.jpg",
     "abstract": "Set an Email Receiver for the Alarm Notification"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "FTP Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -440,7 +440,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Alarm_FTP.jpg",
     "abstract": "Set a FTP Server for the Alarm Upload"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Audio Alarm Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -453,7 +453,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Alarm_Audio_Alarm.jpg",
     "abstract": "Set an Email Receiver for the Alarm Notification"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "SD Card Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -466,7 +466,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Alarm_SD_Card.jpg",
     "abstract": "Open, format or unmount your SD Card"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Recording Menu",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -479,7 +479,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_720p.jpg",
     "abstract": "Set your Camera to automatically Record"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Recording Schedule Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -492,7 +492,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Recording_Schedule.jpg",
     "abstract": "Set a Schedule for the automated Recording"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Video Recording Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -505,7 +505,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Recording_Video.jpg",
     "abstract": "Set Parameters for the automated Recording"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Photoseries Overlay",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -518,7 +518,7 @@ POST /wiki2_en/article
     "image": "/images/Search/WebUI_720p_SearchThumb_Recording_Photoseries.jpg",
     "abstract": "Set Parameters for the automated Photoseries"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Menu Bar",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -531,7 +531,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_720p.jpg",
     "abstract": "Quick-Access Bar above the Live Video"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Video Menu Bar",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -544,7 +544,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_720p.jpg",
     "abstract": "Video Options available with the ActiveX Plugin"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "PTZ Control",
     "series": ["720p", "Indoor", "Outdoor"],
@@ -557,7 +557,7 @@ POST /wiki2_en/article
     "image": "/images/Search/QI_SearchThumb_WebUI_720p.jpg",
     "abstract": "Pan, Tilt & Zoom Controls"
 }
-POST /wiki2_en/article
+POST /wiki2_en_2017_09_09/article
 {
     "title": "Cloud",
     "series": ["720p", "Indoor", "Outdoor"],
