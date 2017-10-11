@@ -47,10 +47,10 @@
                     <div class="margin">
                         <h2>Set up an Upload Directory</h2>
                         <p>
-                          First we have to set up a directory for your camera´s uploads. Connect an USB thumbdrive or an USB hard drive to the USB port of your router. In case of the Fritzbox simply click on FritzNAS (on top of the screen) to enter the storage overview panel. For other routers it is recommended to check the FTP access with an FTP client like <a href="https://filezilla-project.org/download.php?type=client">Filezilla Client</a> or simply type in <span class="code">ftp://[IP of your router]:21</span> into the address bar of your default web browser. Use the camera login we just created to check available storage. If you are using Firefox, you can use a FTP client extension like <a href="https://addons.mozilla.org/en-US/firefox/addon/fireftp/">FireFTP</a> to create a directory that your camera should use to upload files.
+                          First we have to set up a directory for your camera´s uploads. Connect an USB thumb drive or an USB hard drive to the USB port of your router. In case of the Fritzbox simply click on FritzNAS (on top of the screen) to enter the storage overview panel. For other routers it is recommended to check the FTP access with an FTP client like <a href="https://filezilla-project.org/download.php?type=client">Filezilla Client</a> or simply type in <span class="code">ftp://[IP of your router]:21</span> into the address bar of your default web browser. Use the camera login we just created to check available storage. If you are using Firefox, you can use a FTP client extension like <a href="https://addons.mozilla.org/en-US/firefox/addon/fireftp/">FireFTP</a> to create a directory that your camera should use to upload files.
                         </p>
                         <p>
-                          Once inside the FritzNAS storage overview window, change to your external storage (in our case a ADATA Thumbdrive), click on the New Folder button on top and create a new folder for your camera. Remember the path to your folder as we will have to type it into camera webUI in moment. Be carful not to delete the FRITZ folder, created by your router - if you do, your thumb drive will be unmounted and you have to replug it into the USB Port!
+                          Once inside the FritzNAS storage overview window, change to your external storage (in our case a ADATA Thumbdrive), click on the New Folder button on top and create a new folder for your camera. Remember the path to your folder as we will have to type it into camera webUI in moment. Be careful not to delete the FRITZ folder, created by your router - if you do, your thumb drive will be unmounted and you have to re-plug it into the USB Port!
                         </p>
                     </div>
                     <!-- /margin -->
@@ -71,7 +71,7 @@
                     <div class="margin">
                         <h2>Set up a FTP User</h2>
                         <p>
-                          First, we have to find the FTP settings inside the router. For most routers that is pretty straight-forward - just search for the keyword FTP. Unfortunately, AVM decided to hide this function with the newer firmwares, causing us a little bit of a headache. Which is partly the reason why we take the Fritzbox router as the example - the other routers will be much easier to set up.
+                          First, we have to find the FTP settings inside the router. For most routers that is pretty straight-forward - just search for the keyword FTP. Unfortunately, AVM decided to hide this function with the newer firmware, causing us a little bit of a headache. Which is partly the reason why we take the Fritzbox router as the example - the other routers will be much easier to set up.
                         </p>
                         <p>
                           The FTP are now hidden inside the Fritzbox User (Benutzer) tab under System. Click on Add User (Benutzer Hinzufügen) and give your user a name and password. It is recommended to keep the name and password secure but to stay away from exotic characters, which might cause you some trouble. Especially, if you only use the FTP upload inside your local network and you deactivate the access rights from the internet (Zugang aus dem Internet, s. screenshot below). The only thing your cameras needs to have access to is the network attached storage (Zugang zu NAS-Inhalten, s. below). Click on add a directory (Verzeichnis Hinzufügen) and allow the camera to write onto the supplied storage.
@@ -121,7 +121,7 @@
                           src="/images/Motion_Detection/FTP-Fritzbox-7490de_03.png" width="995" height="630" layout="responsive" class="shadow">
                       </amp-img>
                         <p>
-                           Please make sure that you also have a administrator account active and...
+                           Please make sure that you also have an administrator account active and...
                         </p>
                     </div>
                     <!-- /margin -->
