@@ -49,10 +49,10 @@
                       <!-- article -->
 
                       <div>
-                          <h3>III.	Access your Camera through it´s DDNS Address</h3>
+                          <h3>III.	Access your Camera through its DDNS Address</h3>
                           <p><i>Please read <a href="/Internet_Access/The_DDNS_Service/">Step I</a> on how to configure your camera and <a href="/Internet_Access/Port_Forwarding/">Step II</a> for the necessary router configuration first.</i>
                           <br><br>In the following we will use the web browser as well as the InstarVision smartphone app to access the INSTAR IP camera remotely.</p>
-                          <p>Please open your camera´s Web User Interface and navigate to <strong>Network > DDNS</strong> (<a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">1080p Series</a> / <a href="/Web_User_Interface/720p_Series/Network/DDNS/">720p Series</a>). Copy your personal DDNS address into your browser´s address bar amd add your camera´s external port that you forwarded in <a href="/Internet_Access/Port_Forwarding/">Step II</a> - e.g <u>test12.ddns3-instar.de:8081</u>. This address will guide you to your camera´s user interface. <strong>Some routers don´t allow you to use your camera´s DDNS address from inside your local network! (e.g. Telekom Speeport)</strong></p>
+                          <p>Please open your camera´s Web User Interface and navigate to <strong>Network > DDNS</strong> (<a href="/Web_User_Interface/1080p_Series/Network/Remote_Access/">1080p Series</a> / <a href="/Web_User_Interface/720p_Series/Network/DDNS/">720p Series</a>). Copy your personal DDNS address into your browser´s address bar and add your camera´s external port that you forwarded in <a href="/Internet_Access/Port_Forwarding/">Step II</a> - e.g. <u>test12.ddns3-instar.de:8081</u>. This address will guide you to your camera´s user interface. <strong>Some routers don´t allow you to use your camera´s DDNS address from inside your local network! (e.g. Telekom Speeport)</strong></p>
                       </div>
                       <!-- /margin -->
 
@@ -66,7 +66,7 @@
                       </div>
 
                       <div class="margin">
-                        <p>To access your camera you can always use the same DDNS address. So if you have more then one camera you only need to remember one address. Most important is that you change the port behind the DDNS number. The reason behind it is that your internet service provider is assigning you a new (WAN) IP address every 24 hours. Once the address is changed the camera notices this and updates your DDNS address. This way you can always access your camera with one address - even so the WAN IP behind it changes. All DDNS addresses from cameras inside the same local network all link to one address - the WAN IP that your ISP assigns to your router. So with every address you will reach your router. And because of the port forwarding your router then knows to which device you want to be forwarded to. So for example we type the following to access the cameras:</p>
+                        <p>To access your camera, you can always use the same DDNS address. So if you have more than one camera you only need to remember one address. Most important is that you change the port behind the DDNS number. The reason behind it is that your internet service provider is assigning you a new (WAN) IP address every 24 hours. Once the address is changed the camera notices this and updates your DDNS address. This way you can always access your camera with one address - even so the WAN IP behind it changes. All DDNS addresses from cameras inside the same local network all link to one address - the WAN IP that your ISP assigns to your router. So with every address you will reach your router. And because of the port forwarding your router then knows to which device you want to be forwarded to. So for example we type the following to access the cameras:</p>
                         <ul>
                           <li>Camera 1: http://d2908.ddns-instar.com:8081</li>
                           <li>Camera 2: http://d2908.ddns-instar.com:8082</li>
@@ -92,7 +92,7 @@
                       </div>
                       <div class="dangercard">
                           <h4>Caution:</h4>
-                          <p>It is possible to access your camera over it's DDNS address from inside the local network with most common routers - e.g. a AVM FritzBox. But there are routers such as the <strong>Telekom Speedport</strong> which will block your request - you are only able to access your camera over it's local IP address (e.g. 192.168.1.201:8081). This means you would have to use a computer in another network, or alternatively test the DDNS Access by using the mobile network on your smartphone.</p>
+                          <p>It is possible to access your camera over its DDNS address from inside the local network with most common routers - e.g. a AVM FritzBox. But there are routers such as the <strong>Telekom Speedport</strong> which will block your request - you are only able to access your camera over its local IP address (e.g. 192.168.1.201:8081). This means you would have to use a computer in another network, or alternatively test the DDNS Access by using the mobile network on your smartphone.</p>
                           <p>It is not possible to use the DDNS Service if you don´t have a public IPv4 address. If you only have an IPv6-address, you can ask your provider to give you an IPv4-address. Or use our <a href="/Internet_Access/Point_to_Point/">P2P Service</a> instead of the DDNS address.</p>
                       </div>
                 </article>
