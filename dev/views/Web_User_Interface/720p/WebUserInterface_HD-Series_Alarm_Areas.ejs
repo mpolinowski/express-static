@@ -28,7 +28,7 @@
                                 <div class="intro-container">
                                     <h1>Alarm Areas Overlay</h1>
                                     <p class="intro">
-                                      The alarm areas detect motion by a picture analysis that is sensitive to every change inside the video frame instead of employing an infrared or microwave sensor. You can setup up to 4 detection areas - just activate an area and draw it’s shape onto the image - and adjusts it´s sensitivity to set a threshold for trigger events. Once the motion detection in an area is activated, its sensitivity can be adjusted from very insensitive (value=0) to very sensitive (value=100).
+                                      The alarm areas detect motion by a picture analysis that is sensitive to every change inside the video frame instead of employing an infrared or microwave sensor. You can setup up to 4 detection areas - just activate an area and draw its shape onto the image - and adjusts it´s sensitivity to set a threshold for trigger events. Once the motion detection in an area is activated, its sensitivity can be adjusted from very insensitive (value=0) to very sensitive (value=100).
                                     </p>
                                 </div>
                             </div>
@@ -76,31 +76,31 @@
                                 <td width="20%">
                                     <strong>Areas</strong>
                                 </td>
-                                <td>Klicken Sie auf den Radio Button hinter dem Bereich (1-4) den Sie bearbeiten möchten. Bewegen Sie danach Ihren Mauszeiger über das Bild Ihrer Kamera, halten Sie die linke Maustaste gedrückt und ziehen Sie ein Rechteck über dem Bild auf. Um einen zweiten Bereich aufzuziehen, wählen Sie den entsprechenden Bereich aus und wiederholen die weiteren Schritte. Die Bewegungserkennung der Kamera wird danach nur innerhalb dieser Bereiche nach Bewegungen suchen.</td>
+                                <td>Click on the radio button behind the area (1-4) you want to edit. Then, move your mouse pointer over the image of your camera, hold down the left mouse button, and drag a rectangle over the image. To pick up a second area, select the appropriate area and repeat the next steps. The movement detection of the camera will then search for movements only within these areas.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
                                     <strong>Active</strong>
                                 </td>
-                                <td>Der Haken hinter Aktiv aktiviert den entsprechenden Bereich. D.h. die Kamera beginnt innerhalb dieses Bereiches nach Bewegungen zu suchen und wird bei einer positiven Erkennung, die von Ihnen gewählten <a href="/Web_User_Interface/720p_Series/Alarm/Actions/">Alarmaktionen</a> auslösen. In der <a href="/Web_User_Interface/720p_Series/Menu_Bar/">Menüleiste</a> über dem Livevideo finden Sie einen Shortcut um die einzelnen Bereich schnell zu aktivieren/deaktivieren, ohne das Bereiche Menü aufrufen zu müssen. Sobald eine der Zahlen 1-4 rot dargestellt wird, ist der zugehörige Bereich aktiv.</td>
+                                <td>The tick behind Active activates the corresponding area. That the camera starts to search within this range for movement and will trigger the <a href="/Web_User_Interface/720p_Series/Alarm/Actions/">alarm actions</a> selected by you when a positive detection is detected. In the <a href="/Web_User_Interface/720p_Series/Menu_Bar/">menu bar</a> above the live video, you will find a shortcut to quickly activate / deactivate the individual sections without having to call the section menu. As soon as one of the numbers 1-4 is shown in red, the corresponding area is active.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
                                     <strong>Sensitivity</strong>
                                 </td>
-                                <td>Legen Sie hier fest, wie viele Pixel sich im Bild ändern müssen um eine <a href="/Web_User_Interface/720p_Series/Alarm/Actions/">Alarmaktion</a> auszulösen. Umso höher die Empfindlichkeit ist, desto weniger muss sich im Bildinhalt verändern um einen Alarm auszulösen. Beachten Sie bitte, dass die Empfindlichkeit auch von der Größe des Bereiches abhängt. Ein Objekt, dass 100 Pixel im Videobild ein nimmt, nimmt prozentual eine größere Fläche in einem kleinen Bereich ein, als in einem großen Bereich. Wenn Sie zu viele Fehlalarme erhalten, versuchen Sie die Bereiche größer einzuzeichnen. Wenn Ihnen die Erkennung zu unempfindlich ist, zeichnen Sie kleinere Bereiche im Bild ein.</td>
+                                <td>Specify how many pixels will need to change in the image to trigger a <a href="/Web_User_Interface/720p_Series/Alarm/Actions/">alarm action</a>. The higher the sensitivity, the less the picture content has to change in order to trigger an alarm. Please note that the sensitivity also depends on the size of the area. An object that takes 100 pixels in the video image will take a larger area in a small area as a percentage than in a large area. If you receive too many false alarms, try to draw the areas larger. If the detection is too insensitive, draw smaller areas in the image.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
                                     <strong>All</strong>
                                 </td>
-                                <td>Klicken Sie auf diesen Button um den ausgewählten Bereich über dem ganzen Bild aufzuspannen.</td>
+                                <td>Click on this button to set the selected area over the whole picture.</td>
                             </tr>
                             <tr>
                                 <td width="20%">
                                     <strong>Reset</strong>
                                 </td>
-                                <td>Bewegen Sie den ausgewählten Bereich wieder in seine Ausgangsposition.</td>
+                                <td>Move the selected area back to its original position.</td>
                             </tr>
                         </table>
                     </div>
@@ -108,15 +108,15 @@
 
                     <div class="margin">
                         <h3>Define Areas that will be used for the Motion Detection</h3>
-                        <p>The alarm areas detect motion by a picture analysis that is sensitive to every change inside the video frame instead of employing an infrared or microwave sensor. You can setup up to 4 detection areas - just activate an area and draw it’s shape onto the image - and adjusts it´s sensitivity to set a threshold for trigger events. Once the motion detection in an area is activated, its sensitivity can be adjusted from very insensitive (value=0) to very sensitive (value=100).</p>
+                        <p>The alarm area is located on the right side of the screen. You can set up to 4 detection areas - just activate an area and draw its shape. Once the motion detection is in an area is activated, its sensitivity can be adjusted from very sensitive (value = 0) to very sensitive (value = 100).</p>
                     </div>
                     <!-- /margin -->
 
                     <div class="secondarycard">
                         <h4>Wrong</h4>
-                        <p>Many small Alarm Areas distributed over the Frame</p>
+                        <p>Many small alarm areas distributed over the frame</p>
                         <amp-img on="tap:lightbox2" role="button" tabindex="0" src="/images/720p_webUI/WebUI_Areas_01.png" width="887" height="503" layout="responsive" class="shadow"></amp-img>
-                        <p>The smaller an area, the bigger (in percent) a change in the image will be. Small areas are a lot more sensitive and should be used over parts of the image, where you never want to miss someone walking through. But they also lead to a large number of false alerts und should be used sparsely. You will receive a lot of false alarm notifications in the example above.</p>
+                        <p>The smaller an area, the bigger (in percent). Small areas are a lot more sensitive and should be used. But they are also very good. You will receive a lot of false alarm notifications in the example above.</p>
                     </div>
                     <!-- /margin -->
 
@@ -124,15 +124,15 @@
                         <h4>Right</h4>
                         <p>One big Area - small Areas only where they are critical</p>
                         <amp-img on="tap:lightbox3" role="button" tabindex="0" src="/images/720p_webUI/WebUI_Areas_02.png" width="887" height="503" layout="responsive" class="shadow"></amp-img>
-                        <p>A big area is - according to the explanation above - much more resistent against false alerts. A big area over the whole image will only trigger an alert when a person comes very close to the camera. You can use a slightly higher sensitivity to compensate.<br/><br/>
-                        To prevent that you might loose actual alarm events, add a smaller area where it is critical - e.g. a window or your front door.<br/><br/>
-                        The smaller this area is is, the higher it´s sensitivity. To find the optimal setting, keep an eye on your camera´s <a href="/Web_User_Interface/720p_Series/System/System_Log/">System Log</a>. If an area cause too many false alerts, make it bigger or decrease it´s sensitivity.</p>
+                        <p>A big area is - according to the explanation above - much more resistant against false alerts. A big area over the whole image will only trigger an alert when a person comes very close to the camera. You can use a slightly higher sensitivity to compensate.<br/><br/>
+                        To prevent that you might lose actual alarm events, add a smaller area where it is critical - e.g. a window or your front door.<br/><br/>
+                        The smaller this area is, the higher its sensitivity. To find the optimal setting, keep an eye on your camera´s <a href="/Web_User_Interface/720p_Series/System/System_Log/">System Log</a>. If an area causes too many false alerts, make it bigger or decrease it´s sensitivity.</p>
                     </div>
                     <!-- /margin -->
 
                     <div class="margin">
                         <h3>Potential Errors</h3>
-                        <p>In case the camera’s position is prone to rapid light changes, e.g. changes in sun intensity due to cloud movements, you might be confronted with a high number of false alarms. In this case please refer to Actions Menu for employing a PIR motion detector..</p>
+                        <p>In case the camera’s position is prone to rapid light changes, e.g. changes in sun intensity due to cloud movements, you might be confronted with a high number of false alarms. In this case please refer to Actions Menu for employing a PIR motion detector.</p>
                     </div>
                     <!-- /margin -->
 
