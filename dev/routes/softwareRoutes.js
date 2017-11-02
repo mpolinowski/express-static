@@ -33,6 +33,36 @@ softwareRouter.route('/')
     });
 });
 
+/* ****************************************** GET /Software ****************************************** */
+softwareRouter.route('/InstarVision_Overview')
+.get(function(req, res) {
+  res.render('./Software/InstarVision_Overview', {
+      title: 'InstarVision Software',
+      ampimg: '/images/Search/P_SearchThumb_InstarVision_Windows.jpg',
+      headline: 'InstarVision Software',
+      breadcrumbs: '<li><a href="/">Home</a></li><li><a href="/Software/">Software</a></li><li><a href="/Software/InstarVision_Overview/">InstarVision</a></li>',
+      canonical: '/Software/InstarVision_Overview/',
+      description: 'INSTAR Wiki - INSTAR Software for your IP camera',
+      pacc: '',
+      ptab: 'hidden',
+      qiacc: '',
+      qitab: 'hidden',
+      mdacc: '',
+      mdtab: 'hidden',
+      iaacc: '',
+      iatab: 'hidden',
+      auacc: '',
+      autab: 'hidden',
+      hdacc: 'hidden',
+      hdtab: 'hidden',
+      fhdacc: 'hidden',
+      fhdtab: 'hidden',
+      sacc: '',
+      dlacc: 'hidden',
+      dltab: 'hidden',
+    });
+});
+
 /* ****************************  GET InstarVision for Windows /Windows ************************************* */
 softwareRouter.route('/Windows')
 .get(function(req, res) {
