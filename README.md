@@ -477,6 +477,20 @@ sudo vi /etc/elasticsearch/elasticsearch.yml
 -> network.host: localhost
 ```
 
+To get rid of the following Error:
+
+```
+Failed to load http://localhost:9200/: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:8000' is therefore not allowed access.
+```
+
+Add the following line to elasticsearch.yml
+
+```
+http.cors:
+  enabled: true
+  allow-origin: /https?:\/\/localhost(:[0-9]+)?/
+```
+
 * **Step Four** - To configure Elasticsearch to start automatically when the system boots up, run the following commands::
 ```
 sudo /bin/systemctl daemon-reload
