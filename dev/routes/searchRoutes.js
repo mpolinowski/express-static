@@ -3,6 +3,7 @@ var searchRouter = express.Router();
 var elasticsearch = require('elasticsearch');
 
 var connectionString = 'localhost:9200';
+// var _index = "wiki2_de_2017_09_09";
 var _index = 'wiki2_en';
 var _type = 'article';
 
