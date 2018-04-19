@@ -6,10 +6,23 @@
         <header><% include _partials/template/_header.ejs %></header>
         <!-- Navbar-->
 
+        <!-- #############################################  Maintenance ############################################# -->
+        <!--  -->
+          <section class="slanding">
+            <div class="container">
+              <div class="row">
+                <h1 class="headline">Maintenance</h1>
+                <hr>
+                <p>Our Search Service is undergoing a scheduled downtime for maintenance work. We apologize for the inconvenience caused.</p>
+                <p>Please refer to our start page for an overview over all topics in our Knowledgebase - <a href="/">Go to Homepage</a>.</p>
+              </div>
+            </div>
+          </section>
+        <!--  -->
         <!-- #############################################  Search Results Header ############################################# -->
-
+        <!--
         <section class="slanding">
-          <div class="container"
+          <div class="container">
             <div class="row">
                 <% if (response.hits.total > 0) { %>
                     <h1 class="headline">Search Results</h1>
@@ -26,16 +39,12 @@
                   <% } %>
                   <h2 class="subheader"><i class="fa fa-angle-double-down" aria-hidden="true"></i></h2><br/>
            </div>
-           <!-- /Row -->
          </div>
-         <!-- /Container -->
        </section>
-       <!-- /Landing -->
 
        <section class="container" style="margin-bottom: 200px;">
            <div class="row">
-
-             <!-- /desktop up -->
+           
              <% if (response.hits.total > 0) { %>
                <div class="card-columns hidden-sm-down">
                      <% for(var i=0; i<response.hits.hits.length;i++){ if (i === 8) { break; } %>
@@ -51,8 +60,7 @@
                          </div>
                      <% } %>
                  </div>
-
-                 <!-- /mobile down -->
+                 
                  <% for(var i=0; i<response.hits.hits.length;i++){ if (i === 8) { break; } %>
                    <div class="card card-inverse shadow mt hidden-md-up" style="background-color: #333; border-color: #333;">
                     <a href="<%= response.hits.hits[i]._source.link %>">
@@ -125,26 +133,18 @@
                   <% } %>
 
             </div>
-            <!-- /Row -->
         </section>
-        <!-- /Container -->
-
-        <!-- #############################################  Social ############################################# -->
 
         <section class="products"><% include _partials/content/_products.ejs %></section>
-        <!-- /products -->
 
         <section class="social"><% include _partials/content/_social.ejs %></section>
-        <!-- /social -->
-
-        <!-- ############################################# Footer ############################################# -->
 
         <footer><% include _partials/template/_footer.ejs %></footer>
 
             <% include _partials/template/_jsdefaults_NO_WRAP.ejs %>
 
       </section>
-       <!-- /footer -->
+        -->
 </body>
 
 </html>
